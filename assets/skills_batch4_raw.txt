@@ -1,0 +1,130 @@
+[
+    {
+        "name": "Suspension Bridge",
+        "description": "A sturdy, functional suspension bridge that spans large gaps, featuring steel cable supports, wooden walkway planks, and adjustable anchor points for stable placement across rivers or chasms.",
+        "metadata": {
+            "category": "Structural Transportation Builds",
+            "style": "Industrial / Frontier",
+            "difficulty": "Hard"
+        },
+        "luau_source": "-- Suspension Bridge Build Tool\nlocal Tool = script.Parent\nlocal Players = game:GetService(\"Players\")\nlocal LocalPlayer = Players.LocalPlayer\nlocal Mouse = LocalPlayer:GetMouse()\n\nlocal function createBridge(startPos, endPos)\n  local span = (endPos - startPos).Magnitude\n  local segmentCount = math.floor(span / 4)\n  local mainCable = Instance.new(\"Model\")\n  mainCable.Name = \"MainCable\"\n  for i = 0, segmentCount do\n    local segment = Instance.new(\"Part\")\n    segment.Size = Vector3.new(4, 0.2, 1)\n    segment.Position = startPos:Lerp(endPos, i / segmentCount) + Vector3.new(0, -1, 0)\n    segment.BrickColor = BrickColor.new(\"Medium wood\")\n    segment.Anchored = true\n    segment.Parent = mainCable\n  end\n  mainCable.Parent = workspace\nend\n\nTool.Activated:Connect(function()\n  local click1, click2\n  Mouse.Button1Down:Wait()\n  click1 = Mouse.Hit.Position\n  Mouse.Button1Down:Wait()\n  click2 = Mouse.Hit.Position\n  createBridge(click1, click2)\nend)"
+    },
+    {
+        "name": "Clock Tower",
+        "description": "A multi-tiered clock tower with a working analog clock face, bell chamber, and stone masonry base, perfect for town centers or landmark builds.",
+        "metadata": {
+            "category": "Landmark Structural Builds",
+            "style": "Victorian Gothic",
+            "difficulty": "Hard"
+        },
+        "luau_source": "-- Clock Tower Build Generator\nlocal Tool = script.Parent\nlocal Players = game:GetService(\"Players\")\nlocal LocalPlayer = Players.LocalPlayer\n\nTool.Activated:Connect(function()\n  local tower = Instance.new(\"Model\")\n  tower.Name = \"ClockTower\"\n  local base = Instance.new(\"Part\")\n  base.Size = Vector3.new(12, 2, 12)\n  base.BrickColor = BrickColor.new(\"Dark gray\")\n  base.Anchored = true\n  base.Position = Vector3.new(0, 1, 0)\n  base.Parent = tower\n  local clockTier = Instance.new(\"Part\")\n  clockTier.Size = Vector3.new(8, 4, 8)\n  clockTier.BrickColor = BrickColor.new(\"Medium gray\")\n  clockTier.Position = Vector3.new(0, base.Size.Y/2 + clockTier.Size.Y/2 + 2, 0)\n  clockTier.Anchored = true\n  clockTier.Parent = tower\n  for _, faceCFrame in ipairs({CFrame.new(0,0,4), CFrame.new(0,0,-4), CFrame.new(4,0,0), CFrame.new(-4,0,0)}) do\n    local face = Instance.new(\"Part\")\n    face.Size = Vector3.new(3, 3, 0.1)\n    face.BrickColor = BrickColor.new(\"White\")\n    face.CFrame = clockTier.CFrame:ToWorldSpace(faceCFrame)\n    face.Anchored = true\n    face.Parent = tower\n  end\n  local bellChamber = Instance.new(\"Part\")\n  bellChamber.Size = Vector3.new(6, 3, 6)\n  bellChamber.BrickColor = BrickColor.new(\"Dark gray\")\n  bellChamber.Position = Vector3.new(0, clockTier.Position.Y + clockTier.Size.Y/2 + bellChamber.Size.Y/2, 0)\n  bellChamber.Anchored = true\n  bellChamber.Parent = tower\n  local spire = Instance.new(\"Part\")\n  spire.Size = Vector3.new(2, 6, 2)\n  spire.BrickColor = BrickColor.new(\"Black\")\n  spire.Position = Vector3.new(0, bellChamber.Position.Y + bellChamber.Size.Y/2 + 3, 0)\n  spire.Anchored = true\n  spire.Parent = tower\n  tower.Parent = workspace\nend)"
+    },
+    {
+        "name": "Catapult",
+        "description": "A functional medieval catapult with adjustable tension, throwing arm, and stone projectile holder, usable for siege gameplay or decorative fort builds.",
+        "metadata": {
+            "category": "Functional Combat Builds",
+            "style": "Medieval Feudal",
+            "difficulty": "Medium"
+        },
+        "luau_source": "-- Functional Catapult Builder\nlocal Tool = script.Parent\nlocal Players = game:GetService(\"Players\")\nlocal LocalPlayer = Players.LocalPlayer\nlocal PhysicsService = game:GetService(\"PhysicsService\")\n\nTool.Activated:Connect(function()\n  local catapult = Instance.new(\"Model\")\n  catapult.Name = \"Catapult\"\n  local base = Instance.new(\"Part\")\n  base.Size = Vector3.new(8, 1, 4)\n  base.BrickColor = BrickColor.new(\"Brown\")\n  base.Anchored = true\n  base.Position = Vector3.new(0, 0.5, 0)\n  base.Parent = catapult\n  local leftArm = Instance.new(\"Part\")\n  leftArm.Size = Vector3.new(1, 4, 1)\n  leftArm.BrickColor = BrickColor.new(\"Brown\")\n  leftArm.Position = Vector3.new(-3, 2.5, 0)\n  leftArm.Anchored = true\n  leftArm.Parent = catapult\n  local rightArm = leftArm:Clone()\n  rightArm.Position = Vector3.new(3, 2.5, 0)\n  rightArm.Parent = catapult\n  local throwArm = Instance.new(\"Part\")\n  throwArm.Size = Vector3.new(6, 0.5, 0.5)\n  throwArm.BrickColor = BrickColor.new(\"Dark gray\")\n  throwArm.Position = Vector3.new(0, 3, 0)\n  throwArm.Anchored = false\n  local weld = Instance.new(\"WeldConstraint\")\n  weld.Part0 = throwArm\n  weld.Part1 = base\n  weld.Parent = throwArm\n  throwArm.Parent = catapult\n  local bucket = Instance.new(\"Part\")\n  bucket.Size = Vector3.new(1.5, 1, 1.5)\n  bucket.BrickColor = BrickColor.new(\"Gray\")\n  bucket.Position = Vector3.new(0, 6, 0)\n  bucket.Anchored = false\n  local bucketWeld = Instance.new(\"WeldConstraint\")\n  bucketWeld.Part0 = bucket\n  bucketWeld.Part1 = throwArm\n  bucketWeld.Parent = bucket\n  bucket.Parent = catapult\n  local rope = Instance.new(\"RopeConstraint\")\n  rope.Attachment0 = Instance.new(\"Attachment\")\n  rope.Attachment0.Parent = throwArm\n  rope.Attachment0.Position = Vector3.new(0, -2, 0)\n  rope.Attachment1 = Instance.new(\"Attachment\")\n  rope.Attachment1.Parent = base\n  rope.Attachment1.Position = Vector3.new(0, 0, 0)\n  rope.Length = 3\n  rope.Parent = catapult\n  catapult.Parent = workspace\nend)"
+    },
+    {
+        "name": "Treasure Chest",
+        "description": "A hinged wooden treasure chest with a lock plate and hidden storage compartment, ideal for RPG loot spawns or decorative dungeon decor.",
+        "metadata": {
+            "category": "Functional Decorative Builds",
+            "style": "Medieval Fantasy",
+            "difficulty": "Easy"
+        },
+        "luau_source": "-- Treasure Chest Build Tool\nlocal Tool = script.Parent\nlocal Players = game:GetService(\"Players\")\nlocal LocalPlayer = Players.LocalPlayer\nlocal Mouse = LocalPlayer:GetMouse()\n\nTool.Activated:Connect(function()\n  local chest = Instance.new(\"Model\")\n  chest.Name = \"TreasureChest\"\n  local base = Instance.new(\"Part\")\n  base.Size = Vector3.new(6, 2, 4)\n  base.BrickColor = BrickColor.new(\"Medium wood\")\n  base.Anchored = true\n  base.Position = Mouse.Hit.Position\n  base.Parent = chest\n  local lid = Instance.new(\"Part\")\n  lid.Size = Vector3.new(6, 1, 4)\n  lid.BrickColor = BrickColor.new(\"Medium wood\")\n  lid.Position = base.Position + Vector3.new(0, base.Size.Y/2 + lid.Size.Y/2, 0)\n  lid.Anchored = false\n  local hinge = Instance.new(\"HingeConstraint\")\n  hinge.Attachment0 = Instance.new(\"Attachment\")\n  hinge.Attachment0.Parent = base\n  hinge.Attachment0.Position = Vector3.new(0, base.Size.Y/2, 0)\n  hinge.Attachment1 = Instance.new(\"Attachment\")\n  hinge.Attachment1.Parent = lid\n  hinge.Attachment1.Position = Vector3.new(0, -lid.Size.Y/2, 0)\n  hinge.LimitsEnabled = true\n  hinge.UpperAngle = math.rad(90)\n  hinge.Parent = chest\n  local lock = Instance.new(\"Part\")\n  lock.Size = Vector3.new(0.5, 0.5, 0.5)\n  lock.BrickColor = BrickColor.new(\"Gold\")\n  lock.Position = base.Position + Vector3.new(2.5, 0, 0)\n  lock.Anchored = true\n  lock.Parent = chest\n  chest.Parent = workspace\nend)"
+    },
+    {
+        "name": "Fishing Hut",
+        "description": "A small, cozy lakeside fishing hut with a dock, fishing rod rack, and open front for waterfront builds.",
+        "metadata": {
+            "category": "Residential Decorative Builds",
+            "style": "Rural Frontier",
+            "difficulty": "Medium"
+        },
+        "luau_source": "-- Fishing Hut Build Generator\nlocal Tool = script.Parent\nlocal Players = game:GetService(\"Players\")\nlocal LocalPlayer = Players.LocalPlayer\n\nTool.Activated:Connect(function()\n  local hut = Instance.new(\"Model\")\n  hut.Name = \"FishingHut\"\n  local wall1 = Instance.new(\"Part\")\n  wall1.Size = Vector3.new(6, 4, 0.5)\n  wall1.BrickColor = BrickColor.new(\"Dark green\")\n  wall1.Position = Vector3.new(0, 2, 0)\n  wall1.Anchored = true\n  wall1.Parent = hut\n  local wall2 = wall1:Clone()\n  wall2.Position = Vector3.new(0, 2, 4)\n  wall2.Parent = hut\n  local sideWall1 = Instance.new(\"Part\")\n  sideWall1.Size = Vector3.new(0.5, 4, 4)\n  sideWall1.BrickColor = BrickColor.new(\"Dark green\")\n  sideWall1.Position = Vector3.new(-3, 2, 2)\n  sideWall1.Anchored = true\n  sideWall1.Parent = hut\n  local roof = Instance.new(\"WedgePart\")\n  roof.Size = Vector3.new(7, 3, 5)\n  roof.BrickColor = BrickColor.new(\"Brown\")\n  roof.Position = Vector3.new(0, 4 + 1.5, 2)\n  roof.Anchored = true\n  roof.Parent = hut\n  local dock = Instance.new(\"Part\")\n  dock.Size = Vector3.new(8, 0.2, 3)\n  dock.BrickColor = BrickColor.new(\"Medium wood\")\n  dock.Position = Vector3.new(0, 0, 2)\n  dock.Anchored = true\n  dock.Parent = hut\n  local rack = Instance.new(\"Part\")\n  rack.Size = Vector3.new(2, 0.2, 0.5)\n  rack.BrickColor = BrickColor.new(\"Dark gray\")\n  rack.Position = Vector3.new(-2, 3, 2)\n  rack.Anchored = true\n  rack.Parent = hut\n  for i = 1, 3 do\n    local rod = Instance.new(\"Part\")\n    rod.Size = Vector3.new(0.2, 2, 0.2)\n    rod.BrickColor = BrickColor.new(\"Wood\")\n    rod.Position = Vector3.new(-2.5 + i*0.5, 4, 2)\n    rod.Anchored = true\n    rod.Parent = hut\n  end\n  hut.Parent = workspace\nend)"
+    },
+    {
+        "name": "Waterfall",
+        "description": "A layered natural waterfall with cascading water particles, rocky ledges, and a pool below for landscape landscaping builds.",
+        "metadata": {
+            "category": "Landscaping Builds",
+            "style": "Natural Outdoor",
+            "difficulty": "Medium"
+        },
+        "luau_source": "-- Waterfall Landscape Builder\nlocal Tool = script.Parent\nlocal Players = game:GetService(\"Players\")\nlocal LocalPlayer = Players.LocalPlayer\nlocal Workspace = game:GetService(\"Workspace\")\nlocal ParticleService = game:GetService(\"ParticleService\")\n\nTool.Activated:Connect(function()\n  local waterfall = Instance.new(\"Model\")\n  waterfall.Name = \"Waterfall\"\n  local topLedge = Instance.new(\"Part\")\n  topLedge.Size = Vector3.new(10, 1, 8)\n  topLedge.BrickColor = BrickColor.new(\"Medium stone gray\")\n  topLedge.Position = Vector3.new(0, 10, 0)\n  topLedge.Anchored = true\n  topLedge.Parent = waterfall\n  local waterParticle = Instance.new(\"ParticleEmitter\")\n  waterParticle.Texture = \"rbxassetid://154969920\"\n  waterParticle.Rate = 500\n  waterParticle.Lifetime = NumberRange.new(0.5, 1.5)\n  waterParticle.Speed = NumberRange.new(5, 10)\n  waterParticle.Offset = Vector3.new(-4, 0, -3)\n  waterParticle.EmissionDirection = Enum.NormalId.Bottom\n  waterParticle.Parent = topLedge\n  for i = 1, 3 do\n    local ledge = Instance.new(\"Part\")\n    ledge.Size = Vector3.new(8, 1, 6)\n    ledge.BrickColor = BrickColor.new(\"Medium stone gray\")\n    ledge.Position = Vector3.new(0, 10 - i*3, i*2)\n    ledge.Anchored = true\n    ledge.Parent = waterfall\n  end\n  local pool = Instance.new(\"Part\")\n  pool.Size = Vector3.new(15, 0.5, 12)\n  pool.BrickColor = BrickColor.new(\"Deep blue\")\n  pool.Position = Vector3.new(0, 0, 4)\n  pool.Anchored = true\n  pool.Parent = waterfall\n  waterfall.Parent = workspace\nend)"
+    },
+    {
+        "name": "Treehouse",
+        "description": "A elevated treehouse built around a large trunk, with wooden platforms, rope ladders, and a roof for woodland fantasy builds.",
+        "metadata": {
+            "category": "Residential Structural Builds",
+            "style": "Woodland Fantasy",
+            "difficulty": "Medium"
+        },
+        "luau_source": "-- Treehouse Build Generator\nlocal Tool = script.Parent\nlocal Players = game:GetService(\"Players\")\nlocal LocalPlayer = Players.LocalPlayer\n\nTool.Activated:Connect(function()\n  local treehouse = Instance.new(\"Model\")\n  treehouse.Name = \"Treehouse\"\n  local trunk = Instance.new(\"Part\")\n  trunk.Size = Vector3.new(4, 12, 4)\n  trunk.BrickColor = BrickColor.new(\"Brown\")\n  trunk.Position = Vector3.new(0, 6, 0)\n  trunk.Anchored = true\n  trunk.Parent = treehouse\n  local platform = Instance.new(\"Part\")\n  platform.Size = Vector3.new(8, 0.5, 8)\n  platform.BrickColor = BrickColor.new(\"Medium wood\")\n  platform.Position = Vector3.new(0, trunk.Size.Y + 0.25, 0)\n  platform.Anchored = true\n  platform.Parent = treehouse\n  local wallPositions = {\n    Vector3.new(0, platform.Position.Y + 1.5, 4),\n    Vector3.new(0, platform.Position.Y + 1.5, -4),\n    Vector3.new(4, platform.Position.Y + 1.5, 0),\n    Vector3.new(-4, platform.Position.Y + 1.5, 0)\n  }\n  for _, pos in ipairs(wallPositions) do\n    local wall = Instance.new(\"Part\")\n    wall.Size = Vector3.new(8, 3, 0.5)\n    if pos.X ~= 0 then wall.Size = Vector3.new(0.5, 3, 8) end\n    wall.BrickColor = BrickColor.new(\"Dark green\")\n    wall.Position = pos\n    wall.Anchored = true\n    wall.Parent = treehouse\n  end\n  local roof = Instance.new(\"WedgePart\")\n  roof.Size = Vector3.new(9, 4, 9)\n  roof.BrickColor = BrickColor.new(\"Brown\")\n  roof.Position = Vector3.new(0, platform.Position.Y + 3 + 2, 0)\n  roof.Anchored = true\n  roof.Parent = treehouse\n  for i = 1, 5 do\n    local rung = Instance.new(\"Part\")\n    rung.Size = Vector3.new(0.5, 0.2, 2)\n    rung.BrickColor = BrickColor.new(\"Medium wood\")\n    rung.Position = Vector3.new(3, platform.Position.Y - i*1, 0)\n    rung.Anchored = true\n    rung.Parent = treehouse\n  end\n  treehouse.Parent = workspace\nend)"
+    },
+    {
+        "name": "Gatehouse",
+        "description": "A fortified castle gatehouse with a drawbridge, portcullis, and guard towers for defensive fortress builds.",
+        "metadata": {
+            "category": "Fortification Structural Builds",
+            "style": "Medieval Gothic",
+            "difficulty": "Hard"
+        },
+        "luau_source": "-- Gatehouse Fort Build Tool\nlocal Tool = script.Parent\nlocal Players = game:GetService(\"Players\")\nlocal LocalPlayer = Players.LocalPlayer\n\nTool.Activated:Connect(function()\n  local gatehouse = Instance.new(\"Model\")\n  gatehouse.Name = \"Gatehouse\"\n  local arch = Instance.new(\"Part\")\n  arch.Size = Vector3.new(10, 6, 3)\n  arch.BrickColor = BrickColor.new(\"Medium gray\")\n  arch.Position = Vector3.new(0, 3, 0)\n  arch.Anchored = true\n  arch.Parent = gatehouse\n  local leftTower = Instance.new(\"Part\")\n  leftTower.Size = Vector3.new(4, 8, 4)\n  leftTower.BrickColor = BrickColor.new(\"Medium gray\")\n  leftTower.Position = Vector3.new(-7, 4, 0)\n  leftTower.Anchored = true\n  leftTower.Parent = gatehouse\n  local rightTower = leftTower:Clone()\n  rightTower.Position = Vector3.new(7, 4, 0)\n  rightTower.Parent = gatehouse\n  local portcullis = Instance.new(\"Part\")\n  portcullis.Size = Vector3.new(8, 3, 0.5)\n  portcullis.BrickColor = BrickColor.new(\"Dark gray\")\n  portcullis.Position = Vector3.new(0, 6, 1.5)\n  portcullis.Anchored = false\n  local liftConstraint = Instance.new(\"RodConstraint\")\n  liftConstraint.Attachment0 = Instance.new(\"Attachment\")\n  liftConstraint.Attachment0.Parent = portcullis\n  liftConstraint.Attachment0.Position = Vector3.new(0, 2, 0)\n  liftConstraint.Attachment1 = Instance.new(\"Attachment\")\n  liftConstraint.Attachment1.Parent = arch\n  liftConstraint.Attachment1.Position = Vector3.new(0, 3, 1.5)\n  liftConstraint.Length = 3\n  liftConstraint.Parent = portcullis\n  portcullis.Parent = gatehouse\n  local leftDoor = Instance.new(\"Part\")\n  leftDoor.Size = Vector3.new(3, 6, 0.5)\n  leftDoor.BrickColor = BrickColor.new(\"Dark gray\")\n  leftDoor.Position = Vector3.new(-2, 3, 1.5)\n  leftDoor.Anchored = false\n  leftDoor.Parent = gatehouse\n  local rightDoor = leftDoor:Clone()\n  rightDoor.Position = Vector3.new(2, 3, 1.5)\n  rightDoor.Parent = gatehouse\n  gatehouse.Parent = workspace\nend)"
+    },
+    {
+        "name": "Brass Telescope",
+        "description": "A decorative brass telescope mounted on a wooden tripod, perfect for lookout points or vintage wilderness decor.",
+        "metadata": {
+            "category": "Decorative Functional Builds",
+            "style": "Victorian Frontier",
+            "difficulty": "Easy"
+        },
+        "luau_source": "-- Brass Telescope Build Tool\nlocal Tool = script.Parent\nlocal Players = game:GetService(\"Players\")\nlocal LocalPlayer = Players.LocalPlayer\nlocal Mouse = LocalPlayer:GetMouse()\n\nTool.Activated:Connect(function()\n  local telescope = Instance.new(\"Model\")\n  telescope.Name = \"BrassTelescope\"\n  for i = 1, 3 do\n    local leg = Instance.new(\"Part\")\n    leg.Size = Vector3.new(0.5, 6, 0.5)\n    leg.BrickColor = BrickColor.new(\"Medium wood\")\n    local angle = math.rad(i * 120)\n    leg.Position = Vector3.new(math.cos(angle)*2, 3, math.sin(angle)*2)\n    leg.Anchored = true\n    leg.Parent = telescope\n  end\n  local joint = Instance.new(\"Part\")\n  joint.Size = Vector3.new(1, 1, 1)\n  joint.BrickColor = BrickColor.new(\"Dark gray\")\n  joint.Position = Vector3.new(0, 6, 0)\n  joint.Anchored = true\n  joint.Parent = telescope\n  local barrel = Instance.new(\"Part\")\n  barrel.Size = Vector3.new(4, 0.5, 0.5)\n  barrel.BrickColor = BrickColor.new(\"Gold\")\n  barrel.Position = Vector3.new(0, 7, 0)\n  barrel.Anchored = false\n  local hinge = Instance.new(\"HingeConstraint\")\n  hinge.Attachment0 = Instance.new(\"Attachment\")\n  hinge.Attachment0.Parent = joint\n  hinge.Attachment0.Position = Vector3.new(0, 0.5, 0)\n  hinge.Attachment1 = Instance.new(\"Attachment\")\n  hinge.Attachment1.Parent = barrel\n  hinge.Attachment1.Position = Vector3.new(0, -0.25, 0)\n  hinge.Parent = barrel\n  barrel.Parent = telescope\n  local lens = Instance.new(\"Part\")\n  lens.Size = Vector3.new(0.6, 0.1, 0.6)\n  lens.BrickColor = BrickColor.new(\"Black\")\n  lens.Position = barrel.Position + Vector3.new(2, 0, 0)\n  lens.Anchored = true\n  lens.Parent = telescope\n  telescope.Parent = workspace\nend)"
+    },
+    {
+        "name": "Lantern Row",
+        "description": "A string of decorative iron lanterns mounted on posts, perfect for lighting up village streets, castle walls, or waterfront paths.",
+        "metadata": {
+            "category": "Decorative Lighting Builds",
+            "style": "Medieval / Industrial",
+            "difficulty": "Easy"
+        },
+        "luau_source": "-- Lantern Row Build Generator\nlocal Tool = script.Parent\nlocal Players = game:GetService(\"Players\")\nlocal LocalPlayer = Players.LocalPlayer\nlocal Mouse = LocalPlayer:GetMouse()\n\nTool.Activated:Connect(function()\n  local lanternRow = Instance.new(\"Model\")\n  lanternRow.Name = \"LanternRow\"\n  local startPos = Mouse.Hit.Position\n  local endPos = Vector3.new(startPos.X + 20, startPos.Y, startPos.Z)\n  local segmentCount = 10\n  for i = 0, segmentCount do\n    local currentPos = startPos:Lerp(endPos, i / segmentCount)\n    local post = Instance.new(\"Part\")\n    post.Size = Vector3.new(0.2, 5, 0.2)\n    post.BrickColor = BrickColor.new(\"Black\")\n    post.Position = Vector3.new(currentPos.X, 2.5, currentPos.Z)\n    post.Anchored = true\n    post.Parent = lanternRow\n    local lantern = Instance.new(\"Part\")\n    lantern.Size = Vector3.new(1, 1, 1)\n    lantern.BrickColor = BrickColor.new(\"Gold\")\n    lantern.Position = Vector3.new(currentPos.X, 5, currentPos.Z)\n    lantern.Anchored = true\n    lantern.Parent = lanternRow\n    local light = Instance.new(\"PointLight\")\n    light.Brightness = 2\n    light.Range = 15\n    light.Color = Color3.new(1, 0.8, 0.4)\n    light.Parent = lantern\n  end\n  lanternRow.Parent = workspace\nend)"
+    },
+    {
+        "name": "Scarecrow",
+        "description": "A field scarecrow made of straw, wooden poles, and old clothes to deter crop pests for farm or rural builds.",
+        "metadata": {
+            "category": "Decorative Farm Builds",
+            "style": "Rural Folk",
+            "difficulty": "Easy"
+        },
+        "luau_source": "-- Scarecrow Build Tool\nlocal Tool = script.Parent\nlocal Players = game:GetService(\"Players\")\nlocal LocalPlayer = Players.LocalPlayer\nlocal Mouse = LocalPlayer:GetMouse()\n\nTool.Activated:Connect(function()\n  local scarecrow = Instance.new(\"Model\")\n  scarecrow.Name = \"Scarecrow\"\n  local pole = Instance.new(\"Part\")\n  pole.Size = Vector3.new(0.2, 8, 0.2)\n  pole.BrickColor = BrickColor.new(\"Brown\")\n  pole.Position = Vector3.new(Mouse.Hit.X, 4, Mouse.Hit.Z)\n  pole.Anchored = true\n  pole.Parent = scarecrow\n  local crossbar = Instance.new(\"Part\")\n  crossbar.Size = Vector3.new(2, 0.2, 0.2)\n  crossbar.BrickColor = BrickColor.new(\"Brown\")\n  crossbar.Position = Vector3.new(Mouse.Hit.X, 7, Mouse.Hit.Z)\n  crossbar.Anchored = true\n  crossbar.Parent = scarecrow\n  local body = Instance.new(\"Part\")\n  body.Size = Vector3.new(2, 2, 1)\n  body.BrickColor = BrickColor.new(\"Medium straw\")\n  body.Position = Vector3.new(Mouse.Hit.X, 5.5, Mouse.Hit.Z)\n  body.Anchored = true\n  body.Parent = scarecrow\n  local head = Instance.new(\"SpherePart\")\n  head.Size = Vector3.new(1, 1, 1)\n  head.BrickColor = BrickColor.new(\"Tan\")\n  head.Position = Vector3.new(Mouse.Hit.X, 8, Mouse.Hit.Z)\n  head.Anchored = true\n  head.Parent = scarecrow\n  local eye1 = Instance.new(\"Part\")\n  eye1.Size = Vector3.new(0.2, 0.2, 0.2)\n  eye1.BrickColor = BrickColor.new(\"Black\")\n  eye1.Position = Vector3.new(Mouse.Hit.X - 0.3, 8.1, Mouse.Hit.Z + 0.3)\n  eye1.Anchored = true\n  eye1.Parent = scarecrow\n  local eye2 = eye1:Clone()\n  eye2.Position = Vector3.new(Mouse.Hit.X + 0.3, 8.1, Mouse.Hit.Z + 0.3)\n  eye2.Parent = scarecrow\n  local shirt = Instance.new(\"Part\")\n  shirt.Size = Vector3.new(2.2, 1.5, 0.5)\n  shirt.BrickColor = BrickColor.new(\"Dark blue\")\n  shirt.Position = Vector3.new(Mouse.Hit.X, 5.5, Mouse.Hit.Z + 0.3)\n  shirt.Anchored = true\n  shirt.Parent = scarecrow\n  scarecrow.Parent = workspace\nend)"
+    },
+    {
+        "name": "Well",
+        "description": "A traditional stone village well with a wooden bucket and pulley system for rural village or farm builds.",
+        "metadata": {
+            "category": "Functional Decorative Builds",
+            "style": "Medieval Rural",
+            "difficulty": "Medium"
+        },
+        "luau_source": "-- Village Well Build Generator\nlocal Tool = script.Parent\nlocal Players = game:GetService(\"Players\")\nlocal LocalPlayer = Players.LocalPlayer\n\nTool.Activated:Connect(function()\n  local well = Instance.new(\"Model\")\n  well.Name = \"VillageWell\"\n  local baseRing = Instance.new(\"Part\")\n  baseRing.Size = Vector3.new(8, 1, 8)\n  baseRing.BrickColor = BrickColor.new(\"Medium gray\")\n  baseRing.Position = Vector3.new(0, 0.5, 0)\n  baseRing.Anchored = true\n  baseRing.Parent = well\n  local shaft = Instance.new(\"Part\")\n  shaft.Size = Vector3.new(6, 4, 6)\n  shaft.BrickColor = BrickColor.new(\"Dark gray\")\n  shaft.Position = Vector3.new(0, 3, 0)\n  shaft.Anchored = true\n  shaft.Parent = well\n  local frame = Instance.new(\"Part\")\n  frame.Size = Vector3.new(4, 2, 4)\n  frame.BrickColor = BrickColor.new(\"Medium wood\")\n  frame.Position = Vector3.new(0, 6, 0)\n  frame.Anchored = true\n  frame.Parent = well\n  local pulley = Instance.new(\"Part\")\n  pulley.Size = Vector3.new(0.5, 0.5, 0.5)\n  pulley.BrickColor = BrickColor.new(\"Black\")\n  pulley.Position = Vector3.new(0, 7, 0)\n  pulley.Anchored = true\n  pulley.Parent = well\n  local bucket = Instance.new(\"Part\")\n  bucket.Size = Vector3.new(1.5, 1.5, 1.5)\n  bucket.BrickColor = BrickColor.new(\"Brown\")\n  bucket.Position = Vector3.new(0, 2, 0)\n  bucket.Anchored = false\n  local rope = Instance.new(\"RopeConstraint\")\n  rope.Attachment0 = Instance.new(\"Attachment\")\n  rope.Attachment0.Parent = bucket\n  rope.Attachment0.Position = Vector3.new(0, 0.75, 0)\n  rope.Attachment1 = Instance.new(\"Attachment\")\n  rope.Attachment1.Parent = pulley\n  rope.Attachment1.Position = Vector3.new(0,0,0)\n  rope.Length = 5\n  rope.Parent = well\n  bucket.Parent = well\n  well.Parent = workspace\nend)"
+    },
+    {
+        "name": "Barricade",
+        "description": "A quick-deploy wooden barricade with sharpened stakes and planks for defensive combat builds or emergency base defenses.",
+        "metadata": {
+            "category": "Fortification Decorative Builds",
+            "style": "Modern / Medieval",
+            "difficulty": "Easy"
+        },
+        "luau_source": "-- Barricade Build Tool\nlocal Tool = script.Parent\nlocal Players = game:GetService(\"Players\")\nlocal LocalPlayer = Players.LocalPlayer\nlocal Mouse = LocalPlayer:GetMouse()\n\nTool.Activated:Connect(function()\n  local barricade = Instance.new(\"Model\")\n  barricade.Name = \"Barricade\"\n  local topPlank = Instance.new(\"Part\")\n  topPlank.Size = Vector3.new(4, 0.2, 1)\n  topPlank.BrickColor = BrickColor.new(\"Medium wood\")\n  topPlank.Position = Vector3.new(Mouse.Hit.X, 2, Mouse.Hit.Z)\n  topPlank
