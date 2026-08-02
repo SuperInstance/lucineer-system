@@ -1,0 +1,492 @@
+• The user wants me to deliver three concrete artifacts:
+  1. VISUAL_POLISH.md in /home/eileen/projects/lucineer-system/
+  2. build_templates_v2.py in /home/eileen/projects/lucineer-worker/
+  3. SPATIAL_GRAMMAR_v2.md in /home/eileen/projects/lucineer-system/
+
+  There are no AGENTS.md constraints. I need to be practical and create these files. Let me first check if the worker directory exists. Also I should perhaps read the existing VISUAL_POLISH.md since it's already in the directory tree (the user said "write to" but it may already exist). Also look at roundtable.py maybe for command format, and other briefs. Let me inspect the existing files to understand command format and current style. I'll parallel read existing relevant files: roundtable.py, VISUAL_POLISH.md, KIMI_BRIEF.md, maybe CLAUDE_CODE_BRIEF.md. Also check if lucineer-worker directory exists.
+
+• I’ll start by inspecting the existing project files and the worker directory so the new artifacts match the current command format.total 1652
+drwxrwxr-x  7 eileen eileen   4096 Aug  2 07:18 .
+drwxrwxr-x 10 eileen eileen   4096 Aug  2 07:11 ..
+drwxrwxr-x  7 eileen eileen   4096 Aug  2 05:12 .git
+-rw-rw-r--  1 eileen eileen     41 Aug  1 22:26 .gitignore
+drwxrwxr-x  3 eileen eileen   4096 Aug  1 17:56 .wrangler
+-rw-rw-r--  1 eileen eileen    562 Aug  1 22:26 README.md
+drwxrwxr-x  2 eileen eileen   4096 Aug  2 07:19 __pycache__
+-rw-rw-r--  1 eileen eileen  30722 Aug  2 07:18 build_templates_v2.py
+drwxrwxr-x 94 eileen eileen   4096 Aug  1 17:55 node_modules
+-rw-rw-r--  1 eileen eileen 134018 Aug  1 17:55 package-lock.json
+-rw-rw-r--  1 eileen eileen    345 Aug  1 17:55 package.json
+-rwxrwxr-x  1 eileen eileen  43905 Aug  1 22:33 process-jobs.sh
+-rw-rw-r--  1 eileen eileen  25836 Aug  2 04:59 process.py
+-rw-rw-r--  1 eileen eileen  33023 Aug  2 05:04 process_v2.py
+-rw-rw-r--  1 eileen eileen 802245 Aug  2 05:04 processor.log
+-rwxrwxr-x  1 eileen eileen    208 Aug  1 22:33 run-processor.sh
+drwxrwxr-x  3 eileen eileen   4096 Aug  1 17:55 src
+-rw-rw-r--  1 eileen eileen    457 Aug  1 17:55 tsconfig.json
+-rw-rw-r--  1 eileen eileen 551218 Aug  1 17:55 worker-configuration.d.ts
+-rw-rw-r--  1 eileen eileen    671 Aug  1 17:54 wrangler.jsonc
+
+
+• Interesting: VISUAL_POLISH.md already exists with detailed content. The user asks to "write to" VISUAL_POLISH.md. Should I overwrite or enhance? It looks like a previous round may have already created it, but user's deliverable says define it. Since file exists, I should probably replace/update with a more polished/comprehensive version, but must avoid losing good content. Also build_templates_v2.py already exists in worker directory; need to read it to see current state. Need to create SPATIAL_GRAMMAR_v2.md (not present).
+
+  Also need to ensure build_templates_v2.py uses exact command schema, maybe includes palette constants, functions for top 5 templates producing 15-25 commands. Since file already exists at 30k, likely someone already wrote it. Need to read it, evaluate if it satisfies requirements, rewrite if needed.
+
+  Let me read build_templates_v2.py fully or partially. Also maybe process.py / process_v2.py for how templates are called. But primary deliverable is build_templates_v2.py. Need to also read worker README? Not necessary.
+
+  Let's read build_templates_v2.py and perhaps process_v2.py for integration.The build_templates_v2.py already exists and is fairly comprehensive. The user explicitly says "write to /home/eileen/projects/lucineer-worker/build_templates_v2.py" and "Rewrite the top 5 most impactful templates". Since it's already done, perhaps I need to ensure it meets all requirements. It produces command counts: let's run to see counts. The file likely satisfies 15-25 commands? Let's count manually. Castle: courtyard 1 + foundations 4 + towers: 4 bases + 4 tops + 4 roofs + 16 crenels = 28? Wait crenellations per tower 4 angles = 16. Wall segments 4. Gatehouse 4. Keep 3. Banners 2. Torches: 2 torch parts + 2 lights + 1 beacon part + 1 beacon light + well 2 + particle 1 + message 1 = ~46 commands? That's more than 25. The requirement says each should produce 15-25 commands. Castle currently maybe ~41 not counting message. Need to reduce? The user says "Each should produce 15-25 commands (up from 5-10)." So current templates produce too many. We should tighten to 15-25. But maybe current counts include many small parts. Need to rewrite to be within 15-25 commands while still dramatically better. Use grouping? But the command schema createPart is per part; can't group multiple crenels in one part unless using a single part for all crenellations (like a thin trim block) maybe. We can reduce detail counts by making detail rows as single parts, not per element. Need to maintain visual impact though.
+
+  Also need to create SPATIAL_GRAMMAR_v2.md. And VISUAL_POLISH.md exists, but perhaps we can enrich/rewrite it. The existing one is good, maybe we can keep and expand. User asked "write to /home/eileen/projects/lucineer-system/VISUAL_POLISH.md". Could overwrite with a more refined version. It already has good specifics. But if we overwrite, preserve its content and maybe add sections like Texture IDs, more precise style guide, implementation contract, etc. Maybe combine with additional material.
+
+  The build_templates_v2.py already in worker. Need to rewrite to satisfy command count. Also check command schema: Does the existing part function use canCollide with capital C? It outputs "canCollide" yes. addLight uses lightType, brightness, range, color, shadows, angle optional. addParticle uses parent, texture, rate, lifetime min max, speed min max, color, size min max, transparency, velocity. Is this the canonical schema? We don't have executor code, but VISUAL_POLISH.md sample addLight matches. addParticle sample includes parent texture rate lifetime speed color size transparency; velocity maybe extra. Should be okay.
+
+  We should also integrate with process_v2.py? The deliverable only the file. But maybe it should be importable. Existing TEMPLATES_V2 returns (message, commands). Good.
+
+  Need to create SPATIAL_GRAMMAR_v2.md with actual code. Need to be specific about decomposition, positioning rules, scale relationships, style modifiers. Include Python functions maybe.
+
+  Plan:
+  1. Update VISUAL_POLISH.md: enrich but keep content. Possibly add "Texture Asset IDs", "Roblox Lighting Setup", "Material/BrickColor quick reference", "Style modifier implementation" etc. But careful not to bloat. The current file is 262 lines. The user wants exact combos. I think it's already good; we can add a section "9. Integration with build_templates_v2.py" and "10. Validation Checklist". Also maybe add BrickColor names for each RGB. Already includes names. Maybe add hex. Ensure "Magical/fantasy" includes all specifics. We can rewrite with a bit more polished structure and include additional specifics like Reflectance values. Also perhaps add "The Southeast Alaska Scrap Aesthetic" as part of style guide; user didn't specifically mention that but existing has industrial scrap. Fine.
+
+  However, since the existing VISUAL_POLISH.md likely already from a previous model and may be considered done. The user's request might be to produce it now. But since it exists, should I produce a fresh version? I think yes, to ensure it reflects exactly the deliverable. We can write a comprehensive version that is at least as good. It may be a complete overwrite. Fine.
+
+  2. Rewrite build_templates_v2.py with exactly 15-25 commands per template. Need to keep top 5 functions and palettes, helpers, dispatcher. Need to reduce number of parts. Let's design each template with ~18-22 commands. Must include multiple materials, neon accents, transparency, varied colors, particles, lights. Need to meet the style guide.
+
+  Let's design each:
+
+  Castle: 
+  - Courtyard floor (1)
+  - Foundation ring maybe one block (instead of 4) (1)
+  - 4 corner towers: Could combine base+roof per tower? To reduce, perhaps use 4 tower parts (Cylinder) and 4 conical roofs (1 each). No separate tops? Keep simple. (8)
+  - 4 walls (4) 
+  - Gatehouse: left/right/top (3)
+  - Portcullis (1)
+  - Keep + roof (2)
+  - Banners (2)
+  - Gate torch + light (2)
+  - Beacon/hero light maybe torch? Need primary hero and secondary accent. We have gate torch and keep torch? Add a keep torch + light (2)
+  - Well (2)
+  - Particle (1)
+  - Message (1)
+  Total = 1+1+8+4+3+1+2+2+2+2+2+1+1 = 28? Wait count: courtyard 1, foundation 1=2, towers 8=10, walls 4=14, gate L/R/top 3=17, portcullis 1=18, keep+roof 2=20, banners 2=22, gate torch+light 2=24, keep torch+light 2=26, well 2=28, particle 1=29, message 1=30. Too many. Reduce: combine walls into 4 (must). Combine foundation with courtyard? Could skip separate foundation, use trim around courtyard. Or skip well. Or skip keep. To get ~20, remove keep (2) and foundation (1) maybe: 27? Hmm.
+
+  Maybe reduce towers: 4 corner towers as single cylinders + roofs (8). Could group all 4 crenellations into one thin torus? Not available shape. Could omit crenellations. We can use a "battlements" single block ring around top? But battlements need gaps. Simpler: omit crenellations.
+
+  Let's target 20 commands:
+  1. Courtyard floor
+  2. Foundation skirt (single large block)
+  3. Tower1 base
+  4. Tower2 base
+  5. Tower3 base
+  6. Tower4 base
+  7. Tower roof1 (cone)
+  8. Tower roof2
+  9. Tower roof3
+  10. Tower roof4
+  11. WallN
+  12. WallS
+  13. WallW
+  14. WallE
+  15. Gatehouse (maybe single block?) Gate detail: 1 part? Could use one block as gate arch and portcullis.
+  16. Portcullis
+  17. BannerL
+  18. BannerR
+  19. Gate torch + light
+  20. Keep torch + light
+  21. Well ring + water? Could be 1 well part.
+  22. Particle
+  23. Message
+  This is ~23. Good. Need hero light and accent light: gate torch hero, keep torch accent. Fine. Multiple materials: Slate, Cobblestone, Concrete, Neon, Metal, Wood, Glass. Good.
+
+  But visually, no keep. Maybe replace one wall with keep? Could have keep as central tower. Maybe better: 3 towers? The requirement says "inner courtyard" and "gate detail", not necessarily keep. We'll include a central keep (2) and reduce towers to 3? Hmm. Let's just keep castle with 4 towers, gate, banners, torches, well. That's fine.
+
+  House:
+  Commands:
+  1. Foundation
+  2. Floor
+  3. WallN
+  4. WallS
+  5. WallW
+  6. WallE
+  7. RoofL (shingle row) maybe one large wedge? No wedge; use Block rotated. We can have left roof (1), right roof (1), ridge (1).
+  8. RoofR
+  9. Ridge
+  10. Chimney
+  11. Chimney top
+  12. Door
+  13. Door frame
+  14. Window glass front
+  15. Window glow front
+  16. Window light
+  17. Flower box
+  18. Flower cluster (1 part representing multiple flowers? Use a single neon block)
+  19. Steps
+  20. Chimney smoke particle
+  21. Message
+  That's 21. Need 3+ materials: Wood, WoodPlanks, Stone, Glass, Neon. Good. Hero light: window glow+light. Accent light? Maybe add a porch lantern? To keep count, use window as hero and a second window? Add side window glow+light would add 2. We need at least one accent. Could add a second window at side with glow+light (2) and maybe omit flower cluster? Let's include two windows with glow and lights = 6 commands, but count increases. We can combine front window into one? Requirement window glow. We can have one window. Accent light could be chimney? No. Add a small porch light. Maybe door frame with a lantern part + light (2). That would add. Let's design with ~22 commands:
+  1 Foundation
+  2 Floor
+  3 WallN
+  4 WallS
+  5 WallW
+  6 WallE
+  7 RoofL
+  8 RoofR
+  9 Ridge
+  10 Chimney
+  11 ChimneyTop
+  12 Door
+  13 DoorFrame
+  14 FrontWindowGlass
+  15 FrontWindowGlow
+  16 FrontWindowLight
+  17 FlowerBox
+  18 Flowers (single neon block)
+  19 Steps
+  20 PorchLantern
+  21 PorchLanternLight
+  22 ChimneySmoke
+  23 Message = 23. Good.
+
+  Alternatively combine door frame and door? Keep separate. Fine.
+
+  Lighthouse:
+  1 BaseRock
+  2 TowerRing1
+  3 TowerRing2
+  4 TowerRing3
+  5 TowerRing4 maybe 4 rings enough for stripes
+  6 Balcony
+  7 LanternRoom glass
+  8 Roof
+  9 Beacon neon ball
+  10 Beacon spotlight
+  11 Beam arm (rotating)
+  12 Dock deck
+  13 Dock pile1
+  14 Dock pile2 (maybe 2 enough)
+  15 Dock bollard1
+  16 Dock bollard2
+  17 Fog particle
+  18 Water spray particle
+  19 Message
+  =19. Good. Need multiple materials: Slate, Concrete, CorrodedMetal, Glass, Neon, WoodPlanks. Good. Hero light beacon, accent light maybe? Only one light. Requirement says one hero + one accent. Add a small dock lamp? Could add DockLamp + light (2). Then 21. Fine.
+
+  Forge:
+  1 Foundation
+  2 Floor
+  3 Back wall
+  4 Left wall
+  5 Right wall
+  6 Roof
+  7 Smokestack base
+  8 Smokestack
+  9 Coal bed neon
+  10 Anvil base
+  11 Anvil top
+  12 Workbench
+  13 Tool rack
+  14 Hero light: coal bed pointlight
+  15 Accent light: lantern part + light
+  16 Smoke particle
+  17 Ember particle
+  18 Message
+  =18. Good. Need 3+ materials: Basalt, Cobblestone, Metal, CorrodedMetal, Neon, Wood. Good.
+
+  Garden:
+  1 Ground
+  2 FenceN
+  3 FenceS
+  4 FenceW
+  5 FenceE (4 fence parts)
+  6 Planter1
+  7 Planter2
+  8 Planter3 (3 planters)
+  9 Path stones (maybe 1 part representing irregular stones? Use a single block? Better 3 stones)
+  10 Stone1
+  11 Stone2
+  12 Stone3
+  13 Fountain base
+  14 Fountain bowl
+  15 Fountain top
+  16 Tree trunk
+  17 Tree leaves
+  18 Flowers (1 cluster)
+  19 Crystal accent
+  20 Crystal light
+  21 Water spray particle
+  22 Butterfly particle
+  23 Message
+  =23. Good. Need 3+ materials: Grass, Ground, WoodPlanks, Slate, Glass/Neon, Wood. Good.
+
+  But command count requirement includes message? The existing file counts message as command. We'll keep count around 18-23 including message.
+
+  Need to write actual code. Ensure helper functions and palette. Ensure command counts. We can run validation.
+
+  3. SPATIAL_GRAMMAR_v2.md: Need actual code. We'll write a markdown with:
+  - Canonical command schema
+  - Decomposition algorithm with Python pseudo/actual code: parse compound request into sub-builds using keywords and priority.
+  - Layout engine: grid/zone allocation with bounding boxes, spacing.
+  - Scale relationships table and Python SCALE dict.
+  - Style modifiers: mapping to palette overrides; Python function `apply_style(modifiers, commands)`.
+  - Collision/overlap rules.
+  - Integration with process_v2.py example.
+  - Example: "haunted castle with a garden and dock".
+  Should be concrete.
+
+  Also maybe mention connection to build_templates_v2.py TEMPLATES_V2.
+
+  Need to decide whether to use EnterPlanMode. The task is non-trivial implementation with multiple files. Auto permission mode says ExitPlanMode auto-approved but not a signal to start executing. However user already explicitly asked to deliver. We can proceed. We might use TodoList to track.
+
+  Given existing files, we need to:
+  - Read process_v2.py maybe for integration details. Let's quickly inspect process_v2.py to see command format and how TEMPLATES_V2 is imported. It might help in spatial grammar integration.I see process_v2.py uses local basic templates. It imports? Actually at line 200+ maybe imports build_templates_v2? Let's read further.Need to see if process_v2.py imports build_templates_v2. It doesn't at top, but maybe later. It defines its own basic templates. It may not use build_templates_v2. The deliverable is just file. But maybe spatial grammar should integrate with process_v2.py. We can leave it. However, our build_templates_v2.py could be used if process_v2 imports. Not required.
+
+  Now we need to produce deliverables. Since VISUAL_POLISH.md already exists and good, I can update with a polished version. build_templates_v2.py already exists but command count too high; I will rewrite to 15-25 commands per template. SPATIAL_GRAMMAR_v2.md new.
+
+  Need to ensure final files are correct and validated. Use Python to run file and check counts. Also verify JSON serialization.
+
+  Potential issues:
+  - For castle crenellations: omit. But requirement says "crenellation details". Could represent crenellations with a single "CastleBattlements" block ring? Not exact. Maybe better to include 4 small crenellation blocks (one per tower) as a detail, still count manageable. Let's include them. We can have 4 crenel blocks, each at tower roof edge. That adds 4. With 23 target could go to 27. Need to trim elsewhere. Maybe combine foundation with courtyard? Could skip foundation (only courtyard floor) and rely on wall bases at ground. Or combine gate left/right/top into one gatehouse arch? Let's design castle with ~24 commands including message.
+
+  Detailed castle design:
+  1 CastleCourtyard (Block 34x1x34) Slate/Cobblestone
+  2 CastleTowerBase1 Cylinder (7,16,7) at (-14,-14) Slate
+  3 CastleTowerBase2 at (14,-14)
+  4 CastleTowerBase3 at (14,14)
+  5 CastleTowerBase4 at (-14,14)
+  6 CastleTowerRoof1 Cone (9,7,9) Wood tar
+  7 CastleTowerRoof2
+  8 CastleTowerRoof3
+  9 CastleTowerRoof4
+  10 CastleWallN Block (28,14,2) at z-18 Slate
+  11 CastleWallS at z+18
+  12 CastleWallW at x-18
+  13 CastleWallE at x+18
+  14 CastleGatehouse Block (12,12,3) at (0,6,z+18.5) Concrete trim - door opening? It's a solid block though. Better: gate left, gate right, top. That's 3. But can combine into 1 block plus portcullis. For visual, solid gatehouse is okay? The gate detail could be portcullis alone in front of wall. We can add a Portcullis part (Metal) and a GateTop (trim) above it. That's 2.
+  14 CastleGateTop Block (12,3,3) at z+19.5, y+11.5 Concrete
+  15 CastlePortcullis Block (6,8,0.5) at z+19 Metal iron
+  16 CastleBanner1 thin Neon red
+  17 CastleBanner2 thin Neon blue
+  18 CastleTorchGate Ball Neon + PointLight (add_light command) = 2 commands
+  19? Actually 18 is part, 19 is light.
+  19 CastleTorchKeep Ball + light = 2 commands
+  20 CastleWellRing Cylinder + water = 2 commands
+  21 CastleEmbers particle = 1
+  22 send_message = 1
+  Count: 1+8+4+2+2+2+4+2+1+1 = 27? Let's count: courtyard (1), towers base 4 (5), roofs 4 (9), walls 4 (13), gate top (14), portcullis (15), banners 2 (17), gate torch part+light (19), keep torch part+light (21), well 2 (23), particle (24), message (25). That's 25. Good! Wait we didn't count keep? We have two torches: gate torch (hero) and keep torch? I named CastleTorchKeep placed on wall maybe. Fine. 25 commands. Meets 15-25. Need at least one particle, yes. Multiple materials: Slate, Wood, Concrete, Metal, Neon, Glass. Good. Crenellation details: We didn't include separate crenellations. But we have portcullis and banners and torches and well. Requirement lists "banner accents, torch lighting, gate detail, inner courtyard". We have all. Crenellation not explicitly required in user list (but in original). Could add crenel ring around one tower? But count would exceed. We can instead make tower roofs have crenellations? Hmm. Requirement says "Multi-texture stone, banner accents, torch lighting, gate detail, inner courtyard". Good enough.
+
+  Alternatively, replace gate top + portcullis with a Gatehouse arch made of 3 parts. Count similar. Fine.
+
+  House design count:
+  1 HouseFoundation Block (18,1.5,14) Cobblestone
+  2 HouseFloor Block (16,1,12) WoodPlanks
+  3 HouseWallN (16,9,1) Wood beam
+  4 HouseWallS
+  5 HouseWallW
+  6 HouseWallE
+  7 HouseRoofL Block rotated (12,0.6,13) WoodPlanks aged
+  8 HouseRoofR
+  9 HouseRidge Block (17,0.8,2) Wood tar
+  10 HouseChimney Block (2.2,6,2.2) Concrete trim
+  11 HouseChimneyTop (2.6,1,2.6) Basalt shadow
+  12 HouseDoor Block (3.5,6,0.4) Wood aged
+  13 HouseDoorFrame Block (4,6.5,0.6) Wood tar
+  14 HouseWindowGlass Block (0.3,3,3) Glass
+  15 HouseWindowGlow Block Neon behind
+  16 HouseWindowLight addLight
+  17 HouseFlowerBox Block (3,0.8,1.2) Wood deck
+  18 HouseFlowers Block (2.5,0.6,0.5) Neon? Maybe a cluster block. Use random? Could use a single Ball scaled? But need flower colors varied. We can make 3 small flower balls but count. Instead use a single Neon block with bright color? Not ideal. Maybe flower box plus single flower cluster ball.
+  18 HouseFlowers Ball (2,1,1) Neon random color
+  19 HouseSteps Block (4,0.5,1.5) Concrete trim
+  20 HouseChimneySmoke particle
+  21 HousePorchLantern Ball Neon
+  22 HousePorchLight addLight
+  23 send_message
+  Count = 23. Good. Includes window glow, chimney smoke, flower box, stone foundation, shingles. Good. Multiple materials and 2 lights.
+
+  Lighthouse design count:
+  1 LightBaseRock Block (14,3,14) Cobblestone aged
+  2 LightTowerRing0 Cylinder (8,5,8) Slate base
+  3 LightTowerRing1 Cylinder (7.6,5,7.6) Concrete trim
+  4 LightTowerRing2 Cylinder (7.2,5,7.2) Slate
+  5 LightTowerRing3 Cylinder (6.8,5,6.8) Concrete
+  6 LightBalcony Cylinder (11,1.2,11) CorrodedMetal rust
+  7 LightRoom Cylinder (7,7,7) Glass
+  8 LightRoof Cone (9,5,9) Metal iron
+  9 LightBeacon Ball Neon
+  10 LightBeam SpotLight
+  11 LightBeamArm Block (1,1,16) Neon transparent
+  12 DockDeck Block (5,0.8,22) WoodPlanks
+  13 DockPile1 Cylinder (0.8,5,0.8) Wood aged
+  14 DockPile2 Cylinder (0.8,5,0.8)
+  15 DockBollard1 Cylinder (0.6,1.2,0.6) CorrodedMetal
+  16 DockBollard2
+  17 Fog particle
+  18 WaterSpray particle
+  19 send_message
+  Count = 19. Need one hero and one accent light. Only beacon spotlight. Add a dock lantern? To keep count ~21, add DockLantern + light. We can replace bollard2? No. Add 2. Count 21. Good. Could also add accent light in room? Let's add dock lantern.
+  17 DockLantern Ball Neon
+  18 DockLanternLight addLight
+  19 Fog
+  20 WaterSpray
+  21 Message
+  Count 21. Good.
+
+  Forge design count:
+  1 ForgeFoundation Block (18,2,14) Basalt shadow
+  2 ForgeFloor Block (16,0.8,12) Cobblestone aged
+  3 ForgeWallBack (16,10,1) Slate base
+  4 ForgeWallL (1,10,12)
+  5 ForgeWallR
+  6 ForgeRoof Block (18,1,14) CorrodedMetal rust
+  7 ForgeStackBase Cylinder (3.5,4,3.5) CorrodedMetal
+  8 ForgeStack Cylinder (2.5,12,2.5) CorrodedMetal
+  9 ForgeStackCap Cylinder (3,1,3) Metal iron
+  10 ForgeCoalBed Block (6,0.8,4) Neon dark red
+  11 ForgeEmbers Block (3,0.4,2) Neon hot orange? Could be a cluster.
+  12 ForgeAnvilBase Block (2,3,2) Wood beam
+  13 ForgeAnvilTop Block (2.4,1.2,1.4) Metal steel
+  14 ForgeWorkbench Block (5,1,2.5) WoodPlanks deck
+  15 ForgeToolRack Block (0.3,4,4) Metal iron + hot tool? We can combine rack and glowing tool into one part? Better separate but count. Let's include ForgeHotTool Block (0.2,2.5,0.2) Neon hot. So 16.
+  17 ForgeCoalLight addLight (PointLight ember)
+  18 ForgeLantern Ball Neon torch
+  19 ForgeLanternLight addLight
+  20 ForgeSmoke particle
+  21 ForgeEmber particle
+  22 send_message
+  Count = 22. Good. Multiple materials. Good.
+
+  Garden design count:
+  1 GardenGround Block (22,0.8,22) Grass
+  2 GardenFenceN (22,1.2,0.4) WoodPlanks
+  3 GardenFenceS
+  4 GardenFenceW (0.4,1.2,22)
+  5 GardenFenceE
+  6 GardenPlanter1 Block (5,1.2,5) Ground soil
+  7 GardenPlanter2
+  8 GardenPlanter3
+  9 GardenPlanterRim1 Block (5.4,0.4,5.4) Concrete trim
+  10 GardenPlanterRim2
+  11 GardenPlanterRim3
+  12 GardenStone1 irregular Slate
+  13 GardenStone2
+  14 GardenStone3
+  15 GardenFountainBase Cylinder (5,2,5) Concrete trim
+  16 GardenFountainBowl Cylinder (3.5,1.2,3.5) Slate
+  17 GardenFountainTop Ball (1.2) Glass water
+  18 GardenTreeTrunk Cylinder (1.2,7,1.2) Wood
+  19 GardenTreeLeaves Ball (6,6,6) LeafyGrass
+  20 GardenFlowers Block/Ball (2,0.8,2) Neon multi? Maybe one cluster.
+  21 GardenCrystal Ball Neon
+  22 GardenCrystalLight addLight
+  23 GardenWaterSpray particle
+  24 GardenButterflies particle
+  25 send_message
+  Count 25. Slightly high but okay. Could reduce by combining planter rims with planters? We can omit rims for 3 commands -> 22. But rims add detail. Maybe keep at 25 within range. Requirement says 15-25; 25 is borderline inclusive. Good.
+
+  However, garden has fence 4 parts, planters 3 + rims 3, stones 3, fountain 3, tree 2, flowers 1, crystal+light 2, particles 2, ground 1, message 1 = 25. Good.
+
+  Need to ensure code uses deterministic positions. For house window, glass vs glow: place both at same position; one is thin. In Roblox overlapping parts okay. For lighthouse beam arm, rotated? Could rotate with rotation y maybe. We can leave at 0. Rotating beam is a visual suggestion; actual rotation would need script. Could set rotation y to 0. Fine.
+
+  Need to make sure colors are from palettes. Use STONE, WOOD, METAL, NATURE, LIGHT dicts.
+
+  Add helper functions same as existing. Keep TEMPLATES_V2 mapping with synonyms. Keep __main__ validation.
+
+  Need to ensure no random import required? We used random in old; new design may not need random. But maybe flower colors random? Better deterministic to avoid inconsistent builds. Use fixed bright colors. But can use random for variety with seed? In template functions, random is okay but may produce different colors each call; could be fine but reproducibility maybe desired. Use a deterministic selection based on index. We'll not import random.
+
+  Need to ensure send_message appended at end.
+
+  Also need to verify JSON serializable. Run script.
+
+  Now VISUAL_POLISH.md: I will write a comprehensive version. Include exact combos. Could be similar to existing but refined. Include "Lucineer Style Guide", exact tables, lighting rules, particle catalog, transparency/glass, detail language, style modifiers, implementation contract, texture assets. Ensure no random. Maybe include a code snippet for palette. Keep 250-300 lines.
+
+  SPATIAL_GRAMMAR_v2.md: Include sections:
+  1. Overview
+  2. Canonical command envelope
+  3. Decomposition engine with Python code: `decompose_request(request) -> list of BuildIntent`.
+  4. Layout engine: zones, bounding boxes, spacing. Provide `Layout` class and `place_builds` function with collision detection.
+  5. Scale relationships table and SCALE dict.
+  6. Style modifiers code: `STYLE_OVERRIDES` mapping, `apply_style`.
+  7. Integration with process_v2.py / build_templates_v2.py.
+  8. Example: "haunted castle with a garden and dock" with full code output.
+  9. Positioning rules (avoid overlap, terrain, water).
+  10. Validation checklist.
+
+  Need to be specific and actual code. Use Python. Ensure code is valid. Let's write it carefully.
+
+  Potential issue: The spatial grammar example should produce commands using build_templates_v2 functions. In example, call TEMPLATES_V2[intent](x,y,z) and style override. Good.
+
+  Need to ensure code in markdown uses correct types. No external dependencies.
+
+  Now let's draft files. Since build_templates_v2.py is large, use Write to replace entirely. Same for VISUAL_POLISH.md. SPATIAL_GRAMMAR_v2.md new.
+
+  Let's create a TODO list, then write files.Now write VISUAL_POLISH.md. I need to make it comprehensive. I'll produce a polished version similar but expanded. Use Write (overwrite). Need to ensure line endings LF.Now mark first task done and start second. Write build_templates_v2.py. I need to be careful with all syntax and ensure command counts in range.
+
+  Let's draft code. Use existing helper style. Include type hints. Add a small math import for cos/sin if needed. For crenellations? We decided not. For lighthouse beam arm rotation maybe use rotation. Use import math.
+
+  Write file fully.
+
+  Potential subtlety: In house roof, rotations around Z for left/right roof blocks. Need rotation tuple (0,0,-25) and (0,0,25). Ensure part helper includes rotation. Good.
+
+  For lighthouse beam arm, use rotation (0, 0, 0) maybe. Could add slight rotation not animated. We can set rotation (0, 15, 0) just visual. Actually a rotating beam requires a script; not possible via static commands. We'll leave note in docstring.
+
+  For forge, the coal bed is Neon dark red (80,25,10) but palette METAL hot is (255,90,30). We'll define a local COAL_BED color. Fine.
+
+  For garden, flower cluster: a single neon block or ball with a bright color maybe multicolored? Use a single Ball with a rainbow? Could use a small cluster of 3 balls? That adds commands. Use one ball with bright magenta/yellow alternating? We'll make a single `GardenFlowers` Ball of size (2.2,1,2.2) with color pink. It's okay.
+
+  Let's write.
+
+  Need to ensure command count ranges:
+  Castle: 25 (including message). Let's count precisely after writing.
+  House: 23.
+  Lighthouse: 21.
+  Forge: 22.
+  Garden: 25.
+
+  All within 15-25.
+
+  Need to include all helper functions: part, add_light, add_particle, send_message. Add terrain? Not needed for these. Could include set_terrain helper? Not necessary.
+
+  Need TEMPLATES_V2 mapping. __main__ validation.
+
+  Let's write.Now run validation to check counts and syntax.castle: 25 commands
+house: 23 commands
+lighthouse: 20 commands
+forge: 22 commands
+garden: 25 commands
+All counts within range. Lighthouse printed 20, but I expected 21. Let me recount: lighthouse commands list: base rock (1), rings 4 (5), balcony (6), room (7), roof (8), beacon (9), spotlight (10), beam arm (11), dock deck (12), pile1 (13), pile2 (14), bollard (15), lantern (16), lantern light (17), fog (18), water spray (19), message (20). Wait I omitted dock lantern? Actually I included DockLantern and add_light. Count = 20. Good; within range. But we have hero light (beacon spotlight) and accent light (dock lantern). Good.
+
+  Now need to validate JSON serializable and maybe check schema. The script does json.dumps. Good.
+
+  Need to maybe run import test.imports ok
+['castle', 'fortress', 'fort', 'keep', 'citadel', 'palace', 'house', 'home', 'cabin', 'cottage']
+Good. Mark second done, start third. Write SPATIAL_GRAMMAR_v2.md. Need actual code. I will create comprehensive markdown with Python code blocks. Ensure code is syntactically correct. Let's draft carefully.
+
+  Sections:
+  - 1. Purpose
+  - 2. Command envelope (canonical JSON structure for createPart, addLight, addParticle, sendMessage, setTerrain)
+  - 3. Decomposition engine: `decompose_request` with `BUILD_SIGNATURES` (name, keywords, default_size, anchor_terrain). Example for compound request.
+  - 4. Layout engine: `Bounds`, `Layout`, `place_builds` with collision detection and spacing. Use simple axis-aligned bounding boxes.
+  - 5. Scale relationships: `SCALE` table and `size_for` function.
+  - 6. Style modifiers: `STYLE_OVERRIDES` with material remap, color shift, lighting shift, particle overrides. Function `apply_style`.
+  - 7. Integration with processor (process_v2.py + build_templates_v2.py). Example `handle_request`.
+  - 8. Full example: "haunted castle with a garden and dock" -> list of intents, layout, style, sample commands.
+  - 9. Positioning rules summary.
+  - 10. Validation checklist.
+
+  Need to ensure code doesn't depend on undefined things. Use typing. The style override mapping should be concrete.
+
+  Let's write.Now validate spatial grammar code by extracting and running. We can copy code into a Python file or run inline. Need to test decompose, layout, style functions. But STYLE_OVERRIDES references imported Any, etc. Let's create a small test script that uses code from markdown? Better to write a temporary test in worker or system. Since code is in markdown, not importable. We can create a temporary Python file combining the spatial grammar code and build_templates_v2 import to test handle_request. But the build_templates_v2 has its own palettes. Need to ensure no name conflict. Let's write /tmp/test_grammar.py or in working directory maybe a temp file. Use Bash with python3 -c maybe but large. Better create a temporary file in /home/eileen/projects/lucineer-worker/test_spatial_grammar.py, run, then remove. But should avoid leaving test files. Could use /tmp. The working directory is allowed, but /tmp is okay? The instructions say avoid files outside working directory unless explicitly instructed. /tmp is outside working directory. Better use a temp file in working directory and delete it. Or run python3 with heredoc in Bash; the command can contain code. That's fine.
+
+  Let's run a heredoc script that imports build_templates_v2 and copies functions from spatial grammar code (we can include them inline). Actually easier: use python3 -c with a small script that imports functions from a temporary module created by extracting code from markdown. But that's more work. Instead, just manually include the key functions in a heredoc and test with one command. Since the deliverable is the markdown file, running a separate copy of the code validates logic.
+
+  Need to ensure `place_builds` uses `__import__("math")` inside loop; okay.
+
+  Test:
+  - decompose_request("haunted castle with a garden and dock") returns castle, garden, dock, style spooky.
+  - place_builds produces 3 placements with no overlaps.
+  - apply_style on castle commands with spooky changes colors and materials.
+
+  Also test handle_request using TEMPLATES_V2. But handle_request references apply_size_scale and apply_style. We can include it.
+
+  Let's write Bash heredoc.
+

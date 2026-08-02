@@ -1,0 +1,23 @@
+The document is written: `/home/eileen/projects/lucineer-system/FABLE_AGENT_UX.md` — about 4,400 words, all six sections, every scenario with actual dialogue, checked line-by-line against both bibles (no exclamation points from Lucineer, exact numbers everywhere, "Passable" as Earl's ceiling, the Unfinished Rule doing the structural work).
+
+One process note: the brainstorming skill's interactive Q&A gate couldn't run in this non-interactive session, so I treated your brief as the approved spec — it already specified sections, scenarios, tone, length, and output path — and executed it directly.
+
+The load-bearing design decisions, so you can judge them fast:
+
+**The loop is five beats, not two.** Intent → *the read* → negotiation → *the split* → standing back. The read is the key invention: instead of a confirmation dialog, Lucineer **chalks** what he understood on the nearest flat surface, and the player edits the chalk by scuffing and redrawing — the model's interpretation layer made physical and correctable by hand. The split (who builds what) is the bond arc rendered as labor assignment, spoken aloud mid-work, never a setting.
+
+**Three input verbs, one onboarding line.** "Say it, show it, or start it. I'll know which." Speech in a chat *radius* (not a chat box), pointing that chalks marks, placing objects as sentences, and work-in-progress as first-class input — vignette 3 runs the entire cooperation loop with a player who never types a word.
+
+**The ecosystem rule:** agents never talk through hidden channels — every dependency travels via manifest pages, light signals, horn blasts, the raven, or the player, which makes the player the yard's nervous system rather than a fetch-quest mule. The Fog Bell flowchart closes the exact circle from your brief (Earl → Lucineer → Hermes → Bea → Lucineer → Earl).
+
+**Every technical constraint is spent as characterization.** Latency = he measures twice and sends you for cedar while the tokens arrive. Build streaming = parts land in construction order at labor pace with scaffolding telegraphing ahead. Persistence = a per-player journal fed by a nightly observation pass ("Your bridge held through the last blow. I checked."). Multiplayer = his attention is *visibly scarce on purpose* — one bench, work orders through Earl, prep-work handed out in passing — turning a server limit into the yard's social economy.
+
+**The two moments I'd protect above all others:** the finished skiff (a stranger in another yard completes your abandoned build and the tide brings it back — the Unfinished Rule revealed as world physics, not personality quirk) and the crooked plank on Bea's shelf (the relationship meter was a physical object the whole time, placed the week you started).
+
+`★ Insight ─────────────────────────────────────`
+- The chalk sketch solves the hardest agent-UX problem — showing the user what the model *understood* before acting — without any UI, and its correction mode (scuff, redraw, place salvage on it) means disambiguation happens by doing rather than re-prompting.
+- The nightly "observation pass" is the cheapest possible memory architecture (one small structured note per player build per day) but it funds the game's most expensive-feeling moments: the handrail, the logbook entry, the shaped gaps. Emotional yield per token is the metric that matters here.
+- Refusing to fake attention-scaling is the contrarian call in §5: most designs would instance Lucineer per player. Keeping him singular converts a cost constraint into status, scarcity, and the entire social texture of the hub.
+`─────────────────────────────────────────────────`
+
+If you want a next step, the natural one is a companion doc specifying the journal schema and bond-stage queries (§5's "memory is love" paragraph implies a concrete data model), but the vision document stands complete as briefed.
