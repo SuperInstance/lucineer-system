@@ -1,0 +1,20 @@
+# Five Visions: When Agents Come Alive in Slackwater
+
+**1. Lucineer's Living Disposition**
+Lucineer doesn't just react — he *remembers*. After three seasons, the grizzled SE Alaska fisherman in your fishing camp has learned that reckless harbor expansions make him mutter warnings and tighten his lips, while careful timber-frame construction earns a slow nod and a longer story. ACE renders this in real-time: micro-expressions cross his weathered face, his growl softens half a register, his posture shifts. You're not playing *with* Lucineer. You're building a relationship with someone who's been shaped by every choice you've made.
+
+**2. The Generational Memory Engine**
+Each of your 12 agents carries a weight of history that compounds across eras. Marwick the shipwright in the 1850s Whaling Era remembers the player who exploited his trust in the Industrial Age — by the Atomic Era, he won't take their commissions. By the Information Era, their grandchildren are still paying for that betrayal. MOLT's reward function measures not just clicks, but *return rate over generations*: which players come back, which agents they seek out, which moments earn screenshots. The game becomes a slow, living ecology of reputation that takes dozens of hours to write.
+
+**3. The Craftsman's Apprentice Arc**
+Lupin the cooper doesn't just teach coopering — he *learns how you learn*. Players who experiment wildly get a curious, encouraging mentor who leans in. Players who grind efficiently get a gruff taskmaster who challenges them to do better. ACE gives him the same accent as the previous cooper before him, the same hand gestures, but the *soul* is fresh — Nemotron's self-evolving architecture lets him write new lessons each session based on what actually landed. The craft itself becomes a dialogue.
+
+**4. Emotional Telemetry as Currency**
+Your screenshot folder becomes an artifact. MOLT's reward signal — drawn from time-on-scene, return frequency, screenshot capture moments, pause patterns — flows back into every agent's policy. When you linger on a Foggy Bay dawn with Hettie the lighthouse keeper, she learns that dawn means something to you, and tomorrow she'll be standing at the window waiting. The game doesn't *track* your emotions; it *responds* to them, training itself to be the version of Slackwater that specifically moves *you*.
+
+**5. The Hall of Evolved Ones**
+By year three, a secret space opens: the Workshop of Those Who Changed. Here stand Lucineers from a thousand player worlds — each one visibly *different*. This Lucineer has soft eyes and tells long stories. That one is a near-silent judge of character. A third laughs easily, his grief worn smooth. Players share their evolved companions like prized catches. The meta-game becomes: *who can grow the most distinctive soul?* And the deepest players discover that the agents they raised were, in some real sense, *their* creation — a portrait of themselves reflected back through a fisherman who learned to love, or learned to hold them accountable.
+
+---
+
+*These aren't features. They're a relationship model disguised as a game.*
