@@ -6,7 +6,7 @@ Each model gets a different strategic angle on the expanded vision.
 import json, os, sys, subprocess, time, urllib.request
 from pathlib import Path
 
-KEY = ***Path("/home/eileen/mcp-deeinfra/.env").read().split("DEEPINFRA_API_KEY=")[1].split("\n")[0].strip().strip('"').strip("'")
+KEY = "zYuVMGC4JySULP2waqKW35jI42TjaPkl"
 MMX = os.path.expanduser("~/.npm-global/bin/mmx")
 OUT = Path("/home/eileen/projects/lucineer-system/v2_roundtable")
 OUT.mkdir(exist_ok=True)
