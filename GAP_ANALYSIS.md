@@ -309,7 +309,7 @@ test that exercises each — prevents this whole class of failure.
 `Config.lua:13`:
 
 ```lua
-Config.AUTH_KEY = "feba836ba409a7e959d957c7c4051fa6243a3436367073e52c567f979f49c9a7"
+Config.AUTH_KEY = "AUTH_KEY_PLACEHOLDER"
 ```
 
 `Config.lua` lives at `ReplicatedStorage/Lucineer/Config` (`default.project.json:9`).
