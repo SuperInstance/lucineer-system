@@ -1,64 +1,88 @@
-# vessel-constellation — Analysis
+# vessel-constellation — Deep Dive Analysis
 
-## What It Does
+## Overview
+An N-body gravitational physics simulation of the SuperInstance fleet, modeling vessels as stars and repos as orbiting planets. Uses symplectic leapfrog integration for energy conservation, tracks conservation laws (total energy E, angular momentum L), detects Lagrange configurations, and simulates perturbation events (repo added/removed, dependency shifts, velocity kicks).
 
-**vessel-constellation** is an **N-body gravitational simulation** of a fleet of software vessels and their orbiting repositories. It models the fleet as a celestial mechanics problem:
+## Architecture
 
-- **Vessels** are stars — massive gravitational bodies (mass = repo count)
-- **Repos** are planets — orbiting their vessel with Keplerian dynamics
-- **Dependencies** are gravity — F = G·m₁·m₂/r²
-- **Conservation laws** — total energy E and angular momentum L are preserved
+### Vessel Module (`vessel.rs`)
+Vessel as gravitational body:
+- `name`, `mass` (= repo count), `position` (dependency-space vector), `velocity` (growth rate)
+- `distance_to()`: Euclidean distance in n-dimensional dependency-space
+- `kinetic_energy()`: ½mv²
+- `momentum()`: mv
+- `angular_momentum()`: m(r × v) — cross product generalized to 3D
+- `center_of_mass()`: weighted average between two vessels
+- Serde serializable
+
+### Orbit Module (`orbit.rs`)
+Repository orbital mechanics:
+- Kepler's 3rd law: ω = √(μ/r³), T = 2π√(r³/μ)
+- Core repos (small r) orbit fast, peripheral repos (large r) orbit slow
+- `Repo::new()`: auto-computes angular velocity from orbital radius and vessel mass (μ)
+- `step(dt)`: advance angle, wrap to [0, 2π)
+- `position()`: Cartesian (x,y) from polar coordinates
+- `orbital_energy()`: -μ/(2r) for bound orbits
+- `verify_kepler()`: self-checks T²μ = 4π²r³
+
+### Gravity Module (`gravity.rs`)
+N-body gravitational field:
+- `force_between()`: F = Gm₁m₂/r² with direction vector
+- `net_force()`: sum of forces from all sources
+- `total_potential_energy()`: PE = -G·m₁m₂/r for all pairs
+- `potential_at()`: gravitational potential at arbitrary point
+- `accelerations()`: force/mass for each vessel
+- `is_circular_orbit()`: checks if centripetal = gravitational force
+- `is_lagrange_triangle()`: detects equilateral triangle configurations (10% tolerance)
+
+### Conservation Module (`conservation.rs`)
+Conservation law tracking:
+- `ConservationState`: total_energy (KE+PE), angular_momentum vector, kinetic, potential
+- `energy_conserved()`: relative tolerance check
+- `angular_momentum_conserved()`: per-component tolerance check
+- Tests verify both are conserved to <1% over 100 leapfrog steps
+
+### Constellation Module (`constellation.rs`)
+Full system state + evolution:
+- **Leapfrog integration** (kick-drift-kick / velocity Verlet):
+  1. Half-kick: v(t+dt/2) = v(t) + a(t)·dt/2
+  2. Drift: r(t+dt) = r(t) + v(t+dt/2)·dt
+  3. Recompute accelerations
+  4. Half-kick: v(t+dt) = v(t+dt/2) + a(t+dt)·dt/2
+- **Euler integration** (for comparison/testing)
+- `evolve(N)`: run N steps, return (initial, final) conservation states
+- Leapfrog conserves energy to <0.001% drift vs Euler's 5-15% drift
+- `initial_fleet()`: creates the 4-vessel SuperInstance fleet
+
+### Perturbation Module (`perturbation.rs`)
+Event system for constellation changes:
+- `RepoAdded`: increases vessel mass, adds orbiting repo
+- `RepoRemoved`: decreases vessel mass, removes repo
+- `DependencyShift`: moves vessel position in dependency-space
+- `VelocityKick`: sudden growth spurt
+- `apply()`: mutates vessels and repos
+- `conservation_delta()`: computes change in E and L
 
 ### The Fleet
-
-| Vessel | Repos | Role |
-|--------|-------|------|
+| Vessel | Mass (repos) | Role |
+|---|---|---|
 | Forgemaster | 330 | The titan — anchors the system |
 | CCC | 116 | The pillar — stabilizes the middle |
 | JetsonClaw1 | 76 | The operative — bridges the gap |
 | Oracle | 43 | The sentinel — scouts the frontier |
 
-### Modules
+## Key Patterns
 
-1. **vessel** — Vessel as gravitational body (mass, position, velocity, KE, momentum, angular momentum, center of mass)
-2. **orbit** — Repo orbits: Kepler's 3rd law (T² ∝ r³), angular velocity, period, position, energy
-3. **gravity** — N-body forces: pairwise F=ma, potential energy, potential field, circular orbit detection, Lagrange triangle detection
-4. **conservation** — State tracking: total energy (KE+PE), angular momentum, with tolerance-based conservation checks
-5. **perturbation** — Events: repo added/removed (mass change), dependency shift (position change), velocity kick (growth spurt)
-6. **constellation** — Full state + symplectic leapfrog integration
+1. **Mass = influence**: vessels with more repos exert more gravitational pull
+2. **Dependency-space**: multi-dimensional coordinates representing coupling categories
+3. **Symplectic integration**: leapfrog preserves Hamiltonian structure → exact conservation
+4. **Keplerian orbits**: repos obey T² ∝ r³ — core repos are fast, peripheral are slow
+5. **Perturbation events**: discrete changes with measurable conservation impact
+6. **Lagrange detection**: stable equilateral configurations → fleet equilibrium points
+7. **Velocity = growth rate**: vessels moving fast are growing fast in dependency-space
 
-### Key Innovation: Symplectic Leapfrog Integration
-
-The system uses **kick-drift-kick** (velocity Verlet) integration:
-1. Half-kick: v(t+dt/2) = v(t) + a(t)·dt/2
-2. Drift: r(t+dt) = r(t) + v(t+dt/2)·dt
-3. Recompute accelerations
-4. Half-kick: v(t+dt) = v(t+dt/2) + a(t+dt)·dt/2
-
-This preserves the Hamiltonian structure — energy drift is <0.001% over 1000 steps, compared to 5-15% for Euler integration. This is critical because the simulation must remain stable over long game sessions.
-
-### Key Innovation: Lagrange Point Detection
-
-The system can detect when three vessels form a **stable equilateral configuration** (Lagrange L4/L5). This is when the fleet is in its most harmonious arrangement — no vessel is pulling too hard on any other.
-
-### Key Innovation: Perturbation as First-Class Event
-
-Adding/removing a repo isn't just a data change — it's a **physical event** that propagates through the N-body system. The mass change alters the gravitational field, shifting every other vessel's orbit. The system tracks the conservation delta (ΔE, ΔL) of each perturbation.
-
-### Key Innovation: Repos Follow Kepler's Third Law
-
-Core repos (small orbital radius) orbit fast — they're close to the vessel's center of mass. Peripheral repos (large radius) orbit slowly. This means **important things happen quickly, peripheral things happen slowly** — a natural priority system derived from physics.
-
-## Code Quality
-
-- **14 source files**, ~1,200 lines of Rust
-- Excellent modular architecture (6 modules, each independently testable)
-- 40+ tests across all modules
-- Conservation verification tests (the physics actually works)
-- Serde support for save/load
-- Beautiful ASCII art documentation in README
-- Proper mathematical notation and formulas throughout
-
-## Relevance to Slackwater
-
-This is the **spatial dynamics engine** for game agents. Instead of repos orbiting vessels, game agents orbit faction headquarters. The gravitational metaphor becomes the relationship system — powerful factions attract more agents, dependencies between factions create gravitational pull.
+## Technology
+- **Language**: Rust
+- **Dependencies**: serde, serde_json (serialization only)
+- **Testing**: comprehensive unit tests per module (8-12 tests each)
+- **Integration**: leapfrog vs Euler comparison test, full pipeline test
