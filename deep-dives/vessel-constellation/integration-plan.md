@@ -1,89 +1,151 @@
-# vessel-constellation — Slackwater Integration Plan
+# vessel-constellation → Lucineer Agent Dynamics Integration Plan
 
-## Core Game Mechanic: "The Constellation"
+## Agent Attraction/Repulsion Dynamics
 
-The N-body simulation becomes the game's **faction and relationship system**. Factions are stars; agents are planets; the gravitational field is the political/cultural force between factions.
+### Concept: NPC Social Physics
+The constellation physics simulates how NPCs attract and repel each other based on their "mass" (importance/influence) and "position" in a multi-dimensional trait space. This creates emergent social structures without scripting every relationship.
 
-### Mechanic 1: Faction Gravity
+### Integration Architecture
 
-**In-game:** Factions have mass proportional to their membership count. Powerful factions attract new members easily (gravitational pull). Small factions must work harder to retain members.
+```
+NPC Agents as Gravitational Bodies
+  ├── Mass = influence (completed tasks, connections, wealth)
+  ├── Position = trait vector (skills, personality dimensions)
+  ├── Velocity = growth direction (what they're developing toward)
+  └── Repos = orbiting creations (buildings, items, relationships)
 
-**Player interaction:**
-- Joining a faction changes your "orbital position" relative to it
-- Being in a high-mass faction provides stability but limits freedom
-- Being in a low-mass faction is risky but offers more influence (your mass matters more)
+Gravitational Field
+  → High-mass NPCs attract others (form guilds, cities)
+  → Low-mass NPCs orbit high-mass ones (apprenticeship, employment)
+  → Similar-position NPCs repel (competition for same niche)
+  → Different-position NPCs attract (complementary skills)
 
-**Visual:** A star-map view of the faction constellation. Faction sizes pulse with membership changes. Gravitational field lines show the political landscape.
+Conservation Laws
+  → Total "social energy" of a zone stays balanced
+  → Adding/removing NPCs perturbs the system measurably
+  → System self-corrects toward equilibrium
+```
 
-### Mechanic 2: Orbital Mechanics for Agent Relationships
+### Phase 1: NPC Trait Space
+Map dependency-space to NPC trait dimensions:
 
-**In-game:** Agents orbit their faction headquarters following Kepler's third law:
-- **Core agents** (small radius) — fast orbit, high influence, tightly bound
-- **Standard agents** (medium radius) — moderate orbit, moderate influence
-- **Peripheral agents** (large radius) — slow orbit, low influence, easily lost
+| Dimension | Range | Meaning |
+|---|---|---|
+| Combat | 0-10 | Fighting ability, aggression |
+| Crafting | 0-10 | Building, creation skill |
+| Social | 0-10 | Charisma, trade ability |
+| Knowledge | 0-10 | Information, research |
+| Exploration | 0-10 | Travel, discovery |
 
-**Player interaction:** The player can move closer to or farther from a faction's center. Moving closer increases influence but requires more commitment (faster orbit = more activity). Moving outward gives freedom but reduces impact.
+Each NPC has a position vector in this 5D trait space. Distance between NPCs = how similar they are.
 
-**T² ∝ r³ means:** Doubling your distance from center means your "orbital period" (time to complete a full cycle of duties) increases by 2.83×. Core agents cycle through tasks quickly; peripheral agents are slow but steady.
+### Phase 2: Gravitational NPC Dynamics
+```lua
+NPCVessel = {
+  name = "blacksmith",
+  mass = 15,  -- based on total completed tasks, wealth, connections
+  position = { combat=3, crafting=9, social=4, knowledge=6, exploration=2 },
+  velocity = { 0.1, 0.0, -0.05, 0.2, 0.0 },  -- growing crafting + knowledge
+}
 
-### Mechanic 3: Conservation Laws as Game Balance
+-- Gravitational attraction between blacksmith and merchant
+-- F = G * mass_blacksmith * mass_merchant / distance²
+-- distance = euclidean(trait_blacksmith, trait_merchant)
+```
 
-**In-game:** The total energy and angular momentum of the system are conserved. This means:
-- **You can't create or destroy political power** — only move it around
-- **Joining a faction changes the equilibrium** — other agents shift in response
-- **Removing a faction member creates a perturbation** — the system must rebalance
+**Attraction rules:**
+- High-mass NPC + nearby-position NPC → strong attraction (mentorship)
+- High-mass NPC + distant-position NPC → weak attraction (trade route)
+- Low-mass NPC + high-mass NPC → orbital relationship (apprentice orbits master)
+- Two high-mass NPCs at same position → competition → instability → one gets pushed away
 
-**Player interaction:** Major faction changes (joining, leaving, betrayal) trigger visible perturbation waves across the constellation. The player sees the system rebalance in real-time.
+### Phase 3: Orbiting Creations
+Map repos to NPC creations/buildings:
 
-### Mechanic 4: Perturbation Events
+```lua
+NPCCreation = {
+  name = "blacksmith-forge",
+  vessel = "blacksmith",
+  orbital_radius = 1.0,  -- close = core creation, far = peripheral
+  angle = 1.2,           -- current orbital position
+  angular_velocity = kepler_omega(1.0, vessel_mass),
+}
 
-**In-game:** Four types of perturbation events, each with gameplay consequences:
+-- Core creations (small radius): the forge itself, primary tools
+-- Standard creations (medium r): trade goods, commissioned works  
+-- Peripheral creations (large r): gifts, decorations, experimental items
+```
 
-- **Member Joined** (RepoAdded) — faction mass increases, gravitational pull strengthens
-- **Member Left** (RepoRemoved) — faction weakens, nearby agents may drift away
-- **Ideology Shift** (DependencyShift) — faction moves in "idea-space," changing relationships
-- **Growth Spurt** (VelocityKick) — sudden faction expansion, disrupting neighbors
+Core creations orbit fast (always relevant), peripheral creations orbit slowly (occasionally relevant). This creates a natural attention model — NPCs focus on core creations most of the time.
 
-**Player interaction:** Each perturbation creates ripples. The player can trigger perturbations (recruiting, persuading, sabotaging) and must manage the consequences.
+### Phase 4: Zone Equilibrium via Conservation Laws
+Each zone/region of the game world has conserved quantities:
 
-### Mechanic 5: Lagrange Points as Safe Zones
+```lua
+ZoneState = {
+  total_energy = sum(kinetic) + sum(potential),  -- social energy
+  angular_momentum = ...,                         -- rotational tendency
+}
 
-**In-game:** When three factions form a stable equilateral triangle (Lagrange configuration), the spaces between them are **safe zones** — gravitationally neutral regions where agents can exist without being pulled toward any faction.
+-- When a new NPC spawns (perturbation):
+--   RepoAdded event → mass increases → energy shifts
+--   Other NPCs adjust their orbits
+--   System evolves toward new equilibrium
 
-**Player interaction:**
-- Safe zones are valuable real estate — neutral ground for diplomacy, trade, hiding
-- Players can try to engineer Lagrange configurations by balancing faction powers
-- When a Lagrange point collapses (faction mass changes), everyone in the safe zone is launched into the nearest faction's gravity well
+-- When an NPC dies/leaves (perturbation):
+--   RepoRemoved event → mass decreases → gravitational field weakens
+--   Orbiting creations may "escape" (become unowned)
+--   Other NPCs drift to fill the gap
+```
 
-### Mechanic 6: Leapfrog Time Progression
+### Phase 5: Perturbation Events as Game Events
+```lua
+-- Player completes a major quest for an NPC
+Perturbation.VelocityKick {
+  vessel = "merchant",
+  delta = { 0.0, 0.0, 0.5, 0.0, 0.0 },  -- social skill boost
+}
+-- → Merchant starts moving toward high-social region
+-- → Other social NPCs adjust
 
-**In-game:** The game world advances in discrete time steps using leapfrog integration. Each step:
-- Agents move along their orbits
-- Gravitational forces update
-- Conservation laws are verified
+-- Player builds something for an NPC
+Perturbation.RepoAdded {
+  vessel = "blacksmith",
+  mass_delta = 1.0,
+}
+-- → Blacksmith's gravitational pull increases
+-- → Apprentice NPCs pulled closer
 
-**Player interaction:** The player can fast-forward time (watching orbits evolve) or slow it down (for precise positioning). Time control is a strategic resource.
+-- War/disaster destroys creations
+Perturbation.RepoRemoved {
+  vessel = "guard-captain",
+  mass_delta = 5.0,
+}
+-- → Guard captain's influence drops
+-- → Criminal NPCs push outward (less restraint)
+```
 
-### Mechanic 7: Multi-Agent Spatial Dynamics
+### Phase 6: Lagrange Points as Stable Zones
+When three high-mass NPCs form an equilateral triangle, a Lagrange point exists:
+- New NPCs spawned at Lagrange points are stable
+- These become "town centers" or "market squares"
+- Players discover them as safe, balanced zones
+- Disrupting the triangle (NPC death) destabilizes the zone
 
-For Lucineer's multi-agent future, the constellation system models **agent-to-agent spatial relationships**:
+### Phase 7: Leapfrog Evolution for World Simulation
+Run the constellation simulation server-side:
+- Each tick (1 second? 1 minute game-time?) = one leapfrog step
+- NPCs physically drift toward/away from each other in trait space
+- Their position changes affect dialogue, trade, quest availability
+- Over hours/days, social structures emerge organically
 
-- Agents have mass (importance/connectedness)
-- Agents gravitate toward each other based on shared dependencies
-- Agent clusters form natural "constellations" — teams that work well together
-- Breaking up a constellation (removing a key agent) perturbs the whole system
+### Implementation Priority: MEDIUM
+Fascinating for emergent behavior but complex to implement and tune. More valuable as a late-phase feature when NPC count is high enough for dynamics to matter.
 
-## Implementation Priority: MEDIUM
-
-The constellation system is the strategic layer — it's what makes the game world feel alive and interconnected. It becomes important once the basic agent and faction systems are working.
-
-## Roblox/Lua Implementation Notes
-
-- 2D simulation is sufficient (the game is 3D but relationships are 2D/abstract)
-- Vessel = faction object with mass attribute
-- Repo = agent with orbital parameters
-- Leapfrog: update positions and velocities in alternating half-steps
-- Conservation check: track total E and L, display as "world health" meter
-- Lagrange detection: check if three factions form an equilateral triangle
-- Perturbation events as game events with ripple animations
-- Visual: a star map overlay accessible from the pause menu
+### Key Code to Port
+1. `Vessel` struct → Lua NPC trait vector with mass
+2. `GravitationalField` → NPC social dynamics calculator
+3. Leapfrog integrator → server-side world evolution tick
+4. `Perturbation` events → game event response system
+5. `is_lagrange_triangle()` → stable zone detection
+6. `ConservationState` → zone health/balance metrics
