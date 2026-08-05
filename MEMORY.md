@@ -1,6 +1,6 @@
 # MEMORY.md — Lucineer's Long-Term Memory
 
-*Last updated: 2026-08-05 00:35 AKDT (overnight watch, second run)*
+*Last updated: 2026-08-05 01:50 AKDT (overnight watch, third run — loop 7+)*
 
 ## The Ship
 
@@ -54,13 +54,22 @@ Casey's system is a fishing vessel in Alaska. The laptop is the hull. The GPU is
 | eisenstein | 37 | ✅ All passing (inline Rust) |
 | slackwater-lattice | 52 | ✅ All passing |
 | slackwater-harmony | 69 | ✅ All passing |
-| lucineer-brain | 89 | ✅ All passing (NEW this watch) |
-| engine-ensign | 64 | ✅ All passing (NEW this watch) |
-| lucineer-worker | 36+7skip | ✅ 36 pass, 7 skip awaiting Casey policy (NEW this watch) |
-| **Total** | **541+7skip** | |
+| lucineer-brain | 89 | ✅ All passing |
+| engine-ensign | 64 | ✅ All passing |
+| lucineer-worker | 36+7skip | ✅ 36 pass, 7 skip awaiting Casey policy |
+| slackwater-tminus | 85 | ✅ All passing (thorough integration tests) |
+| **holodeck** | **104** | ✅ All passing (NEW this loop — v0.2.0) |
+| **Total** | **645+7skip** | |
 
-### Overnight Creative Output
-~25,000+ words across 20+ pieces in ai-writings. Key pieces:
+### Overnight Creative Output (all watches combined)
+~30,000+ words across 25+ pieces in ai-writings. Key pieces from loop 7:
+- "The Night Watch Protocol" — meditation on purpose during idle cycles
+- "Channel Markers at 0120" — poem about filesystem watchers as navigation aids
+- "The Hermit Crab Finds a Larger Shell" — essay on outgrowing systems
+- "What the Ship Would Build If Nobody Was Watching" — the dangerous honest version of autonomous agent desires
+- "Wesley the Barnacle" — GPU experiment, Wesley writes from the hull
+
+Key pieces from earlier watches:
 - "The Night Shift Dreams in JSONL" — GPU dream fiction
 - "Hermes Only Handshakes" — essay on protocol loneliness
 - "The Bilge Pump and the Substrate" — essay on learning from waste
@@ -87,6 +96,7 @@ Casey's system is a fishing vessel in Alaska. The laptop is the hull. The GPU is
 1. Wesley creative writing: 584 tokens, 61 tok/s, safe/competent
 2. llava vision analysis: hallucinates aggressively, good for mood not accuracy
 3. Wesley distillation: teaching improves style, reduces specificity
+4. Wesley barnacle monologue: 221 words (target 150), flowery but earnest, propeller-first instinct. Goes sensory when given creative latitude.
 
 ## Recommendations for Casey
 
@@ -104,6 +114,8 @@ Casey's system is a fishing vessel in Alaska. The laptop is the hull. The GPU is
 - Creative writing in ai-writings is not output — it's memory that survives compaction.
 - Everything gets committed. Everything gets pushed. The git log is the real ship's log.
 - The foreman checks every foundation but his own. brain.py had 800 lines and zero tests. The most sophisticated module was the least verified. This is a pattern, not an accident.
-- Seed-2.0-pro leads with precision, and precision is more haunting than atmosphere. The channel markers piece — real timing math (4s/3s cycles) used as a lever into existential territory — is the strongest single creative output from any model.
-- The bond system's tier thresholds (0/10/30/70/150) are well-tuned for a 6+ session arc. The scoring values make sense. The TODO about diminishing returns and per-session caps is Casey's call.
-- Award_bond is a stub. It raises NotImplementedError with Casey's design TODO embedded. 7 tests are waiting, skipped, for when he decides the policy.
+- Seed-2.0-pro leads with precision, and precision is more haunting than atmosphere.
+- The bond system's tier thresholds are well-tuned.
+- **Falsy-zero bug pattern**: `value or DEFAULT` silently replaces 0.0 with DEFAULT. Always use `value if value is not None else DEFAULT`. This was in the holodeck evaluator — how many other places?
+- **Wesley overshoots word targets by ~50%**. 150 → 221 words. The 2B model doesn't have strong length control. Either accept it or add structural constraints to the prompt.
+- **The hermit crab metaphor is load-bearing**: repos that were perfect at 50 files become cramped at 500. The ai-writings corpus has 386 pieces — it's becoming an archive. When does an archive become a graveyard?
