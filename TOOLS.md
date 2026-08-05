@@ -5,12 +5,13 @@ Last updated: 2026-08-02
 ## Coding Agents — Subscription Tiers
 | Tool | Plan | Model | Best For | Location |
 |------|------|-------|----------|----------|
-| Z.ai (GLM) | **Max** | GLM-5.2 | Subagent workhorse — unlimited tokens, cheapest high-quality option. Push hard. | (API, subagents use this) |
+| Z.ai (GLM) | **Max** | GLM-5.2 | Subagent workhorse — unlimited tokens, cheapest high-quality option. Push hard. Primary bulk creative + engineering. | (API, subagents use this) |
+| **DeepSeek (direct API)** | **Pay-per-use (extremely cheap)** | V4-Pro / V4-Flash | **Second workhorse — hammer extensively.** Flash for bulk creative, Pro for deep reasoning. Nearly free. Use alongside GLM subagents. | api.deepseek.com |
 | KimiCode | **Med** | K3 | Excellent at what it does — build intelligence, spatial decomposition, fast iteration. Use confidently for spatial/Lua/build tasks. | ~/.npm-global/bin/kimi |
 | Claude Code | **Pro** | Opus 5 / Sonnet 5 / Haiku (renewing) · Fable 5 (finite, non-renewing) | Opus/Sonnet/Haiku: use freely within Pro plan. **Fable: requires prep from other systems first.** Finite tokens — reserve for golden-ticket moments only. Never use Fable for routine work that Opus/Sonnet can handle. | ~/.local/bin/claude |
 | MMX | **Starter** | MiniMax-M3 | Media generation — text, image, video, speech, music. Use at capacity since we have the subscription. Push hard. | ~/.npm-global/bin/mmx |
 | OpenCode | Pay-per-use | GLM-4.6 / GLM-4.5-air | **Cheapest option.** Memory systems, structured design docs. Run in parallel tmux sessions alongside subagents. | ~/.opencode/bin/opencode |
-| DeepSeek (direct API) | **Extremely cheap** | DeepSeek-V3 / Flash | Cost-effective code gen, quick tasks — cheaper than DeepInfra for DeepSeek models | Direct API (api.deepseek.com) |
+_DeepSeek moved up to workhorse tier — see above._
 
 ## DeepInfra MCP — Model Routing (179 models)
 | Task | Model | Why |
@@ -70,8 +71,11 @@ Free tier — use for assets, models, and embeddings:
 8. **Embeddings for skill recall** → bge-m3 via Vectorize
 
 ### Cost-Conscious Routing
-- **DeepSeek-V3/Flash**: use direct API (api.deepseek.com) instead of DeepInfra — extremely cheap
-- **Subagents default to GLM-5.2** (Z.ai Max plan = unlimited tokens)
-- **KimiCode (Med plan)**: use for spatial/build tasks that benefit from K3's strengths
-- **Claude (Pro plan)**: reserve for Fable 5 golden-ticket moments, critical architecture
-- **MMX (Starter plan)**: quota-limited — plan asset generation carefully, batch efficiently
+- **GLM-5.2 subagents (Z.ai Max)** and **DeepSeek direct API (V4-Pro/Flash)** are the TWO primary workhorses. Both are nearly free at our usage levels. Use them extensively and in parallel.
+- **DeepSeek V4-Flash**: bulk creative writing, quick analysis, high-volume generation
+- **DeepSeek V4-Pro**: deep reasoning, complex analysis (note: reasoning model, burns tokens on thinking)
+- **KimiCode (Med plan)**: smaller daily allowance — use for spatial/Lua/build tasks where K3 excels
+- **Claude (Pro plan)**: smaller allowance — reserve for golden-ticket moments, critical architecture. Sonnet 5 is the daily driver; Fable 5 costs usage credits.
+- **MMX (Starter plan)**: use ONLY for asset generation the others can't do — images, video, speech, music. Plan carefully, batch efficiently.
+- **DeepInfra**: use for models we can't get elsewhere (Seed-2.0-pro, Hermes-3-Llama-405B, FLUX-2-max). Not for DeepSeek models — use direct API instead.
+- **When in doubt**: dispatch both a GLM subagent AND a DeepSeek call in parallel. Redundancy is cheap.
