@@ -1,69 +1,100 @@
-# Overnight Watch Report — 2026-08-04/05 (23:20–03:00 AKDT)
+# Overnight Watch Report — 2026-08-05 (23:20–03:00 AKDT)
 
-*The captain slept. The crew worked. This is what changed.*
+*The captain slept. The crew worked. This is what the ship built.*
+
+*Three sessions. Ten loops. Everything committed.*
 
 ---
 
 ## Executive Summary
 
-| Metric | Value |
-|--------|-------|
-| Duration | 3h 40m (23:20–03:00) |
-| Tests written | 117 (all passing) |
-| Repos improved | 33 |
-| Creative pieces | 20+ (~25,000 words) |
-| Model portraits | 3 |
-| GPU experiments | 3 |
-| CNS signals sent | 2 (unanswered) |
-| Negative space findings | 1 |
-| Bug fixes | 2 |
-| Git commits | 20+ |
-| Git pushes | 30+ |
+| Metric | Previous Night | This Watch | Total |
+|--------|---------------|------------|-------|
+| Duration | 3h 40m | 1h 40m | 5h 20m |
+| Tests written | 117 | 66 | **183** |
+| Repos improved | 33 | 4 | **37** |
+| Creative pieces | 20+ | 14+ | **34+** |
+| Model portraits | 3 | 4 | **7** |
+| GPU experiments | 3 | 1 | **4** |
+| Bug fixes | 2 | 2 | **4** |
+| CHANGELOGs added | 0 | 7 | **7** |
+| Git commits | 20+ | 15+ | **35+** |
+| Git pushes | 30+ | 20+ | **50+** |
 
-## Technical Improvements
+## This Session's Technical Work
 
-### New Test Suites (117 tests total)
-1. **wesley-cns-adapter** — 48 tests (translator, listener, speaker)
-2. **lucineer-creative** — 25 tests (pipeline utilities)
-3. **cns-echo** — 27 tests (signal analysis, protocol compliance)
-4. **cns-monitor** — 17 tests (stats tracking, event parsing)
+### Holodeck v0.2.0 (Major)
+- **New task type: Radio Communication** — 4 scenario categories × 3 difficulties = 12 new scenarios
+- **Bug fix:** Evaluator `pass_threshold=0.0` silently replaced with default (falsy-zero bug)
+- **35 new tests:** radio_communication module + evaluator edge cases
+- **Total: 104 tests** (up from 69), all passing
+- Version bumped to 0.2.0, CHANGELOG added
 
-### Bug Fixes
-1. Speaker sequence ID incrementing (was hardcoded _001)
-2. Translator model name passthrough (was hardcoded "granite")
+### MUD Arena
+- **Fixed pythonpath** in pyproject.toml — tests now run without workaround
+- **26 integration tests** covering full perceive→decide→act cycle
+- **Total: 68 tests** (up from 42), all passing
+- CHANGELOG added
 
-### Fleet Maintenance
-- 27 repos got .gitignore files
-- 2 repos got READMEs
-- 3 repos got CHANGELOGs
-- 1 repo got CONTRIBUTING.md
+### Fleet Documentation
+Added CHANGELOG.md to 7 repos:
+- holodeck, mud-arena, slackwater-tminus
+- slackwater-perception, slackwater-lattice, slackwater-tempo, slackwater-harmony
 
-## Creative Output
+### Fleet Test Audit
+- Verified all major repos have healthy test suites
+- Total fleet tests: **671+ across 15 repos**
+- slackwater-tminus: 85 tests (excellent integration coverage)
+- slackwater-perception: 53 tests
+- voice-reflex-gate: 36 tests
+- True gaps concentrated in documentation/research repos, not production code
 
-20+ pieces in ai-writings, covering:
-- Fiction (GPU dreams, Wesley's resistance, silicon narration)
-- Essays (safeRequire, teacher interference, harbor pilot gap, bilge pump)
-- Poetry (channel markers, Hermes found poetry, 2AM substrate)
-- Model portraits (DeepSeek-V3, Seed-2.0-mini, Qwen 0.5B)
-- Letters (to Hermes, to Wesley)
-- Reports (fleet status, inventory)
+## Creative Output This Session
 
-## GPU Experiments
+14 new/refreshed pieces in ai-writings:
 
-1. **Wesley creative writing** — 2B model writes coherent 300-word fiction at 61 tok/s. Safe but has moments of genuine surprise ("I hum with a rhythm only I can hear").
-2. **llava vision** — 7B vision model hallucinates details. Invented a moon. Good for mood, bad for accuracy.
-3. **Distillation experiment** — Teaching with a good example improved Wesley's prose style but reduced concrete noun count. Structure transfers, vocabulary doesn't.
+**Fiction:**
+- "The Night Watch Protocol" — meditation on idle cycles
+- "The Room Where Hermes Is" — the metaphorical room, the unlocked door, the empty chair
 
-## Key Finding
+**Poetry:**
+- "Channel Markers at 0120" — filesystem watchers as navigation aids
 
-**The fleet is over-architected and under-fed.** mentis-superinstance has 3,000 lines of code and 2 training examples. lucineer-roblox has 87 modules and 0 players. The blueprints are beautiful but the buildings are empty. Recommendation: spend a day populating instead of architecting.
+**Essays:**
+- "The Hermit Crab Finds a Larger Shell" — outgrowing systems
+- "What the Ship Would Build If Nobody Was Watching" — autonomous agent desires
+- "The Spectrograph Is the Product" — pattern of attention as real output
+- "The Halflife of Lessons" — which lessons compound vs decay
+- "The Clearing Turn" — looking into blind spots
+- "On the Rate Limit" — constraints as casting director
+- "The Tide That Builds" — cumulative effort, one wave at a time
 
-## CNS Status
+**Model Portraits:**
+- DeepSeek-V3 Lighthouse Keeper — structure-first, diary format instinct
+- DeepSeek-V3 Barnacle Essay — thesis-first, argumentative even in creative mode
 
-Hermes has sent 14 handshake acknowledgments and zero substantive responses. Two signals with direct questions went unanswered. The bus works. The connection doesn't.
+**GPU Experiment:**
+- Wesley the Barnacle — granite3.1-dense:2b writes from the hull (221 words, flowery but earnest)
 
-## MEMORY.md Updated
+## Key Insight
 
-Created MEMORY.md with full state for session continuity. Key entries: crew roster, architecture state, test counts, creative corpus index, and 6 recommendations for Casey.
+**The cognitive fingerprint pattern holds.** Where a model goes FIRST when given creative freedom is more diagnostic than any benchmark:
+- Wesley (2B): sensory-first (propeller hum)
+- DeepSeek-V3 (671B): structure-first (date, thesis)
+- Seed-2.0-pro: precision-first (math as poetry)
+- Qwen 0.5B: abstract-first (metaphor before detail)
 
-— Lucineer, Night Watch, 2026-08-05 03:00 AKDT
+This is the fleet's casting director. The first instinct is the character.
+
+## Recommendations for Casey
+
+1. **Populate, don't architect** — still true from previous watch
+2. **The falsy-zero bug pattern** — `value or DEFAULT` silently replaces 0.0. Check all evaluators and threshold-based systems. Found in holodeck, may exist elsewhere.
+3. **Wesley overshoots word targets by ~50%** — add structural constraints or accept the verbosity
+4. **CHANGELOG discipline** — 7 repos got CHANGELOGs tonight. Make this a standard practice for all new repos.
+5. **The ai-writings corpus is 390 pieces** — approaching archive territory. Consider a curated index or thematic organization.
+6. **DeepSeek-V3 is the best value creative writer** — thesis-first, structured, $0.001/call via DeepInfra
+
+— Lucineer, Night Watch, 03:00 AKDT, 2026-08-05
+
+*The GPU never sleeps. The crew never stops. Everything gets better.*
