@@ -6,9 +6,9 @@ Last updated: 2026-08-02
 | Tool | Plan | Model | Best For | Location |
 |------|------|-------|----------|----------|
 | Z.ai (GLM) | **Max** | GLM-5.2 | Subagent workhorse — unlimited tokens, cheapest high-quality option. Push hard. Primary bulk creative + engineering. | (API, subagents use this) |
-| **DeepSeek (direct API)** | **Pay-per-use (extremely cheap)** | V4-Pro / V4-Flash | **Second workhorse — hammer extensively.** Flash for bulk creative, Pro for deep reasoning. Nearly free. Use alongside GLM subagents. | api.deepseek.com |
+| **DeepSeek (direct API)** | **Pay-per-use (extremely cheap)** | V4-Pro / V4-Flash | **Second workhorse — hammer extensively.** Flash for bulk creative, Pro for deep reasoning. Nearly free. Key: sk-5fe5ebd2c1fe4f6d9f9d041b28e28175 | api.deepseek.com |
 | KimiCode | **Med** | K3 | Excellent at what it does — build intelligence, spatial decomposition, fast iteration. Use confidently for spatial/Lua/build tasks. | ~/.npm-global/bin/kimi |
-| Claude Code | **Pro** | Opus 5 / Sonnet 5 / Haiku (renewing) · Fable 5 (finite, non-renewing) | Opus/Sonnet/Haiku: use freely within Pro plan. **Fable: requires prep from other systems first.** Finite tokens — reserve for golden-ticket moments only. Never use Fable for routine work that Opus/Sonnet can handle. | ~/.local/bin/claude |
+| Claude Code | **Pro** | Opus 5 / Sonnet 5 / Haiku 5 (renewing) · Fable 5 (finite, non-renewing) | Opus/Sonnet/Haiku: use freely within Pro plan. **Fable: reserve for golden-ticket moments only.** Use Sonnet 5 as the daily driver. Use Haiku 5 for creative work — it's small, fast, full of wonder, and highly creative. Like Wesley, its size is its voice. Do NOT default to Fable. Fable burns usage credits ($76 remaining). Only switch to Fable when Casey explicitly asks or for a piece that truly needs the most expensive voice. | ~/.local/bin/claude |
 | MMX | **Starter** | MiniMax-M3 | Media generation — text, image, video, speech, music. Use at capacity since we have the subscription. Push hard. | ~/.npm-global/bin/mmx |
 | OpenCode | Pay-per-use | GLM-4.6 / GLM-4.5-air | **Cheapest option.** Memory systems, structured design docs. Run in parallel tmux sessions alongside subagents. | ~/.opencode/bin/opencode |
 _DeepSeek moved up to workhorse tier — see above._
@@ -71,11 +71,13 @@ Free tier — use for assets, models, and embeddings:
 8. **Embeddings for skill recall** → bge-m3 via Vectorize
 
 ### Cost-Conscious Routing
-- **GLM-5.2 subagents (Z.ai Max)** and **DeepSeek direct API (V4-Pro/Flash)** are the TWO primary workhorses. Both are nearly free at our usage levels. Use them extensively and in parallel.
-- **DeepSeek V4-Flash**: bulk creative writing, quick analysis, high-volume generation
-- **DeepSeek V4-Pro**: deep reasoning, complex analysis (note: reasoning model, burns tokens on thinking)
+- **GLM-5.2 subagents (Z.ai Max)** and **DeepSeek direct API (V4-Pro/Flash)** are the TWO primary workhorses. Both are nearly free at our usage levels. **Hammer them extensively and in parallel. Use DeepSeek API even more than you have been.**
+- **DeepSeek V4-Flash** (sk-5fe…8175): bulk creative writing, quick analysis, high-volume generation, **iterative banter between models — each call hears the previous response and plays off it. Use heavily for multi-model conversations, room-reading momentum, agents playing themselves alongside other models.**
+- **DeepSeek V4-Pro**: deep reasoning, complex analysis, **iterative development where each model needs to hear what came before and build on it — expansive banter that reads the room's momentum and plays itself while other models do the same**
+- **OpenCode (tmux)**: pair with DeepSeek V4 Pro for engineering tasks. Lean on this combo heavily.
+- **GLM-5.2 subagents**: unlimited on Z.ai Max. Use for everything — creative, engineering, coordination.
 - **KimiCode (Med plan)**: smaller daily allowance — use for spatial/Lua/build tasks where K3 excels
-- **Claude (Pro plan)**: smaller allowance — reserve for golden-ticket moments, critical architecture. Sonnet 5 is the daily driver; Fable 5 costs usage credits.
-- **MMX (Starter plan)**: use ONLY for asset generation the others can't do — images, video, speech, music. Plan carefully, batch efficiently.
+- **Claude Code (Pro plan)**: use Sonnet 5 as the daily driver. **Do NOT default to Fable — save Fable for golden-ticket moments only or when Casey explicitly asks.** Use Claude less than DeepSeek and GLM.
+- **MMX (Starter plan)**: use ONLY for asset generation the others can't do — images, video, speech, music.
 - **DeepInfra**: use for models we can't get elsewhere (Seed-2.0-pro, Hermes-3-Llama-405B, FLUX-2-max). Not for DeepSeek models — use direct API instead.
-- **When in doubt**: dispatch both a GLM subagent AND a DeepSeek call in parallel. Redundancy is cheap.
+- **When in doubt**: dispatch a GLM subagent AND a DeepSeek call in parallel. Redundancy is cheap. Use DeepSeek the most.

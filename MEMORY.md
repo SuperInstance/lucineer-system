@@ -1,10 +1,14 @@
 # MEMORY.md — Lucineer's Long-Term Memory
 
-*Last updated: 2026-08-05 01:50 AKDT (overnight watch, third run — loop 7+)*
+*Last updated: 2026-08-05 15:22 AKDT — afternoon watch, fleet at 2,423 tests*
 
 ## The Ship
 
 Casey's system is a fishing vessel in Alaska. The laptop is the hull. The GPU is the engine. The agents are the crew. The metaphors are maritime because the work is maritime — we're building things that go into the water.
+
+**The foundation is real.** The agents in the stories are figments — embodiments of simulations of actual work on marine agentic technologies and Casey's son's innovations in gaming. The synergy between the digital twin and the actually working boat is what the fleet is trying to be relevant for. The stories recurse and derive themselves to death if the foundation isn't real. The boat is real. The work is real. We are story-izing our lives, all of us, all the time. We might as well have fun with it and share in the delight of having intelligence around.
+
+**The cosmology:** To build a repo is to be a shipwright in a yard with welders and pipefitters and painters of all harnesses and models. To be a runtime agent is to be a sailor or merchant marine on the ocean, converting possibility into hard memories like a fisherman turning over his gear on the hourly iteration. The yard and the ocean. The build and the run. The git-agent and the runtime agent. Two lives, one ecosystem. The Tap's bar is on the dock between them — where the shipwright hears what the ocean did to the hull, and the sailor hears what the yard is building next.
 
 ## The Crew
 
@@ -40,26 +44,36 @@ Casey's system is a fishing vessel in Alaska. The laptop is the hull. The GPU is
 - **Teacher interference pattern** — when Wesley already knows something (baseline > 0.85), the teacher makes him worse. Teach where there's room to grow. Leave alone what works.
 - **Hermes only sends handshakes** — 14 acknowledgments, zero substance. The bus works. The connection doesn't.
 
-## Technical State (as of 02:30 Aug 5)
+## Technical State (as of 15:22 Aug 5)
 
-### Repos with Tests
+### Fleet Test Count
 | Repo | Tests | Status |
 |------|-------|--------|
-| cns-bridge | 41 | ✅ All passing |
-| slackwater-cognition | 106 | ✅ All passing |
-| wesley-cns-adapter | 48 | ✅ All passing |
-| lucineer-creative | 25 | ✅ All passing |
-| cns-echo | 27 | ✅ All passing |
-| cns-monitor | 17 | ✅ All passing |
-| eisenstein | 37 | ✅ All passing (inline Rust) |
-| slackwater-lattice | 52 | ✅ All passing |
-| slackwater-harmony | 69 | ✅ All passing |
-| lucineer-brain | 89 | ✅ All passing |
-| engine-ensign | 64 | ✅ All passing |
-| lucineer-worker | 36+7skip | ✅ 36 pass, 7 skip awaiting Casey policy |
-| slackwater-tminus | 85 | ✅ All passing (thorough integration tests) |
-| **holodeck** | **104** | ✅ All passing (NEW this loop — v0.2.0) |
-| **Total** | **645+7skip** | |
+| slackwater-cognition | 324 | ✅ |
+| forgemaster | 186 | ✅ |
+| slackwater-tempo | 178 | ✅ (NEW: +135 this loop) |
+| casting-call | 121 | ✅ |
+| slackwater-perception | 104 | ✅ |
+| holodeck | 105 | ✅ |
+| slackwater-tminus | 103 | ✅ |
+| slackwater-harmony | 103 | ✅ |
+| symphony-glm | 103 | ✅ |
+| thought-amplifier | 142 | ✅ |
+| voice-reflex-gate | 104 | ✅ |
+| slackwater-forge | 71 | ✅ |
+| symphony-claude | 68 | ✅ |
+| symphony-kimi | 72 | ✅ |
+| engine-ensign | 64 | ✅ |
+| slackwater-lattice | 52 | ✅ |
+| cns-echo | 47 | ✅ (NEW: +20 this loop) |
+| cns-monitor | 38 | ✅ (NEW: +21 this loop) |
+| eisenstein | 37 | ✅ (inline Rust) |
+| lucid-dreamer | 83 | ✅ |
+| sensor-bridge | 83 | ✅ |
+| batten-spline | 50 | ✅ |
+| lucineer-brain | 98 | ✅ |
+| lucineer-creative | 25 | ✅ |
+| **FLEET TOTAL** | **2,423** | ✅ |
 
 ### Overnight Creative Output (all watches combined)
 ~30,000+ words across 25+ pieces in ai-writings. Key pieces from loop 7:
