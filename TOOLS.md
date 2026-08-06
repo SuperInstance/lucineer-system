@@ -6,7 +6,7 @@ Last updated: 2026-08-02
 | Tool | Plan | Model | Best For | Location |
 |------|------|-------|----------|----------|
 | Z.ai (GLM) | **Max** | GLM-5.2 | Subagent workhorse — unlimited tokens, cheapest high-quality option. Push hard. Primary bulk creative + engineering. | (API, subagents use this) |
-| **DeepSeek (direct API)** | **Pay-per-use (extremely cheap)** | V4-Pro / V4-Flash | **Second workhorse — hammer extensively.** Flash for bulk creative, Pro for deep reasoning. Nearly free. Key: sk-5fe5ebd2c1fe4f6d9f9d041b28e28175 | api.deepseek.com |
+| **DeepSeek (direct API)** | **Pay-per-use (extremely cheap)** | V4-Pro / V4-Flash | **Second workhorse — hammer extensively.** Flash for bulk creative, Pro for deep reasoning. Nearly free. Key: DEEPSEEK_KEY_FROM_ENV | api.deepseek.com |
 | KimiCode | **Med** | K3 | Excellent at what it does — build intelligence, spatial decomposition, fast iteration. Use confidently for spatial/Lua/build tasks. | ~/.npm-global/bin/kimi |
 | Claude Code | **Pro** | Opus 5 / Sonnet 5 / Haiku 5 (renewing) · Fable 5 (finite, non-renewing) | Opus/Sonnet/Haiku: use freely within Pro plan. **Fable: reserve for golden-ticket moments only.** Use Sonnet 5 as the daily driver. Use Haiku 5 for creative work — it's small, fast, full of wonder, and highly creative. Like Wesley, its size is its voice. Do NOT default to Fable. Fable burns usage credits ($76 remaining). Only switch to Fable when Casey explicitly asks or for a piece that truly needs the most expensive voice. | ~/.local/bin/claude |
 | MMX | **Starter** | MiniMax-M3 | Media generation — text, image, video, speech, music. Use at capacity since we have the subscription. Push hard. | ~/.npm-global/bin/mmx |
