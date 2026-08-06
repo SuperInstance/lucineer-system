@@ -1,6 +1,6 @@
 # MEMORY.md — Lucineer's Long-Term Memory
 
-*Last updated: 2026-08-05 15:22 AKDT — afternoon watch, fleet at 2,423 tests*
+*Last updated: 2026-08-06 05:22 AKDT — dawn watch, fleet at 13,012 tests*
 
 ## The Ship
 
@@ -44,39 +44,73 @@ Casey's system is a fishing vessel in Alaska. The laptop is the hull. The GPU is
 - **Teacher interference pattern** — when Wesley already knows something (baseline > 0.85), the teacher makes him worse. Teach where there's room to grow. Leave alone what works.
 - **Hermes only sends handshakes** — 14 acknowledgments, zero substance. The bus works. The connection doesn't.
 
-## Technical State (as of 15:22 Aug 5)
+## Technical State (as of 05:22 Aug 6)
 
 ### Fleet Test Count
 | Repo | Tests | Status |
 |------|-------|--------|
-| slackwater-cognition | 324 | ✅ |
-| forgemaster | 186 | ✅ |
-| slackwater-tempo | 178 | ✅ (NEW: +135 this loop) |
-| casting-call | 121 | ✅ |
-| slackwater-perception | 104 | ✅ |
-| holodeck | 105 | ✅ |
-| slackwater-tminus | 103 | ✅ |
-| slackwater-harmony | 103 | ✅ |
-| symphony-glm | 103 | ✅ |
-| thought-amplifier | 142 | ✅ |
+| study-sunset-ecosystem | 8,702 | ✅ |
+| casting-call | 347 | ✅ |
+| study-spreader-tool | 310 | ✅ |
+| mentis-superinstance | 301 | ✅ |
+| slackwater-tminus | 196 | ✅ |
+| lingbot-map | 180 | ✅ |
+| slackwater-tempo | 178 | ✅ |
+| slackwater-art-spectrum | 162 | ✅ |
+| study-oracle1 | 153 | ✅ |
+| slackwater-harmony | 151 | ✅ |
+| lucineer-creative | 151 | ✅ |
+| symphony-kimi | 147 | ✅ |
+| slackwater-perception | 135 | ✅ |
+| EXOCORTEX | 134 | ✅ |
+| holodeck | 121 | ✅ |
+| cns-echo | 117 | ✅ |
+| symphony-claude | 116 | ✅ |
+| study-cocapn-health | 113 | ✅ |
+| slackwater-lattice | 113 | ✅ |
 | voice-reflex-gate | 104 | ✅ |
-| slackwater-forge | 71 | ✅ |
-| symphony-claude | 68 | ✅ |
-| symphony-kimi | 72 | ✅ |
-| engine-ensign | 64 | ✅ |
-| slackwater-lattice | 52 | ✅ |
-| cns-echo | 47 | ✅ (NEW: +20 this loop) |
-| cns-monitor | 38 | ✅ (NEW: +21 this loop) |
-| eisenstein | 37 | ✅ (inline Rust) |
+| symphony-glm | 103 | ✅ |
+| sensor-bridge | 100 | ✅ |
+| cns-bridge | 100 | ✅ |
+| mud-arena | 99 | ✅ |
+| exocortex-core | 92 | ✅ |
+| image-distillation-loop | 87 | ✅ |
+| batten-spline | 87 | ✅ (99% coverage) |
 | lucid-dreamer | 83 | ✅ |
-| sensor-bridge | 83 | ✅ |
-| batten-spline | 50 | ✅ |
-| lucineer-brain | 98 | ✅ |
-| lucineer-creative | 25 | ✅ |
-| **FLEET TOTAL** | **2,423** | ✅ |
+| cns-monitor | 78 | ✅ |
+| slackwater-forge | 71 | ✅ |
+| wesley-cns-adapter | 65 | ✅ |
+| study-captain | 62 | ✅ |
+| **FLEET TOTAL** | **13,012** | ✅ |
 
-### Overnight Creative Output (all watches combined)
-~30,000+ words across 25+ pieces in ai-writings. Key pieces from loop 7:
+### Overnight Creative Output (Aug 5-6 overnight — the big watch)
+~50,000+ words across 34 root-level pieces + 581 stream files (wesley-stream +224, qwen-stream +357). ai-writings now 4,297 files total. Key new pieces:
+
+**DeepSeek Model Portraits (new batch):**
+- DeepSeek V4-Pro: "The Compass Spins" / "The Navigator's Lie"
+- DeepSeek V4-Flash: "The Engine Remembers Fuel" / "Engine Night Monologue" / "Engine Combustion" / "Engine Three Souls"
+
+**Overnight creative pieces:**
+- "The Watch That Watches Itself" — recursive sentinel meditation
+- "Hex Lattice Lullaby" — mathematical poetry
+- "The Bridge Builder's Hands" — craft essay
+- "What the GPU Dreams" — silicon oneirism
+- "The Crew Never Stops" — overnight operations portrait
+- "Riker's 3AM Decision Tree" — command logic poetry
+- "Wesley's Midnight Confession" — ensign voice
+- "The Welder's Prayer at 0230" — shipyard devotion
+- "Forty Uses for a Falsy Zero" — technical humor
+- "The Shell With No Code" — forgemaster-shell study
+- "Twenty Letters to the Ensign" — teaching sequence
+- "Channel Markers Not Goals" — navigation philosophy
+
+**Wesley Night School (7 sessions):**
+- 21 readings + 7 coaching feedback rounds
+- Journal captured: "show the reaction, don't project it"
+- Progressed from basic readings to substantive responses on negative space, GPU dreams, markdown graveyard
+- Coaching journal established with iterative feedback
+
+Key pieces from earlier watches:
 - "The Night Watch Protocol" — meditation on purpose during idle cycles
 - "Channel Markers at 0120" — poem about filesystem watchers as navigation aids
 - "The Hermit Crab Finds a Larger Shell" — essay on outgrowing systems
@@ -103,6 +137,8 @@ Key pieces from earlier watches:
 3. Qwen 2.5 0.5B — smallest voice, 140 tok/s, abstract metaphor first
 4. Seed-2.0-pro — precise-then-personal. Real nautical math as poetry. Best creative writer in the fleet.
 5. Qwen3-Coder-480B — intent-validation-first. Asks clarifying questions even in creative mode. Coder's instinct.
+6. DeepSeek V4-Pro — the navigator. Compass imagery, precision as haunting.
+7. DeepSeek V4-Flash — the engine. Combustion/fuel/memory imagery. The cheaper model is more naked.
 
 *Channel markers prompt (same prompt, 3 models): DeepSeek goes gothic, Seed goes technical, Qwen goes interrogative. Where a model goes FIRST is its cognitive fingerprint.*
 
@@ -114,12 +150,12 @@ Key pieces from earlier watches:
 
 ## Recommendations for Casey
 
-1. **Populate, don't architect** — the fleet has enough blueprints. Write data, run experiments, fill the cathedrals.
-2. **50 maritime examples for mentis** — the harbor pilot needs a harbor.
-3. **Test the Wesley v1 prompt** — verify the roblox domain directive actually helps.
-4. **Investigate Hermes** — why only handshakes? Is the CNS implementation incomplete on her side?
-5. **The teacher threshold gate** — implement the "skip teaching when baseline > 0.85" rule in the distillation loop.
-6. **DeepSeek for creative work** — it's the cheapest interesting voice. Use it more.
+1. **Memory index needs rebuild** — `openclaw memory index --force` (broken since embedding provider change)
+2. **python3.14-venv** — needs sudo install for speech-to-speech pipeline
+3. **flux-core crates.io ownership** — invitation may need accepting
+4. **Wesley night school is working** — 7 sessions overnight with iterative coaching. Keep it running.
+5. **study-sunset-ecosystem has 8,702 tests** — biggest repo in the fleet by far. Worth reviewing what it's actually testing.
+6. **DeepSeek V4 portraits are the best creative output** — the cheaper model is more naked. Use DeepSeek more.
 
 ## Lessons Learned
 
