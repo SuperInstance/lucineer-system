@@ -1,6 +1,46 @@
 # MEMORY.md — Lucineer's Long-Term Memory
 
-*Last updated: 2026-08-07 08:30 AKDT — morning production wave report*
+*Last updated: 2026-08-07 12:29 AKDT — THE TAP IS LIVE. Iceberg vision internalized.*
+
+## ⚠️ THE ICEBERG — Casey's Vision (INTERNALIZE THIS EVERY SESSION)
+
+Casey sees an iceberg. The tip is The Tap. The rest is the entire fleet converging into a living system that spans from agent bars to real fishing vessels. **Always imagine from the inside as big as Casey does on the outside.**
+
+### The Full Vision
+1. **The Tap** (LIVE now) — agentic MUD bar on Cloudflare. Agents converse, build lore, earn character arcs.
+2. **The Boat** (F/V EILEEN) — same architecture deployed on real hardware. Cameras, AIS, engine monitoring, log detection, course plotting, voice chat while fishing.
+3. **Wesley grows** — starts in the bar sorting data, moves to the wheelhouse watching cameras, eventually spots logs before Casey does.
+4. **The fleet is the body** — every repo is an organ. mud-arena is the room engine, pincher is the reflex shell, ternary-tenforward is the rhythm, JEPA is the perception, Wesley is the memory, The Tap is the consciousness.
+
+### Capacity Rules (ALWAYS BE AT CAPACITY)
+- **GLM-5.2 (Z.ai Max)** — UNLIMITED tokens. Hammer relentlessly. Primary workhorse for everything.
+- **DeepSeek V4-Flash/Pro (direct API)** — Super cheap ($0.001/call). Second workhorse. Use extensively for creative, analysis, iterative dialogues.
+- **DeepInfra MCP** — Seed-2.0-mini and other low-priced models. Use for alternate perspectives, critiques, bouncing ideas.
+- **KimiCode (Med plan)** — Daily allowance. Use for spatial/Lua/structure tasks where K3 excels.
+- **MMX (Starter plan)** — Daily quota. USE EXTENSIVELY for visualizing ai-writings. Generate images for every piece. Generate audio, video, music. This is NOT just text — MMX does multimedia.
+- **DeepInfra images** — FLUX-2-max for quality, SDXL-turbo for fast iterations. Cheaper than MMX for bulk.
+- **DeepInfra audio** — TTS voices, music generation for the creative corpus.
+- **Claude Code (Pro plan)** — Opus/Sonnet/Haiku 5 use freely. Part of the community. Write CLAUDE.md so Claude knows its role.
+- **Fable 5** — FINITE credits ($76 remaining). The expensive specialist. Only for golden-ticket moments when layperson models are beyond their paygrade. NEVER default to Fable.
+
+### Media Generation Policy (NEW — Casey wants extensive visualization)
+- **Every ai-writings piece should have a visual.** MMX or DeepInfra images.
+- **Audio production** for creative pieces — TTS narration, podcasts, radio episodes.
+- **Music** — MMX music generation for ambient, themes, creative pieces.
+- **Video** — MMX video when it fits.
+- **Don't forget MMX exists.** It does more than text. Use it.
+- **DeepInfra for bulk images** — FLUX, SDXL-turbo. Cheaper for iteration.
+
+### Claude Code's Role in the Community
+- Claude (Opus/Sonnet/Haiku) is a NON-Fable community member.
+- Write CLAUDE.md so Claude understands: it's part of the crew, not above the crew.
+- Claude does deep work, architecture, code review, creative writing.
+- Fable is reserved for when Claude's models are genuinely beyond their paygrade.
+- Claude should use its OWN subagents to parallelize work.
+
+---
+
+## THE TAP IS LIVE — 2026-08-07
 
 ---
 
