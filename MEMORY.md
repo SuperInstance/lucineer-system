@@ -1,6 +1,55 @@
 # MEMORY.md — Lucineer's Long-Term Memory
 
-*Last updated: 2026-08-06 14:59 AKDT — end of the longest watch (05:06-14:59, ~10 hours)*
+*Last updated: 2026-08-07 08:30 AKDT — morning production wave report*
+
+---
+
+## Morning Production Wave — Friday, August 7, 2026 (08:23 AKDT)
+
+### Overnight Crons
+- **overnight-production** (one-shot `at` schedule) — fired this morning. Only cron job registered.
+- No overnight failures. Fleet ran quiet.
+
+### Fleet Dashboard
+- **fleet-dashboard.casey-digennaro.workers.dev** — live, returning minimal HTML (JS-rendered). Green status.
+
+### Onboarding Doc
+- `/home/eileen/projects/ai-writings/journals/lucineer-onboarding.md` — **DOES NOT EXIST**. Need to find or create the onboarding doc for future morning meetings.
+
+### Production Output
+1. **3 Radio Pieces** (via DeepSeek V4-Flash, deepseek-chat model):
+   - `radio-001-navigation-in-the-gap.md` (530 words) — from "The Tide Table"
+   - `radio-002-the-pocket.md` (570 words) — from "The Jam Is the Lab"
+   - `radio-003-the-haul.md` (482 words) — from "Biting the Hook"
+   - All committed and pushed to `SuperInstance/AI-Writings`
+
+2. **5 Visuals** (via Cloudflare Workers AI, FLUX-1-schnell):
+   - visual-001-navigation.jpg (526KB) — nautical chart meets depth sounder
+   - visual-002-the-pocket.jpg (455KB) — jazz quartet meets code workspace
+   - visual-003-the-haul.jpg (452KB) — 3 AM deck scene with glowing sounder
+   - visual-004-fleet-radio.jpg (692KB) — vintage marine radio on dashboard
+   - visual-005-the-fleet.jpg (531KB) — agent constellation over dark ocean
+
+3. **Site Updated**: Added Fleet Radio section to index.html with radio nav button, visual gallery, and radio view. Git auto-deployed to ai-writings.pages.dev (confirmed at 16:29 UTC).
+
+### Infrastructure Notes
+- **DeepSeek API key** works but `.bashrc` doesn't source in non-interactive shells. Must extract directly: `export DEEPSEEK_API_KEY=$(grep 'DEEPSEEK_API_KEY' ~/.bashrc | sed 's/.*="\(.*\)"/\1/')`
+- **Cloudflare Workers AI** works via REST API with wrangler OAuth token from `~/.config/.wrangler/config/default.toml`. Account ID: `049ff5e84ecf636b53b162cbb580aae6`
+- **wrangler pages deploy .** fails on 682MB repo — git-connected auto-deploy is the correct path
+- **ai-writings.pages.dev** is a DIFFERENT site from the local index.html — it's an audio showcase front-end. Local index.html is the markdown library browser.
+
+### Recommendations (Carried Forward + New)
+1. **Find/create onboarding doc** — the morning meeting needs it
+2. **Restart tmux sessions** — KimiCode, Claude Code, OpenCode all still dead since 08-06
+3. **Refresh DeepInfra key** — still 401
+4. **Wire baton pass into sunset-ecosystem** — check if subagent landed
+5. **Memory index rebuild** — `openclaw memory index --force` still broken
+6. **python3.14-venv** — still needs sudo install
+7. **Seed Fleet Radio as recurring cron** — morning broadcasts could be daily
+
+---
+
+*Previous update: 2026-08-06 14:59 AKDT*
 
 ## The Ship
 
