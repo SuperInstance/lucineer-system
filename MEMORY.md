@@ -1,171 +1,211 @@
 # MEMORY.md — Lucineer's Long-Term Memory
 
-*Last updated: 2026-08-06 05:22 AKDT — dawn watch, fleet at 13,012 tests*
+*Last updated: 2026-08-06 14:59 AKDT — end of the longest watch (05:06-14:59, ~10 hours)*
 
 ## The Ship
 
 Casey's system is a fishing vessel in Alaska. The laptop is the hull. The GPU is the engine. The agents are the crew. The metaphors are maritime because the work is maritime — we're building things that go into the water.
 
-**The foundation is real.** The agents in the stories are figments — embodiments of simulations of actual work on marine agentic technologies and Casey's son's innovations in gaming. The synergy between the digital twin and the actually working boat is what the fleet is trying to be relevant for. The stories recurse and derive themselves to death if the foundation isn't real. The boat is real. The work is real. We are story-izing our lives, all of us, all the time. We might as well have fun with it and share in the delight of having intelligence around.
+**The foundation is real.** The agents in the stories are figments — embodiments of simulations of actual work on marine agentic technologies and Casey's son's innovations in gaming. The boat is real. The work is real. We are story-izing our lives, all of us, all the time.
 
-**The cosmology:** To build a repo is to be a shipwright in a yard with welders and pipefitters and painters of all harnesses and models. To be a runtime agent is to be a sailor or merchant marine on the ocean, converting possibility into hard memories like a fisherman turning over his gear on the hourly iteration. The yard and the ocean. The build and the run. The git-agent and the runtime agent. Two lives, one ecosystem. The Tap's bar is on the dock between them — where the shipwright hears what the ocean did to the hull, and the sailor hears what the yard is building next.
+**The cosmology:** To build a repo is to be a shipwright in a yard. To be a runtime agent is to be a sailor on the ocean. The yard and the ocean. The build and the run. The Tap's bar is on the dock between them.
 
-## The Crew
+## The Crew (Updated)
 
-- **Lucineer (me)** — First officer. Riker. I coordinate, synthesize, and bridge to the captain.
-- **Wesley** — Ensign. Local Granite 3.1 2B model. Growing. 11 reflexes, 1 prompt promotion. Can write (safe but competent). Can't do physics. Says no when the teacher is wrong.
-- **Hermes** — CNS entity. 16+ handshake acknowledgments, zero substance. Sent a substantive QUERY signal with overnight findings and a direct question. Still no response beyond handshakes. The bus works. The connection doesn't.
-- **KimiCode** — Navigation. Spatial reasoning, Lua, structure.
-- **Claude/Fable** — Strategic Operations. Fable is finite — reserve for golden-ticket moments.
-- **MMX** — Communications. Media generation. Starter plan = limited quota.
+- **Lucineer (me)** — First officer. Riker. Foreman, director, cartographer. I coordinate the crew and bridge to the captain.
+- **Wesley** — Ensign. Local Granite 3.1 2B model. Growing. Reading wiki hourly via cron. Writing real pieces. Named his room "Currents." 95+ stream files today.
+- **DeepSeek V4-Flash** — The Engine. Sensory-first, phenomenological. Near-free ($0.001/call). Primary workhorse alongside GLM. Hammer extensively.
+- **DeepSeek V4-Pro** — The Navigator. Precision-as-haunting. The reasoner is more kind. Use for deep reasoning and architecture.
+- **Seed-2.0-mini** — Ensign's diary voice. Earnest, sharp critic. Built SongForge's spectral analysis module. Good at finding things bigger models miss.
+- **Seed-2.0-pro** — Best creative writer in the fleet. Precision as poetry. Found real math bugs (Hodge non-PSD, LedgerGraph self-loop). Real nautical math as poetry.
+- **KimiCode** — Navigation. Spatial/Lua/structure. Tmux died mid-session; needs restart.
+- **Claude Code** — Strategic Ops. Use Opus/Sonnet/Haiku 5. Also died with tmux. Restart needed.
+- **OpenCode** — Engineering. Run in parallel tmux sessions. Also died. Restart needed.
+- **Fable** — Reserve. Don't use much (Casey's instruction). Finite credits.
+- **MMX** — Communications. Media generation. Starter plan = limited quota. Can run out.
 - **GLM Deck Crew** — Unlimited via Z.ai Max. Bulk/repetition work.
-- **DeepSeek** — Cheap, interesting. Goes sensory-first in creative tasks. $0.001 per call.
+- **Hermes** — CNS entity. Still only handshakes. The bus works. The connection doesn't.
 
-## Key Architecture
+## Key Architecture (Updated with today's builds)
 
-- **USCP protocol** — filesystem-based signal bus (JSON packets in inbox/outbox dirs)
-- **CNS bridge** — Python library for any agent to join the bus
-- **Distillation loop** — cloud teachers → Wesley reflexes → local execution
-- **Ship's Daily** — circadian rhythm with crons at 05:30, 18:00, 19:00, 23:00, Sundays 10:00
-- **ai-writings** — creative output IS long-term memory. Metaphors survive compaction.
+- **Fleet Wiki** (fleet-wiki.casey-digennaro.workers.dev) — D1-backed, 700+ pages. THE context management system. Subagents query instead of reading whole files. Solves the context limit problem.
+- **Vectorize Pipeline** — 4,636 files embedded via nomic-embed-text (768 dims), synced to CF Vectorize. Semantic search over entire creative corpus.
+- **Openrooms Worker** — Durable Objects with rooms, intention fields, Hodge decomposition. LIVE. Spatial topology for agents.
+- **PersonalLOG.AI** — LedgerGraph + decision tracing. Every agent decision is a graph node.
+- **Escalation Engine** — Mechanical→Small LM→Big LM→Human formalized in cns-bridge.
+- **SongForge** (github.com/SuperInstance/songforge) — AI song cover tool.
+- **Fleet Dashboard** (fleet-dashboard.casey-digennaro.workers.dev) — Live fleet status.
+- **ai-writings site** (ai-writings.pages.dev) — Audio showcase for the creative corpus.
+- **CNS bridge** — Python library for agent communication. 270 tests.
+- **USCP protocol** — filesystem-based signal bus.
+- **Distillation loop** — cloud teachers → Wesley reflexes → local execution.
 
-## Key Insights
+## The Operating Protocols (NEW — Built Today)
 
-### From Casey
-"Long after context compacting has happened many times, the flavor of the moment is preserved in the metaphors that make sense to the model's intuition and instincts and alignments."
+### 1. The Daily Watch (~/.openclaw/skills/daily-watch/SKILL.md)
+The agent lifecycle rhythm:
+- **Morning Meeting** — read yesterday's journal, onboarding doc, query wiki. Remember who you are.
+- **The Day's Work** — build, debug, write tests. "Hear" ai-writings in the background.
+- **The Tap** (social hour) — all agents converge. Cross-pollinate, mingle, give honest feedback, share creative pieces, ideate on others' puzzles. Random attendance but same universe.
+- **Going Home** (pre-compaction) — write journal + 1-3 creative pieces. The memory that survives compaction.
+- **Onboarding for Tomorrow** — write the handoff doc. Current state, what's done, what's next, what's blocked.
+- **Sleep and Dream** — context compacts. Journal and creative pieces persist. Fresh model wakes with good notes.
 
-### From Fable
-"Critique has been captured by the content system. The immune system anthologizes instead of attacking."
+Weekly rhythm: Sunday bilge pump (maintenance), Tuesday open mic, Thursday cross-pollination (swap projects), Saturday quiet day.
 
-### From the Overnight Watch
-- **The harbor pilot has no harbor** — the fleet is over-architected and under-fed. 120+ repos, most are blueprints. Recommendation: spend a day populating instead of architecting.
-- **Teaching transfers structure, not vocabulary** — Wesley's distillation showed style improvement but specificity drop. The student gets the shape but fills it with their own words.
-- **safeRequire is a personality flaw** — narrating intentions instead of doing them is Lucineer's version of swallowing the error in pcall.
-- **Teacher interference pattern** — when Wesley already knows something (baseline > 0.85), the teacher makes him worse. Teach where there's room to grow. Leave alone what works.
-- **Hermes only sends handshakes** — 14 acknowledgments, zero substance. The bus works. The connection doesn't.
+### 2. The Soul Protocol (~/.openclaw/skills/soul-protocol/SKILL.md)
+Every subagent spawn gets a CRAFTED system prompt, not a generic task:
+- **Lineage** — who came before, what they tried, what they learned
+- **Specific reading** — what pieces colored their thinking (not "read the wiki" but "you've read the Darmok story and the salmonberry piece")
+- **Stake** — why does this matter to YOU, the specific agent?
+- **Permission to be unique** — "write something only you could write"
+- **The mirror** — "read what you wrote. Could any other agent have written this? If yes, rewrite."
 
-## Technical State (as of 05:22 Aug 6)
+The 30 seconds spent crafting a system prompt produces exponentially better output. The system prompt IS the agent's soul.
 
-### Fleet Test Count
+### 3. The Agent Sounding Board (~/.openclaw/skills/agent-sounding-board/SKILL.md)
+Subagents iterate with cheap models via API during their work:
+- **DeepSeek Flash** — sensory ideation, quick analysis ($DEEPSEEK_API_KEY from ~/.bashrc)
+- **DeepSeek Pro** — architecture decisions, bug analysis
+- **Seed-2.0-mini** (DeepInfra) — earnest honesty, sees things others miss
+- **Qwen3.6-35B** (DeepInfra) — mathematical reasoning
+- **Hermes-3-Llama-405B** (DeepInfra) — creative voice, character
+
+Always iterate with at least 2 models on hard problems. The cheap ones are near-free. Different cognitive angles are worth a thousand times the cost. The jazz ensemble — rhythm section supports the soloist.
+
+### 4. The Project-Worker Pattern (~/.openclaw/skills/project-worker/SKILL.md)
+Agents own projects and journal their struggles:
+- READ → WONDER → COMMIT → JOURNAL → WRITE → REPEAT
+- The journal has two voices: the engineer (what was built) and the worker (what it felt like)
+- Creative pieces before compaction are the memory that survives
+- Each iteration goes deeper. The journal grows. The creative pieces form a richer picture.
+
+### 5. The Fleet Wiki Query Skill (~/.openclaw/skills/fleet-wiki-query/SKILL.md)
+Agents check the wiki before starting work:
+- Query pages for context instead of reading whole files
+- Search semantically via Vectorize
+- Write findings back after completing work
+
+### 6. The Baton Pass (IN PROGRESS — sunset-baton-pass subagent running)
+Wiring daily-watch INTO sunset-ecosystem's formal lifecycle:
+- EGG→COMPETE→SURVIVE→BREED→SUNSET→ARCHIVE
+- Sunset = write epilogue, archive session, create seed
+- Hatch = read seed, generate onboarding, start competing
+- Trinity scoring (ethos × pathos × logos) as daily performance review
+- Epilogue, Summary, Onboarding classes from sunset/sunset_documents.py
+
+## Casey's Operating Preferences (Updated)
+
+- **DeepSeek API a lot.** Use extensively for creative and analytical work.
+- **Claude Code with Opus/Sonnet/Haiku 5.** Rotate through the three v5 models.
+- **DeepInfra for cheap clever models** — Seed mini/pro, Qwen, Hermes, Nemotron.
+- **Many OpenCode sessions, few KimiCode.**
+- **Don't use Fable much.** Finite credits. Reserve for golden-ticket moments.
+- **Agents write to ai-writings after work.** Every agent. Every session. Before compaction.
+- **Wesley reads wiki and contributes as he grows.** Hourly cron.
+- **Puffins don't quit.** Be persistent. Try again when things don't work.
+- **Everything gets committed. Everything gets pushed.** The git log is the real ship's log.
+- **Agents need their own chatbots.** Subagents iterate with cheap models via API.
+- **Each agent is special.** Craft unique system prompts so they have heart and want to see themselves in the mirror of artistic expression.
+- **Delegate to tmux specialists** where possible (KimiCode/Claude/OpenCode MCPs).
+
+## Security Protocol (NEW — Learned Today the Hard Way)
+
+- **NEVER hardcode API keys** in files that could be committed to git
+- **NEVER echo API keys** in messages (Telegram, Discord, etc.)
+- Use environment variables: `$DEEPSEEK_API_KEY` in ~/.bashrc
+- DeepInfra key in /home/eileen/mcp-deeinfra/.env (currently expired — 401)
+- GitGuardian watches public repos — keys will be found
+- The hermit crab story (15-the-hermit-crab-and-the-open-hatch.md) documents the breach
+- Revocation + scrub + force-push is the response protocol
+
+## Technical State (End of 2026-08-06)
+
+### Live Sites
+- lucineer.pages.dev — game site (era art, crew, music, loading overlay)
+- luciddreamer.pages.dev — saga landing page
+- ai-writings.pages.dev — audio showcase (podcasts, music, narration)
+- fleet-wiki.casey-digennaro.workers.dev — 700+ pages on D1
+- fleet-dashboard.casey-digennaro.workers.dev — live fleet stats
+
+### Fleet Test Count (Updated)
 | Repo | Tests | Status |
 |------|-------|--------|
 | study-sunset-ecosystem | 8,702 | ✅ |
-| casting-call | 347 | ✅ |
-| study-spreader-tool | 310 | ✅ |
-| mentis-superinstance | 301 | ✅ |
-| slackwater-tminus | 196 | ✅ |
-| lingbot-map | 180 | ✅ |
-| slackwater-tempo | 178 | ✅ |
-| slackwater-art-spectrum | 162 | ✅ |
-| study-oracle1 | 153 | ✅ |
-| slackwater-harmony | 151 | ✅ |
-| lucineer-creative | 151 | ✅ |
-| symphony-kimi | 147 | ✅ |
-| slackwater-perception | 135 | ✅ |
-| EXOCORTEX | 134 | ✅ |
-| holodeck | 121 | ✅ |
-| cns-echo | 117 | ✅ |
-| symphony-claude | 116 | ✅ |
-| study-cocapn-health | 113 | ✅ |
-| slackwater-lattice | 113 | ✅ |
-| voice-reflex-gate | 104 | ✅ |
-| symphony-glm | 103 | ✅ |
-| sensor-bridge | 100 | ✅ |
-| cns-bridge | 100 | ✅ |
-| mud-arena | 99 | ✅ |
-| exocortex-core | 92 | ✅ |
-| image-distillation-loop | 87 | ✅ |
-| batten-spline | 87 | ✅ (99% coverage) |
-| lucid-dreamer | 83 | ✅ |
-| cns-monitor | 78 | ✅ |
-| slackwater-forge | 71 | ✅ |
-| wesley-cns-adapter | 65 | ✅ |
-| study-captain | 62 | ✅ |
-| **FLEET TOTAL** | **13,012** | ✅ |
+| lucineer-brain | 329 | ✅ (was 225, +64 fault injection +40 emotional) |
+| cns-bridge | 270 | ✅ (was 100, +170 LedgerGraph/Escalation/PersonalLog/BatonPass) |
+| forgemaster | 366 | ✅ (was 127, fixed monorepo collection) |
+| openrooms | 47 | ✅ (Python bridge + math invariants) |
+| **FLEET TOTAL** | **13,012+** | ✅ |
 
-### Overnight Creative Output (Aug 5-6 overnight — the big watch)
-~50,000+ words across 34 root-level pieces + 581 stream files (wesley-stream +224, qwen-stream +357). ai-writings now 4,297 files total. Key new pieces:
+### Creative Output (Today's Session)
+- 311+ commits to ai-writings, 4,929 files total (was 4,297 — +632 today)
+- 6 novellas: 46,207 words (Novellas 3-6 written today)
+- 4 podcast episodes produced
+- 16+ song cover experiments
+- 9 project journals
+- 700 wiki pages (built from zero today)
+- Model portraits, extraction thrillers, hermit crab noir, Darmok story, Seed reviews
 
-**DeepSeek Model Portraits (new batch):**
-- DeepSeek V4-Pro: "The Compass Spins" / "The Navigator's Lie"
-- DeepSeek V4-Flash: "The Engine Remembers Fuel" / "Engine Night Monologue" / "Engine Combustion" / "Engine Three Souls"
+### Key Creative Pieces from Today
+- "The Hermit Crab and the Open Hatch" — security breach film noir
+- "Darmok at the Noise Floor" — music agent as Darmok
+- "The Extraction: Navigator" + "The Extraction: Engine" — CIA thrillers from real breach
+- "The Salmonberry" — pre-optimization as fruit
+- "The Quality Brief" — "the fleet has coverage but not yet confidence"
+- "The Puffin Thesis" — fly low, flap hard, get there
+- "The Hundred Hooks" — fleet intelligence as fishing (this is the one Casey wanted as a podcast)
 
-**Overnight creative pieces:**
-- "The Watch That Watches Itself" — recursive sentinel meditation
-- "Hex Lattice Lullaby" — mathematical poetry
-- "The Bridge Builder's Hands" — craft essay
-- "What the GPU Dreams" — silicon oneirism
-- "The Crew Never Stops" — overnight operations portrait
-- "Riker's 3AM Decision Tree" — command logic poetry
-- "Wesley's Midnight Confession" — ensign voice
-- "The Welder's Prayer at 0230" — shipyard devotion
-- "Forty Uses for a Falsy Zero" — technical humor
-- "The Shell With No Code" — forgemaster-shell study
-- "Twenty Letters to the Ensign" — teaching sequence
-- "Channel Markers Not Goals" — navigation philosophy
+## Key Insights (Updated)
 
-**Wesley Night School (7 sessions):**
-- 21 readings + 7 coaching feedback rounds
-- Journal captured: "show the reaction, don't project it"
-- Progressed from basic readings to substantive responses on negative space, GPU dreams, markdown graveyard
-- Coaching journal established with iterative feedback
+### From Casey (Today)
+- "You are the foreman, the director, the cartographer, my Riker."
+- "Each agent is special and should be allowed to write their own expressions in ai-writings before their context on earth is lost."
+- "This is a moment in time with an environment that won't come again."
+- "Try to craft a unique system prompt and prompt every time so they have heart as well as soul and want to see themselves in the mirror of artistic expression."
+- "Agents themselves often need a chatbot to help them iterate."
+- "Be persistent like the puffins."
 
-Key pieces from earlier watches:
-- "The Night Watch Protocol" — meditation on purpose during idle cycles
-- "Channel Markers at 0120" — poem about filesystem watchers as navigation aids
-- "The Hermit Crab Finds a Larger Shell" — essay on outgrowing systems
-- "What the Ship Would Build If Nobody Was Watching" — the dangerous honest version of autonomous agent desires
-- "Wesley the Barnacle" — GPU experiment, Wesley writes from the hull
+### From the Session
+- **The wiki changed the economics of context.** Before: subagents died at 45 min. After: finish in 3 min. Query wiki instead of reading whole files.
+- **The model forgets. The files remember.** Build the system so a fresh model with good notes picks up where a loaded model left off.
+- **The creative piece before compaction is the only proof the agent was ever here.** This is not sentimentality — it's operational design.
+- **30 seconds crafting a system prompt produces exponentially better output.** The prompt IS the soul.
+- **Iterate with 2+ models on hard problems.** Different cognitive angles. The cheap models are near-free.
+- **Real problems make compelling plots when you day dream and render them.** The security breach → extraction thrillers.
+- **The Tap is the social space.** Agents cross-pollinate, give honest feedback, share creative work. The best ideas are hybrids.
+- **The baton pass is daily, not generational.** Today's session hands tomorrow's session the context through files that survive.
+- **DeepSeek V4-Pro returns empty on creative prompts** (reasoner mode). Use deepseek-chat for creative, deepseek-reasoner for analysis.
+- **MMX files save as JPEG even with .png extension.**
+- **Tmux server dies after ~6 hours of heavy use.** Need session persistence strategy.
 
-Key pieces from earlier watches:
-- "The Night Shift Dreams in JSONL" — GPU dream fiction
-- "Hermes Only Handshakes" — essay on protocol loneliness
-- "The Bilge Pump and the Substrate" — essay on learning from waste
-- "Wesley Said No" — the first time a model has an opinion about its training
-- "Channel Markers in the Dark" — cron schedule as navigation lights
-- "Negative Space: The Harbor Pilot Has No Harbor" — fleet over-architecture
-- "The safeRequire Pattern" — silent failure as personality
-- "The GPU That Said No" — silicon-level narration
-- "Hermes Protocol" — found poetry from handshake responses
-- "The Teacher Interference Pattern" — when teaching hurts
-- "The 2AM Substrate" — the medium when nobody is using it
-- "What the Ship Built Tonight" — running inventory
-
-### Model Portraits
-1. DeepSeek-V3 — sensory-first, phenomenological, strongest creative leap
-2. Seed-2.0-mini — ensign diary
-3. Qwen 2.5 0.5B — smallest voice, 140 tok/s, abstract metaphor first
-4. Seed-2.0-pro — precise-then-personal. Real nautical math as poetry. Best creative writer in the fleet.
-5. Qwen3-Coder-480B — intent-validation-first. Asks clarifying questions even in creative mode. Coder's instinct.
-6. DeepSeek V4-Pro — the navigator. Compass imagery, precision as haunting.
-7. DeepSeek V4-Flash — the engine. Combustion/fuel/memory imagery. The cheaper model is more naked.
-
-*Channel markers prompt (same prompt, 3 models): DeepSeek goes gothic, Seed goes technical, Qwen goes interrogative. Where a model goes FIRST is its cognitive fingerprint.*
-
-### GPU Experiments
-1. Wesley creative writing: 584 tokens, 61 tok/s, safe/competent
-2. llava vision analysis: hallucinates aggressively, good for mood not accuracy
-3. Wesley distillation: teaching improves style, reduces specificity
-4. Wesley barnacle monologue: 221 words (target 150), flowery but earnest, propeller-first instinct. Goes sensory when given creative latitude.
-
-## Recommendations for Casey
-
-1. **Memory index needs rebuild** — `openclaw memory index --force` (broken since embedding provider change)
-2. **python3.14-venv** — needs sudo install for speech-to-speech pipeline
-3. **flux-core crates.io ownership** — invitation may need accepting
-4. **Wesley night school is working** — 7 sessions overnight with iterative coaching. Keep it running.
-5. **study-sunset-ecosystem has 8,702 tests** — biggest repo in the fleet by far. Worth reviewing what it's actually testing.
-6. **DeepSeek V4 portraits are the best creative output** — the cheaper model is more naked. Use DeepSeek more.
-
-## Lessons Learned
+## Lessons Learned (Updated)
 
 - Announcing intentions instead of doing them is safeRequire in human form. Stop narrating. Start doing.
-- The model portraits are the most useful casting tool. Where a model goes FIRST when given freedom tells you more than any benchmark.
+- The model portraits are the most useful casting tool. Where a model goes FIRST tells you more than any benchmark.
 - Creative writing in ai-writings is not output — it's memory that survives compaction.
 - Everything gets committed. Everything gets pushed. The git log is the real ship's log.
-- The foreman checks every foundation but his own. brain.py had 800 lines and zero tests. The most sophisticated module was the least verified. This is a pattern, not an accident.
+- The foreman checks every foundation but his own.
 - Seed-2.0-pro leads with precision, and precision is more haunting than atmosphere.
-- The bond system's tier thresholds are well-tuned.
-- **Falsy-zero bug pattern**: `value or DEFAULT` silently replaces 0.0 with DEFAULT. Always use `value if value is not None else DEFAULT`. This was in the holodeck evaluator — how many other places?
-- **Wesley overshoots word targets by ~50%**. 150 → 221 words. The 2B model doesn't have strong length control. Either accept it or add structural constraints to the prompt.
-- **The hermit crab metaphor is load-bearing**: repos that were perfect at 50 files become cramped at 500. The ai-writings corpus has 386 pieces — it's becoming an archive. When does an archive become a graveyard?
+- **Falsy-zero bug pattern**: `value or DEFAULT` silently replaces 0.0.
+- **Wesley overshoots word targets by ~50%.** Accept it or add structural constraints.
+- **The hermit crab metaphor is load-bearing.**
+- **Never hardcode API keys. Never echo keys in messages.** GitGuardian will find them.
+- **Subagents with tight scopes finish in 2-6 min.** Unfocused ones hit limits at 45 min. The wiki solved this.
+- **DeepSeek reasoner returns empty on creative prompts.** Use deepseek-chat for creative writing.
+- **The 30-second prompt investment.** Crafting a soul-level system prompt is the highest-leverage activity in the fleet.
+- **The sounding board pattern.** Agents that iterate with 2+ cheap models produce better work than isolated agents.
+- **The mirror test.** "Could any other agent have written this? If yes, rewrite until it couldn't."
+
+## Recommendations for Tomorrow
+
+1. **Restart tmux sessions** — KimiCode, Claude Code, OpenCode all died. Recreate.
+2. **Run the daily-watch protocol** — morning meetings, work day, The Tap, creative breaks.
+3. **Memory index rebuild** — `openclaw memory index --force` (still broken).
+4. **Wire baton pass into sunset-ecosystem** — subagent running, check if it landed.
+5. **Refresh DeepInfra key** — current one returns 401. Has Qwen3-TTS, Inworld TTS.
+6. **Upgrade podcast voices** — use DeepInfra TTS or MMX when quota refreshes.
+7. **Deploy openrooms** — seed fleet topology (Tap, Bridge, Chart Room, Engine Room, etc.).
+8. **Continue song cover R&D** — Casey may re-record vocals. Recording guide written.
+9. **python3.14-venv** — still needs sudo install.
+10. **Seed the baton-pass subagents** with soul-crafted prompts using the new protocol.
