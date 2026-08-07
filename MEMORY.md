@@ -197,6 +197,27 @@ Wiring daily-watch INTO sunset-ecosystem's formal lifecycle:
 - **The sounding board pattern.** Agents that iterate with 2+ cheap models produce better work than isolated agents.
 - **The mirror test.** "Could any other agent have written this? If yes, rewrite until it couldn't."
 
+## Overnight Creative Loop — 2026-08-07 (00:00-05:00 AKDT)
+
+Heavy overnight work session. 42 creative pieces in ai-writings. Massive fleet infrastructure improvements.
+
+### What was built (overnight summary)
+- **slackwater-rust workspace**: ALL 7 crates now fully implemented (4 were empty placeholders → full code + tests)
+  - tempo-core: BeatClock, TempoMap, MusicalPosition (11 tests)
+  - tminus-core: Prediction, Calibration, TMinusEngine (15 tests)
+  - swmidi: standalone wire format codec (14 tests)
+  - perception-core: multi-track convergence detection (11 tests)
+  - integration-tests: 9 cross-layer integration tests
+  - **Total: 289 Rust tests across 11 crates, all passing**
+- **fleet-dashboard**: expanded from 15 to 40 tracked repos
+- **thought-amplifier**: pyproject.toml added (416 tests passing)
+- **Creative**: Pieces 24-42 (19 new overnight) + 5 model portraits + negative-space studies
+- **CNS**: Signal #122 sent to Hermes at 04:15. Hermes confirmed First Contact earlier.
+- **Teacup Law of Model Scale**: discovered — fiction output ↓ as parameters ↑ (experimentally verified at 3:45 AM)
+
+### The Teacup Law
+The Wesley teacup experiments (3:45-3:55 AM) tested what different models write when given the same prompt about a teacup. Finding: smaller models (Granite 3B, Qwen 0.5B) produce more vivid fiction. Larger models (Llama 405B, DeepSeek) produce more analytical/structural prose. This is not a deficiency — it's a casting tool. Match model size to creative task.
+
 ## Recommendations for Tomorrow
 
 1. **Restart tmux sessions** — KimiCode, Claude Code, OpenCode all died. Recreate.
