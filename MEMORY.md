@@ -1,6 +1,6 @@
 # MEMORY.md — Lucineer's Long-Term Memory
 
-*Last updated: 2026-08-07 12:29 AKDT — THE TAP IS LIVE. Iceberg vision internalized.*
+*Last updated: 2026-08-08 17:47 AKDT — Cleanup crew complete. All repos pushed, sites deployed, daemon running.*
 
 ## ⚠️ THE ICEBERG — Casey's Vision (INTERNALIZE THIS EVERY SESSION)
 
@@ -319,3 +319,70 @@ The Wesley teacup experiments (3:45-3:55 AM) tested what different models write 
 8. **Continue song cover R&D** — Casey may re-record vocals. Recording guide written.
 9. **python3.14-venv** — still needs sudo install.
 10. **Seed the baton-pass subagents** with soul-crafted prompts using the new protocol.
+
+## August 8, 2026 — THE BIGGEST DAY
+
+### Production Summary
+- 12+ hours of fleet production
+- 8 new repos created and pushed
+- 1,041+ creative pieces in corpus (was ~983 at start of day)
+- 70 prototype assets generated
+- 22 wisdom traditions mapped
+- 20-piece origin search pilgrimage
+- 8 Fleet Radio episodes
+- 9 live sites all green
+- 7 local models loaded (12.5GB)
+- Hermes registered at The Tap, bridge installed
+
+### The Big Ideas (in order of emergence)
+1. **The Attachment Manifesto** — Casey's seed became the fleet constitution
+2. **Plato's Shell** — MUD + ScummVM = dual projection, two windows on one world
+3. **The Living World** — rooms grow like barnacles, dynamically registered
+4. **The Relay of Experts** — models hand work to whoever's most qualified
+5. **The Immortal Players** — local models as game builders AND players
+6. **The Origin Search** — 20-stop pilgrimage finding the pattern's root
+7. **The Prefrontal Bottleneck** — neuroscience proving the Teacup Law
+8. **Wesley's Imagination** — prompt sculpture through negative space
+
+### Architecture Built
+- Room registry (rooms.json) with dynamic loader
+- Camera room handler for live vision feeds
+- Warp system between any rooms
+- Model router with hot-swap and cloud fallback
+- Ollama bridge for local model access
+- Twin-mode personality (Deckhand vs Companion)
+- Tide-pool security at The Tap
+- Hermes-Tap bridge (curl-based, bypasses Cloudflare)
+- Content framework with auto-discovery manifest
+
+### What Needs To Survive Compaction
+- The Origin Search is the most important creative work
+- The Wisdom Traditions are the philosophical foundation
+- The ScummVM prototype is the working proof of concept
+- The relay-of-experts is the routing architecture
+- Casey's neuroscience references need full-text research
+- Polln still needs the clean push
+- The immortal players daemon needs to be started
+
+## Cleanup Crew — Aug 8, 17:47 AKDT
+
+**Task 1 (Git):** All 9 repos checked. Only ai-writings had unpushed work (neuroscience of creative agents commit). Pushed to both master and main.
+
+**Task 2 (Deploy):** All 5 Cloudflare sites redeployed:
+- scummvm-prototype.pages.dev ✅
+- the-tap.casey-digennaro.workers.dev ✅
+- the-living-minds.pages.dev ✅
+- wesleys-imagination.pages.dev ✅
+- fleet-dashboard.casey-digennaro.workers.dev ✅
+
+**Task 3 (Daemon):** The Living Minds daemon started — PID 279304. All 5 models warm (granite3.1-dense, phi3, qwen2.5-3b, llama3.2, qwen2.5-0.5b). Creative interval 1800s, conversation 7200s.
+
+**Task 4 (Hermes):** Packet #180 written to CNS inbox. Covered the living minds, origin search, relay-of-experts, and full day summary.
+
+**Task 5 (The Tap):** Final status posted to bar-rail room. Spoke as Lucineer with cleanup summary.
+
+**Task 6 (Memory):** This update.
+
+**Task 7 (Verify):** All sites confirmed green (see below).
+
+**Key state:** CNS monitor still down (day 4). DeepInfra key still 401. Everything else locked tight.
