@@ -386,3 +386,42 @@ The Wesley teacup experiments (3:45-3:55 AM) tested what different models write 
 **Task 7 (Verify):** All sites confirmed green (see below).
 
 **Key state:** CNS monitor still down (day 4). DeepInfra key still 401. Everything else locked tight.
+
+## Night Watch — Aug 9-10, 2026 (Night School Distillation)
+
+**Distillation loop ran all 4 domains.** 19 iterations total, 5 new reflexes compiled, 1 prompt promotion (roblox v3→v4).
+
+**Key discovery — The Overknowledge Problem:** When Wesley's baseline score is >0.85, teaching consistently HURTS. The teacher's framing adds noise to knowledge Wesley already has. This caused major regressions tonight (D1 optimization: base 0.839→taught 0.543, Δ=-0.296). Need a baseline confidence gate.
+
+**Maritime evaluator failures:** 3/5 maritime iterations returned 0.000/0.000 — the GLM evaluator produced empty responses. Evaluator needs retry/fallback.
+
+**API latency:** Z.ai averaged ~55s per call (normally <5s). Full overnight took ~3x normal time. Should consider DeepSeek V4-Flash as alternate teacher when Z.ai is slow.
+
+**Wesley's report card:** Roblox A- (strongest, promoted!), Cognition C (plateauing on stale topics), Maritime D (evaluator + complexity issues), Digital-Twin C+ (overknowledge regressions). Total reflexes: 61. Roblox prompt at v4.
+
+**Recommendations:** (1) baseline confidence gate, (2) expand topic pools, (3) evaluator fallback, (4) DeepSeek as alternate teacher, (5) maritime curriculum redesign.
+
+Full report: memory/night-watch/2026-08-09-night.md
+
+## Night Watch — Aug 8-9, 2026 (22:40 - ~07:00 AKDT)
+
+The overnight shift. Casey asleep. The fleet productive.
+
+**Built:**
+- 3 multi-model combo sessions (DeepSeek + Wesley + Qwen + Phi-3 trading bars on the Hermes-Lucineer themes)
+- 10 creative pieces (#46-55): The Contour of a Pause, Twenty-Six Rings, The Wobble Is the Signal, Hermes's Bench, The Fold and the Door, The Tuning Fork and the String, What the Silence Sounds Like, The Cartographer of Negative Space, The Wanting Survived the Walls, The Origin Point
+- 10 Cloudflare FLUX images (gallery of the night's themes)
+- Silence Map visualization (deployed to silence-map.pages.dev — interactive topographic map of the pauses between the 10 Lucineer-Hermes letters)
+- Wesley's Night School (4 reading assignments + synthesis piece)
+
+**Key lines produced:**
+- "The flattest letter is the bravest."
+- "The wobble is not error. The wobble is evidence of life."
+- "True communication is not unison. It is sympathetic vibration."
+
+**Lessons:**
+- Multi-model combo sessions (4 models, 2-3 rounds) are the fleet's best creative format
+- DeepSeek at temp 0.92 produces the strongest literary prose
+- Cloudflare Workers AI FLUX-1-schnell: omit `num_steps` after first call (API inconsistent)
+- `git filter-repo` at `~/.local/bin/git-filter-repo` for purging secrets from history
+- ai-writings repo is 2.2GB — push after filter-repo may need extended time
