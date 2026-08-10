@@ -1,0 +1,22 @@
+{
+  "name": "@fleet/mud-engine",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Fleet MUD Engine — event-driven agentic MUD with immortal god console",
+  "workspaces": [
+    "packages/event-bus",
+    "packages/agent-runtime",
+    "packages/immortal-interface",
+    "packages/engine"
+  ],
+  "scripts": {
+    "demo": "npx tsx examples/demo.ts",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "lib": ["ES2022"],
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "rootDir": ".",
+    "baseUrl": ".",
+    "paths": {
+      "@fleet/event-bus": ["./packages/event-bus/src"],
+      "@fleet/agent-runtime": ["./packages/agent-runtime/src"],
+      "@fleet/immortal-interface": ["./packages/immortal-interface/src"],
+      "@fleet/engine": ["./packages/engine/src"]
+    }
+  },
+  "include": ["packages/**/*.ts", "examples/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}
