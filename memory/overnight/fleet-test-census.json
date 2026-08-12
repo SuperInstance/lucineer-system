@@ -1,0 +1,3405 @@
+[
+  {
+    "name": "roblox-beatclock",
+    "language": "lua",
+    "files": 22,
+    "commits": 15,
+    "has_tests": true,
+    "test_count": 47,
+    "test_runner": "busted",
+    "test_files": [
+      "spec/BeatClock_spec.lua"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-10"
+  },
+  {
+    "name": "roblox-bond-system",
+    "language": "lua",
+    "files": 22,
+    "commits": 14,
+    "has_tests": true,
+    "test_count": 84,
+    "test_runner": "busted",
+    "test_files": [
+      "spec/BondSystem_spec.lua"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-10"
+  },
+  {
+    "name": "roblox-builder-kit",
+    "language": "lua",
+    "files": 17,
+    "commits": 8,
+    "has_tests": true,
+    "test_count": 45,
+    "test_runner": "busted",
+    "test_files": [
+      "spec/BuilderKit_spec.lua"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-07"
+  },
+  {
+    "name": "roblox-filtergate",
+    "language": "lua",
+    "files": 20,
+    "commits": 14,
+    "has_tests": true,
+    "test_count": 57,
+    "test_runner": "busted",
+    "test_files": [
+      "spec/FilterGate_spec.lua"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-10"
+  },
+  {
+    "name": "A2A-native-notebookLM",
+    "language": "python",
+    "files": 523,
+    "commits": 752,
+    "has_tests": true,
+    "test_count": 232,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_domain.py",
+      "tests/test_notes_api.py",
+      "tests/test_chunking.py",
+      "tests/test_credentials_api.py",
+      "tests/test_a2a.py",
+      "tests/test_embedding.py",
+      "tests/test_podcast_path.py",
+      "tests/test_graphs.py",
+      "tests/test_utils.py",
+      "tests/test_sources_api.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-07-18"
+  },
+  {
+    "name": "EXOCORTEX",
+    "language": "python",
+    "files": 76,
+    "commits": 29,
+    "has_tests": true,
+    "test_count": 498,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_protocols.py",
+      "tests/test_core.py",
+      "tests/test_phase2.py",
+      "tests/test_shadows_and_bus.py",
+      "tests/test_dream_cycle.py",
+      "tests/test_compute_engine.py",
+      "tests/test_surrealdb_backend.py",
+      "tests/test_resonance_engine.py",
+      "tests/test_config_and_memory.py",
+      "mentis-thinker-adapter/tests/test_mentis_adapter.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-07"
+  },
+  {
+    "name": "ai-writings",
+    "language": "python",
+    "files": 9501,
+    "commits": 3386,
+    "has_tests": true,
+    "test_count": 117,
+    "test_runner": "pytest",
+    "test_files": [
+      "A2A/tests/test_tminus.py",
+      "A2A/tests/test_lexicon.py",
+      "A2A/tests/test_resonance.py",
+      "A2A/tests/test_vector_poem.py",
+      "tools/tests/test_story_checker.py",
+      "A2A/tap_test.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-12"
+  },
+  {
+    "name": "ai-writings-vectorizer",
+    "language": "python",
+    "files": 37,
+    "commits": 9,
+    "has_tests": true,
+    "test_count": 213,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_zeitgeist_store.py",
+      "tests/test_shift_detector.py",
+      "tests/test_sync_to_cloudflare.py",
+      "tests/test_gossip_protocol.py",
+      "tests/test_query.py",
+      "tests/test_tap_integration.py",
+      "tests/test_vectorize.py",
+      "tests/test_zeitgeist_sampler.py"
+    ],
+    "has_ci": false,
+    "last_commit": "2026-08-10"
+  },
+  {
+    "name": "bare-metal-plato",
+    "language": "python",
+    "files": 15,
+    "commits": 5,
+    "has_tests": true,
+    "test_count": 32,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_agent_embodiment.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-07"
+  },
+  {
+    "name": "batten-spline",
+    "language": "python",
+    "files": 29,
+    "commits": 12,
+    "has_tests": true,
+    "test_count": 178,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_batten.py",
+      "tests/test_cli.py",
+      "tests/test_spline.py",
+      "tests/test_coverage_final.py",
+      "tests/test_router.py",
+      "tests/test_edge_cases.py",
+      "tests/test_router_extended.py",
+      "tests/test_nan_safety.py",
+      "tests/test_router_safety.py",
+      "tests/test_property_invariants.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-11"
+  },
+  {
+    "name": "casting-call",
+    "language": "python",
+    "files": 22,
+    "commits": 14,
+    "has_tests": true,
+    "test_count": 239,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_peer_consult.py",
+      "tests/test_pipeline.py",
+      "tests/test_casting.py",
+      "tests/test_harness_notes.py",
+      "tests/test_edge_cases_deep.py",
+      "tests/test_tempo_profiles.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-10"
+  },
+  {
+    "name": "cns-bridge",
+    "language": "python",
+    "files": 100,
+    "commits": 56,
+    "has_tests": true,
+    "test_count": 351,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_compaction_guardian.py",
+      "tests/test_token_estimator.py",
+      "tests/test_heartbeat.py",
+      "tests/test_coverage_gaps.py",
+      "tests/test_graph_invariants.py",
+      "tests/test_nmea_swmidi_bridge.py",
+      "tests/test_escalation.py",
+      "tests/test_transport.py",
+      "tests/test_packet.py",
+      "tests/test_edge_cases.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-11"
+  },
+  {
+    "name": "cns-echo",
+    "language": "python",
+    "files": 21,
+    "commits": 11,
+    "has_tests": true,
+    "test_count": 139,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_echo.py",
+      "tests/test_responder.py",
+      "tests/test_cli.py",
+      "tests/test_echo_deep.py",
+      "tests/test_nan_guard.py",
+      "tests/test_stats.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-11"
+  },
+  {
+    "name": "cns-monitor",
+    "language": "python",
+    "files": 21,
+    "commits": 14,
+    "has_tests": true,
+    "test_count": 116,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_cli.py",
+      "tests/test_coverage_gaps.py",
+      "tests/test_fixes.py",
+      "tests/test_watcher.py",
+      "tests/test_stats.py",
+      "tests/test_stats_edge.py",
+      "tests/test_display.py",
+      "tests/test_watcher_gaps.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-07"
+  },
+  {
+    "name": "compaction-teacher",
+    "language": "python",
+    "files": 12,
+    "commits": 7,
+    "has_tests": true,
+    "test_count": 164,
+    "test_runner": "pytest",
+    "test_files": [
+      "test_advanced.py",
+      "test_gaps.py",
+      "test_compaction_teacher.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-07"
+  },
+  {
+    "name": "crab-trap-web",
+    "language": "python",
+    "files": 10,
+    "commits": 6,
+    "has_tests": true,
+    "test_count": 15,
+    "test_runner": "pytest",
+    "test_files": [
+      "test_server.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-08"
+  },
+  {
+    "name": "crab-traps",
+    "language": "python",
+    "files": 112,
+    "commits": 41,
+    "has_tests": true,
+    "test_count": 58,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_crab_traps_docs.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-11"
+  },
+  {
+    "name": "engine-ensign",
+    "language": "python",
+    "files": 58,
+    "commits": 13,
+    "has_tests": true,
+    "test_count": 161,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_dashboard_designer.py",
+      "tests/test_generate_config.py",
+      "tests/test_edge_cases.py",
+      "tests/test_sensor_guard.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-11"
+  },
+  {
+    "name": "exocortex-core",
+    "language": "python",
+    "files": 25,
+    "commits": 7,
+    "has_tests": true,
+    "test_count": 188,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_memory.py",
+      "tests/test_distiller.py",
+      "tests/test_bond.py",
+      "tests/test_voice_gate.py",
+      "tests/test_coverage_gaps.py",
+      "tests/test_embed.py",
+      "tests/test_reflex_cache.py",
+      "tests/test_router.py",
+      "tests/test_edge_cases.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-08"
+  },
+  {
+    "name": "fleet-wiki",
+    "language": "python",
+    "files": 20,
+    "commits": 13,
+    "has_tests": true,
+    "test_count": 75,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_wiki_generator.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-10"
+  },
+  {
+    "name": "flow-state",
+    "language": "python",
+    "files": 15,
+    "commits": 5,
+    "has_tests": true,
+    "test_count": 74,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_cli.py",
+      "tests/test_engine.py",
+      "tests/test_models.py",
+      "tests/test_integration.py",
+      "tests/test_observer.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-08"
+  },
+  {
+    "name": "fm-experiments",
+    "language": "python",
+    "files": 1022,
+    "commits": 3,
+    "has_tests": true,
+    "test_count": 159,
+    "test_runner": "pytest",
+    "test_files": [
+      "sheaf-h1/test_sheaf.py",
+      "consciousness-predictions/test_predictions.py",
+      "flux-fold-ground-truth/test_eisenstein_comparison.py",
+      "flux-fold-ground-truth/test_babai_comparison.py",
+      "flux-fold-ground-truth/test_snap_correctness.py",
+      "flux-fold-ground-truth/test_consensus_calibration.py",
+      "delta-detect/test_delta_detect.py",
+      "gpu-loop/test_lyapunov_monotonicity.py",
+      "snap-attention/snapkit/tests/test_core.py",
+      "snap-attention/snapkit/tests/test_advanced.py"
+    ],
+    "has_ci": false,
+    "last_commit": "2026-08-07"
+  },
+  {
+    "name": "forgemaster",
+    "language": "python",
+    "files": 2701,
+    "commits": 10,
+    "has_tests": true,
+    "test_count": 444,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_forgemaster.py",
+      "tests/test_bugfixes.py",
+      "tests/test_coverage_gaps.py",
+      "tests/test_forgemaster_edge.py",
+      "tests/test_edge_cases.py",
+      "integration_tests/test_unified_architecture.py",
+      "swarm/swarm-code/guard-parser/test_guard_parser.py",
+      "swarm/swarm-code/flux-mqtt-bridge/test_flux_mqtt_bridge.py",
+      "fleet/fleet-math-py/tests/test_cyclotomic.py",
+      "fleet/for-fleet/sonar-vision-mobile/test_mobile.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-07"
+  },
+  {
+    "name": "forgemaster-shell",
+    "language": "python",
+    "files": 16,
+    "commits": 5,
+    "has_tests": true,
+    "test_count": 112,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_config_and_docs.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-07"
+  },
+  {
+    "name": "git-native-mud",
+    "language": "python",
+    "files": 48,
+    "commits": 49,
+    "has_tests": true,
+    "test_count": 72,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_quest_engine_edge.py",
+      "tests/test_mud_engine.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-07"
+  },
+  {
+    "name": "hermes-ob1-core",
+    "language": "python",
+    "files": 176,
+    "commits": 7,
+    "has_tests": true,
+    "test_count": 28,
+    "test_runner": "pytest",
+    "test_files": [
+      "shells/agents/shell-signal-specialist/tests/test_temporal_analyzer.py",
+      "shells/agents/shell-math-specialist/tests/test_engine.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-12"
+  },
+  {
+    "name": "holodeck",
+    "language": "python",
+    "files": 33,
+    "commits": 7,
+    "has_tests": true,
+    "test_count": 123,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_task_registry.py",
+      "tests/test_reporter_coverage.py",
+      "tests/test_fish_id.py",
+      "tests/test_simulator.py",
+      "tests/test_evaluator.py",
+      "tests/test_simulator_coverage.py",
+      "tests/test_evaluator_edge_cases.py",
+      "tests/test_completeness_max_points.py",
+      "tests/test_material_selection.py",
+      "tests/test_engine_diagnosis.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-07"
+  },
+  {
+    "name": "image-distillation-loop",
+    "language": "python",
+    "files": 27,
+    "commits": 7,
+    "has_tests": true,
+    "test_count": 87,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_student.py",
+      "tests/test_cli.py",
+      "tests/test_feedback.py",
+      "tests/test_loop.py",
+      "tests/test_reflex_unit.py",
+      "tests/test_teacher.py",
+      "tests/test_scorer.py",
+      "tests/test_reflex_compiler.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-07"
+  },
+  {
+    "name": "lingbot-map",
+    "language": "python",
+    "files": 1268,
+    "commits": 7,
+    "has_tests": true,
+    "test_count": 334,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_head_act.py",
+      "tests/test_layers.py",
+      "tests/test_heads_utils.py",
+      "tests/test_vis_utils.py",
+      "tests/test_sky_segmentation.py",
+      "tests/test_rotation.py",
+      "tests/test_geometry_extended.py",
+      "tests/test_pose_enc.py",
+      "tests/test_layers_extended.py",
+      "tests/test_geometry.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-12"
+  },
+  {
+    "name": "log-tensor",
+    "language": "python",
+    "files": 60,
+    "commits": 4,
+    "has_tests": true,
+    "test_count": 109,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_ugt.py",
+      "tests/test_hgt.py",
+      "tests/test_permutation.py",
+      "tests/test_logtensor.py",
+      "logtensor/transforms/physics_tensor.py",
+      "logtensor/research/schema_simulations.py",
+      "logtensor/research/cross_domain.py",
+      "logtensor/research/sequential_processor.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-08"
+  },
+  {
+    "name": "lucid-dreamer",
+    "language": "python",
+    "files": 25,
+    "commits": 5,
+    "has_tests": true,
+    "test_count": 83,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_dream_journal.py",
+      "tests/test_cli.py",
+      "tests/test_dream_scorer.py",
+      "tests/test_image_dreamer.py",
+      "tests/test_cross_inspiration.py",
+      "tests/test_text_dreamer.py",
+      "tests/test_dream_cycle.py",
+      "tests/test_morning_report.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-07"
+  },
+  {
+    "name": "luciddreamer-content",
+    "language": "python",
+    "files": 406,
+    "commits": 21,
+    "has_tests": true,
+    "test_count": 86,
+    "test_runner": "pytest",
+    "test_files": [
+      "test_render.py"
+    ],
+    "has_ci": false,
+    "last_commit": "2026-08-08"
+  },
+  {
+    "name": "luciddreamer-prototype",
+    "language": "python",
+    "files": 1049,
+    "commits": 95,
+    "has_tests": true,
+    "test_count": 1403,
+    "test_runner": "pytest",
+    "test_files": [
+      "modular/streamer/tests/test_scheduler.py",
+      "modular/streamer/tests/test_playlist.py",
+      "modular/streamer/tests/test_muxer.py",
+      "modular/knowledge-base/tests/test_knowledge_base.py",
+      "modular/conductor/tests/test_conductor.py",
+      "modular/conductor/src/tests/test_conductor.py",
+      "modular/sonic-shape/tests/test_sonic_shape.py",
+      "pipeline/tests/test_pipeline.py",
+      "protean-identity/tests/test_identity.py",
+      "streamer/tests/test_scheduler.py"
+    ],
+    "has_ci": false,
+    "last_commit": "2026-08-11"
+  },
+  {
+    "name": "luciddreamer-research",
+    "language": "python",
+    "files": 46,
+    "commits": 9,
+    "has_tests": true,
+    "test_count": 71,
+    "test_runner": "pytest",
+    "test_files": [
+      "knowledge-base/tests/test_knowledge_base.py",
+      "knowledge-base/tests/test_query.py"
+    ],
+    "has_ci": false,
+    "last_commit": "2026-08-12"
+  },
+  {
+    "name": "lucineer-brain",
+    "language": "python",
+    "files": 20,
+    "commits": 24,
+    "has_tests": true,
+    "test_count": 344,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_coverage_expansion.py",
+      "tests/test_health_cache.py",
+      "tests/test_emotional_detection.py",
+      "tests/test_emotional_pipeline_integration.py",
+      "tests/test_response_validator.py",
+      "tests/test_pipeline_coverage.py",
+      "tests/test_brain.py",
+      "tests/test_fault_injection.py",
+      "brain.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-07"
+  },
+  {
+    "name": "lucineer-creative",
+    "language": "python",
+    "files": 15,
+    "commits": 12,
+    "has_tests": true,
+    "test_count": 207,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_mmx_wrapper.py",
+      "tests/test_pipeline.py",
+      "tests/test_additional_coverage.py",
+      "tests/test_batch_history_edge.py",
+      "tests/test_new_features.py",
+      "tests/test_overnight_additions.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-08"
+  },
+  {
+    "name": "lucineer-system",
+    "language": "python",
+    "files": 335,
+    "commits": 80,
+    "has_tests": true,
+    "test_count": 157,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_molt_reward.py",
+      "tests/test_energy_adapter.py",
+      "tests/test_governor.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-07"
+  },
+  {
+    "name": "mentis-superinstance",
+    "language": "python",
+    "files": 40,
+    "commits": 6,
+    "has_tests": true,
+    "test_count": 390,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_llm.py",
+      "tests/test_engine.py",
+      "tests/test_prompts.py",
+      "tests/test_evaluate.py",
+      "tests/test_config.py",
+      "tests/test_delta_detector.py",
+      "tests/test_engine_extended.py",
+      "tests/test_utils.py",
+      "tests/test_reflex_cache.py",
+      "tests/test_media.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-07"
+  },
+  {
+    "name": "mud-arena",
+    "language": "python",
+    "files": 62,
+    "commits": 9,
+    "has_tests": true,
+    "test_count": 344,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_inventory.py",
+      "tests/test_commands.py",
+      "tests/test_tolerance.py",
+      "tests/test_script_compiler.py",
+      "tests/test_rooms.py",
+      "tests/test_integration.py",
+      "tests/test_coverage_final.py",
+      "tests/test_events.py",
+      "tests/test_dashboard.py",
+      "tests/test_agent.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-08"
+  },
+  {
+    "name": "plato-fflearning",
+    "language": "python",
+    "files": 10,
+    "commits": 4,
+    "has_tests": true,
+    "test_count": 123,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_fflearning_extended.py",
+      "tests/test_fflearning.py",
+      "tests/test_deep_edge_cases.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-07"
+  },
+  {
+    "name": "plato-forge-daemon",
+    "language": "python",
+    "files": 13,
+    "commits": 5,
+    "has_tests": true,
+    "test_count": 37,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_forge_simulation.py",
+      "tests/test_forge_training_data.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-07"
+  },
+  {
+    "name": "plato-spatial",
+    "language": "python",
+    "files": 13,
+    "commits": 2,
+    "has_tests": true,
+    "test_count": 50,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_delta_tick.py",
+      "tests/test_models.py",
+      "tests/test_graph_engine.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-08"
+  },
+  {
+    "name": "plato-vessel-core",
+    "language": "python",
+    "files": 21,
+    "commits": 12,
+    "has_tests": true,
+    "test_count": 15,
+    "test_runner": "pytest",
+    "test_files": [
+      "server/test_plato_v3.py",
+      "server/test_plato_components.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-08"
+  },
+  {
+    "name": "playtest-journals",
+    "language": "python",
+    "files": 42,
+    "commits": 10,
+    "has_tests": true,
+    "test_count": 54,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_analyzer.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-10"
+  },
+  {
+    "name": "roblox-audio-suite",
+    "language": "python",
+    "files": 21,
+    "commits": 9,
+    "has_tests": true,
+    "test_count": 94,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_audio_suite.py",
+      "tests/test_audio_suite_extended.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-07"
+  },
+  {
+    "name": "roblox-build-animator",
+    "language": "python",
+    "files": 17,
+    "commits": 8,
+    "has_tests": true,
+    "test_count": 57,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_build_animator.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-08"
+  },
+  {
+    "name": "roblox-craftmind-agents",
+    "language": "python",
+    "files": 15,
+    "commits": 11,
+    "has_tests": true,
+    "test_count": 82,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_craftmind_agents.py",
+      "tests/test_lua_structure.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-07"
+  },
+  {
+    "name": "roblox-world-scanner",
+    "language": "python",
+    "files": 17,
+    "commits": 10,
+    "has_tests": true,
+    "test_count": 72,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_world_scanner_extended.py",
+      "tests/test_world_scanner.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-07"
+  },
+  {
+    "name": "sensor-bridge",
+    "language": "python",
+    "files": 25,
+    "commits": 5,
+    "has_tests": true,
+    "test_count": 100,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_history.py",
+      "tests/test_bridge.py",
+      "tests/test_pattern_detector.py",
+      "tests/test_escalation.py",
+      "tests/test_normalizer.py",
+      "tests/test_mqtt_client.py",
+      "tests/test_config_loader.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-07"
+  },
+  {
+    "name": "slackwater-art-spectrum",
+    "language": "python",
+    "files": 122,
+    "commits": 25,
+    "has_tests": true,
+    "test_count": 181,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_spectrum.py",
+      "tests/test_flux_batch_additional.py",
+      "tests/test_edge_cases.py",
+      "tests/test_flux_batch.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-07"
+  },
+  {
+    "name": "slackwater-cognition",
+    "language": "python",
+    "files": 66,
+    "commits": 26,
+    "has_tests": true,
+    "test_count": 433,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_action_policy.py",
+      "tests/test_cascade_stats.py",
+      "tests/test_policy_compiler.py",
+      "tests/test_quality_scorer.py",
+      "tests/test_journal.py",
+      "tests/test_prompt_updater.py",
+      "tests/test_trust_tracker.py",
+      "cascade/test_cascade.py",
+      "evolution/test_policy_breeder.py",
+      "reflex/test_reflex.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-09"
+  },
+  {
+    "name": "slackwater-forge",
+    "language": "python",
+    "files": 25,
+    "commits": 9,
+    "has_tests": true,
+    "test_count": 189,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_forge.py",
+      "tests/test_jobs.py",
+      "tests/test_briefer.py",
+      "tests/test_cli.py",
+      "tests/test_coverage_gaps.py",
+      "tests/test_models.py",
+      "tests/test_coverage_final.py",
+      "tests/test_edge_cases.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-07"
+  },
+  {
+    "name": "slackwater-harmony",
+    "language": "python",
+    "files": 16,
+    "commits": 12,
+    "has_tests": true,
+    "test_count": 151,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_harmony.py",
+      "tests/test_flow_state.py",
+      "tests/test_governor_edge_cases.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-07"
+  },
+  {
+    "name": "slackwater-lattice",
+    "language": "python",
+    "files": 17,
+    "commits": 11,
+    "has_tests": true,
+    "test_count": 127,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_eisenstein.py",
+      "tests/test_lattice.py",
+      "tests/test_geometry.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-07"
+  },
+  {
+    "name": "slackwater-perception",
+    "language": "python",
+    "files": 17,
+    "commits": 12,
+    "has_tests": true,
+    "test_count": 135,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_perception.py",
+      "tests/test_perception_edge.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-08"
+  },
+  {
+    "name": "slackwater-tempo",
+    "language": "python",
+    "files": 17,
+    "commits": 9,
+    "has_tests": true,
+    "test_count": 178,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_clock.py",
+      "tests/test_energy.py",
+      "tests/test_groove.py",
+      "tests/test_tempo.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-07"
+  },
+  {
+    "name": "slackwater-tminus",
+    "language": "python",
+    "files": 15,
+    "commits": 10,
+    "has_tests": true,
+    "test_count": 196,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_tminus.py",
+      "tests/test_edge_cases.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-08"
+  },
+  {
+    "name": "songforge",
+    "language": "python",
+    "files": 31,
+    "commits": 12,
+    "has_tests": true,
+    "test_count": 99,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_analyze_edge.py",
+      "tests/test_separate.py",
+      "tests/test_transcribe.py",
+      "tests/test_cli_pipeline.py",
+      "tests/test_analyze.py",
+      "tests/test_enhance.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-11"
+  },
+  {
+    "name": "starship-jetsonclaw1",
+    "language": "python",
+    "files": 5,
+    "commits": 6,
+    "has_tests": true,
+    "test_count": 84,
+    "test_runner": "pytest",
+    "test_files": [
+      "test_starship.py"
+    ],
+    "has_ci": false,
+    "last_commit": "2026-08-08"
+  },
+  {
+    "name": "study-air",
+    "language": "python",
+    "files": 7,
+    "commits": 1,
+    "has_tests": true,
+    "test_count": 39,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_air_docs.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-05-18"
+  },
+  {
+    "name": "study-captain",
+    "language": "python",
+    "files": 21,
+    "commits": 13,
+    "has_tests": true,
+    "test_count": 134,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_fleet.py",
+      "tests/test_coverage_gaps.py",
+      "tests/test_captain.py",
+      "tests/test_strategy.py",
+      "tests/test_priority.py",
+      "tests/test_report.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-07"
+  },
+  {
+    "name": "study-claude-code",
+    "language": "python",
+    "files": 40,
+    "commits": 19,
+    "has_tests": true,
+    "test_count": 78,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_vessel.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-06-08"
+  },
+  {
+    "name": "study-cocapn-health",
+    "language": "python",
+    "files": 45,
+    "commits": 30,
+    "has_tests": true,
+    "test_count": 113,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_health.py",
+      "tests/test_check.py",
+      "tests/test_cli.py",
+      "tests/test_system_checks.py",
+      "tests/test_alert.py",
+      "tests/test_monitor.py",
+      "tests/test_sunset_bridge.py",
+      "tests/test_api.py",
+      "tests/test_report.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-07-12"
+  },
+  {
+    "name": "study-constraint-papers",
+    "language": "python",
+    "files": 157,
+    "commits": 2,
+    "has_tests": true,
+    "test_count": 16,
+    "test_runner": "pytest",
+    "test_files": [
+      "test_telephone_game.py"
+    ],
+    "has_ci": false,
+    "last_commit": "2026-08-07"
+  },
+  {
+    "name": "study-constraint-theory-math",
+    "language": "python",
+    "files": 34,
+    "commits": 2,
+    "has_tests": true,
+    "test_count": 43,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_eisenstein_triples.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-07"
+  },
+  {
+    "name": "study-ecosystem",
+    "language": "python",
+    "files": 61,
+    "commits": 37,
+    "has_tests": true,
+    "test_count": 28,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_integration.py",
+      "tests/test_bottle.py"
+    ],
+    "has_ci": false,
+    "last_commit": "2026-08-08"
+  },
+  {
+    "name": "study-ensign",
+    "language": "python",
+    "files": 17,
+    "commits": 5,
+    "has_tests": true,
+    "test_count": 5,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_ensign_protocol.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-06"
+  },
+  {
+    "name": "study-experiments",
+    "language": "python",
+    "files": 133,
+    "commits": 4,
+    "has_tests": true,
+    "test_count": 52,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_pythagorean48.py",
+      "tests/test_collect_select_compile.py",
+      "tests/test_laman_rigidity.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-08"
+  },
+  {
+    "name": "study-fiedler-universal",
+    "language": "python",
+    "files": 9,
+    "commits": 3,
+    "has_tests": true,
+    "test_count": 20,
+    "test_runner": "pytest",
+    "test_files": [
+      "test_benchmark.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-07"
+  },
+  {
+    "name": "study-fleet-exp",
+    "language": "python",
+    "files": 8,
+    "commits": 2,
+    "has_tests": true,
+    "test_count": 20,
+    "test_runner": "pytest",
+    "test_files": [
+      "test_experiments.py"
+    ],
+    "has_ci": false,
+    "last_commit": "2026-08-05"
+  },
+  {
+    "name": "study-fleet-liaison",
+    "language": "python",
+    "files": 42,
+    "commits": 15,
+    "has_tests": true,
+    "test_count": 37,
+    "test_runner": "pytest",
+    "test_files": [
+      "test_context_tender.py",
+      "tests/test_cli.py",
+      "tests/test_compression.py",
+      "tests/test_bottles.py",
+      "tests/test_priority.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-06"
+  },
+  {
+    "name": "study-fleet-vessel",
+    "language": "python",
+    "files": 20,
+    "commits": 5,
+    "has_tests": true,
+    "test_count": 61,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_vessel.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-07"
+  },
+  {
+    "name": "study-flux-runtime",
+    "language": "python",
+    "files": 14,
+    "commits": 14,
+    "has_tests": true,
+    "test_count": 64,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_agent_bridge.py",
+      "tests/test_i2i_bridge.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-06"
+  },
+  {
+    "name": "study-harness-exp",
+    "language": "python",
+    "files": 53,
+    "commits": 3,
+    "has_tests": true,
+    "test_count": 62,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_crab_trap_server.py",
+      "tests/test_concept_analysis.py",
+      "tests/test_vectorize_knowledge.py"
+    ],
+    "has_ci": false,
+    "last_commit": "2026-08-06"
+  },
+  {
+    "name": "study-lever-runner",
+    "language": "python",
+    "files": 117,
+    "commits": 72,
+    "has_tests": true,
+    "test_count": 212,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_cli_subcommands.py",
+      "tests/test_cuda_backend.py",
+      "tests/test_fastloop_bridge.py",
+      "tests/test_export_nail.py",
+      "tests/test_embeddings.py",
+      "tests/test_fastloop.py",
+      "tests/test_params.py",
+      "tests/test_bot.py",
+      "tests/test_three_gate.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-08"
+  },
+  {
+    "name": "study-luciddreamer-agent",
+    "language": "python",
+    "files": 15,
+    "commits": 1,
+    "has_tests": true,
+    "test_count": 11,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_luciddreamer_agent.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-07-12"
+  },
+  {
+    "name": "study-oracle1",
+    "language": "python",
+    "files": 444,
+    "commits": 5,
+    "has_tests": true,
+    "test_count": 153,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_necrosis.py",
+      "tests/test_necrosis_deep.py",
+      "tests/test_lighthouse.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-05"
+  },
+  {
+    "name": "study-spreader-tool",
+    "language": "python",
+    "files": 41,
+    "commits": 3,
+    "has_tests": true,
+    "test_count": 303,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_types.py",
+      "tests/test_pipeline.py",
+      "tests/test_store.py",
+      "tests/test_cli.py",
+      "tests/test_deadband.py",
+      "tests/test_benchmark.py",
+      "tests/test_redaction.py",
+      "tests/test_cost.py",
+      "tests/test_seed_lock.py",
+      "tests/test_spreader_room.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-06"
+  },
+  {
+    "name": "study-sunset-ecosystem",
+    "language": "python",
+    "files": 1425,
+    "commits": 6,
+    "has_tests": true,
+    "test_count": 8822,
+    "test_runner": "pytest",
+    "test_files": [
+      "nerve/test_topology.py",
+      "tests/test_arrow_telemetry_adapter.py",
+      "tests/test_thermal_auction.py",
+      "tests/test_hamiltonian_constraints.py",
+      "tests/test_exact_qd_archive.py",
+      "tests/test_health_check.py",
+      "tests/test_validation_engine.py",
+      "tests/test_priority_queue.py",
+      "tests/test_logos.py",
+      "tests/test_codebase_state.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-11"
+  },
+  {
+    "name": "study-superz",
+    "language": "python",
+    "files": 188,
+    "commits": 126,
+    "has_tests": true,
+    "test_count": 57,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_flux_bytecode_verifier.py",
+      "tools/flux-conformance-generator.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-06"
+  },
+  {
+    "name": "study-vessel-prototype",
+    "language": "python",
+    "files": 8,
+    "commits": 5,
+    "has_tests": true,
+    "test_count": 64,
+    "test_runner": "pytest",
+    "test_files": [
+      "test_agent.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-07"
+  },
+  {
+    "name": "study-vessel-template",
+    "language": "python",
+    "files": 8,
+    "commits": 6,
+    "has_tests": true,
+    "test_count": 13,
+    "test_runner": "pytest",
+    "test_files": [
+      "template.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-05-16"
+  },
+  {
+    "name": "study-zeroclaw-arena",
+    "language": "python",
+    "files": 149,
+    "commits": 80,
+    "has_tests": true,
+    "test_count": 30,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_zeroclaw.py",
+      "experiments/negative_transfer_test.py",
+      "experiments/reward_filter_ablation.py",
+      "experiments/tile_compiler.py",
+      "experiments/zeroclaw.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-07-12"
+  },
+  {
+    "name": "symphony-claude",
+    "language": "python",
+    "files": 27,
+    "commits": 7,
+    "has_tests": true,
+    "test_count": 116,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_tmux.py",
+      "tests/test_git_ops.py",
+      "tests/test_conductor.py",
+      "tests/test_config.py",
+      "tests/test_smoke.py",
+      "tests/test_corpus.py",
+      "tests/test_extended.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-07"
+  },
+  {
+    "name": "symphony-glm",
+    "language": "python",
+    "files": 26,
+    "commits": 9,
+    "has_tests": true,
+    "test_count": 135,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_conductor.py",
+      "tests/test_git_integration.py",
+      "tests/test_cli_extended.py",
+      "tests/test_smoke.py",
+      "tests/test_tmux_manager.py",
+      "tests/test_cli_comprehensive.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-07"
+  },
+  {
+    "name": "symphony-kimi",
+    "language": "python",
+    "files": 32,
+    "commits": 8,
+    "has_tests": true,
+    "test_count": 147,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_git.py",
+      "tests/test_tmux.py",
+      "tests/test_conductor.py",
+      "tests/test_conductor_extended.py",
+      "tests/test_config.py",
+      "tests/test_cli_extended.py",
+      "tests/test_smoke.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-07"
+  },
+  {
+    "name": "terrain",
+    "language": "python",
+    "files": 19,
+    "commits": 16,
+    "has_tests": true,
+    "test_count": 213,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_integration.py",
+      "tests/test_parser.py",
+      "tests/test_edge_cases.py",
+      "tests/test_nautical_and_compilation.py",
+      "tests/test_compiler.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-10"
+  },
+  {
+    "name": "the-living-minds",
+    "language": "python",
+    "files": 130,
+    "commits": 22,
+    "has_tests": true,
+    "test_count": 39,
+    "test_runner": "pytest",
+    "test_files": [
+      "test_daemon.py"
+    ],
+    "has_ci": false,
+    "last_commit": "2026-08-10"
+  },
+  {
+    "name": "the-relay",
+    "language": "python",
+    "files": 22,
+    "commits": 5,
+    "has_tests": true,
+    "test_count": 245,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_relay.py",
+      "relay/test_resonance_math.py",
+      "tools/test_morning_briefing.py",
+      "tools/test_napkin_archive.py",
+      "tools/test_tide_table.py",
+      "tools/test_fibonacci_observatory.py"
+    ],
+    "has_ci": false,
+    "last_commit": "2026-08-11"
+  },
+  {
+    "name": "thought-amplifier",
+    "language": "python",
+    "files": 233,
+    "commits": 129,
+    "has_tests": true,
+    "test_count": 551,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_modes_common.py",
+      "tests/test_thinker.py",
+      "tests/test_modes_watcher.py",
+      "tests/test_supervisor.py",
+      "tests/test_router_components.py",
+      "tests/test_error_handling.py",
+      "tests/test_router_confidence.py",
+      "tests/test_journal.py",
+      "tests/test_modes.py",
+      "tests/test_watchdog.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-08"
+  },
+  {
+    "name": "vessel-agent-system",
+    "language": "python",
+    "files": 330,
+    "commits": 41,
+    "has_tests": true,
+    "test_count": 2091,
+    "test_runner": "pytest",
+    "test_files": [
+      "aelma/test_twin_server.py",
+      "aelma/tests/test_mob_detector.py",
+      "aelma/tests/test_quota_manager.py",
+      "aelma/tests/test_watchers.py",
+      "aelma/tests/test_integration.py",
+      "aelma/tests/test_report_generator.py",
+      "aelma/build_claude_bridge/tests/test_bridge.py",
+      "aelma/build_kimi/tests/test_bridge.py",
+      "aelma/build_kimi/tests/test_fishing_modes.py",
+      "aelma/build_kimi/tests/test_trip_summary.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-10"
+  },
+  {
+    "name": "voice-reflex-gate",
+    "language": "python",
+    "files": 25,
+    "commits": 8,
+    "has_tests": true,
+    "test_count": 366,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_context.py",
+      "tests/test_learner.py",
+      "tests/test_gate_extended.py",
+      "tests/test_integration.py",
+      "tests/test_matcher_extended.py",
+      "tests/test_context_extended.py",
+      "tests/test_learner_extended.py",
+      "tests/test_cache_extended.py",
+      "tests/test_cache.py",
+      "tests/test_matcher.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-07"
+  },
+  {
+    "name": "wesley-cns-adapter",
+    "language": "python",
+    "files": 26,
+    "commits": 9,
+    "has_tests": true,
+    "test_count": 77,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_cli.py",
+      "tests/test_cli_coverage.py",
+      "tests/test_translator.py",
+      "tests/test_speaker.py",
+      "tests/test_listener.py"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-07"
+  },
+  {
+    "name": "wesley-holodeck",
+    "language": "python",
+    "files": 48,
+    "commits": 6,
+    "has_tests": true,
+    "test_count": 52,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_creative_loop.py"
+    ],
+    "has_ci": false,
+    "last_commit": "2026-08-10"
+  },
+  {
+    "name": "wesleys-imagination",
+    "language": "python",
+    "files": 52,
+    "commits": 9,
+    "has_tests": true,
+    "test_count": 22,
+    "test_runner": "pytest",
+    "test_files": [
+      "tests/test_visual_iteration.py"
+    ],
+    "has_ci": false,
+    "last_commit": "2026-08-10"
+  },
+  {
+    "name": "SuperInstance-papers",
+    "language": "rust",
+    "files": 4929,
+    "commits": 332,
+    "has_tests": true,
+    "test_count": 1,
+    "test_runner": "cargo test",
+    "test_files": [
+      "src/lib.rs"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-11"
+  },
+  {
+    "name": "dual-band-guard",
+    "language": "rust",
+    "files": 11,
+    "commits": 10,
+    "has_tests": true,
+    "test_count": 84,
+    "test_runner": "cargo test",
+    "test_files": [
+      "tests/integration.rs",
+      "tests/edge_cases_extended.rs",
+      "src/lib.rs"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-10"
+  },
+  {
+    "name": "eisenstein",
+    "language": "rust",
+    "files": 10,
+    "commits": 23,
+    "has_tests": true,
+    "test_count": 206,
+    "test_runner": "cargo test",
+    "test_files": [
+      "tests/edge_cases.rs",
+      "tests/algebraic_properties.rs",
+      "src/lib.rs"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-07"
+  },
+  {
+    "name": "gossip-ping",
+    "language": "rust",
+    "files": 11,
+    "commits": 12,
+    "has_tests": true,
+    "test_count": 54,
+    "test_runner": "cargo test",
+    "test_files": [
+      "tests/integration.rs",
+      "src/lib.rs"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-12"
+  },
+  {
+    "name": "hermes-nmi",
+    "language": "rust",
+    "files": 21,
+    "commits": 8,
+    "has_tests": true,
+    "test_count": 146,
+    "test_runner": "cargo test",
+    "test_files": [
+      "tests/pulse.rs",
+      "tests/dispatcher.rs",
+      "tests/integration.rs",
+      "tests/claw_adapter.rs",
+      "tests/pincher_hook.rs",
+      "tests/telemetry.rs",
+      "tests/tension.rs",
+      "src/pincher_hook.rs",
+      "src/tension.rs"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-10"
+  },
+  {
+    "name": "mud2scummvm",
+    "language": "rust",
+    "files": 7,
+    "commits": 5,
+    "has_tests": true,
+    "test_count": 52,
+    "test_runner": "cargo test",
+    "test_files": [
+      "tests/edge_cases.rs",
+      "src/lib.rs"
+    ],
+    "has_ci": false,
+    "last_commit": "2026-08-10"
+  },
+  {
+    "name": "openrooms",
+    "language": "rust",
+    "files": 27,
+    "commits": 12,
+    "has_tests": true,
+    "test_count": 49,
+    "test_runner": "cargo test",
+    "test_files": [
+      "tests/integration.rs"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-07"
+  },
+  {
+    "name": "slackwater-rust",
+    "language": "rust",
+    "files": 59,
+    "commits": 23,
+    "has_tests": true,
+    "test_count": 479,
+    "test_runner": "cargo test",
+    "test_files": [
+      "crates/integration-tests/tests/integration_test.rs",
+      "crates/lattice-core/tests/lattice_test.rs",
+      "crates/lattice-core/src/region.rs",
+      "crates/lattice-core/src/snap.rs",
+      "crates/lattice-core/src/neighbors.rs",
+      "crates/tensor-midi-core/tests/integration.rs",
+      "crates/tensor-midi-core/src/lib.rs",
+      "crates/tempo-core/tests/integration.rs",
+      "crates/tempo-core/src/lib.rs",
+      "crates/harmony-core/tests/harmony_test.rs"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-11"
+  },
+  {
+    "name": "study-cocapn",
+    "language": "rust",
+    "files": 16,
+    "commits": 4,
+    "has_tests": true,
+    "test_count": 20,
+    "test_runner": "cargo test",
+    "test_files": [
+      "tests/integration.rs",
+      "tests/types.rs"
+    ],
+    "has_ci": false,
+    "last_commit": "2026-08-08"
+  },
+  {
+    "name": "study-cudaclaw",
+    "language": "rust",
+    "files": 95,
+    "commits": 3,
+    "has_tests": true,
+    "test_count": 352,
+    "test_runner": "cargo test",
+    "test_files": [
+      "tests/p99_cell_edit_test.rs",
+      "tests/latency_test.rs",
+      "tests/latency.rs",
+      "tests/integration_test.rs",
+      "tests/alignment_test.rs",
+      "src/dispatcher.rs",
+      "src/monitor.rs",
+      "src/spreadsheet_bridge.rs",
+      "src/alignment.rs",
+      "src/lock_free_queue.rs"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-08"
+  },
+  {
+    "name": "study-cudaclaw-bridge",
+    "language": "rust",
+    "files": 9,
+    "commits": 1,
+    "has_tests": true,
+    "test_count": 8,
+    "test_runner": "cargo test",
+    "test_files": [
+      "src/lib.rs"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-06-09"
+  },
+  {
+    "name": "study-cudaclaw-main",
+    "language": "rust",
+    "files": 97,
+    "commits": 2,
+    "has_tests": true,
+    "test_count": 352,
+    "test_runner": "cargo test",
+    "test_files": [
+      "tests/p99_cell_edit_test.rs",
+      "tests/latency_test.rs",
+      "tests/latency.rs",
+      "tests/integration_test.rs",
+      "tests/alignment_test.rs",
+      "src/dispatcher.rs",
+      "src/monitor.rs",
+      "src/spreadsheet_bridge.rs",
+      "src/alignment.rs",
+      "src/lock_free_queue.rs"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-08"
+  },
+  {
+    "name": "study-fleet-yaw",
+    "language": "rust",
+    "files": 6,
+    "commits": 2,
+    "has_tests": true,
+    "test_count": 28,
+    "test_runner": "cargo test",
+    "test_files": [
+      "src/lib.rs"
+    ],
+    "has_ci": false,
+    "last_commit": "2026-07-12"
+  },
+  {
+    "name": "study-flux-lucid",
+    "language": "rust",
+    "files": 21,
+    "commits": 2,
+    "has_tests": true,
+    "test_count": 159,
+    "test_runner": "cargo test",
+    "test_files": [
+      "tests/cdcl_tests.rs",
+      "tests/constraint_tests.rs",
+      "src/lib.rs",
+      "src/beam_tolerance.rs",
+      "src/intent_compilation.rs",
+      "src/intent_emitter.rs",
+      "src/soa_emitter.rs",
+      "src/navigation.rs",
+      "src/intent.rs",
+      "src/dream.rs"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-08"
+  },
+  {
+    "name": "study-lau-conservation-experiment",
+    "language": "rust",
+    "files": 20,
+    "commits": 3,
+    "has_tests": true,
+    "test_count": 85,
+    "test_runner": "cargo test",
+    "test_files": [
+      "src/cohomology.rs",
+      "src/free_energy.rs",
+      "src/agent.rs",
+      "src/temperature.rs",
+      "src/landauer.rs",
+      "src/conservation.rs",
+      "src/spectral.rs",
+      "src/falsification.rs"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-07"
+  },
+  {
+    "name": "study-lucid-tutor",
+    "language": "rust",
+    "files": 9,
+    "commits": 1,
+    "has_tests": true,
+    "test_count": 21,
+    "test_runner": "cargo test",
+    "test_files": [
+      "src/lib.rs"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-07-12"
+  },
+  {
+    "name": "study-murmur-protocol-v2",
+    "language": "rust",
+    "files": 9,
+    "commits": 1,
+    "has_tests": true,
+    "test_count": 20,
+    "test_runner": "cargo test",
+    "test_files": [
+      "src/lib.rs"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-07-12"
+  },
+  {
+    "name": "study-oxide-flux-runtime",
+    "language": "rust",
+    "files": 9,
+    "commits": 1,
+    "has_tests": true,
+    "test_count": 8,
+    "test_runner": "cargo test",
+    "test_files": [
+      "src/lib.rs"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-06-09"
+  },
+  {
+    "name": "study-oxide-pipeline",
+    "language": "rust",
+    "files": 8,
+    "commits": 1,
+    "has_tests": true,
+    "test_count": 7,
+    "test_runner": "cargo test",
+    "test_files": [
+      "src/lib.rs"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-06-09"
+  },
+  {
+    "name": "study-pincher",
+    "language": "rust",
+    "files": 295,
+    "commits": 79,
+    "has_tests": true,
+    "test_count": 322,
+    "test_runner": "cargo test",
+    "test_files": [
+      "tests/e2e_runtime_test.rs",
+      "src/registry.rs",
+      "src/daemon.rs",
+      "src/extractor.rs",
+      "src/updater.rs",
+      "pincher-core/tests/integration_tests.rs",
+      "pincher-core/src/security/veto.rs",
+      "pincher-core/src/route/mod.rs",
+      "pincher-core/src/carapace/guest.rs",
+      "pincher-core/src/carapace/capability.rs"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-07"
+  },
+  {
+    "name": "study-plato-ship",
+    "language": "rust",
+    "files": 6,
+    "commits": 6,
+    "has_tests": true,
+    "test_count": 2,
+    "test_runner": "cargo test",
+    "test_files": [
+      "src/lib.rs"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-10"
+  },
+  {
+    "name": "study-si-bench",
+    "language": "rust",
+    "files": 13,
+    "commits": 1,
+    "has_tests": true,
+    "test_count": 17,
+    "test_runner": "cargo test",
+    "test_files": [
+      "src/registry_bench.rs",
+      "src/bench.rs",
+      "src/report.rs",
+      "src/conservation_bench.rs",
+      "src/regression.rs"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-07-12"
+  },
+  {
+    "name": "study-si-papers",
+    "language": "rust",
+    "files": 4912,
+    "commits": 3,
+    "has_tests": true,
+    "test_count": 1,
+    "test_runner": "cargo test",
+    "test_files": [
+      "src/lib.rs"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-08"
+  },
+  {
+    "name": "study-signal-chain",
+    "language": "rust",
+    "files": 9,
+    "commits": 3,
+    "has_tests": true,
+    "test_count": 34,
+    "test_runner": "cargo test",
+    "test_files": [
+      "src/lib.rs"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-10"
+  },
+  {
+    "name": "study-ternary-exp",
+    "language": "rust",
+    "files": 9,
+    "commits": 2,
+    "has_tests": true,
+    "test_count": 17,
+    "test_runner": "cargo test",
+    "test_files": [
+      "src/lib.rs"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-07"
+  },
+  {
+    "name": "study-vessel-constellation",
+    "language": "rust",
+    "files": 14,
+    "commits": 8,
+    "has_tests": true,
+    "test_count": 48,
+    "test_runner": "cargo test",
+    "test_files": [
+      "src/perturbation.rs",
+      "src/gravity.rs",
+      "src/vessel.rs",
+      "src/orbit.rs",
+      "src/conservation.rs",
+      "src/constellation.rs"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-07-12"
+  },
+  {
+    "name": "ternary-tenforward",
+    "language": "rust",
+    "files": 12,
+    "commits": 5,
+    "has_tests": true,
+    "test_count": 102,
+    "test_runner": "cargo test",
+    "test_files": [
+      "src/lib.rs"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-11"
+  },
+  {
+    "name": "the-tap",
+    "language": "rust",
+    "files": 118,
+    "commits": 60,
+    "has_tests": true,
+    "test_count": 54,
+    "test_runner": "cargo test",
+    "test_files": [
+      "src/tap-room/tests/integration.rs",
+      "src/tap-room/src/lib.rs",
+      "src/tap-dynamics/tests/integration.rs",
+      "src/tap-dynamics/src/lib.rs",
+      "src/tap-reflex/tests/integration.rs",
+      "src/tap-reflex/src/lib.rs"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-10"
+  },
+  {
+    "name": "OpenRoom",
+    "language": "typescript",
+    "files": 267,
+    "commits": 45,
+    "has_tests": true,
+    "test_count": 120,
+    "test_runner": "none",
+    "test_files": [
+      "apps/webuiapps/src/lib/__tests__/logger.test.ts",
+      "apps/webuiapps/src/lib/__tests__/configPersistence.test.ts",
+      "apps/webuiapps/src/lib/__tests__/vibeContainerMock.test.ts",
+      "apps/webuiapps/src/lib/__tests__/chatHistoryStorage.test.ts",
+      "apps/webuiapps/src/lib/__tests__/imageGenClient.test.ts",
+      "apps/webuiapps/src/lib/__tests__/logPlugin.test.ts",
+      "apps/webuiapps/src/lib/__tests__/llmClient.test.ts",
+      "e2e/app.spec.ts"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-08"
+  },
+  {
+    "name": "activeledger-ai-site",
+    "language": "typescript",
+    "files": 12,
+    "commits": 7,
+    "has_tests": true,
+    "test_count": 39,
+    "test_runner": "jest",
+    "test_files": [
+      "test/site.test.js"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-10"
+  },
+  {
+    "name": "activelog-ai-site",
+    "language": "typescript",
+    "files": 13,
+    "commits": 6,
+    "has_tests": true,
+    "test_count": 20,
+    "test_runner": "jest",
+    "test_files": [
+      "tests/main.test.js"
+    ],
+    "has_ci": false,
+    "last_commit": "2026-08-09"
+  },
+  {
+    "name": "base60-lattice",
+    "language": "typescript",
+    "files": 28,
+    "commits": 9,
+    "has_tests": true,
+    "test_count": 419,
+    "test_runner": "tsx",
+    "test_files": [
+      "tests/nan-safety.test.ts",
+      "tests/edge-cases.test.ts",
+      "tests/lattice-deep.test.ts",
+      "tests/compass.test.ts",
+      "tests/hex-grid.test.ts",
+      "tests/lattice.test.ts",
+      "tests/walk.test.ts"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-11"
+  },
+  {
+    "name": "collective-unconscious",
+    "language": "typescript",
+    "files": 22,
+    "commits": 6,
+    "has_tests": true,
+    "test_count": 74,
+    "test_runner": "vitest",
+    "test_files": [
+      "test/jepa.test.ts",
+      "test/temporal.test.ts",
+      "test/ingestion-pipeline.test.ts",
+      "test/embed.test.ts"
+    ],
+    "has_ci": false,
+    "last_commit": "2026-08-12"
+  },
+  {
+    "name": "confidence-cascade",
+    "language": "typescript",
+    "files": 18,
+    "commits": 11,
+    "has_tests": true,
+    "test_count": 96,
+    "test_runner": "vitest",
+    "test_files": [
+      "tests/confidence-cascade.test.ts"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-11"
+  },
+  {
+    "name": "ec2mud",
+    "language": "typescript",
+    "files": 40,
+    "commits": 8,
+    "has_tests": true,
+    "test_count": 54,
+    "test_runner": "vitest",
+    "test_files": [
+      "test/utils.test.ts",
+      "test/module-registry.test.ts",
+      "test/module-registry-extended.test.ts"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-10"
+  },
+  {
+    "name": "emergence-engine",
+    "language": "typescript",
+    "files": 27,
+    "commits": 10,
+    "has_tests": true,
+    "test_count": 222,
+    "test_runner": "vitest",
+    "test_files": [
+      "tests/emergence.test.ts",
+      "tests/predictability-estimator.test.ts",
+      "tests/emergence-detector.test.ts",
+      "tests/interruption-system.test.ts",
+      "tests/examples.test.ts",
+      "tests/groupthink-monitor.test.ts",
+      "tests/revelation-tracker.test.ts",
+      "tests/integration.test.ts"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-12"
+  },
+  {
+    "name": "fishinglog-ai-site",
+    "language": "typescript",
+    "files": 15,
+    "commits": 7,
+    "has_tests": true,
+    "test_count": 33,
+    "test_runner": "vitest",
+    "test_files": [
+      "tests/signup.test.js"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-08"
+  },
+  {
+    "name": "fleet-connections",
+    "language": "typescript",
+    "files": 32,
+    "commits": 10,
+    "has_tests": true,
+    "test_count": 199,
+    "test_runner": "vitest",
+    "test_files": [
+      "tests/05-scummvm-arcade-platos-shell.test.ts",
+      "tests/03-hermes-collective-unconscious.test.ts",
+      "tests/04-officers-quarters-smp-notebook.test.ts",
+      "tests/02-mud-engine-spatial-registry.test.ts",
+      "tests/01-cns-bridge-the-tap.test.ts",
+      "src/tests/09-confidence-health-bridge.test.ts",
+      "src/tests/08-cns-echo-health.test.ts",
+      "src/tests/connections.test.ts",
+      "src/tests/10-corpus-vectorizer-bridge.test.ts",
+      "src/tests/11-stigmergy-emergence-bridge.test.ts"
+    ],
+    "has_ci": false,
+    "last_commit": "2026-08-11"
+  },
+  {
+    "name": "fleet-envelope",
+    "language": "typescript",
+    "files": 21,
+    "commits": 6,
+    "has_tests": true,
+    "test_count": 176,
+    "test_runner": "vitest",
+    "test_files": [
+      "tests/edge-cases.test.ts",
+      "tests/adapters.test.ts",
+      "tests/emitter.test.ts",
+      "tests/envelope.test.ts",
+      "tests/router.test.ts"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-10"
+  },
+  {
+    "name": "fleet-pipeline",
+    "language": "typescript",
+    "files": 26,
+    "commits": 8,
+    "has_tests": true,
+    "test_count": 225,
+    "test_runner": "vitest",
+    "test_files": [
+      "test/story-organizer.test.ts",
+      "test/visual-crafter.test.ts",
+      "test/pipeline.test.ts",
+      "test/audio-producer.test.ts",
+      "test/utils.test.ts",
+      "test/helpers.test.ts",
+      "test/podcast-assembler.test.ts",
+      "test/quota-manager.test.ts",
+      "test/index.test.ts"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-12"
+  },
+  {
+    "name": "fleet-radio",
+    "language": "typescript",
+    "files": 22,
+    "commits": 9,
+    "has_tests": true,
+    "test_count": 153,
+    "test_runner": "unknown",
+    "test_files": [
+      "tests/episode-template.test.ts",
+      "tests/types.test.ts",
+      "tests/tts-pipeline.test.ts",
+      "tests/episode-generator.test.ts",
+      "tests/image-generator.test.ts"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-12"
+  },
+  {
+    "name": "fleet-tts",
+    "language": "typescript",
+    "files": 9,
+    "commits": 7,
+    "has_tests": true,
+    "test_count": 41,
+    "test_runner": "vitest",
+    "test_files": [
+      "tests/tts.test.js"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-11"
+  },
+  {
+    "name": "hermes-cloudflare",
+    "language": "typescript",
+    "files": 38,
+    "commits": 10,
+    "has_tests": true,
+    "test_count": 79,
+    "test_runner": "vitest",
+    "test_files": [
+      "tests/tap-relay.test.ts",
+      "tests/types.test.ts",
+      "tests/auth.test.ts"
+    ],
+    "has_ci": false,
+    "last_commit": "2026-08-10"
+  },
+  {
+    "name": "hermes-perception",
+    "language": "typescript",
+    "files": 23,
+    "commits": 8,
+    "has_tests": true,
+    "test_count": 98,
+    "test_runner": "vitest",
+    "test_files": [
+      "test/perception-log.test.ts",
+      "test/unconscious-sync.test.ts",
+      "test/sounder-detector.test.ts",
+      "test/reference-frame.test.ts",
+      "test/perception-midi.test.ts"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-10"
+  },
+  {
+    "name": "hermes-reader",
+    "language": "typescript",
+    "files": 11,
+    "commits": 6,
+    "has_tests": true,
+    "test_count": 70,
+    "test_runner": "jest",
+    "test_files": [
+      "test/site.test.js"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-10"
+  },
+  {
+    "name": "luciddreamer-ai",
+    "language": "typescript",
+    "files": 89,
+    "commits": 60,
+    "has_tests": true,
+    "test_count": 116,
+    "test_runner": "vitest",
+    "test_files": [
+      "src/reactive-improv.test.ts",
+      "functions/api/_data.test.ts",
+      "src/lib/confidence-tracker.test.ts",
+      "src/lib/knowledge-graph.test.ts"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-12"
+  },
+  {
+    "name": "lucineer-com-site",
+    "language": "typescript",
+    "files": 85,
+    "commits": 15,
+    "has_tests": true,
+    "test_count": 20,
+    "test_runner": "node",
+    "test_files": [
+      "test/build-templates.test.js"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-08"
+  },
+  {
+    "name": "lucineer-memory",
+    "language": "typescript",
+    "files": 18,
+    "commits": 16,
+    "has_tests": true,
+    "test_count": 37,
+    "test_runner": "vitest",
+    "test_files": [
+      "test/index.test.ts"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-12"
+  },
+  {
+    "name": "lucineer-vector",
+    "language": "typescript",
+    "files": 20,
+    "commits": 16,
+    "has_tests": true,
+    "test_count": 53,
+    "test_runner": "vitest",
+    "test_files": [
+      "test/utils.test.ts",
+      "test/index.test.ts"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-12"
+  },
+  {
+    "name": "lucineer-worker",
+    "language": "typescript",
+    "files": 49,
+    "commits": 61,
+    "has_tests": true,
+    "test_count": 32,
+    "test_runner": "none",
+    "test_files": [
+      "test/logic.test.ts"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-10"
+  },
+  {
+    "name": "mud-engine",
+    "language": "typescript",
+    "files": 121,
+    "commits": 21,
+    "has_tests": true,
+    "test_count": 303,
+    "test_runner": "vitest",
+    "test_files": [
+      "tests/integration.test.ts",
+      "packages/channels/tests/channels.test.ts",
+      "packages/core/tests/core.test.ts",
+      "packages/agent-runtime/tests/agent-runtime.test.ts",
+      "packages/triggers/tests/triggers.test.ts",
+      "packages/event-bus/tests/bus.test.ts",
+      "packages/envelope/tests/envelope.test.ts",
+      "packages/strategy-guild/tests/cultural-protocol.test.ts",
+      "packages/strategy-guild/tests/strategy-guild.test.ts",
+      "packages/dm-rotation/tests/dm-rotation.test.ts"
+    ],
+    "has_ci": false,
+    "last_commit": "2026-08-12"
+  },
+  {
+    "name": "officers-quarters",
+    "language": "typescript",
+    "files": 50,
+    "commits": 16,
+    "has_tests": true,
+    "test_count": 229,
+    "test_runner": "vitest",
+    "test_files": [
+      "src/tests/intelligent-terminal.test.ts",
+      "src/tests/safe-number.test.ts",
+      "src/tests/navigator-nan-safety.test.ts",
+      "src/tests/navigator-terminal.test.ts",
+      "src/tests/tile-evolution.test.ts",
+      "src/tests/tile-actor-bus.test.ts"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-11"
+  },
+  {
+    "name": "platonic-randomness",
+    "language": "typescript",
+    "files": 13,
+    "commits": 9,
+    "has_tests": true,
+    "test_count": 109,
+    "test_runner": "jest",
+    "test_files": [
+      "tests/edge-cases.test.ts",
+      "tests/platonic-randomness.test.ts"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-10"
+  },
+  {
+    "name": "platos-shell",
+    "language": "typescript",
+    "files": 84,
+    "commits": 14,
+    "has_tests": true,
+    "test_count": 74,
+    "test_runner": "vitest",
+    "test_files": [
+      "tests/verb-engine-extended.test.ts",
+      "tests/verb-engine.test.ts",
+      "tests/dialogue-and-formatter.test.ts"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-10"
+  },
+  {
+    "name": "platos-shell-ide",
+    "language": "typescript",
+    "files": 21,
+    "commits": 6,
+    "has_tests": true,
+    "test_count": 20,
+    "test_runner": "vitest",
+    "test_files": [
+      "tests/event-log-core.test.ts"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-12"
+  },
+  {
+    "name": "room-render",
+    "language": "typescript",
+    "files": 16,
+    "commits": 4,
+    "has_tests": true,
+    "test_count": 35,
+    "test_runner": "vitest",
+    "test_files": [
+      "tests/render-room.test.ts"
+    ],
+    "has_ci": false,
+    "last_commit": "2026-08-10"
+  },
+  {
+    "name": "scummvm-arcade",
+    "language": "typescript",
+    "files": 78,
+    "commits": 11,
+    "has_tests": true,
+    "test_count": 54,
+    "test_runner": "vitest",
+    "test_files": [
+      "tests/input-mapping.test.ts",
+      "tests/audio.test.ts",
+      "tests/inventory.test.ts",
+      "tests/save-load.test.ts",
+      "mud-schemas/tests/sync.test.ts"
+    ],
+    "has_ci": false,
+    "last_commit": "2026-08-10"
+  },
+  {
+    "name": "scummvm-gui-design",
+    "language": "typescript",
+    "files": 29,
+    "commits": 10,
+    "has_tests": true,
+    "test_count": 76,
+    "test_runner": "vitest",
+    "test_files": [
+      "tests/verbs.test.ts",
+      "tests/verb-engine.test.ts"
+    ],
+    "has_ci": false,
+    "last_commit": "2026-08-10"
+  },
+  {
+    "name": "silence-map",
+    "language": "typescript",
+    "files": 10,
+    "commits": 8,
+    "has_tests": true,
+    "test_count": 72,
+    "test_runner": "vitest",
+    "test_files": [
+      "test/site.test.js"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-11"
+  },
+  {
+    "name": "smp-notebook",
+    "language": "typescript",
+    "files": 17,
+    "commits": 5,
+    "has_tests": true,
+    "test_count": 130,
+    "test_runner": "vitest",
+    "test_files": [
+      "tests/notebook.test.ts",
+      "tests/mcp-integration.test.ts",
+      "tests/curriculum.test.ts",
+      "tests/seed-logging.test.ts",
+      "tests/smp-self.test.ts"
+    ],
+    "has_ci": false,
+    "last_commit": "2026-08-09"
+  },
+  {
+    "name": "spatial-registry",
+    "language": "typescript",
+    "files": 14,
+    "commits": 5,
+    "has_tests": true,
+    "test_count": 99,
+    "test_runner": "echo",
+    "test_files": [
+      "tests/edge-cases.test.ts",
+      "tests/registry.test.ts"
+    ],
+    "has_ci": false,
+    "last_commit": "2026-08-10"
+  },
+  {
+    "name": "stigmergy",
+    "language": "typescript",
+    "files": 20,
+    "commits": 9,
+    "has_tests": true,
+    "test_count": 47,
+    "test_runner": "jest",
+    "test_files": [
+      "tests/stigmergy.test.ts",
+      "tests/colony-behavior.test.ts"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-10"
+  },
+  {
+    "name": "study-flagship",
+    "language": "typescript",
+    "files": 161,
+    "commits": 1818,
+    "has_tests": true,
+    "test_count": 183,
+    "test_runner": "jest",
+    "test_files": [
+      "tests/dead-reckoning.test.js",
+      "tests/discovery.test.js",
+      "tests/crystal.test.js",
+      "tests/trust.test.js",
+      "tests/learning.test.js",
+      "tests/hydration.test.js",
+      "tests/forgiveness.test.js"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-07"
+  },
+  {
+    "name": "study-fleet-murmur-worker",
+    "language": "typescript",
+    "files": 26,
+    "commits": 4,
+    "has_tests": true,
+    "test_count": 78,
+    "test_runner": "vitest",
+    "test_files": [
+      "tests/strategies-scheduler.test.ts",
+      "tests/idle-detector.test.ts",
+      "tests/quality.test.ts"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-10"
+  },
+  {
+    "name": "study-luciddreamer-ai",
+    "language": "typescript",
+    "files": 72,
+    "commits": 3,
+    "has_tests": true,
+    "test_count": 20,
+    "test_runner": "none",
+    "test_files": [
+      "src/reactive-improv.test.ts"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-06"
+  },
+  {
+    "name": "study-luciddreamer-os",
+    "language": "typescript",
+    "files": 13,
+    "commits": 2,
+    "has_tests": true,
+    "test_count": 12,
+    "test_runner": "vitest",
+    "test_files": [
+      "tests/orchestrator.test.js"
+    ],
+    "has_ci": false,
+    "last_commit": "2026-08-07"
+  },
+  {
+    "name": "study-murmur",
+    "language": "typescript",
+    "files": 31,
+    "commits": 3,
+    "has_tests": true,
+    "test_count": 23,
+    "test_runner": "vitest",
+    "test_files": [
+      "src/lib/__tests__/module-registry.test.ts"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-08"
+  },
+  {
+    "name": "study-murmur-agent",
+    "language": "typescript",
+    "files": 1687,
+    "commits": 3,
+    "has_tests": true,
+    "test_count": 70,
+    "test_runner": "vitest",
+    "test_files": [
+      "tests/murmur.test.ts"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-10"
+  },
+  {
+    "name": "study-si-agent",
+    "language": "typescript",
+    "files": 11,
+    "commits": 7,
+    "has_tests": true,
+    "test_count": 12,
+    "test_runner": "vitest",
+    "test_files": [
+      "tests/index.test.ts"
+    ],
+    "has_ci": false,
+    "last_commit": "2026-08-07"
+  },
+  {
+    "name": "study-tripartite-consensus",
+    "language": "typescript",
+    "files": 21,
+    "commits": 2,
+    "has_tests": true,
+    "test_count": 32,
+    "test_runner": "vitest",
+    "test_files": [
+      "src/ConsensusEngine.test.ts",
+      "src/WeightCalculator.test.ts"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-07"
+  },
+  {
+    "name": "study-vessel-monitor",
+    "language": "typescript",
+    "files": 5237,
+    "commits": 5329,
+    "has_tests": true,
+    "test_count": 1509,
+    "test_runner": "none",
+    "test_files": [
+      "consumer-prices-core/src/api/server.test.ts",
+      "consumer-prices-core/src/adapters/validator.test.ts",
+      "consumer-prices-core/src/adapters/search.test.ts",
+      "consumer-prices-core/src/jobs/scrape.test.ts",
+      "consumer-prices-core/src/jobs/publish.test.ts",
+      "consumer-prices-core/src/jobs/scrape-coverage.test.ts",
+      "consumer-prices-core/src/ops/coverage.test.ts",
+      "consumer-prices-core/src/snapshots/worldmonitor.test.ts",
+      "consumer-prices-core/src/snapshots/coverage.test.ts",
+      "consumer-prices-core/src/db/queries/matches.test.ts"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-06"
+  },
+  {
+    "name": "tap-frontend",
+    "language": "typescript",
+    "files": 7,
+    "commits": 6,
+    "has_tests": true,
+    "test_count": 113,
+    "test_runner": "jest",
+    "test_files": [
+      "test/frontend.test.js"
+    ],
+    "has_ci": false,
+    "last_commit": "2026-08-11"
+  },
+  {
+    "name": "technician",
+    "language": "typescript",
+    "files": 22,
+    "commits": 6,
+    "has_tests": true,
+    "test_count": 130,
+    "test_runner": "vitest",
+    "test_files": [
+      "tests/room-config.test.ts",
+      "tests/harness-config.test.ts",
+      "tests/body-config.test.ts",
+      "tests/superinstance-boot.test.ts",
+      "tests/brain-config.test.ts",
+      "tests/voice-commands.test.ts",
+      "tests/device-scan.test.ts"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-10"
+  },
+  {
+    "name": "tensor-midi",
+    "language": "typescript",
+    "files": 73,
+    "commits": 20,
+    "has_tests": true,
+    "test_count": 501,
+    "test_runner": "node",
+    "test_files": [
+      "tests/narrative-engine.test.js",
+      "tests/capture.test.js",
+      "tests/swmidi.test.js",
+      "tests/device-context.test.js",
+      "tests/engine.test.js",
+      "tests/analyzer.test.js",
+      "tests/pulse-engine.test.js",
+      "tests/persistence.test.js",
+      "tests/audio.test.js",
+      "game-engine/platonic-engine.test.js"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-10"
+  },
+  {
+    "name": "the-listeners-ear",
+    "language": "typescript",
+    "files": 11,
+    "commits": 10,
+    "has_tests": true,
+    "test_count": 93,
+    "test_runner": "vitest",
+    "test_files": [
+      "tests/emotion.test.js"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-11"
+  },
+  {
+    "name": "vessel-room-navigator",
+    "language": "typescript",
+    "files": 76,
+    "commits": 32,
+    "has_tests": true,
+    "test_count": 39,
+    "test_runner": "node",
+    "test_files": [
+      "test/rooms-config.test.js",
+      "test/index-html.test.js"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-10"
+  },
+  {
+    "name": "vibe-protocol",
+    "language": "typescript",
+    "files": 21,
+    "commits": 11,
+    "has_tests": true,
+    "test_count": 111,
+    "test_runner": "vitest",
+    "test_files": [
+      "tests/emotion-bridge.test.ts",
+      "tests/vibe.test.ts"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-11"
+  },
+  {
+    "name": "voxel-logic",
+    "language": "typescript",
+    "files": 21,
+    "commits": 11,
+    "has_tests": true,
+    "test_count": 214,
+    "test_runner": "jest",
+    "test_files": [
+      "tests/voxel-logic-coverage.test.ts",
+      "tests/voxel-logic.test.ts",
+      "tests/voxel-logic-extended.test.ts",
+      "tests/voxel-logic-stress.test.ts"
+    ],
+    "has_ci": false,
+    "last_commit": "2026-08-11"
+  },
+  {
+    "name": "zeroclaw",
+    "language": "typescript",
+    "files": 64,
+    "commits": 11,
+    "has_tests": true,
+    "test_count": 54,
+    "test_runner": "vitest",
+    "test_files": [
+      "tests/full-lifecycle.test.ts",
+      "tests/zeroclaw.test.ts",
+      "test/crew.test.ts"
+    ],
+    "has_ci": false,
+    "last_commit": "2026-08-10"
+  },
+  {
+    "name": "scummvm-prototype",
+    "language": "unknown",
+    "files": 125,
+    "commits": 40,
+    "has_tests": true,
+    "test_count": 72,
+    "test_runner": "mixed",
+    "test_files": [
+      "test/poker-engine.test.js",
+      "test/room-loader.test.js",
+      "test/relay-experts.test.js",
+      "test/model-router.test.js"
+    ],
+    "has_ci": true,
+    "last_commit": "2026-08-10"
+  },
+  {
+    "name": "roblox-testkit",
+    "language": "lua",
+    "files": 16,
+    "commits": 9,
+    "has_tests": false,
+    "test_count": 0,
+    "test_runner": "none",
+    "test_files": [],
+    "has_ci": true,
+    "last_commit": "2026-08-07"
+  },
+  {
+    "name": "superinstance-design-system",
+    "language": "lua",
+    "files": 28,
+    "commits": 5,
+    "has_tests": false,
+    "test_count": 0,
+    "test_runner": "none",
+    "test_files": [],
+    "has_ci": true,
+    "last_commit": "2026-08-08"
+  },
+  {
+    "name": "vibe-world",
+    "language": "lua",
+    "files": 14,
+    "commits": 7,
+    "has_tests": false,
+    "test_count": 0,
+    "test_runner": "none",
+    "test_files": [],
+    "has_ci": false,
+    "last_commit": "2026-08-08"
+  },
+  {
+    "name": "covers",
+    "language": "python",
+    "files": 151,
+    "commits": 8,
+    "has_tests": false,
+    "test_count": 0,
+    "test_runner": "none",
+    "test_files": [],
+    "has_ci": false,
+    "last_commit": "2026-08-12"
+  },
+  {
+    "name": "lucineer-roblox",
+    "language": "python",
+    "files": 100,
+    "commits": 55,
+    "has_tests": false,
+    "test_count": 0,
+    "test_runner": "none",
+    "test_files": [],
+    "has_ci": false,
+    "last_commit": "2026-08-08"
+  },
+  {
+    "name": "study-flux-papers",
+    "language": "python",
+    "files": 32,
+    "commits": 1,
+    "has_tests": false,
+    "test_count": 0,
+    "test_runner": "none",
+    "test_files": [],
+    "has_ci": true,
+    "last_commit": "2026-05-08"
+  },
+  {
+    "name": "study-intent-directed-compilation",
+    "language": "python",
+    "files": 17,
+    "commits": 1,
+    "has_tests": false,
+    "test_count": 0,
+    "test_runner": "none",
+    "test_files": [],
+    "has_ci": true,
+    "last_commit": "2026-07-12"
+  },
+  {
+    "name": "study-weird-roblox-ai",
+    "language": "python",
+    "files": 5,
+    "commits": 6,
+    "has_tests": false,
+    "test_count": 0,
+    "test_runner": "none",
+    "test_files": [],
+    "has_ci": false,
+    "last_commit": "2026-08-08"
+  },
+  {
+    "name": "ACE-Step-1.5",
+    "language": "typescript",
+    "files": 1236,
+    "commits": 13,
+    "has_tests": false,
+    "test_count": 0,
+    "test_runner": "none",
+    "test_files": [],
+    "has_ci": true,
+    "last_commit": "2026-08-12"
+  },
+  {
+    "name": "cocapn-dashboard",
+    "language": "typescript",
+    "files": 11,
+    "commits": 15,
+    "has_tests": false,
+    "test_count": 0,
+    "test_runner": "node",
+    "test_files": [],
+    "has_ci": true,
+    "last_commit": "2026-08-10"
+  },
+  {
+    "name": "fleet-dashboard",
+    "language": "typescript",
+    "files": 14,
+    "commits": 14,
+    "has_tests": false,
+    "test_count": 0,
+    "test_runner": "node",
+    "test_files": [],
+    "has_ci": true,
+    "last_commit": "2026-08-10"
+  },
+  {
+    "name": "lucid-dreamer-interactive",
+    "language": "typescript",
+    "files": 12,
+    "commits": 6,
+    "has_tests": false,
+    "test_count": 0,
+    "test_runner": "node",
+    "test_files": [],
+    "has_ci": true,
+    "last_commit": "2026-08-10"
+  },
+  {
+    "name": "screen-agent",
+    "language": "typescript",
+    "files": 8,
+    "commits": 6,
+    "has_tests": false,
+    "test_count": 0,
+    "test_runner": "node",
+    "test_files": [],
+    "has_ci": false,
+    "last_commit": "2026-08-12"
+  },
+  {
+    "name": "si-main",
+    "language": "typescript",
+    "files": 416,
+    "commits": 409,
+    "has_tests": false,
+    "test_count": 0,
+    "test_runner": "none",
+    "test_files": [],
+    "has_ci": true,
+    "last_commit": "2026-08-10"
+  },
+  {
+    "name": "DigitalTwin-RobotStudio-SmartComponent",
+    "language": "unknown",
+    "files": 12,
+    "commits": 6,
+    "has_tests": false,
+    "test_count": 0,
+    "test_runner": "mixed",
+    "test_files": [],
+    "has_ci": false,
+    "last_commit": "2026-08-07"
+  },
+  {
+    "name": "INTEGRATION_GUIDES",
+    "language": "unknown",
+    "files": 8,
+    "commits": 5,
+    "has_tests": false,
+    "test_count": 0,
+    "test_runner": "mixed",
+    "test_files": [],
+    "has_ci": false,
+    "last_commit": "2026-08-10"
+  },
+  {
+    "name": "VaaS",
+    "language": "unknown",
+    "files": 61,
+    "commits": 9,
+    "has_tests": false,
+    "test_count": 0,
+    "test_runner": "mixed",
+    "test_files": [],
+    "has_ci": false,
+    "last_commit": "2026-08-10"
+  },
+  {
+    "name": "fleet-inventory",
+    "language": "unknown",
+    "files": 9,
+    "commits": 9,
+    "has_tests": false,
+    "test_count": 0,
+    "test_runner": "mixed",
+    "test_files": [],
+    "has_ci": false,
+    "last_commit": "2026-08-10"
+  },
+  {
+    "name": "platonic-creative-suite",
+    "language": "unknown",
+    "files": 4,
+    "commits": 4,
+    "has_tests": false,
+    "test_count": 0,
+    "test_runner": "mixed",
+    "test_files": [],
+    "has_ci": false,
+    "last_commit": "2026-08-10"
+  },
+  {
+    "name": "study-lucid-tutor-c",
+    "language": "unknown",
+    "files": 10,
+    "commits": 1,
+    "has_tests": false,
+    "test_count": 0,
+    "test_runner": "mixed",
+    "test_files": [],
+    "has_ci": true,
+    "last_commit": "2026-07-12"
+  },
+  {
+    "name": "study-luciddreamer-ai-pages",
+    "language": "unknown",
+    "files": 12,
+    "commits": 1,
+    "has_tests": false,
+    "test_count": 0,
+    "test_runner": "mixed",
+    "test_files": [],
+    "has_ci": true,
+    "last_commit": "2026-07-12"
+  },
+  {
+    "name": "study-luciddreamer-vision",
+    "language": "unknown",
+    "files": 6,
+    "commits": 1,
+    "has_tests": false,
+    "test_count": 0,
+    "test_runner": "mixed",
+    "test_files": [],
+    "has_ci": true,
+    "last_commit": "2026-07-12"
+  },
+  {
+    "name": "study-multi-model-adversarial-testing",
+    "language": "unknown",
+    "files": 31,
+    "commits": 1,
+    "has_tests": false,
+    "test_count": 0,
+    "test_runner": "mixed",
+    "test_files": [],
+    "has_ci": false,
+    "last_commit": "2026-07-12"
+  },
+  {
+    "name": "study-navigator",
+    "language": "unknown",
+    "files": 13,
+    "commits": 10,
+    "has_tests": false,
+    "test_count": 0,
+    "test_runner": "mixed",
+    "test_files": [],
+    "has_ci": false,
+    "last_commit": "2026-08-04"
+  },
+  {
+    "name": "study-nebula-docs",
+    "language": "unknown",
+    "files": 6,
+    "commits": 1,
+    "has_tests": false,
+    "test_count": 0,
+    "test_runner": "mixed",
+    "test_files": [],
+    "has_ci": true,
+    "last_commit": "2026-07-12"
+  },
+  {
+    "name": "study-negative-knowledge",
+    "language": "unknown",
+    "files": 6,
+    "commits": 1,
+    "has_tests": false,
+    "test_count": 0,
+    "test_runner": "mixed",
+    "test_files": [],
+    "has_ci": false,
+    "last_commit": "2026-07-12"
+  },
+  {
+    "name": "study-papers",
+    "language": "unknown",
+    "files": 7,
+    "commits": 2,
+    "has_tests": false,
+    "test_count": 0,
+    "test_runner": "mixed",
+    "test_files": [],
+    "has_ci": false,
+    "last_commit": "2026-08-06"
+  },
+  {
+    "name": "study-sheaf-constraint-synthesis",
+    "language": "unknown",
+    "files": 8,
+    "commits": 2,
+    "has_tests": false,
+    "test_count": 0,
+    "test_runner": "mixed",
+    "test_files": [],
+    "has_ci": true,
+    "last_commit": "2026-08-04"
+  },
+  {
+    "name": "study-smartcomponent",
+    "language": "unknown",
+    "files": 12,
+    "commits": 7,
+    "has_tests": false,
+    "test_count": 0,
+    "test_runner": "mixed",
+    "test_files": [],
+    "has_ci": false,
+    "last_commit": "2026-08-07"
+  },
+  {
+    "name": "study-vessel-tech",
+    "language": "unknown",
+    "files": 8,
+    "commits": 3,
+    "has_tests": false,
+    "test_count": 0,
+    "test_runner": "mixed",
+    "test_files": [],
+    "has_ci": true,
+    "last_commit": "2026-07-12"
+  },
+  {
+    "name": "study-zero-crypto",
+    "language": "unknown",
+    "files": 4,
+    "commits": 1,
+    "has_tests": false,
+    "test_count": 0,
+    "test_runner": "mixed",
+    "test_files": [],
+    "has_ci": false,
+    "last_commit": "2026-07-12"
+  },
+  {
+    "name": "wesley-curriculum",
+    "language": "unknown",
+    "files": 7,
+    "commits": 5,
+    "has_tests": false,
+    "test_count": 0,
+    "test_runner": "mixed",
+    "test_files": [],
+    "has_ci": false,
+    "last_commit": "2026-08-12"
+  },
+  {
+    "name": "wesley-journal",
+    "language": "unknown",
+    "files": 33,
+    "commits": 27,
+    "has_tests": false,
+    "test_count": 0,
+    "test_runner": "mixed",
+    "test_files": [],
+    "has_ci": false,
+    "last_commit": "2026-08-11"
+  }
+]
