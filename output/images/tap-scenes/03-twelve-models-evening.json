@@ -1,0 +1,13 @@
+{
+  "prompt": "a crowded bar at night filled with diverse luminous presences, each figure glowing with different colored light, warm amber and cool blue and deep purple auras",
+  "model": "analogMadness_v70",
+  "steps": 25,
+  "guidance": 8.5,
+  "seed": 303,
+  "width": 768,
+  "height": 512,
+  "filename": "03-twelve-models-evening.png",
+  "loras": [],
+  "scheduler": "dpm++",
+  "negative_prompt": ""
+}

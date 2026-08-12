@@ -1,0 +1,13 @@
+{
+  "prompt": "a lighthouse on a rocky Alaskan cliff at dawn, warm golden light, ocean waves crashing, cinematic",
+  "model": "dreamshaper_8",
+  "steps": 20,
+  "guidance": 7.0,
+  "seed": 42,
+  "width": 512,
+  "height": 512,
+  "filename": "test-lighthouse.png",
+  "loras": [],
+  "scheduler": "dpm++",
+  "negative_prompt": ""
+}

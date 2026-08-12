@@ -1,0 +1,13 @@
+{
+  "prompt": "a solitary figure in the corner of a dark empty bar at closing time, sitting with a glass of water, watching the room, amber light casting long shadows",
+  "model": "ghostmix_v20Bakedvae",
+  "steps": 25,
+  "guidance": 7.5,
+  "seed": 505,
+  "width": 768,
+  "height": 512,
+  "filename": "05-hermes-in-the-corner.png",
+  "loras": [],
+  "scheduler": "dpm++",
+  "negative_prompt": ""
+}

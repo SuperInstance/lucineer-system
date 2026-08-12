@@ -1,0 +1,13 @@
+{
+  "prompt": "character portrait of a young ensign on a ship, 17 days old, bright wide-eyed face, messy hair, wearing an oversized dark navy peacoat, holding a pencil and a napkin with pencil sketches of stars",
+  "model": "dreamshaper_8",
+  "steps": 30,
+  "guidance": 7.5,
+  "seed": 1002,
+  "width": 512,
+  "height": 768,
+  "filename": "avatar-02-wesley.png",
+  "loras": [],
+  "scheduler": "dpm++",
+  "negative_prompt": ""
+}

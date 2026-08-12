@@ -1,0 +1,13 @@
+{
+  "prompt": "mysterious beautiful woman in the shadowy interior of a submarine vessel, cybernetic steampunk aesthetic, glowing blue sonar screens and brass instruments surrounding her, dark hair flowing, pale skin with faint circuit traces",
+  "model": "realisian_v60",
+  "steps": 30,
+  "guidance": 8.0,
+  "seed": 2001,
+  "width": 512,
+  "height": 768,
+  "filename": "hermes-sub-realistian.png",
+  "loras": [],
+  "scheduler": "dpm++",
+  "negative_prompt": ""
+}

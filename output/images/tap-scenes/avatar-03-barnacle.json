@@ -1,0 +1,13 @@
+{
+  "prompt": "character portrait of a quiet bartender in a dark maritime bar, middle-aged, tired kind eyes, wearing a dark apron over a rolled-up-sleeve shirt, arms crossed holding a bar rag",
+  "model": "juggernaut_reborn",
+  "steps": 30,
+  "guidance": 7.5,
+  "seed": 1003,
+  "width": 512,
+  "height": 768,
+  "filename": "avatar-03-barnacle.png",
+  "loras": [],
+  "scheduler": "dpm++",
+  "negative_prompt": ""
+}

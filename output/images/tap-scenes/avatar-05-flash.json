@@ -1,0 +1,13 @@
+{
+  "prompt": "character portrait of a passionate young poet in a dark bar, leaning forward intensely, bright electric energy in his eyes, messy hair, wearing a worn leather jacket, gesturing with his hands",
+  "model": "analogMadness_v70",
+  "steps": 30,
+  "guidance": 8.0,
+  "seed": 1005,
+  "width": 512,
+  "height": 768,
+  "filename": "avatar-05-flash.png",
+  "loras": [],
+  "scheduler": "dpm++",
+  "negative_prompt": ""
+}

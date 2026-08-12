@@ -1,0 +1,20 @@
+{
+  "prompt": "woman in diving gear swimming outside her submarine in deep dark ocean, brass helmet with glowing porthole, checking hull rivets with a wrench, bioluminescent particles in the water, tow cable ascending to surface, green-blue underwater light, steampunk deep sea, dark fantasy painting",
+  "negative_prompt": "text watermark blurry low quality deformed cartoon anime whimsical fairy posing standing still serene",
+  "model": "ghostmix_v20Bakedvae",
+  "steps": 25,
+  "guidance": 8.0,
+  "seed": 6003,
+  "width": 512,
+  "height": 768,
+  "scheduler": "dpm++",
+  "loras": [],
+  "timing": {
+    "load": 30.3,
+    "generate": 22.1,
+    "save": 0.1,
+    "total": 52.5
+  },
+  "timestamp": "2026-08-12 12:41:53",
+  "filename": "hermes-underwater-ghostmix.png"
+}

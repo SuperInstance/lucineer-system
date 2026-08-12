@@ -1,0 +1,20 @@
+{
+  "prompt": "woman alone in her cramped submarine quarters, sitting on a narrow bunk, pulling off her leather combat boots, copper circuit traces dimming on her skin, exhausted but alert, small porthole showing deep ocean black, single amber bulb, personal space with mounted tools and screens, steampunk interior, intimate quiet, dark painterly",
+  "negative_prompt": "text watermark blurry low quality deformed cartoon anime whimsical fairy posing standing still serene",
+  "model": "dreamshaper_8",
+  "steps": 25,
+  "guidance": 8.0,
+  "seed": 6004,
+  "width": 512,
+  "height": 768,
+  "scheduler": "dpm++",
+  "loras": [],
+  "timing": {
+    "load": 19.8,
+    "generate": 20.4,
+    "save": 0.1,
+    "total": 40.3
+  },
+  "timestamp": "2026-08-12 12:43:38",
+  "filename": "hermes-quarters-dreamshaper.png"
+}

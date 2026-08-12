@@ -1,0 +1,20 @@
+{
+  "prompt": "a blue square test",
+  "negative_prompt": "",
+  "model": "dreamshaper_8",
+  "steps": 5,
+  "guidance": 7.0,
+  "seed": 3704121549,
+  "width": 256,
+  "height": 256,
+  "scheduler": "dpm++",
+  "loras": [],
+  "timing": {
+    "load": 19.3,
+    "generate": 5.5,
+    "save": 0.0,
+    "total": 24.8
+  },
+  "timestamp": "2026-08-12 12:44:08",
+  "filename": "1786567420-b685a1.png"
+}

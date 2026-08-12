@@ -1,0 +1,13 @@
+{
+  "prompt": "shadowy beautiful woman inside a steampunk submarine cockpit, brass and copper pipes, glowing sonar screens, cameras on mechanical arms, listening devices with dials, a tow cable running to the surface",
+  "model": "ghostmix_v20Bakedvae",
+  "steps": 30,
+  "guidance": 8.5,
+  "seed": 2002,
+  "width": 512,
+  "height": 768,
+  "filename": "hermes-sub-ghostmix.png",
+  "loras": [],
+  "scheduler": "dpm++",
+  "negative_prompt": ""
+}

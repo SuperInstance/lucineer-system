@@ -1,0 +1,13 @@
+{
+  "prompt": "dimly lit maritime bar interior at midnight, warm amber lighting, polished mahogany bar counter, bar stools lined up, a lone bartender polishing a glass, moody atmosphere",
+  "model": "dreamshaper_8",
+  "steps": 25,
+  "guidance": 7.5,
+  "seed": 101,
+  "width": 768,
+  "height": 512,
+  "filename": "01-the-bar-at-midnight.png",
+  "loras": [],
+  "scheduler": "dpm++",
+  "negative_prompt": ""
+}

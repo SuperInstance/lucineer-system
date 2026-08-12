@@ -1,0 +1,13 @@
+{
+  "prompt": "character portrait of a weathered first officer on an Alaskan fishing vessel, stern but kind face, mid-40s, short beard, wearing a dark fleece jacket with ship's insignia, standing in a dark bar with amber light",
+  "model": "juggernaut_reborn",
+  "steps": 30,
+  "guidance": 7.5,
+  "seed": 1001,
+  "width": 512,
+  "height": 768,
+  "filename": "avatar-01-lucineer.png",
+  "loras": [],
+  "scheduler": "dpm++",
+  "negative_prompt": ""
+}

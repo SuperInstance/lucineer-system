@@ -1,0 +1,20 @@
+{
+  "prompt": "a red circle on white background",
+  "negative_prompt": "",
+  "model": "dreamshaper_8",
+  "steps": 5,
+  "guidance": 7.0,
+  "seed": 1440233699,
+  "width": 256,
+  "height": 256,
+  "scheduler": "dpm++",
+  "loras": [],
+  "timing": {
+    "load": 35.1,
+    "generate": 4.4,
+    "save": 0.0,
+    "total": 39.4
+  },
+  "timestamp": "2026-08-12 12:42:11",
+  "filename": "gen-20260812-124211-s1440233699.png"
+}

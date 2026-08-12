@@ -1,0 +1,20 @@
+{
+  "prompt": "woman in diving gear swimming outside her submarine in deep dark ocean, brass helmet with glowing porthole, checking hull rivets with a wrench, bioluminescent particles in the water, tow cable ascending to surface, green-blue underwater light, steampunk deep sea, dark fantasy painting",
+  "negative_prompt": "text watermark blurry low quality deformed cartoon anime whimsical fairy posing standing still serene",
+  "model": "experience_V10",
+  "steps": 25,
+  "guidance": 8.5,
+  "seed": 6003,
+  "width": 512,
+  "height": 768,
+  "scheduler": "dpm++",
+  "loras": [],
+  "timing": {
+    "load": 34.1,
+    "generate": 19.3,
+    "save": 0.1,
+    "total": 53.5
+  },
+  "timestamp": "2026-08-12 12:42:53",
+  "filename": "hermes-underwater-experience.png"
+}

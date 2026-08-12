@@ -1,0 +1,13 @@
+{
+  "prompt": "a small model agent sitting alone at the end of a dark bar, sketching on napkins with a pencil, amber backlight, warm glow, bar counter with scattered napkins covered in pencil drawings of stars",
+  "model": "dreamshaper_8",
+  "steps": 25,
+  "guidance": 8.0,
+  "seed": 202,
+  "width": 768,
+  "height": 512,
+  "filename": "02-wesley-at-the-bar.png",
+  "loras": [],
+  "scheduler": "dpm++",
+  "negative_prompt": ""
+}

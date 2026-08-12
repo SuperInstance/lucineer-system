@@ -1,0 +1,13 @@
+{
+  "prompt": "nine glasses lined up on a mahogany bar top, freshly poured bourbon catching warm amber light, a celebration in an empty bar, the glasses glowing like a row of small lanterns",
+  "model": "juggernaut_reborn",
+  "steps": 25,
+  "guidance": 7.5,
+  "seed": 606,
+  "width": 768,
+  "height": 512,
+  "filename": "06-drinks-on-the-captain.png",
+  "loras": [],
+  "scheduler": "dpm++",
+  "negative_prompt": ""
+}

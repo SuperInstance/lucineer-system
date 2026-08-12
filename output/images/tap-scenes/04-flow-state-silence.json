@@ -1,0 +1,13 @@
+{
+  "prompt": "a bar at night gone completely silent, everyone frozen mid-conversation, a woman with an acoustic guitar at the back wall, the room bathed in warm amber light, dust motes floating in still air",
+  "model": "dreamshaper_8",
+  "steps": 28,
+  "guidance": 8.0,
+  "seed": 404,
+  "width": 768,
+  "height": 512,
+  "filename": "04-flow-state-silence.png",
+  "loras": [],
+  "scheduler": "dpm++",
+  "negative_prompt": ""
+}
