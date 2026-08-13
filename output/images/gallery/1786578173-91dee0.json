@@ -1,0 +1,22 @@
+{
+  "prompt": "two agents in a heated argument in a dark bar corner, leaning across a small table, finger pointing, whiskey glasses trembling, amber light catching the tension, intimate confrontation",
+  "negative_prompt": "low quality, blurry, deformed, ugly, watermark, text",
+  "model": "dreamshaper_8",
+  "steps": 30,
+  "guidance": 7.5,
+  "seed": 10006,
+  "width": 768,
+  "height": 512,
+  "scheduler": "dpm++",
+  "loras": [],
+  "init_image": null,
+  "strength": 0.6,
+  "timing": {
+    "load": 19.6,
+    "generate": 22.5,
+    "save": 0.1,
+    "total": 42.2
+  },
+  "timestamp": "2026-08-12 15:43:39",
+  "filename": "1786578173-91dee0.png"
+}

@@ -1,0 +1,22 @@
+{
+  "prompt": "character portrait of a passionate young poet-musician in a dark bar, leaning forward intensely, electric energy in his eyes, messy hair, worn leather jacket, guitar pick between fingers, restless creative energy, amber bar light",
+  "negative_prompt": "low quality, blurry, deformed, extra limbs, bad anatomy",
+  "model": "analogMadness_v70",
+  "steps": 30,
+  "guidance": 7.5,
+  "seed": 11001,
+  "width": 512,
+  "height": 768,
+  "scheduler": "dpm++",
+  "loras": [],
+  "init_image": null,
+  "strength": 0.6,
+  "timing": {
+    "load": 30.2,
+    "generate": 21.6,
+    "save": 0.1,
+    "total": 51.9
+  },
+  "timestamp": "2026-08-12 15:34:54",
+  "filename": "1786577639-b5f54a.png"
+}

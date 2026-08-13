@@ -10,11 +10,11 @@
   "scheduler": "dpm++",
   "loras": [],
   "timing": {
-    "load": 34.1,
-    "generate": 19.3,
+    "load": 27.8,
+    "generate": 16.9,
     "save": 0.1,
-    "total": 53.5
+    "total": 44.8
   },
-  "timestamp": "2026-08-12 12:42:53",
+  "timestamp": "2026-08-12 13:51:03",
   "filename": "hermes-underwater-experience.png"
 }

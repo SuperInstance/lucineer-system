@@ -1,1 +1,1 @@
-{"status": "done", "job": {"prompt": "character portrait of an enigmatic transwoman in a dark bar corner, long dark hair, pale skin, sharp intelligent eyes, wearing a dark turtleneck, sitting perfectly still with a glass of water, faint blue-white data patterns glowing beneath her skin", "negative_prompt": "", "model": "realisian_v60", "steps": 30, "guidance": 7.5, "seed": 1004, "width": 512, "height": 768, "loras": []}, "finished": 1786568317.3878958, "output": "/home/eileen/.openclaw/workspace/output/images/gallery/1786568264-972423.png"}
+{"status": "idle"}

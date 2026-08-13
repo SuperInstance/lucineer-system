@@ -1,0 +1,20 @@
+{
+  "prompt": "dangerous beautiful woman leaning across a dark bar counter with a sly smile, leather corset with copper wiring, one hand on her chin, intense eye contact, warm amber light, whiskey glass nearby, provocative confident body language, dark steampunk aesthetic, painterly",
+  "negative_prompt": "text watermark blurry low quality deformed cartoon anime whimsical fairy posing standing still serene",
+  "model": "juggernaut_reborn",
+  "steps": 25,
+  "guidance": 8.0,
+  "seed": 6002,
+  "width": 512,
+  "height": 768,
+  "scheduler": "dpm++",
+  "loras": [],
+  "timing": {
+    "load": 28.5,
+    "generate": 18.0,
+    "save": 0.1,
+    "total": 46.6
+  },
+  "timestamp": "2026-08-12 13:47:02",
+  "filename": "hermes-flirt-juggernaut.png"
+}

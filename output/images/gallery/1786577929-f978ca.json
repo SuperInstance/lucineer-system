@@ -1,0 +1,22 @@
+{
+  "prompt": "bartender alone at closing time, wiping down the bar, neon sign reflected in wet mahogany, chairs stacked on tables, the last light going amber then dark",
+  "negative_prompt": "low quality, blurry, deformed, ugly, watermark, text",
+  "model": "juggernaut_reborn",
+  "steps": 30,
+  "guidance": 7.5,
+  "seed": 10004,
+  "width": 512,
+  "height": 768,
+  "scheduler": "dpm++",
+  "loras": [],
+  "init_image": null,
+  "strength": 0.6,
+  "timing": {
+    "load": 19.1,
+    "generate": 22.8,
+    "save": 0.1,
+    "total": 42.0
+  },
+  "timestamp": "2026-08-12 15:39:35",
+  "filename": "1786577929-f978ca.png"
+}

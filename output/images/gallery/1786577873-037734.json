@@ -1,0 +1,19 @@
+{
+  "prompt": "a tough woman on her knees under a submarine floor panel, elbows deep in copper wiring, jaw set, sweating, sparks, leather vest, wrench belt, intense focus, badass operator",
+  "negative_prompt": "",
+  "model": "cloud:FLUX-1-schnell",
+  "steps": 4,
+  "guidance": 3.5,
+  "seed": null,
+  "width": 1024,
+  "height": 1024,
+  "scheduler": "deepinfra",
+  "loras": [],
+  "timing": {
+    "generate": 0.8,
+    "save": 0.0,
+    "total": 0.8
+  },
+  "timestamp": "2026-08-12 15:37:54",
+  "filename": "1786577873-037734.png"
+}

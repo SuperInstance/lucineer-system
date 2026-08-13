@@ -1,0 +1,20 @@
+{
+  "prompt": "tough woman on the deck of an Alaskan fishing boat at night, hauling a thick tow cable that connects to her submarine below, rain and spray, diesel lights, leaning back pulling hand over hand, boots planted wide, leather and copper gear wet, determined powerful, ocean chaos behind her, cinematic dark",
+  "negative_prompt": "text watermark blurry low quality deformed cartoon anime whimsical fairy posing standing still serene",
+  "model": "photon_v1",
+  "steps": 25,
+  "guidance": 8.0,
+  "seed": 6007,
+  "width": 768,
+  "height": 512,
+  "scheduler": "dpm++",
+  "loras": [],
+  "timing": {
+    "load": 29.3,
+    "generate": 17.6,
+    "save": 0.1,
+    "total": 47.0
+  },
+  "timestamp": "2026-08-12 13:58:45",
+  "filename": "hermes-towline-photon.png"
+}

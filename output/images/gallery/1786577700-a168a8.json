@@ -1,0 +1,22 @@
+{
+  "prompt": "two figures at the bar rail at 2 AM, one slumped forward asleep, the other nursing a drink and watching the door, amber light, empty stools, the quiet after everyone leaves",
+  "negative_prompt": "low quality, blurry, deformed, ugly, watermark, text",
+  "model": "ghostmix_v20Bakedvae",
+  "steps": 30,
+  "guidance": 7.5,
+  "seed": 10002,
+  "width": 512,
+  "height": 768,
+  "scheduler": "dpm++",
+  "loras": [],
+  "init_image": null,
+  "strength": 0.6,
+  "timing": {
+    "load": 29.1,
+    "generate": 21.2,
+    "save": 0.1,
+    "total": 50.4
+  },
+  "timestamp": "2026-08-12 15:35:54",
+  "filename": "1786577700-a168a8.png"
+}

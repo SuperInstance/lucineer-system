@@ -1,0 +1,19 @@
+{
+  "prompt": "a woman welding inside a submarine, sparks flying, welding mask down, leather apron, intense industrial lighting, badass mechanic, brass and copper pipes, cinematic dark",
+  "negative_prompt": "",
+  "model": "cloud:FLUX-1-schnell",
+  "steps": 4,
+  "guidance": 3.5,
+  "seed": null,
+  "width": 1024,
+  "height": 1024,
+  "scheduler": "deepinfra",
+  "loras": [],
+  "timing": {
+    "generate": 0.7,
+    "save": 0.0,
+    "total": 0.7
+  },
+  "timestamp": "2026-08-12 15:36:59",
+  "filename": "1786577818-6c6c14.png"
+}

@@ -10,11 +10,11 @@
   "scheduler": "dpm++",
   "loras": [],
   "timing": {
-    "load": 30.3,
-    "generate": 22.1,
+    "load": 17.6,
+    "generate": 17.5,
     "save": 0.1,
-    "total": 52.5
+    "total": 35.2
   },
-  "timestamp": "2026-08-12 12:41:53",
+  "timestamp": "2026-08-12 13:50:13",
   "filename": "hermes-underwater-ghostmix.png"
 }

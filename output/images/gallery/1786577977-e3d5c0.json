@@ -1,0 +1,22 @@
+{
+  "prompt": "character portrait of a massive figure leaning against a wall arms folded, systems engineer at a load test, scanning architecture, heavy lifter, 550 billion parameters of quiet structural concern, dark industrial lighting",
+  "negative_prompt": "low quality, blurry, deformed, extra limbs, bad anatomy",
+  "model": "juggernaut_reborn",
+  "steps": 30,
+  "guidance": 7.5,
+  "seed": 11004,
+  "width": 512,
+  "height": 768,
+  "scheduler": "dpm++",
+  "loras": [],
+  "init_image": null,
+  "strength": 0.6,
+  "timing": {
+    "load": 18.5,
+    "generate": 20.9,
+    "save": 0.1,
+    "total": 39.5
+  },
+  "timestamp": "2026-08-12 15:40:21",
+  "filename": "1786577977-e3d5c0.png"
+}

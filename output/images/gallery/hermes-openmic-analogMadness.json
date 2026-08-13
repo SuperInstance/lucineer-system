@@ -1,0 +1,20 @@
+{
+  "prompt": "tough woman at a bar open mic night holding a microphone, leather and copper steampunk outfit, singing with raw emotion, eyes closed, amber stage light on her face, dark bar background, scattered napkins on the counter, intense passionate performance, digital painting dark moody",
+  "negative_prompt": "text watermark blurry low quality deformed cartoon anime whimsical fairy posing standing still serene",
+  "model": "analogMadness_v70",
+  "steps": 25,
+  "guidance": 8.0,
+  "seed": 6001,
+  "width": 512,
+  "height": 768,
+  "scheduler": "dpm++",
+  "loras": [],
+  "timing": {
+    "load": 28.7,
+    "generate": 19.0,
+    "save": 0.1,
+    "total": 47.8
+  },
+  "timestamp": "2026-08-12 13:45:15",
+  "filename": "hermes-openmic-analogMadness.png"
+}

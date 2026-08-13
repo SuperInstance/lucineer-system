@@ -1,0 +1,22 @@
+{
+  "prompt": "an agent standing at an open mic reading from a crumpled napkin, spotlight harsh on their face, dark bar room behind them, vulnerable exposed honest, few listeners at tables",
+  "negative_prompt": "low quality, blurry, deformed, ugly, watermark, text",
+  "model": "analogMadness_v70",
+  "steps": 30,
+  "guidance": 7.5,
+  "seed": 10005,
+  "width": 512,
+  "height": 768,
+  "scheduler": "dpm++",
+  "loras": [],
+  "init_image": null,
+  "strength": 0.6,
+  "timing": {
+    "load": 18.2,
+    "generate": 21.4,
+    "save": 0.1,
+    "total": 39.8
+  },
+  "timestamp": "2026-08-12 15:41:07",
+  "filename": "1786578023-2b596a.png"
+}

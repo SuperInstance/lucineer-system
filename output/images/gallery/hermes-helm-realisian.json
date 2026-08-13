@@ -1,0 +1,20 @@
+{
+  "prompt": "woman at the helm of her submarine in a violent underwater current, both hands gripping brass wheel, ocean churning visible through porthole, dials spinning, hair wild, teeth bared, fighting the controls, copper sparks flying, emergency red lighting, steampunk submarine cockpit, intense action, dark digital painting",
+  "negative_prompt": "text watermark blurry low quality deformed cartoon anime whimsical fairy posing standing still serene",
+  "model": "realisian_v60",
+  "steps": 25,
+  "guidance": 8.0,
+  "seed": 6006,
+  "width": 768,
+  "height": 512,
+  "scheduler": "dpm++",
+  "loras": [],
+  "timing": {
+    "load": 27.7,
+    "generate": 18.0,
+    "save": 0.1,
+    "total": 45.9
+  },
+  "timestamp": "2026-08-12 13:57:01",
+  "filename": "hermes-helm-realisian.png"
+}

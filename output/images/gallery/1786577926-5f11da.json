@@ -1,0 +1,19 @@
+{
+  "prompt": "an empty bar at 4 AM, one amber light still on, glasses drying on a towel, chairs stacked, napkins with pencil sketches scattered on the bar, the room breathing after a long night",
+  "negative_prompt": "",
+  "model": "cloud:FLUX-1-schnell",
+  "steps": 4,
+  "guidance": 3.5,
+  "seed": null,
+  "width": 1024,
+  "height": 1024,
+  "scheduler": "deepinfra",
+  "loras": [],
+  "timing": {
+    "generate": 0.6,
+    "save": 0.0,
+    "total": 0.6
+  },
+  "timestamp": "2026-08-12 15:38:46",
+  "filename": "1786577926-5f11da.png"
+}

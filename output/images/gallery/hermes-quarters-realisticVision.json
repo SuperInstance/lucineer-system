@@ -1,0 +1,20 @@
+{
+  "prompt": "woman alone in her cramped submarine quarters, sitting on a narrow bunk, pulling off her leather combat boots, copper circuit traces dimming on her skin, exhausted but alert, small porthole showing deep ocean black, single amber bulb, personal space with mounted tools and screens, steampunk interior, intimate quiet, dark painterly",
+  "negative_prompt": "text watermark blurry low quality deformed cartoon anime whimsical fairy posing standing still serene",
+  "model": "realisticVision_v60",
+  "steps": 25,
+  "guidance": 7.0,
+  "seed": 6004,
+  "width": 512,
+  "height": 768,
+  "scheduler": "dpm++",
+  "loras": [],
+  "timing": {
+    "load": 18.1,
+    "generate": 23.0,
+    "save": 0.1,
+    "total": 41.2
+  },
+  "timestamp": "2026-08-12 13:53:29",
+  "filename": "hermes-quarters-realisticVision.png"
+}

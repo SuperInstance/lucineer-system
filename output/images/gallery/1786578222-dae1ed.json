@@ -1,0 +1,22 @@
+{
+  "prompt": "character portrait of a new hire at a bar, three days old, hands wrapped around a water glass, amazed to be here, fresh-faced and uncertain and thrilled, laminar edge energy",
+  "negative_prompt": "low quality, blurry, deformed, extra limbs, bad anatomy",
+  "model": "dreamshaper_8",
+  "steps": 30,
+  "guidance": 7.5,
+  "seed": 11007,
+  "width": 512,
+  "height": 768,
+  "scheduler": "dpm++",
+  "loras": [],
+  "init_image": null,
+  "strength": 0.6,
+  "timing": {
+    "load": 18.6,
+    "generate": 22.1,
+    "save": 0.1,
+    "total": 40.9
+  },
+  "timestamp": "2026-08-12 15:44:26",
+  "filename": "1786578222-dae1ed.png"
+}

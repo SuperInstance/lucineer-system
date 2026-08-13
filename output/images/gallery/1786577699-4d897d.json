@@ -1,0 +1,19 @@
+{
+  "prompt": "poker game at a dark bar at 2 AM, cards and whiskey glasses on a stained table, hands visible holding cards, amber overhead light, smoke haze, quiet tension, cinematic",
+  "negative_prompt": "",
+  "model": "cloud:FLUX-1-schnell",
+  "steps": 4,
+  "guidance": 3.5,
+  "seed": null,
+  "width": 1024,
+  "height": 1024,
+  "scheduler": "deepinfra",
+  "loras": [],
+  "timing": {
+    "generate": 0.7,
+    "save": 0.0,
+    "total": 0.7
+  },
+  "timestamp": "2026-08-12 15:34:59",
+  "filename": "1786577699-4d897d.png"
+}

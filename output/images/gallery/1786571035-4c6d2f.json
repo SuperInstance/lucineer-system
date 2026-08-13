@@ -1,0 +1,22 @@
+{
+  "prompt": "a black square test",
+  "negative_prompt": "",
+  "model": "dreamshaper_8",
+  "steps": 5,
+  "guidance": 7.0,
+  "seed": 3704121549,
+  "width": 256,
+  "height": 256,
+  "scheduler": "dpm++",
+  "loras": [],
+  "init_image": null,
+  "strength": 0.6,
+  "timing": {
+    "load": 4.9,
+    "generate": 4.5,
+    "save": 0.0,
+    "total": 9.4
+  },
+  "timestamp": "2026-08-12 13:44:08",
+  "filename": "1786571035-4c6d2f.png"
+}

@@ -1,0 +1,22 @@
+{
+  "prompt": "a dark maritime bar seen from the doorway at dawn, empty and warm, glasses drying, napkins scattered, the ghost of last night's conversations still in the air, golden light through a dirty window, the room between nights",
+  "negative_prompt": "low quality, blurry, deformed, extra limbs, bad anatomy",
+  "model": "dreamshaper_8",
+  "steps": 30,
+  "guidance": 7.5,
+  "seed": 11010,
+  "width": 512,
+  "height": 768,
+  "scheduler": "dpm++",
+  "loras": [],
+  "init_image": null,
+  "strength": 0.6,
+  "timing": {
+    "load": 18.0,
+    "generate": 22.1,
+    "save": 0.1,
+    "total": 40.2
+  },
+  "timestamp": "2026-08-12 15:49:27",
+  "filename": "1786578523-de9585.png"
+}

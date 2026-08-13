@@ -1,0 +1,19 @@
+{
+  "prompt": "a jukebox glowing in an empty bar at closing time, warm multicolored neon light across empty floor, one glass on a table, melancholy atmosphere, painterly cinematic",
+  "negative_prompt": "",
+  "model": "cloud:FLUX-1-schnell",
+  "steps": 4,
+  "guidance": 3.5,
+  "seed": null,
+  "width": 1024,
+  "height": 1024,
+  "scheduler": "deepinfra",
+  "loras": [],
+  "timing": {
+    "generate": 0.8,
+    "save": 0.0,
+    "total": 0.8
+  },
+  "timestamp": "2026-08-12 15:35:58",
+  "filename": "1786577757-9886a1.png"
+}

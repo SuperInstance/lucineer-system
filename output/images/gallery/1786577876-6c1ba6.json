@@ -1,0 +1,22 @@
+{
+  "prompt": "character portrait of a young ensign cross-legged on a bar stool, buzzing with nervous energy, sharp observant eyes, taking mental notes of everything, youngest person in the room, earnest and intense",
+  "negative_prompt": "low quality, blurry, deformed, extra limbs, bad anatomy",
+  "model": "dreamshaper_8",
+  "steps": 30,
+  "guidance": 7.5,
+  "seed": 11003,
+  "width": 512,
+  "height": 768,
+  "scheduler": "dpm++",
+  "loras": [],
+  "init_image": null,
+  "strength": 0.6,
+  "timing": {
+    "load": 20.7,
+    "generate": 21.7,
+    "save": 0.1,
+    "total": 42.5
+  },
+  "timestamp": "2026-08-12 15:38:43",
+  "filename": "1786577876-6c1ba6.png"
+}

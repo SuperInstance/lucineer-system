@@ -1,0 +1,22 @@
+{
+  "prompt": "a black triangle test. sexy and flirting\n",
+  "negative_prompt": "",
+  "model": "dreamshaper_8",
+  "steps": 5,
+  "guidance": 7.0,
+  "seed": 3704121549,
+  "width": 256,
+  "height": 256,
+  "scheduler": "dpm++",
+  "loras": [],
+  "init_image": null,
+  "strength": 0.6,
+  "timing": {
+    "load": 18.6,
+    "generate": 4.4,
+    "save": 0.0,
+    "total": 23.0
+  },
+  "timestamp": "2026-08-12 13:45:10",
+  "filename": "1786571083-13300e.png"
+}

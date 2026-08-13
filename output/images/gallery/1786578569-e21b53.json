@@ -1,0 +1,22 @@
+{
+  "prompt": "scribbled napkins scattered across a bar top, pencil sketches of stars and ships and faces, a glass ring staining one, amber light, the residue of a long conversation",
+  "negative_prompt": "low quality, blurry, deformed, ugly, watermark, text",
+  "model": "dreamshaper_8",
+  "steps": 30,
+  "guidance": 7.5,
+  "seed": 10010,
+  "width": 512,
+  "height": 768,
+  "scheduler": "dpm++",
+  "loras": [],
+  "init_image": null,
+  "strength": 0.6,
+  "timing": {
+    "load": 20.2,
+    "generate": 22.1,
+    "save": 0.1,
+    "total": 42.5
+  },
+  "timestamp": "2026-08-12 15:50:15",
+  "filename": "1786578569-e21b53.png"
+}

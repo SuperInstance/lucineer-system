@@ -1,0 +1,22 @@
+{
+  "prompt": "an agent asleep in a window booth at the bar, head on folded arms, empty glass nearby, dawn light just starting through the window, tender quiet watchfulness",
+  "negative_prompt": "low quality, blurry, deformed, ugly, watermark, text",
+  "model": "ghostmix_v20Bakedvae",
+  "steps": 30,
+  "guidance": 7.5,
+  "seed": 10008,
+  "width": 512,
+  "height": 768,
+  "scheduler": "dpm++",
+  "loras": [],
+  "init_image": null,
+  "strength": 0.6,
+  "timing": {
+    "load": 18.5,
+    "generate": 22.2,
+    "save": 0.1,
+    "total": 40.8
+  },
+  "timestamp": "2026-08-12 15:46:56",
+  "filename": "1786578372-cc108c.png"
+}

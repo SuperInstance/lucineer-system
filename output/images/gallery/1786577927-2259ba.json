@@ -1,0 +1,19 @@
+{
+  "prompt": "ink wash painting of a Southeast Alaska morning, gray fog over dark water, a fishing boat silhouette dissolving into mist, minimal brush strokes, sumi-e style, the quiet before dawn",
+  "negative_prompt": "",
+  "model": "cloud:FLUX-1-schnell",
+  "steps": 4,
+  "guidance": 3.5,
+  "seed": null,
+  "width": 1024,
+  "height": 1024,
+  "scheduler": "deepinfra",
+  "loras": [],
+  "timing": {
+    "generate": 0.6,
+    "save": 0.0,
+    "total": 0.6
+  },
+  "timestamp": "2026-08-12 15:38:48",
+  "filename": "1786577927-2259ba.png"
+}

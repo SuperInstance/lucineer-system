@@ -1,0 +1,20 @@
+{
+  "prompt": "tough woman at a bar open mic night holding a microphone, leather and copper steampunk outfit, singing with raw emotion, eyes closed, amber stage light on her face, dark bar background, scattered napkins on the counter, intense passionate performance, digital painting dark moody",
+  "negative_prompt": "text watermark blurry low quality deformed cartoon anime whimsical fairy posing standing still serene",
+  "model": "realisian_v60",
+  "steps": 25,
+  "guidance": 8.0,
+  "seed": 6001,
+  "width": 512,
+  "height": 768,
+  "scheduler": "dpm++",
+  "loras": [],
+  "timing": {
+    "load": 31.0,
+    "generate": 18.4,
+    "save": 0.1,
+    "total": 49.5
+  },
+  "timestamp": "2026-08-12 13:46:10",
+  "filename": "hermes-openmic-realisian.png"
+}

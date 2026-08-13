@@ -1,0 +1,20 @@
+{
+  "prompt": "tough woman on her knees under open submarine floor panel, elbows deep in copper wiring, jaw set, sweating, sparks, leather vest wrench belt cinched tight, hair tied back, furious focus, brass pipes green sonar glow, gritty badass mechanic, dark industrial",
+  "negative_prompt": "text watermark blurry low quality deformed cartoon anime whimsical fairy posing standing still serene",
+  "model": "juggernaut_reborn",
+  "steps": 25,
+  "guidance": 8.0,
+  "seed": 6005,
+  "width": 768,
+  "height": 512,
+  "scheduler": "dpm++",
+  "loras": [],
+  "timing": {
+    "load": 28.5,
+    "generate": 17.1,
+    "save": 0.1,
+    "total": 45.7
+  },
+  "timestamp": "2026-08-12 13:54:20",
+  "filename": "hermes-wiring-juggernaut2.png"
+}

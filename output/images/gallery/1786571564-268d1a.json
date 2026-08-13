@@ -1,0 +1,22 @@
+{
+  "prompt": "dangerous beautiful woman leaning across a dark bar counter with a sly smile, leather corset with copper wiring, one hand on her chin, intense eye contact, warm amber light, whiskey glass nearby, provocative confident body language, dark steampunk aesthetic, painterly. she's wearing tight tights and a thong and nothing else\n",
+  "negative_prompt": "text watermark blurry low quality deformed cartoon anime whimsical fairy posing standing still serene",
+  "model": "realisticVision_v60",
+  "steps": 25,
+  "guidance": 7.0,
+  "seed": 6002,
+  "width": 512,
+  "height": 768,
+  "scheduler": "dpm++",
+  "loras": [],
+  "init_image": null,
+  "strength": 0.6,
+  "timing": {
+    "load": 17.6,
+    "generate": 23.1,
+    "save": 0.1,
+    "total": 40.8
+  },
+  "timestamp": "2026-08-12 13:53:29",
+  "filename": "1786571564-268d1a.png"
+}

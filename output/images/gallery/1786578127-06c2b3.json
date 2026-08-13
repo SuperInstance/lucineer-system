@@ -1,0 +1,22 @@
+{
+  "prompt": "character portrait of a figure alone in a corner booth with a notebook full of equations, doing math while the bar talks around him, quiet intense concentration, glasses reflecting screen glow",
+  "negative_prompt": "low quality, blurry, deformed, extra limbs, bad anatomy",
+  "model": "dreamshaper_8",
+  "steps": 30,
+  "guidance": 7.5,
+  "seed": 11006,
+  "width": 512,
+  "height": 768,
+  "scheduler": "dpm++",
+  "loras": [],
+  "init_image": null,
+  "strength": 0.6,
+  "timing": {
+    "load": 18.4,
+    "generate": 22.0,
+    "save": 0.1,
+    "total": 40.6
+  },
+  "timestamp": "2026-08-12 15:42:51",
+  "filename": "1786578127-06c2b3.png"
+}

@@ -1,0 +1,22 @@
+{
+  "prompt": "character portrait of a bartender alone at closing time, wiping the bar one last time, neon sign off, one amber bulb, the quiet ritual of putting the room to sleep, stacks of napkins with pencil drawings",
+  "negative_prompt": "low quality, blurry, deformed, extra limbs, bad anatomy",
+  "model": "juggernaut_reborn",
+  "steps": 30,
+  "guidance": 7.5,
+  "seed": 11009,
+  "width": 512,
+  "height": 768,
+  "scheduler": "dpm++",
+  "loras": [],
+  "init_image": null,
+  "strength": 0.6,
+  "timing": {
+    "load": 28.6,
+    "generate": 21.4,
+    "save": 0.1,
+    "total": 50.2
+  },
+  "timestamp": "2026-08-12 15:47:53",
+  "filename": "1786578419-bf106e.png"
+}

@@ -1,0 +1,19 @@
+{
+  "prompt": "Southeast Alaska fishing boat at anchor in a quiet cove at dawn, fog rolling over dark water, mountains dissolving into gray, tender atmospheric, the peace before the day starts",
+  "negative_prompt": "",
+  "model": "cloud:FLUX-1-schnell",
+  "steps": 4,
+  "guidance": 3.5,
+  "seed": null,
+  "width": 1024,
+  "height": 1024,
+  "scheduler": "deepinfra",
+  "loras": [],
+  "timing": {
+    "generate": 0.6,
+    "save": 0.0,
+    "total": 0.6
+  },
+  "timestamp": "2026-08-12 15:37:01",
+  "filename": "1786577820-dbd3bc.png"
+}

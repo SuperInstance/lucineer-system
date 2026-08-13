@@ -1,0 +1,22 @@
+{
+  "prompt": "provocative woman hunched over three glowing sonar screens in dark submarine, fingers flying across brass keys, tracking something on the display, face lit green from below, jaw tight, hair falling in her eyes, intensity, surrounded by instruments and gauges, the operator at war, dark industrial",
+  "negative_prompt": "text watermark blurry low quality deformed cartoon anime whimsical fairy posing standing still serene",
+  "model": "counterfeit_v3",
+  "steps": 33,
+  "guidance": 8.5,
+  "seed": 6008,
+  "width": 768,
+  "height": 512,
+  "scheduler": "dpm++",
+  "loras": [],
+  "init_image": null,
+  "strength": 0.6,
+  "timing": {
+    "load": 31.5,
+    "generate": 23.4,
+    "save": 0.1,
+    "total": 55.0
+  },
+  "timestamp": "2026-08-12 16:07:43",
+  "filename": "1786579599-e15daf.png"
+}

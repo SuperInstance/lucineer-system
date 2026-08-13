@@ -1,0 +1,22 @@
+{
+  "prompt": "character portrait of a warm curious woman holding a cup of tea in a dark bar, approachable and gentle, the courage to speak when you're the smallest voice, standing at an open mic, kind eyes, soft smile",
+  "negative_prompt": "low quality, blurry, deformed, extra limbs, bad anatomy",
+  "model": "realisian_v60",
+  "steps": 30,
+  "guidance": 7.5,
+  "seed": 11005,
+  "width": 512,
+  "height": 768,
+  "scheduler": "dpm++",
+  "loras": [],
+  "init_image": null,
+  "strength": 0.6,
+  "timing": {
+    "load": 29.5,
+    "generate": 21.7,
+    "save": 0.1,
+    "total": 51.2
+  },
+  "timestamp": "2026-08-12 15:42:04",
+  "filename": "1786578069-475665.png"
+}

@@ -10,11 +10,11 @@
   "scheduler": "dpm++",
   "loras": [],
   "timing": {
-    "load": 19.8,
-    "generate": 20.4,
+    "load": 28.0,
+    "generate": 16.7,
     "save": 0.1,
-    "total": 40.3
+    "total": 44.8
   },
-  "timestamp": "2026-08-12 12:43:38",
+  "timestamp": "2026-08-12 13:51:53",
   "filename": "hermes-quarters-dreamshaper.png"
 }

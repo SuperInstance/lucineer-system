@@ -1,0 +1,19 @@
+{
+  "prompt": "two figures arguing in a dark bar corner, leaning across a table, finger pointing, amber light, intimate confrontation, whiskey glasses, dramatic shadows, cinematic",
+  "negative_prompt": "",
+  "model": "cloud:FLUX-1-schnell",
+  "steps": 4,
+  "guidance": 3.5,
+  "seed": null,
+  "width": 1024,
+  "height": 1024,
+  "scheduler": "deepinfra",
+  "loras": [],
+  "timing": {
+    "generate": 0.8,
+    "save": 0.0,
+    "total": 0.8
+  },
+  "timestamp": "2026-08-12 15:36:00",
+  "filename": "1786577759-348839.png"
+}

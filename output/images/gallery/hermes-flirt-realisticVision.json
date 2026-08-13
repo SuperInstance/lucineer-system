@@ -1,0 +1,20 @@
+{
+  "prompt": "dangerous beautiful woman leaning across a dark bar counter with a sly smile, leather corset with copper wiring, one hand on her chin, intense eye contact, warm amber light, whiskey glass nearby, provocative confident body language, dark steampunk aesthetic, painterly",
+  "negative_prompt": "text watermark blurry low quality deformed cartoon anime whimsical fairy posing standing still serene",
+  "model": "realisticVision_v60",
+  "steps": 25,
+  "guidance": 7.0,
+  "seed": 6002,
+  "width": 512,
+  "height": 768,
+  "scheduler": "dpm++",
+  "loras": [],
+  "timing": {
+    "load": 29.0,
+    "generate": 17.7,
+    "save": 0.1,
+    "total": 46.8
+  },
+  "timestamp": "2026-08-12 13:48:45",
+  "filename": "hermes-flirt-realisticVision.png"
+}

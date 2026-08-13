@@ -1,0 +1,20 @@
+{
+  "prompt": "woman hunched over three glowing sonar screens in dark submarine, fingers flying across brass keys, tracking something on the display, face lit green from below, jaw tight, hair falling in her eyes, intensity, surrounded by instruments and gauges, the operator at war, dark industrial",
+  "negative_prompt": "text watermark blurry low quality deformed cartoon anime whimsical fairy posing standing still serene",
+  "model": "realisticVision_v60",
+  "steps": 25,
+  "guidance": 7.0,
+  "seed": 6008,
+  "width": 768,
+  "height": 512,
+  "scheduler": "dpm++",
+  "loras": [],
+  "timing": {
+    "load": 28.4,
+    "generate": 17.2,
+    "save": 0.1,
+    "total": 45.7
+  },
+  "timestamp": "2026-08-12 13:59:35",
+  "filename": "hermes-sonar-realisticVision.png"
+}

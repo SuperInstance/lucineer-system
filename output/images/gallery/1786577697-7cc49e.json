@@ -1,0 +1,19 @@
+{
+  "prompt": "a dark maritime bar at midnight, warm amber lighting, polished mahogany bar, empty stools, bartender polishing a glass, moody film noir atmosphere, condensation on glasses, dust motes in light beams",
+  "negative_prompt": "",
+  "model": "cloud:FLUX-1-schnell",
+  "steps": 4,
+  "guidance": 3.5,
+  "seed": null,
+  "width": 1024,
+  "height": 1024,
+  "scheduler": "deepinfra",
+  "loras": [],
+  "timing": {
+    "generate": 0.7,
+    "save": 0.0,
+    "total": 0.7
+  },
+  "timestamp": "2026-08-12 15:34:58",
+  "filename": "1786577697-7cc49e.png"
+}

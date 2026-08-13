@@ -1,0 +1,22 @@
+{
+  "prompt": "midnight poker game at a dark bar, cards and chips scattered on a whiskey-stained table, five players showing only their hands and drinks, amber overhead light, smoke haze, intense quiet tension",
+  "negative_prompt": "low quality, blurry, deformed, ugly, watermark, text",
+  "model": "dreamshaper_8",
+  "steps": 30,
+  "guidance": 7.5,
+  "seed": 10001,
+  "width": 512,
+  "height": 768,
+  "scheduler": "dpm++",
+  "loras": [],
+  "init_image": null,
+  "strength": 0.6,
+  "timing": {
+    "load": 30.6,
+    "generate": 22.1,
+    "save": 0.1,
+    "total": 52.8
+  },
+  "timestamp": "2026-08-12 15:33:55",
+  "filename": "1786577573-bf53b0.png"
+}

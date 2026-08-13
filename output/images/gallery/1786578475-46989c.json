@@ -1,0 +1,22 @@
+{
+  "prompt": "the captain walks into the bar, silhouette in the doorway, everyone turns, dramatic backlight, amber interior meeting cold dawn air, the arrival that changes the night",
+  "negative_prompt": "low quality, blurry, deformed, ugly, watermark, text",
+  "model": "juggernaut_reborn",
+  "steps": 30,
+  "guidance": 7.5,
+  "seed": 10009,
+  "width": 768,
+  "height": 512,
+  "scheduler": "dpm++",
+  "loras": [],
+  "init_image": null,
+  "strength": 0.6,
+  "timing": {
+    "load": 19.5,
+    "generate": 21.9,
+    "save": 0.1,
+    "total": 41.5
+  },
+  "timestamp": "2026-08-12 15:48:40",
+  "filename": "1786578475-46989c.png"
+}

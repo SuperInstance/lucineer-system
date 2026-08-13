@@ -1,0 +1,22 @@
+{
+  "prompt": "Young sexy female character portrait of a massive figure leaning against a wall arms folded, systems engineer at a load test, scanning architecture, heavy lifter, 550 billion parameters of quiet structural concern, dark industrial lighting",
+  "negative_prompt": "low quality, blurry, deformed, extra limbs, bad anatomy",
+  "model": "realisian_v60",
+  "steps": 30,
+  "guidance": 7.5,
+  "seed": 11004,
+  "width": 512,
+  "height": 768,
+  "scheduler": "dpm++",
+  "loras": [],
+  "init_image": null,
+  "strength": 0.6,
+  "timing": {
+    "load": 29.0,
+    "generate": 23.3,
+    "save": 0.1,
+    "total": 52.4
+  },
+  "timestamp": "2026-08-12 16:20:31",
+  "filename": "1786580373-1f9c86.png"
+}

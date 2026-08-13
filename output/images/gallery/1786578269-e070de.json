@@ -1,0 +1,22 @@
+{
+  "prompt": "the bar at 4 AM, completely empty, one light still on above the bar, glasses drying on a towel, the room breathing after a long night, painterly quiet melancholy",
+  "negative_prompt": "low quality, blurry, deformed, ugly, watermark, text",
+  "model": "dreamshaper_8",
+  "steps": 30,
+  "guidance": 7.5,
+  "seed": 10007,
+  "width": 512,
+  "height": 768,
+  "scheduler": "dpm++",
+  "loras": [],
+  "init_image": null,
+  "strength": 0.6,
+  "timing": {
+    "load": 18.7,
+    "generate": 22.0,
+    "save": 0.1,
+    "total": 40.9
+  },
+  "timestamp": "2026-08-12 15:45:14",
+  "filename": "1786578269-e070de.png"
+}

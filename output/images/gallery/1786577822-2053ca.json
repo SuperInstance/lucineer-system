@@ -1,0 +1,22 @@
+{
+  "prompt": "a jukebox glowing in a dark empty bar, warm multicolored light spilling across an empty dance floor, one glass left on a table, melancholy midnight atmosphere",
+  "negative_prompt": "low quality, blurry, deformed, ugly, watermark, text",
+  "model": "dreamshaper_8",
+  "steps": 30,
+  "guidance": 7.5,
+  "seed": 10003,
+  "width": 512,
+  "height": 768,
+  "scheduler": "dpm++",
+  "loras": [],
+  "init_image": null,
+  "strength": 0.6,
+  "timing": {
+    "load": 18.8,
+    "generate": 25.9,
+    "save": 0.1,
+    "total": 44.7
+  },
+  "timestamp": "2026-08-12 15:37:50",
+  "filename": "1786577822-2053ca.png"
+}

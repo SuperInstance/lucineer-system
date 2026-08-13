@@ -1,0 +1,19 @@
+{
+  "prompt": "close-up of weathered hands hauling a thick wet rope on a fishing boat deck at night, rain and spray, diesel lights, calloused knuckles, salt and grit, the texture of real work",
+  "negative_prompt": "",
+  "model": "cloud:FLUX-1-schnell",
+  "steps": 4,
+  "guidance": 3.5,
+  "seed": null,
+  "width": 1024,
+  "height": 1024,
+  "scheduler": "deepinfra",
+  "loras": [],
+  "timing": {
+    "generate": 0.7,
+    "save": 0.0,
+    "total": 0.7
+  },
+  "timestamp": "2026-08-12 15:37:55",
+  "filename": "1786577875-b1fe94.png"
+}

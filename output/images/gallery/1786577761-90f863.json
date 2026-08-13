@@ -1,0 +1,22 @@
+{
+  "prompt": "character portrait of a thoughtful navigator in his 30s, reading a book at the bar, precise measured intelligence, glasses, dark sweater, whiskey neat, three stools back from the action, the strategist watching patterns",
+  "negative_prompt": "low quality, blurry, deformed, extra limbs, bad anatomy",
+  "model": "juggernaut_reborn",
+  "steps": 30,
+  "guidance": 7.5,
+  "seed": 11002,
+  "width": 512,
+  "height": 768,
+  "scheduler": "dpm++",
+  "loras": [],
+  "init_image": null,
+  "strength": 0.6,
+  "timing": {
+    "load": 29.6,
+    "generate": 21.6,
+    "save": 0.1,
+    "total": 51.2
+  },
+  "timestamp": "2026-08-12 15:36:55",
+  "filename": "1786577761-90f863.png"
+}

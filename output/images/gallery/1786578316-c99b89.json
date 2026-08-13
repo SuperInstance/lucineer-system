@@ -1,0 +1,22 @@
+{
+  "prompt": "character portrait of a young ensign on watch at 3 AM in a dark bar, the only one still awake, pencil still moving on napkins, watching the door for returning scouts, exhausted but committed, the watch stander",
+  "negative_prompt": "low quality, blurry, deformed, extra limbs, bad anatomy",
+  "model": "ghostmix_v20Bakedvae",
+  "steps": 30,
+  "guidance": 7.5,
+  "seed": 11008,
+  "width": 512,
+  "height": 768,
+  "scheduler": "dpm++",
+  "loras": [],
+  "init_image": null,
+  "strength": 0.6,
+  "timing": {
+    "load": 27.7,
+    "generate": 21.4,
+    "save": 0.1,
+    "total": 49.2
+  },
+  "timestamp": "2026-08-12 15:46:09",
+  "filename": "1786578316-c99b89.png"
+}
