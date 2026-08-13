@@ -1,0 +1,10 @@
+[2m2026-08-13T20:26:31.257056Z[0m [32m INFO[0m loaded config from config/fleet-gateway.toml: 4 providers in chain: ["deepinfra", "deepseek", "zai", "ollama"]
+[2m2026-08-13T20:26:31.257341Z[0m [32m INFO[0m fleet-gateway starting on 127.0.0.1:8787
+[2m2026-08-13T20:27:11.734082Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mdeepseek [3mlatency_ms[0m[2m=[0m609
+[2m2026-08-13T20:27:56.088622Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mdeepseek [3mlatency_ms[0m[2m=[0m319
+[2m2026-08-13T20:27:56.707761Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mdeepseek [3mlatency_ms[0m[2m=[0m298
+[2m2026-08-13T20:29:49.785072Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mdeepinfra [3mlatency_ms[0m[2m=[0m64028
+[2m2026-08-13T20:30:36.365577Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mdeepinfra [3mlatency_ms[0m[2m=[0m110629
+[2m2026-08-13T20:38:01.519582Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mdeepinfra [3mlatency_ms[0m[2m=[0m15688
+[2m2026-08-13T20:38:36.536578Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mdeepinfra [3mlatency_ms[0m[2m=[0m86
+[2m2026-08-13T20:40:23.648978Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mdeepinfra [3mlatency_ms[0m[2m=[0m460

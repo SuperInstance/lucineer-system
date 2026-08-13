@@ -1,0 +1,18 @@
+[Unit]
+Description=fleet-cns — fleet JSONL spool monitor (CNS daemon)
+After=local-fs.target
+
+[Service]
+Type=simple
+User=eileen
+WorkingDirectory=/home/eileen/.openclaw/workspace/fleet-cns
+ExecStart=/home/eileen/.openclaw/workspace/fleet-cns/target/release/fleet-cns --create
+Environment=RUST_LOG=fleet_cns=info
+Restart=always
+RestartSec=5
+StartLimitBurst=5
+# Per-service OOM fence: a daemon that leaks gets shot, not the fleet.
+MemoryMax=512M
+
+[Install]
+WantedBy=multi-user.target

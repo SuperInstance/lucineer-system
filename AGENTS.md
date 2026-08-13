@@ -48,6 +48,14 @@ Memory is limited. "Mental notes" don't survive session restarts; files do. Befo
 - Prefer `trash` over `rm` - recoverable beats gone forever.
 - When in doubt, ask.
 
+## Critical Path Rules (fleet infrastructure)
+
+- **Never `shell=True` / `os.system` / shell-string subprocess calls.** Python: `subprocess.run([...])` list form only. Rust: `Command::new().args()`. No exceptions — shell re-parsing is a banned bug class.
+- **Memory usage must be O(chunk) or O(batch), never O(corpus) or O(duration).** Stream and checkpoint anything that processes unbounded input.
+- **Databases, spools, and scratch live on ext4 (`/home/...`), never `/mnt/c`.**
+- **Long-lived processes run under systemd** (`Restart=always`, `MemoryMax` set), not tmux. tmux is dev-only.
+- Full rationale and target architecture: `memory/kimi-infrastructure-proposal.md`.
+
 ## Existing Solutions Preflight
 
 Before proposing or building a custom system, feature, workflow, tool, integration, or automation, check briefly for open-source projects, maintained libraries, existing OpenClaw plugins, or free platforms that already solve it well enough. Prefer those when adequate. Build custom only when existing options are unsuitable, too expensive, unmaintained, unsafe, non-compliant, or the user explicitly asks for custom. Avoid paid-service recommendations unless the user explicitly approves spend. Keep this lightweight - a preflight gate, not a research assignment.

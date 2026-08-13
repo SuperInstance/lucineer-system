@@ -1,0 +1,19 @@
+[package]
+name = "fleet-cns"
+version = "0.1.0"
+edition = "2021"
+description = "Fleet CNS spool monitor daemon: tails JSONL spools with dead-letter, backoff, circuit breaker, and checkpointed offsets"
+authors = ["SuperInstance"]
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+thiserror = "1.0"
+tokio = { version = "1.0", features = ["rt-multi-thread", "macros", "signal", "time"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+clap = { version = "4", features = ["derive"] }
+chrono = { version = "0.4", features = ["serde"] }
+
+[dev-dependencies]
+tempfile = "3.0"

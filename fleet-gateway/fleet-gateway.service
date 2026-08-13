@@ -1,0 +1,18 @@
+[Unit]
+Description=fleet-gateway — fleet API gateway sidecar (key chain + circuit breaker)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/home/eileen/.openclaw/workspace/fleet-gateway/target/release/fleet-gateway
+Environment=RUST_LOG=fleet_gateway=info
+Restart=always
+RestartSec=5
+StartLimitBurst=5
+# Per-service OOM fence: a daemon that leaks gets shot, not the fleet.
+MemoryMax=256M
+
+[Install]
+# User-level unit (~/.config/systemd/user/): default.target, not multi-user.target.
+WantedBy=default.target

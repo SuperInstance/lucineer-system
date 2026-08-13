@@ -1,0 +1,25 @@
+# fleet-gateway example configuration.
+# Copy to /home/eileen/.openclaw/state/gateway.toml and edit.
+#
+# SECURITY: `keys` holds ENVIRONMENT VARIABLE NAMES, never literal API keys.
+# Literal secrets in this file are banned by fleet rule.
+
+[gateway]
+# CNS spool directory — fleet-cns tails gateway.jsonl here.
+spool_dir = "/home/eileen/.openclaw/state/cns-spool"
+request_timeout_secs = 30
+
+[[provider]]
+name = "openai"
+base_url = "https://api.openai.com"
+keys = ["OPENAI_API_KEY", "OPENAI_API_KEY_BACKUP"]
+breaker_threshold = 5          # consecutive upstream auth/5xx/timeout failures before open
+breaker_cooldown_secs = 60     # doubles on each failed half-open probe, capped at 15min
+# extra_headers = { "OpenAI-Organization" = "org-example" }
+# replay_buffer_cap_bytes = 1048576   # 1 MiB default; bodies larger than this fail fast (502)
+
+[[provider]]
+name = "anthropic"
+base_url = "https://api.anthropic.com"
+keys = ["ANTHROPIC_API_KEY", "ANTHROPIC_API_KEY_BACKUP"]
+# extra_headers = { "anthropic-version" = "2023-06-01" }
