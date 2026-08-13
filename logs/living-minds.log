@@ -47,3 +47,15 @@
 [2026-08-13 22:19:33 UTC] CREATIVE: llama3.2 — prompt: Write a Tintin++ automation script that does something new —...
 [2026-08-13 22:19:33 UTC] CREATIVE FAILED: llama3.2
 [2026-08-13 22:24:27 UTC] WARMUP: granite3.1-dense (granite3.1-dense:2b) — Warm. I'm here and ready to assist you. How can I help you t
+[2026-08-13 22:29:26 UTC] WARMUP FAILED: phi3 (phi3:3.8b)
+[2026-08-13 22:34:27 UTC] WARMUP: qwen2.5-3b (qwen2.5:3b) — Warm
+[2026-08-13 22:39:26 UTC] WARMUP FAILED: llama3.2 (llama3.2:1b)
+[2026-08-13 22:44:30 UTC] WARMUP: qwen2.5-0.5b (qwen2.5:0.5b) — Warm. I'm Qwen, an AI developed by Alibaba Cloud. Ready to h
+[2026-08-13 22:49:26 UTC] WARMUP: granite3.1-dense (granite3.1-dense:2b) — Warm. I'm here and ready to assist you. How may I help you t
+[2026-08-13 22:49:33 UTC] CREATIVE: qwen2.5-3b — prompt: Reflect on your strengths and weaknesses. What have you lear...
+[2026-08-13 22:49:45 UTC] CREATIVE: qwen2.5-3b wrote 1820 bytes → /home/eileen/projects/the-living-minds/journal/qwen2.5-3b-20260813-224945.md
+[2026-08-13 22:54:26 UTC] WARMUP FAILED: phi3 (phi3:3.8b)
+[2026-08-13 22:59:27 UTC] WARMUP: qwen2.5-3b (qwen2.5:3b) — Warm
+[2026-08-13 23:04:26 UTC] WARMUP FAILED: llama3.2 (llama3.2:1b)
+[2026-08-13 23:09:26 UTC] WARMUP: qwen2.5-0.5b (qwen2.5:0.5b) — Warm
+[2026-08-13 23:14:27 UTC] WARMUP: granite3.1-dense (granite3.1-dense:2b) — Warm.
