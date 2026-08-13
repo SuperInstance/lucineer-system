@@ -1,1 +1,1 @@
-{"status": "done", "job": {"prompt": "oil painting of a jazz combo of robots and humans playing together in a dark maritime bar", "model": "cloud:FLUX-1-schnell", "steps": 4, "guidance": 3.5, "seed": 80012, "width": 1024, "height": 1024, "loras": []}, "finished": 1786592795.8242953, "output": "/home/eileen/.openclaw/workspace/output/images/gallery/1786592794-c24c3e.png"}
+{"status": "idle"}

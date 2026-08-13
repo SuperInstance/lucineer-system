@@ -65,7 +65,7 @@ def scan_gallery():
     for d in [GALLERY_DIR] + EXTRA_DIRS:
         if not os.path.isdir(d): continue
         for ext in ('*.png','*.jpg','*.jpeg'):
-            for img_path in sorted(glob.glob(os.path.join(d, ext)), reverse=True):
+            for img_path in sorted(glob.glob(os.path.join(d, ext)), key=lambda p: os.path.getmtime(p), reverse=True):
                 if img_path in seen: continue
                 seen.add(img_path)
                 meta = None
