@@ -1,0 +1,22 @@
+{
+  "prompt": "tough woman at the helm of her submarine fighting a storm, hands on brass wheel, fierce expression, water spray through porthole",
+  "negative_prompt": "",
+  "model": "picxReal_10",
+  "steps": 25,
+  "guidance": 7.5,
+  "seed": 60001,
+  "width": 512,
+  "height": 768,
+  "scheduler": "dpm++",
+  "loras": [],
+  "init_image": null,
+  "strength": 0.6,
+  "timing": {
+    "load": 54.2,
+    "generate": 22.5,
+    "save": 0.1,
+    "total": 76.8
+  },
+  "timestamp": "2026-08-12 17:59:08",
+  "filename": "1786586267-0f1837.png"
+}

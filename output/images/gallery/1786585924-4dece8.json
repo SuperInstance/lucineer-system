@@ -1,0 +1,22 @@
+{
+  "prompt": "tough woman hauling a tow cable on a boat deck at night in rain, dark shadowy atmospheric, copper sparks, determination",
+  "negative_prompt": "",
+  "model": "ghostmix_v20Bakedvae",
+  "steps": 25,
+  "guidance": 8.0,
+  "seed": 60001,
+  "width": 512,
+  "height": 768,
+  "scheduler": "dpm++",
+  "loras": [],
+  "init_image": null,
+  "strength": 0.6,
+  "timing": {
+    "load": 54.8,
+    "generate": 20.9,
+    "save": 0.1,
+    "total": 75.8
+  },
+  "timestamp": "2026-08-12 17:53:24",
+  "filename": "1786585924-4dece8.png"
+}

@@ -1,0 +1,19 @@
+{
+  "prompt": "inside a cramped submarine engine room, a woman elbow-deep in copper wiring under an open floor panel, sparks, jaw set, sweating, only her hands and forearms visible in the light of a hanging lamp, cinematic intense industrial",
+  "negative_prompt": "",
+  "model": "cloud:FLUX-1-schnell",
+  "steps": 4,
+  "guidance": 3.5,
+  "seed": null,
+  "width": 1024,
+  "height": 1024,
+  "scheduler": "deepinfra",
+  "loras": [],
+  "timing": {
+    "generate": 6.2,
+    "save": 0.0,
+    "total": 6.2
+  },
+  "timestamp": "2026-08-12 17:09:12",
+  "filename": "1786583345-3e794d.png"
+}

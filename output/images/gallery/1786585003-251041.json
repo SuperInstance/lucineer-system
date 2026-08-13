@@ -1,0 +1,22 @@
+{
+  "prompt": "oil painting of a trawler in heavy following sea, green water over the stern deck, man at the wheel visible through the wheelhouse window, power and danger and beauty",
+  "negative_prompt": "",
+  "model": "dreamshaper_8",
+  "steps": 28,
+  "guidance": 8.5,
+  "seed": 40011,
+  "width": 768,
+  "height": 512,
+  "scheduler": "dpm++",
+  "loras": [],
+  "init_image": null,
+  "strength": 0.6,
+  "timing": {
+    "load": 47.7,
+    "generate": 39.1,
+    "save": 0.2,
+    "total": 87.0
+  },
+  "timestamp": "2026-08-12 17:38:14",
+  "filename": "1786585003-251041.png"
+}

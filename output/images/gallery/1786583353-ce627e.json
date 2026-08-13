@@ -1,0 +1,19 @@
+{
+  "prompt": "a woman alone in her submarine quarters at night, sitting on a narrow bunk pulling off heavy boots, copper circuit traces dimming on her skin, a small porthole showing black ocean, one amber bulb, exhausted and vulnerable, intimate cinematic",
+  "negative_prompt": "",
+  "model": "cloud:FLUX-1-schnell",
+  "steps": 4,
+  "guidance": 3.5,
+  "seed": null,
+  "width": 1024,
+  "height": 1024,
+  "scheduler": "deepinfra",
+  "loras": [],
+  "timing": {
+    "generate": 3.0,
+    "save": 0.0,
+    "total": 3.0
+  },
+  "timestamp": "2026-08-12 17:09:16",
+  "filename": "1786583353-ce627e.png"
+}

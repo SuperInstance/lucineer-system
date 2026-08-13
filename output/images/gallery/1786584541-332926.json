@@ -1,0 +1,22 @@
+{
+  "prompt": "buoys and gillnet web hanging to dry on a rack, afternoon light through the mesh, patterns and shadows, abstract beauty in working gear",
+  "negative_prompt": "",
+  "model": "dreamshaper_8",
+  "steps": 25,
+  "guidance": 8.0,
+  "seed": 40008,
+  "width": 768,
+  "height": 512,
+  "scheduler": "dpm++",
+  "loras": [],
+  "init_image": null,
+  "strength": 0.6,
+  "timing": {
+    "load": 216.5,
+    "generate": 41.6,
+    "save": 0.2,
+    "total": 258.3
+  },
+  "timestamp": "2026-08-12 17:33:39",
+  "filename": "1786584541-332926.png"
+}

@@ -1,0 +1,19 @@
+{
+  "prompt": "woodcut print of a submarine surfacing at dawn next to a fishing boat, Alaskan coast",
+  "negative_prompt": "",
+  "model": "cloud:FLUX-1-schnell",
+  "steps": 4,
+  "guidance": 3.5,
+  "seed": null,
+  "width": 1024,
+  "height": 1024,
+  "scheduler": "deepinfra",
+  "loras": [],
+  "timing": {
+    "generate": 1.0,
+    "save": 0.0,
+    "total": 1.0
+  },
+  "timestamp": "2026-08-12 19:46:31",
+  "filename": "1786592790-37bd52.png"
+}

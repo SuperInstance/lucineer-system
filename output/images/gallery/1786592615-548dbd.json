@@ -1,0 +1,22 @@
+{
+  "prompt": "Two rival devas at a cyberpunk dive bar at openmic trying to steel each other's show. the views is part of the act and getting in on the fight\n",
+  "negative_prompt": "text watermark blurry low quality deformed cartoon anime whimsical fairy posing standing still serene",
+  "model": "photon_v1",
+  "steps": 25,
+  "guidance": 8.0,
+  "seed": 6002,
+  "width": 512,
+  "height": 768,
+  "scheduler": "dpm++",
+  "loras": [],
+  "init_image": null,
+  "strength": 0.6,
+  "timing": {
+    "load": 48.6,
+    "generate": 26.5,
+    "save": 0.1,
+    "total": 75.2
+  },
+  "timestamp": "2026-08-12 19:45:01",
+  "filename": "1786592615-548dbd.png"
+}

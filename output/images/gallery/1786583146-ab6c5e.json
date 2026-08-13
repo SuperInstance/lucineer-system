@@ -1,0 +1,22 @@
+{
+  "prompt": "Southeast Alaska gillnetter at anchor in a narrow cove, fog rolling over dark water, mountains dissolving into gray, a single amber light in the wheelhouse, tender and vast and quiet",
+  "negative_prompt": "",
+  "model": "dreamshaper_8",
+  "steps": 25,
+  "guidance": 8.0,
+  "seed": 40001,
+  "width": 768,
+  "height": 512,
+  "scheduler": "dpm++",
+  "loras": [],
+  "init_image": null,
+  "strength": 0.6,
+  "timing": {
+    "load": 96.4,
+    "generate": 20.1,
+    "save": 0.1,
+    "total": 116.6
+  },
+  "timestamp": "2026-08-12 17:07:47",
+  "filename": "1786583146-ab6c5e.png"
+}

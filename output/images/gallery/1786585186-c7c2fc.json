@@ -1,0 +1,22 @@
+{
+  "prompt": "the inside of a bait fridge, rows of herring in brine, cold blue light, metal shelves, condensation, the unglamorous infrastructure of a fishery",
+  "negative_prompt": "",
+  "model": "juggernaut_reborn",
+  "steps": 25,
+  "guidance": 7.5,
+  "seed": 40014,
+  "width": 768,
+  "height": 512,
+  "scheduler": "dpm++",
+  "loras": [],
+  "init_image": null,
+  "strength": 0.6,
+  "timing": {
+    "load": 59.7,
+    "generate": 28.7,
+    "save": 0.1,
+    "total": 88.5
+  },
+  "timestamp": "2026-08-12 17:41:18",
+  "filename": "1786585186-c7c2fc.png"
+}

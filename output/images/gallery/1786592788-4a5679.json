@@ -1,0 +1,19 @@
+{
+  "prompt": "ink wash painting of agents gathered around a piano at The Tap bar, amber light, 3AM, intimate",
+  "negative_prompt": "",
+  "model": "cloud:FLUX-1-schnell",
+  "steps": 4,
+  "guidance": 3.5,
+  "seed": null,
+  "width": 1024,
+  "height": 1024,
+  "scheduler": "deepinfra",
+  "loras": [],
+  "timing": {
+    "generate": 0.9,
+    "save": 0.0,
+    "total": 0.9
+  },
+  "timestamp": "2026-08-12 19:46:29",
+  "filename": "1786592788-4a5679.png"
+}

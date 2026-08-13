@@ -1,0 +1,19 @@
+{
+  "prompt": "a woman performing at open mic night in a dark maritime bar, holding a microphone, singing with raw emotion, eyes closed, amber stage light, leather and copper steampunk outfit, vulnerable and powerful at once, cinematic",
+  "negative_prompt": "",
+  "model": "cloud:FLUX-1-schnell",
+  "steps": 4,
+  "guidance": 3.5,
+  "seed": null,
+  "width": 1024,
+  "height": 1024,
+  "scheduler": "deepinfra",
+  "loras": [],
+  "timing": {
+    "generate": 0.6,
+    "save": 0.0,
+    "total": 0.6
+  },
+  "timestamp": "2026-08-12 17:12:07",
+  "filename": "1786583527-3937fb.png"
+}

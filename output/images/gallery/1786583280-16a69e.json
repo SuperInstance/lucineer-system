@@ -1,0 +1,22 @@
+{
+  "prompt": "weathered hands coiling a wet rope on a deck at night, diesel light, calloused knuckles, salt spray, the texture of real work, close-up intimate documentary photography",
+  "negative_prompt": "",
+  "model": "juggernaut_reborn",
+  "steps": 25,
+  "guidance": 7.0,
+  "seed": 40002,
+  "width": 512,
+  "height": 768,
+  "scheduler": "dpm++",
+  "loras": [],
+  "init_image": null,
+  "strength": 0.6,
+  "timing": {
+    "load": 39.4,
+    "generate": 19.1,
+    "save": 0.1,
+    "total": 58.6
+  },
+  "timestamp": "2026-08-12 17:09:02",
+  "filename": "1786583280-16a69e.png"
+}

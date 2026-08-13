@@ -1,0 +1,22 @@
+{
+  "prompt": "tough woman mechanic in a submarine engine room, bold cartoon style, sparks and tools, dynamic action pose",
+  "negative_prompt": "",
+  "model": "toonyou_beta6",
+  "steps": 25,
+  "guidance": 8.0,
+  "seed": 60001,
+  "width": 512,
+  "height": 768,
+  "scheduler": "dpm++",
+  "loras": [],
+  "init_image": null,
+  "strength": 0.6,
+  "timing": {
+    "load": 58.5,
+    "generate": 22.2,
+    "save": 0.1,
+    "total": 80.7
+  },
+  "timestamp": "2026-08-12 17:56:05",
+  "filename": "1786586080-cb2cb7.png"
+}

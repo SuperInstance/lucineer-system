@@ -1,0 +1,22 @@
+{
+  "prompt": "tough woman singing at open mic in a dark bar, raw emotion, artistic interpretation, warm amber light, expressive",
+  "negative_prompt": "",
+  "model": "analogMadness_v70",
+  "steps": 25,
+  "guidance": 8.5,
+  "seed": 60001,
+  "width": 512,
+  "height": 768,
+  "scheduler": "dpm++",
+  "loras": [],
+  "init_image": null,
+  "strength": 0.6,
+  "timing": {
+    "load": 43.3,
+    "generate": 21.6,
+    "save": 0.1,
+    "total": 65.0
+  },
+  "timestamp": "2026-08-12 17:54:37",
+  "filename": "1786586008-8cf0fa.png"
+}

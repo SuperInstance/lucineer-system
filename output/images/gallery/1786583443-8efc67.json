@@ -1,0 +1,19 @@
+{
+  "prompt": "a woman fighting the helm wheel of a submarine in violent underwater current, both hands gripping brass, hair wild, teeth bared, dials spinning, red emergency lighting, copper sparks, intense action, cinematic",
+  "negative_prompt": "",
+  "model": "cloud:FLUX-1-schnell",
+  "steps": 4,
+  "guidance": 3.5,
+  "seed": null,
+  "width": 1024,
+  "height": 1024,
+  "scheduler": "deepinfra",
+  "loras": [],
+  "timing": {
+    "generate": 0.8,
+    "save": 0.0,
+    "total": 0.8
+  },
+  "timestamp": "2026-08-12 17:10:44",
+  "filename": "1786583443-8efc67.png"
+}

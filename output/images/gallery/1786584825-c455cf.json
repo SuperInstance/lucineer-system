@@ -1,0 +1,22 @@
+{
+  "prompt": "a harbor at slack water, seine fleet tied up, rigging against gray sky, gulls on pilings, the between-times when the fleet rests, atmospheric maritime painting",
+  "negative_prompt": "",
+  "model": "dreamshaper_8",
+  "steps": 28,
+  "guidance": 8.0,
+  "seed": 40009,
+  "width": 768,
+  "height": 512,
+  "scheduler": "dpm++",
+  "loras": [],
+  "init_image": null,
+  "strength": 0.6,
+  "timing": {
+    "load": 56.4,
+    "generate": 26.1,
+    "save": 0.1,
+    "total": 82.6
+  },
+  "timestamp": "2026-08-12 17:35:15",
+  "filename": "1786584825-c455cf.png"
+}

@@ -1,0 +1,22 @@
+{
+  "prompt": "tough woman alone in her submarine quarters, exhausted, pulling off boots, amber light, intimate character study",
+  "negative_prompt": "",
+  "model": "experience_V10",
+  "steps": 25,
+  "guidance": 8.5,
+  "seed": 60001,
+  "width": 512,
+  "height": 768,
+  "scheduler": "dpm++",
+  "loras": [],
+  "init_image": null,
+  "strength": 0.6,
+  "timing": {
+    "load": 68.0,
+    "generate": 22.3,
+    "save": 0.1,
+    "total": 90.4
+  },
+  "timestamp": "2026-08-12 17:57:43",
+  "filename": "1786586168-17f17d.png"
+}

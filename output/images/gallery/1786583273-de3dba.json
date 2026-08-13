@@ -1,0 +1,19 @@
+{
+  "prompt": "a tough woman at a submarine periscope in a dark compartment, face lit green from instruments, one eye pressed to the viewfinder, hands gripping brass handles, sweat on her brow, focused intense, cinematic",
+  "negative_prompt": "",
+  "model": "cloud:FLUX-1-schnell",
+  "steps": 4,
+  "guidance": 3.5,
+  "seed": null,
+  "width": 1024,
+  "height": 1024,
+  "scheduler": "deepinfra",
+  "loras": [],
+  "timing": {
+    "generate": 1.0,
+    "save": 0.0,
+    "total": 1.0
+  },
+  "timestamp": "2026-08-12 17:07:54",
+  "filename": "1786583273-de3dba.png"
+}

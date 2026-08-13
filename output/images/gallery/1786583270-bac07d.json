@@ -1,0 +1,19 @@
+{
+  "prompt": "a woman welding inside a brass submarine hull, sparks cascading, welding mask down, heavy leather apron, copper pipes behind her, industrial lighting, intense dangerous work, cinematic dramatic",
+  "negative_prompt": "",
+  "model": "cloud:FLUX-1-schnell",
+  "steps": 4,
+  "guidance": 3.5,
+  "seed": null,
+  "width": 1024,
+  "height": 1024,
+  "scheduler": "deepinfra",
+  "loras": [],
+  "timing": {
+    "generate": 1.3,
+    "save": 0.0,
+    "total": 1.3
+  },
+  "timestamp": "2026-08-12 17:07:52",
+  "filename": "1786583270-bac07d.png"
+}

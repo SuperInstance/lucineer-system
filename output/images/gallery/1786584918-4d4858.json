@@ -1,0 +1,22 @@
+{
+  "prompt": "a rough hand-drawn chart on graph paper showing a bay with depth markings, a route plotted in red pencil, coffee stain, the navigator's craft",
+  "negative_prompt": "",
+  "model": "dreamshaper_8",
+  "steps": 25,
+  "guidance": 8.0,
+  "seed": 40010,
+  "width": 768,
+  "height": 512,
+  "scheduler": "dpm++",
+  "loras": [],
+  "init_image": null,
+  "strength": 0.6,
+  "timing": {
+    "load": 56.9,
+    "generate": 20.1,
+    "save": 0.1,
+    "total": 77.1
+  },
+  "timestamp": "2026-08-12 17:36:40",
+  "filename": "1786584918-4d4858.png"
+}

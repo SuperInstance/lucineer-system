@@ -1,0 +1,22 @@
+{
+  "prompt": "a winch drum on the deck of a fishing boat, rusted brass, salt corrosion, hydraulic fluid, the mechanical heart of the operation, detailed industrial close-up",
+  "negative_prompt": "",
+  "model": "juggernaut_reborn",
+  "steps": 25,
+  "guidance": 7.5,
+  "seed": 40005,
+  "width": 768,
+  "height": 512,
+  "scheduler": "dpm++",
+  "loras": [],
+  "init_image": null,
+  "strength": 0.6,
+  "timing": {
+    "load": 48.2,
+    "generate": 20.0,
+    "save": 0.1,
+    "total": 68.3
+  },
+  "timestamp": "2026-08-12 17:13:21",
+  "filename": "1786583528-f620e2.png"
+}

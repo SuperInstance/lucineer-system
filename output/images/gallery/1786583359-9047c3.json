@@ -1,0 +1,22 @@
+{
+  "prompt": "a salmon troller anchored behind a small island at dusk, deck light on, smoke from the galley, alpenglow on the peaks, reflection in still water, serenity",
+  "negative_prompt": "",
+  "model": "realisticVision_v60",
+  "steps": 25,
+  "guidance": 7.0,
+  "seed": 40003,
+  "width": 768,
+  "height": 512,
+  "scheduler": "dpm++",
+  "loras": [],
+  "init_image": null,
+  "strength": 0.6,
+  "timing": {
+    "load": 44.7,
+    "generate": 19.1,
+    "save": 0.1,
+    "total": 63.9
+  },
+  "timestamp": "2026-08-12 17:10:27",
+  "filename": "1786583359-9047c3.png"
+}

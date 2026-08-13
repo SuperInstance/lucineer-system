@@ -1,0 +1,69 @@
+# ═══════════════════════════════════════════════════════════════════════
+# TapScript — "First Light at The Tap"
+# An 8-bar jam session where three agents enter one by one and
+# resolve together. Demonstrates every TapScript feature.
+# ═══════════════════════════════════════════════════════════════════════
+
+@flash piano
+@hermes bass
+@wesley percussion
+
+# ── BAR 1: Count-in — Flash opens with a sustained C ──────────────
+| @flash  | bar:1 beat:1 | note:C4 dur:4 vel:70 articulation:legato |
+
+# ── BAR 2: Hermes joins on the root, Flash speaks ──────────────────
+| @hermes | bar:2 beat:1 | note:A2 dur:4 vel:55 articulation:sustain |
+: @flash  | bar:2 beat:1 | "I hear the room breathing. C major, soft and open."
+
+# ── BAR 3: Wesley enters — felt-tip snare pattern ──────────────────
+| @wesley | bar:3 beat:1 | percussion:snare vel:35 pattern:..-..-..-. |
+: @wesley | bar:3 beat:1 | "Pencil tapping. Just marking time until everyone's here."
+
+# ── BAR 4: Groove locks — all three together for the first time ───
+| @flash  | bar:4 beat:1 | note:E4 dur:0.5 vel:75 articulation:staccato |
+| @flash  | bar:4 beat:1.5 | note:G4 dur:0.5 vel:75 articulation:staccato |
+| @flash  | bar:4 beat:2 | note:C5 dur:1 vel:80 articulation:accent |
+| @flash  | bar:4 beat:3 | rest:1 |
+| @hermes | bar:4 beat:1 | note:A2 dur:2 vel:60 articulation:sustain |
+| @hermes | bar:4 beat:3 | note:E2 dur:2 vel:55 articulation:sustain |
+| @wesley | bar:4 beat:1 | percussion:kick vel:65 |
+| @wesley | bar:4 beat:1.5 | percussion:hat vel:35 |
+| @wesley | bar:4 beat:2 | percussion:snare vel:50 |
+| @wesley | bar:4 beat:2.5 | percussion:hat vel:35 |
+| @wesley | bar:4 beat:3 | percussion:kick vel:60 |
+| @wesley | bar:4 beat:4 | percussion:snare vel:45 |
+
+# ── BAR 5: Flash solo — staccato run up the chord ──────────────────
+: @flash  | bar:5 beat:1 | "The groove is warm. I push up — E, G, B, C."
+| @flash  | bar:5 beat:1 | note:E4 dur:0.5 vel:85 articulation:staccato |
+| @flash  | bar:5 beat:1.5 | note:G4 dur:0.5 vel:85 articulation:staccato |
+| @flash  | bar:5 beat:2 | note:B4 dur:0.5 vel:90 articulation:staccato |
+| @flash  | bar:5 beat:2.5 | note:C5 dur:1.5 vel:95 articulation:accent |
+| @flash  | bar:5 beat:4 | rest:1 |
+
+# ── BAR 6: Hermes responds with modulation ────────────────────────
+: @hermes | bar:6 beat:1 | "Flash pushed to C5. I open the modulation wheel — the room shifts."
+| @hermes | bar:6 beat:1 | cc:1 value:64 |
+| @hermes | bar:6 beat:1 | note:D2 dur:4 vel:60 pitch_bend:+200 articulation:sustain |
+| @wesley | bar:6 beat:1 | percussion:kick vel:70 |
+| @wesley | bar:6 beat:1.5 | percussion:hat vel:40 |
+| @wesley | bar:6 beat:2 | percussion:snare vel:55 |
+| @wesley | bar:6 beat:3 | percussion:kick vel:65 |
+
+# ── BAR 7: Collective breath — everyone pulls back ────────────────
+: @flash  | bar:7 beat:1 | "We breathe. I land on the new root — D."
+| @flash  | bar:7 beat:1 | note:D4 dur:2 vel:65 articulation:legato |
+| @flash  | bar:7 beat:3 | note:F4 dur:2 vel:60 articulation:legato |
+| @hermes | bar:7 beat:1 | note:D2 dur:4 vel:50 articulation:sustain |
+| @wesley | bar:7 beat:1 | percussion:hat vel:25 |
+| @wesley | bar:7 beat:3 | percussion:hat vel:25 |
+
+# ── BAR 8: Resolution — all voices converge on D major ────────────
+: @flash  | bar:8 beat:1 | "D major. Together now. This is the sound of The Tap."
+| @flash  | bar:8 beat:1 | note:D4 dur:2 vel:80 articulation:accent |
+| @flash  | bar:8 beat:3 | note:A4 dur:2 vel:75 articulation:legato |
+| @hermes | bar:8 beat:1 | note:D2 dur:4 vel:70 articulation:sustain |
+| @wesley | bar:8 beat:1 | percussion:kick vel:75 |
+| @wesley | bar:8 beat:2 | percussion:snare vel:60 |
+| @wesley | bar:8 beat:3 | percussion:kick vel:70 |
+| @wesley | bar:8 beat:4 | percussion:crash vel:80 |

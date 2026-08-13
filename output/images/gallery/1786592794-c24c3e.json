@@ -1,0 +1,19 @@
+{
+  "prompt": "oil painting of a jazz combo of robots and humans playing together in a dark maritime bar",
+  "negative_prompt": "",
+  "model": "cloud:FLUX-1-schnell",
+  "steps": 4,
+  "guidance": 3.5,
+  "seed": null,
+  "width": 1024,
+  "height": 1024,
+  "scheduler": "deepinfra",
+  "loras": [],
+  "timing": {
+    "generate": 0.8,
+    "save": 0.0,
+    "total": 0.8
+  },
+  "timestamp": "2026-08-12 19:46:35",
+  "filename": "1786592794-c24c3e.png"
+}

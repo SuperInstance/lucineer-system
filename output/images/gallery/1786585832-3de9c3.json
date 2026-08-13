@@ -1,0 +1,22 @@
+{
+  "prompt": "tough woman at a submarine periscope in the dark, face lit green, ethereal dreamlike quality, soft focus edges, glowing instruments",
+  "negative_prompt": "",
+  "model": "dreamlikePhotoreal_v2",
+  "steps": 25,
+  "guidance": 7.5,
+  "seed": 60001,
+  "width": 512,
+  "height": 768,
+  "scheduler": "dpm++",
+  "loras": [],
+  "init_image": null,
+  "strength": 0.6,
+  "timing": {
+    "load": 58.3,
+    "generate": 26.2,
+    "save": 0.1,
+    "total": 84.6
+  },
+  "timestamp": "2026-08-12 17:52:01",
+  "filename": "1786585832-3de9c3.png"
+}

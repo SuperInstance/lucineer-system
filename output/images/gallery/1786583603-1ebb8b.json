@@ -1,0 +1,22 @@
+{
+  "prompt": "watercolor field sketch of a tide pool, anemones and kelp and hermit crabs, delicate bleeding colors on textured paper, naturalist notebook style",
+  "negative_prompt": "",
+  "model": "dreamshaper_8",
+  "steps": 25,
+  "guidance": 8.0,
+  "seed": 40006,
+  "width": 512,
+  "height": 768,
+  "scheduler": "dpm++",
+  "loras": [],
+  "init_image": null,
+  "strength": 0.6,
+  "timing": {
+    "load": 26.4,
+    "generate": 21.8,
+    "save": 0.2,
+    "total": 48.4
+  },
+  "timestamp": "2026-08-12 17:14:16",
+  "filename": "1786583603-1ebb8b.png"
+}

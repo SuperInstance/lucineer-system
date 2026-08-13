@@ -1,0 +1,22 @@
+{
+  "prompt": "an old fisherman's face, weathered by decades of salt and wind, deep lines, bright eyes, baseball cap, suspenders, Xtratuf boots visible at bottom of frame, portrait of the coast",
+  "negative_prompt": "",
+  "model": "realisticVision_v60",
+  "steps": 25,
+  "guidance": 7.0,
+  "seed": 40012,
+  "width": 512,
+  "height": 768,
+  "scheduler": "dpm++",
+  "loras": [],
+  "init_image": null,
+  "strength": 0.6,
+  "timing": {
+    "load": 55.0,
+    "generate": 19.8,
+    "save": 0.1,
+    "total": 74.9
+  },
+  "timestamp": "2026-08-12 17:39:36",
+  "filename": "1786585097-43e1fb.png"
+}

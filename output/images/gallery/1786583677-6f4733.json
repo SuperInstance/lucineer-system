@@ -1,0 +1,22 @@
+{
+  "prompt": "the galley of a fishing boat at 4 AM, captain drinking coffee at a small table, red dashboard glow, charts on the wall, intimate quiet vigil, film photography",
+  "negative_prompt": "",
+  "model": "juggernaut_reborn",
+  "steps": 25,
+  "guidance": 7.0,
+  "seed": 40007,
+  "width": 768,
+  "height": 512,
+  "scheduler": "dpm++",
+  "loras": [],
+  "init_image": null,
+  "strength": 0.6,
+  "timing": {
+    "load": 32.4,
+    "generate": 21.9,
+    "save": 0.1,
+    "total": 54.4
+  },
+  "timestamp": "2026-08-12 17:15:34",
+  "filename": "1786583677-6f4733.png"
+}

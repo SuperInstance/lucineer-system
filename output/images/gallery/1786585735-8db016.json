@@ -1,0 +1,22 @@
+{
+  "prompt": "tough woman welding inside a submarine, sparks flying, surreal color palette, emotional atmospheric anime style, copper and blue",
+  "negative_prompt": "",
+  "model": "anythingV5NijiMix",
+  "steps": 25,
+  "guidance": 8.0,
+  "seed": 60001,
+  "width": 512,
+  "height": 768,
+  "scheduler": "dpm++",
+  "loras": [],
+  "init_image": null,
+  "strength": 0.6,
+  "timing": {
+    "load": 70.5,
+    "generate": 19.0,
+    "save": 0.1,
+    "total": 89.6
+  },
+  "timestamp": "2026-08-12 17:50:30",
+  "filename": "1786585735-8db016.png"
+}

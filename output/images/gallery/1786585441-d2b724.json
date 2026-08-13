@@ -1,0 +1,22 @@
+{
+  "prompt": "tough woman in leather and copper steampunk gear standing on the deck of her submarine at dusk, confident stance, wind in her hair, brass instruments behind her, dramatic anime illustration style",
+  "negative_prompt": "",
+  "model": "counterfeit_v3",
+  "steps": 25,
+  "guidance": 8.0,
+  "seed": 60001,
+  "width": 512,
+  "height": 768,
+  "scheduler": "dpm++",
+  "loras": [],
+  "init_image": null,
+  "strength": 0.6,
+  "timing": {
+    "load": 151.6,
+    "generate": 22.9,
+    "save": 0.1,
+    "total": 174.7
+  },
+  "timestamp": "2026-08-12 17:46:59",
+  "filename": "1786585441-d2b724.png"
+}

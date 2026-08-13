@@ -1,0 +1,19 @@
+{
+  "prompt": "a woman hauling a thick tow cable on the deck of an Alaskan fishing boat at night in rain, leaning back pulling hand over hand, boots planted wide, steampunk leather gear wet, ocean spray, determined powerful, cinematic",
+  "negative_prompt": "",
+  "model": "cloud:FLUX-1-schnell",
+  "steps": 4,
+  "guidance": 3.5,
+  "seed": null,
+  "width": 1024,
+  "height": 1024,
+  "scheduler": "deepinfra",
+  "loras": [],
+  "timing": {
+    "generate": 3.5,
+    "save": 0.0,
+    "total": 3.5
+  },
+  "timestamp": "2026-08-12 17:07:59",
+  "filename": "1786583275-02b5fb.png"
+}
