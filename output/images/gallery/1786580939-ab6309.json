@@ -1,0 +1,22 @@
+{
+  "prompt": "a young ensign alone in a dark bar at 3AM, pencil still moving on a napkin, dawn light just starting at the window, the watch stander, tender protective atmosphere, amber and blue-gray, painterly",
+  "negative_prompt": "",
+  "model": "dreamshaper_8",
+  "steps": 25,
+  "guidance": 8.0,
+  "seed": 30001,
+  "width": 512,
+  "height": 512,
+  "scheduler": "dpm++",
+  "loras": [],
+  "init_image": null,
+  "strength": 0.6,
+  "timing": {
+    "load": 32.7,
+    "generate": 17.7,
+    "save": 0.1,
+    "total": 50.6
+  },
+  "timestamp": "2026-08-12 16:29:54",
+  "filename": "1786580939-ab6309.png"
+}
