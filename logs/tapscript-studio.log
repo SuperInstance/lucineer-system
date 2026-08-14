@@ -27058,3 +27058,843 @@ Traceback (most recent call last):
     self.socket.bind(self.server_address)
     ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
 OSError: [Errno 98] Address already in use
+🎵 TapScript v2 Studio starting on port 5557
+   DeepSeek key: ✅ Found
+   Output dir: /home/eileen/.openclaw/workspace/output/audio
+   → http://localhost:5557
+Traceback (most recent call last):
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1675, in <module>
+    cli_main()
+    ~~~~~~~~^^
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1666, in cli_main
+    server = HTTPServer(('0.0.0.0', args.port), Handler)
+  File "/usr/lib/python3.14/socketserver.py", line 457, in __init__
+    self.server_bind()
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 148, in server_bind
+    socketserver.TCPServer.server_bind(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/socketserver.py", line 478, in server_bind
+    self.socket.bind(self.server_address)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 98] Address already in use
+🎵 TapScript v2 Studio starting on port 5557
+   DeepSeek key: ✅ Found
+   Output dir: /home/eileen/.openclaw/workspace/output/audio
+   → http://localhost:5557
+Traceback (most recent call last):
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1675, in <module>
+    cli_main()
+    ~~~~~~~~^^
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1666, in cli_main
+    server = HTTPServer(('0.0.0.0', args.port), Handler)
+  File "/usr/lib/python3.14/socketserver.py", line 457, in __init__
+    self.server_bind()
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 148, in server_bind
+    socketserver.TCPServer.server_bind(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/socketserver.py", line 478, in server_bind
+    self.socket.bind(self.server_address)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 98] Address already in use
+🎵 TapScript v2 Studio starting on port 5557
+   DeepSeek key: ✅ Found
+   Output dir: /home/eileen/.openclaw/workspace/output/audio
+   → http://localhost:5557
+Traceback (most recent call last):
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1675, in <module>
+    cli_main()
+    ~~~~~~~~^^
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1666, in cli_main
+    server = HTTPServer(('0.0.0.0', args.port), Handler)
+  File "/usr/lib/python3.14/socketserver.py", line 457, in __init__
+    self.server_bind()
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 148, in server_bind
+    socketserver.TCPServer.server_bind(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/socketserver.py", line 478, in server_bind
+    self.socket.bind(self.server_address)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 98] Address already in use
+🎵 TapScript v2 Studio starting on port 5557
+   DeepSeek key: ✅ Found
+   Output dir: /home/eileen/.openclaw/workspace/output/audio
+   → http://localhost:5557
+Traceback (most recent call last):
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1675, in <module>
+    cli_main()
+    ~~~~~~~~^^
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1666, in cli_main
+    server = HTTPServer(('0.0.0.0', args.port), Handler)
+  File "/usr/lib/python3.14/socketserver.py", line 457, in __init__
+    self.server_bind()
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 148, in server_bind
+    socketserver.TCPServer.server_bind(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/socketserver.py", line 478, in server_bind
+    self.socket.bind(self.server_address)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 98] Address already in use
+🎵 TapScript v2 Studio starting on port 5557
+   DeepSeek key: ✅ Found
+   Output dir: /home/eileen/.openclaw/workspace/output/audio
+   → http://localhost:5557
+Traceback (most recent call last):
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1675, in <module>
+    cli_main()
+    ~~~~~~~~^^
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1666, in cli_main
+    server = HTTPServer(('0.0.0.0', args.port), Handler)
+  File "/usr/lib/python3.14/socketserver.py", line 457, in __init__
+    self.server_bind()
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 148, in server_bind
+    socketserver.TCPServer.server_bind(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/socketserver.py", line 478, in server_bind
+    self.socket.bind(self.server_address)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 98] Address already in use
+🎵 TapScript v2 Studio starting on port 5557
+   DeepSeek key: ✅ Found
+   Output dir: /home/eileen/.openclaw/workspace/output/audio
+   → http://localhost:5557
+Traceback (most recent call last):
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1675, in <module>
+    cli_main()
+    ~~~~~~~~^^
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1666, in cli_main
+    server = HTTPServer(('0.0.0.0', args.port), Handler)
+  File "/usr/lib/python3.14/socketserver.py", line 457, in __init__
+    self.server_bind()
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 148, in server_bind
+    socketserver.TCPServer.server_bind(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/socketserver.py", line 478, in server_bind
+    self.socket.bind(self.server_address)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 98] Address already in use
+🎵 TapScript v2 Studio starting on port 5557
+   DeepSeek key: ✅ Found
+   Output dir: /home/eileen/.openclaw/workspace/output/audio
+   → http://localhost:5557
+Traceback (most recent call last):
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1675, in <module>
+    cli_main()
+    ~~~~~~~~^^
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1666, in cli_main
+    server = HTTPServer(('0.0.0.0', args.port), Handler)
+  File "/usr/lib/python3.14/socketserver.py", line 457, in __init__
+    self.server_bind()
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 148, in server_bind
+    socketserver.TCPServer.server_bind(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/socketserver.py", line 478, in server_bind
+    self.socket.bind(self.server_address)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 98] Address already in use
+🎵 TapScript v2 Studio starting on port 5557
+   DeepSeek key: ✅ Found
+   Output dir: /home/eileen/.openclaw/workspace/output/audio
+   → http://localhost:5557
+Traceback (most recent call last):
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1675, in <module>
+    cli_main()
+    ~~~~~~~~^^
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1666, in cli_main
+    server = HTTPServer(('0.0.0.0', args.port), Handler)
+  File "/usr/lib/python3.14/socketserver.py", line 457, in __init__
+    self.server_bind()
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 148, in server_bind
+    socketserver.TCPServer.server_bind(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/socketserver.py", line 478, in server_bind
+    self.socket.bind(self.server_address)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 98] Address already in use
+🎵 TapScript v2 Studio starting on port 5557
+   DeepSeek key: ✅ Found
+   Output dir: /home/eileen/.openclaw/workspace/output/audio
+   → http://localhost:5557
+Traceback (most recent call last):
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1675, in <module>
+    cli_main()
+    ~~~~~~~~^^
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1666, in cli_main
+    server = HTTPServer(('0.0.0.0', args.port), Handler)
+  File "/usr/lib/python3.14/socketserver.py", line 457, in __init__
+    self.server_bind()
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 148, in server_bind
+    socketserver.TCPServer.server_bind(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/socketserver.py", line 478, in server_bind
+    self.socket.bind(self.server_address)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 98] Address already in use
+🎵 TapScript v2 Studio starting on port 5557
+   DeepSeek key: ✅ Found
+   Output dir: /home/eileen/.openclaw/workspace/output/audio
+   → http://localhost:5557
+Traceback (most recent call last):
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1675, in <module>
+    cli_main()
+    ~~~~~~~~^^
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1666, in cli_main
+    server = HTTPServer(('0.0.0.0', args.port), Handler)
+  File "/usr/lib/python3.14/socketserver.py", line 457, in __init__
+    self.server_bind()
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 148, in server_bind
+    socketserver.TCPServer.server_bind(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/socketserver.py", line 478, in server_bind
+    self.socket.bind(self.server_address)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 98] Address already in use
+🎵 TapScript v2 Studio starting on port 5557
+   DeepSeek key: ✅ Found
+   Output dir: /home/eileen/.openclaw/workspace/output/audio
+   → http://localhost:5557
+Traceback (most recent call last):
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1675, in <module>
+    cli_main()
+    ~~~~~~~~^^
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1666, in cli_main
+    server = HTTPServer(('0.0.0.0', args.port), Handler)
+  File "/usr/lib/python3.14/socketserver.py", line 457, in __init__
+    self.server_bind()
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 148, in server_bind
+    socketserver.TCPServer.server_bind(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/socketserver.py", line 478, in server_bind
+    self.socket.bind(self.server_address)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 98] Address already in use
+🎵 TapScript v2 Studio starting on port 5557
+   DeepSeek key: ✅ Found
+   Output dir: /home/eileen/.openclaw/workspace/output/audio
+   → http://localhost:5557
+Traceback (most recent call last):
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1675, in <module>
+    cli_main()
+    ~~~~~~~~^^
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1666, in cli_main
+    server = HTTPServer(('0.0.0.0', args.port), Handler)
+  File "/usr/lib/python3.14/socketserver.py", line 457, in __init__
+    self.server_bind()
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 148, in server_bind
+    socketserver.TCPServer.server_bind(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/socketserver.py", line 478, in server_bind
+    self.socket.bind(self.server_address)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 98] Address already in use
+🎵 TapScript v2 Studio starting on port 5557
+   DeepSeek key: ✅ Found
+   Output dir: /home/eileen/.openclaw/workspace/output/audio
+   → http://localhost:5557
+Traceback (most recent call last):
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1675, in <module>
+    cli_main()
+    ~~~~~~~~^^
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1666, in cli_main
+    server = HTTPServer(('0.0.0.0', args.port), Handler)
+  File "/usr/lib/python3.14/socketserver.py", line 457, in __init__
+    self.server_bind()
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 148, in server_bind
+    socketserver.TCPServer.server_bind(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/socketserver.py", line 478, in server_bind
+    self.socket.bind(self.server_address)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 98] Address already in use
+🎵 TapScript v2 Studio starting on port 5557
+   DeepSeek key: ✅ Found
+   Output dir: /home/eileen/.openclaw/workspace/output/audio
+   → http://localhost:5557
+Traceback (most recent call last):
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1675, in <module>
+    cli_main()
+    ~~~~~~~~^^
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1666, in cli_main
+    server = HTTPServer(('0.0.0.0', args.port), Handler)
+  File "/usr/lib/python3.14/socketserver.py", line 457, in __init__
+    self.server_bind()
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 148, in server_bind
+    socketserver.TCPServer.server_bind(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/socketserver.py", line 478, in server_bind
+    self.socket.bind(self.server_address)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 98] Address already in use
+🎵 TapScript v2 Studio starting on port 5557
+   DeepSeek key: ✅ Found
+   Output dir: /home/eileen/.openclaw/workspace/output/audio
+   → http://localhost:5557
+Traceback (most recent call last):
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1675, in <module>
+    cli_main()
+    ~~~~~~~~^^
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1666, in cli_main
+    server = HTTPServer(('0.0.0.0', args.port), Handler)
+  File "/usr/lib/python3.14/socketserver.py", line 457, in __init__
+    self.server_bind()
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 148, in server_bind
+    socketserver.TCPServer.server_bind(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/socketserver.py", line 478, in server_bind
+    self.socket.bind(self.server_address)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 98] Address already in use
+🎵 TapScript v2 Studio starting on port 5557
+   DeepSeek key: ✅ Found
+   Output dir: /home/eileen/.openclaw/workspace/output/audio
+   → http://localhost:5557
+Traceback (most recent call last):
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1675, in <module>
+    cli_main()
+    ~~~~~~~~^^
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1666, in cli_main
+    server = HTTPServer(('0.0.0.0', args.port), Handler)
+  File "/usr/lib/python3.14/socketserver.py", line 457, in __init__
+    self.server_bind()
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 148, in server_bind
+    socketserver.TCPServer.server_bind(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/socketserver.py", line 478, in server_bind
+    self.socket.bind(self.server_address)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 98] Address already in use
+🎵 TapScript v2 Studio starting on port 5557
+   DeepSeek key: ✅ Found
+   Output dir: /home/eileen/.openclaw/workspace/output/audio
+   → http://localhost:5557
+Traceback (most recent call last):
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1675, in <module>
+    cli_main()
+    ~~~~~~~~^^
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1666, in cli_main
+    server = HTTPServer(('0.0.0.0', args.port), Handler)
+  File "/usr/lib/python3.14/socketserver.py", line 457, in __init__
+    self.server_bind()
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 148, in server_bind
+    socketserver.TCPServer.server_bind(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/socketserver.py", line 478, in server_bind
+    self.socket.bind(self.server_address)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 98] Address already in use
+🎵 TapScript v2 Studio starting on port 5557
+   DeepSeek key: ✅ Found
+   Output dir: /home/eileen/.openclaw/workspace/output/audio
+   → http://localhost:5557
+Traceback (most recent call last):
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1675, in <module>
+    cli_main()
+    ~~~~~~~~^^
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1666, in cli_main
+    server = HTTPServer(('0.0.0.0', args.port), Handler)
+  File "/usr/lib/python3.14/socketserver.py", line 457, in __init__
+    self.server_bind()
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 148, in server_bind
+    socketserver.TCPServer.server_bind(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/socketserver.py", line 478, in server_bind
+    self.socket.bind(self.server_address)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 98] Address already in use
+🎵 TapScript v2 Studio starting on port 5557
+   DeepSeek key: ✅ Found
+   Output dir: /home/eileen/.openclaw/workspace/output/audio
+   → http://localhost:5557
+Traceback (most recent call last):
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1675, in <module>
+    cli_main()
+    ~~~~~~~~^^
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1666, in cli_main
+    server = HTTPServer(('0.0.0.0', args.port), Handler)
+  File "/usr/lib/python3.14/socketserver.py", line 457, in __init__
+    self.server_bind()
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 148, in server_bind
+    socketserver.TCPServer.server_bind(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/socketserver.py", line 478, in server_bind
+    self.socket.bind(self.server_address)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 98] Address already in use
+🎵 TapScript v2 Studio starting on port 5557
+   DeepSeek key: ✅ Found
+   Output dir: /home/eileen/.openclaw/workspace/output/audio
+   → http://localhost:5557
+Traceback (most recent call last):
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1675, in <module>
+    cli_main()
+    ~~~~~~~~^^
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1666, in cli_main
+    server = HTTPServer(('0.0.0.0', args.port), Handler)
+  File "/usr/lib/python3.14/socketserver.py", line 457, in __init__
+    self.server_bind()
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 148, in server_bind
+    socketserver.TCPServer.server_bind(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/socketserver.py", line 478, in server_bind
+    self.socket.bind(self.server_address)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 98] Address already in use
+🎵 TapScript v2 Studio starting on port 5557
+   DeepSeek key: ✅ Found
+   Output dir: /home/eileen/.openclaw/workspace/output/audio
+   → http://localhost:5557
+Traceback (most recent call last):
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1675, in <module>
+    cli_main()
+    ~~~~~~~~^^
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1666, in cli_main
+    server = HTTPServer(('0.0.0.0', args.port), Handler)
+  File "/usr/lib/python3.14/socketserver.py", line 457, in __init__
+    self.server_bind()
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 148, in server_bind
+    socketserver.TCPServer.server_bind(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/socketserver.py", line 478, in server_bind
+    self.socket.bind(self.server_address)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 98] Address already in use
+🎵 TapScript v2 Studio starting on port 5557
+   DeepSeek key: ✅ Found
+   Output dir: /home/eileen/.openclaw/workspace/output/audio
+   → http://localhost:5557
+Traceback (most recent call last):
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1675, in <module>
+    cli_main()
+    ~~~~~~~~^^
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1666, in cli_main
+    server = HTTPServer(('0.0.0.0', args.port), Handler)
+  File "/usr/lib/python3.14/socketserver.py", line 457, in __init__
+    self.server_bind()
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 148, in server_bind
+    socketserver.TCPServer.server_bind(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/socketserver.py", line 478, in server_bind
+    self.socket.bind(self.server_address)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 98] Address already in use
+🎵 TapScript v2 Studio starting on port 5557
+   DeepSeek key: ✅ Found
+   Output dir: /home/eileen/.openclaw/workspace/output/audio
+   → http://localhost:5557
+Traceback (most recent call last):
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1675, in <module>
+    cli_main()
+    ~~~~~~~~^^
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1666, in cli_main
+    server = HTTPServer(('0.0.0.0', args.port), Handler)
+  File "/usr/lib/python3.14/socketserver.py", line 457, in __init__
+    self.server_bind()
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 148, in server_bind
+    socketserver.TCPServer.server_bind(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/socketserver.py", line 478, in server_bind
+    self.socket.bind(self.server_address)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 98] Address already in use
+🎵 TapScript v2 Studio starting on port 5557
+   DeepSeek key: ✅ Found
+   Output dir: /home/eileen/.openclaw/workspace/output/audio
+   → http://localhost:5557
+Traceback (most recent call last):
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1675, in <module>
+    cli_main()
+    ~~~~~~~~^^
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1666, in cli_main
+    server = HTTPServer(('0.0.0.0', args.port), Handler)
+  File "/usr/lib/python3.14/socketserver.py", line 457, in __init__
+    self.server_bind()
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 148, in server_bind
+    socketserver.TCPServer.server_bind(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/socketserver.py", line 478, in server_bind
+    self.socket.bind(self.server_address)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 98] Address already in use
+🎵 TapScript v2 Studio starting on port 5557
+   DeepSeek key: ✅ Found
+   Output dir: /home/eileen/.openclaw/workspace/output/audio
+   → http://localhost:5557
+Traceback (most recent call last):
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1675, in <module>
+    cli_main()
+    ~~~~~~~~^^
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1666, in cli_main
+    server = HTTPServer(('0.0.0.0', args.port), Handler)
+  File "/usr/lib/python3.14/socketserver.py", line 457, in __init__
+    self.server_bind()
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 148, in server_bind
+    socketserver.TCPServer.server_bind(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/socketserver.py", line 478, in server_bind
+    self.socket.bind(self.server_address)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 98] Address already in use
+🎵 TapScript v2 Studio starting on port 5557
+   DeepSeek key: ✅ Found
+   Output dir: /home/eileen/.openclaw/workspace/output/audio
+   → http://localhost:5557
+Traceback (most recent call last):
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1675, in <module>
+    cli_main()
+    ~~~~~~~~^^
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1666, in cli_main
+    server = HTTPServer(('0.0.0.0', args.port), Handler)
+  File "/usr/lib/python3.14/socketserver.py", line 457, in __init__
+    self.server_bind()
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 148, in server_bind
+    socketserver.TCPServer.server_bind(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/socketserver.py", line 478, in server_bind
+    self.socket.bind(self.server_address)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 98] Address already in use
+🎵 TapScript v2 Studio starting on port 5557
+   DeepSeek key: ✅ Found
+   Output dir: /home/eileen/.openclaw/workspace/output/audio
+   → http://localhost:5557
+Traceback (most recent call last):
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1675, in <module>
+    cli_main()
+    ~~~~~~~~^^
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1666, in cli_main
+    server = HTTPServer(('0.0.0.0', args.port), Handler)
+  File "/usr/lib/python3.14/socketserver.py", line 457, in __init__
+    self.server_bind()
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 148, in server_bind
+    socketserver.TCPServer.server_bind(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/socketserver.py", line 478, in server_bind
+    self.socket.bind(self.server_address)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 98] Address already in use
+🎵 TapScript v2 Studio starting on port 5557
+   DeepSeek key: ✅ Found
+   Output dir: /home/eileen/.openclaw/workspace/output/audio
+   → http://localhost:5557
+Traceback (most recent call last):
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1675, in <module>
+    cli_main()
+    ~~~~~~~~^^
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1666, in cli_main
+    server = HTTPServer(('0.0.0.0', args.port), Handler)
+  File "/usr/lib/python3.14/socketserver.py", line 457, in __init__
+    self.server_bind()
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 148, in server_bind
+    socketserver.TCPServer.server_bind(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/socketserver.py", line 478, in server_bind
+    self.socket.bind(self.server_address)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 98] Address already in use
+🎵 TapScript v2 Studio starting on port 5557
+   DeepSeek key: ✅ Found
+   Output dir: /home/eileen/.openclaw/workspace/output/audio
+   → http://localhost:5557
+Traceback (most recent call last):
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1675, in <module>
+    cli_main()
+    ~~~~~~~~^^
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1666, in cli_main
+    server = HTTPServer(('0.0.0.0', args.port), Handler)
+  File "/usr/lib/python3.14/socketserver.py", line 457, in __init__
+    self.server_bind()
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 148, in server_bind
+    socketserver.TCPServer.server_bind(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/socketserver.py", line 478, in server_bind
+    self.socket.bind(self.server_address)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 98] Address already in use
+🎵 TapScript v2 Studio starting on port 5557
+   DeepSeek key: ✅ Found
+   Output dir: /home/eileen/.openclaw/workspace/output/audio
+   → http://localhost:5557
+Traceback (most recent call last):
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1675, in <module>
+    cli_main()
+    ~~~~~~~~^^
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1666, in cli_main
+    server = HTTPServer(('0.0.0.0', args.port), Handler)
+  File "/usr/lib/python3.14/socketserver.py", line 457, in __init__
+    self.server_bind()
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 148, in server_bind
+    socketserver.TCPServer.server_bind(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/socketserver.py", line 478, in server_bind
+    self.socket.bind(self.server_address)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 98] Address already in use
+🎵 TapScript v2 Studio starting on port 5557
+   DeepSeek key: ✅ Found
+   Output dir: /home/eileen/.openclaw/workspace/output/audio
+   → http://localhost:5557
+Traceback (most recent call last):
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1675, in <module>
+    cli_main()
+    ~~~~~~~~^^
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1666, in cli_main
+    server = HTTPServer(('0.0.0.0', args.port), Handler)
+  File "/usr/lib/python3.14/socketserver.py", line 457, in __init__
+    self.server_bind()
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 148, in server_bind
+    socketserver.TCPServer.server_bind(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/socketserver.py", line 478, in server_bind
+    self.socket.bind(self.server_address)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 98] Address already in use
+🎵 TapScript v2 Studio starting on port 5557
+   DeepSeek key: ✅ Found
+   Output dir: /home/eileen/.openclaw/workspace/output/audio
+   → http://localhost:5557
+Traceback (most recent call last):
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1675, in <module>
+    cli_main()
+    ~~~~~~~~^^
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1666, in cli_main
+    server = HTTPServer(('0.0.0.0', args.port), Handler)
+  File "/usr/lib/python3.14/socketserver.py", line 457, in __init__
+    self.server_bind()
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 148, in server_bind
+    socketserver.TCPServer.server_bind(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/socketserver.py", line 478, in server_bind
+    self.socket.bind(self.server_address)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 98] Address already in use
+🎵 TapScript v2 Studio starting on port 5557
+   DeepSeek key: ✅ Found
+   Output dir: /home/eileen/.openclaw/workspace/output/audio
+   → http://localhost:5557
+Traceback (most recent call last):
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1675, in <module>
+    cli_main()
+    ~~~~~~~~^^
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1666, in cli_main
+    server = HTTPServer(('0.0.0.0', args.port), Handler)
+  File "/usr/lib/python3.14/socketserver.py", line 457, in __init__
+    self.server_bind()
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 148, in server_bind
+    socketserver.TCPServer.server_bind(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/socketserver.py", line 478, in server_bind
+    self.socket.bind(self.server_address)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 98] Address already in use
+🎵 TapScript v2 Studio starting on port 5557
+   DeepSeek key: ✅ Found
+   Output dir: /home/eileen/.openclaw/workspace/output/audio
+   → http://localhost:5557
+Traceback (most recent call last):
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1675, in <module>
+    cli_main()
+    ~~~~~~~~^^
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1666, in cli_main
+    server = HTTPServer(('0.0.0.0', args.port), Handler)
+  File "/usr/lib/python3.14/socketserver.py", line 457, in __init__
+    self.server_bind()
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 148, in server_bind
+    socketserver.TCPServer.server_bind(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/socketserver.py", line 478, in server_bind
+    self.socket.bind(self.server_address)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 98] Address already in use
+🎵 TapScript v2 Studio starting on port 5557
+   DeepSeek key: ✅ Found
+   Output dir: /home/eileen/.openclaw/workspace/output/audio
+   → http://localhost:5557
+Traceback (most recent call last):
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1675, in <module>
+    cli_main()
+    ~~~~~~~~^^
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1666, in cli_main
+    server = HTTPServer(('0.0.0.0', args.port), Handler)
+  File "/usr/lib/python3.14/socketserver.py", line 457, in __init__
+    self.server_bind()
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 148, in server_bind
+    socketserver.TCPServer.server_bind(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/socketserver.py", line 478, in server_bind
+    self.socket.bind(self.server_address)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 98] Address already in use
+🎵 TapScript v2 Studio starting on port 5557
+   DeepSeek key: ✅ Found
+   Output dir: /home/eileen/.openclaw/workspace/output/audio
+   → http://localhost:5557
+Traceback (most recent call last):
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1675, in <module>
+    cli_main()
+    ~~~~~~~~^^
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1666, in cli_main
+    server = HTTPServer(('0.0.0.0', args.port), Handler)
+  File "/usr/lib/python3.14/socketserver.py", line 457, in __init__
+    self.server_bind()
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 148, in server_bind
+    socketserver.TCPServer.server_bind(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/socketserver.py", line 478, in server_bind
+    self.socket.bind(self.server_address)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 98] Address already in use
+🎵 TapScript v2 Studio starting on port 5557
+   DeepSeek key: ✅ Found
+   Output dir: /home/eileen/.openclaw/workspace/output/audio
+   → http://localhost:5557
+Traceback (most recent call last):
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1675, in <module>
+    cli_main()
+    ~~~~~~~~^^
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1666, in cli_main
+    server = HTTPServer(('0.0.0.0', args.port), Handler)
+  File "/usr/lib/python3.14/socketserver.py", line 457, in __init__
+    self.server_bind()
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 148, in server_bind
+    socketserver.TCPServer.server_bind(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/socketserver.py", line 478, in server_bind
+    self.socket.bind(self.server_address)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 98] Address already in use
+🎵 TapScript v2 Studio starting on port 5557
+   DeepSeek key: ✅ Found
+   Output dir: /home/eileen/.openclaw/workspace/output/audio
+   → http://localhost:5557
+Traceback (most recent call last):
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1675, in <module>
+    cli_main()
+    ~~~~~~~~^^
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1666, in cli_main
+    server = HTTPServer(('0.0.0.0', args.port), Handler)
+  File "/usr/lib/python3.14/socketserver.py", line 457, in __init__
+    self.server_bind()
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 148, in server_bind
+    socketserver.TCPServer.server_bind(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/socketserver.py", line 478, in server_bind
+    self.socket.bind(self.server_address)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 98] Address already in use
+🎵 TapScript v2 Studio starting on port 5557
+   DeepSeek key: ✅ Found
+   Output dir: /home/eileen/.openclaw/workspace/output/audio
+   → http://localhost:5557
+Traceback (most recent call last):
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1675, in <module>
+    cli_main()
+    ~~~~~~~~^^
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1666, in cli_main
+    server = HTTPServer(('0.0.0.0', args.port), Handler)
+  File "/usr/lib/python3.14/socketserver.py", line 457, in __init__
+    self.server_bind()
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 148, in server_bind
+    socketserver.TCPServer.server_bind(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/socketserver.py", line 478, in server_bind
+    self.socket.bind(self.server_address)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 98] Address already in use
+🎵 TapScript v2 Studio starting on port 5557
+   DeepSeek key: ✅ Found
+   Output dir: /home/eileen/.openclaw/workspace/output/audio
+   → http://localhost:5557
+Traceback (most recent call last):
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1675, in <module>
+    cli_main()
+    ~~~~~~~~^^
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1666, in cli_main
+    server = HTTPServer(('0.0.0.0', args.port), Handler)
+  File "/usr/lib/python3.14/socketserver.py", line 457, in __init__
+    self.server_bind()
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 148, in server_bind
+    socketserver.TCPServer.server_bind(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/socketserver.py", line 478, in server_bind
+    self.socket.bind(self.server_address)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 98] Address already in use
+🎵 TapScript v2 Studio starting on port 5557
+   DeepSeek key: ✅ Found
+   Output dir: /home/eileen/.openclaw/workspace/output/audio
+   → http://localhost:5557
+Traceback (most recent call last):
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1675, in <module>
+    cli_main()
+    ~~~~~~~~^^
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1666, in cli_main
+    server = HTTPServer(('0.0.0.0', args.port), Handler)
+  File "/usr/lib/python3.14/socketserver.py", line 457, in __init__
+    self.server_bind()
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 148, in server_bind
+    socketserver.TCPServer.server_bind(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/socketserver.py", line 478, in server_bind
+    self.socket.bind(self.server_address)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 98] Address already in use
+🎵 TapScript v2 Studio starting on port 5557
+   DeepSeek key: ✅ Found
+   Output dir: /home/eileen/.openclaw/workspace/output/audio
+   → http://localhost:5557
+Traceback (most recent call last):
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1675, in <module>
+    cli_main()
+    ~~~~~~~~^^
+  File "/home/eileen/projects/tapscript-studio/scripts/tapscript_v2.py", line 1666, in cli_main
+    server = HTTPServer(('0.0.0.0', args.port), Handler)
+  File "/usr/lib/python3.14/socketserver.py", line 457, in __init__
+    self.server_bind()
+    ~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/server.py", line 148, in server_bind
+    socketserver.TCPServer.server_bind(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/socketserver.py", line 478, in server_bind
+    self.socket.bind(self.server_address)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 98] Address already in use
