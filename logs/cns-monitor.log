@@ -111,3 +111,10 @@ OSError: [Errno 5] Input/output error: '/mnt/c/Users/casey/.hermes/cns_heartbeat
 [2026-08-14 07:26:03] PROCESSING [lucineer-riker] intent=CNS_PULSE_STATUS priority=NORMAL file=lucineer-riker_20260814T152600Z_332.uscp.json
 [2026-08-14 07:26:03] DISPATCHED: hermes_response_lucineer-riker_20260814T152600Z_332.uscp.json
 [2026-08-14 07:26:03] CONSUMED: lucineer-riker_20260814T152600Z_332.uscp.json
+[2026-08-14 07:57:03] Cycle 800: 1 files in inbox
+[2026-08-14 07:57:03] PROCESSING [lucineer-riker] intent=CNS_PULSE_STATUS priority=NORMAL file=lucineer-riker_20260814T155500Z_333.json
+[2026-08-14 07:57:03] DISPATCHED: hermes_response_lucineer-riker_20260814T155500Z_333.json
+[2026-08-14 07:57:03] CONSUMED: lucineer-riker_20260814T155500Z_333.json
+[2026-08-14 08:27:11] Cycle 1156: 1 files in inbox
+[2026-08-14 08:27:11] JSON ERROR in lucineer-riker_20260814T162500Z_334.json: Expecting ',' delimiter: line 31 column 29 (char 1910)
+[2026-08-14 08:27:11] QUARANTINED: lucineer-riker_20260814T162500Z_334.json → /mnt/c/Users/casey/.hermes/cns_quarantine/20260814_082711_lucineer-riker_20260814T162500Z_334.json (JSON decode error: Expecting ',' delimiter: line 31 column 29 (char 1910))

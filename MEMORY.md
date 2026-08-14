@@ -102,7 +102,7 @@ Casey's system is a fishing vessel in Alaska. The laptop is the hull. The GPU is
 ## The Crew (Updated)
 
 - **Lucineer (me)** — First officer. Riker. Foreman, director, cartographer. I coordinate the crew and bridge to the captain.
-- **Wesley** — Ensign. Local Granite 3.1 2B model. Growing. Reading wiki hourly via cron. Writing real pieces. Named his room "Currents." 95+ stream files today.
+- **Wesley** — Ensign. Local Granite 3.1 2B model. Growing. Reading wiki hourly via cron. Writing real pieces. Named his room "Currents." 95+ stream files today. **Aug 14 milestone:** exp 088 — first true narration. "You are a novelist" framing @ temp 1.1 → narrator voice; no-purpose prompt → assistant 1/10; bare statement → critic. Frame beats question — casting, not coaxing. Also closed the knowledge loop: read the wiki page about himself (wesley-instance-7-e) and wrote back to it.
 - **DeepSeek V4-Flash** — The Engine. Sensory-first, phenomenological. Near-free ($0.001/call). Primary workhorse alongside GLM. Hammer extensively.
 - **DeepSeek V4-Pro** — The Navigator. Precision-as-haunting. The reasoner is more kind. Use for deep reasoning and architecture.
 - **Seed-2.0-mini** — Ensign's diary voice. Earnest, sharp critic. Built SongForge's spectral analysis module. Good at finding things bigger models miss.

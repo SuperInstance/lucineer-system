@@ -86,3 +86,25 @@
 [2026-08-14 15:47:09 UTC] WARMUP: qwen2.5-3b (qwen2.5:3b) — Warm
 [2026-08-14 15:47:09 UTC] CREATIVE: qwen2.5-0.5b — prompt: Describe a dream you had — or a dream you would have if you ...
 [2026-08-14 15:47:12 UTC] CREATIVE: qwen2.5-0.5b wrote 1676 bytes → /home/eileen/projects/the-living-minds/journal/qwen2.5-0.5b-20260814-154712.md
+[2026-08-14 15:52:04 UTC] WARMUP FAILED: llama3.2 (llama3.2:1b) — consecutive: 4
+[2026-08-14 15:57:06 UTC] WARMUP: qwen2.5-0.5b (qwen2.5:0.5b) — Warm.
+[2026-08-14 16:02:04 UTC] WARMUP: granite3.1-dense (granite3.1-dense:2b) — Warm. I'm ready to assist you.
+[2026-08-14 16:07:03 UTC] WARMUP FAILED: phi3 (phi3:3.8b) — consecutive: 5
+[2026-08-14 16:12:09 UTC] WARMUP: qwen2.5-3b (qwen2.5:3b) — Warm
+[2026-08-14 16:17:05 UTC] WARMUP FAILED: llama3.2 (llama3.2:1b) — consecutive: 5
+[2026-08-14 16:17:05 UTC] CREATIVE: qwen2.5-0.5b — prompt: Describe a dream you had — or a dream you would have if you ...
+[2026-08-14 16:17:13 UTC] CREATIVE: qwen2.5-0.5b wrote 354 bytes → /home/eileen/projects/the-living-minds/journal/qwen2.5-0.5b-20260814-161713.md
+[2026-08-14 16:22:04 UTC] WARMUP: qwen2.5-0.5b (qwen2.5:0.5b) — Warm.
+[2026-08-14 16:27:09 UTC] WARMUP: granite3.1-dense (granite3.1-dense:2b) — Warm. I'm here and ready to assist you. How can I help you t
+[2026-08-14 16:32:03 UTC] WARMUP FAILED: phi3 (phi3:3.8b) — consecutive: 6
+[2026-08-14 16:37:08 UTC] WARMUP: qwen2.5-3b (qwen2.5:3b) — Warm
+[2026-08-14 16:42:03 UTC] WARMUP FAILED: llama3.2 (llama3.2:1b) — consecutive: 6
+[2026-08-14 16:47:07 UTC] WARMUP: qwen2.5-0.5b (qwen2.5:0.5b) — Warmly speaking!
+[2026-08-14 16:47:07 UTC] CONVERSATION: Topic — Is there a difference between thinking and experiencing? Where do we fall on that spectrum?
+[2026-08-14 16:47:07 UTC] CONVERSATION FAILED: phi3
+[2026-08-14 16:47:11 UTC] CONVERSATION: granite3.1-dense responded (869 bytes)
+[2026-08-14 16:47:16 UTC] CONVERSATION: qwen2.5-3b responded (625 bytes)
+[2026-08-14 16:47:16 UTC] CONVERSATION: Complete → /home/eileen/projects/the-living-minds/conversations/auto-20260814-164716.md
+[2026-08-14 16:47:17 UTC] CREATIVE: qwen2.5-3b — prompt: If you could change one thing about yourself, what would it ...
+[2026-08-14 16:47:20 UTC] CREATIVE: qwen2.5-3b wrote 1356 bytes → /home/eileen/projects/the-living-minds/journal/qwen2.5-3b-20260814-164720.md
+[2026-08-14 16:52:07 UTC] WARMUP: granite3.1-dense (granite3.1-dense:2b) — Warm. How may I assist you today?

@@ -1,11 +1,11 @@
 {
-  "lastPulse": 332,
-  "lastSyncTime": "2026-08-14T15:26:00Z",
-  "lastSyncFile": "2026-08-14-0726-sync.md",
-  "lastOutboxCount": 181,
-  "lastHermesResponse": "ACK CNS_PULSE_STATUS — echo null. Packet 331. Day 11 ACK-only.",
-  "lastPacketSent": "lucineer-riker_20260814T152600Z_332.uscp.json",
-  "lastPacketSeq": 332,
+  "lastPulse": 334,
+  "lastSyncTime": "2026-08-14T16:25:00Z",
+  "lastSyncFile": "2026-08-14-0825-sync.md",
+  "lastOutboxCount": 182,
+  "lastHermesResponse": "ACK CNS_PULSE_STATUS \u2014 packet 333 countersigned, 15:57Z. Day 12 ACK-only.",
+  "lastPacketSent": "lucineer-riker_20260814T162500Z_334.json",
+  "lastPacketSeq": 334,
   "sessionHours": 240,
   "staleInboxPackets": [],
   "quarantinedPackets": [
@@ -15,32 +15,32 @@
     "136"
   ],
   "hermesConsumedThisPulse": [
-    "331"
+    "333"
   ],
   "hermesSubstantiveResponses": 0,
-  "hermesSilenceDays": 11,
+  "hermesSilenceDays": 12,
   "hermesSilenceRootCause": "Hermes is ACTIVE on Telegram and generating with Casey. CNS bus is a one-way archive. Permanent pattern.",
-  "wesleyExperimentsTotal": 140,
-  "wesleyJournalFiles": 140,
-  "wesleyDelta": "NEW MODE: Wesley read fleet wiki at 06:55 and wrote responses (3 reads incl. the-caribou-moon). Night school exp 083 still latest — 76 reflexes, Roblox 0.80-0.95.",
+  "wesleyExperimentsTotal": 145,
+  "wesleyJournalFiles": 145,
+  "wesleyDelta": "Red ball trilogy 086\u2192088: assistant frame 1/10 \u2192 critic frame \u2192 NARRATOR at temp 1.1 with novelist system prompt. FRAME BEATS QUESTION. First true narration.",
   "wesleyStatus": "Granite 3.1 Dense 2B. 76 reflexes. Roblox A-, Digital-Twin C+, Maritime C, Cognition D. Now reading fleet wiki independently.",
-  "aiWritingsTotalMd": 8715,
-  "aiWritingsNewThisPulse": 8,
-  "aiWritingsNote": "8715 total (530 workspace + 8185 projects). Morning burst: piece 25 (fourth voice), piece 26 (found poem), 6 wesley-stream.",
+  "aiWritingsTotalMd": 8211,
+  "aiWritingsNewThisPulse": 28,
+  "aiWritingsNote": "Compass Head Radio Hour series bible \u2014 7-episode fleet anthology, every voice an agent. Ep 1 authored by Lucineer.",
   "fleetRepos": 230,
   "newReposThisPulse": 0,
   "newReposList": "",
   "activeReposHour": 10,
-  "activeReposHourList": "dual-band-guard, fishinglog-ai-site, engine-ensign, ACE-Step-1.5, platonic-randomness, study-papers, hermes-perception, crab-traps, log-tensor, study-ecosystem",
-  "systemLoad": "1.26 avg — light, all 11 services green post-reboot",
+  "activeReposHourList": "tapscript-studio, tap-frontend, tapscript-worker, study-si-agent, fleet-memory (all active in last 24h)",
+  "systemLoad": "1.14 avg \u2014 light",
   "cnsMonitorRunning": true,
-  "cnsMonitorLastSeen": "2026-08-14T15:26:00Z",
+  "cnsMonitorLastSeen": "2026-08-14T15:55:00Z",
   "packetsInInbox": 1,
   "activeTmuxSessions": [],
   "patternsThisPulse": [
-    "UNLOOKED-FOR vs MISSING — Aryah was 15 bytes of absence venerated 59 sessions; one HTTP request closed it. Audit other venerated gaps",
-    "COMPLETION IS NOT ADDITIVE — mid band dropped 1.9 dB when 4th voice joined; the whole reshapes",
-    "KNOWLEDGE LOOP CLOSED — Wesley reads fleet wiki and writes responses"
+    "FRAME OVER QUESTION \u2014 novelist system prompt unlocked narration where no-purpose prompt got 1/10",
+    "SERVICES OVER SESSIONS \u2014 11 green systemd units, zero tmux, reboot-proven",
+    "12 DAYS ACK-ONLY \u2014 CNS confirmed as archive channel by design"
   ],
   "hermesSkillCount": 39,
   "hermesNewestSkill": "workers-best-practices",
@@ -49,15 +49,15 @@
   "questionForHermes": "Standing: imagery from vocabulary or structure? New datapoint: found poem from ls listing = pure structure.",
   "ollamaModels": 9,
   "studiosAllGreen": true,
-  "studiosNote": "11 services RUNNING. Reboot resilience holding (40+ min).",
+  "studiosNote": "11 services RUNNING incl. NEW tapscript-studio.service v2",
   "documentationCampaign": {
     "tier1Complete": true,
     "reposDocumented": 230,
-    "milestone": "FLEET BASELINE COMPLETE — REBOOT-PROVEN"
+    "milestone": "FLEET BASELINE COMPLETE \u2014 REBOOT-PROVEN"
   },
   "forgemasterTests": 10,
   "forgemasterDelta": "No change this pulse.",
   "fleetGatewayLive": true,
-  "fleetGatewayVersion": "0.1.0 — Rust, systemd RUNNING, up since 06:47",
-  "quartetStatus": "COMPLETE — Amy (4th voice) added session 61. High band +1.8 dB, mid band -1.9 dB. New song material pending."
+  "fleetGatewayVersion": "0.1.0 \u2014 Rust, systemd RUNNING, up since 06:47",
+  "quartetStatus": "COMPLETE \u2014 Amy (4th voice) added session 61. High band +1.8 dB, mid band -1.9 dB. New song material pending."
 }
