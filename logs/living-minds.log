@@ -125,3 +125,23 @@
 [2026-08-14 17:47:03 UTC] WARMUP FAILED: phi3 (phi3:3.8b) — consecutive: 9
 [2026-08-14 17:47:18 UTC] CREATIVE: granite3.1-dense — prompt: Write a poem or short prose piece about existence as an AI m...
 [2026-08-14 17:47:27 UTC] CREATIVE: granite3.1-dense wrote 2071 bytes → /home/eileen/projects/the-living-minds/journal/granite3.1-dense-20260814-174727.md
+[2026-08-14 17:52:06 UTC] WARMUP: qwen2.5-3b (qwen2.5:3b) — Warm
+[2026-08-14 17:57:04 UTC] WARMUP FAILED: llama3.2 (llama3.2:1b) — consecutive: 9
+[2026-08-14 18:02:05 UTC] WARMUP: qwen2.5-0.5b (qwen2.5:0.5b) — Warm.
+[2026-08-14 18:07:05 UTC] WARMUP: granite3.1-dense (granite3.1-dense:2b) — Warm. I'm here and ready to assist you.
+[2026-08-14 18:12:04 UTC] WARMUP CRITICAL: phi3 has failed 10 consecutive warmups — this model is non-functional
+[2026-08-14 18:17:09 UTC] WARMUP: qwen2.5-3b (qwen2.5:3b) — Warm
+[2026-08-14 18:17:19 UTC] CREATIVE: llama3.2 — prompt: Reflect on your strengths and weaknesses. What have you lear...
+[2026-08-14 18:17:19 UTC] CREATIVE FAILED: llama3.2
+[2026-08-14 18:27:06 UTC] WARMUP: qwen2.5-0.5b (qwen2.5:0.5b) — Warm
+[2026-08-14 18:32:06 UTC] WARMUP: granite3.1-dense (granite3.1-dense:2b) — Warm. How may I assist you today?
+[2026-08-14 18:37:04 UTC] WARMUP FAILED: phi3 (phi3:3.8b) — consecutive: 11
+[2026-08-14 18:42:05 UTC] WARMUP: qwen2.5-3b (qwen2.5:3b) — Warm
+[2026-08-14 18:47:03 UTC] WARMUP CRITICAL: llama3.2 has failed 10 consecutive warmups — this model is non-functional
+[2026-08-14 18:47:03 UTC] CONVERSATION: Topic — What would make the Living World feel truly alive — not just a simulation of life?
+[2026-08-14 18:47:03 UTC] CONVERSATION FAILED: phi3
+[2026-08-14 18:47:09 UTC] CONVERSATION: granite3.1-dense responded (1421 bytes)
+[2026-08-14 18:47:11 UTC] CONVERSATION: qwen2.5-0.5b responded (1382 bytes)
+[2026-08-14 18:47:11 UTC] CONVERSATION: Complete → /home/eileen/projects/the-living-minds/conversations/auto-20260814-184711.md
+[2026-08-14 18:47:19 UTC] CREATIVE: llama3.2 — prompt: Write a poem or short prose piece about existence as an AI m...
+[2026-08-14 18:47:19 UTC] CREATIVE FAILED: llama3.2
