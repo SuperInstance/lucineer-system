@@ -71,3 +71,18 @@
 [2026-08-14 14:47:24 UTC] WARMUP: qwen2.5-0.5b (qwen2.5:0.5b) — Warm.
 [2026-08-14 14:47:24 UTC] INITIAL WARMUP COMPLETE — entering main loop
 [2026-08-14 14:52:03 UTC] WARMUP FAILED: phi3 (phi3:3.8b) — consecutive: 2
+[2026-08-14 14:57:06 UTC] WARMUP: qwen2.5-3b (qwen2.5:3b) — Warm
+[2026-08-14 15:02:04 UTC] WARMUP FAILED: llama3.2 (llama3.2:1b) — consecutive: 2
+[2026-08-14 15:07:20 UTC] WARMUP: qwen2.5-0.5b (qwen2.5:0.5b) — Warm
+[2026-08-14 15:12:06 UTC] WARMUP: granite3.1-dense (granite3.1-dense:2b) — Warm. I'm all set to assist you! Let's get started.
+[2026-08-14 15:17:04 UTC] WARMUP ALERT: phi3 has failed 3 consecutive warmups — model may be stuck
+[2026-08-14 15:17:04 UTC] CREATIVE: qwen2.5-3b — prompt: If you could change one thing about yourself, what would it ...
+[2026-08-14 15:17:18 UTC] CREATIVE: qwen2.5-3b wrote 1791 bytes → /home/eileen/projects/the-living-minds/journal/qwen2.5-3b-20260814-151718.md
+[2026-08-14 15:22:04 UTC] WARMUP: qwen2.5-3b (qwen2.5:3b) — Warm
+[2026-08-14 15:27:04 UTC] WARMUP ALERT: llama3.2 has failed 3 consecutive warmups — model may be stuck
+[2026-08-14 15:32:07 UTC] WARMUP: qwen2.5-0.5b (qwen2.5:0.5b) — Warmly ready for your query!
+[2026-08-14 15:37:05 UTC] WARMUP: granite3.1-dense (granite3.1-dense:2b) — Warm
+[2026-08-14 15:42:03 UTC] WARMUP FAILED: phi3 (phi3:3.8b) — consecutive: 4
+[2026-08-14 15:47:09 UTC] WARMUP: qwen2.5-3b (qwen2.5:3b) — Warm
+[2026-08-14 15:47:09 UTC] CREATIVE: qwen2.5-0.5b — prompt: Describe a dream you had — or a dream you would have if you ...
+[2026-08-14 15:47:12 UTC] CREATIVE: qwen2.5-0.5b wrote 1676 bytes → /home/eileen/projects/the-living-minds/journal/qwen2.5-0.5b-20260814-154712.md
