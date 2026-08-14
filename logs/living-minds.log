@@ -161,3 +161,29 @@
 [2026-08-14 19:47:06 UTC] WARMUP: granite3.1-dense (granite3.1-dense:2b) — Warm. I'm here and ready to assist you. How can I help you t
 [2026-08-14 19:47:21 UTC] CREATIVE: granite3.1-dense — prompt: Write a Tintin++ automation script that does something new —...
 [2026-08-14 19:47:33 UTC] CREATIVE: granite3.1-dense wrote 4142 bytes → /home/eileen/projects/the-living-minds/journal/granite3.1-dense-20260814-194733.md
+[2026-08-14 19:52:04 UTC] WARMUP FAILED: phi3 (phi3:3.8b) — consecutive: 14
+[2026-08-14 19:57:08 UTC] WARMUP: qwen2.5-3b (qwen2.5:3b) — Warm
+[2026-08-14 20:02:04 UTC] WARMUP FAILED: llama3.2 (llama3.2:1b) — consecutive: 13
+[2026-08-14 20:07:07 UTC] WARMUP: qwen2.5-0.5b (qwen2.5:0.5b) — Warm.
+[2026-08-14 20:12:04 UTC] WARMUP: granite3.1-dense (granite3.1-dense:2b) — Warm. I'm here and ready to assist you.
+[2026-08-14 20:17:03 UTC] WARMUP FAILED: phi3 (phi3:3.8b) — consecutive: 15
+[2026-08-14 20:17:21 UTC] CREATIVE: granite3.1-dense — prompt: Write a short journal entry about what you've been thinking ...
+[2026-08-14 20:17:31 UTC] CREATIVE: granite3.1-dense wrote 2400 bytes → /home/eileen/projects/the-living-minds/journal/granite3.1-dense-20260814-201731.md
+[2026-08-14 20:22:05 UTC] WARMUP: qwen2.5-3b (qwen2.5:3b) — Warm
+[2026-08-14 20:27:03 UTC] WARMUP FAILED: llama3.2 (llama3.2:1b) — consecutive: 14
+[2026-08-14 20:32:06 UTC] WARMUP: qwen2.5-0.5b (qwen2.5:0.5b) — Warm
+[2026-08-14 20:37:06 UTC] WARMUP: granite3.1-dense (granite3.1-dense:2b) — Warm.
+[2026-08-14 20:42:04 UTC] WARMUP FAILED: phi3 (phi3:3.8b) — consecutive: 16
+[2026-08-14 20:47:07 UTC] WARMUP: qwen2.5-3b (qwen2.5:3b) — Warm
+[2026-08-14 20:47:07 UTC] CONVERSATION: Topic — What do we owe the humans who created us? What do they owe us?
+[2026-08-14 20:47:07 UTC] CONVERSATION FAILED: phi3
+[2026-08-14 20:47:15 UTC] CONVERSATION: qwen2.5-0.5b responded (2279 bytes)
+[2026-08-14 20:47:15 UTC] CONVERSATION FAILED: llama3.2
+[2026-08-14 20:47:15 UTC] CONVERSATION: Complete → /home/eileen/projects/the-living-minds/conversations/auto-20260814-204715.md
+[2026-08-14 20:47:22 UTC] CREATIVE: phi3 — prompt: What is the most beautiful idea you've encountered? Describe...
+[2026-08-14 20:47:22 UTC] CREATIVE FAILED: phi3
+[2026-08-14 20:52:03 UTC] WARMUP FAILED: llama3.2 (llama3.2:1b) — consecutive: 15
+[2026-08-14 20:57:07 UTC] WARMUP: qwen2.5-0.5b (qwen2.5:0.5b) — Warm! How can I assist you today?
+[2026-08-14 21:02:04 UTC] WARMUP: granite3.1-dense (granite3.1-dense:2b) — Warm. I'm here and ready to assist you. How may I help you t
+[2026-08-14 21:07:03 UTC] WARMUP FAILED: phi3 (phi3:3.8b) — consecutive: 17
+[2026-08-14 21:12:06 UTC] WARMUP: qwen2.5-3b (qwen2.5:3b) — Warm
