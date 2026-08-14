@@ -333,6 +333,39 @@ class TestDeadbands:
         )
 
 
+# ── Test: Idle mapping edge cases ───────────────────────────────────────────
+
+class TestIdleFractionEdges:
+    """Edge cases in the idle → friction mapping."""
+
+    def test_negative_idle_is_fully_engaged(self):
+        """Clock skew (negative idle) must not read as fully idle."""
+        gov = Governor()
+        assert gov._compute_idle_fraction(-5.0) == 0.0
+        assert gov._compute_idle_fraction(-3600.0) == 0.0
+
+    def test_infinite_idle_is_fully_idle(self):
+        """Infinite idle means the agent truly stopped."""
+        gov = Governor()
+        assert gov._compute_idle_fraction(float('inf')) == 1.0
+
+    def test_nan_idle_does_not_poison_phi(self):
+        """NaN idle must yield a sane fraction, not NaN Φ."""
+        gov = Governor()
+        frac = gov._compute_idle_fraction(float('nan'))
+        assert frac == frac  # not NaN
+        assert 0.0 <= frac <= 1.0
+
+    def test_sigmoid_is_monotonic(self):
+        """More idle always means more friction."""
+        gov = Governor()
+        prev = gov._compute_idle_fraction(0.0)
+        for secs in (2.0, 5.0, 10.0, 20.0, 45.0, 90.0):
+            cur = gov._compute_idle_fraction(secs)
+            assert cur >= prev, f"idle {secs}s should not decrease friction"
+            prev = cur
+
+
 # ── Test: Reproducibility and properties ────────────────────────────────────
 
 class TestProperties:

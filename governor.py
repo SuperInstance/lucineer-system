@@ -317,9 +317,18 @@ class Governor:
             60s+ idle    → 1.0 (fully idle)
 
         This is a smooth mapping, not a step function.
+
+        Edge cases: a negative idle time is a clock artifact (the last action
+        timestamp is in the future) — clamp to fully engaged (0.0) rather than
+        punishing the agent for clock skew. Infinite idle means the agent has
+        truly stopped — that is fully idle (1.0). NaN must never poison Φ.
         """
-        if idle_seconds < 0 or idle_seconds == float('inf'):
+        if idle_seconds < 0:
+            return 0.0
+        if idle_seconds == float('inf'):
             return 1.0
+        if idle_seconds != idle_seconds:  # NaN
+            return 0.0
         # Sigmoid-like mapping centered at 15 seconds
         return 1.0 / (1.0 + math.exp(-(idle_seconds - 15.0) / 8.0))
 
