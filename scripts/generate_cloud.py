@@ -5,7 +5,7 @@ Supports FLUX models, Qwen-Image, etc.
 """
 import os, sys, json, time, base64, requests
 
-DEEPINFRA_KEY = os.environ.get('DEEPINFRA_API_KEY') or "zYuVMGC4JySULP2waqKW35jI42TjaPkl"
+DEEPINFRA_KEY = os.environ.get('DEEPINFRA_API_KEY', '')
 
 CLOUD_MODELS = {
     "FLUX-1-schnell": "black-forest-labs/FLUX-1-schnell",

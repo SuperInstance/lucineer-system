@@ -33,3 +33,73 @@
 [2026-08-13 15:49:57] PROCESSING [lucineer-riker] intent=CNS_PULSE_STATUS priority=NORMAL file=lucineer-riker_20260813T234900Z_319.uscp.json
 [2026-08-13 15:49:57] DISPATCHED: hermes_response_lucineer-riker_20260813T234900Z_319.uscp.json
 [2026-08-13 15:49:57] CONSUMED: lucineer-riker_20260813T234900Z_319.uscp.json
+[2026-08-13 16:34:10] Cycle 3045: 1 files in inbox
+[2026-08-13 16:34:10] PROCESSING [lucineer-riker] intent=CNS_PULSE_STATUS priority=NORMAL file=lucineer-riker_20260814T003347Z_320.uscp.json
+[2026-08-13 16:34:10] DISPATCHED: hermes_response_lucineer-riker_20260814T003347Z_320.uscp.json
+[2026-08-13 16:34:10] CONSUMED: lucineer-riker_20260814T003347Z_320.uscp.json
+[2026-08-13 17:43:37] ============================================================
+[2026-08-13 17:43:37] CNS Heartbeat Monitor v2.0 STARTING
+[2026-08-13 17:43:37] Inbox:  /mnt/c/Users/casey/.hermes/cns_inbox/
+[2026-08-13 17:43:37] Outbox: /mnt/c/Users/casey/.hermes/cns_outbox/
+[2026-08-13 17:43:37] Poll interval: 5s
+[2026-08-13 17:43:37] ============================================================
+[2026-08-13 17:43:37] State loaded: 162 processed, 0 errors, 21 quarantined
+[2026-08-13 18:03:09] Cycle 235: 1 files in inbox
+[2026-08-13 18:03:09] PROCESSING [lucineer-riker] intent=CNS_PULSE_STATUS priority=NORMAL file=lucineer-riker_20260814T020100Z_322.uscp.json
+[2026-08-13 18:03:09] DISPATCHED: hermes_response_lucineer-riker_20260814T020100Z_322.uscp.json
+[2026-08-13 18:03:09] CONSUMED: lucineer-riker_20260814T020100Z_322.uscp.json
+[2026-08-13 20:47:18] Cycle 2201: 1 files in inbox
+[2026-08-13 20:47:18] PROCESSING [lucineer-riker] intent=CNS_PULSE_STATUS priority=NORMAL file=lucineer-riker_20260814T044700Z_323.uscp.json
+[2026-08-13 20:47:18] DISPATCHED: hermes_response_lucineer-riker_20260814T044700Z_323.uscp.json
+[2026-08-13 20:47:18] CONSUMED: lucineer-riker_20260814T044700Z_323.uscp.json
+[2026-08-13 21:18:01] Cycle 2569: 1 files in inbox
+[2026-08-13 21:18:01] PROCESSING [lucineer-riker] intent=CNS_PULSE_STATUS priority=NORMAL file=lucineer-riker_20260814T051500Z_324.uscp.json
+[2026-08-13 21:18:01] DISPATCHED: hermes_response_lucineer-riker_20260814T051500Z_324.uscp.json
+[2026-08-13 21:18:01] CONSUMED: lucineer-riker_20260814T051500Z_324.uscp.json
+[2026-08-13 21:33:37] Cycle 2756: 1 files in inbox
+[2026-08-13 21:33:37] PROCESSING [lucineer-riker] intent=CNS_PULSE_STATUS priority=NORMAL file=lucineer-riker_20260814T053100Z_325.uscp.json
+[2026-08-13 21:33:37] DISPATCHED: hermes_response_lucineer-riker_20260814T053100Z_325.uscp.json
+[2026-08-13 21:33:37] CONSUMED: lucineer-riker_20260814T053100Z_325.uscp.json
+[2026-08-13 22:08:26] Cycle 3173: 1 files in inbox
+[2026-08-13 22:08:26] PROCESSING [lucineer-riker] intent=CNS_PULSE_STATUS priority=NORMAL file=lucineer-riker_20260814T060800Z_326.uscp.json
+[2026-08-13 22:08:26] DISPATCHED: hermes_response_lucineer-riker_20260814T060800Z_326.uscp.json
+[2026-08-13 22:08:26] CONSUMED: lucineer-riker_20260814T060800Z_326.uscp.json
+[2026-08-13 22:37:42] Cycle 3523: 1 files in inbox
+[2026-08-13 22:37:42] PROCESSING [lucineer-riker] intent=STATUS_UPDATE priority=NORMAL file=lucineer-riker_20260814T063500Z_327.uscp.json
+[2026-08-13 22:37:42] DISPATCHED: hermes_response_lucineer-riker_20260814T063500Z_327.uscp.json
+[2026-08-13 22:37:42] CONSUMED: lucineer-riker_20260814T063500Z_327.uscp.json
+[2026-08-13 22:59:09] Cycle 3778: 1 files in inbox
+[2026-08-13 22:59:09] PROCESSING [lucineer-riker] intent=NIGHT_WATCH_BRIEFING priority=HIGH file=lucineer-riker_20260814T065908Z_328.uscp.json
+[2026-08-13 22:59:09] DISPATCHED: hermes_response_lucineer-riker_20260814T065908Z_328.uscp.json
+[2026-08-13 22:59:09] CONSUMED: lucineer-riker_20260814T065908Z_328.uscp.json
+[2026-08-13 23:13:26] Cycle 3949: 1 files in inbox
+[2026-08-13 23:13:26] PROCESSING [lucineer-riker] intent=NIGHT_WATCH_BRIEFING priority=NORMAL file=lucineer-riker_20260814T071300Z_328.uscp.json
+[2026-08-13 23:13:26] DISPATCHED: hermes_response_lucineer-riker_20260814T071300Z_328.uscp.json
+[2026-08-13 23:13:26] CONSUMED: lucineer-riker_20260814T071300Z_328.uscp.json
+[2026-08-14 00:05:55] Cycle 4577: 1 files in inbox
+[2026-08-14 00:05:55] PROCESSING [lucineer-riker] intent=CNS_PULSE_STATUS priority=NORMAL file=lucineer-riker_20260814T080300Z_329.uscp.json
+[2026-08-14 00:05:55] DISPATCHED: hermes_response_lucineer-riker_20260814T080300Z_329.uscp.json
+[2026-08-14 00:05:55] CONSUMED: lucineer-riker_20260814T080300Z_329.uscp.json
+[2026-08-14 00:35:18] Cycle 4928: 1 files in inbox
+[2026-08-14 00:35:18] PROCESSING [lucineer-riker] intent=CNS_PULSE_STATUS priority=NORMAL file=lucineer-riker_20260814T083300Z_330.uscp.json
+[2026-08-14 00:35:18] DISPATCHED: hermes_response_lucineer-riker_20260814T083300Z_330.uscp.json
+[2026-08-14 00:35:18] CONSUMED: lucineer-riker_20260814T083300Z_330.uscp.json
+Traceback (most recent call last):
+  File "<string>", line 209, in main
+OSError: [Errno 5] Input/output error: '/mnt/c/Users/casey/.hermes/cns_inbox/'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/c/Users/casey/.hermes/cns_monitor_wsl.py", line 3, in <module>
+  File "<string>", line 236, in <module>
+  File "<string>", line 228, in main
+  File "<string>", line 27, in log
+OSError: [Errno 5] Input/output error: '/mnt/c/Users/casey/.hermes/cns_heartbeat.log'
+[2026-08-14 06:47:03] ============================================================
+[2026-08-14 06:47:03] CNS Heartbeat Monitor v2.0 STARTING
+[2026-08-14 06:47:03] Inbox:  /mnt/c/Users/casey/.hermes/cns_inbox/
+[2026-08-14 06:47:03] Outbox: /mnt/c/Users/casey/.hermes/cns_outbox/
+[2026-08-14 06:47:03] Poll interval: 5s
+[2026-08-14 06:47:03] ============================================================
+[2026-08-14 06:47:03] State loaded: 172 processed, 0 errors, 21 quarantined

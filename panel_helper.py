@@ -2,7 +2,7 @@
 """DeepInfra panel discussion helper."""
 import sys, json, urllib.request, os
 
-API_KEY = "zYuVMGC4JySULP2waqKW35jI42TjaPkl"
+API_KEY = os.environ.get('DEEPINFRA_API_KEY', '')
 API_URL = "https://api.deepinfra.com/v1/openai/chat/completions"
 
 def call_model(model, system_prompt, user_prompt, temperature=0.8, max_tokens=800):

@@ -36,7 +36,7 @@
 
 ### DeepInfra Key
 - Old key (`sW0Mls…MkrE`) died mid-session from rate limiting
-- Casey provided fresh key (`zYuVMGC4JySULP2waqKW35jI42TjaPkl`)
+- Casey provided fresh key (`[REDACTED — see env DEEPINFRA_API_KEY; original key exposed in git history, rotate]`)
 - Updated in: mcp-deeinfra/.env, Hermes config.yaml
 - Verified: 184 models available
 

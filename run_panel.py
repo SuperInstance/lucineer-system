@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Run multi-model panel discussion on browser-native AI enhancement."""
-import json, urllib.request, time, sys
+import json, urllib.request, time, sys, os
 
-API_KEY = "zYuVMGC4JySULP2waqKW35jI42TjaPkl"
+API_KEY = os.environ.get('DEEPINFRA_API_KEY', '')
 API_URL = "https://api.deepinfra.com/v1/openai/chat/completions"
 
 CONTEXT = """Context: We have a Dynamic Cognition Architecture for an AI character called Slackwater. It has three layers:

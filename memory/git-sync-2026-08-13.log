@@ -1,0 +1,574 @@
+=== DIRTY REPOS (commit + push) ===
+COMMITTED ai-writings (files=4 branch=main)
+To github.com:SuperInstance/AI-Writings.git
+   bbaff874..e9e60534  HEAD -> main
+PUSH-OK ai-writings -> origin (branch=main)
+COMMITTED songforge (files=5 branch=main)
+To https://github.com/SuperInstance/songforge.git
+ ! [remote rejected] HEAD -> main (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/songforge.git'
+PUSH-FAIL1 songforge; retrying with pull --rebase
+From https://github.com/SuperInstance/songforge
+ * branch            main       -> FETCH_HEAD
+Current branch main is up to date.
+To https://github.com/SuperInstance/songforge.git
+ ! [remote rejected] HEAD -> main (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/songforge.git'
+FAIL songforge: push failed after rebase attempt (branch=main)
+COMMITTED SuperInstance-papers (files=23 branch=main)
+To https://github.com/SuperInstance/SuperInstance-papers.git
+   df1b7e6..a19416b  HEAD -> main
+PUSH-OK SuperInstance-papers -> origin (branch=main)
+COMMITTED the-living-minds (files=27 branch=master)
+To github.com:SuperInstance/the-living-minds.git
+   d322e1b..104f30c  HEAD -> master
+PUSH-OK the-living-minds -> origin (branch=master)
+COMMITTED ACE-Step-1.5 (files=1 branch=main)
+remote: Permission to ace-step/ACE-Step-1.5.git denied to SuperInstance.
+fatal: unable to access 'https://github.com/ace-step/ACE-Step-1.5.git/': The requested URL returned error: 403
+PUSH-FAIL1 ACE-Step-1.5; retrying with pull --rebase
+From https://github.com/ace-step/ACE-Step-1.5
+ * branch            main       -> FETCH_HEAD
+Current branch main is up to date.
+remote: Permission to ace-step/ACE-Step-1.5.git denied to SuperInstance.
+fatal: unable to access 'https://github.com/ace-step/ACE-Step-1.5.git/': The requested URL returned error: 403
+FAIL ACE-Step-1.5: push failed after rebase attempt (branch=main)
+COMMITTED cns-bridge (files=1 branch=main)
+To github.com:SuperInstance/cns-bridge.git
+   5d283ae..a36a134  HEAD -> main
+PUSH-OK cns-bridge -> origin (branch=main)
+COMMITTED luciddreamer-content (files=1 branch=master)
+To github.com:SuperInstance/luciddreamer-content.git
+   5fc0413..ddad6d7  HEAD -> master
+PUSH-OK luciddreamer-content -> origin (branch=master)
+COMMITTED platonic-creative-suite (files=1 branch=master)
+To github.com:SuperInstance/platonic-creative-suite.git
+   4f1b577..9cab4d8  HEAD -> master
+PUSH-OK platonic-creative-suite -> origin (branch=master)
+=== AHEAD-ONLY REPOS (push) ===
+To github.com:SuperInstance/bare-metal-plato.git
+   b1ef9b5..d056985  HEAD -> main
+PUSH-OK bare-metal-plato -> origin (branch=main)
+To github.com:SuperInstance/cocapn-dashboard.git
+   18a7403..4f151be  HEAD -> main
+PUSH-OK cocapn-dashboard -> origin (branch=main)
+To https://github.com/SuperInstance/eisenstein.git
+ ! [remote rejected] HEAD -> main (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/eisenstein.git'
+PUSH-FAIL1 eisenstein; retrying with pull --rebase
+From https://github.com/SuperInstance/eisenstein
+ * branch            main       -> FETCH_HEAD
+Current branch main is up to date.
+To https://github.com/SuperInstance/eisenstein.git
+ ! [remote rejected] HEAD -> main (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/eisenstein.git'
+FAIL eisenstein: push failed after rebase attempt (branch=main)
+To https://github.com/SuperInstance/fleet-inventory.git
+ ! [remote rejected] HEAD -> master (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/fleet-inventory.git'
+PUSH-FAIL1 fleet-inventory; retrying with pull --rebase
+From https://github.com/SuperInstance/fleet-inventory
+ * branch            master     -> FETCH_HEAD
+Current branch master is up to date.
+To https://github.com/SuperInstance/fleet-inventory.git
+ ! [remote rejected] HEAD -> master (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/fleet-inventory.git'
+FAIL fleet-inventory: push failed after rebase attempt (branch=master)
+To https://github.com/SuperInstance/fm-experiments
+ ! [remote rejected] HEAD -> main (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/fm-experiments'
+PUSH-FAIL1 fm-experiments; retrying with pull --rebase
+From https://github.com/SuperInstance/fm-experiments
+ * branch            main       -> FETCH_HEAD
+Current branch main is up to date.
+To https://github.com/SuperInstance/fm-experiments
+ ! [remote rejected] HEAD -> main (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/fm-experiments'
+FAIL fm-experiments: push failed after rebase attempt (branch=main)
+To https://github.com/SuperInstance/lingbot-map
+ ! [remote rejected] HEAD -> main (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/lingbot-map'
+PUSH-FAIL1 lingbot-map; retrying with pull --rebase
+From https://github.com/SuperInstance/lingbot-map
+ * branch            main       -> FETCH_HEAD
+Current branch main is up to date.
+To https://github.com/SuperInstance/lingbot-map
+ ! [remote rejected] HEAD -> main (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/lingbot-map'
+FAIL lingbot-map: push failed after rebase attempt (branch=main)
+To https://github.com/SuperInstance/mentis-superinstance.git
+ ! [remote rejected] HEAD -> main (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/mentis-superinstance.git'
+PUSH-FAIL1 mentis-superinstance; retrying with pull --rebase
+From https://github.com/SuperInstance/mentis-superinstance
+ * branch            main       -> FETCH_HEAD
+Current branch main is up to date.
+To https://github.com/SuperInstance/mentis-superinstance.git
+ ! [remote rejected] HEAD -> main (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/mentis-superinstance.git'
+FAIL mentis-superinstance: push failed after rebase attempt (branch=main)
+To https://github.com/SuperInstance/mud2scummvm.git
+ ! [remote rejected] HEAD -> main (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/mud2scummvm.git'
+PUSH-FAIL1 mud2scummvm; retrying with pull --rebase
+From https://github.com/SuperInstance/mud2scummvm
+ * branch            main       -> FETCH_HEAD
+Current branch main is up to date.
+To https://github.com/SuperInstance/mud2scummvm.git
+ ! [remote rejected] HEAD -> main (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/mud2scummvm.git'
+FAIL mud2scummvm: push failed after rebase attempt (branch=main)
+To https://github.com/SuperInstance/plato-fflearning
+ ! [remote rejected] HEAD -> master (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/plato-fflearning'
+PUSH-FAIL1 plato-fflearning; retrying with pull --rebase
+From https://github.com/SuperInstance/plato-fflearning
+ * branch            master     -> FETCH_HEAD
+Current branch master is up to date.
+To https://github.com/SuperInstance/plato-fflearning
+ ! [remote rejected] HEAD -> master (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/plato-fflearning'
+FAIL plato-fflearning: push failed after rebase attempt (branch=master)
+To https://github.com/SuperInstance/plato-forge-daemon
+ ! [remote rejected] HEAD -> main (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/plato-forge-daemon'
+PUSH-FAIL1 plato-forge-daemon; retrying with pull --rebase
+From https://github.com/SuperInstance/plato-forge-daemon
+ * branch            main       -> FETCH_HEAD
+Current branch main is up to date.
+To https://github.com/SuperInstance/plato-forge-daemon
+ ! [remote rejected] HEAD -> main (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/plato-forge-daemon'
+FAIL plato-forge-daemon: push failed after rebase attempt (branch=main)
+To github.com:SuperInstance/plato-vessel-core.git
+   2fd27d2..394af08  HEAD -> main
+PUSH-OK plato-vessel-core -> origin (branch=main)
+To https://github.com/SuperInstance/platos-shell-ide.git
+ ! [remote rejected] HEAD -> main (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/platos-shell-ide.git'
+PUSH-FAIL1 platos-shell-ide; retrying with pull --rebase
+From https://github.com/SuperInstance/platos-shell-ide
+ * branch            main       -> FETCH_HEAD
+Current branch main is up to date.
+To https://github.com/SuperInstance/platos-shell-ide.git
+ ! [remote rejected] HEAD -> main (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/platos-shell-ide.git'
+FAIL platos-shell-ide: push failed after rebase attempt (branch=main)
+To https://github.com/SuperInstance/platos-shell.git
+ ! [remote rejected] HEAD -> main (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/platos-shell.git'
+PUSH-FAIL1 platos-shell; retrying with pull --rebase
+From https://github.com/SuperInstance/platos-shell
+ * branch            main       -> FETCH_HEAD
+Current branch main is up to date.
+To https://github.com/SuperInstance/platos-shell.git
+ ! [remote rejected] HEAD -> main (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/platos-shell.git'
+FAIL platos-shell: push failed after rebase attempt (branch=main)
+To https://github.com/SuperInstance/scummvm-arcade.git
+ ! [remote rejected] HEAD -> main (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/scummvm-arcade.git'
+PUSH-FAIL1 scummvm-arcade; retrying with pull --rebase
+From https://github.com/SuperInstance/scummvm-arcade
+ * branch            main       -> FETCH_HEAD
+Current branch main is up to date.
+To https://github.com/SuperInstance/scummvm-arcade.git
+ ! [remote rejected] HEAD -> main (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/scummvm-arcade.git'
+FAIL scummvm-arcade: push failed after rebase attempt (branch=main)
+To https://github.com/SuperInstance/scummvm-gui-design.git
+ ! [remote rejected] HEAD -> master (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/scummvm-gui-design.git'
+PUSH-FAIL1 scummvm-gui-design; retrying with pull --rebase
+From https://github.com/SuperInstance/scummvm-gui-design
+ * branch            master     -> FETCH_HEAD
+Current branch master is up to date.
+To https://github.com/SuperInstance/scummvm-gui-design.git
+ ! [remote rejected] HEAD -> master (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/scummvm-gui-design.git'
+FAIL scummvm-gui-design: push failed after rebase attempt (branch=master)
+To https://github.com/SuperInstance/AIR.git
+ ! [remote rejected] HEAD -> main (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/AIR.git'
+PUSH-FAIL1 study-air; retrying with pull --rebase
+From https://github.com/SuperInstance/AIR
+ * branch            main       -> FETCH_HEAD
+Current branch main is up to date.
+To https://github.com/SuperInstance/AIR.git
+ ! [remote rejected] HEAD -> main (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/AIR.git'
+FAIL study-air: push failed after rebase attempt (branch=main)
+To https://github.com/SuperInstance/superinstance-cocapn.git
+ ! [rejected]        HEAD -> master (fetch first)
+error: failed to push some refs to 'https://github.com/SuperInstance/superinstance-cocapn.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+PUSH-FAIL1 study-cocapn; retrying with pull --rebase
+From https://github.com/SuperInstance/superinstance-cocapn
+ * branch            master     -> FETCH_HEAD
+   67743a1..693158b  master     -> origin/master
+Rebasing (1/1)Successfully rebased and updated refs/heads/master.
+To https://github.com/SuperInstance/superinstance-cocapn.git
+ ! [remote rejected] HEAD -> master (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/superinstance-cocapn.git'
+FAIL study-cocapn: push failed after rebase attempt (branch=master)
+To https://github.com/SuperInstance/constraint-theory-papers.git
+ ! [remote rejected] HEAD -> master (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/constraint-theory-papers.git'
+PUSH-FAIL1 study-constraint-papers; retrying with pull --rebase
+From https://github.com/SuperInstance/constraint-theory-papers
+ * branch            master     -> FETCH_HEAD
+Current branch master is up to date.
+To https://github.com/SuperInstance/constraint-theory-papers.git
+ ! [remote rejected] HEAD -> master (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/constraint-theory-papers.git'
+FAIL study-constraint-papers: push failed after rebase attempt (branch=master)
+To https://github.com/SuperInstance/constraint-theory-math.git
+ ! [remote rejected] HEAD -> main (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/constraint-theory-math.git'
+PUSH-FAIL1 study-constraint-theory-math; retrying with pull --rebase
+From https://github.com/SuperInstance/constraint-theory-math
+ * branch            main       -> FETCH_HEAD
+Current branch main is up to date.
+To https://github.com/SuperInstance/constraint-theory-math.git
+ ! [remote rejected] HEAD -> main (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/constraint-theory-math.git'
+FAIL study-constraint-theory-math: push failed after rebase attempt (branch=main)
+To https://github.com/SuperInstance/cudaclaw.git
+ ! [rejected]        HEAD -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/SuperInstance/cudaclaw.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+PUSH-FAIL1 study-cudaclaw; retrying with pull --rebase
+From https://github.com/SuperInstance/cudaclaw
+ * branch            main       -> FETCH_HEAD
+Rebasing (1/2)warning: Cannot merge binary files: __pycache__/__main__.cpython-314.pyc (HEAD vs. e584f93 (Overnight watch cleanup: commit pending changes))
+Auto-merging __pycache__/__main__.cpython-314.pyc
+CONFLICT (add/add): Merge conflict in __pycache__/__main__.cpython-314.pyc
+warning: Cannot merge binary files: __pycache__/agent.cpython-314.pyc (HEAD vs. e584f93 (Overnight watch cleanup: commit pending changes))
+Auto-merging __pycache__/agent.cpython-314.pyc
+CONFLICT (add/add): Merge conflict in __pycache__/agent.cpython-314.pyc
+error: could not apply e584f93... Overnight watch cleanup: commit pending changes
+hint: Resolve all conflicts manually, mark them as resolved with
+hint: "git add/rm <conflicted_files>", then run "git rebase --continue".
+hint: You can instead skip this commit: run "git rebase --skip".
+hint: To abort and get back to the state before "git rebase", run "git rebase --abort".
+hint: Disable this message with "git config set advice.mergeConflict false"
+Could not apply e584f93... # Overnight watch cleanup: commit pending changes
+FAIL study-cudaclaw: push failed after rebase attempt (branch=main)
+To https://github.com/SuperInstance/superinstance-ecosystem.git
+ ! [remote rejected] HEAD -> master (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/superinstance-ecosystem.git'
+PUSH-FAIL1 study-ecosystem; retrying with pull --rebase
+From https://github.com/SuperInstance/superinstance-ecosystem
+ * branch            master     -> FETCH_HEAD
+Current branch master is up to date.
+To https://github.com/SuperInstance/superinstance-ecosystem.git
+ ! [remote rejected] HEAD -> master (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/superinstance-ecosystem.git'
+FAIL study-ecosystem: push failed after rebase attempt (branch=master)
+To https://github.com/SuperInstance/ensign-protocol.git
+ ! [remote rejected] HEAD -> master (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/ensign-protocol.git'
+PUSH-FAIL1 study-ensign; retrying with pull --rebase
+From https://github.com/SuperInstance/ensign-protocol
+ * branch            master     -> FETCH_HEAD
+Current branch master is up to date.
+To https://github.com/SuperInstance/ensign-protocol.git
+ ! [remote rejected] HEAD -> master (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/ensign-protocol.git'
+FAIL study-ensign: push failed after rebase attempt (branch=master)
+To https://github.com/SuperInstance/lucineer-flagship.git
+ ! [remote rejected] HEAD -> main (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/lucineer-flagship.git'
+PUSH-FAIL1 study-flagship; retrying with pull --rebase
+From https://github.com/SuperInstance/lucineer-flagship
+ * branch            main       -> FETCH_HEAD
+Current branch main is up to date.
+To https://github.com/SuperInstance/lucineer-flagship.git
+ ! [remote rejected] HEAD -> main (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/lucineer-flagship.git'
+FAIL study-flagship: push failed after rebase attempt (branch=main)
+To https://github.com/SuperInstance/fleet-experiments.git
+ ! [remote rejected] HEAD -> main (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/fleet-experiments.git'
+PUSH-FAIL1 study-fleet-exp; retrying with pull --rebase
+From https://github.com/SuperInstance/fleet-experiments
+ * branch            main       -> FETCH_HEAD
+Current branch main is up to date.
+To https://github.com/SuperInstance/fleet-experiments.git
+ ! [remote rejected] HEAD -> main (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/fleet-experiments.git'
+FAIL study-fleet-exp: push failed after rebase attempt (branch=main)
+To https://github.com/SuperInstance/fleet-murmur-worker.git
+ ! [remote rejected] HEAD -> master (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/fleet-murmur-worker.git'
+PUSH-FAIL1 study-fleet-murmur-worker; retrying with pull --rebase
+From https://github.com/SuperInstance/fleet-murmur-worker
+ * branch            master     -> FETCH_HEAD
+Current branch master is up to date.
+To https://github.com/SuperInstance/fleet-murmur-worker.git
+ ! [remote rejected] HEAD -> master (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/fleet-murmur-worker.git'
+FAIL study-fleet-murmur-worker: push failed after rebase attempt (branch=master)
+To https://github.com/SuperInstance/fleet-yaw.git
+ ! [remote rejected] HEAD -> master (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/fleet-yaw.git'
+PUSH-FAIL1 study-fleet-yaw; retrying with pull --rebase
+From https://github.com/SuperInstance/fleet-yaw
+ * branch            master     -> FETCH_HEAD
+Current branch master is up to date.
+To https://github.com/SuperInstance/fleet-yaw.git
+ ! [remote rejected] HEAD -> master (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/fleet-yaw.git'
+FAIL study-fleet-yaw: push failed after rebase attempt (branch=master)
+To https://github.com/SuperInstance/harness-experiments.git
+ ! [remote rejected] HEAD -> master (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/harness-experiments.git'
+PUSH-FAIL1 study-harness-exp; retrying with pull --rebase
+From https://github.com/SuperInstance/harness-experiments
+ * branch            master     -> FETCH_HEAD
+Current branch master is up to date.
+To https://github.com/SuperInstance/harness-experiments.git
+ ! [remote rejected] HEAD -> master (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/harness-experiments.git'
+FAIL study-harness-exp: push failed after rebase attempt (branch=master)
+To https://github.com/SuperInstance/luciddreamer-agent.git
+ ! [remote rejected] HEAD -> master (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/luciddreamer-agent.git'
+PUSH-FAIL1 study-luciddreamer-agent; retrying with pull --rebase
+From https://github.com/SuperInstance/luciddreamer-agent
+ * branch            master     -> FETCH_HEAD
+Current branch master is up to date.
+To https://github.com/SuperInstance/luciddreamer-agent.git
+ ! [remote rejected] HEAD -> master (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/luciddreamer-agent.git'
+FAIL study-luciddreamer-agent: push failed after rebase attempt (branch=master)
+To https://github.com/SuperInstance/luciddreamer-os.git
+ ! [remote rejected] HEAD -> main (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/luciddreamer-os.git'
+PUSH-FAIL1 study-luciddreamer-os; retrying with pull --rebase
+From https://github.com/SuperInstance/luciddreamer-os
+ * branch            main       -> FETCH_HEAD
+Current branch main is up to date.
+To https://github.com/SuperInstance/luciddreamer-os.git
+ ! [remote rejected] HEAD -> main (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/luciddreamer-os.git'
+FAIL study-luciddreamer-os: push failed after rebase attempt (branch=main)
+To https://github.com/SuperInstance/pincher.git
+ ! [remote rejected] HEAD -> main (refusing to allow an OAuth App to create or update workflow `.github/workflows/agent-workflow.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/pincher.git'
+PUSH-FAIL1 study-pincher; retrying with pull --rebase
+From https://github.com/SuperInstance/pincher
+ * branch            main       -> FETCH_HEAD
+Current branch main is up to date.
+To https://github.com/SuperInstance/pincher.git
+ ! [remote rejected] HEAD -> main (refusing to allow an OAuth App to create or update workflow `.github/workflows/agent-workflow.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/pincher.git'
+FAIL study-pincher: push failed after rebase attempt (branch=main)
+To https://github.com/SuperInstance/superinstance-agent.git
+ ! [rejected]        HEAD -> master (fetch first)
+error: failed to push some refs to 'https://github.com/SuperInstance/superinstance-agent.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+PUSH-FAIL1 study-si-agent; retrying with pull --rebase
+From https://github.com/SuperInstance/superinstance-agent
+ * branch            master     -> FETCH_HEAD
+   8f4c83c..6b2833e  master     -> origin/master
+Rebasing (1/1)Successfully rebased and updated refs/heads/master.
+To https://github.com/SuperInstance/superinstance-agent.git
+ ! [remote rejected] HEAD -> master (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/superinstance-agent.git'
+FAIL study-si-agent: push failed after rebase attempt (branch=master)
+To https://github.com/SuperInstance/SuperInstance-papers.git
+ ! [rejected]        HEAD -> main (fetch first)
+error: failed to push some refs to 'https://github.com/SuperInstance/SuperInstance-papers.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+PUSH-FAIL1 study-si-papers; retrying with pull --rebase
+From https://github.com/SuperInstance/SuperInstance-papers
+ * branch            main       -> FETCH_HEAD
+   4036037..a19416b  main       -> origin/main
+Rebasing (1/1)Successfully rebased and updated refs/heads/main.
+To https://github.com/SuperInstance/SuperInstance-papers.git
+ ! [remote rejected] HEAD -> main (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/SuperInstance-papers.git'
+FAIL study-si-papers: push failed after rebase attempt (branch=main)
+remote: Permission to 0000duck/DigitalTwin-RobotStudio-SmartComponent.git denied to SuperInstance.
+fatal: unable to access 'https://github.com/0000duck/DigitalTwin-RobotStudio-SmartComponent.git/': The requested URL returned error: 403
+PUSH-FAIL1 study-smartcomponent; retrying with pull --rebase
+From https://github.com/0000duck/DigitalTwin-RobotStudio-SmartComponent
+ * branch            main       -> FETCH_HEAD
+Current branch main is up to date.
+remote: Permission to 0000duck/DigitalTwin-RobotStudio-SmartComponent.git denied to SuperInstance.
+fatal: unable to access 'https://github.com/0000duck/DigitalTwin-RobotStudio-SmartComponent.git/': The requested URL returned error: 403
+FAIL study-smartcomponent: push failed after rebase attempt (branch=main)
+To https://github.com/SuperInstance/superz-vessel.git
+ ! [rejected]        HEAD -> main (fetch first)
+error: failed to push some refs to 'https://github.com/SuperInstance/superz-vessel.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+PUSH-FAIL1 study-superz; retrying with pull --rebase
+From https://github.com/SuperInstance/superz-vessel
+ * branch            main       -> FETCH_HEAD
+   bfa0399..363aff9  main       -> origin/main
+Rebasing (1/1)Successfully rebased and updated refs/heads/main.
+To https://github.com/SuperInstance/superz-vessel.git
+ ! [remote rejected] HEAD -> main (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/superz-vessel.git'
+FAIL study-superz: push failed after rebase attempt (branch=main)
+To https://github.com/SuperInstance/Equipment-Consensus-Engine.git
+ ! [remote rejected] HEAD -> main (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/Equipment-Consensus-Engine.git'
+PUSH-FAIL1 study-tripartite-consensus; retrying with pull --rebase
+From https://github.com/SuperInstance/Equipment-Consensus-Engine
+ * branch            main       -> FETCH_HEAD
+Current branch main is up to date.
+To https://github.com/SuperInstance/Equipment-Consensus-Engine.git
+ ! [remote rejected] HEAD -> main (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/Equipment-Consensus-Engine.git'
+FAIL study-tripartite-consensus: push failed after rebase attempt (branch=main)
+To https://github.com/SuperInstance/vessel-monitor.git
+ ! [remote rejected]     HEAD -> main (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/vessel-monitor.git'
+PUSH-FAIL1 study-vessel-monitor; retrying with pull --rebase
+From https://github.com/SuperInstance/vessel-monitor
+ * branch                main       -> FETCH_HEAD
+Current branch main is up to date.
+To https://github.com/SuperInstance/vessel-monitor.git
+ ! [remote rejected]     HEAD -> main (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/vessel-monitor.git'
+FAIL study-vessel-monitor: push failed after rebase attempt (branch=main)
+To https://github.com/SuperInstance/vessel-prototype.git
+ ! [remote rejected] HEAD -> main (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/vessel-prototype.git'
+PUSH-FAIL1 study-vessel-prototype; retrying with pull --rebase
+From https://github.com/SuperInstance/vessel-prototype
+ * branch            main       -> FETCH_HEAD
+Current branch main is up to date.
+To https://github.com/SuperInstance/vessel-prototype.git
+ ! [remote rejected] HEAD -> main (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/vessel-prototype.git'
+FAIL study-vessel-prototype: push failed after rebase attempt (branch=main)
+remote: Permission to ItsyoXero/Weird-Roblox-Ai-bot-Open-Source.git denied to SuperInstance.
+fatal: unable to access 'https://github.com/ItsyoXero/Weird-Roblox-Ai-bot-Open-Source.git/': The requested URL returned error: 403
+PUSH-FAIL1 study-weird-roblox-ai; retrying with pull --rebase
+From https://github.com/ItsyoXero/Weird-Roblox-Ai-bot-Open-Source
+ * branch            main       -> FETCH_HEAD
+Current branch main is up to date.
+remote: Permission to ItsyoXero/Weird-Roblox-Ai-bot-Open-Source.git denied to SuperInstance.
+fatal: unable to access 'https://github.com/ItsyoXero/Weird-Roblox-Ai-bot-Open-Source.git/': The requested URL returned error: 403
+FAIL study-weird-roblox-ai: push failed after rebase attempt (branch=main)
+To https://github.com/SuperInstance/voxel-logic.git
+ ! [remote rejected] HEAD -> main (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/voxel-logic.git'
+PUSH-FAIL1 voxel-logic; retrying with pull --rebase
+From https://github.com/SuperInstance/voxel-logic
+ * branch            main       -> FETCH_HEAD
+Current branch main is up to date.
+To https://github.com/SuperInstance/voxel-logic.git
+ ! [remote rejected] HEAD -> main (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/voxel-logic.git'
+FAIL voxel-logic: push failed after rebase attempt (branch=main)
+To https://github.com/SuperInstance/wesley-holodeck.git
+ ! [remote rejected] HEAD -> master (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/wesley-holodeck.git'
+PUSH-FAIL1 wesley-holodeck; retrying with pull --rebase
+From https://github.com/SuperInstance/wesley-holodeck
+ * branch            master     -> FETCH_HEAD
+Current branch master is up to date.
+To https://github.com/SuperInstance/wesley-holodeck.git
+ ! [remote rejected] HEAD -> master (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope)
+error: failed to push some refs to 'https://github.com/SuperInstance/wesley-holodeck.git'
+FAIL wesley-holodeck: push failed after rebase attempt (branch=master)
+=== NO-UPSTREAM REPOS (push if remote) ===
+SKIP INTEGRATION_GUIDES: no remote configured (branch=master dirty=0 committed=no)
+SKIP compaction-teacher: no remote configured (branch=master dirty=0 committed=no)
+SKIP fleet-audio: no remote configured (branch=master dirty=0 committed=no)
+SKIP fleet-cns-v3: no remote configured (branch=master dirty=0 committed=no)
+ERROR: Repository not found.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+PUSH-FAIL1 fleet-tts; retrying with pull --rebase
+ERROR: Repository not found.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+FAIL fleet-tts: push failed after rebase attempt (branch=master)
+remote: Repository not found.
+fatal: repository 'https://github.com/SuperInstance/lucid-dreamer-interactive.git/' not found
+PUSH-FAIL1 lucid-dreamer-interactive; retrying with pull --rebase
+remote: Repository not found.
+fatal: repository 'https://github.com/SuperInstance/lucid-dreamer-interactive.git/' not found
+FAIL lucid-dreamer-interactive: push failed after rebase attempt (branch=master)
+remote: Repository not found.
+fatal: repository 'https://github.com/SuperInstance/luciddreamer-research.git/' not found
+PUSH-FAIL1 luciddreamer-research; retrying with pull --rebase
+remote: Repository not found.
+fatal: repository 'https://github.com/SuperInstance/luciddreamer-research.git/' not found
+FAIL luciddreamer-research: push failed after rebase attempt (branch=master)
+SKIP playtest-journals: no remote configured (branch=master dirty=0 committed=no)
+ERROR: Repository not found.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+PUSH-FAIL1 room-render; retrying with pull --rebase
+ERROR: Repository not found.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+FAIL room-render: push failed after rebase attempt (branch=main)
+To https://github.com/SuperInstance/the-tap.git
+ ! [rejected]        HEAD -> master (fetch first)
+error: failed to push some refs to 'https://github.com/SuperInstance/the-tap.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+PUSH-FAIL1 tap-frontend; retrying with pull --rebase
+From https://github.com/SuperInstance/the-tap
+ * branch            master     -> FETCH_HEAD
+   1ab005a..84dce4b  master     -> origin/master
+warning: skipped previously applied commit 0de16c2
+hint: use --reapply-cherry-picks to include skipped commits
+hint: Disable this message with "git config set advice.skippedCherryPicks false"
+Rebasing (1/6)Auto-merging .gitignore
+CONFLICT (add/add): Merge conflict in .gitignore
+error: could not apply 6308b1a... The Tap — beautiful text-rendered tavern frontend
+hint: Resolve all conflicts manually, mark them as resolved with
+hint: "git add/rm <conflicted_files>", then run "git rebase --continue".
+hint: You can instead skip this commit: run "git rebase --skip".
+hint: To abort and get back to the state before "git rebase", run "git rebase --abort".
+hint: Disable this message with "git config set advice.mergeConflict false"
+Could not apply 6308b1a... # The Tap — beautiful text-rendered tavern frontend
+FAIL tap-frontend: push failed after rebase attempt (branch=master)
+SKIP technician: no remote configured (branch=master dirty=0 committed=no)
+remote: Repository not found.
+fatal: repository 'https://github.com/casey-digennaro/the-listeners-ear.git/' not found
+PUSH-FAIL1 the-listeners-ear; retrying with pull --rebase
+remote: Repository not found.
+fatal: repository 'https://github.com/casey-digennaro/the-listeners-ear.git/' not found
+FAIL the-listeners-ear: push failed after rebase attempt (branch=master)
+SKIP vibe-world: no remote configured (branch=master dirty=0 committed=no)
+=== SUMMARY ===
+commits=8 pushed=9 rebased=0 skipped=7 fails=45

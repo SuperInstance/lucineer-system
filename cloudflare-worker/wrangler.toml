@@ -1,0 +1,35 @@
+name = "openclaw-cloudflare-worker"
+main = "src/index.js"
+compatibility_date = "2024-01-01"
+node_compat = true
+
+[vars]
+ENVIRONMENT = "production"
+OPENCLAW_GATEWAY = "http://127.0.0.1:18789"
+
+# Workers AI binding (uncomment if you want to use Workers AI)
+# [ai]
+# binding = "AI"
+
+# KV namespace for webhooks (optional)
+# [[kv_namespaces]]
+# binding = "KV"
+# id = "your-kv-namespace-id"
+
+# Durable Objects (optional)
+# [[durable_objects.bindings]]
+# name = "DURABLE_OBJECTS"
+# class_name = "TelegramDurableObject"
+
+[env.development]
+name = "openclaw-cloudflare-worker-dev"
+vars = { ENVIRONMENT = "development" }
+
+[env.production]
+name = "openclaw-cloudflare-worker-prod"
+vars = { ENVIRONMENT = "production" }
+
+# Routes for your worker (uncomment to deploy)
+# routes = [
+#   { pattern = "https://your-domain.com/worker/*", zone_name = "your-domain.com" }
+# ]
