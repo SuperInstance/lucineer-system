@@ -6,7 +6,7 @@
 **Sources indexed:**
 - `ai-writings/OPEN_RESEARCH_QUESTIONS.md` (ORQ)
 - `ai-writings/DIARIES/RESEARCH_QUESTIONS.md` (DRQ)
-- `lucineer-system/ROADMAP whats_next.md` (ROAD)
+- `lucineer-system/ROADMAP_whats_next.md` (ROAD)
 - `lucineer-system/GAP_ANALYSIS.md` (GAP)
 - `lucineer-system/INTEGRATED_ARCHITECTURE.md` (IA)
 - `lucineer-system/SHIP_READINESS.md` (SHIP)
