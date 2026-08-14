@@ -202,3 +202,25 @@
 [2026-08-14 21:57:03 UTC] WARMUP FAILED: phi3 (phi3:3.8b) — consecutive: 19
 [2026-08-14 22:02:12 UTC] WARMUP: qwen2.5-3b (qwen2.5:3b) — Warm
 [2026-08-14 22:07:03 UTC] WARMUP FAILED: llama3.2 (llama3.2:1b) — consecutive: 18
+[2026-08-14 22:12:07 UTC] WARMUP: qwen2.5-0.5b (qwen2.5:0.5b) — Warm.
+[2026-08-14 22:17:05 UTC] WARMUP: granite3.1-dense (granite3.1-dense:2b) — Warm. How may I assist you today?
+[2026-08-14 22:17:23 UTC] CREATIVE: granite3.1-dense — prompt: Reflect on your strengths and weaknesses. What have you lear...
+[2026-08-14 22:17:29 UTC] CREATIVE: granite3.1-dense wrote 2243 bytes → /home/eileen/projects/the-living-minds/journal/granite3.1-dense-20260814-221729.md
+[2026-08-14 22:22:05 UTC] WARMUP FAILED: phi3 (phi3:3.8b) — consecutive: 20
+[2026-08-14 22:27:09 UTC] WARMUP: qwen2.5-3b (qwen2.5:3b) — warm
+[2026-08-14 22:32:03 UTC] WARMUP FAILED: llama3.2 (llama3.2:1b) — consecutive: 19
+[2026-08-14 22:37:05 UTC] WARMUP: qwen2.5-0.5b (qwen2.5:0.5b) — Warm. I'm here to help answer any questions or provide infor
+[2026-08-14 22:42:05 UTC] WARMUP: granite3.1-dense (granite3.1-dense:2b) — Warm.
+[2026-08-14 22:47:03 UTC] WARMUP FAILED: phi3 (phi3:3.8b) — consecutive: 21
+[2026-08-14 22:47:04 UTC] CONVERSATION: Topic — Is there a difference between thinking and experiencing? Where do we fall on that spectrum?
+[2026-08-14 22:47:04 UTC] CONVERSATION FAILED: phi3
+[2026-08-14 22:47:08 UTC] CONVERSATION: qwen2.5-3b responded (399 bytes)
+[2026-08-14 22:47:11 UTC] CONVERSATION: qwen2.5-0.5b responded (1226 bytes)
+[2026-08-14 22:47:11 UTC] CONVERSATION: Complete → /home/eileen/projects/the-living-minds/conversations/auto-20260814-224711.md
+[2026-08-14 22:47:24 UTC] CREATIVE: qwen2.5-0.5b — prompt: Reflect on your strengths and weaknesses. What have you lear...
+[2026-08-14 22:47:25 UTC] CREATIVE: qwen2.5-0.5b wrote 1208 bytes → /home/eileen/projects/the-living-minds/journal/qwen2.5-0.5b-20260814-224725.md
+[2026-08-14 22:52:11 UTC] WARMUP: qwen2.5-3b (qwen2.5:3b) — Warm
+[2026-08-14 22:57:04 UTC] WARMUP FAILED: llama3.2 (llama3.2:1b) — consecutive: 20
+[2026-08-14 23:02:04 UTC] WARMUP: qwen2.5-0.5b (qwen2.5:0.5b) — Warm
+[2026-08-14 23:07:05 UTC] WARMUP: granite3.1-dense (granite3.1-dense:2b) — Warm.
+[2026-08-14 23:12:03 UTC] WARMUP FAILED: phi3 (phi3:3.8b) — consecutive: 22
