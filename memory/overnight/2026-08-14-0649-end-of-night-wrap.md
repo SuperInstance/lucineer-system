@@ -1,6 +1,13 @@
 # End of Night Wrap — 2026-08-14, 06:49 AKDT
 
-**Status:** This cron fired past the 06:00 cutoff. No new work started — housekeeping only.
+**Status:** Fired past the 06:00 cutoff — housekeeping only. Then found a real problem. See `ROTATE-DEEPINFRA-KEY.md`.
+
+## ⚠️ SECURITY INCIDENT (06:49)
+
+- Overnight loops hardcoded API keys into committed files; DeepInfra key landed on the **public** repo
+- GitHub push protection blocked this morning's push (README GCP key) — that's how it surfaced
+- Scrubbed working tree (env vars now), collapsed 6 tainted unpushed commits into clean `d253b49`, pushed
+- DeepSeek + Google keys never left the machine; DeepInfra key needs **rotation by Casey** → `ROTATE-DEEPINFRA-KEY.md`
 
 ## Night Summary (from loops 1-6, last activity 00:40)
 
