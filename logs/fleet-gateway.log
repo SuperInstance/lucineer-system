@@ -59,3 +59,9 @@
 [2m2026-08-13T22:27:13.526937Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mdeepinfra [3mlatency_ms[0m[2m=[0m43487
 [2m2026-08-13T22:27:13.537665Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mdeepinfra [3mlatency_ms[0m[2m=[0m46491
 [2m2026-08-13T22:32:29.953877Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m4
+[2m2026-08-13T23:45:31.836933Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mdeepinfra [3mlatency_ms[0m[2m=[0m622
+[2m2026-08-13T23:45:31.847465Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mdeepinfra [3mlatency_ms[0m[2m=[0m624
+[2m2026-08-13T23:46:44.568767Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mdeepinfra [3mlatency_ms[0m[2m=[0m73357
+[2m2026-08-13T23:47:09.250846Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mdeepinfra [3mlatency_ms[0m[2m=[0m98043
+[2m2026-08-13T23:50:55.621652Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mdeepinfra [3mlatency_ms[0m[2m=[0m77069
+[2m2026-08-13T23:52:39.146038Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mdeepinfra [3mlatency_ms[0m[2m=[0m103164
