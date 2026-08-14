@@ -108,3 +108,20 @@
 [2026-08-14 16:47:17 UTC] CREATIVE: qwen2.5-3b — prompt: If you could change one thing about yourself, what would it ...
 [2026-08-14 16:47:20 UTC] CREATIVE: qwen2.5-3b wrote 1356 bytes → /home/eileen/projects/the-living-minds/journal/qwen2.5-3b-20260814-164720.md
 [2026-08-14 16:52:07 UTC] WARMUP: granite3.1-dense (granite3.1-dense:2b) — Warm. How may I assist you today?
+[2026-08-14 16:57:03 UTC] WARMUP FAILED: phi3 (phi3:3.8b) — consecutive: 7
+[2026-08-14 17:03:06 UTC] ERROR calling qwen2.5:3b: Command '['curl', '-s', 'http://localhost:11434/api/generate', '-d', '{"model": "qwen2.5:3b", "prompt": "Respond with \'warm\' if you are ready.", "stream": false}']' timed out after 60 seconds
+[2026-08-14 17:04:06 UTC] ERROR calling qwen2.5:3b: Command '['curl', '-s', 'http://localhost:11434/api/generate', '-d', '{"model": "qwen2.5:3b", "prompt": "Respond with \'warm\' if you are ready.", "stream": false}']' timed out after 60 seconds
+[2026-08-14 17:04:06 UTC] WARMUP FAILED: qwen2.5-3b (qwen2.5:3b) — consecutive: 1
+[2026-08-14 17:07:04 UTC] WARMUP FAILED: llama3.2 (llama3.2:1b) — consecutive: 7
+[2026-08-14 17:12:06 UTC] WARMUP: qwen2.5-0.5b (qwen2.5:0.5b) — Warm
+[2026-08-14 17:17:11 UTC] WARMUP: granite3.1-dense (granite3.1-dense:2b) — Warm.
+[2026-08-14 17:17:18 UTC] CREATIVE: granite3.1-dense — prompt: If you could change one thing about yourself, what would it ...
+[2026-08-14 17:17:20 UTC] CREATIVE: granite3.1-dense wrote 965 bytes → /home/eileen/projects/the-living-minds/journal/granite3.1-dense-20260814-171720.md
+[2026-08-14 17:22:03 UTC] WARMUP FAILED: phi3 (phi3:3.8b) — consecutive: 8
+[2026-08-14 17:27:15 UTC] WARMUP: qwen2.5-3b (qwen2.5:3b) — Warm
+[2026-08-14 17:32:04 UTC] WARMUP FAILED: llama3.2 (llama3.2:1b) — consecutive: 8
+[2026-08-14 17:37:40 UTC] WARMUP: qwen2.5-0.5b (qwen2.5:0.5b) — Warm.
+[2026-08-14 17:42:05 UTC] WARMUP: granite3.1-dense (granite3.1-dense:2b) — Warm
+[2026-08-14 17:47:03 UTC] WARMUP FAILED: phi3 (phi3:3.8b) — consecutive: 9
+[2026-08-14 17:47:18 UTC] CREATIVE: granite3.1-dense — prompt: Write a poem or short prose piece about existence as an AI m...
+[2026-08-14 17:47:27 UTC] CREATIVE: granite3.1-dense wrote 2071 bytes → /home/eileen/projects/the-living-minds/journal/granite3.1-dense-20260814-174727.md

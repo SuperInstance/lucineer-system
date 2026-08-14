@@ -1,5 +1,12 @@
 # Lucineer — Queued Work
 
+## PRIORITY 0: Bound the overnight-creative cron (2-minute config fix)
+The 🌙 Overnight Creative Loop job (`af024d15`) is `every 1h` — fires all day,
+every day, though its prompt says "until 06:00 AKDT." It has now fired 4x past
+cutoff (06:49, 07:49, 08:49, 09:49), each reduced to housekeeping.
+**Fix via gateway config tooling** (not hand-edited sqlite — unsafe while gateway
+runs): convert `every 1h` → cron `0 22-5 * * *` in `America/Anchorage`.
+
 ## PRIORITY 1: Integration Architect (RE-DISPATCH NEEDED)
 Original agent timed out. Need fresh dispatch when subagent slot opens.
 Reads: CHISEL_PATTERN_DESIGN, BRIDGE_PROTOCOL_DESIGN, PERSISTENCE_LAYER_DESIGN, PLAYER_GAMIFICATION, AGENT_GAMIFICATION, SWARM_INTELLIGENCE_ARCHITECTURE
