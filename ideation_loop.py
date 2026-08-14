@@ -17,7 +17,8 @@ import json, os, sys, subprocess, time
 from pathlib import Path
 from datetime import datetime
 
-DEEPINFRA_KEY = open("/home/eileen/mcp-deeinfra/.env").read().split("DEEPINFRA_API_KEY=")[1].split("\n")[0].strip().strip('"').strip("'")
+from loadkey import get_key
+DEEPINFRA_KEY = get_key()
 MMX = os.path.expanduser("~/.npm-global/bin/mmx")
 OUTPUT_DIR = Path("/home/eileen/projects/lucineer-system/ideation")
 OUTPUT_DIR.mkdir(exist_ok=True)

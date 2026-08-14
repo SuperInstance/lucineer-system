@@ -10,7 +10,8 @@ Generates concrete creative assets for Lucineer:
 import json, os, sys, subprocess, time, urllib.request
 from pathlib import Path
 
-DEEPINFRA_KEY = Path("/home/eileen/mcp-deeinfra/.env").read_text().split("DEEPINFRA_API_KEY=")[1].split("\n")[0].strip().strip('"').strip("'")
+from loadkey import get_key
+DEEPINFRA_KEY = get_key()
 MMX = os.path.expanduser("~/.npm-global/bin/mmx")
 OUT = Path("/home/eileen/projects/lucineer-system/assets")
 OUT.mkdir(exist_ok=True)

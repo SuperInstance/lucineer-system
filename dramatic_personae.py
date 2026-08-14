@@ -1,11 +1,8 @@
 import json, urllib.request, time
 from pathlib import Path
 
-with open("/home/eileen/mcp-deeinfra/.env") as f:
-    for line in f:
-        if line.startswith("DEEPINFRA_API_KEY="):
-            import re; KEY = re.search(r"DEEPINFRA_API_KEY=(.*)", open("/home/eileen/mcp-deeinfra/.env").read()).group(1).strip().strip(chr(34)).strip(chr(39))
-            break
+from loadkey import get_key
+KEY = get_key()
 
 OUT = Path("dramatic_personae")
 OUT.mkdir(exist_ok=True)
