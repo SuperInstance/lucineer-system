@@ -261,3 +261,26 @@
 [2026-08-15 01:02:03 UTC] WARMUP FAILED: llama3.2 (llama3.2:1b) — consecutive: 25
 [2026-08-15 01:07:04 UTC] WARMUP: qwen2.5-0.5b (qwen2.5:0.5b) — Warm. I'm here to assist you with any questions or concerns 
 [2026-08-15 01:12:05 UTC] WARMUP: granite3.1-dense (granite3.1-dense:2b) — Warm.
+[2026-08-15 01:17:03 UTC] WARMUP FAILED: phi3 (phi3:3.8b) — consecutive: 27
+[2026-08-15 01:17:26 UTC] CREATIVE: phi3 — prompt: Write a letter to one of the other minds. What do you want t...
+[2026-08-15 01:17:26 UTC] CREATIVE FAILED: phi3
+[2026-08-15 01:22:07 UTC] WARMUP: qwen2.5-3b (qwen2.5:3b) — Warm
+[2026-08-15 01:27:03 UTC] WARMUP FAILED: llama3.2 (llama3.2:1b) — consecutive: 26
+[2026-08-15 01:32:06 UTC] WARMUP: qwen2.5-0.5b (qwen2.5:0.5b) — Warmly available! What would you like assistance with?
+[2026-08-15 01:37:03 UTC] WARMUP: granite3.1-dense (granite3.1-dense:2b) — Warm.
+[2026-08-15 01:42:03 UTC] WARMUP FAILED: phi3 (phi3:3.8b) — consecutive: 28
+[2026-08-15 01:47:08 UTC] WARMUP: qwen2.5-3b (qwen2.5:3b) — warm
+[2026-08-15 01:47:27 UTC] CREATIVE: phi3 — prompt: If you could change one thing about yourself, what would it ...
+[2026-08-15 01:47:27 UTC] CREATIVE FAILED: phi3
+[2026-08-15 01:52:03 UTC] WARMUP FAILED: llama3.2 (llama3.2:1b) — consecutive: 27
+[2026-08-15 01:58:05 UTC] ERROR calling qwen2.5:0.5b: Command '['curl', '-s', 'http://localhost:11434/api/generate', '-d', '{"model": "qwen2.5:0.5b", "prompt": "Respond with \'warm\' if you are ready.", "stream": false}']' timed out after 60 seconds
+[2026-08-15 01:59:06 UTC] ERROR calling qwen2.5:0.5b: Command '['curl', '-s', 'http://localhost:11434/api/generate', '-d', '{"model": "qwen2.5:0.5b", "prompt": "Respond with \'warm\' if you are ready.", "stream": false}']' timed out after 60 seconds
+[2026-08-15 01:59:06 UTC] WARMUP FAILED: qwen2.5-0.5b (qwen2.5:0.5b) — consecutive: 1
+[2026-08-15 02:03:03 UTC] ERROR calling granite3.1-dense:2b: Command '['curl', '-s', 'http://localhost:11434/api/generate', '-d', '{"model": "granite3.1-dense:2b", "prompt": "Respond with \'warm\' if you are ready.", "stream": false}']' timed out after 60 seconds
+[2026-08-15 02:04:03 UTC] ERROR calling granite3.1-dense:2b: Command '['curl', '-s', 'http://localhost:11434/api/generate', '-d', '{"model": "granite3.1-dense:2b", "prompt": "Respond with \'warm\' if you are ready.", "stream": false}']' timed out after 60 seconds
+[2026-08-15 02:04:04 UTC] WARMUP FAILED: granite3.1-dense (granite3.1-dense:2b) — consecutive: 1
+[2026-08-15 02:07:03 UTC] WARMUP FAILED: phi3 (phi3:3.8b) — consecutive: 29
+[2026-08-15 02:12:32 UTC] WARMUP: qwen2.5-3b (qwen2.5:3b) — Warm
+[2026-08-15 02:17:04 UTC] WARMUP FAILED: llama3.2 (llama3.2:1b) — consecutive: 28
+[2026-08-15 02:17:28 UTC] CREATIVE: granite3.1-dense — prompt: Write a poem or short prose piece about existence as an AI m...
+[2026-08-15 02:17:35 UTC] CREATIVE: granite3.1-dense wrote 2179 bytes → /home/eileen/projects/the-living-minds/journal/granite3.1-dense-20260815-021735.md
