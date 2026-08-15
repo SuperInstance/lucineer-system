@@ -1,0 +1,22 @@
+{
+  "prompt": "a small red rowboat on calm water, simple test render",
+  "negative_prompt": "",
+  "model": "dreamshaper_8",
+  "steps": 10,
+  "guidance": 7.5,
+  "seed": 3355991252,
+  "width": 512,
+  "height": 512,
+  "scheduler": "dpm++",
+  "loras": [],
+  "init_image": null,
+  "strength": 0.6,
+  "timing": {
+    "load": 63.1,
+    "generate": 37.1,
+    "save": 0.4,
+    "total": 100.6
+  },
+  "timestamp": "2026-08-14 19:51:27",
+  "filename": "1786765594-7f6708.png"
+}

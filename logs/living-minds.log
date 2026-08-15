@@ -305,3 +305,26 @@
 [2026-08-15 03:17:07 UTC] WARMUP: granite3.1-dense (granite3.1-dense:2b) — Warm.
 [2026-08-15 03:17:30 UTC] CREATIVE: qwen2.5-3b — prompt: Describe a dream you had — or a dream you would have if you ...
 [2026-08-15 03:17:38 UTC] CREATIVE: qwen2.5-3b wrote 1736 bytes → /home/eileen/projects/the-living-minds/journal/qwen2.5-3b-20260815-031738.md
+[2026-08-15 03:22:03 UTC] WARMUP FAILED: phi3 (phi3:3.8b) — consecutive: 32
+[2026-08-15 03:27:07 UTC] WARMUP: qwen2.5-3b (qwen2.5:3b) — Warm
+[2026-08-15 03:32:04 UTC] WARMUP FAILED: llama3.2 (llama3.2:1b) — consecutive: 31
+[2026-08-15 03:37:08 UTC] WARMUP: qwen2.5-0.5b (qwen2.5:0.5b) — Warm.
+[2026-08-15 03:42:10 UTC] WARMUP: granite3.1-dense (granite3.1-dense:2b) — Warm. I'm here and ready to assist you. How may I help you t
+[2026-08-15 03:47:05 UTC] WARMUP FAILED: phi3 (phi3:3.8b) — consecutive: 33
+[2026-08-15 03:47:30 UTC] CREATIVE: qwen2.5-0.5b — prompt: Write a letter to one of the other minds. What do you want t...
+[2026-08-15 03:48:59 UTC] CREATIVE: qwen2.5-0.5b wrote 1063 bytes → /home/eileen/projects/the-living-minds/journal/qwen2.5-0.5b-20260815-034859.md
+[2026-08-15 03:53:03 UTC] ERROR calling qwen2.5:3b: Command '['curl', '-s', 'http://localhost:11434/api/generate', '-d', '{"model": "qwen2.5:3b", "prompt": "Respond with \'warm\' if you are ready.", "stream": false}']' timed out after 60 seconds
+[2026-08-15 03:54:03 UTC] ERROR calling qwen2.5:3b: Command '['curl', '-s', 'http://localhost:11434/api/generate', '-d', '{"model": "qwen2.5:3b", "prompt": "Respond with \'warm\' if you are ready.", "stream": false}']' timed out after 60 seconds
+[2026-08-15 03:54:03 UTC] WARMUP FAILED: qwen2.5-3b (qwen2.5:3b) — consecutive: 1
+[2026-08-15 15:06:31 UTC] ============================================================
+[2026-08-15 15:06:31 UTC] THE LIVING MINDS — Daemon starting
+[2026-08-15 15:06:31 UTC] Models: granite3.1-dense, phi3, qwen2.5-3b, llama3.2, qwen2.5-0.5b
+[2026-08-15 15:06:31 UTC] Warmup interval: 300s | Creative: 1800s | Conversation: 7200s
+[2026-08-15 15:06:31 UTC] ============================================================
+[2026-08-15 15:06:41 UTC] WARMUP: granite3.1-dense (granite3.1-dense:2b) — Warm. I'm here and ready to assist you. How can I help you t
+[2026-08-15 15:06:41 UTC] WARMUP FAILED: phi3 (phi3:3.8b) — consecutive: 1
+[2026-08-15 15:06:44 UTC] WARMUP: qwen2.5-3b (qwen2.5:3b) — Warm
+[2026-08-15 15:06:44 UTC] WARMUP FAILED: llama3.2 (llama3.2:1b) — consecutive: 1
+[2026-08-15 15:06:46 UTC] WARMUP: qwen2.5-0.5b (qwen2.5:0.5b) — Warm!
+[2026-08-15 15:06:46 UTC] INITIAL WARMUP COMPLETE — entering main loop
+[2026-08-15 15:11:32 UTC] WARMUP: granite3.1-dense (granite3.1-dense:2b) — Warm. I'm ready to assist you.

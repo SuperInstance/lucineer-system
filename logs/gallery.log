@@ -10,3 +10,9 @@
    120 images | 21 models | 16 LoRAs
    Artist chat: 6 models available
    DeepSeek API: ✅ | DeepInfra API: ✅
+[Worker] Local: model=dreamshaper_8, steps=10, img2img=no
+[Worker] Exception: Command '['python3', '/home/eileen/.openclaw/workspace/scripts/generate_img2img.py', '--json-input', '/home/eileen/.openclaw/workspace/output/images/gallery/1786765594-7f6708.params.json']' timed out after 300 seconds
+🎨 Studio v5 at http://localhost:5555
+   121 images | 21 models | 16 LoRAs
+   Artist chat: 6 models available
+   DeepSeek API: ✅ | DeepInfra API: ✅

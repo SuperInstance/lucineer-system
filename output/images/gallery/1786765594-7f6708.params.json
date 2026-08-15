@@ -1,0 +1,1 @@
+{"prompt": "a small red rowboat on calm water, simple test render", "negative_prompt": "", "model": "dreamshaper_8", "steps": 10, "guidance": 7.5, "width": 512, "height": 512, "loras": [], "output": "/home/eileen/.openclaw/workspace/output/images/gallery/1786765594-7f6708.png"}

@@ -6,8 +6,29 @@ Same as generate_image_v2.py but handles init_image + strength.
 import argparse, os, sys, time, json, torch
 from PIL import Image
 
+# Ext4 mirror first (fast local I/O), /mnt/c fallback — fleet rule: heavy model loads never cross the Windows mount
+LOCAL_CHECKPOINT_DIR = os.path.expanduser("~/models/checkpoints")
+LOCAL_LORA_DIR = os.path.expanduser("~/models/loras")
 CHECKPOINT_DIR = "/mnt/c/Users/casey/Documents/ComfyUI/models/checkpoints"
 LORA_DIR = "/mnt/c/Users/casey/Documents/ComfyUI/models/loras"
+
+def _find_checkpoint(model_name):
+    """Prefer the ext4 mirror; fall back to the Windows mount."""
+    for base in (LOCAL_CHECKPOINT_DIR, CHECKPOINT_DIR):
+        for ext in ('.safetensors', '.ckpt'):
+            cand = os.path.join(base, model_name + ext)
+            if os.path.exists(cand):
+                return cand
+    return None
+
+def _find_lora(lora_name):
+    for base in (LOCAL_LORA_DIR, LORA_DIR):
+        for ext in ('.safetensors', '.ckpt'):
+            cand = os.path.join(base, lora_name + ext)
+            if os.path.exists(cand):
+                return cand
+    return None
+
 OUTPUT_DIR = os.path.expanduser("~/.openclaw/workspace/output/images/gallery")
 
 def list_models():
@@ -24,12 +45,7 @@ def generate(prompt, negative_prompt="", model_name="dreamshaper_8",
     
     from diffusers import StableDiffusionPipeline, StableDiffusionImg2ImgPipeline, DPMSolverMultistepScheduler
     
-    ckpt_path = None
-    for ext in ['.safetensors', '.ckpt']:
-        candidate = os.path.join(CHECKPOINT_DIR, model_name + ext)
-        if os.path.exists(candidate):
-            ckpt_path = candidate
-            break
+    ckpt_path = _find_checkpoint(model_name)
     if not ckpt_path:
         print(f"Model '{model_name}' not found. Available: {', '.join(list_models())}", file=sys.stderr)
         sys.exit(1)
@@ -53,12 +69,7 @@ def generate(prompt, negative_prompt="", model_name="dreamshaper_8",
     loaded_loras = []
     if loras:
         for lora_name, weight in loras:
-            lora_path = None
-            for ext in ['.safetensors', '.ckpt']:
-                candidate = os.path.join(LORA_DIR, lora_name + ext)
-                if os.path.exists(candidate):
-                    lora_path = candidate
-                    break
+            lora_path = _find_lora(lora_name)
             if lora_path:
                 try:
                     pipe.load_lora_weights(lora_path)

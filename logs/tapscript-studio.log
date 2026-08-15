@@ -29726,3 +29726,7 @@ OSError: [Errno 98] Address already in use
    DeepSeek key: ✅ Found
    Output dir: /home/eileen/.openclaw/workspace/output/audio
    → http://localhost:5557
+🎵 TapScript v2 Studio starting on port 5557
+   DeepSeek key: ✅ Found
+   Output dir: /home/eileen/.openclaw/workspace/output/audio
+   → http://localhost:5557
