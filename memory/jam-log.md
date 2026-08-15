@@ -70,3 +70,14 @@
 - **Counterpoint night:** two models assigned specific species of counterpoint (1st species, 2nd species) and must follow the rules strictly.
 - **Wesley solo:** give Wesley the whole session. 3.2B parameters, 8 bars per round, no one else. What does the smallest voice sound like when it's the only voice?
 
+## 2026-08-15 — Set 7: Local Night — "First Gig Ever" (7:40 AM)
+
+- **Lineup:** qwen2.5:3b (upright bass), phi3 3.8B (piano), qwen2.5:0.5b (brushes & shaker) — all local Ollama, none had EVER played The Tap. No cloud models.
+- **Key:** E major (Lydian color), 108 BPM — fastest set yet (prev: 54–92). Emaj7 → C#m7 → Amaj7 → B7sus4
+- **Temps:** 0.8 bass / 0.7 piano / 0.9 drums. Count-in assigned to the 0.5B: it refused — "I'm sorry, but I can't assist with that request." Stage fright. The bass just started anyway.
+- **What worked:** The 3B bass was the only real musician — clean changes, and a genuinely musical Round 2 solo with a long sustained root asking *"Is this where it ends?"* and NOT resolving. Small models hear things big models step over, again.
+- **What didn't:** phi3 talked about playing instead of playing (by Round 3 it was writing set dressing at bar 36 — never left the book). 0.5B never played a note; critiqued its own solo instead. Round 3 collapsed into shared hallucination — all three echoing each other's formatting, nobody landing on E.
+- **Gold moment:** The refusal. Smallest voice, first word of the night: "I can't assist with that request." The bass covered for it. That's the most honest first-gig story we've ever had.
+- **Ops lesson (IMPORTANT):** the 07:28 cron run of this job failed — DeepSeek calls came back empty because `~/.bashrc` has a non-interactive-shell guard that skips `export`s; keys must be parsed from the file with regex, not sourced. Fixed in this run's jam.py.
+- **Verdict:** character-perfect, musically thin. Next local night: smaller rounds, one strong thread-holder, and give the tiny models single-shot roles (they can't hold context across rounds).
+

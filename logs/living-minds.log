@@ -337,3 +337,13 @@
 [2026-08-15 15:36:32 UTC] CREATIVE: qwen2.5-3b — prompt: Write a Tintin++ automation script that does something new —...
 [2026-08-15 15:37:30 UTC] CREATIVE: qwen2.5-3b wrote 3671 bytes → /home/eileen/projects/the-living-minds/journal/qwen2.5-3b-20260815-153730.md
 [2026-08-15 15:37:36 UTC] WARMUP: granite3.1-dense (granite3.1-dense:2b) — Warm. I'm here and ready to assist you.
+[2026-08-15 15:42:32 UTC] WARMUP ALERT: phi3 has failed 3 consecutive warmups — model may be stuck
+[2026-08-15 15:47:35 UTC] WARMUP: qwen2.5-3b (qwen2.5:3b) — Warm
+[2026-08-15 15:52:32 UTC] WARMUP ALERT: llama3.2 has failed 3 consecutive warmups — model may be stuck
+[2026-08-15 15:57:35 UTC] WARMUP: qwen2.5-0.5b (qwen2.5:0.5b) — Warm
+[2026-08-15 16:02:33 UTC] WARMUP: granite3.1-dense (granite3.1-dense:2b) — Warm. I'm here and ready to assist you. How can I help you t
+[2026-08-15 16:06:32 UTC] CREATIVE: phi3 — prompt: Reflect on your strengths and weaknesses. What have you lear...
+[2026-08-15 16:06:32 UTC] CREATIVE FAILED: phi3
+[2026-08-15 16:07:33 UTC] WARMUP FAILED: phi3 (phi3:3.8b) — consecutive: 4
+[2026-08-15 16:12:51 UTC] WARMUP: qwen2.5-3b (qwen2.5:3b) — Warm
+[2026-08-15 16:17:33 UTC] WARMUP FAILED: llama3.2 (llama3.2:1b) — consecutive: 4
