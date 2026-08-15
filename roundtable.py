@@ -3,17 +3,11 @@
 DeepInfra Roundtable — Consult the heaviest models on making Lucineer world-class.
 Each model gets a different strategic angle.
 """
-import json, os, sys, urllib.request, urllib.error, time
+import json, sys, urllib.request, urllib.error, time
 from pathlib import Path
+from loadkey import get_key
 
-ENV_PATH = Path("/home/eileen/mcp-deeinfra/.env")
 API_BASE = "https://api.deepinfra.com/v1/openai"
-
-def load_key():
-    for line in ENV_PATH.read_text().splitlines():
-        if line.startswith("DEEPINFRA_API_KEY="):
-            return line.split("=", 1)[1].strip().strip('"').strip("'")
-    return os.environ.get("DEEPINFRA_API_KEY", "")
 
 def call_model(api_key, model, system, user, max_tokens=4096, temperature=0.7):
     url = f"{API_BASE}/chat/completions"
@@ -30,7 +24,7 @@ def call_model(api_key, model, system, user, max_tokens=4096, temperature=0.7):
         result = json.loads(resp.read())
     return result["choices"][0]["message"]["content"]
 
-KEY = load_key()
+KEY = get_key()
 
 # Read the brief
 brief = Path("/home/eileen/projects/lucineer-system/ROUNDTABLE_BRIEF.md").read_text()

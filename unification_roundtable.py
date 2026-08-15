@@ -1,11 +1,8 @@
 import json, urllib.request, time, subprocess
 from pathlib import Path
+from loadkey import get_key
 
-with open("/home/eileen/mcp-deeinfra/.env") as f:
-    for line in f:
-        if line.startswith("DEEPINFRA_API_KEY="):
-            KEY = line.split("=", 1)[1].strip().strip("'").strip("'")
-            break
+KEY = get_key()
 
 OUT = Path("unification_roundtable")
 OUT.mkdir(exist_ok=True)

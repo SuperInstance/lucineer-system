@@ -6,3 +6,7 @@ build/
 *.egg-info/
 __pycache__/
 .venv/
+
+# test artifacts
+.coverage
+htmlcov/

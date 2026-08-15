@@ -8,8 +8,9 @@ Round 4: Seed-mini re-expands with the constraints (creative within the possible
 """
 import json, os, sys, subprocess, time, urllib.request
 from pathlib import Path
+from loadkey import get_key
 
-KEY = open("/home/eileen/mcp-deeinfra/.env").read().split("DEEPINFRA_API_KEY=")[1].split("\n")[0].strip().strip('"').strip("'")
+KEY = get_key()
 OUT = Path("/home/eileen/projects/lucineer-system/nvidia_ideation")
 OUT.mkdir(exist_ok=True)
 
