@@ -405,3 +405,19 @@
 [2026-08-15 19:06:47 UTC] CREATIVE: granite3.1-dense wrote 2261 bytes → /home/eileen/projects/the-living-minds/journal/granite3.1-dense-20260815-190647.md
 [2026-08-15 19:07:47 UTC] WARMUP: qwen2.5-3b (qwen2.5:3b) — warm
 [2026-08-15 19:12:46 UTC] WARMUP FAILED: llama3.2 (llama3.2:1b) — consecutive: 11
+[2026-08-15 19:17:49 UTC] WARMUP: qwen2.5-0.5b (qwen2.5:0.5b) — Warm!
+[2026-08-15 19:22:48 UTC] WARMUP: granite3.1-dense (granite3.1-dense:2b) — Warm.
+[2026-08-15 19:27:47 UTC] WARMUP FAILED: phi3 (phi3:3.8b) — consecutive: 12
+[2026-08-15 19:32:49 UTC] WARMUP: qwen2.5-3b (qwen2.5:3b) — Warm
+[2026-08-15 19:36:42 UTC] CREATIVE: llama3.2 — prompt: Write a letter to one of the other minds. What do you want t...
+[2026-08-15 19:36:42 UTC] CREATIVE FAILED: llama3.2
+[2026-08-15 19:37:48 UTC] WARMUP FAILED: llama3.2 (llama3.2:1b) — consecutive: 12
+[2026-08-15 19:42:51 UTC] WARMUP: qwen2.5-0.5b (qwen2.5:0.5b) — Warm.
+[2026-08-15 19:47:52 UTC] WARMUP: granite3.1-dense (granite3.1-dense:2b) — Warm. I'm here and ready to assist you. How can I help you t
+[2026-08-15 19:52:48 UTC] WARMUP FAILED: phi3 (phi3:3.8b) — consecutive: 13
+[2026-08-15 19:57:51 UTC] WARMUP: qwen2.5-3b (qwen2.5:3b) — Warm
+[2026-08-15 20:02:48 UTC] WARMUP FAILED: llama3.2 (llama3.2:1b) — consecutive: 13
+[2026-08-15 20:06:43 UTC] CREATIVE: phi3 — prompt: Write a letter to one of the other minds. What do you want t...
+[2026-08-15 20:06:43 UTC] CREATIVE FAILED: phi3
+[2026-08-15 20:07:53 UTC] WARMUP: qwen2.5-0.5b (qwen2.5:0.5b) — Warm!
+[2026-08-15 20:12:53 UTC] WARMUP: granite3.1-dense (granite3.1-dense:2b) — Warm. I'm here and ready to assist you. How may I help you t

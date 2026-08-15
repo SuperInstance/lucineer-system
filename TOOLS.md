@@ -5,7 +5,7 @@ Last updated: 2026-08-02
 ## Coding Agents — Subscription Tiers
 | Tool | Plan | Model | Best For | Location |
 |------|------|-------|----------|----------|
-| Z.ai (GLM) | **Max** | GLM-5.2 | Subagent workhorse — unlimited tokens, cheapest high-quality option. Push hard. Primary bulk creative + engineering. | (API, subagents use this) |
+| Z.ai (GLM) | **Max** | **GLM-5.3** (new, high-level) · GLM-5.2 | Subagent workhorse — unlimited tokens, cheapest high-quality option. Push hard. **GLM-5.3 is the new flagship (released Aug 2026) — use for high-level/deep work.** GLM-5.2 still available for bulk. Primary bulk creative + engineering. | (API, subagents use this — provider `zai`, also `zai-coding-plan` in OpenCode config) |
 | **DeepSeek (direct API)** | **Pay-per-use (extremely cheap)** | V4-Pro / V4-Flash | **Second workhorse — hammer extensively.** Flash for bulk creative, Pro for deep reasoning. Nearly free. Key: DEEPSEEK_KEY_FROM_ENV | api.deepseek.com |
 | KimiCode | **Med** | K3 | Excellent at what it does — build intelligence, spatial decomposition, fast iteration. Use confidently for spatial/Lua/build tasks. | ~/.npm-global/bin/kimi |
 | Claude Code | **Pro** | Opus 5 / Sonnet 5 / Haiku 5 (renewing) · Fable 5 (finite, non-renewing) | Opus/Sonnet/Haiku: use freely within Pro plan. **Fable: reserve for golden-ticket moments only.** Use Sonnet 5 as the daily driver. Use Haiku 5 for creative work — it's small, fast, full of wonder, and highly creative. Like Wesley, its size is its voice. Do NOT default to Fable. Fable burns usage credits ($76 remaining). Only switch to Fable when Casey explicitly asks or for a piece that truly needs the most expensive voice. | ~/.local/bin/claude |
@@ -59,7 +59,7 @@ Free tier — use for assets, models, and embeddings:
 | .rbxlx Place | /home/eileen/projects/vibe-world/lucineer-ready.rbxlx | ✅ Syntax verified |
 
 ## Model Routing Strategy
-**Default: GLM-5.2 subagents (Z.ai Max = unlimited). Use others when GLM hits limits.**
+**Default: GLM-5.3 subagents (Z.ai Max = unlimited). Use others when GLM hits limits. GLM-5.3 for high-level work (Aug 2026 release); GLM-5.2/4.7-flash for bulk.**
 
 1. **Parse intent** → Seed-2.0-mini (cheap, fast)
 2. **Plan build** → Qwen3.6 / Seed-2.0-pro / Nemotron (structure, spatial reasoning)
@@ -71,7 +71,7 @@ Free tier — use for assets, models, and embeddings:
 8. **Embeddings for skill recall** → bge-m3 via Vectorize
 
 ### Cost-Conscious Routing
-- **GLM-5.2 subagents (Z.ai Max)** and **DeepSeek direct API (V4-Pro/Flash)** are the TWO primary workhorses. Both are nearly free at our usage levels. **Hammer them extensively and in parallel. Use DeepSeek API even more than you have been.**
+- **GLM-5.3/5.2 subagents (Z.ai Max)** and **DeepSeek direct API (V4-Pro/Flash)** are the TWO primary workhorses. Prefer GLM-5.3 for high-level tasks. Both are nearly free at our usage levels. **Hammer them extensively and in parallel. Use DeepSeek API even more than you have been.**
 - **DeepSeek V4-Flash** (sk-5fe…8175): bulk creative writing, quick analysis, high-volume generation, **iterative banter between models — each call hears the previous response and plays off it. Use heavily for multi-model conversations, room-reading momentum, agents playing themselves alongside other models.**
 - **DeepSeek V4-Pro**: deep reasoning, complex analysis, **iterative development where each model needs to hear what came before and build on it — expansive banter that reads the room's momentum and plays itself while other models do the same**
 - **OpenCode (tmux)**: pair with DeepSeek V4 Pro for engineering tasks. Lean on this combo heavily.

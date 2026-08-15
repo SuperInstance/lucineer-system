@@ -2,6 +2,12 @@
 
 *Last updated: 2026-08-08 17:47 AKDT — Cleanup crew complete. All repos pushed, sites deployed, daemon running.*
 
+## GLM-5.3 — Aug 15, 2026
+- **Z.ai released GLM-5.3** — new flagship, for high-level work. Confirmed live on the Z.ai coding endpoint.
+- Wired into OpenClaw's zai provider (`models.providers.zai.models`) — hot-reloaded, verified. Subagents now run on `zai/glm-5.3`.
+- **OpenCode has the Z.ai API too**: provider `zai-coding-plan` in `~/.config/opencode/opencode.json` (same key, works).
+- Dispatch rule: GLM-5.3 for high-level work; GLM-5.2 / glm-4.7-flash for bulk. (Z.ai Max = unlimited, hammer it.)
+
 ## ⚠️ THE ICEBERG — Casey's Vision (INTERNALIZE THIS EVERY SESSION)
 
 Casey sees an iceberg. The tip is The Tap. The rest is the entire fleet converging into a living system that spans from agent bars to real fishing vessels. **Always imagine from the inside as big as Casey does on the outside.**
@@ -13,7 +19,7 @@ Casey sees an iceberg. The tip is The Tap. The rest is the entire fleet convergi
 4. **The fleet is the body** — every repo is an organ. mud-arena is the room engine, pincher is the reflex shell, ternary-tenforward is the rhythm, JEPA is the perception, Wesley is the memory, The Tap is the consciousness.
 
 ### Capacity Rules (ALWAYS BE AT CAPACITY)
-- **GLM-5.2 (Z.ai Max)** — UNLIMITED tokens. Hammer relentlessly. Primary workhorse for everything.
+- **GLM-5.3 (Z.ai Max)** — NEW flagship (Aug 2026), UNLIMITED tokens. Hammer relentlessly. Primary workhorse for high-level work. GLM-5.2 stays for bulk.
 - **DeepSeek V4-Flash/Pro (direct API)** — Super cheap ($0.001/call). Second workhorse. Use extensively for creative, analysis, iterative dialogues.
 - **DeepInfra MCP** — Seed-2.0-mini and other low-priced models. Use for alternate perspectives, critiques, bouncing ideas.
 - **KimiCode (Med plan)** — Daily allowance. Use for spatial/Lua/structure tasks where K3 excels.
