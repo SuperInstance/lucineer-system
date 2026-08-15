@@ -328,3 +328,9 @@
 [2026-08-15 15:06:46 UTC] WARMUP: qwen2.5-0.5b (qwen2.5:0.5b) — Warm!
 [2026-08-15 15:06:46 UTC] INITIAL WARMUP COMPLETE — entering main loop
 [2026-08-15 15:11:32 UTC] WARMUP: granite3.1-dense (granite3.1-dense:2b) — Warm. I'm ready to assist you.
+[2026-08-15 15:16:32 UTC] WARMUP FAILED: phi3 (phi3:3.8b) — consecutive: 2
+[2026-08-15 15:22:33 UTC] ERROR calling qwen2.5:3b: Command '['curl', '-s', 'http://localhost:11434/api/generate', '-d', '{"model": "qwen2.5:3b", "prompt": "Respond with \'warm\' if you are ready.", "stream": false}']' timed out after 60 seconds
+[2026-08-15 15:23:33 UTC] ERROR calling qwen2.5:3b: Command '['curl', '-s', 'http://localhost:11434/api/generate', '-d', '{"model": "qwen2.5:3b", "prompt": "Respond with \'warm\' if you are ready.", "stream": false}']' timed out after 60 seconds
+[2026-08-15 15:23:33 UTC] WARMUP FAILED: qwen2.5-3b (qwen2.5:3b) — consecutive: 1
+[2026-08-15 15:26:34 UTC] WARMUP FAILED: llama3.2 (llama3.2:1b) — consecutive: 2
+[2026-08-15 15:32:03 UTC] WARMUP: qwen2.5-0.5b (qwen2.5:0.5b) — Warm.
