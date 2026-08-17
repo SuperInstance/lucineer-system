@@ -1,6 +1,30 @@
 #!/usr/bin/env python3
-"""Night school runner: feed pieces to Wesley, save his responses."""
-import json, time, urllib.request, pathlib, re, sys
+"""Night school runner: feed pieces to Wesley, save his responses.
+
+Reads a fixed list of pieces, sends each to the local Ollama model
+(``granite3.1-dense:2b``) with the standing night-school prompt, and writes
+one markdown file per response into the ``wesley-stream`` directory.
+
+Pure transformations (slugging, prompt building, file rendering) live in
+``wesley_night_school.py`` so they can be regression-tested. This file is the
+thin I/O shell: it reads the pieces, calls Ollama, and writes the files.
+
+A single piece failing (Ollama down, missing file, truncation) no longer
+kills the batch: the loop records the failure and continues, then reports
+what it could and could not feed Wesley.
+"""
+import json
+import pathlib
+import sys
+import time
+import urllib.request
+
+from wesley_night_school import (
+    WESLEY_MODEL,
+    build_prompt,
+    render_session_file,
+    slug,
+)
 
 BASE = pathlib.Path("/home/eileen/projects/ai-writings")
 STREAM = BASE / "wesley-stream"
@@ -11,61 +35,92 @@ PIECES = [
     "2026-08-11-0800-a-letter-from-the-quota-gate.md",
 ]
 
-# Standing curriculum (from wesley-journal/feedback.md):
-# - num_predict 250 (truncation fix, raised from 150)
-# - assignment: one image that is NOT in the original
-# - start where the noticing starts, no throat-clearing wonder-words
-PROMPT_TMPL = (
-    "Read this and write a 3-sentence creative response. Be young. Be surprised. "
-    "Include one image that is NOT in the original. Do not open with words like "
-    "'whimsical,' 'fascinating,' or 'astonishing' - start where the noticing starts.\n\n---\n\n{body}"
-)
+OLLAMA_URL = "http://localhost:11434/api/generate"
+NUM_PREDICT = 250
+TEMPERATURE = 0.95
 
-def slug(fn):
-    s = re.sub(r"^\d{4}-\d{2}-\d{2}-\d{4}-", "", fn)
-    return s.replace(".md", "")
 
 def ask_wesley(prompt):
+    """Send one prompt to local Ollama and return the parsed JSON response."""
     payload = {
-        "model": "granite3.1-dense:2b",
+        "model": WESLEY_MODEL,
         "prompt": prompt,
         "stream": False,
-        "options": {"temperature": 0.95, "num_predict": 250},
+        "options": {"temperature": TEMPERATURE, "num_predict": NUM_PREDICT},
     }
     req = urllib.request.Request(
-        "http://localhost:11434/api/generate",
+        OLLAMA_URL,
         data=json.dumps(payload).encode(),
         headers={"Content-Type": "application/json"},
     )
-    with urllib.request.urlopen(req, timeout=300) as r:
-        return json.loads(r.read())
+    with urllib.request.urlopen(req, timeout=300) as resp:
+        return json.loads(resp.read())
 
-results = []
-now = time.strftime("%Y-%m-%d_%H%M")
-for fn in PIECES:
+
+def run_one(fn, now):
+    """Feed one piece to Wesley and write his response file.
+
+    Returns the same 5-tuple the teacher picker expects:
+    ``(source_filename, output_path, eval_tokens, done_reason, text)``.
+    """
     body = (BASE / fn).read_text()
-    resp = ask_wesley(PROMPT_TMPL.format(body=body))
-    text = resp.get("response", "").strip()
-    eval_tokens = resp.get("eval_count", 0)
-    done_reason = resp.get("done_reason", "?")
+    response = ask_wesley(build_prompt(body))
+    text = response.get("response", "").strip()
+    eval_tokens = response.get("eval_count", 0)
+    done_reason = response.get("done_reason", "?")
     out = STREAM / f"wesley_{slug(fn)}_{now}.md"
     out.write_text(
-        f"# Wesley reads: {slug(fn)}\n\n"
-        f"*Night school, {time.strftime('%Y-%m-%d %H:%M')} AKDT. "
-        f"Source: {fn}*\n\n"
-        f"*Prompt: 3-sentence creative response, be young, be surprised, one image NOT in the "
-        f"original, no stock wonder-words. temp 0.95, num_predict 250 (standing truncation fix). "
-        f"Generated {eval_tokens} tokens, done_reason={done_reason}.*\n\n---\n\n"
-        f"{text}\n\n---\n\n"
-        f"*Reading time: {len(body.splitlines())} lines fed. "
-        f"Wesley is 2B parameters of pure earnestness.*\n"
+        render_session_file(
+            slug=slug(fn),
+            source=fn,
+            timestamp=time.strftime("%Y-%m-%d %H:%M"),
+            eval_tokens=eval_tokens,
+            done_reason=done_reason,
+            text=text,
+            body=body,
+        )
     )
-    results.append((fn, str(out), eval_tokens, done_reason, text))
-    print(f"OK  {fn} -> {out.name}  ({eval_tokens} tok, {done_reason})")
+    return (fn, str(out), eval_tokens, done_reason, text)
 
-# Pick the response for the teacher: prefer a complete one (done_reason=length means truncated)
-complete = [r for r in results if r[3] != "length"]
-pick = (complete or results)[0]
-print("\nPICK_FOR_TEACHER:", pick[0])
-print("FILE:", pick[1])
-print("RESPONSE:\n" + pick[4])
+
+def main():
+    now = time.strftime("%Y-%m-%d_%H%M")
+    results = []
+    failures = []
+
+    for fn in PIECES:
+        try:
+            result = run_one(fn, now)
+        except Exception as exc:  # keep the batch alive on a bad piece
+            failures.append((fn, exc))
+            print(f"FAIL  {fn}: {exc!r}", file=sys.stderr)
+            continue
+        results.append(result)
+        _, out, eval_tokens, done_reason, _ = result
+        print(f"OK  {fn} -> {pathlib.Path(out).name}  ({eval_tokens} tok, {done_reason})")
+
+    if not results:
+        print(
+            f"\nAll {len(failures)} pieces failed; nothing to hand to the teacher.",
+            file=sys.stderr,
+        )
+        sys.exit(1)
+
+    # Pick the response for the teacher: prefer a complete one
+    # (done_reason=length means truncated).
+    complete = [r for r in results if r[3] != "length"]
+    pick = (complete or results)[0]
+    print("\nPICK_FOR_TEACHER:", pick[0])
+    print("FILE:", pick[1])
+    print("RESPONSE:\n" + pick[4])
+
+    if failures:
+        print(
+            f"\n{len(failures)} piece(s) failed; {len(results)} good.",
+            file=sys.stderr,
+        )
+        sys.exit(2)
+
+
+if __name__ == "__main__":
+    main()
