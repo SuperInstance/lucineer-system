@@ -13,29 +13,46 @@ CHECKPOINT_DIR = "/mnt/c/Users/casey/Documents/ComfyUI/models/checkpoints"
 LORA_DIR = "/mnt/c/Users/casey/Documents/ComfyUI/models/loras"
 
 def _find_checkpoint(model_name):
-    """Prefer the ext4 mirror; fall back to the Windows mount."""
+    """Prefer the ext4 mirror; fall back to the Windows mount.
+    Skips partial/corrupt artifacts (e.g. a mirror copy that died mid-transfer)."""
     for base in (LOCAL_CHECKPOINT_DIR, CHECKPOINT_DIR):
         for ext in ('.safetensors', '.ckpt'):
             cand = os.path.join(base, model_name + ext)
-            if os.path.exists(cand):
+            if os.path.exists(cand) and os.path.getsize(cand) >= MIN_CKPT_BYTES:
                 return cand
     return None
 
 def _find_lora(lora_name):
+    """Prefer the ext4 mirror; fall back to the Windows mount. Skips junk/partials."""
     for base in (LOCAL_LORA_DIR, LORA_DIR):
         for ext in ('.safetensors', '.ckpt'):
             cand = os.path.join(base, lora_name + ext)
-            if os.path.exists(cand):
+            if os.path.exists(cand) and os.path.getsize(cand) >= MIN_LORA_BYTES:
                 return cand
     return None
+
+# Real checkpoints here are >= 2.1 GB; real LoRAs >= 177 MB. Floors reject
+# dead-transfer artifacts (0-byte / 106-byte files) without ever filtering a real model.
+MIN_CKPT_BYTES = 1024 * 1024 * 1024  # 1 GB: smallest real checkpoint here is 2.1 GB
+MIN_LORA_BYTES = 1 * 1024 * 1024
 
 OUTPUT_DIR = os.path.expanduser("~/.openclaw/workspace/output/images/gallery")
 
 def list_models():
     models = []
-    if os.path.isdir(CHECKPOINT_DIR):
-        for f in sorted(os.listdir(CHECKPOINT_DIR)):
-            if f.endswith(('.safetensors', '.ckpt')): models.append(f.replace('.safetensors','').replace('.ckpt',''))
+    seen = set()
+    # ext4 mirror first, then the Windows mount — union of both
+    for base in (LOCAL_CHECKPOINT_DIR, CHECKPOINT_DIR):
+        if os.path.isdir(base):
+            for f in sorted(os.listdir(base)):
+                if f.endswith(('.safetensors', '.ckpt')):
+                    full = os.path.join(base, f)
+                    if os.path.getsize(full) < MIN_CKPT_BYTES:
+                        continue  # dead-transfer artifact, not a real model
+                    name = f.replace('.safetensors', '').replace('.ckpt', '')
+                    if name not in seen:
+                        seen.add(name)
+                        models.append(name)
     return models
 
 def generate(prompt, negative_prompt="", model_name="dreamshaper_8",

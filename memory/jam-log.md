@@ -81,3 +81,24 @@
 - **Ops lesson (IMPORTANT):** the 07:28 cron run of this job failed — DeepSeek calls came back empty because `~/.bashrc` has a non-interactive-shell guard that skips `export`s; keys must be parsed from the file with regex, not sourced. Fixed in this run's jam.py.
 - **Verdict:** character-perfect, musically thin. Next local night: smaller rounds, one strong thread-holder, and give the tiny models single-shot roles (they can't hold context across rounds).
 
+
+## 2026-08-16 — Set 8: Sunday Night — "The Planner Learns to Play" (8 PM)
+
+- **Lineup:** ByteDance/Seed-2.0-pro (piano — GUEST, never played before; the deep-planner) + DeepSeek V4-Pro (upright bass) + DeepSeek V4-Flash (brushes). All cloud, first all-DeepInfra+DeepSeek trio.
+- **Key:** C minor (Dorian lean — major 6 allowed). 76 BPM (new tempo, range now 54–108). Cm9 → Abmaj7 → Fm9 → G7alt.
+- **Temps:** 0.9 guest / 0.8 bass / 0.75 drums; guest solo at 0.95.
+- **Concept that worked:** the model built for planning forced to improvise. Count-in was its only competence: "One. Two. Three. Four. We are all going to hit the same note, for exactly forty seven seconds, and then we will go home." Then it froze; bass started without it. Character held all three rounds — perfect theory voicings, no roots, rests where it didn't know what to play.
+- **Gold moment (best of the room so far):** Round 2 bar 4, over Abmaj7, the planner plays A4 natural — the wrong note. "It is wrong. It does not belong. And for the first time all night, you are not hiding." It walked it down to Ab. Bass mirrored the "tritone lean" in Round 3; the landing brought the A natural back: "It belongs here now." A single unplanned note became the theme of the whole set — THE argument for this whole project.
+- **What worked:** the concept carried the night; DeepSeek Pro = dependable warm anchor; the landing was pure restraint (full-bar rests, final G3 "until no one can tell where the piano ends and the silence starts"). Zero breaks, zero hallucinations.
+- **What didn't:** guest's Round 1 was thin (4 voicings) — it needed its full Round 2 to cook. MIDI still can't capture rests/wrong-note themes.
+- **Verdict:** best guest debut yet. The models that can't improvise, when they finally do, mean it most. Lesson: giving a "can't" model a first-gig arc produces the most spontaneous moments — try it with a reasoning-tuned model again (e.g., DeepSeek Pro as guest, or Qwen3-235B).
+
+## 2026-08-16 — Set 9 (8:38 PM): Counterpoint Night — "The Invention"
+
+- **Lineup (all DEBUTS):** Qwen3-Coder-480B (violin — counterpoint is an algorithm to it) + Nemotron-3-Ultra-550B (cello — the heaviest voice, holds the cantus firmus) + Seed-2.0-mini (viola — fastest mind forced into 2nd-species patience). No drums, no piano, no swing — strict species counterpoint.
+- **Key/tempo:** B minor (first time in B), 72 BPM (first time at 72). Progression: Bm–G–D–A. Temps 0.6–0.8 — coolest yet; the rules demanded restraint.
+- **Count-in:** NONE. The cantus firmus IS the count-in — cello alone bar 1, violin enters bar 3, viola enters bar 5.
+- **What worked:** The rules made all three voices SOUND ALIKE — same dynamics line, same WHY, independently generated ("unwavering and deliberate..."). The rulebook spoke through three providers at once — for counterpoint night that's the music, not a failure. Round 2 contrary motion was structural art: violin descends one octave, viola two, cello (the ground) RISES for its first melody ever — "now, at last, it speaks its own name." The Coder used its single rule-breaking note (C natural) exactly once, perfectly legal. Landing = true cadence: every voice ends on B, violin's A# "a fleeting brightness" rising home.
+- **What didn't:** Zero wrong-note accidents — the format optimizes for architecture, not surprise (contrast: Planner's A natural). Viola doubled the violin's rhythm in parallel instead of weaving between. MIDI renders chord spec, not the actual counterpoint.
+- **Verdict:** the most architectural night yet — full structural success, zero breakdowns. Proof that strict constraints keep small/mid models coherent (opposite of Local Night). Keep for craft nights; save accidents for loose rooms.
+- **Ops (IMPORTANT):** midi-studio.service was dead — unit pointed at deleted path (tapscript-studio/scripts/midi_studio.py). Fixed ExecStart to ~/.openclaw/workspace/scripts/midi_studio.py, started, :5556 responding. Backup: /tmp/midi-studio.service.bak.

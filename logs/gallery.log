@@ -41,3 +41,102 @@ Traceback (most recent call last):
   File "/usr/lib/python3.14/json/decoder.py", line 363, in raw_decode
     raise JSONDecodeError("Expecting value", s, err.value) from None
 json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+🎨 Studio v5 at http://localhost:5555
+   121 images | 20 models | 13 LoRAs
+   Artist chat: 6 models available
+   DeepSeek API: ✅ | DeepInfra API: ✅
+🎨 Studio v5 at http://localhost:5555
+   121 images | 20 models | 13 LoRAs
+   Artist chat: 6 models available
+   DeepSeek API: ✅ | DeepInfra API: ✅
+🎨 Studio v5 at http://localhost:5555
+   121 images | 20 models | 13 LoRAs
+   Artist chat: 6 models available
+   DeepSeek API: ✅ | DeepInfra API: ✅
+🎨 Studio v5 at http://localhost:5555
+   121 images | 20 models | 13 LoRAs
+   Artist chat: 6 models available
+   DeepSeek API: ✅ | DeepInfra API: ✅
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+                                                                                                                                                                                                                                                                            /usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+                                                          /usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/eileen/projects/tapscript-studio/scripts/gallery_v5.py': [Errno 2] No such file or directory

@@ -1,11 +1,8 @@
 # Lucineer — Queued Work
 
-## PRIORITY 0: Bound the overnight-creative cron (2-minute config fix)
-The 🌙 Overnight Creative Loop job (`af024d15`) is `every 1h` — fires all day,
-every day, though its prompt says "until 06:00 AKDT." It has now fired 4x past
-cutoff (06:49, 07:49, 08:49, 09:49), each reduced to housekeeping.
-**Fix via gateway config tooling** (not hand-edited sqlite — unsafe while gateway
-runs): convert `every 1h` → cron `0 22-5 * * *` in `America/Anchorage`.
+## ✅ PRIORITY 0: DONE — Bound the overnight-creative cron
+Fixed 2026-08-16 via cron tool: `every 1h` → cron `0 22-23,0-5 * * *`
+America/Anchorage (fires hourly 22:00–05:59 only, matching the 06:00 cutoff).
 
 ## PRIORITY 1: Integration Architect (RE-DISPATCH NEEDED)
 Original agent timed out. Need fresh dispatch when subagent slot opens.
@@ -49,6 +46,7 @@ Covered in Priority 2 above.
 Casey's original Persistent Memory → full graphic novel adaptation with memorable lines in rapid succession with images instead of descriptions carrying spatial awareness.
 
 ## COMPLETED
+- ✅ **Song queue → Song Factory index (2026-08-16):** the 136→166-track Generation Day queue is RETIRED. All 53 prompt designs are documented as possible songs — folder index (`ai-writings/radio-theater/compass-head-radio-hour/song-factory/`) with README.md (brief description per song), render-ready `spec.md` + art-piece `story.md` per song, and a website page on the Compass Head site (luciddreamer.ai/compass-head/song-factory/). Songs render one at a time by choice, not in batches.
 - ✅ Polyformalism illustrated: 14 images across 7 cultural lenses (MMX)
 - ✅ Reverse-actualization illustrated: 20 images across 5 voices (FLUX-2-max)
 - ✅ Essays illustrated: 7 images so far (DeepInfra, still running)

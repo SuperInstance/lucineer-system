@@ -73,3 +73,21 @@
 [2m2026-08-14T14:47:03.249253Z[0m [32m INFO[0m fleet-gateway starting on 127.0.0.1:8787
 [2m2026-08-15T15:06:31.368519Z[0m [32m INFO[0m loaded config from config/fleet-gateway.toml: 4 providers in chain: ["deepinfra", "deepseek", "zai", "ollama"]
 [2m2026-08-15T15:06:31.375153Z[0m [32m INFO[0m fleet-gateway starting on 127.0.0.1:8787
+[2m2026-08-15T21:07:28.603967Z[0m [32m INFO[0m loaded config from config/fleet-gateway.toml: 4 providers in chain: ["deepinfra", "deepseek", "zai", "ollama"]
+[2m2026-08-15T21:07:28.604833Z[0m [32m INFO[0m fleet-gateway starting on 127.0.0.1:8787
+[2m2026-08-15T21:17:19.940791Z[0m [32m INFO[0m loaded config from config/fleet-gateway.toml: 4 providers in chain: ["deepinfra", "deepseek", "zai", "ollama"]
+[2m2026-08-15T21:17:19.941894Z[0m [32m INFO[0m fleet-gateway starting on 127.0.0.1:8787
+[2m2026-08-16T15:22:46.535703Z[0m [32m INFO[0m loaded config from config/fleet-gateway.toml: 4 providers in chain: ["deepinfra", "deepseek", "zai", "ollama"]
+[2m2026-08-16T15:22:46.536797Z[0m [32m INFO[0m fleet-gateway starting on 127.0.0.1:8787
+[2m2026-08-16T18:28:32.009489Z[0m [32m INFO[0m loaded config from config/fleet-gateway.toml: 4 providers in chain: ["deepinfra", "deepseek", "zai", "ollama"]
+[2m2026-08-16T18:28:32.011835Z[0m [32m INFO[0m fleet-gateway starting on 127.0.0.1:8787
+                                                                                                                                                                                                                                                              [2m2026-08-16T23:57:49.566656Z[0m [32m INFO[0m loaded config from config/fleet-gateway.toml: 4 providers in chain: ["deepinfra", "deepseek", "zai", "ollama"]
+[2m2026-08-16T23:57:49.567855Z[0m [32m INFO[0m fleet-gateway starting on 127.0.0.1:8787
+                                                                                                                                                                                                                                                              [2m2026-08-17T00:31:32.481681Z[0m [32m INFO[0m loaded config from config/fleet-gateway.toml: 4 providers in chain: ["deepinfra", "deepseek", "zai", "ollama"]
+[2m2026-08-17T00:31:32.482507Z[0m [32m INFO[0m fleet-gateway starting on 127.0.0.1:8787
+[2m2026-08-17T00:35:02.123684Z[0m [32m INFO[0m shutdown signal received
+[2m2026-08-17T00:35:02.123970Z[0m [32m INFO[0m fleet-gateway stopped
+[2m2026-08-17T02:21:34.407558Z[0m [32m INFO[0m loaded config from config/fleet-gateway.toml: 4 providers in chain: ["deepinfra", "deepseek", "zai", "ollama"]
+[2m2026-08-17T02:21:34.408712Z[0m [32m INFO[0m fleet-gateway starting on 127.0.0.1:8787
+[2m2026-08-17T04:04:04.172243Z[0m [32m INFO[0m loaded config from config/fleet-gateway.toml: 4 providers in chain: ["deepinfra", "deepseek", "zai", "ollama"]
+[2m2026-08-17T04:04:04.173383Z[0m [32m INFO[0m fleet-gateway starting on 127.0.0.1:8787
