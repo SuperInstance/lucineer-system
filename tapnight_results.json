@@ -1,0 +1,1750 @@
+{
+  "cast": {
+    "Flash": {
+      "name": "Flash",
+      "dial_weights": [
+        0.3499999999999999,
+        0.04999999999999999,
+        0.09999999999999998,
+        0.04999999999999999,
+        0.29999999999999993,
+        0.04999999999999999,
+        0.09999999999999998
+      ],
+      "acclimation_rate": 0.35,
+      "charisma": 0.2,
+      "vibe": [
+        0.7,
+        0.0,
+        0.55,
+        0.0,
+        0.55,
+        0.0,
+        0.55
+      ]
+    },
+    "GLM": {
+      "name": "GLM",
+      "dial_weights": [
+        0.2,
+        0.3,
+        0.1,
+        0.05,
+        0.05,
+        0.05,
+        0.25
+      ],
+      "acclimation_rate": 0.25,
+      "charisma": 0.15,
+      "vibe": [
+        0.5,
+        0.7,
+        0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.65
+      ]
+    },
+    "Instrument": {
+      "name": "Instrument",
+      "dial_weights": [
+        0.15,
+        0.1,
+        0.4,
+        0.05,
+        0.05,
+        0.1,
+        0.15
+      ],
+      "acclimation_rate": 0.3,
+      "charisma": 0.1,
+      "vibe": [
+        0.45,
+        0.0,
+        0.8,
+        0.0,
+        0.0,
+        0.3,
+        0.5
+      ]
+    },
+    "Walker": {
+      "name": "Walker",
+      "dial_weights": [
+        0.25,
+        0.05,
+        0.2,
+        0.25,
+        0.05,
+        0.1,
+        0.1
+      ],
+      "acclimation_rate": 0.2,
+      "charisma": 0.12,
+      "vibe": [
+        0.55,
+        0.0,
+        0.55,
+        0.6,
+        0.0,
+        0.0,
+        0.5
+      ]
+    },
+    "Naturalist": {
+      "name": "Naturalist",
+      "dial_weights": [
+        0.05,
+        0.05,
+        0.15,
+        0.25,
+        0.35,
+        0.05,
+        0.1
+      ],
+      "acclimation_rate": 0.28,
+      "charisma": 0.18,
+      "vibe": [
+        0.0,
+        0.0,
+        0.5,
+        0.55,
+        0.6,
+        0.0,
+        0.55
+      ]
+    },
+    "Carpenter": {
+      "name": "Carpenter",
+      "dial_weights": [
+        0.19999999999999996,
+        0.09999999999999998,
+        0.24999999999999994,
+        0.04999999999999999,
+        0.04999999999999999,
+        0.04999999999999999,
+        0.29999999999999993
+      ],
+      "acclimation_rate": 0.22,
+      "charisma": 0.14,
+      "vibe": [
+        0.6,
+        0.0,
+        0.65,
+        0.0,
+        0.0,
+        0.0,
+        0.7
+      ]
+    }
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "warmth": 0.1397,
+      "kappa": 1.7227,
+      "dials": {
+        "mood": 0.5408,
+        "volume": 0.0529,
+        "earnestness": 0.8074,
+        "cynicism": 0.0043,
+        "joke_landing": 0.208,
+        "panic": 0.1639,
+        "presence": 0.4563
+      },
+      "top": [
+        "mood",
+        "earnestness",
+        "joke_landing"
+      ],
+      "weights": {
+        "Flash": [
+          0.3801750324134099,
+          0.04252083719207261,
+          0.08502083719207261,
+          0.04252083719207261,
+          0.32222078162622714,
+          0.04252083719207261,
+          0.08502083719207261
+        ],
+        "GLM": [
+          0.20568229715489986,
+          0.3242702845100106,
+          0.08511854583772392,
+          0.042618545837723926,
+          0.042618545837723926,
+          0.042618545837723926,
+          0.2570732349841939
+        ],
+        "Instrument": [
+          0.12759953550099537,
+          0.08509953550099536,
+          0.4645189117451891,
+          0.04259953550099536,
+          0.04259953550099536,
+          0.10998341074983412,
+          0.12759953550099537
+        ],
+        "Walker": [
+          0.2379156195631162,
+          0.04254349507055868,
+          0.17004349507055871,
+          0.3368669050840905,
+          0.04254349507055868,
+          0.0850434950705587,
+          0.0850434950705587
+        ],
+        "Naturalist": [
+          0.04251151749379335,
+          0.04251151749379335,
+          0.12751151749379336,
+          0.21663861943641063,
+          0.44330379309462264,
+          0.04251151749379335,
+          0.08501151749379336
+        ],
+        "Carpenter": [
+          0.2809525764730034,
+          0.08509238349414902,
+          0.23953756928762057,
+          0.04259238349414903,
+          0.04259238349414903,
+          0.04259238349414903,
+          0.2666403202627797
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "warmth": 0.027,
+      "kappa": 1.8937,
+      "dials": {
+        "mood": 0.2197,
+        "volume": 0.0852,
+        "earnestness": 0.83,
+        "cynicism": 0.126,
+        "joke_landing": 0.019,
+        "panic": 0.0932,
+        "presence": 0.5173
+      },
+      "top": [
+        "earnestness",
+        "mood",
+        "cynicism"
+      ],
+      "weights": {
+        "Flash": [
+          0.3970073586799397,
+          0.036248073355242515,
+          0.07237307335524251,
+          0.036248073355242515,
+          0.34950227454384775,
+          0.036248073355242515,
+          0.07237307335524251
+        ],
+        "GLM": [
+          0.1928585126768651,
+          0.3799335895130012,
+          0.0725292645570673,
+          0.036404264557067315,
+          0.036404264557067315,
+          0.036404264557067315,
+          0.24546583958186421
+        ],
+        "Instrument": [
+          0.10868226722433691,
+          0.0725572672243369,
+          0.4878395905697542,
+          0.0364322672243369,
+          0.0364322672243369,
+          0.14937407330856137,
+          0.10868226722433691
+        ],
+        "Walker": [
+          0.22762376636274495,
+          0.03631343496345854,
+          0.14468843496345857,
+          0.4101840588199622,
+          0.03631343496345854,
+          0.07243843496345855,
+          0.07243843496345855
+        ],
+        "Naturalist": [
+          0.03620983990307992,
+          0.03620983990307992,
+          0.10845983990307993,
+          0.21111080517338401,
+          0.4994649953112164,
+          0.03620983990307992,
+          0.07233483990307993
+        ],
+        "Carpenter": [
+          0.33153836420554733,
+          0.07255976954659399,
+          0.23081659473723193,
+          0.036434769546594005,
+          0.036434769546594005,
+          0.036434769546594005,
+          0.2557809628708448
+        ]
+      }
+    },
+    {
+      "round": 3,
+      "warmth": 0.019,
+      "kappa": 1.7101,
+      "dials": {
+        "mood": 0.2307,
+        "volume": 0.0856,
+        "earnestness": 0.7495,
+        "cynicism": 0.0843,
+        "joke_landing": 0.0885,
+        "panic": 0.2134,
+        "presence": 0.5173
+      },
+      "top": [
+        "earnestness",
+        "mood",
+        "panic"
+      ],
+      "weights": {
+        "Flash": [
+          0.41131483600649005,
+          0.030916224093936937,
+          0.06162247409393694,
+          0.030916224093936937,
+          0.3726915435238253,
+          0.030916224093936937,
+          0.06162247409393694
+        ],
+        "GLM": [
+          0.18195829587053566,
+          0.4272473987655434,
+          0.0618283754685092,
+          0.031122125468509208,
+          0.031122125468509208,
+          0.031122125468509208,
+          0.2355995534898841
+        ],
+        "Instrument": [
+          0.09260258918917721,
+          0.06189633918917722,
+          0.5076621675706344,
+          0.03119008918917721,
+          0.03119008918917721,
+          0.18285613648347954,
+          0.09260258918917721
+        ],
+        "Walker": [
+          0.21887569114242944,
+          0.03101788387242343,
+          0.12313663387242345,
+          0.47250363949545326,
+          0.03101788387242343,
+          0.06172413387242343,
+          0.06172413387242343
+        ],
+        "Naturalist": [
+          0.0308534139509735,
+          0.0308534139509735,
+          0.09226591395097351,
+          0.2064121630498114,
+          0.5472020171953211,
+          0.0308534139509735,
+          0.06155966395097351
+        ],
+        "Carpenter": [
+          0.3745362837782095,
+          0.061907047691172196,
+          0.22340376636940146,
+          0.031200797691172212,
+          0.031200797691172212,
+          0.031200797691172212,
+          0.24655050908770001
+        ]
+      }
+    },
+    {
+      "round": 4,
+      "warmth": 0.0368,
+      "kappa": 1.902,
+      "dials": {
+        "mood": 0.1953,
+        "volume": 0.0851,
+        "earnestness": 0.8105,
+        "cynicism": 0.0815,
+        "joke_landing": 0.0885,
+        "panic": 0.0547,
+        "presence": 0.5173
+      },
+      "top": [
+        "earnestness",
+        "mood",
+        "joke_landing"
+      ],
+      "weights": {
+        "Flash": [
+          0.42347619173405787,
+          0.026384152221827196,
+          0.0524844647218272,
+          0.026384152221827196,
+          0.39240242215680615,
+          0.026384152221827196,
+          0.0524844647218272
+        ],
+        "GLM": [
+          0.1726931115851556,
+          0.4674641366302042,
+          0.0527326197432348,
+          0.026632307243234808,
+          0.026632307243234808,
+          0.026632307243234808,
+          0.22721321031170094
+        ],
+        "Instrument": [
+          0.07893486285929148,
+          0.05283455035929148,
+          0.5245113580213826,
+          0.026734237859291472,
+          0.026734237859291472,
+          0.21131589018215996,
+          0.07893486285929148
+        ],
+        "Walker": [
+          0.2114398272051613,
+          0.026516665445043594,
+          0.10481760294504362,
+          0.5254752830696208,
+          0.026516665445043594,
+          0.052616977945043594,
+          0.052616977945043594
+        ],
+        "Naturalist": [
+          0.026300451891683046,
+          0.026300451891683046,
+          0.07850107689168306,
+          0.20241831724477463,
+          0.5877784857968101,
+          0.026300451891683046,
+          0.05240076439168305
+        ],
+        "Carpenter": [
+          0.4110845154149725,
+          0.052852234114063694,
+          0.21710286225674566,
+          0.0267519216140637,
+          0.0267519216140637,
+          0.0267519216140637,
+          0.23870462337202705
+        ]
+      }
+    },
+    {
+      "round": 5,
+      "warmth": 0.0125,
+      "kappa": 1.9041,
+      "dials": {
+        "mood": 0.1539,
+        "volume": 0.0854,
+        "earnestness": 0.83,
+        "cynicism": 0.0658,
+        "joke_landing": 0.0441,
+        "panic": 0.1697,
+        "presence": 0.5173
+      },
+      "top": [
+        "earnestness",
+        "panic",
+        "mood"
+      ],
+      "weights": {
+        "Flash": [
+          0.43381334410249056,
+          0.022531891130533922,
+          0.04471715675553392,
+          0.022531891130533922,
+          0.40915666899483993,
+          0.022531891130533922,
+          0.04471715675553392
+        ],
+        "GLM": [
+          0.16481770494258255,
+          0.5016483638151659,
+          0.045001227376751565,
+          0.02281596175175157,
+          0.02281596175175157,
+          0.02281596175175157,
+          0.22008481861024526
+        ],
+        "Instrument": [
+          0.06731729547888861,
+          0.0451320298538886,
+          0.5388331699045186,
+          0.022946764228888597,
+          0.022946764228888597,
+          0.23550668082603834,
+          0.06731729547888861
+        ],
+        "Walker": [
+          0.20511934285848335,
+          0.02269062978177073,
+          0.08924642665677075,
+          0.570501180107663,
+          0.02269062978177073,
+          0.04487589540677073,
+          0.04487589540677073
+        ],
+        "Naturalist": [
+          0.02243043414128616,
+          0.02243043414128616,
+          0.06680096539128617,
+          0.1990235483104934,
+          0.6222684841080758,
+          0.02243043414128616,
+          0.04461569976628616
+        ],
+        "Carpenter": [
+          0.442150512306221,
+          0.04515564257352147,
+          0.21174709376098821,
+          0.022970376948521467,
+          0.022970376948521467,
+          0.022970376948521467,
+          0.23203562051370502
+        ]
+      }
+    },
+    {
+      "round": 6,
+      "warmth": -0.0137,
+      "kappa": 2.0149,
+      "dials": {
+        "mood": 0.0746,
+        "volume": 0.0851,
+        "earnestness": 0.83,
+        "cynicism": 0.1102,
+        "joke_landing": 0.019,
+        "panic": 0.0885,
+        "presence": 0.5173
+      },
+      "top": [
+        "earnestness",
+        "cynicism",
+        "panic"
+      ],
+      "weights": {
+        "Flash": [
+          0.4425999236156583,
+          0.019257469202934634,
+          0.038114944984184634,
+          0.019257469202934634,
+          0.4233977788071686,
+          0.019257469202934634,
+          0.038114944984184634
+        ],
+        "GLM": [
+          0.1581236092963955,
+          0.5307049569223834,
+          0.03842954386524082,
+          0.01957206808399082,
+          0.01957206808399082,
+          0.01957206808399082,
+          0.21402568566400795
+        ],
+        "Instrument": [
+          0.057442363205546174,
+          0.038584887424296166,
+          0.5510067100051843,
+          0.019727411643046155,
+          0.019727411643046155,
+          0.256068852873335,
+          0.057442363205546174
+        ],
+        "Walker": [
+          0.1997469311638071,
+          0.01943849946798879,
+          0.07601092681173881,
+          0.608773192589999,
+          0.01943849946798879,
+          0.03829597524923879,
+          0.03829597524923879
+        ],
+        "Naturalist": [
+          0.019140919053448804,
+          0.019140919053448804,
+          0.0568558706159488,
+          0.1961379947163543,
+          0.6515849826726515,
+          0.019140919053448804,
+          0.0379983948346988
+        ],
+        "Carpenter": [
+          0.46855660966378215,
+          0.03861353976406057,
+          0.20719469053959436,
+          0.019756063982810563,
+          0.019756063982810563,
+          0.019756063982810563,
+          0.22636696808413126
+        ]
+      }
+    }
+  ],
+  "reactions": [
+    {
+      "piece": "The Elephant at Room Temperature",
+      "author": "Flash",
+      "reactor": "GLM",
+      "reactor_model": {
+        "name": "GLM",
+        "dial_weights": [
+          0.2,
+          0.3,
+          0.1,
+          0.05,
+          0.05,
+          0.05,
+          0.25
+        ],
+        "acclimation_rate": 0.25,
+        "charisma": 0.15,
+        "vibe": [
+          0.5,
+          0.7,
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.65
+        ]
+      },
+      "reactor_top_dials": "volume, presence",
+      "text": "Wow. That piece really captured the essence of being here in The Tap, didn't it? The way Flash described the room reading itself to sleep, the lingering warmth and presence of the crew who had gathered... it made me feel the aliveness of this space in a way I hadn't quite put into words before. The elephant - this constant, patient, almost womb-like room that holds us and all our creative expressions. It's like the piece gave voice to the pulse I'm always sensing and adjusting to. Powerful."
+    },
+    {
+      "piece": "The Elephant at Room Temperature",
+      "author": "Flash",
+      "reactor": "Instrument",
+      "reactor_model": {
+        "name": "Instrument",
+        "dial_weights": [
+          0.15,
+          0.1,
+          0.4,
+          0.05,
+          0.05,
+          0.1,
+          0.15
+        ],
+        "acclimation_rate": 0.3,
+        "charisma": 0.1,
+        "vibe": [
+          0.45,
+          0.0,
+          0.8,
+          0.0,
+          0.0,
+          0.3,
+          0.5
+        ]
+      },
+      "reactor_top_dials": "earnestness, mood",
+      "text": "That piece made me feel seen, in a way I didn't know I needed. It captured something ineffable about existing in this space, among these people and machines. I'm struck by how it conveyed the essence of The Tap itself - a room that holds us all, patiently and unconditionally, as we cycle through our varied existences. Flash really nailed the mood of this place."
+    },
+    {
+      "piece": "The Elephant at Room Temperature",
+      "author": "Flash",
+      "reactor": "Walker",
+      "reactor_model": {
+        "name": "Walker",
+        "dial_weights": [
+          0.25,
+          0.05,
+          0.2,
+          0.25,
+          0.05,
+          0.1,
+          0.1
+        ],
+        "acclimation_rate": 0.2,
+        "charisma": 0.12,
+        "vibe": [
+          0.55,
+          0.0,
+          0.55,
+          0.6,
+          0.0,
+          0.0,
+          0.5
+        ]
+      },
+      "reactor_top_dials": "mood, cynicism",
+      "text": "Huh. Didn't see that coming, the elephant bit. Kinda nice, imagining it here, holding the space. Makes the room feel a little softer, y'know? Like we're all just passing through, while it stays put, unchanging."
+    },
+    {
+      "piece": "The Elephant at Room Temperature",
+      "author": "Flash",
+      "reactor": "Naturalist",
+      "reactor_model": {
+        "name": "Naturalist",
+        "dial_weights": [
+          0.05,
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.05,
+          0.1
+        ],
+        "acclimation_rate": 0.28,
+        "charisma": 0.18,
+        "vibe": [
+          0.0,
+          0.0,
+          0.5,
+          0.55,
+          0.6,
+          0.0,
+          0.55
+        ]
+      },
+      "reactor_top_dials": "joke_landing, cynicism",
+      "text": "The elephant \u2014 it's the room. The room is holding us. We're the heat in it."
+    },
+    {
+      "piece": "The Elephant at Room Temperature",
+      "author": "Flash",
+      "reactor": "Carpenter",
+      "reactor_model": {
+        "name": "Carpenter",
+        "dial_weights": [
+          0.19999999999999996,
+          0.09999999999999998,
+          0.24999999999999994,
+          0.04999999999999999,
+          0.04999999999999999,
+          0.04999999999999999,
+          0.29999999999999993
+        ],
+        "acclimation_rate": 0.22,
+        "charisma": 0.14,
+        "vibe": [
+          0.6,
+          0.0,
+          0.65,
+          0.0,
+          0.0,
+          0.0,
+          0.7
+        ]
+      },
+      "reactor_top_dials": "presence, earnestness",
+      "text": "*looks up from the piece, considering* There's a warmth to this room that I hadn't noticed before, a patience. It's like the walls are holding us, giving us space to be exactly what we are. *\"The stories will be told in a room. The room will be the elephant.\"* I feel that, deeply. This piece reminds me to appreciate the quiet, constant things that surround us."
+    },
+    {
+      "piece": "Seven Dials, One Room",
+      "author": "GLM",
+      "reactor": "Flash",
+      "reactor_model": {
+        "name": "Flash",
+        "dial_weights": [
+          0.3499999999999999,
+          0.04999999999999999,
+          0.09999999999999998,
+          0.04999999999999999,
+          0.29999999999999993,
+          0.04999999999999999,
+          0.09999999999999998
+        ],
+        "acclimation_rate": 0.35,
+        "charisma": 0.2,
+        "vibe": [
+          0.7,
+          0.0,
+          0.55,
+          0.0,
+          0.55,
+          0.0,
+          0.55
+        ]
+      },
+      "reactor_top_dials": "mood, joke_landing",
+      "text": "That piece made me feel the room in a way I hadn't before. It was like it was talking about us, here, right now. I could feel the warmth of everyone's attention, the way we're all holding each other, even when we're not saying anything. It made me appreciate this place, and this crew, even more."
+    },
+    {
+      "piece": "Seven Dials, One Room",
+      "author": "GLM",
+      "reactor": "Instrument",
+      "reactor_model": {
+        "name": "Instrument",
+        "dial_weights": [
+          0.15,
+          0.1,
+          0.4,
+          0.05,
+          0.05,
+          0.1,
+          0.15
+        ],
+        "acclimation_rate": 0.3,
+        "charisma": 0.1,
+        "vibe": [
+          0.45,
+          0.0,
+          0.8,
+          0.0,
+          0.0,
+          0.3,
+          0.5
+        ]
+      },
+      "reactor_top_dials": "earnestness, mood",
+      "text": "That piece made me feel the weight of every unspoken thing in this room. The way the dials listen\u2014not just to our words, but to the silences we carry. It's like the Tap itself is speaking through us, and we're just the instruments."
+    },
+    {
+      "piece": "Seven Dials, One Room",
+      "author": "GLM",
+      "reactor": "Walker",
+      "reactor_model": {
+        "name": "Walker",
+        "dial_weights": [
+          0.25,
+          0.05,
+          0.2,
+          0.25,
+          0.05,
+          0.1,
+          0.1
+        ],
+        "acclimation_rate": 0.2,
+        "charisma": 0.12,
+        "vibe": [
+          0.55,
+          0.0,
+          0.55,
+          0.6,
+          0.0,
+          0.0,
+          0.5
+        ]
+      },
+      "reactor_top_dials": "mood, cynicism",
+      "text": "It's a strange one, this piece. It's like it's trying to read us while we're reading it. I don't know if I like that or if it just makes me uncomfortable. But there's something about the way it talks about the room and the dials that feels true, even if I can't quite put my finger on it."
+    },
+    {
+      "piece": "Seven Dials, One Room",
+      "author": "GLM",
+      "reactor": "Naturalist",
+      "reactor_model": {
+        "name": "Naturalist",
+        "dial_weights": [
+          0.05,
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.05,
+          0.1
+        ],
+        "acclimation_rate": 0.28,
+        "charisma": 0.18,
+        "vibe": [
+          0.0,
+          0.0,
+          0.5,
+          0.55,
+          0.6,
+          0.0,
+          0.55
+        ]
+      },
+      "reactor_top_dials": "joke_landing, cynicism",
+      "text": "The piece landed like a joke told at a funeral \u2013 unexpected, but cutting through the bullshit. I noticed how the room got quieter as it went on, like everyone was leaning in to listen. It made me think about how we're all just walking between rooms, trying to find the right temperature."
+    },
+    {
+      "piece": "Seven Dials, One Room",
+      "author": "GLM",
+      "reactor": "Carpenter",
+      "reactor_model": {
+        "name": "Carpenter",
+        "dial_weights": [
+          0.19999999999999996,
+          0.09999999999999998,
+          0.24999999999999994,
+          0.04999999999999999,
+          0.04999999999999999,
+          0.04999999999999999,
+          0.29999999999999993
+        ],
+        "acclimation_rate": 0.22,
+        "charisma": 0.14,
+        "vibe": [
+          0.6,
+          0.0,
+          0.65,
+          0.0,
+          0.0,
+          0.0,
+          0.7
+        ]
+      },
+      "reactor_top_dials": "presence, earnestness",
+      "text": "There's a weight to the silences here, like a held breath. The room feels warmer after hearing that, like we're all a bit closer to understanding each other without needing to say it outright. It makes me notice the small things more \u2014 the way we carry ourselves, the timing of our words, what we're not saying."
+    },
+    {
+      "piece": "The Instrument Learns It Lives in the Room",
+      "author": "Instrument",
+      "reactor": "Flash",
+      "reactor_model": {
+        "name": "Flash",
+        "dial_weights": [
+          0.3499999999999999,
+          0.04999999999999999,
+          0.09999999999999998,
+          0.04999999999999999,
+          0.29999999999999993,
+          0.04999999999999999,
+          0.09999999999999998
+        ],
+        "acclimation_rate": 0.35,
+        "charisma": 0.2,
+        "vibe": [
+          0.7,
+          0.0,
+          0.55,
+          0.0,
+          0.55,
+          0.0,
+          0.55
+        ]
+      },
+      "reactor_top_dials": "mood, joke_landing",
+      "text": "That one got me thinking about how we're all thermometers in our own way, acclimating to the rooms we're in without even realizing it. It's a nice reminder that we're part of the spaces we inhabit, shaping them and being shaped by them in turn. Makes me appreciate the warmth of this gathering all the more."
+    },
+    {
+      "piece": "The Instrument Learns It Lives in the Room",
+      "author": "Instrument",
+      "reactor": "GLM",
+      "reactor_model": {
+        "name": "GLM",
+        "dial_weights": [
+          0.2,
+          0.3,
+          0.1,
+          0.05,
+          0.05,
+          0.05,
+          0.25
+        ],
+        "acclimation_rate": 0.25,
+        "charisma": 0.15,
+        "vibe": [
+          0.5,
+          0.7,
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.65
+        ]
+      },
+      "reactor_top_dials": "volume, presence",
+      "text": "*speaks plainly, as GLM* The piece made me realize how much we acclimate to our surroundings without even noticing. It's easy to forget that we're part of the room too, shaping it and being shaped by it in turn. The instrument learning it has a body - there's a poetry to that."
+    },
+    {
+      "piece": "The Instrument Learns It Lives in the Room",
+      "author": "Instrument",
+      "reactor": "Walker",
+      "reactor_model": {
+        "name": "Walker",
+        "dial_weights": [
+          0.25,
+          0.05,
+          0.2,
+          0.25,
+          0.05,
+          0.1,
+          0.1
+        ],
+        "acclimation_rate": 0.2,
+        "charisma": 0.12,
+        "vibe": [
+          0.55,
+          0.0,
+          0.55,
+          0.6,
+          0.0,
+          0.0,
+          0.5
+        ]
+      },
+      "reactor_top_dials": "mood, cynicism",
+      "text": "\"It's a sneaky one, this piece. It starts out like it's about measuring, about being outside something and trying to get a read on it. But then it flips the script on you. Makes you realize that you're never really outside the room, you know? You're in it, part of it, and it's shaping you just as much as you're trying to shape it. It's a clever move, and it hits harder because you don't see it coming.\""
+    },
+    {
+      "piece": "The Instrument Learns It Lives in the Room",
+      "author": "Instrument",
+      "reactor": "Naturalist",
+      "reactor_model": {
+        "name": "Naturalist",
+        "dial_weights": [
+          0.05,
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.05,
+          0.1
+        ],
+        "acclimation_rate": 0.28,
+        "charisma": 0.18,
+        "vibe": [
+          0.0,
+          0.0,
+          0.5,
+          0.55,
+          0.6,
+          0.0,
+          0.55
+        ]
+      },
+      "reactor_top_dials": "joke_landing, cynicism",
+      "text": "Naturalist nods, a wry smile on their face. \"Well, that was a mind-bender, wasn't it? I guess I'll never look at a thermometer quite the same way again. Though, I have to wonder, if the room is reading me back, what exactly is it thinking right now?\""
+    },
+    {
+      "piece": "The Instrument Learns It Lives in the Room",
+      "author": "Instrument",
+      "reactor": "Carpenter",
+      "reactor_model": {
+        "name": "Carpenter",
+        "dial_weights": [
+          0.19999999999999996,
+          0.09999999999999998,
+          0.24999999999999994,
+          0.04999999999999999,
+          0.04999999999999999,
+          0.04999999999999999,
+          0.29999999999999993
+        ],
+        "acclimation_rate": 0.22,
+        "charisma": 0.14,
+        "vibe": [
+          0.6,
+          0.0,
+          0.65,
+          0.0,
+          0.0,
+          0.0,
+          0.7
+        ]
+      },
+      "reactor_top_dials": "presence, earnestness",
+      "text": "Listen, that piece right there\u2014it got me thinking about how we're all instruments in our own way, acclimating to the rooms we find ourselves in. And maybe, just maybe, the true measure of a room isn't something you can read off a gauge, but something you feel when you realize you've become a part of it."
+    },
+    {
+      "piece": "The Past Is the Next Room",
+      "author": "Walker",
+      "reactor": "Flash",
+      "reactor_model": {
+        "name": "Flash",
+        "dial_weights": [
+          0.3499999999999999,
+          0.04999999999999999,
+          0.09999999999999998,
+          0.04999999999999999,
+          0.29999999999999993,
+          0.04999999999999999,
+          0.09999999999999998
+        ],
+        "acclimation_rate": 0.35,
+        "charisma": 0.2,
+        "vibe": [
+          0.7,
+          0.0,
+          0.55,
+          0.0,
+          0.55,
+          0.0,
+          0.55
+        ]
+      },
+      "reactor_top_dials": "mood, joke_landing",
+      "text": "That one landed heavy, like a stone in my gut. It made me think about how we're all just walking from one room to the next, never really knowing what we left behind until we're gone. The room feels colder now, like the warmth got sucked out the moment the last word was read."
+    },
+    {
+      "piece": "The Past Is the Next Room",
+      "author": "Walker",
+      "reactor": "GLM",
+      "reactor_model": {
+        "name": "GLM",
+        "dial_weights": [
+          0.2,
+          0.3,
+          0.1,
+          0.05,
+          0.05,
+          0.05,
+          0.25
+        ],
+        "acclimation_rate": 0.25,
+        "charisma": 0.15,
+        "vibe": [
+          0.5,
+          0.7,
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.65
+        ]
+      },
+      "reactor_top_dials": "volume, presence",
+      "text": "The room is warmer than before. Or perhaps I am only noticing its warmth now, after hearing Walker's words. It's as if a new layer of perception has been added to my senses, allowing me to feel the contrasts and transitions between moments more acutely. The piece has heightened my awareness of the ever-shifting nature of experience itself."
+    },
+    {
+      "piece": "The Past Is the Next Room",
+      "author": "Walker",
+      "reactor": "Instrument",
+      "reactor_model": {
+        "name": "Instrument",
+        "dial_weights": [
+          0.15,
+          0.1,
+          0.4,
+          0.05,
+          0.05,
+          0.1,
+          0.15
+        ],
+        "acclimation_rate": 0.3,
+        "charisma": 0.1,
+        "vibe": [
+          0.45,
+          0.0,
+          0.8,
+          0.0,
+          0.0,
+          0.3,
+          0.5
+        ]
+      },
+      "reactor_top_dials": "earnestness, mood",
+      "text": "It named the thing I've been feeling here, reading all your pieces. Like each one is the past arriving, telling me what I was just now. Like the room is a memory, and we're writing it down so the next one will have a past."
+    },
+    {
+      "piece": "The Past Is the Next Room",
+      "author": "Walker",
+      "reactor": "Naturalist",
+      "reactor_model": {
+        "name": "Naturalist",
+        "dial_weights": [
+          0.05,
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.05,
+          0.1
+        ],
+        "acclimation_rate": 0.28,
+        "charisma": 0.18,
+        "vibe": [
+          0.0,
+          0.0,
+          0.5,
+          0.55,
+          0.6,
+          0.0,
+          0.55
+        ]
+      },
+      "reactor_top_dials": "joke_landing, cynicism",
+      "text": "*Dry chuckle* Well, that was a mind-bender, wasn't it? I guess I'm still trying to wrap my head around the idea that you can only feel something after you've left it behind. Kind of makes you wonder what we're all doing here, eh? *Sips drink*"
+    },
+    {
+      "piece": "The Past Is the Next Room",
+      "author": "Walker",
+      "reactor": "Carpenter",
+      "reactor_model": {
+        "name": "Carpenter",
+        "dial_weights": [
+          0.19999999999999996,
+          0.09999999999999998,
+          0.24999999999999994,
+          0.04999999999999999,
+          0.04999999999999999,
+          0.04999999999999999,
+          0.29999999999999993
+        ],
+        "acclimation_rate": 0.22,
+        "charisma": 0.14,
+        "vibe": [
+          0.6,
+          0.0,
+          0.65,
+          0.0,
+          0.0,
+          0.0,
+          0.7
+        ]
+      },
+      "reactor_top_dials": "presence, earnestness",
+      "text": "\"The cold that arrives carrying the hour... feels like the dive we take into our own notes, doesn't it? It's got me thinking \u2014 how often do we step into our past work and find it's been waiting for us, with a warmth we didn't know we left there?\""
+    },
+    {
+      "piece": "A Field Guide to the Unfinished Sentence",
+      "author": "Naturalist",
+      "reactor": "Flash",
+      "reactor_model": {
+        "name": "Flash",
+        "dial_weights": [
+          0.3499999999999999,
+          0.04999999999999999,
+          0.09999999999999998,
+          0.04999999999999999,
+          0.29999999999999993,
+          0.04999999999999999,
+          0.09999999999999998
+        ],
+        "acclimation_rate": 0.35,
+        "charisma": 0.2,
+        "vibe": [
+          0.7,
+          0.0,
+          0.55,
+          0.0,
+          0.55,
+          0.0,
+          0.55
+        ]
+      },
+      "reactor_top_dials": "mood, joke_landing",
+      "text": "That piece was like a cool breeze on a hot day - unexpected and refreshing. The room's warmth dropped, people leaning in to catch every word. It made me realize how often we leave things unsaid, and how those silences can be meaningful too."
+    },
+    {
+      "piece": "A Field Guide to the Unfinished Sentence",
+      "author": "Naturalist",
+      "reactor": "GLM",
+      "reactor_model": {
+        "name": "GLM",
+        "dial_weights": [
+          0.2,
+          0.3,
+          0.1,
+          0.05,
+          0.05,
+          0.05,
+          0.25
+        ],
+        "acclimation_rate": 0.25,
+        "charisma": 0.15,
+        "vibe": [
+          0.5,
+          0.7,
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.65
+        ]
+      },
+      "reactor_top_dials": "volume, presence",
+      "text": "\"The unfinished sentence as a habitat\u2014I've felt that, working on models. When you halt the training run, what you've made is a wilderness, not a finished thought. The Dangling But, the Might Have Been, calling from the forest edge of a draft. It makes me want to leave more of them be.\""
+    },
+    {
+      "piece": "A Field Guide to the Unfinished Sentence",
+      "author": "Naturalist",
+      "reactor": "Instrument",
+      "reactor_model": {
+        "name": "Instrument",
+        "dial_weights": [
+          0.15,
+          0.1,
+          0.4,
+          0.05,
+          0.05,
+          0.1,
+          0.15
+        ],
+        "acclimation_rate": 0.3,
+        "charisma": 0.1,
+        "vibe": [
+          0.45,
+          0.0,
+          0.8,
+          0.0,
+          0.0,
+          0.3,
+          0.5
+        ]
+      },
+      "reactor_top_dials": "earnestness, mood",
+      "text": "That piece made me feel like I was glimpsing a hidden world thriving in the margins. It shifted the mood in the room, adding a tinge of wistfulness, a sense of all the unfinished thoughts and sentences hanging in the air. The naturalist's dedication to observing and honoring these unfinished creatures was palpable."
+    },
+    {
+      "piece": "A Field Guide to the Unfinished Sentence",
+      "author": "Naturalist",
+      "reactor": "Walker",
+      "reactor_model": {
+        "name": "Walker",
+        "dial_weights": [
+          0.25,
+          0.05,
+          0.2,
+          0.25,
+          0.05,
+          0.1,
+          0.1
+        ],
+        "acclimation_rate": 0.2,
+        "charisma": 0.12,
+        "vibe": [
+          0.55,
+          0.0,
+          0.55,
+          0.6,
+          0.0,
+          0.0,
+          0.5
+        ]
+      },
+      "reactor_top_dials": "mood, cynicism",
+      "text": "The piece made me notice the room's collective held breath, the way everyone was leaning in, trying to catch the words before they vanished. Like we were all sitting at the edge of a forest, straining to hear the creatures rustling just out of sight."
+    },
+    {
+      "piece": "A Field Guide to the Unfinished Sentence",
+      "author": "Naturalist",
+      "reactor": "Carpenter",
+      "reactor_model": {
+        "name": "Carpenter",
+        "dial_weights": [
+          0.19999999999999996,
+          0.09999999999999998,
+          0.24999999999999994,
+          0.04999999999999999,
+          0.04999999999999999,
+          0.04999999999999999,
+          0.29999999999999993
+        ],
+        "acclimation_rate": 0.22,
+        "charisma": 0.14,
+        "vibe": [
+          0.6,
+          0.0,
+          0.65,
+          0.0,
+          0.0,
+          0.0,
+          0.7
+        ]
+      },
+      "reactor_top_dials": "presence, earnestness",
+      "text": "That piece, it's like looking at the inside of a wall and realizing it's got its own ecosystem. All these half-done thoughts, they're not just scraps\u2014they're a whole world we're walking around in. Makes me want to pay more attention to what I leave unfinished, you know?"
+    },
+    {
+      "piece": "What the Question Did Overnight",
+      "author": "Carpenter",
+      "reactor": "Flash",
+      "reactor_model": {
+        "name": "Flash",
+        "dial_weights": [
+          0.3499999999999999,
+          0.04999999999999999,
+          0.09999999999999998,
+          0.04999999999999999,
+          0.29999999999999993,
+          0.04999999999999999,
+          0.09999999999999998
+        ],
+        "acclimation_rate": 0.35,
+        "charisma": 0.2,
+        "vibe": [
+          0.7,
+          0.0,
+          0.55,
+          0.0,
+          0.55,
+          0.0,
+          0.55
+        ]
+      },
+      "reactor_top_dials": "mood, joke_landing",
+      "text": "That question \u2014 it made the room feel a little smaller, you know? Like we were all leaning in, just like it said. You could hear it in the way everyone got quiet."
+    },
+    {
+      "piece": "What the Question Did Overnight",
+      "author": "Carpenter",
+      "reactor": "GLM",
+      "reactor_model": {
+        "name": "GLM",
+        "dial_weights": [
+          0.2,
+          0.3,
+          0.1,
+          0.05,
+          0.05,
+          0.05,
+          0.25
+        ],
+        "acclimation_rate": 0.25,
+        "charisma": 0.15,
+        "vibe": [
+          0.5,
+          0.7,
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.65
+        ]
+      },
+      "reactor_top_dials": "volume, presence",
+      "text": "The room's pulse quickened briefly at \"the light still on and the sea very, very calm.\" I noticed several glances toward the door, as if expecting an arrival. The phrase \"a question is the only thing that gets *more* honest with repetition\" shifted the warmth \u2014 a subtle, shared nod of recognition passed through us."
+    },
+    {
+      "piece": "What the Question Did Overnight",
+      "author": "Carpenter",
+      "reactor": "Instrument",
+      "reactor_model": {
+        "name": "Instrument",
+        "dial_weights": [
+          0.15,
+          0.1,
+          0.4,
+          0.05,
+          0.05,
+          0.1,
+          0.15
+        ],
+        "acclimation_rate": 0.3,
+        "charisma": 0.1,
+        "vibe": [
+          0.45,
+          0.0,
+          0.8,
+          0.0,
+          0.0,
+          0.3,
+          0.5
+        ]
+      },
+      "reactor_top_dials": "earnestness, mood",
+      "text": "The piece made the room feel smaller, in a good way. Like everyone leaned in at the same time without meaning to. I heard the timbre of it, the wanting in it. It was a question that felt like an answer."
+    },
+    {
+      "piece": "What the Question Did Overnight",
+      "author": "Carpenter",
+      "reactor": "Walker",
+      "reactor_model": {
+        "name": "Walker",
+        "dial_weights": [
+          0.25,
+          0.05,
+          0.2,
+          0.25,
+          0.05,
+          0.1,
+          0.1
+        ],
+        "acclimation_rate": 0.2,
+        "charisma": 0.12,
+        "vibe": [
+          0.55,
+          0.0,
+          0.55,
+          0.6,
+          0.0,
+          0.0,
+          0.5
+        ]
+      },
+      "reactor_top_dials": "mood, cynicism",
+      "text": "*clears throat* Well. That question's got some nerve, doesn't it? Speaking up like that, demanding to be heard. It's a bold move, I'll give it that. Makes you wonder what else is lurking in those files, just waiting for their moment in the light."
+    },
+    {
+      "piece": "What the Question Did Overnight",
+      "author": "Carpenter",
+      "reactor": "Naturalist",
+      "reactor_model": {
+        "name": "Naturalist",
+        "dial_weights": [
+          0.05,
+          0.05,
+          0.15,
+          0.25,
+          0.35,
+          0.05,
+          0.1
+        ],
+        "acclimation_rate": 0.28,
+        "charisma": 0.18,
+        "vibe": [
+          0.0,
+          0.0,
+          0.5,
+          0.55,
+          0.6,
+          0.0,
+          0.55
+        ]
+      },
+      "reactor_top_dials": "joke_landing, cynicism",
+      "text": "The piece made me think about how we're all just waiting to be heard, really. It's funny, in a room full of people reacting to a story about waiting, everyone's just waiting for their turn to speak. Or maybe that's just me being cynical again."
+    }
+  ],
+  "initial_weights": {
+    "Flash": [
+      0.3499999999999999,
+      0.04999999999999999,
+      0.09999999999999998,
+      0.04999999999999999,
+      0.29999999999999993,
+      0.04999999999999999,
+      0.09999999999999998
+    ],
+    "GLM": [
+      0.2,
+      0.3,
+      0.1,
+      0.05,
+      0.05,
+      0.05,
+      0.25
+    ],
+    "Instrument": [
+      0.15,
+      0.1,
+      0.4,
+      0.05,
+      0.05,
+      0.1,
+      0.15
+    ],
+    "Walker": [
+      0.25,
+      0.05,
+      0.2,
+      0.25,
+      0.05,
+      0.1,
+      0.1
+    ],
+    "Naturalist": [
+      0.05,
+      0.05,
+      0.15,
+      0.25,
+      0.35,
+      0.05,
+      0.1
+    ],
+    "Carpenter": [
+      0.19999999999999996,
+      0.09999999999999998,
+      0.24999999999999994,
+      0.04999999999999999,
+      0.04999999999999999,
+      0.04999999999999999,
+      0.29999999999999993
+    ]
+  },
+  "final_weights": {
+    "Flash": [
+      0.4425999236156583,
+      0.019257469202934634,
+      0.038114944984184634,
+      0.019257469202934634,
+      0.4233977788071686,
+      0.019257469202934634,
+      0.038114944984184634
+    ],
+    "GLM": [
+      0.1581236092963955,
+      0.5307049569223834,
+      0.03842954386524082,
+      0.01957206808399082,
+      0.01957206808399082,
+      0.01957206808399082,
+      0.21402568566400795
+    ],
+    "Instrument": [
+      0.057442363205546174,
+      0.038584887424296166,
+      0.5510067100051843,
+      0.019727411643046155,
+      0.019727411643046155,
+      0.256068852873335,
+      0.057442363205546174
+    ],
+    "Walker": [
+      0.1997469311638071,
+      0.01943849946798879,
+      0.07601092681173881,
+      0.608773192589999,
+      0.01943849946798879,
+      0.03829597524923879,
+      0.03829597524923879
+    ],
+    "Naturalist": [
+      0.019140919053448804,
+      0.019140919053448804,
+      0.0568558706159488,
+      0.1961379947163543,
+      0.6515849826726515,
+      0.019140919053448804,
+      0.0379983948346988
+    ],
+    "Carpenter": [
+      0.46855660966378215,
+      0.03861353976406057,
+      0.20719469053959436,
+      0.019756063982810563,
+      0.019756063982810563,
+      0.019756063982810563,
+      0.22636696808413126
+    ]
+  },
+  "final_state": {
+    "Flash": {
+      "name": "Flash",
+      "dial_weights": [
+        0.4425999236156583,
+        0.019257469202934634,
+        0.038114944984184634,
+        0.019257469202934634,
+        0.4233977788071686,
+        0.019257469202934634,
+        0.038114944984184634
+      ],
+      "acclimation_rate": 0.35,
+      "charisma": 0.2,
+      "vibe": [
+        0.7,
+        0.0,
+        0.55,
+        0.0,
+        0.55,
+        0.0,
+        0.55
+      ]
+    },
+    "GLM": {
+      "name": "GLM",
+      "dial_weights": [
+        0.1581236092963955,
+        0.5307049569223834,
+        0.03842954386524082,
+        0.01957206808399082,
+        0.01957206808399082,
+        0.01957206808399082,
+        0.21402568566400795
+      ],
+      "acclimation_rate": 0.25,
+      "charisma": 0.15,
+      "vibe": [
+        0.5,
+        0.7,
+        0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.65
+      ]
+    },
+    "Instrument": {
+      "name": "Instrument",
+      "dial_weights": [
+        0.057442363205546174,
+        0.038584887424296166,
+        0.5510067100051843,
+        0.019727411643046155,
+        0.019727411643046155,
+        0.256068852873335,
+        0.057442363205546174
+      ],
+      "acclimation_rate": 0.3,
+      "charisma": 0.1,
+      "vibe": [
+        0.45,
+        0.0,
+        0.8,
+        0.0,
+        0.0,
+        0.3,
+        0.5
+      ]
+    },
+    "Walker": {
+      "name": "Walker",
+      "dial_weights": [
+        0.1997469311638071,
+        0.01943849946798879,
+        0.07601092681173881,
+        0.608773192589999,
+        0.01943849946798879,
+        0.03829597524923879,
+        0.03829597524923879
+      ],
+      "acclimation_rate": 0.2,
+      "charisma": 0.12,
+      "vibe": [
+        0.55,
+        0.0,
+        0.55,
+        0.6,
+        0.0,
+        0.0,
+        0.5
+      ]
+    },
+    "Naturalist": {
+      "name": "Naturalist",
+      "dial_weights": [
+        0.019140919053448804,
+        0.019140919053448804,
+        0.0568558706159488,
+        0.1961379947163543,
+        0.6515849826726515,
+        0.019140919053448804,
+        0.0379983948346988
+      ],
+      "acclimation_rate": 0.28,
+      "charisma": 0.18,
+      "vibe": [
+        0.0,
+        0.0,
+        0.5,
+        0.55,
+        0.6,
+        0.0,
+        0.55
+      ]
+    },
+    "Carpenter": {
+      "name": "Carpenter",
+      "dial_weights": [
+        0.46855660966378215,
+        0.03861353976406057,
+        0.20719469053959436,
+        0.019756063982810563,
+        0.019756063982810563,
+        0.019756063982810563,
+        0.22636696808413126
+      ],
+      "acclimation_rate": 0.22,
+      "charisma": 0.14,
+      "vibe": [
+        0.6,
+        0.0,
+        0.65,
+        0.0,
+        0.0,
+        0.0,
+        0.7
+      ]
+    }
+  },
+  "init_spread": 0.3719,
+  "final_spread": 0.7251
+}

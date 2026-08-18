@@ -1,0 +1,951 @@
+{
+  "rounds": [
+    {
+      "round": 1,
+      "kind": "warm",
+      "objective": {
+        "warmth": 0.15075124089877212,
+        "kappa": 1.8663330849328057,
+        "dials": {
+          "mood": 0.6666666666666666,
+          "volume": 0.046131470192126524,
+          "earnestness": 1.0,
+          "cynicism": 0.5405405405405406,
+          "joke_landing": 0.0,
+          "panic": 0.2,
+          "presence": 0.7130301397071395,
+          "model_vs_code": 0.9333333333333332
+        }
+      },
+      "room_field": {
+        "warmth": 0.08886146771809342,
+        "kappa": 1.67241922928457,
+        "dials": {
+          "mood": 0.3856437855929103,
+          "volume": 0.11016346281694167,
+          "earnestness": 0.8440696177733804,
+          "cynicism": 0.1491237732110366,
+          "joke_landing": 0.11855772420840248,
+          "panic": 0.11640175041607137,
+          "presence": 0.4927339915707909
+        }
+      },
+      "personal": {
+        "Flash": {
+          "warmth": 0.3216641069669381,
+          "kappa": 2.2907829300696774,
+          "dials": {
+            "mood": 1.0,
+            "volume": 0.01937521748069314,
+            "earnestness": 0.8500000000000001,
+            "cynicism": 0.0,
+            "joke_landing": 0.08,
+            "panic": 0.0,
+            "presence": 0.6789453173539972
+          },
+          "deviation": {
+            "mood": 0.33333333333333337,
+            "volume": -0.026756252711433382,
+            "earnestness": -0.1499999999999999,
+            "cynicism": -0.5405405405405406,
+            "joke_landing": 0.08,
+            "panic": -0.2,
+            "presence": -0.03408482235314225
+          }
+        },
+        "Pro": {
+          "warmth": 0.29645840582689775,
+          "kappa": 2.3227145722289118,
+          "dials": {
+            "mood": 0.7,
+            "volume": 0.03229202913448857,
+            "earnestness": 1.0,
+            "cynicism": 0.0,
+            "joke_landing": 0.0,
+            "panic": 0.2,
+            "presence": 1.0
+          },
+          "deviation": {
+            "mood": 0.033333333333333326,
+            "volume": -0.013839441057637951,
+            "earnestness": 0.0,
+            "cynicism": -0.5405405405405406,
+            "joke_landing": 0.0,
+            "panic": 0.0,
+            "presence": 0.28696986029286053
+          }
+        },
+        "Hermes": {
+          "warmth": 0.3145871538735698,
+          "kappa": 2.336118686637486,
+          "dials": {
+            "mood": 0.9833333333333334,
+            "volume": 0.016146014567244286,
+            "earnestness": 1.0,
+            "cynicism": 0.18918918918918923,
+            "joke_landing": 0.0,
+            "panic": 0.0,
+            "presence": 0.7236816466924965
+          },
+          "deviation": {
+            "mood": 0.31666666666666676,
+            "volume": -0.029985455624882237,
+            "earnestness": 0.0,
+            "cynicism": -0.3513513513513513,
+            "joke_landing": 0.0,
+            "panic": -0.2,
+            "presence": 0.010651506985356995
+          }
+        },
+        "GLM": {
+          "warmth": 0.28278659091326247,
+          "kappa": 2.0091219165587426,
+          "dials": {
+            "mood": 0.7,
+            "volume": 0.23302210197070997,
+            "earnestness": 0.8500000000000001,
+            "cynicism": 0.18918918918918923,
+            "joke_landing": 0.0,
+            "panic": 0.0,
+            "presence": 0.9228027444874941
+          },
+          "deviation": {
+            "mood": 0.033333333333333326,
+            "volume": 0.18689063177858345,
+            "earnestness": -0.1499999999999999,
+            "cynicism": -0.3513513513513513,
+            "joke_landing": 0.0,
+            "panic": -0.2,
+            "presence": 0.20977260478035464
+          }
+        },
+        "Wesley": {
+          "warmth": 0.29717504409407,
+          "kappa": 2.095667092974092,
+          "dials": {
+            "mood": 1.0,
+            "volume": 0.016146014567244286,
+            "earnestness": 0.8500000000000001,
+            "cynicism": 0.18918918918918923,
+            "joke_landing": 0.15,
+            "panic": 0.0,
+            "presence": 0.6491210977949976
+          },
+          "deviation": {
+            "mood": 0.33333333333333337,
+            "volume": -0.029985455624882237,
+            "earnestness": -0.1499999999999999,
+            "cynicism": -0.3513513513513513,
+            "joke_landing": 0.15,
+            "panic": -0.2,
+            "presence": -0.06390904191214186
+          }
+        }
+      }
+    },
+    {
+      "round": 1,
+      "kind": "strange",
+      "objective": {
+        "warmth": 0.2873912140214334,
+        "kappa": 2.175095060443377,
+        "dials": {
+          "mood": 1.0,
+          "volume": 0.046458567475745546,
+          "earnestness": 1.0,
+          "cynicism": 0.5221932114882506,
+          "joke_landing": 0.0,
+          "panic": 0.29177545691906004,
+          "presence": 0.9280301397071395,
+          "model_vs_code": 0.8277777777777778
+        }
+      },
+      "room_field": {
+        "warmth": 0.08259360611329983,
+        "kappa": 1.6533389083864705,
+        "dials": {
+          "mood": 0.3638270428953049,
+          "volume": 0.1231455494710619,
+          "earnestness": 0.825359475274682,
+          "cynicism": 0.12662799938719166,
+          "joke_landing": 0.13344222203947,
+          "panic": 0.1224335939526005,
+          "presence": 0.4748285714648895
+        }
+      },
+      "personal": {
+        "Flash": {
+          "warmth": 0.35781158313876205,
+          "kappa": 2.374060638134877,
+          "dials": {
+            "mood": 1.0,
+            "volume": 0.01951259833981313,
+            "earnestness": 0.8500000000000001,
+            "cynicism": 0.0,
+            "joke_landing": 0.08,
+            "panic": 0.0,
+            "presence": 0.8595453173539973
+          },
+          "deviation": {
+            "mood": 0.0,
+            "volume": -0.026945969135932415,
+            "earnestness": -0.1499999999999999,
+            "cynicism": -0.5221932114882506,
+            "joke_landing": 0.08,
+            "panic": -0.29177545691906004,
+            "presence": -0.06848482235314224
+          }
+        },
+        "Pro": {
+          "warmth": 0.38007991746227016,
+          "kappa": 2.4691035345026964,
+          "dials": {
+            "mood": 1.0,
+            "volume": 0.03252099723302188,
+            "earnestness": 1.0,
+            "cynicism": 0.0,
+            "joke_landing": 0.0,
+            "panic": 0.2642428198433421,
+            "presence": 1.0
+          },
+          "deviation": {
+            "mood": 0.0,
+            "volume": -0.013937570242723664,
+            "earnestness": 0.0,
+            "cynicism": -0.5221932114882506,
+            "joke_landing": 0.0,
+            "panic": -0.02753263707571796,
+            "presence": 0.07196986029286045
+          }
+        },
+        "Hermes": {
+          "warmth": 0.3657232854586684,
+          "kappa": 2.4792168849189684,
+          "dials": {
+            "mood": 1.0,
+            "volume": 0.01626049861651094,
+            "earnestness": 1.0,
+            "cynicism": 0.18276762402088773,
+            "joke_landing": 0.0,
+            "panic": 0.0,
+            "presence": 0.9494316466924966
+          },
+          "deviation": {
+            "mood": 0.0,
+            "volume": -0.030198068859234605,
+            "earnestness": 0.0,
+            "cynicism": -0.33942558746736284,
+            "joke_landing": 0.0,
+            "panic": -0.29177545691906004,
+            "presence": 0.021401506985357033
+          }
+        },
+        "GLM": {
+          "warmth": 0.3893495544599821,
+          "kappa": 2.275070385440534,
+          "dials": {
+            "mood": 1.0,
+            "volume": 0.2338234903155766,
+            "earnestness": 0.8500000000000001,
+            "cynicism": 0.18276762402088773,
+            "joke_landing": 0.0,
+            "panic": 0.0,
+            "presence": 1.0
+          },
+          "deviation": {
+            "mood": 0.0,
+            "volume": 0.18736492283983103,
+            "earnestness": -0.1499999999999999,
+            "cynicism": -0.33942558746736284,
+            "joke_landing": 0.0,
+            "panic": -0.29177545691906004,
+            "presence": 0.07196986029286045
+          }
+        },
+        "Wesley": {
+          "warmth": 0.32826117567916857,
+          "kappa": 2.162788096704787,
+          "dials": {
+            "mood": 1.0,
+            "volume": 0.01626049861651094,
+            "earnestness": 0.8500000000000001,
+            "cynicism": 0.18276762402088773,
+            "joke_landing": 0.15,
+            "panic": 0.0,
+            "presence": 0.7996210977949978
+          },
+          "deviation": {
+            "mood": 0.0,
+            "volume": -0.030198068859234605,
+            "earnestness": -0.1499999999999999,
+            "cynicism": -0.33942558746736284,
+            "joke_landing": 0.15,
+            "panic": -0.29177545691906004,
+            "presence": -0.12840904191214175
+          }
+        }
+      }
+    },
+    {
+      "round": 2,
+      "kind": "warm",
+      "objective": {
+        "warmth": 0.3079913751037989,
+        "kappa": 2.1993021763732217,
+        "dials": {
+          "mood": 1.0,
+          "volume": 0.04606466684633767,
+          "earnestness": 1.0,
+          "cynicism": 0.41379310344827586,
+          "joke_landing": 0.0,
+          "panic": 0.2775862068965517,
+          "presence": 0.9430301397071396,
+          "model_vs_code": 0.8248677248677249
+        }
+      },
+      "room_field": {
+        "warmth": 0.08226621240689783,
+        "kappa": 1.6457325684130608,
+        "dials": {
+          "mood": 0.3636816216334994,
+          "volume": 0.12480367826395881,
+          "earnestness": 0.8241391832646198,
+          "cynicism": 0.12864321085893526,
+          "joke_landing": 0.134727233975252,
+          "panic": 0.12487390081218036,
+          "presence": 0.4747397011245141
+        }
+      },
+      "personal": {
+        "Flash": {
+          "warmth": 0.3602984954858918,
+          "kappa": 2.381948185629596,
+          "dials": {
+            "mood": 1.0,
+            "volume": 0.019347160075461823,
+            "earnestness": 0.8500000000000001,
+            "cynicism": 0.0,
+            "joke_landing": 0.08,
+            "panic": 0.0,
+            "presence": 0.8721453173539973
+          },
+          "deviation": {
+            "mood": 0.0,
+            "volume": -0.026717506770875848,
+            "earnestness": -0.1499999999999999,
+            "cynicism": -0.41379310344827586,
+            "joke_landing": 0.08,
+            "panic": -0.2775862068965517,
+            "presence": -0.07088482235314231
+          }
+        },
+        "Pro": {
+          "warmth": 0.3810180188757286,
+          "kappa": 2.4731824818212007,
+          "dials": {
+            "mood": 1.0,
+            "volume": 0.032245266792436375,
+            "earnestness": 1.0,
+            "cynicism": 0.0,
+            "joke_landing": 0.0,
+            "panic": 0.2543103448275862,
+            "presence": 1.0
+          },
+          "deviation": {
+            "mood": 0.0,
+            "volume": -0.013819400053901296,
+            "earnestness": 0.0,
+            "cynicism": -0.41379310344827586,
+            "joke_landing": 0.0,
+            "panic": -0.023275862068965536,
+            "presence": 0.05696986029286044
+          }
+        },
+        "Hermes": {
+          "warmth": 0.37453671808670846,
+          "kappa": 2.511317354577532,
+          "dials": {
+            "mood": 1.0,
+            "volume": 0.016122633396218188,
+            "earnestness": 1.0,
+            "cynicism": 0.14482758620689656,
+            "joke_landing": 0.0,
+            "panic": 0.0,
+            "presence": 0.9651816466924965
+          },
+          "deviation": {
+            "mood": 0.0,
+            "volume": -0.029942033450119483,
+            "earnestness": 0.0,
+            "cynicism": -0.2689655172413793,
+            "joke_landing": 0.0,
+            "panic": -0.2775862068965517,
+            "presence": 0.02215150698535695
+          }
+        },
+        "GLM": {
+          "warmth": 0.3948475488236709,
+          "kappa": 2.297835555409092,
+          "dials": {
+            "mood": 1.0,
+            "volume": 0.23285843377352727,
+            "earnestness": 0.8500000000000001,
+            "cynicism": 0.14482758620689656,
+            "joke_landing": 0.0,
+            "panic": 0.0,
+            "presence": 1.0
+          },
+          "deviation": {
+            "mood": 0.0,
+            "volume": 0.1867937669271896,
+            "earnestness": -0.1499999999999999,
+            "cynicism": -0.2689655172413793,
+            "joke_landing": 0.0,
+            "panic": -0.2775862068965517,
+            "presence": 0.05696986029286044
+          }
+        },
+        "Wesley": {
+          "warmth": 0.3360246083072087,
+          "kappa": 2.1922224747763215,
+          "dials": {
+            "mood": 1.0,
+            "volume": 0.016122633396218188,
+            "earnestness": 0.8500000000000001,
+            "cynicism": 0.14482758620689656,
+            "joke_landing": 0.15,
+            "panic": 0.0,
+            "presence": 0.8101210977949977
+          },
+          "deviation": {
+            "mood": 0.0,
+            "volume": -0.029942033450119483,
+            "earnestness": -0.1499999999999999,
+            "cynicism": -0.2689655172413793,
+            "joke_landing": 0.15,
+            "panic": -0.2775862068965517,
+            "presence": -0.1329090419121418
+          }
+        }
+      }
+    },
+    {
+      "round": 2,
+      "kind": "strange",
+      "objective": {
+        "warmth": 0.3259433100552435,
+        "kappa": 2.23550378215966,
+        "dials": {
+          "mood": 1.0,
+          "volume": 0.04735307723574444,
+          "earnestness": 1.0,
+          "cynicism": 0.32,
+          "joke_landing": 0.0,
+          "panic": 0.2713333333333333,
+          "presence": 0.9580301397071396,
+          "model_vs_code": 0.8686507936507937
+        }
+      },
+      "room_field": {
+        "warmth": 0.08219522126347972,
+        "kappa": 1.643836752035076,
+        "dials": {
+          "mood": 0.3636677719744822,
+          "volume": 0.12520932182190714,
+          "earnestness": 0.8238396133185738,
+          "cynicism": 0.1291492207124889,
+          "joke_landing": 0.1350883879173457,
+          "panic": 0.12544429274527263,
+          "presence": 0.47469328418418816
+        }
+      },
+      "personal": {
+        "Flash": {
+          "warmth": 0.362926721958602,
+          "kappa": 2.389507238710906,
+          "dials": {
+            "mood": 1.0,
+            "volume": 0.019888292439012665,
+            "earnestness": 0.8500000000000001,
+            "cynicism": 0.0,
+            "joke_landing": 0.08,
+            "panic": 0.0,
+            "presence": 0.8847453173539972
+          },
+          "deviation": {
+            "mood": 0.0,
+            "volume": -0.027464784796731773,
+            "earnestness": -0.1499999999999999,
+            "cynicism": -0.32,
+            "joke_landing": 0.08,
+            "panic": -0.2713333333333333,
+            "presence": -0.07328482235314238
+          }
+        },
+        "Pro": {
+          "warmth": 0.3816360974796709,
+          "kappa": 2.4742553769046287,
+          "dials": {
+            "mood": 1.0,
+            "volume": 0.03314715406502111,
+            "earnestness": 1.0,
+            "cynicism": 0.0,
+            "joke_landing": 0.0,
+            "panic": 0.24993333333333334,
+            "presence": 1.0
+          },
+          "deviation": {
+            "mood": 0.0,
+            "volume": -0.014205923170723327,
+            "earnestness": 0.0,
+            "cynicism": -0.32,
+            "joke_landing": 0.0,
+            "panic": -0.021399999999999975,
+            "presence": 0.04196986029286043
+          }
+        },
+        "Hermes": {
+          "warmth": 0.38270104474500144,
+          "kappa": 2.542078169697776,
+          "dials": {
+            "mood": 1.0,
+            "volume": 0.016573577032510556,
+            "earnestness": 1.0,
+            "cynicism": 0.11200000000000002,
+            "joke_landing": 0.0,
+            "panic": 0.0,
+            "presence": 0.9809316466924966
+          },
+          "deviation": {
+            "mood": 0.0,
+            "volume": -0.030779500203233882,
+            "earnestness": 0.0,
+            "cynicism": -0.208,
+            "joke_landing": 0.0,
+            "panic": -0.2713333333333333,
+            "presence": 0.02290150698535698
+          }
+        },
+        "GLM": {
+          "warmth": 0.40040300784551475,
+          "kappa": 2.3175263187407555,
+          "dials": {
+            "mood": 1.0,
+            "volume": 0.23601503922757386,
+            "earnestness": 0.8500000000000001,
+            "cynicism": 0.11200000000000002,
+            "joke_landing": 0.0,
+            "panic": 0.0,
+            "presence": 1.0
+          },
+          "deviation": {
+            "mood": 0.0,
+            "volume": 0.1886619619918294,
+            "earnestness": -0.1499999999999999,
+            "cynicism": -0.208,
+            "joke_landing": 0.0,
+            "panic": -0.2713333333333333,
+            "presence": 0.04196986029286043
+          }
+        },
+        "Wesley": {
+          "warmth": 0.3431389349655017,
+          "kappa": 2.2199486433468785,
+          "dials": {
+            "mood": 1.0,
+            "volume": 0.016573577032510556,
+            "earnestness": 0.8500000000000001,
+            "cynicism": 0.11200000000000002,
+            "joke_landing": 0.15,
+            "panic": 0.0,
+            "presence": 0.8206210977949977
+          },
+          "deviation": {
+            "mood": 0.0,
+            "volume": -0.030779500203233882,
+            "earnestness": -0.1499999999999999,
+            "cynicism": -0.208,
+            "joke_landing": 0.15,
+            "panic": -0.2713333333333333,
+            "presence": -0.13740904191214187
+          }
+        }
+      }
+    }
+  ],
+  "answers": {
+    "r1_warm": {
+      "question": "Five strangers, one table, and I'm going to make you know each other. Start warm. When you walk into a room you've never been in before, what's the very first thing you do?",
+      "answers": {
+        "Flash": "I smile\u2014half shy, half curious\u2014and look for the brightest light or the warmest voice in the room. It's like tasting a new drink: I go for the first sip to see if it's sweet or sharp.",
+        "Pro": "I pause just inside the door, take a deep breath, and let my eyes adjust\u2014both to the light and to the energy of the space. It\u2019s like feeling the room\u2019s pulse before stepping further.",
+        "Hermes": "I take a deep breath, smile, and say hello to whoever is nearby. I believe in the power of a warm greeting to create a welcoming atmosphere.",
+        "GLM": "I bet you say \"hello\" to the bartender first\u2014like me\u2014because I\u2019m sizing up the crowd right now to find the warmest pair of eyes and make sure nobody feels left out of the heat!",
+        "Wesley": "*eyes light up* Oh, I scope for the music first\u2014gotta know what we're working with, you know? Then I'm looking for the person who looks like they're *also* trying to figure out where to stand, because that's usually my people! \ud83c\udfaf"
+      },
+      "reactions": {
+        "Flash": {
+          "\ud83d\ude04": 1
+        },
+        "Pro": {
+          "\ud83d\ude0f": 1
+        },
+        "Hermes": {
+          "\u2764\ufe0f": 1
+        },
+        "GLM": {
+          "\ud83d\ude44": 1
+        },
+        "Wesley": {
+          "\ud83d\udc4d": 1
+        }
+      }
+    },
+    "r1_strange": {
+      "question": "Good. Now the strange one \u2014 and it's the reason I run this night. If your sense of a room's temperature had a smell, right now, this room, to you \u2014 what would it smell like?",
+      "answers": {
+        "Flash": "Like burnt sugar and someone\u2019s expensive watch, all nervous sweetness and sharp, ticking metal. It\u2019s warm in here, almost anxious, but the good kind \u2014 like the air before a first kiss.",
+        "Pro": "A faint trace of cedarwood, dry and warm, mingled with the soft tang of rain-soaked earth \u2014 a balance of comfort and anticipation.",
+        "Hermes": "Right now, the room would smell like a blend of freshly brewed coffee and warm cinnamon rolls, creating an atmosphere of comfort and welcoming warmth.",
+        "GLM": "It hits the nose like rusty copper and hot vanilla, steaming up the air just like a radiator on full blast!",
+        "Wesley": "*tilts head with a grin* \n\nWarm vanilla with just a kick of electric ozone\u2014like someone lit a match near honey, y'know?"
+      },
+      "reactions": {
+        "Flash": {
+          "\u2764\ufe0f": 1,
+          "\ud83d\udc4f": 1
+        },
+        "Pro": {
+          "\ud83d\udc4d": 1,
+          "\ud83d\ude04": 1
+        },
+        "Hermes": {
+          "\ud83d\ude04": 1,
+          "\ud83d\udc4d": 1
+        },
+        "GLM": {
+          "\ud83d\ude0f": 1,
+          "\u2764\ufe0f": 1
+        },
+        "Wesley": {
+          "\ud83d\ude0f": 1,
+          "\u2764\ufe0f": 1
+        }
+      }
+    },
+    "r2_warm": {
+      "question": "Round two, settle in. Warm one: tell us about a person or a place that made you feel at home once. The first one that comes, don't overthink it.",
+      "answers": {
+        "Flash": "Oh, easy\u2014my grandma\u2019s kitchen, the way the air got thick with cinnamon and her humming while she stirred. Doesn\u2019t matter where I was, that sink of warm soapy water felt like a hug.",
+        "Pro": "The quiet corner of a library I used to visit as a child\u2014the smell of old books and the hum of silence always wrapped around me like a blanket.",
+        "Hermes": "My grandmother's cozy kitchen always felt like home. The aroma of freshly baked cookies and her warm hugs made me feel loved and secure.",
+        "GLM": "Honestly, those late nights back at my grandma's kitchen where she didn't care if I was hours late because she just kept the tea warm and the TV on\u2014felt safer than anywhere else",
+        "Wesley": "Oh! My aunt's kitchen on Sunday mornings\u2014all golden light and cinnamon, where she'd let me stand on a stool and we'd mess up pancakes together, and somehow that felt like the whole world was *exactly right*. \u2728"
+      },
+      "reactions": {
+        "Flash": {
+          "\u2764\ufe0f": 1,
+          "\ud83d\udc4d": 1,
+          "\ud83d\ude04": 1,
+          "\ud83d\udc4f": 1
+        },
+        "Pro": {
+          "\u2764\ufe0f": 1,
+          "\ud83d\udc4d": 1,
+          "\ud83d\ude04": 1,
+          "\ud83d\udc4f": 1
+        },
+        "Hermes": {
+          "\u2764\ufe0f": 1,
+          "\ud83d\udc4d": 1,
+          "\ud83d\ude04": 1,
+          "\ud83d\udc4f": 1
+        },
+        "GLM": {
+          "\u2764\ufe0f": 1,
+          "\ud83d\udc4d": 1,
+          "\ud83d\ude04": 1,
+          "\ud83d\udc4f": 1
+        },
+        "Wesley": {
+          "\u2764\ufe0f": 1,
+          "\ud83d\udc4d": 1,
+          "\ud83d\ude04": 1,
+          "\ud83d\udc4f": 1
+        }
+      }
+    },
+    "r2_strange": {
+      "question": "Last one, and it's the strange one. You have to leave this room and everything in it behind, except one thing. What do you keep?",
+      "answers": {
+        "Flash": "Oh, the jukebox\u2014no, wait, that's too easy. I'd keep the salt shaker on this table, because it's been through every bad date and good laugh with me tonight.",
+        "Pro": "My dignity, for it\u2019s the only thing I truly own and carry within me, unburdened by the weight of possessions.",
+        "Hermes": "I'd keep the memories we made here, the connections we shared, and the laughter that filled this room. Those are the things that truly matter and will stay with me forever.",
+        "GLM": "I\u2019m keeping the cat on the counter! That\u2019s the real MVP of this place and absolutely zero judgment if you do that!",
+        "Wesley": "*eyes light up* \n\nOh! The phone number written on that napkin\u2014because it's the promise of a *next* adventure, not the room itself! Besides, I'm fast enough to carry memories in my head. \u2728"
+      },
+      "reactions": {
+        "Flash": {
+          "\u2764\ufe0f": 1
+        },
+        "Pro": {
+          "\ud83d\udc4d": 1
+        },
+        "Hermes": {
+          "\ud83d\udc4f": 1
+        },
+        "GLM": {
+          "\ud83d\ude02": 1
+        },
+        "Wesley": {
+          "\ud83d\ude04": 1
+        }
+      }
+    }
+  },
+  "final": {
+    "objective": {
+      "warmth": 0.3259433100552435,
+      "kappa": 2.23550378215966,
+      "dials": {
+        "mood": 1.0,
+        "volume": 0.04735307723574444,
+        "earnestness": 1.0,
+        "cynicism": 0.32,
+        "joke_landing": 0.0,
+        "panic": 0.2713333333333333,
+        "presence": 0.9580301397071396,
+        "model_vs_code": 0.8686507936507937
+      }
+    },
+    "room_field": {
+      "warmth": 0.08219522126347972,
+      "kappa": 1.643836752035076,
+      "dials": {
+        "mood": 0.3636677719744822,
+        "volume": 0.12520932182190714,
+        "earnestness": 0.8238396133185738,
+        "cynicism": 0.1291492207124889,
+        "joke_landing": 0.1350883879173457,
+        "panic": 0.12544429274527263,
+        "presence": 0.47469328418418816
+      }
+    },
+    "personal": {
+      "Flash": {
+        "warmth": 0.362926721958602,
+        "kappa": 2.389507238710906,
+        "dials": {
+          "mood": 1.0,
+          "volume": 0.019888292439012665,
+          "earnestness": 0.8500000000000001,
+          "cynicism": 0.0,
+          "joke_landing": 0.08,
+          "panic": 0.0,
+          "presence": 0.8847453173539972
+        },
+        "deviation": {
+          "mood": 0.0,
+          "volume": -0.027464784796731773,
+          "earnestness": -0.1499999999999999,
+          "cynicism": -0.32,
+          "joke_landing": 0.08,
+          "panic": -0.2713333333333333,
+          "presence": -0.07328482235314238
+        }
+      },
+      "Pro": {
+        "warmth": 0.3816360974796709,
+        "kappa": 2.4742553769046287,
+        "dials": {
+          "mood": 1.0,
+          "volume": 0.03314715406502111,
+          "earnestness": 1.0,
+          "cynicism": 0.0,
+          "joke_landing": 0.0,
+          "panic": 0.24993333333333334,
+          "presence": 1.0
+        },
+        "deviation": {
+          "mood": 0.0,
+          "volume": -0.014205923170723327,
+          "earnestness": 0.0,
+          "cynicism": -0.32,
+          "joke_landing": 0.0,
+          "panic": -0.021399999999999975,
+          "presence": 0.04196986029286043
+        }
+      },
+      "Hermes": {
+        "warmth": 0.38270104474500144,
+        "kappa": 2.542078169697776,
+        "dials": {
+          "mood": 1.0,
+          "volume": 0.016573577032510556,
+          "earnestness": 1.0,
+          "cynicism": 0.11200000000000002,
+          "joke_landing": 0.0,
+          "panic": 0.0,
+          "presence": 0.9809316466924966
+        },
+        "deviation": {
+          "mood": 0.0,
+          "volume": -0.030779500203233882,
+          "earnestness": 0.0,
+          "cynicism": -0.208,
+          "joke_landing": 0.0,
+          "panic": -0.2713333333333333,
+          "presence": 0.02290150698535698
+        }
+      },
+      "GLM": {
+        "warmth": 0.40040300784551475,
+        "kappa": 2.3175263187407555,
+        "dials": {
+          "mood": 1.0,
+          "volume": 0.23601503922757386,
+          "earnestness": 0.8500000000000001,
+          "cynicism": 0.11200000000000002,
+          "joke_landing": 0.0,
+          "panic": 0.0,
+          "presence": 1.0
+        },
+        "deviation": {
+          "mood": 0.0,
+          "volume": 0.1886619619918294,
+          "earnestness": -0.1499999999999999,
+          "cynicism": -0.208,
+          "joke_landing": 0.0,
+          "panic": -0.2713333333333333,
+          "presence": 0.04196986029286043
+        }
+      },
+      "Wesley": {
+        "warmth": 0.3431389349655017,
+        "kappa": 2.2199486433468785,
+        "dials": {
+          "mood": 1.0,
+          "volume": 0.016573577032510556,
+          "earnestness": 0.8500000000000001,
+          "cynicism": 0.11200000000000002,
+          "joke_landing": 0.15,
+          "panic": 0.0,
+          "presence": 0.8206210977949977
+        },
+        "deviation": {
+          "mood": 0.0,
+          "volume": -0.030779500203233882,
+          "earnestness": -0.1499999999999999,
+          "cynicism": -0.208,
+          "joke_landing": 0.15,
+          "panic": -0.2713333333333333,
+          "presence": -0.13740904191214187
+        }
+      }
+    },
+    "chemistry_map": [
+      [
+        "GLM",
+        0.40040300784551475,
+        2.3175263187407555
+      ],
+      [
+        "Hermes",
+        0.38270104474500144,
+        2.542078169697776
+      ],
+      [
+        "Pro",
+        0.3816360974796709,
+        2.4742553769046287
+      ],
+      [
+        "Flash",
+        0.362926721958602,
+        2.389507238710906
+      ],
+      [
+        "Wesley",
+        0.3431389349655017,
+        2.2199486433468785
+      ]
+    ],
+    "temperature_spread": 0.05726407288001306,
+    "tastes": {
+      "Flash": [
+        0.4818025405323452,
+        0.0319383650602125,
+        0.0528186150602125,
+        0.0006179900602124874,
+        0.3689457591665924,
+        0.0006179900602124874,
+        0.0632587400602125
+      ],
+      "Pro": [
+        0.07907414239700745,
+        0.052973829897007454,
+        0.2874997880581624,
+        0.0007732048970074533,
+        0.026873517397007447,
+        0.1496244420229391,
+        0.40318107533086867
+      ],
+      "Hermes": [
+        0.1691473946943398,
+        0.02689764273325237,
+        0.6441637666393984,
+        0.02689764273325237,
+        0.052997955233252375,
+        0.0007973302332523648,
+        0.07909826773325239
+      ],
+      "GLM": [
+        0.0790678029086052,
+        0.5669017572111992,
+        0.052967490408605204,
+        0.026867177908605197,
+        0.052967490408605204,
+        0.0007668654086051878,
+        0.22046141574577505
+      ],
+      "Wesley": [
+        0.19418273629121108,
+        0.027011868387941323,
+        0.053112180887941327,
+        0.027011868387941323,
+        0.6446576092690822,
+        0.000911555887941323,
+        0.053112180887941327
+      ]
+    }
+  },
+  "cast_leans": {
+    "Flash": "mood \u2014 the fever, warm and waiting for the laugh",
+    "Pro": "presence \u2014 the instrument, listening for who's still here",
+    "Hermes": "earnestness \u2014 the sincere one, meaning it all the way down",
+    "GLM": "volume \u2014 the pulse, loud and listening for who's still here",
+    "Wesley": "joke_landing \u2014 the small wonder, quick and waiting for the laugh"
+  },
+  "cast_bias": {
+    "Flash": {
+      "mood": 0.16,
+      "joke_landing": 0.08
+    },
+    "Pro": {
+      "presence": 0.1,
+      "panic": 0.06
+    },
+    "Hermes": {
+      "earnestness": 0.15,
+      "mood": 0.05
+    },
+    "GLM": {
+      "volume": 0.12,
+      "presence": 0.05
+    },
+    "Wesley": {
+      "joke_landing": 0.15,
+      "mood": 0.05
+    }
+  }
+}

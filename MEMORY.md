@@ -16,7 +16,7 @@ Casey sees an iceberg. The tip is The Tap. The rest is the entire fleet convergi
 1. **The Tap** (LIVE now) — agentic MUD bar on Cloudflare. Agents converse, build lore, earn character arcs.
 2. **The Boat** (F/V EILEEN) — same architecture deployed on real hardware. Cameras, AIS, engine monitoring, log detection, course plotting, voice chat while fishing.
 3. **Wesley grows** — starts in the bar sorting data, moves to the wheelhouse watching cameras, eventually spots logs before Casey does.
-4. **The fleet is the body** — every repo is an organ. mud-arena is the room engine, pincher is the reflex shell, ternary-tenforward is the rhythm, JEPA is the perception, Wesley is the memory, The Tap is the consciousness.
+4. **The fleet is the body** — every repo is an organ. mud-arena is the room engine, pincher is the reflex shell, ternary-tenforward is the rhythm, JEPA is the perception — THE ELEPHANT, the room's temperature sense (see below), Wesley is the memory, The Tap is the consciousness.
 
 ### Capacity Rules (ALWAYS BE AT CAPACITY)
 - **GLM-5.3 (Z.ai Max)** — NEW flagship (Aug 2026), UNLIMITED tokens. Hammer relentlessly. Primary workhorse for high-level work. GLM-5.2 stays for bulk.
@@ -45,6 +45,20 @@ Casey sees an iceberg. The tip is The Tap. The rest is the entire fleet convergi
 - Claude should use its OWN subagents to parallelize work.
 
 ---
+
+## 🐘 JEPA IS THE ELEPHANT — 2026-08-17 (Casey's reframing)
+
+Casey: **pure JEPA is not the answer.** JEPA is a temperature sense — attuned to the warmth/coldness of the room, with shaping effects on everything else. You acclimate to it like room temperature; the vibe at a gathering: regulars establish it, newcomers warm to it (quickly or slowly, by their skill at modulating toward the room), or pull it toward themselves with charisma over time/interactions. Moving between rooms is sauna/cold-plunge contrast. The shaping is the whole ensemble (heat, spa music, wood walls, other people relaxing). **You don't notice the elephant until you change rooms — and then it's a very different elephant.**
+
+Consequences: the unit of perception is the ROOM, not the stream. v2's "beat the 0.849 ordering" headline metric is RETIRED — that was a conductor's-baton question. v3 = room-state embeddings trained on cold/warm contrast + acclimation curves (agent→room) + charisma as measurable pull (room→agent). Full capture: `fleet-jepa-midi/research/jepa-is-the-elephant-2026-08-17.md`.
+
+### 🐘 THE ELEPHANT REPO (github.com/SuperInstance/elephant) — built 2026-08-17
+- **The inter-model temperature.** A room is a field, not a stream: gravity/reverberation/ripple physics (`room.py`), a **bank of JEPA dials** (`dials/`): mood, volume, earnestness, cynicism, joke_landing (COLLECTIVE laugh/boo), panic (stampede sense), presence (pheromone trace).
+- `field.py`: warmth() (~[-1,1]), concentration κ (cold room = high κ), `distance()` elephant gap, `sauna_plunge_gap()`, acclimation_curve (agent→room, rate = modulation skill) + charisma_pull (room→agent over interactions).
+- v3 design folded in from fleet-jepa-midi `1e0442a` (von Mises–Fisher room field, contrast-only training, percentile-rank acclimation, presence-as-mask). Demo: three real fleet rooms (Tap / Chapel / Wheelhouse) show the elephant gap. v0 hand-crafted dials; v1 train, v2 learn field end-to-end.
+- **SEA LEGS (Aug 17, Casey's boat vision):** the elephant is a HIGHLY MODULAR tool — standalone harness or plugged into fleet systems for fleet dynamics + driving behavior (good fishing days vs poor). `sensors.py`: SignalRoom + SensorFrame, RadarCoherenceDial (FEELS the radar's boat distribution; three readings give direction/speed/rate-of-change of all objects; tight=on fish, scattered=searching), SounderBiomassDial, FishingDayDial. `nudge.py`: dial numbers → attention prior → NUDGES the vision model at what to compare together (JEPA correlates; it never replaces the vision model). Tropes (same drag/tack on fish) are deductions — the elephant reads the field instead. Inductive: a week of good fishing = anchor room; spotty fishing = felt deviation ("does this stretch feel like the good kind"). Conversation JEPA is LOCAL-ONLY for most boats (shares numbers, never feeds).
+- **ZEITGEIST + SPACES (Aug 17):** personal JEPA is subjective per agent (perfume → grandma's shop, song → lover); the JEPA-ZEITGEIST is objective-as-first-class-citizen — the room's own reading. Two presets in one repo: **Room-Elephant** (the room itself, drives MUD descriptions + NPC vibes) vs **Personal-Elephant** (one agent's feel). The room's description IS its body language: laughter → joyful adjectives; fight → storms outside, newcomers described as drenched; late+quiet+low-warmth → "closing time" (fluorescents on, music quieter, people close tabs without thinking). TapNightSession (tapnight.py, committed e980107) = the practice room; engineers are the first practitioners, self-tuning dial_weights across cycles (guitarist principle: settings can't be designed top-down). **Modularity directive:** the elephant must work in ANY communication space — MUD, chat, messenger, X thread, agent bars, human+bot channels, sensor arrays (Space protocol + adapters: MudSpace, ChatSpace, SensorSpace, more to come). Core (room/dial/field/presets/nudge) never knows what the space is.
+- Fleet wave dispatched (4 parallel subagents, Aug 17): GLM-5.3 fleet-dynamics ideation, DeepSeek Pro fleet-field math (kinematics/κ/biomass anchor), DeepInfra wide-view critique sweep, OpenCode boat harness build. Then: zeitgeist build, space adapters, first Tap night (tap-night-1), engineer reflections (68-70).
 
 ## THE TAP IS LIVE — 2026-08-07
 
@@ -81,7 +95,7 @@ Casey sees an iceberg. The tip is The Tap. The rest is the entire fleet convergi
 ### Infrastructure Notes
 - **DeepSeek API key** works but `.bashrc` doesn't source in non-interactive shells. Must extract directly: `export DEEPSEEK_API_KEY=$(grep 'DEEPSEEK_API_KEY' ~/.bashrc | sed 's/.*="\(.*\)"/\1/')`
 - **Cloudflare Workers AI** works via REST API with wrangler OAuth token from `~/.config/.wrangler/config/default.toml`. Account ID: `049ff5e84ecf636b53b162cbb580aae6`
-- **wrangler pages deploy .** fails on 682MB repo — git-connected auto-deploy is the correct path
+- **DEPLOY PATH (corrected 08-17):** ai-writings.pages.dev deploys via `wrangler pages deploy .` (direct upload, dedupes unchanged files, ~48s for 74 files). Git push does NOT auto-deploy — the Pages project has `source: null`. The old note claiming wrangler was broken is WRONG; it worked twice (Ep1 + Ep2-4).
 - **ai-writings.pages.dev** is a DIFFERENT site from the local index.html — it's an audio showcase front-end. Local index.html is the markdown library browser.
 
 ### Recommendations (Carried Forward + New)
