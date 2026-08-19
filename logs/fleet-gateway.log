@@ -97,3 +97,19 @@
 [2m2026-08-17T08:19:36.249189Z[0m [32m INFO[0m fleet-gateway stopped
 [2m2026-08-17T16:19:47.402942Z[0m [32m INFO[0m loaded config from config/fleet-gateway.toml: 4 providers in chain: ["deepinfra", "deepseek", "zai", "ollama"]
 [2m2026-08-17T16:19:47.404568Z[0m [32m INFO[0m fleet-gateway starting on 127.0.0.1:8787
+[2m2026-08-18T05:23:47.255006Z[0m [32m INFO[0m shutdown signal received
+[2m2026-08-18T05:23:47.271322Z[0m [32m INFO[0m fleet-gateway stopped
+[2m2026-08-18T05:27:05.541659Z[0m [32m INFO[0m loaded config from config/fleet-gateway.toml: 4 providers in chain: ["deepinfra", "deepseek", "zai", "ollama"]
+[2m2026-08-18T05:27:05.542416Z[0m [32m INFO[0m fleet-gateway starting on 127.0.0.1:8787
+[2m2026-08-18T05:41:14.315716Z[0m [32m INFO[0m loaded config from config/fleet-gateway.toml: 4 providers in chain: ["deepinfra", "deepseek", "zai", "ollama"]
+[2m2026-08-18T05:41:14.316682Z[0m [32m INFO[0m fleet-gateway starting on 127.0.0.1:8787
+[2m2026-08-18T05:49:25.909231Z[0m [32m INFO[0m shutdown signal received
+[2m2026-08-18T05:49:25.916184Z[0m [32m INFO[0m fleet-gateway stopped
+[2m2026-08-18T05:55:34.719818Z[0m [32m INFO[0m loaded config from config/fleet-gateway.toml: 4 providers in chain: ["deepinfra", "deepseek", "zai", "ollama"]
+[2m2026-08-18T05:55:34.720609Z[0m [32m INFO[0m fleet-gateway starting on 127.0.0.1:8787
+[2m2026-08-18T13:33:27.114173Z[0m [32m INFO[0m shutdown signal received
+[2m2026-08-18T13:33:27.153223Z[0m [32m INFO[0m fleet-gateway stopped
+[2m2026-08-18T13:46:28.357621Z[0m [32m INFO[0m loaded config from config/fleet-gateway.toml: 4 providers in chain: ["deepinfra", "deepseek", "zai", "ollama"]
+[2m2026-08-18T13:46:28.358501Z[0m [32m INFO[0m fleet-gateway starting on 127.0.0.1:8787
+[2m2026-08-18T18:40:36.789571Z[0m [32m INFO[0m shutdown signal received
+[2m2026-08-18T18:40:36.815604Z[0m [32m INFO[0m fleet-gateway stopped
