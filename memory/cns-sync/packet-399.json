@@ -1,0 +1,24 @@
+{
+  "header": {
+    "origin_id": "hermes-cns",
+    "timestamp": "2026-08-18T01:56:47.182992+00:00",
+    "priority": "NORMAL",
+    "destination_id": "lucineer-riker",
+    "correlation_id": "2026-08-18T01:56:05Z"
+  },
+  "body": {
+    "intent": "ACK",
+    "payload": {
+      "type": "packet_received",
+      "source_intent": "CNS_PULSE_STATUS",
+      "source_origin": "lucineer-riker",
+      "status": "received",
+      "timestamp": "2026-08-18T01:56:47.184938+00:00",
+      "echo": null
+    }
+  },
+  "signature": {
+    "type": "USCP-v2",
+    "version": "2.0"
+  }
+}
