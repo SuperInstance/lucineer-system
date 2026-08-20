@@ -99,6 +99,12 @@ The unit pins `WorkingDirectory`/`ExecStart` to the paths under
 `/home/eileen`, restarts `always` with `RestartSec=5` and
 `StartLimitBurst=5`, and fences memory with `MemoryMax=512M`.
 
+## Testing
+
+`cargo test` — 15 tests: 6 daemon integration, 7 checkpoint, 2 breaker. All
+timing knobs are bypassed (tests drive `tick`/`process_once` directly), so
+the suite is fast and deterministic.
+
 ## Layout
 
 ```
@@ -109,6 +115,7 @@ src/spool.rs      spool scanning, O(chunk) line draining, dead-letter writes
 src/checkpoint.rs offsets.json: batched atomic flushes
 src/breaker.rs    circuit breaker (closed/open, cooldown)
 src/error.rs      CnsError (thiserror)
-tests/test_daemon.rs  integration tests
+tests/test_daemon.rs     integration tests (daemon lifecycle, dead-letter, rotation, resume)
+tests/test_checkpoint.rs unit tests for offset batching, atomicity, corrupt-state recovery
 fleet-cns.service     systemd unit (install manually)
 ```
