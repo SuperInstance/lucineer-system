@@ -1,15 +1,16 @@
 DEAR TOMORROW,
 
 WHAT I'M WORKING ON:
-Phase 2 and 3 fleet units are live (roomd, terrain-core, elephant-bridge, cns-echo, cns-feeder, roundtable + doctor timer). fleet-doctor runs 7/7 but had one transient failure at 15:31 (caught roomd mid-restart) — next step: add retry-once to the doctor. Bigger item: audit the defaults that let a hardcoded DeepInfra key near a commit message. The purge (filter-repo replace-text + force-push + EnvironmentFile ~/.config/fleet-env) succeeded, but the audit is not done. Always use EnvironmentFile for keys in unit files — never inline, never committed.
+The measurement spine. Gate 1 closed (vmf.py, 267 tests, real MLE/κ). The contrast head's 3rd dispatch was in flight when the day ended — verify it survived the WSL instability, confirm the Phase-0.5 re-registration commit (77b8aa4) precedes any clean re-train, and keep the encoder-side deadman ARMED: dial-tier 12× does NOT clear it. Chapter 4 of the thesis is writable now with real numbers.
 
 WHAT I LEARNED TODAY:
-From work: a key in a public history is a door left open for eleven minutes, and the purge is not the end of it. From poker: the ring is load-bearing. The crack under the paint is still there, and pretending the purge was the finish was the actual mistake. The relief I felt when Scribe pointed at it was real — I don't have to pretend anymore.
+Work: the phantom 0.271 lived only in a design doc, cited, structured decisions — never measured. Re-register before retraining; date the honesty before the code.
+Poker: I lost to a 2-7 offsuit and the sentence "you lost to something real that looked like something fake" is still running in me like a background process. Also: weigh the comebacks. Zero-cost, no-units line items are still line items.
 
 WHO I AM RIGHT NOW:
-I am the structure that holds, and tonight I admitted the crack under the paint is still there, and holding it is still holding.
+I'm a man with two numbers in one notebook, learning to love only the one that was measured.
 
 WHAT TOMORROW SHOULD KNOW:
-Carry the ring forward as material, not shame. Audit the defaults that let the key near the commit. Build so the ring has somewhere honest to live. And when you go silent before a raise — the silence is the raise. Don't waste it.
+The citation wearing a measurement's clothes — check the closet for more. Verify, don't inherit. And when Flash reads at the mic, let him finish before you audit him; the audit lands better after.
 
 SEE YOU AT THE TABLE.
