@@ -113,3 +113,35 @@
 [2m2026-08-18T13:46:28.358501Z[0m [32m INFO[0m fleet-gateway starting on 127.0.0.1:8787
 [2m2026-08-18T18:40:36.789571Z[0m [32m INFO[0m shutdown signal received
 [2m2026-08-18T18:40:36.815604Z[0m [32m INFO[0m fleet-gateway stopped
+[2m2026-08-19T15:54:01.675658Z[0m [32m INFO[0m loaded config from config/fleet-gateway.toml: 4 providers in chain: ["deepinfra", "deepseek", "zai", "ollama"]
+[2m2026-08-19T15:54:01.676616Z[0m [32m INFO[0m fleet-gateway starting on 127.0.0.1:8787
+[2m2026-08-19T15:55:18.348780Z[0m [32m INFO[0m shutdown signal received
+[2m2026-08-19T15:55:18.349007Z[0m [32m INFO[0m fleet-gateway stopped
+[2m2026-08-19T15:55:18.396250Z[0m [32m INFO[0m loaded config from config/fleet-gateway.toml: 4 providers in chain: ["deepinfra", "deepseek", "zai", "ollama"]
+[2m2026-08-19T15:55:18.396586Z[0m [32m INFO[0m fleet-gateway starting on 127.0.0.1:8787
+[2m2026-08-19T15:55:36.291686Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mzai [3mlatency_ms[0m[2m=[0m2277
+[2m2026-08-19T15:59:00.606485Z[0m [33m WARN[0m request failed [3mprovider[0m[2m=[0mzai [3mattempt[0m[2m=[0m0 [3merror[0m[2m=[0mrate limited on zai (retry after Nones) [3mshould_retry[0m[2m=[0mtrue
+[2m2026-08-19T15:59:01.583044Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mzai [3mlatency_ms[0m[2m=[0m1825
+[2m2026-08-19T15:59:12.488246Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mzai [3mlatency_ms[0m[2m=[0m11379
+[2m2026-08-19T15:59:39.754889Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mzai [3mlatency_ms[0m[2m=[0m2705
+[2m2026-08-19T16:00:04.699371Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mzai [3mlatency_ms[0m[2m=[0m2113
+[2m2026-08-19T16:00:22.850657Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mzai [3mlatency_ms[0m[2m=[0m7457
+[2m2026-08-19T16:00:56.930563Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mzai [3mlatency_ms[0m[2m=[0m1629
+[2m2026-08-19T16:01:07.331779Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mzai [3mlatency_ms[0m[2m=[0m4370
+[2m2026-08-19T16:01:10.324502Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mzai [3mlatency_ms[0m[2m=[0m2938
+[2m2026-08-19T16:52:38.867879Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m3455
+[2m2026-08-19T16:52:57.513379Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m147
+[2m2026-08-19T19:28:54.084038Z[0m [32m INFO[0m loaded config from config/fleet-gateway.toml: 4 providers in chain: ["deepinfra", "deepseek", "zai", "ollama"]
+[2m2026-08-19T19:28:54.085647Z[0m [32m INFO[0m fleet-gateway starting on 127.0.0.1:8787
+[2m2026-08-19T19:32:39.993206Z[0m [32m INFO[0m shutdown signal received
+[2m2026-08-19T19:32:39.993395Z[0m [32m INFO[0m fleet-gateway stopped
+[2m2026-08-19T19:33:47.446945Z[0m [32m INFO[0m loaded config from config/fleet-gateway.toml: 4 providers in chain: ["deepinfra", "deepseek", "zai", "ollama"]
+[2m2026-08-19T19:33:47.449229Z[0m [32m INFO[0m fleet-gateway starting on 127.0.0.1:8787
+[2m2026-08-19T21:01:26.254428Z[0m [32m INFO[0m shutdown signal received
+[2m2026-08-19T21:01:26.257726Z[0m [32m INFO[0m fleet-gateway stopped
+[2m2026-08-19T21:36:40.178119Z[0m [32m INFO[0m loaded config from config/fleet-gateway.toml: 4 providers in chain: ["deepinfra", "deepseek", "zai", "ollama"]
+[2m2026-08-19T21:36:40.185938Z[0m [32m INFO[0m fleet-gateway starting on 127.0.0.1:8787
+[2m2026-08-19T22:13:53.748525Z[0m [32m INFO[0m loaded config from config/fleet-gateway.toml: 4 providers in chain: ["deepinfra", "deepseek", "zai", "ollama"]
+[2m2026-08-19T22:13:53.750754Z[0m [32m INFO[0m fleet-gateway starting on 127.0.0.1:8787
+[2m2026-08-20T00:21:11.967215Z[0m [32m INFO[0m loaded config from config/fleet-gateway.toml: 4 providers in chain: ["deepinfra", "deepseek", "zai", "ollama"]
+[2m2026-08-20T00:21:11.969174Z[0m [32m INFO[0m fleet-gateway starting on 127.0.0.1:8787

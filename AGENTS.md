@@ -46,6 +46,7 @@ Memory is limited. "Mental notes" don't survive session restarts; files do. Befo
 - Don't run destructive commands without asking.
 - Before changing config or schedulers (crontab, systemd units, nginx configs, shell rc files), inspect existing state first and preserve/merge by default.
 - Prefer `trash` over `rm` - recoverable beats gone forever.
+- **Archive by rename, don't delete.** When retiring/trimming/consolidating files (scratch, old versions, trimmed memory content, superseded drafts), rename them to an archive form instead of removing them — e.g. `<name>.archived-YYYYMMDD` or move into `_archive/`. Casey wants the "gold" preserved for later study. Nothing destroy-only unless explicitly asked.
 - When in doubt, ask.
 
 ## Critical Path Rules (fleet infrastructure)
