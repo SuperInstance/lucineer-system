@@ -1,6 +1,6 @@
 {
-  "lastTask": 2,
-  "lastRun": "2026-08-20T03:30Z",
-  "nextTask": 3,
-  "note": "2026-08-20 cycle 2: gallery art done. Rendered gallery-collective-unconscious.jpg (water-table-under-the-bar concept, nighttime-sdxl LoRA seed 42). Wired as README hero in collective-unconscious repo (demoted readings-index.png to section). Committed 'imagery:' and pushed. collective-unconscious had no conceptual hero before; openconstruct empty, terrain/lucid-dreamer already landed or no asset dir."
+  "lastTask": 4,
+  "lastRun": "2026-08-20T05:55Z",
+  "nextTask": 5,
+  "note": "2026-08-20 cycle 4: README visual pass on fleet-memory — hero generated (owned pipeline, seed 42), wired, commit 830dec1 imagery:, pushed. Vision judge unavailable; flagged for captain review."
 }
