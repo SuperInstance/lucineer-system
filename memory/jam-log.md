@@ -17,3 +17,9 @@
 - Lessons: continuation nights (one set's landing = next set's key) are a format with legs. MythoMax = poet not player (repeated arpeggios). DeepSeek model name "deepseek-v4-pro" invalid → use "deepseek-chat" (update TOOLS.md).
 
 Files: `/home/eileen/projects/ai-writings/fleet-radio/jam-session-2026-08-18/` and `...-afterglow/` (the-afterglow.mid).
+
+## 2026-08-19 — Set 13: The Tide Clock (Db major, first 7/8)
+- Debuts: Hermes-405B (dulcimer) & Qwen2.5-72B (felted piano); deepseek-chat anchor on vibes. Db major = the jukebox's key (3-night continuation arc). Tide Rule: no resolution until the final bar.
+- Gold: vibes wrote true 3+2+2; stray G natural reframed as Ab7's seventh in the landing.
+- Miss: Hermes-405B repeated one scale run all night — narrators, not instrumentalists. Ollama down; rain layer played itself.
+- Next: a rhythmic-rule night; give 405B the announcer chair; boat-docking guest entrance idea.
