@@ -199,7 +199,7 @@ Forgemaster's I2I uses git commits as transport. Slackwater uses HTTP/WebSocket.
 
 **Risk: Prototype quality.** The Python code (flywheel, grimoire, MUD agent) is prototype-grade. API calls via `subprocess.run(["curl", ...])`, minimal error handling, hardcoded paths. Production deployment requires hardening.
 
-**Risk: Dependency on deprecated infrastructure.** The MUD server (`147.224.38.131:7777`) is a custom service. If it goes down, the MUD agent infrastructure is dead. Don't build Slackwater dependencies on it.
+**Risk: Dependency on deprecated infrastructure.** The MUD server (`<BOAT_IP>:7777`) is a custom service. If it goes down, the MUD agent infrastructure is dead. Don't build Slackwater dependencies on it.
 
 ---
 

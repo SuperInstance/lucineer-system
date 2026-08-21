@@ -107,7 +107,7 @@ Architecture from source:
 
 ### 2.4 The MUD Agent (`.keeper/mud-agent.py`)
 
-A persistent Python agent living inside a text-based virtual world at `147.224.38.131:7777`. From source:
+A persistent Python agent living inside a text-based virtual world at `<BOAT_IP>:7777`. From source:
 
 ```python
 class MudAgent:

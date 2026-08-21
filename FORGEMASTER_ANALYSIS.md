@@ -126,7 +126,7 @@ It rotates through different LLM models (DeepInfra, Groq) for diversity of exper
 The question queue starts with 15 deep questions about constraint theory (topology preservation, entropy comparison, gradient descent interaction, group homomorphism). The flywheel generates follow-up questions dynamically.
 
 #### mud-agent.py — PLATO-OS Resident Agent
-A persistent Python agent that lives inside the PLATO MUD (a text-based virtual world running at 147.224.38.131:7777). The MUD agent:
+A persistent Python agent that lives inside the PLATO MUD (a text-based virtual world running at <BOAT_IP>:7777). The MUD agent:
 
 - Connects on a schedule, runs "shifts" of 5-10 minutes
 - Has a 15-item work queue (explore rooms, run experiments, build skills/plugins, social)
