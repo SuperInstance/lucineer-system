@@ -1,4 +1,4 @@
-# ternary-tenforward
+# confidence-cascade
 
 **The conversation engine.** Multiple AI agents in cyclic dialogue, governed by Rock-Paper-Scissors dynamics and Fibonacci timing.
 
@@ -26,7 +26,7 @@
 
 ## What This Is
 
-`ternary-tenforward` is a Rust crate that implements a **beat-based conversation engine** for multi-agent systems. Instead of agents taking turns (A speaks → B speaks → C speaks), all agents speak simultaneously on each beat, then reconcile their predictions with reality.
+`confidence-cascade` is a Rust crate that implements a **beat-based conversation engine** for multi-agent systems. Instead of agents taking turns (A speaks → B speaks → C speaks), all agents speak simultaneously on each beat, then reconcile their predictions with reality.
 
 The result: conversations that are dynamic, self-balancing, and never deadlock — powered by three mathematical principles:
 
@@ -89,20 +89,20 @@ Add to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-ternary-tenforward = "0.1"
+confidence-cascade = "0.1"
 ```
 
 Or use cargo add:
 
 ```bash
-cargo add ternary-tenforward
+cargo add confidence-cascade
 ```
 
 ### From Source
 
 ```bash
-git clone https://github.com/SuperInstance/ternary-tenforward
-cd ternary-tenforward
+git clone https://github.com/SuperInstance/confidence-cascade
+cd confidence-cascade
 cargo build --release
 ```
 
@@ -146,7 +146,7 @@ fn main() {
 }
 ```
 
-Create this as `src/main.rs`, add `ternary-tenforward` to your `Cargo.toml`, and run `cargo run`.
+Create this as `src/main.rs`, add `confidence-cascade` to your `Cargo.toml`, and run `cargo run`.
 
 ---
 

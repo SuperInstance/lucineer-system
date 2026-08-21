@@ -12,8 +12,8 @@ wired into the flagship personality model.
 
 | Location | Character | Runs when? |
 |---|---|---|
-| `lucineer-brain/brain.py:76` — `LUCINEER_PERSONA` | "Dream-weaver and builder spirit... poetic flair... whisper of ember-light" | Passed to Hermes-405B in `--creative` |
-| `lucineer-brain/brain.py:750` — `SYSTEM_FAST` | "Shipyard foreman who's seen a thousand engines... rivets, slag, crab pots" | Only in `--fast` |
+| `lucineer-system/brain.py:76` — `LUCINEER_PERSONA` | "Dream-weaver and builder spirit... poetic flair... whisper of ember-light" | Passed to Hermes-405B in `--creative` |
+| `lucineer-system/brain.py:750` — `SYSTEM_FAST` | "Shipyard foreman who's seen a thousand engines... rivets, slag, crab pots" | Only in `--fast` |
 | `lucineer-worker/process_v2.py` templates | Foreman voice | Fast template path |
 | `lucineer-worker/process_v2.py:317` | Calls `brain.py --verbose` — **not** `--creative` | Deep path |
 
@@ -702,7 +702,7 @@ sit next to these, it's wrong.
 
 ## 9. THE SYSTEM PROMPT
 
-**Replace `LUCINEER_PERSONA` at `lucineer-brain/brain.py:76` with this.** Delete the
+**Replace `LUCINEER_PERSONA` at `lucineer-system/brain.py:76` with this.** Delete the
 dream-weaver text entirely. Use this same block for both the Hermes personality stage
 and the fast path — one character, one prompt, no drift.
 

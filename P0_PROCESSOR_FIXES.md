@@ -39,7 +39,7 @@ All changes verified with `py_compile` syntax checks on both `process_v2.py` and
   - Output to journald (replaces unmanaged `processor.log`)
   - Memory limit: 512MB
   - Security hardening: `NoNewPrivileges`, `ProtectSystem=strict`, `PrivateTmp`
-  - `ReadWritePaths` scoped to lucineer-worker, lucineer-brain, and /tmp
+  - `ReadWritePaths` scoped to lucineer-worker, lucineer-system, and /tmp
 
 **Install instructions:**
 ```bash
@@ -65,7 +65,7 @@ sudo journalctl -u lucineer-processor -f
 
 ## Bug #3 — Persona Is Dead Code (GAP #7)
 
-**Files:** `lucineer-worker/process_v2.py`, `lucineer-brain/brain.py`
+**Files:** `lucineer-worker/process_v2.py`, `lucineer-system/brain.py`
 
 ### 3a. Production path now runs personality stage
 
@@ -102,7 +102,7 @@ if "commands" in enhanced and enhanced["commands"]:
 
 ## Bug #4 — Timeouts Are Inverted (GAP #8a)
 
-**Files:** `lucineer-worker/process_v2.py`, `lucineer-brain/brain.py`
+**Files:** `lucineer-worker/process_v2.py`, `lucineer-system/brain.py`
 
 **Root cause chain:**
 - `Config.lua` (client): `POLL_TIMEOUT = 60` — client gives up after 60s
@@ -156,7 +156,7 @@ if line.startswith("DEEPINFRA_API_KEY="):
 | File | Changes |
 |------|---------|
 | `lucineer-worker/process_v2.py` | Bug #1 (match_keyword rewrite), Bug #3a (--creative flag), Bug #4 (DEEP_TIMEOUT 120→100), Bug #5 (pyramid levels 6→7) |
-| `lucineer-brain/brain.py` | Bug #3b (deleted command-stealing), Bug #3c (run_fast tokens 1024→2048), Bug #4 (call_model timeout 300→90, PLANNER_FALLBACKS 5→2), pre-existing syntax error fix |
+| `lucineer-system/brain.py` | Bug #3b (deleted command-stealing), Bug #3c (run_fast tokens 1024→2048), Bug #4 (call_model timeout 300→90, PLANNER_FALLBACKS 5→2), pre-existing syntax error fix |
 | `lucineer-worker/lucineer-processor.service` | New file — systemd service for Bug #2 |
 
 ## Action Items for Human

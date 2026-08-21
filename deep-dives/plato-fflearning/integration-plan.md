@@ -160,7 +160,7 @@ end
 |------|-----------|-------------------|
 | `lucineer-relay` | HTTP bridge | Add `/ff/*` endpoints |
 | `lucineer-memory` | D1 database | Add `ff_goodness` and `ff_passes` tables |
-| `lucineer-brain` | Model routing | Use goodness as a routing factor |
+| `lucineer-system` | Model routing | Use goodness as a routing factor |
 | `lucineer-vector` | Skill embeddings | Reinforced tiles get embedded |
 | `lucineer-roblox` | Game client | Lua FFLearning module |
 | `plato-server` | Tile storage | Fix API calls, add FF-specific rooms |

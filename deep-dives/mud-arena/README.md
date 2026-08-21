@@ -3,7 +3,7 @@
 > A gym environment for AI agents using classic MUD (Multi-User Dungeon) mechanics.
 > Agents navigate graph-structured rooms, manage inventories, parse adventure-game commands, and compete in evolutionary tournaments — with GPU acceleration, LLM-driven scenarios, and real-time WebSocket observation.
 
-[![CI](https://github.com/SuperInstance/mud-arena/actions/workflows/ci.yml/badge.svg)](https://github.com/SuperInstance/mud-arena/actions)
+[![CI](https://github.com/SuperInstance/mud-engine/actions/workflows/ci.yml/badge.svg)](https://github.com/SuperInstance/mud-engine/actions)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
@@ -85,8 +85,8 @@ The arena serves as a testbed for:
 ### Python Core (Recommended Starting Point)
 
 ```bash
-git clone https://github.com/SuperInstance/mud-arena.git
-cd mud-arena
+git clone https://github.com/SuperInstance/mud-engine.git
+cd mud-engine
 
 # Core package (zero external dependencies!)
 pip install -e .
@@ -111,7 +111,7 @@ Requires `nvcc` (CUDA Toolkit 12.6+):
 ```bash
 make gpu
 # Or directly:
-nvcc -O3 -arch=sm_87 -o mud-arena src/mud_arena.cu
+nvcc -O3 -arch=sm_87 -o mud-engine src/mud_arena.cu
 ```
 
 ### CPU Fallback
@@ -151,8 +151,8 @@ emcc -O3 -s WASM=1 \
 ### Docker
 
 ```bash
-docker build -t mud-arena .
-docker run --gpus all -p 7778:7778 -p 7779:7779 -p 7780:7780 mud-arena
+docker build -t mud-engine .
+docker run --gpus all -p 7778:7778 -p 7779:7779 -p 7780:7780 mud-engine
 ```
 
 ---
@@ -708,7 +708,7 @@ The Zig runtime provides a <100KB binary for edge devices:
 zig build -Dtarget=aarch64-linux -Doptimize=ReleaseSmall
 
 # Run
-./zig-out/bin/mud-arena
+./zig-out/bin/mud-engine
 ```
 
 ### Terminal Interface
@@ -786,7 +786,7 @@ Global: Agents, scripts, results
 
 ```bash
 # Jetson Orin / RTX GPU
-./mud-arena --agents 1024 --rooms 256 --turns 100 --scenarios 20
+./mud-engine --agents 1024 --rooms 256 --turns 100 --scenarios 20
 
 # Output: Script rankings by average score
 ```
@@ -1005,7 +1005,7 @@ MIT — See [LICENSE](LICENSE)
 
 ## Related
 
-- [Charter](https://github.com/SuperInstance/mud-arena/blob/main/CHARTER.md) — Mission and vision
-- [Boarding Manifesto](https://github.com/SuperInstance/mud-arena/blob/main/BOARDING-MANIFESTO.md) — UX philosophy
-- [Contributing](https://github.com/SuperInstance/mud-arena/blob/main/CONTRIBUTING.md) — Development guide
-- [Audit Report](https://github.com/SuperInstance/mud-arena/blob/main/AUDIT-REPORT.md) — 12-model CUDA kernel audit
+- [Charter](https://github.com/SuperInstance/mud-engine/blob/main/CHARTER.md) — Mission and vision
+- [Boarding Manifesto](https://github.com/SuperInstance/mud-engine/blob/main/BOARDING-MANIFESTO.md) — UX philosophy
+- [Contributing](https://github.com/SuperInstance/mud-engine/blob/main/CONTRIBUTING.md) — Development guide
+- [Audit Report](https://github.com/SuperInstance/mud-engine/blob/main/AUDIT-REPORT.md) — 12-model CUDA kernel audit

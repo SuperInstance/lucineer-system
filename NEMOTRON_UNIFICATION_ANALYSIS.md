@@ -619,7 +619,7 @@ def snap_build_commands(commands: list[BuildCommand], scale: float = 4.0) -> lis
 
 A single Python package that combines:
 - **Temporal prediction** (t-minus) — when builds will complete, when to notify
-- **Spatial harmony** (tensor-midi) — how agents communicate, how builds are positioned
+- **Spatial harmony** (fleet-jepa-midi) — how agents communicate, how builds are positioned
 - **Cognitive adaptation** (snapkit) — how agents respond to player friction
 - **Creative generation** (Lucineer pipeline) — the 5-model build system
 

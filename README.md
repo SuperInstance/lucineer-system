@@ -27,7 +27,7 @@ Design has outpaced delivery. Per `ROADMAP_whats_next.md` (the ground-truth doc,
 
 ### The Brain Pipeline
 
-The canonical 5-stage brain pipeline (implemented in `lucineer-brain/brain.py`):
+The canonical 5-stage brain pipeline (implemented in `lucineer-system/brain.py`):
 
 ```
 Stage 1: Intent Parse        Seed-2.0-mini      (Allegro, 120+ BPM)
@@ -230,7 +230,7 @@ This repo is the map, not the machine. To run anything end-to-end, clone the sib
 | Repository | Role |
 |-----------|------|
 | [lucineer-relay](../lucineer-relay) | Cloudflare Worker relay + processor daemon (`process_v2.py`) |
-| [lucineer-brain](../lucineer-brain) | 4-stage AI pipeline implementation |
+| [lucineer-system](../lucineer-system) | 4-stage AI pipeline implementation |
 | [lucineer-creative](../lucineer-creative) | MMX-powered creative asset generation |
 | [lucineer-memory](../lucineer-memory) | D1 persistent memory store |
 | [lucineer-vector](../lucineer-vector) | Vectorize semantic skill library |

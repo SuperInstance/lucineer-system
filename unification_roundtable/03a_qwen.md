@@ -47,7 +47,7 @@ message ResonancePacket {
   message ActionPayload {
     uint32 entity_id = 1;
     uint32 action_type = 2;      // 0=Move, 1=Build, 2=Attack
-    bytes  opaque_blob = 3;      // Legacy tensor-midi or t-minus data (Seed-Pro compatibility)
+    bytes  opaque_blob = 3;      // Legacy fleet-jepa-midi or t-minus data (Seed-Pro compatibility)
     
     // The Hidden Connection Exposed:
     int32  midi_pitch = 4;       // Derived from position + tonic. Makes space audible.

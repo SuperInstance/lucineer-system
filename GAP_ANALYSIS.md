@@ -1,7 +1,7 @@
 # LUCINEER — GAP ANALYSIS
 
 **Date:** 2026-08-02
-**Scope:** `lucineer-worker/`, `lucineer-roblox/src/`, `lucineer-brain/`,
+**Scope:** `lucineer-worker/`, `lucineer-roblox/src/`, `lucineer-system/`,
 `lucineer-memory/src/`, `lucineer-vector/src/`, plus `vibe-world/lucineer-ready.rbxlx`
 **Method:** full read of every source file in scope; cross-service grep for call sites.
 
@@ -370,13 +370,13 @@ lucineer-worker/process_v2.py:29
 **Severity: P0 for the product, even though nothing is "broken."**
 
 Both services are deployed, healthy, and — verified by grep across
-`lucineer-worker/`, `lucineer-roblox/`, `lucineer-brain/` — **called by nothing.**
+`lucineer-worker/`, `lucineer-roblox/`, `lucineer-system/` — **called by nothing.**
 
 ```
-$ grep -rniE "api/memory|lucineer-memory" lucineer-worker lucineer-roblox lucineer-brain
+$ grep -rniE "api/memory|lucineer-memory" lucineer-worker lucineer-roblox lucineer-system
 (no results)
 
-$ grep -rniE "api/skills|lucineer-vector" lucineer-worker lucineer-roblox lucineer-brain
+$ grep -rniE "api/skills|lucineer-vector" lucineer-worker lucineer-roblox lucineer-system
 (only auto-generated type definitions in worker-configuration.d.ts)
 ```
 

@@ -1,7 +1,7 @@
 # Ternary Ten-Forward Analysis — Creative Conditioning for Agent Fleets
 
 *Analyzed: 2026-08-02*
-*Sources: ternary-tenforward (Rust crate), src/lib.rs, README.md, connection to ai-writings*
+*Sources: confidence-cascade (Rust crate), src/lib.rs, README.md, connection to ai-writings*
 
 ---
 

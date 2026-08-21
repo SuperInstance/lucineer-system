@@ -1,4 +1,4 @@
-# luciddreamer-vision → DCA Integration Plan
+# lucid-dreamer → DCA Integration Plan
 
 ## Phase 1: Three-Layer DCA Architecture
 - **Layer 1 (Engine)**: Core DCA primitives — scheduling, memory, budget, routing

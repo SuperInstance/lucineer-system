@@ -370,7 +370,7 @@ A fleet of Rust crates for agent infrastructure: `flux-telepathy` (A2A messaging
 | **lucineer-roblox** | 🎮 Roblox client — Lua modules for in-game AI | 0 |
 | **lucineer-vector** | 🧬 Semantic skill search — Vectorize with Luau patterns | 0 |
 | **lucineer-memory** | 🧠 D1 database, Vectorize index, cross-session recall | 0 |
-| **lucineer-brain** | 🧮 Multi-model build intelligence via DeepInfra | 0 |
+| **lucineer-system** | 🧮 Multi-model build intelligence via DeepInfra | 0 |
 | **lucineer-creative** | 🎨 MMX-powered creative asset pipeline | 0 |
 | **baton-orchestrator** | 🎼 Multi-model orchestrator by KimiCode | 0 |
 | **slackwater-orchestrator** | 🌊 Multi-model orchestrator by GLM-5.2 | 0 |

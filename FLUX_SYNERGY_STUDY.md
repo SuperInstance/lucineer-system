@@ -275,7 +275,7 @@ if result.passed:
     # Place the part — and record the proof
     certificate = {
         "hash": result.proof_hash,        # SHA-256 of all inputs + results
-        "timestamp": midi_tick_48,         # MIDI tick from tensor-midi
+        "timestamp": midi_tick_48,         # MIDI tick from fleet-jepa-midi
         "agent": "lucineer_channel_0",     # Which agent placed it
         "position": e12_coord(-5, 3),      # Exact Eisenstein coordinate
         "error_mask": result.error_mask,   # 0 = all constraints passed

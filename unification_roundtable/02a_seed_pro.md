@@ -9,7 +9,7 @@ This is not a hard engineering problem. The entire overhead you are trying to el
     ```proto
     message AtomicTick {
       fixed64  master_tick = 1; // *only* allowed source of time, ever
-      bytes    lattice_state = 2; // opaque existing tensor-midi blob, do NOT modify it
+      bytes    lattice_state = 2; // opaque existing fleet-jepa-midi blob, do NOT modify it
       uint32   deadline_offset = 3; // t-minus count from this tick, nothing else
     }
     ```

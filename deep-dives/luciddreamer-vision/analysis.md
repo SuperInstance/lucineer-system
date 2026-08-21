@@ -1,4 +1,4 @@
-# luciddreamer-vision — Deep Dive Analysis
+# lucid-dreamer — Deep Dive Analysis
 
 ## What It Does
 A **vision document** for the LucidDreamer ecosystem. Defines the three-layer architecture: PLATO (research backend) → luciddreamer.ai (endless tutor) → Lau (game skin). It's a design manifesto, not a code repository.

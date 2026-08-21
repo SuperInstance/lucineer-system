@@ -58,7 +58,7 @@ All three outbound paths in `handleResponse()` now route through `filterFor()`. 
 
 ## Fix 3: Safety model stage in brain
 
-**File:** `lucineer-brain/brain.py`
+**File:** `lucineer-system/brain.py`
 
 ### Changes
 
@@ -132,7 +132,7 @@ assert process_v2.detect_prompt_injection('hello there') == False
 |------|---------|
 | `lucineer-roblox/src/ServerScriptService/LucineerServer/init.lua` | New `filterFor()` with `PublicChat` context + `GetChatForUserAsync`; all outbound routes updated; player cleanup |
 | `lucineer-roblox/src/ReplicatedStorage/Lucineer/ChatHandler.lua` | Rate limiting (cooldown + job cap); inbound text filter; prompt-injection detection; filtered message in payload |
-| `lucineer-brain/brain.py` | New `stage_safety()` function; integrated into both `run_pipeline()` and `run_fast()` |
+| `lucineer-system/brain.py` | New `stage_safety()` function; integrated into both `run_pipeline()` and `run_fast()` |
 | `lucineer-worker/process_v2.py` | New `detect_prompt_injection()` function; inbound injection check in `process_job()` |
 
 ---

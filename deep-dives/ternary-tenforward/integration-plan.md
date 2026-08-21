@@ -1,8 +1,8 @@
-# Slackwater Integration Plan: ternary-tenforward
+# Slackwater Integration Plan: confidence-cascade
 
 ## Executive Summary
 
-`ternary-tenforward` is a **conversation orchestration engine** that could serve as the "creative shore leave" layer for the Lucineer agent fleet. It provides the mathematical framework for multi-agent dialogue that self-balances through Rock-Paper-Scissors dynamics, Fibonacci timing, and prediction-first listening.
+`confidence-cascade` is a **conversation orchestration engine** that could serve as the "creative shore leave" layer for the Lucineer agent fleet. It provides the mathematical framework for multi-agent dialogue that self-balances through Rock-Paper-Scissors dynamics, Fibonacci timing, and prediction-first listening.
 
 This document outlines how it fits into the Slackwater/Lucineer ecosystem and what's needed to integrate it.
 
@@ -12,7 +12,7 @@ This document outlines how it fits into the Slackwater/Lucineer ecosystem and wh
 
 In Star Trek, Ten-Forward is the bar on the Enterprise — the social space where crew members relax, debate, and form relationships outside the command hierarchy. It's *shore leave* built into the ship.
 
-In the SuperInstance architecture, `ternary-tenforward` implements this metaphor as a **structured conversation space for AI agents**. Rather than agents existing in isolation (each doing their task) or in rigid request-response chains (Agent A calls Agent B), Ten-Forward creates a space where multiple agents interact simultaneously, with emergent social dynamics:
+In the SuperInstance architecture, `confidence-cascade` implements this metaphor as a **structured conversation space for AI agents**. Rather than agents existing in isolation (each doing their task) or in rigid request-response chains (Agent A calls Agent B), Ten-Forward creates a space where multiple agents interact simultaneously, with emergent social dynamics:
 
 - **Contrarians** challenge ideas (-1)
 - **Reflectors** process and mediate (0)
@@ -60,7 +60,7 @@ The crate is pure Rust with zero dependencies. The simplest integration is:
 ```
 Lucineer (Node.js/TypeScript)
     ↓ via FFI or subprocess
-ternary-tenforward (Rust)
+confidence-cascade (Rust)
     ↓ manages
 Speaker pool → Conversation rounds → SessionSummary
 ```
@@ -157,7 +157,7 @@ The full vision: agents enter Ten-Forward as a "creative conditioning" mode:
 ### Step 1: Package the Crate (1 day)
 ```bash
 # Add to Cargo workspace or publish to crates.io
-cd ternary-tenforward
+cd confidence-cascade
 cargo publish --dry-run
 ```
 
@@ -250,7 +250,7 @@ The crate stands alone. You can use it today without any other SuperInstance pac
 ```rust
 // Just this crate, nothing else
 [dependencies]
-ternary-tenforward = "0.1"
+confidence-cascade = "0.1"
 ```
 
 For Lucineer, we could bypass the fleet entirely and use the engine as a pure orchestration layer with our own model routing.

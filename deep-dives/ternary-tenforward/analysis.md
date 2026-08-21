@@ -1,10 +1,10 @@
-# Architecture Analysis: ternary-tenforward
+# Architecture Analysis: confidence-cascade
 
 ## Repository Metadata
 
 | Field | Value |
 |-------|-------|
-| **Repo** | `SuperInstance/ternary-tenforward` |
+| **Repo** | `SuperInstance/confidence-cascade` |
 | **Language** | Rust (edition 2021) |
 | **Version** | 0.1.0 |
 | **License** | MIT |
@@ -18,7 +18,7 @@
 
 ## 1. Purpose and Scope
 
-`ternary-tenforward` is a **conversation engine for multi-agent systems**. It models dialogue not as sequential turn-taking (Agent A → Agent B → Agent C) but as **simultaneous beat-based interaction**, where all agents speak at once and then reconcile.
+`confidence-cascade` is a **conversation engine for multi-agent systems**. It models dialogue not as sequential turn-taking (Agent A → Agent B → Agent C) but as **simultaneous beat-based interaction**, where all agents speak at once and then reconcile.
 
 The crate answers a specific question: *How do you structure conversation between N autonomous agents so that it stays dynamic, self-balancing, and never deadlocks into monoculture?*
 
@@ -34,7 +34,7 @@ The entire crate is a single file (`src/lib.rs`) with zero external dependencies
 ### Module Structure
 
 ```
-ternary-tenforward/
+confidence-cascade/
 ├── src/
 │   └── lib.rs          # All types, logic, and tests (single-file crate)
 ├── Cargo.toml          # Package manifest (no dependencies)

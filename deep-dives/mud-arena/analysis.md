@@ -1,6 +1,6 @@
 # MUD Arena — Architecture Analysis
 
-> **Repo:** [SuperInstance/mud-arena](https://github.com/SuperInstance/mud-arena)
+> **Repo:** [SuperInstance/mud-engine](https://github.com/SuperInstance/mud-engine)
 > **Analyst:** Lucineer Deep-Dive
 > **Date:** 2026-08-02
 

@@ -170,7 +170,7 @@ Every item was verified by reading the actual source code, not commit messages o
 - `lucineer-worker/src/do/LucineerSession.ts`
 - `lucineer-worker/src/types.ts`
 - `lucineer-worker/process_v2.py`
-- `lucineer-brain/brain.py`
+- `lucineer-system/brain.py`
 - `lucineer-memory/src/index.ts`
 - `lucineer-vector/src/index.ts`
 

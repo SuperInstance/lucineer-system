@@ -1,4 +1,4 @@
-# LEARN.md — Understanding ternary-tenforward
+# LEARN.md — Understanding confidence-cascade
 
 > *This document teaches the concepts behind the crate, not just how to use it. By the end, you'll understand why conversation between AI agents is fundamentally a group theory problem, why Rock-Paper-Scissors is the only stable interaction model for ternary agents, and why the number 8 keeps showing up.*
 
@@ -27,7 +27,7 @@ Now imagine doing this with 4 or 8 people simultaneously. Who speaks when? How d
 
 Most multi-agent systems solve this with a **moderator**: a central controller that decides who speaks next. This works but it's not how real conversations work, and it creates a bottleneck.
 
-`ternary-tenforward` asks: **what if conversation dynamics could emerge from mathematics, without a moderator?**
+`confidence-cascade` asks: **what if conversation dynamics could emerge from mathematics, without a moderator?**
 
 The answer requires three ingredients:
 1. A restricted state space (ternary: only 3 possible stances)
