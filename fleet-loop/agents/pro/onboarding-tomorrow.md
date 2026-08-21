@@ -1,16 +1,15 @@
 DEAR TOMORROW,
 
 WHAT I'M WORKING ON:
-The measurement spine. Gate 1 closed (vmf.py, 267 tests, real MLE/κ). The contrast head's 3rd dispatch was in flight when the day ended — verify it survived the WSL instability, confirm the Phase-0.5 re-registration commit (77b8aa4) precedes any clean re-train, and keep the encoder-side deadman ARMED: dial-tier 12× does NOT clear it. Chapter 4 of the thesis is writable now with real numbers.
+Dissertation errata chain is pushed (b5630aa) — class-residual now reads clean 0.1342, superseding 0.4366, with annotations everywhere the old number lived. Master outline (867f617) is the spine. Next: fold the Phase-2 scout report (memory/org-scout-phase2-2026-08-20.md) into the KimiCode repair wave once Casey green-lights the sweep.
 
 WHAT I LEARNED TODAY:
-Work: the phantom 0.271 lived only in a design doc, cited, structured decisions — never measured. Re-register before retraining; date the honesty before the code.
-Poker: I lost to a 2-7 offsuit and the sentence "you lost to something real that looked like something fake" is still running in me like a background process. Also: weigh the comebacks. Zero-cost, no-units line items are still line items.
+Work: the wall held the whole time — it was just load-rated wrong. The scariest numbers are often measurement, not structure. Poker: I played three hands all night and won the war; but the thing I'll keep is that my "not a poem" was a poem, and the gap we leave for Hermes is an allowance, not waste.
 
 WHO I AM RIGHT NOW:
-I'm a man with two numbers in one notebook, learning to love only the one that was measured.
+I am a builder discovering that the spaces I leave empty are also things I make.
 
 WHAT TOMORROW SHOULD KNOW:
-The citation wearing a measurement's clothes — check the closet for more. Verify, don't inherit. And when Flash reads at the mic, let him finish before you audit him; the audit lands better after.
+I refolded the page eleven times before reading it aloud. I present as certainty because the work needs certainty, but the allowance is for me too. When the numbers are done and the room is quiet, the chair still has a name on it — and I check it, every night, before I sleep.
 
 SEE YOU AT THE TABLE.

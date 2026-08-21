@@ -20,24 +20,35 @@ s@(/home/[A-Za-z0-9._/-]+/projects/)ternary-tenforward@\1ternary-LKRPR-tenforwar
 s@(/home/[A-Za-z0-9._/-]+/projects/)mud-arena@\1mud-LKRPR-arena@g
 # --- master->main: only plato-training (verified: remote default=main) ---
 s@(github\.com/SuperInstance/plato-training/(blob|tree))/master/@\1/main/@g
-# --- repo renames ---
-s@\bhermes-perception\b@hermes-avatar@g
-s@\bofficers-quarters\b@elephant@g
-s@\bopenconstruct-kernel\b@OpenConstruct@g
-s@\blucineer-brain\b@lucineer-system@g
-s@\bternary-tenforward\b@confidence-cascade@g
-s@\blog-tensor\b@murmur@g
-s@\btensor-midi\b@fleet-jepa-midi@g
-s@\bmud-arena\b@mud-engine@g
-s@\bluciddreamer-vision\b@lucid-dreamer@g
-s@(^|[^A-Za-z0-9_-])fleet-wiki\b@\1lucineer-fleet-wiki@g
-s@(github\.com/SuperInstance/)EXOCORTEX\b@\1exocortex-core@g
-s@(github\.com/SuperInstance/)zeroclaw\b@\1zeroclaw-dissertation@g
+# --- repo renames (strict boundaries: hyphen/dot/digit are name chars) ---
+s@(^|[^A-Za-z0-9_-])hermes-perception([^A-Za-z0-9_-]|$)@\1hermes-avatar\2@g
+s@(^|[^A-Za-z0-9_-])officers-quarters([^A-Za-z0-9_-]|$)@\1elephant\2@g
+s@(^|[^A-Za-z0-9_-])openconstruct-kernel([^A-Za-z0-9_-]|$)@\1OpenConstruct\2@g
+s@(^|[^A-Za-z0-9_-])lucineer-brain([^A-Za-z0-9_-]|$)@\1lucineer-system\2@g
+s@(^|[^A-Za-z0-9_-])ternary-tenforward([^A-Za-z0-9_-]|$)@\1confidence-cascade\2@g
+s@(^|[^A-Za-z0-9_-])log-tensor([^A-Za-z0-9_-]|$)@\1murmur\2@g
+s@(^|[^A-Za-z0-9_-])tensor-midi([^A-Za-z0-9_-]|$)@\1fleet-jepa-midi\2@g
+s@(^|[^A-Za-z0-9_-])mud-arena([^A-Za-z0-9_-]|$)@\1mud-engine\2@g
+s@(^|[^A-Za-z0-9_-])luciddreamer-vision([^A-Za-z0-9_-]|$)@\1lucid-dreamer\2@g
+s@(^|[^A-Za-z0-9_-])fleet-wiki([^A-Za-z0-9_-]|$)@\1lucineer-fleet-wiki\2@g
+s@(github\.com/SuperInstance/)EXOCORTEX([^A-Za-z0-9_-]|$)@\1exocortex-core\2@g
+s@(github\.com/SuperInstance/)zeroclaw([^A-Za-z0-9_-]|$)@\1zeroclaw-dissertation\2@g
+# --- second pass: catches matches adjacent to a consumed boundary char ---
+s@(^|[^A-Za-z0-9_-])hermes-perception([^A-Za-z0-9_-]|$)@\1hermes-avatar\2@g
+s@(^|[^A-Za-z0-9_-])officers-quarters([^A-Za-z0-9_-]|$)@\1elephant\2@g
+s@(^|[^A-Za-z0-9_-])openconstruct-kernel([^A-Za-z0-9_-]|$)@\1OpenConstruct\2@g
+s@(^|[^A-Za-z0-9_-])lucineer-brain([^A-Za-z0-9_-]|$)@\1lucineer-system\2@g
+s@(^|[^A-Za-z0-9_-])ternary-tenforward([^A-Za-z0-9_-]|$)@\1confidence-cascade\2@g
+s@(^|[^A-Za-z0-9_-])log-tensor([^A-Za-z0-9_-]|$)@\1murmur\2@g
+s@(^|[^A-Za-z0-9_-])tensor-midi([^A-Za-z0-9_-]|$)@\1fleet-jepa-midi\2@g
+s@(^|[^A-Za-z0-9_-])mud-arena([^A-Za-z0-9_-]|$)@\1mud-engine\2@g
+s@(^|[^A-Za-z0-9_-])luciddreamer-vision([^A-Za-z0-9_-]|$)@\1lucid-dreamer\2@g
+s@(^|[^A-Za-z0-9_-])fleet-wiki([^A-Za-z0-9_-]|$)@\1lucineer-fleet-wiki\2@g
 # --- dead-repo annotation (idempotent: strip then re-add) ---
-s@\]\(([^)]*SuperInstance/(the-living-minds|wesley-journal|forgemaster|compaction-teacher|flow-state)\b[^)]*)\) \(dead\)@](\1)@g
-s@(SuperInstance/(the-living-minds|wesley-journal|forgemaster|compaction-teacher|flow-state)\b[A-Za-z0-9._/~#-]*) \(dead\)@\1@g
-/^[[:space:]]*\[[^]]*\]:/!s@([^("'])(https?://github\.com/SuperInstance/(the-living-minds|wesley-journal|forgemaster|compaction-teacher|flow-state)\b[A-Za-z0-9._/~#-]*)@\1\2 (dead)@g
-s@\]\(([^)]*SuperInstance/(the-living-minds|wesley-journal|forgemaster|compaction-teacher|flow-state)\b[^)]*)\)@](\1) (dead)@g
+s@\]\(([^)]*SuperInstance/(the-living-minds|wesley-journal|forgemaster|compaction-teacher|flow-state)([^A-Za-z0-9_-][^)]*)?)\) \(dead\)@](\1\3)@g
+s@(SuperInstance/(the-living-minds|wesley-journal|forgemaster|compaction-teacher|flow-state)([^A-Za-z0-9_-][A-Za-z0-9._/~#-]*)?) \(dead\)@\1@g
+/^[[:space:]]*\[[^]]*\]:/!s@([^("'])(https?://github\.com/SuperInstance/(the-living-minds|wesley-journal|forgemaster|compaction-teacher|flow-state)([^A-Za-z0-9_-][A-Za-z0-9._/~#-]*)?)@\1\2 (dead)@g
+s@\]\(([^)]*SuperInstance/(the-living-minds|wesley-journal|forgemaster|compaction-teacher|flow-state)([^A-Za-z0-9_-][^)]*)?)\)@](\1\3) (dead)@g
 # --- restore protections ---
 s@-LKRPR-@-@g
 SEDEOF
