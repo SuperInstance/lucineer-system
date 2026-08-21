@@ -1,0 +1,20 @@
+You are implementing the REGISTERED slope regression for the ZeroClaw dissertation — the decisive test of the reader-as-room hypothesis (H-reader≡room). Work in /home/eileen/projects/elephant.
+
+CONTEXT (read these first):
+- /home/eileen/projects/zeroclaw-dissertation/research/topic.md — the hypothesis, the registered test, the two-line schema rule
+- /home/eileen/projects/zeroclaw-dissertation/research/prototype/e2-e3-side-by-side.md §7 — "The single most decisive next experiment"
+- /home/eileen/projects/elephant/E5-IDENTITY-PROPAGATION-2026-08-20.md — the class-residual erratum (clean 0.1342) that must be respected in the reader-side object
+- /home/eileen/projects/elephant/scripts/e2_field.py + e2_instrument.py + the E2 corpus under data/ (v:2 per-reader logs: field_eff_to_reader, lens_now, reader_known, reading_of, reader_final; six nights, five schedule families, 15 readers, 9 primary nights, corpus_sd = 0.2367)
+
+THE TEST (verbatim intent from topic.md / side-by-side): regress each reader's baseline (mean reliable-subspace reading, per-reader, n_nights ≥ 3) on the measured warmth of the rooms they actually visited. Slope ≈ 0 ⇒ alignment (baseline is a reader-specific instrument constant). Slope ≈ 1 ⇒ collapse (baseline is slow warmth; nurse-as-index dissolves). Report slope, CI, per-reader points.
+
+DISCIPLINE (non-negotiable, this is the dissertation):
+1. Pre-registration discipline: implement exactly what the registration says. Do NOT explore multiple definitions and pick the flattering one. If the corpus forces a definitional choice, implement the registered default, THEN note the alternative as a sensitivity, never swap.
+2. The reader-baseline = reliable subspace ONLY (mood, volume, earnestness, presence — panic excluded by rule, per topic.md's two-line schema rule).
+3. Room warmth side = the dissertation's solid half (room-field thermometer, vMF μ̂-projection).
+4. Use the E5-corrected machinery where class-residualization is involved; never the buggy in-place mutation.
+5. Honest CIs (bootstrap over readers), report n per reader, flag any reader with n_nights < 3 (excluded from primary, listed).
+6. numpy-only, CPU, deterministic seeds, read-only on the corpus. Write results JSON under data/e5/ or data/slope/.
+7. NO commit, NO push. Write the report to /home/eileen/projects/elephant/SLOPE-REGRESSION-2026-08-20.md: method (5 lines), numbers (slope + CI + per-reader table), interpretation strictly two-branch (alignment vs collapse), sensitivity notes, and a "committee-open" line listing anything you had to decide that the registration didn't cover.
+
+Then reply with a 6-line summary: slope estimate + CI, n readers, verdict branch (alignment/collapse/indeterminate), any definitional gaps you had to fill, confirmation nothing was committed.

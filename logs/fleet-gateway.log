@@ -2012,3 +2012,146 @@
 [2m2026-08-20T06:00:49.577689Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mdeepseek [3mlatency_ms[0m[2m=[0m506
 [2m2026-08-20T06:01:16.886782Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mdeepseek [3mlatency_ms[0m[2m=[0m311
 [2m2026-08-20T06:01:25.118273Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mdeepseek [3mlatency_ms[0m[2m=[0m310
+[2m2026-08-20T06:02:44.877874Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mdeepseek [3mlatency_ms[0m[2m=[0m312
+[2m2026-08-20T06:03:03.294070Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mdeepseek [3mlatency_ms[0m[2m=[0m328
+[2m2026-08-20T06:04:06.942080Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mdeepseek [3mlatency_ms[0m[2m=[0m323
+[2m2026-08-20T06:04:08.497929Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mdeepseek [3mlatency_ms[0m[2m=[0m311
+[2m2026-08-20T06:04:09.318428Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mdeepseek [3mlatency_ms[0m[2m=[0m513
+[2m2026-08-20T06:04:33.490941Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mdeepseek [3mlatency_ms[0m[2m=[0m350
+[2m2026-08-20T06:05:15.003226Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mdeepseek [3mlatency_ms[0m[2m=[0m321
+[2m2026-08-20T06:05:34.278368Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mdeepseek [3mlatency_ms[0m[2m=[0m310
+[2m2026-08-20T06:05:45.462604Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mdeepseek [3mlatency_ms[0m[2m=[0m310
+[2m2026-08-20T06:05:47.217843Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mdeepseek [3mlatency_ms[0m[2m=[0m314
+[2m2026-08-20T06:06:10.759815Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mdeepseek [3mlatency_ms[0m[2m=[0m333
+[2m2026-08-20T06:07:10.832964Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mdeepseek [3mlatency_ms[0m[2m=[0m318
+[2m2026-08-20T06:08:42.048727Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mdeepseek [3mlatency_ms[0m[2m=[0m320
+[2m2026-08-20T06:08:43.669158Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mdeepseek [3mlatency_ms[0m[2m=[0m313
+[2m2026-08-20T06:08:55.494148Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mdeepseek [3mlatency_ms[0m[2m=[0m519
+[2m2026-08-20T06:08:57.073424Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mdeepseek [3mlatency_ms[0m[2m=[0m336
+[2m2026-08-20T06:12:12.011242Z[0m [33m WARN[0m request failed [3mprovider[0m[2m=[0mzai [3mattempt[0m[2m=[0m0 [3merror[0m[2m=[0mrate limited on zai (retry after Nones) [3mshould_retry[0m[2m=[0mtrue
+[2m2026-08-20T06:12:12.043540Z[0m [33m WARN[0m request failed [3mprovider[0m[2m=[0mzai [3mattempt[0m[2m=[0m0 [3merror[0m[2m=[0mrate limited on zai (retry after Nones) [3mshould_retry[0m[2m=[0mtrue
+[2m2026-08-20T06:12:13.017715Z[0m [33m WARN[0m request failed [3mprovider[0m[2m=[0mzai [3mattempt[0m[2m=[0m1 [3merror[0m[2m=[0mrate limited on zai (retry after Nones) [3mshould_retry[0m[2m=[0mtrue
+[2m2026-08-20T06:12:13.029359Z[0m [33m WARN[0m request failed [3mprovider[0m[2m=[0mzai [3mattempt[0m[2m=[0m1 [3merror[0m[2m=[0mrate limited on zai (retry after Nones) [3mshould_retry[0m[2m=[0mtrue
+[2m2026-08-20T06:12:14.468678Z[0m [33m WARN[0m circuit breaker CLOSED → OPEN (5 consecutive failures)
+[2m2026-08-20T06:12:14.468715Z[0m [33m WARN[0m request failed [3mprovider[0m[2m=[0mzai [3mattempt[0m[2m=[0m2 [3merror[0m[2m=[0mrate limited on zai (retry after Nones) [3mshould_retry[0m[2m=[0mfalse
+[2m2026-08-20T06:12:14.468724Z[0m [32m INFO[0m circuit breaker transitioning OPEN → HALF_OPEN
+[2m2026-08-20T06:12:14.468803Z[0m [33m WARN[0m request failed [3mprovider[0m[2m=[0mzai [3mattempt[0m[2m=[0m2 [3merror[0m[2m=[0mrate limited on zai (retry after Nones) [3mshould_retry[0m[2m=[0mfalse
+[2m2026-08-20T06:12:14.469117Z[0m [33m WARN[0m circuit breaker HALF_OPEN → OPEN (probe failed)
+[2m2026-08-20T06:12:14.469132Z[0m [33m WARN[0m request failed [3mprovider[0m[2m=[0mollama [3mattempt[0m[2m=[0m0 [3merror[0m[2m=[0mnetwork error on ollama: error sending request for url (http://localhost:11434/v1/chat/completions) [3mshould_retry[0m[2m=[0mtrue
+[2m2026-08-20T06:12:14.469221Z[0m [33m WARN[0m request failed [3mprovider[0m[2m=[0mollama [3mattempt[0m[2m=[0m0 [3merror[0m[2m=[0mnetwork error on ollama: error sending request for url (http://localhost:11434/v1/chat/completions) [3mshould_retry[0m[2m=[0mtrue
+[2m2026-08-20T06:12:14.970319Z[0m [33m WARN[0m request failed [3mprovider[0m[2m=[0mollama [3mattempt[0m[2m=[0m1 [3merror[0m[2m=[0mnetwork error on ollama: error sending request for url (http://localhost:11434/v1/chat/completions) [3mshould_retry[0m[2m=[0mtrue
+[2m2026-08-20T06:12:14.970352Z[0m [33m WARN[0m request failed [3mprovider[0m[2m=[0mollama [3mattempt[0m[2m=[0m1 [3merror[0m[2m=[0mnetwork error on ollama: error sending request for url (http://localhost:11434/v1/chat/completions) [3mshould_retry[0m[2m=[0mtrue
+[2m2026-08-20T06:12:15.971911Z[0m [33m WARN[0m request failed [3mprovider[0m[2m=[0mollama [3mattempt[0m[2m=[0m2 [3merror[0m[2m=[0mnetwork error on ollama: error sending request for url (http://localhost:11434/v1/chat/completions) [3mshould_retry[0m[2m=[0mfalse
+[2m2026-08-20T06:12:15.971944Z[0m [31mERROR[0m all providers exhausted [3merror[0m[2m=[0mnetwork error on ollama: error sending request for url (http://localhost:11434/v1/chat/completions)
+[2m2026-08-20T06:12:15.972126Z[0m [33m WARN[0m request failed [3mprovider[0m[2m=[0mollama [3mattempt[0m[2m=[0m2 [3merror[0m[2m=[0mnetwork error on ollama: error sending request for url (http://localhost:11434/v1/chat/completions) [3mshould_retry[0m[2m=[0mfalse
+[2m2026-08-20T06:12:15.972143Z[0m [31mERROR[0m all providers exhausted [3merror[0m[2m=[0mnetwork error on ollama: error sending request for url (http://localhost:11434/v1/chat/completions)
+[2m2026-08-20T06:12:21.867544Z[0m [31mERROR[0m all providers exhausted [3merror[0m[2m=[0mall providers exhausted
+[2m2026-08-20T06:12:22.274262Z[0m [31mERROR[0m all providers exhausted [3merror[0m[2m=[0mall providers exhausted
+[2m2026-08-20T06:12:28.838964Z[0m [31mERROR[0m all providers exhausted [3merror[0m[2m=[0mall providers exhausted
+[2m2026-08-20T06:12:31.807596Z[0m [31mERROR[0m all providers exhausted [3merror[0m[2m=[0mall providers exhausted
+[2m2026-08-20T06:12:32.947116Z[0m [31mERROR[0m all providers exhausted [3merror[0m[2m=[0mall providers exhausted
+[2m2026-08-20T06:12:34.270187Z[0m [31mERROR[0m all providers exhausted [3merror[0m[2m=[0mall providers exhausted
+[2m2026-08-20T06:12:44.610149Z[0m [31mERROR[0m all providers exhausted [3merror[0m[2m=[0mall providers exhausted
+[2m2026-08-20T06:12:45.087362Z[0m [31mERROR[0m all providers exhausted [3merror[0m[2m=[0mall providers exhausted
+[2m2026-08-20T06:12:46.065994Z[0m [31mERROR[0m all providers exhausted [3merror[0m[2m=[0mall providers exhausted
+[2m2026-08-20T06:13:01.533034Z[0m [31mERROR[0m all providers exhausted [3merror[0m[2m=[0mall providers exhausted
+[2m2026-08-20T06:13:24.852772Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mzai [3mlatency_ms[0m[2m=[0m73539
+[2m2026-08-20T06:13:25.306024Z[0m [33m WARN[0m circuit breaker HALF_OPEN → OPEN (probe failed)
+[2m2026-08-20T06:13:25.306625Z[0m [33m WARN[0m request failed [3mprovider[0m[2m=[0mzai [3mattempt[0m[2m=[0m0 [3merror[0m[2m=[0mrate limited on zai (retry after Nones) [3mshould_retry[0m[2m=[0mtrue
+[2m2026-08-20T06:13:26.112548Z[0m [33m WARN[0m request failed [3mprovider[0m[2m=[0mzai [3mattempt[0m[2m=[0m1 [3merror[0m[2m=[0mrate limited on zai (retry after Nones) [3mshould_retry[0m[2m=[0mtrue
+[2m2026-08-20T06:13:26.679186Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mzai [3mlatency_ms[0m[2m=[0m75294
+[2m2026-08-20T06:13:27.592330Z[0m [33m WARN[0m circuit breaker HALF_OPEN → OPEN (probe failed)
+[2m2026-08-20T06:13:27.592367Z[0m [33m WARN[0m request failed [3mprovider[0m[2m=[0mzai [3mattempt[0m[2m=[0m2 [3merror[0m[2m=[0mrate limited on zai (retry after Nones) [3mshould_retry[0m[2m=[0mfalse
+[2m2026-08-20T06:13:27.592375Z[0m [32m INFO[0m circuit breaker transitioning OPEN → HALF_OPEN
+[2m2026-08-20T06:13:27.593104Z[0m [33m WARN[0m circuit breaker HALF_OPEN → OPEN (probe failed)
+[2m2026-08-20T06:13:27.593117Z[0m [33m WARN[0m request failed [3mprovider[0m[2m=[0mollama [3mattempt[0m[2m=[0m0 [3merror[0m[2m=[0mnetwork error on ollama: error sending request for url (http://localhost:11434/v1/chat/completions) [3mshould_retry[0m[2m=[0mtrue
+[2m2026-08-20T06:13:28.094591Z[0m [33m WARN[0m request failed [3mprovider[0m[2m=[0mollama [3mattempt[0m[2m=[0m1 [3merror[0m[2m=[0mnetwork error on ollama: error sending request for url (http://localhost:11434/v1/chat/completions) [3mshould_retry[0m[2m=[0mtrue
+[2m2026-08-20T06:13:29.096440Z[0m [33m WARN[0m request failed [3mprovider[0m[2m=[0mollama [3mattempt[0m[2m=[0m2 [3merror[0m[2m=[0mnetwork error on ollama: error sending request for url (http://localhost:11434/v1/chat/completions) [3mshould_retry[0m[2m=[0mfalse
+[2m2026-08-20T06:13:29.096470Z[0m [31mERROR[0m all providers exhausted [3merror[0m[2m=[0mnetwork error on ollama: error sending request for url (http://localhost:11434/v1/chat/completions)
+[2m2026-08-20T06:13:35.636376Z[0m [31mERROR[0m all providers exhausted [3merror[0m[2m=[0mall providers exhausted
+[2m2026-08-20T06:13:43.907862Z[0m [31mERROR[0m all providers exhausted [3merror[0m[2m=[0mall providers exhausted
+[2m2026-08-20T06:13:44.601206Z[0m [31mERROR[0m all providers exhausted [3merror[0m[2m=[0mall providers exhausted
+[2m2026-08-20T06:13:50.863542Z[0m [31mERROR[0m all providers exhausted [3merror[0m[2m=[0mall providers exhausted
+[2m2026-08-20T06:13:54.566483Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mzai [3mlatency_ms[0m[2m=[0m27885
+[2m2026-08-20T06:13:57.749328Z[0m [33m WARN[0m circuit breaker HALF_OPEN → OPEN (probe failed)
+[2m2026-08-20T06:13:57.749371Z[0m [33m WARN[0m request failed [3mprovider[0m[2m=[0mzai [3mattempt[0m[2m=[0m0 [3merror[0m[2m=[0mrate limited on zai (retry after Nones) [3mshould_retry[0m[2m=[0mtrue
+[2m2026-08-20T06:13:58.678090Z[0m [33m WARN[0m request failed [3mprovider[0m[2m=[0mzai [3mattempt[0m[2m=[0m1 [3merror[0m[2m=[0mrate limited on zai (retry after Nones) [3mshould_retry[0m[2m=[0mtrue
+[2m2026-08-20T06:13:59.252176Z[0m [31mERROR[0m all providers exhausted [3merror[0m[2m=[0mall providers exhausted
+[2m2026-08-20T06:13:59.485460Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mzai [3mlatency_ms[0m[2m=[0m4917
+[2m2026-08-20T06:14:18.895603Z[0m [33m WARN[0m circuit breaker HALF_OPEN → OPEN (probe failed)
+[2m2026-08-20T06:14:18.895706Z[0m [33m WARN[0m request failed [3mprovider[0m[2m=[0mzai [3mattempt[0m[2m=[0m0 [3merror[0m[2m=[0mrate limited on zai (retry after Nones) [3mshould_retry[0m[2m=[0mtrue
+[2m2026-08-20T06:14:19.856241Z[0m [33m WARN[0m request failed [3mprovider[0m[2m=[0mzai [3mattempt[0m[2m=[0m1 [3merror[0m[2m=[0mrate limited on zai (retry after Nones) [3mshould_retry[0m[2m=[0mtrue
+[2m2026-08-20T06:14:21.312531Z[0m [33m WARN[0m request failed [3mprovider[0m[2m=[0mzai [3mattempt[0m[2m=[0m2 [3merror[0m[2m=[0mrate limited on zai (retry after Nones) [3mshould_retry[0m[2m=[0mfalse
+[2m2026-08-20T06:14:21.312592Z[0m [31mERROR[0m all providers exhausted [3merror[0m[2m=[0mrate limited on zai (retry after Nones)
+[2m2026-08-20T06:14:27.877283Z[0m [32m INFO[0m circuit breaker transitioning OPEN → HALF_OPEN
+[2m2026-08-20T06:14:27.877947Z[0m [33m WARN[0m circuit breaker HALF_OPEN → OPEN (probe failed)
+[2m2026-08-20T06:14:27.877972Z[0m [33m WARN[0m request failed [3mprovider[0m[2m=[0mollama [3mattempt[0m[2m=[0m0 [3merror[0m[2m=[0mnetwork error on ollama: error sending request for url (http://localhost:11434/v1/chat/completions) [3mshould_retry[0m[2m=[0mtrue
+[2m2026-08-20T06:14:28.379763Z[0m [33m WARN[0m request failed [3mprovider[0m[2m=[0mollama [3mattempt[0m[2m=[0m1 [3merror[0m[2m=[0mnetwork error on ollama: error sending request for url (http://localhost:11434/v1/chat/completions) [3mshould_retry[0m[2m=[0mtrue
+[2m2026-08-20T06:14:29.381725Z[0m [33m WARN[0m request failed [3mprovider[0m[2m=[0mollama [3mattempt[0m[2m=[0m2 [3merror[0m[2m=[0mnetwork error on ollama: error sending request for url (http://localhost:11434/v1/chat/completions) [3mshould_retry[0m[2m=[0mfalse
+[2m2026-08-20T06:14:29.381760Z[0m [31mERROR[0m all providers exhausted [3merror[0m[2m=[0mnetwork error on ollama: error sending request for url (http://localhost:11434/v1/chat/completions)
+[2m2026-08-20T06:14:35.900492Z[0m [31mERROR[0m all providers exhausted [3merror[0m[2m=[0mall providers exhausted
+[2m2026-08-20T06:14:52.312493Z[0m [31mERROR[0m all providers exhausted [3merror[0m[2m=[0mall providers exhausted
+[2m2026-08-20T06:14:58.755760Z[0m [31mERROR[0m all providers exhausted [3merror[0m[2m=[0mall providers exhausted
+[2m2026-08-20T06:15:02.517350Z[0m [31mERROR[0m all providers exhausted [3merror[0m[2m=[0mall providers exhausted
+[2m2026-08-20T06:15:08.306368Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mzai [3mlatency_ms[0m[2m=[0m68627
+[2m2026-08-20T06:15:14.161102Z[0m [33m WARN[0m circuit breaker HALF_OPEN → OPEN (probe failed)
+[2m2026-08-20T06:15:14.161142Z[0m [33m WARN[0m request failed [3mprovider[0m[2m=[0mzai [3mattempt[0m[2m=[0m0 [3merror[0m[2m=[0mrate limited on zai (retry after Nones) [3mshould_retry[0m[2m=[0mtrue
+[2m2026-08-20T06:15:15.097931Z[0m [33m WARN[0m request failed [3mprovider[0m[2m=[0mzai [3mattempt[0m[2m=[0m1 [3merror[0m[2m=[0mrate limited on zai (retry after Nones) [3mshould_retry[0m[2m=[0mtrue
+[2m2026-08-20T06:15:16.537523Z[0m [33m WARN[0m request failed [3mprovider[0m[2m=[0mzai [3mattempt[0m[2m=[0m2 [3merror[0m[2m=[0mrate limited on zai (retry after Nones) [3mshould_retry[0m[2m=[0mfalse
+[2m2026-08-20T06:15:16.537567Z[0m [31mERROR[0m all providers exhausted [3merror[0m[2m=[0mrate limited on zai (retry after Nones)
+[2m2026-08-20T06:15:29.272569Z[0m [32m INFO[0m circuit breaker transitioning OPEN → HALF_OPEN
+[2m2026-08-20T06:15:29.273723Z[0m [33m WARN[0m circuit breaker HALF_OPEN → OPEN (probe failed)
+[2m2026-08-20T06:15:29.273746Z[0m [33m WARN[0m request failed [3mprovider[0m[2m=[0mollama [3mattempt[0m[2m=[0m0 [3merror[0m[2m=[0mnetwork error on ollama: error sending request for url (http://localhost:11434/v1/chat/completions) [3mshould_retry[0m[2m=[0mtrue
+[2m2026-08-20T06:15:29.776055Z[0m [33m WARN[0m request failed [3mprovider[0m[2m=[0mollama [3mattempt[0m[2m=[0m1 [3merror[0m[2m=[0mnetwork error on ollama: error sending request for url (http://localhost:11434/v1/chat/completions) [3mshould_retry[0m[2m=[0mtrue
+[2m2026-08-20T06:15:30.778096Z[0m [33m WARN[0m request failed [3mprovider[0m[2m=[0mollama [3mattempt[0m[2m=[0m2 [3merror[0m[2m=[0mnetwork error on ollama: error sending request for url (http://localhost:11434/v1/chat/completions) [3mshould_retry[0m[2m=[0mfalse
+[2m2026-08-20T06:15:30.778129Z[0m [31mERROR[0m all providers exhausted [3merror[0m[2m=[0mnetwork error on ollama: error sending request for url (http://localhost:11434/v1/chat/completions)
+[2m2026-08-20T06:15:40.556930Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mzai [3mlatency_ms[0m[2m=[0m32224
+[2m2026-08-20T06:28:44.355002Z[0m [32m INFO[0m circuit breaker HALF_OPEN → CLOSED
+[2m2026-08-20T06:28:44.355051Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mzai [3mlatency_ms[0m[2m=[0m69994
+[2m2026-08-20T06:28:47.124056Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mzai [3mlatency_ms[0m[2m=[0m2767
+[2m2026-08-20T06:29:27.821620Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mzai [3mlatency_ms[0m[2m=[0m40694
+[2m2026-08-20T06:29:32.621947Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mzai [3mlatency_ms[0m[2m=[0m4798
+[2m2026-08-20T06:30:40.726465Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mzai [3mlatency_ms[0m[2m=[0m68101
+[2m2026-08-20T06:31:58.615426Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mzai [3mlatency_ms[0m[2m=[0m77887
+[2m2026-08-20T06:32:36.061309Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mzai [3mlatency_ms[0m[2m=[0m37408
+[2m2026-08-20T06:34:01.011968Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mzai [3mlatency_ms[0m[2m=[0m84948
+[2m2026-08-20T06:34:06.857063Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mzai [3mlatency_ms[0m[2m=[0m5843
+[2m2026-08-20T06:34:10.931645Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mzai [3mlatency_ms[0m[2m=[0m4073
+[2m2026-08-20T06:35:09.088292Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mzai [3mlatency_ms[0m[2m=[0m58154
+[2m2026-08-20T06:36:02.684649Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mzai [3mlatency_ms[0m[2m=[0m53593
+[2m2026-08-20T06:37:17.765418Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mzai [3mlatency_ms[0m[2m=[0m75077
+[2m2026-08-20T06:38:24.524578Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mzai [3mlatency_ms[0m[2m=[0m66754
+[2m2026-08-20T06:39:43.225090Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mzai [3mlatency_ms[0m[2m=[0m78697
+[2m2026-08-20T06:40:14.346535Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mzai [3mlatency_ms[0m[2m=[0m31096
+[2m2026-08-20T06:41:16.977376Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mzai [3mlatency_ms[0m[2m=[0m62628
+[2m2026-08-20T06:42:24.830928Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mzai [3mlatency_ms[0m[2m=[0m67850
+[2m2026-08-20T06:43:51.431627Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mzai [3mlatency_ms[0m[2m=[0m86597
+[2m2026-08-20T06:44:27.699667Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mzai [3mlatency_ms[0m[2m=[0m36187
+[2m2026-08-20T06:45:51.005285Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mzai [3mlatency_ms[0m[2m=[0m83301
+[2m2026-08-20T06:46:49.510072Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mzai [3mlatency_ms[0m[2m=[0m58481
+[2m2026-08-20T07:00:10.297525Z[0m [32m INFO[0m circuit breaker transitioning OPEN → HALF_OPEN
+[2m2026-08-20T07:00:10.306912Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m9
+[2m2026-08-20T07:01:09.253826Z[0m [32m INFO[0m circuit breaker HALF_OPEN → CLOSED
+[2m2026-08-20T07:01:09.253857Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m1
+[2m2026-08-20T07:03:13.429941Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m3
+[2m2026-08-20T07:04:03.274368Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m1
+[2m2026-08-20T07:04:40.591836Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m2
+[2m2026-08-20T07:06:34.639793Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m2
+[2m2026-08-20T07:07:34.566855Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m1
+[2m2026-08-20T07:08:14.439439Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m1
+[2m2026-08-20T07:09:04.565933Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m1
+[2m2026-08-20T07:09:49.929780Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m1
+[2m2026-08-20T07:10:38.653151Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m1
+[2m2026-08-20T07:11:18.283442Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m1
+[2m2026-08-20T07:12:12.500681Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m1
+[2m2026-08-20T07:13:23.163060Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m1
+[2m2026-08-20T07:13:51.029799Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m1
+[2m2026-08-20T07:14:27.761646Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m1
+[2m2026-08-20T07:15:13.815967Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m2
+[2m2026-08-20T07:16:05.268363Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m1
+[2m2026-08-20T07:16:52.801015Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m1
+[2m2026-08-20T07:17:27.468898Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m1
+[2m2026-08-20T09:38:12.302810Z[0m [32m INFO[0m shutdown signal received
+[2m2026-08-20T09:38:12.313266Z[0m [32m INFO[0m fleet-gateway stopped
+[2m2026-08-20T16:18:08.182825Z[0m [32m INFO[0m loaded config from config/fleet-gateway.toml: 4 providers in chain: ["deepinfra", "deepseek", "zai", "ollama"]
+[2m2026-08-20T16:18:08.184884Z[0m [32m INFO[0m fleet-gateway starting on 127.0.0.1:8787

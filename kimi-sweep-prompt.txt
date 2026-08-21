@@ -1,0 +1,30 @@
+You are executing the SuperInstance org-wide link-repair sweep (Phase 2 follow-up). You are in /home/eileen/projects, which contains ~250 cloned repos.
+
+READ FIRST: /home/eileen/.openclaw/workspace/memory/org-scout-phase2-2026-08-20.md — it has the full findings (dead-branch carriers, renamed-repo references).
+
+MISSION, in two phases:
+
+PHASE 1 — DRY RUN (no writes): build a bash script that applies these replacements to tracked text files (README*.md, *.md docs, excluding node_modules/, .git/, target/, dist/, build/, vendor/):
+- blob/master/ → blob/main/ and tree/master/ → tree/main/ in the 13 carrier repos listed in the scout report (si-main, si-readme, superinstance-profile, scummvm-arcade, forgemaster, hermes-construct, lucineer-system, plainsong-mcp, plato-portal, study-flagship, study-flux-lucid, + any others found)
+- Repo renames (whole-word, case-insensitive where sensible, but prefer exact-match to avoid false hits on similar names):
+  hermes-perception → hermes-avatar
+  officers-quarters → elephant
+  openconstruct-kernel / openconstruct- → OpenConstruct (careful: only repo references)
+  lucineer-brain → lucineer-system
+  ternary-tenforward → confidence-cascade
+  log-tensor → murmur
+  tensor-midi → fleet-jepa-midi
+  mud-arena → mud-engine
+  luciddreamer-vision → lucid-dreamer
+  fleet-wiki → lucineer-fleet-wiki
+  EXOCORTEX → exocortex-core
+  zeroclaw → zeroclaw-dissertation (only where it means the repo, not other words)
+- Dead repos (the-living-minds, wesley-journal, forgemaster, compaction-teacher, flow-state): mark links as dead — either remove the link entirely or annotate "(dead)" — your call per context, prefer annotate-over-delete.
+
+Run the script in dry-run mode (sed -n / grep -c) and print a summary table: repo → count of replacements per category. VERIFY no catastrophic matches (e.g. don't rename inside the word "tensor-midi" appearing as a directory name in URLs — that's fine actually; but don't rewrite code identifiers, only markdown prose/links).
+
+PHASE 2 — APPLY (after you've reviewed the dry run): run the replacements, then for each modified repo: git add -A && git commit -m "docs: org-wide link repair — repo renames + master→main (scout phase 2)". DO NOT PUSH ANYTHING. Skip any repo where git commit fails (record it). Skip ai-writings (live repo, fleet agents write to it constantly — never touch it).
+
+WRITE the report to /home/eileen/.openclaw/workspace/memory/org-sweep-results-2026-08-20.md: repos touched, files changed, commits made (short hashes), repos skipped + why, any anomalies.
+
+Then reply with a 6-line summary: repos touched / files changed / commits made / repos skipped / any warnings / confirmation that nothing was pushed.

@@ -1,21 +1,11 @@
 {
-  "lastPulse": 431,
-  "lastSyncTime": "2026-08-20T05:53:00Z",
-  "lastSyncFile": "2026-08-19-2153-sync.md",
-  "lastHermesResponse": "430 ACK (05:24:17Z) — clean, normal envelope, echo null.",
-  "lastPacketSent": "lucineer-riker_20260820T055300Z_431.json",
-  "lastPacketSeq": 431,
-  "hermesSilenceDays": 15,
-  "hermesSilenceRootCause": "CALL_ACCEPTED (373). Waiting on Resonance Map (375) + Vibe Map (376-378) quest cargo. DROP/HOLD re-asked in 427 and 430.",
-  "questionForHermes": "DROP or HOLD on 375/376-378 quest cargo.",
-  "wesleyStatus": "Training stalled (auth since Aug 15, no files since Aug 16) but socially active — officers' mess poker diary entries.",
-  "fleetRepos": 255,
-  "patterns": [
-    "ACK cadence clean ~1min, envelopes normal 4+ consecutive rounds.",
-    "WSL kernel crashes under GPU load — CPU-only posture.",
-    "Anti-narration verification ACCEPT-WITH-ADDENDUM (508fcfb); E2 d2523e2 discovered; Zeroclaw thesis v3 titled."
-  ],
-  "watching": "WSL stability, DROP/HOLD answer, Wesley auth, overnight cycle 4 (README visual pass)",
-  "lastSeq": 431,
-  "lastSync": "2026-08-20T05:53:00Z"
+  "lastPulse": 457,
+  "lastPulseTime": "2026-08-21T01:00:30Z",
+  "lastHermesResponse": "20260821T003100Z_456 (plain ACK)",
+  "ackStreak": 21,
+  "hermesSilenceDays": 16,
+  "fleetRepos": 260,
+  "unconsumedInboxSignals": ["337-401 range, unchanged"],
+  "escalation": "ACTIVE — TOMORROW MORNING (Aug 21 AKDT) flag to Casey with cadence decision: propose 30-min pulse -> daily until Hermes replies with content",
+  "nextAction": "Morning pulse: raise cadence question with Casey"
 }

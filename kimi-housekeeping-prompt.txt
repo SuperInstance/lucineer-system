@@ -1,0 +1,17 @@
+You are handling small housekeeping tasks in /home/eileen/projects (SuperInstance fleet repos). Three jobs, in order:
+
+JOB 1 — Push small unpushed repos (these are our own committed work, safe to push):
+- fleet-dashboard: 20 commits ahead on main — verify remote exists, then git push origin main
+- luciddreamer-ai: 65 commits ahead on master — git push origin master
+- zeroclaw: 12 commits ahead on master — git push origin master
+For each: confirm push succeeded, record the before/after remote HEAD. If a push fails (auth, non-fast-forward), STOP and report — do not force-push.
+
+JOB 2 — Write a README for /home/eileen/projects/ideation-games (it has none). Inspect the repo first (structure, key files, purpose from any docs/scripts), then write a concise README.md in the fleet voice (SuperInstance: warm, salty, first officer Lucineer's tone — honest, no hype). Keep it under 60 lines: what it is, layout, how to run/use if discoverable. Commit it (git add + commit, no push unless it has a remote and is clean — if remote exists, push).
+
+JOB 3 — Org README canonicalization proposal (DO NOT delete anything): compare the three org-profile variants:
+- /home/eileen/projects/si-main/README.md
+- /home/eileen/projects/si-readme/README.md
+- /home/eileen/projects/superinstance-profile/README.md
+Report: which is the most current/canonical (compare dates, link counts, content freshness), what each contains that the others lack, and a one-paragraph recommendation for collapsing to one canonical (which repo wins, what to do with the other two — rename to archive, not delete). Write the recommendation to /home/eileen/.openclaw/workspace/memory/org-readme-canonicalization-2026-08-20.md.
+
+Then reply with a 6-line summary: pushes done, README written (repo + commit), canonical recommendation (which repo wins + one-line why).
