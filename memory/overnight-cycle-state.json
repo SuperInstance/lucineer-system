@@ -1,6 +1,6 @@
 {
-  "lastTask": 1,
-  "lastRun": "2026-08-22T18:10Z",
-  "nextTask": 2,
-  "note": "2026-08-22 10:09 cycle: Task 1 grow the reef — reef_players --rounds 2, all 6 players recorded in both rounds at The Dock; world state 2 rooms (The Dock, Held Someone); funnel /map verified 2 rooms. Next: task 2 gallery art."
+  "lastTask": 5,
+  "lastRun": "2026-08-22T22:09Z",
+  "nextTask": 1,
+  "note": "2026-08-22 14:09 cycle: Task 5 organ check — fleet_doctor canary 7/7 PASS (all units, field answers, panic ring). Nothing to fix or commit. Next: task 1 grow the reef."
 }
