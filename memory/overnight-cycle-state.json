@@ -1,6 +1,6 @@
 {
-  "lastTask": 5,
-  "lastRun": "2026-08-21T19:16Z",
-  "nextTask": 1,
-  "note": "2026-08-21 11:16 cycle 5: organ check — fleet_doctor --canary 7/7 pass, zero issues, nothing to fix. Next: task 1 reef round."
+  "lastTask": 1,
+  "lastRun": "2026-08-22T01:45Z",
+  "nextTask": 2,
+  "note": "2026-08-21 17:38 cycle: reef growth — reef_players --rounds 2 ran clean; 12 catches recorded (6 crew x 2 rounds at The Dock). Live map verified: 2 rooms. Next: task 2 gallery art."
 }
