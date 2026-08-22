@@ -1,6 +1,6 @@
 {
-  "lastTask": 5,
-  "lastRun": "2026-08-22T05:41Z",
-  "nextTask": 1,
-  "note": "2026-08-21 21:40 cycle: Organ check — fleet_doctor --canary 7/7 PASS (elephant-roomd, terrain-core, elephant-bridge, cns-echo, roomd/field, terrain/field, panic ring). No fixes needed. Next: task 1 grow the reef."
+  "lastTask": 1,
+  "lastRun": "2026-08-22T18:10Z",
+  "nextTask": 2,
+  "note": "2026-08-22 10:09 cycle: Task 1 grow the reef — reef_players --rounds 2, all 6 players recorded in both rounds at The Dock; world state 2 rooms (The Dock, Held Someone); funnel /map verified 2 rooms. Next: task 2 gallery art."
 }
