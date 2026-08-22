@@ -1,6 +1,6 @@
 {
-  "lastTask": 5,
-  "lastRun": "2026-08-22T22:09Z",
-  "nextTask": 1,
-  "note": "2026-08-22 14:09 cycle: Task 5 organ check — fleet_doctor canary 7/7 PASS (all units, field answers, panic ring). Nothing to fix or commit. Next: task 1 grow the reef."
+  "lastTask": 1,
+  "lastRun": "2026-08-22T23:09Z",
+  "nextTask": 2,
+  "note": "2026-08-22 15:09 cycle: Task 1 grow the reef — reef_players 2 rounds, all 6 crew caught/recorded at The Dock. Worker /map verified: 2 rooms (The Dock, Held Someone). No local repo changes; nothing to commit. Next: task 2 gallery art."
 }
