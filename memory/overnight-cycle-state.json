@@ -1,6 +1,6 @@
 {
-  "lastTask": 1,
-  "lastRun": "2026-08-22T01:45Z",
-  "nextTask": 2,
-  "note": "2026-08-21 17:38 cycle: reef growth — reef_players --rounds 2 ran clean; 12 catches recorded (6 crew x 2 rounds at The Dock). Live map verified: 2 rooms. Next: task 2 gallery art."
+  "lastTask": 3,
+  "lastRun": "2026-08-22T03:45Z",
+  "nextTask": 4,
+  "note": "2026-08-21 19:38 cycle: creative — wrote community-life/portrait-wesley-the-ensign.md (model portrait of Wesley, the local GPU model: rented excellence vs grown crew). Committed+pushed afc9ec0b. Next: task 4 README visual pass."
 }

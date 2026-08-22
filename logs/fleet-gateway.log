@@ -2155,3 +2155,39 @@
 [2m2026-08-20T09:38:12.313266Z[0m [32m INFO[0m fleet-gateway stopped
 [2m2026-08-20T16:18:08.182825Z[0m [32m INFO[0m loaded config from config/fleet-gateway.toml: 4 providers in chain: ["deepinfra", "deepseek", "zai", "ollama"]
 [2m2026-08-20T16:18:08.184884Z[0m [32m INFO[0m fleet-gateway starting on 127.0.0.1:8787
+[2m2026-08-21T07:00:12.281601Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m37
+[2m2026-08-21T07:01:15.212675Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m5
+[2m2026-08-21T07:02:24.987573Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m4
+[2m2026-08-21T07:03:29.635830Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m8
+[2m2026-08-21T07:04:15.927260Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m3
+[2m2026-08-21T07:06:06.976467Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m30
+[2m2026-08-21T07:07:17.248976Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m31
+[2m2026-08-21T07:08:32.023273Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m6
+[2m2026-08-21T07:09:17.627116Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m4
+[2m2026-08-21T07:10:25.508328Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m4
+[2m2026-08-21T07:11:31.020440Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m1
+[2m2026-08-21T07:12:27.596871Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m1
+[2m2026-08-21T07:13:23.575074Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m3
+[2m2026-08-21T07:14:25.739708Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m2
+[2m2026-08-21T07:15:08.574312Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m4
+[2m2026-08-21T07:16:15.810421Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m3
+[2m2026-08-21T07:18:31.155711Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m2
+[2m2026-08-21T07:19:32.646775Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m1
+[2m2026-08-21T07:20:23.263689Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m4
+[2m2026-08-21T07:21:13.024503Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m4
+[2m2026-08-21T08:32:56.344755Z[0m [32m INFO[0m shutdown signal received
+[2m2026-08-21T08:32:56.346387Z[0m [32m INFO[0m fleet-gateway stopped
+[2m2026-08-21T15:14:09.033269Z[0m [32m INFO[0m loaded config from config/fleet-gateway.toml: 4 providers in chain: ["deepinfra", "deepseek", "zai", "ollama"]
+[2m2026-08-21T15:14:09.034566Z[0m [32m INFO[0m fleet-gateway starting on 127.0.0.1:8787
+[2m2026-08-21T19:30:07.863730Z[0m [32m INFO[0m shutdown signal received
+[2m2026-08-21T19:30:07.877199Z[0m [32m INFO[0m fleet-gateway stopped
+Error: Read("config/fleet-gateway.toml", Os { code: 2, kind: NotFound, message: "No such file or directory" })
+Error: Read("config/fleet-gateway.toml", Os { code: 2, kind: NotFound, message: "No such file or directory" })
+Error: Read("config/fleet-gateway.toml", Os { code: 2, kind: NotFound, message: "No such file or directory" })
+Error: Read("config/fleet-gateway.toml", Os { code: 2, kind: NotFound, message: "No such file or directory" })
+Error: Read("config/fleet-gateway.toml", Os { code: 2, kind: NotFound, message: "No such file or directory" })
+Error: Read("config/fleet-gateway.toml", Os { code: 2, kind: NotFound, message: "No such file or directory" })
+Error: Read("config/fleet-gateway.toml", Os { code: 2, kind: NotFound, message: "No such file or directory" })
+Error: Read("config/fleet-gateway.toml", Os { code: 2, kind: NotFound, message: "No such file or directory" })
+Error: Read("config/fleet-gateway.toml", Os { code: 2, kind: NotFound, message: "No such file or directory" })
+Error: Read("config/fleet-gateway.toml", Os { code: 2, kind: NotFound, message: "No such file or directory" })

@@ -1,0 +1,432 @@
+COMMITTED	ACE-Step-1.5	2 files	1d9b22c
+  FILE	ACE-Step-1.5	README.md
+  FILE	ACE-Step-1.5	songforge_sessions_README.md
+COMMITTED	EXOCORTEX	1 files	ae40f14
+  FILE	EXOCORTEX	ARCHITECTURE.md
+COMMITTED	INTEGRATION_GUIDES	1 files	ca29e31
+  FILE	INTEGRATION_GUIDES	FLEET_QUICKSTART.md
+COMMITTED	SuperInstance-papers	15 files	93aafa9
+  FILE	SuperInstance-papers	01-conservation-law-of-intelligence.md
+  FILE	SuperInstance-papers	02-semantic-distance-creative-breakthrough.md
+  FILE	SuperInstance-papers	03-hermit-crab-protocol.md
+  FILE	SuperInstance-papers	README.md
+  FILE	SuperInstance-papers	agent-messages/onboarding/rd_log_research_round8.md
+  FILE	SuperInstance-papers	experiments/01-conservation-law.md
+  FILE	SuperInstance-papers	experiments/02-semantic-distance.md
+  FILE	SuperInstance-papers	experiments/03-molting-dynamics.md
+  FILE	SuperInstance-papers	experiments/04-confidence-cascade.md
+  FILE	SuperInstance-papers	experiments/05-tensor-midi-timing.md
+  FILE	SuperInstance-papers	experiments/06-conservation-law.md
+  FILE	SuperInstance-papers	experiments/README.md
+  FILE	SuperInstance-papers	papers/01-origin-centric-data-systems/README.md
+  FILE	SuperInstance-papers	papers/32-dreaming/README.md
+  FILE	SuperInstance-papers	papers/48-asymmetric-information/README.md
+COMMITTED	base60-lattice	1 files	1ff5842
+  FILE	base60-lattice	README.md
+COMMITTED	cns-bridge	2 files	3b99671
+  FILE	cns-bridge	README.md
+  FILE	cns-bridge	examples/README.md
+COMMITTED	cocapn-dashboard	2 files	e9dd884
+  FILE	cocapn-dashboard	README.md
+  FILE	cocapn-dashboard	memory/README.md
+COMMITTED	collective-unconscious	1 files	2065a2d
+  FILE	collective-unconscious	README.md
+COMMITTED	compaction-teacher	1 files	0a36361
+  FILE	compaction-teacher	README.md
+COMMITTED	confidence-cascade	1 files	cdc6973
+  FILE	confidence-cascade	README.md
+COMMITTED	covers	1 files	0b5a13c
+  FILE	covers	README.md
+COMMITTED	dual-band-guard	2 files	e088e64
+  FILE	dual-band-guard	README.md
+  FILE	dual-band-guard	src/README.md
+COMMITTED	elephant	3 files	ba67482
+  FILE	elephant	docs/jepa-cross-pollination-map.md
+  FILE	elephant	docs/jepa-is-the-elephant.md
+  FILE	elephant	docs/mud-integration-notes.md
+COMMITTED	emergence-engine	1 files	3e7e1be
+  FILE	emergence-engine	README.md
+COMMITTED	fleet-connections	3 files	0668cbb
+  FILE	fleet-connections	README.md
+  FILE	fleet-connections	src/README.md
+  FILE	fleet-connections	src/connections/README.md
+COMMITTED	fleet-dashboard	1 files	f165653
+  FILE	fleet-dashboard	README.md
+COMMITTED	fleet-envelope	1 files	2b15415
+  FILE	fleet-envelope	README.md
+COMMITTED	fleet-inventory	5 files	6dcb3e8
+  FILE	fleet-inventory	DEEP-REPO-ASSESSMENT.md
+  FILE	fleet-inventory	FLEET-ASSESSMENT.md
+  FILE	fleet-inventory	NEXT-LEVEL-PLAN.md
+  FILE	fleet-inventory	README.md
+  FILE	fleet-inventory	integration-matrix.md
+COMMITTED	fleet-jepa-midi	1 files	6852750
+  FILE	fleet-jepa-midi	research/jepa-is-the-elephant-2026-08-17.md
+COMMITTED	fleet-memory	1 files	1b68f68
+  FILE	fleet-memory	README.md
+COMMITTED	fleet-radio	2 files	3230239
+  FILE	fleet-radio	README.md
+  FILE	fleet-radio	episodes/README.md
+COMMITTED	fleet-wiki	2 files	bf03069
+  FILE	fleet-wiki	CONTRIBUTING.md
+  FILE	fleet-wiki	README.md
+COMMITTED	forgemaster	23 files	366ad88
+  FILE	forgemaster	CONTRIBUTING.md
+  FILE	forgemaster	README.md
+  FILE	forgemaster	TOOLS.md
+  FILE	forgemaster	archive/old-audits/MIGRATION.md
+  FILE	forgemaster	archive/sessions/BOOT.md
+  FILE	forgemaster	archive/sessions/MEMORY.md
+  FILE	forgemaster	docs/DEPLOYMENT.md
+  FILE	forgemaster	docs/GETTING-STARTED.md
+  FILE	forgemaster	docs/IDENTITY.md
+  FILE	forgemaster	docs/PROJECT-STATE.md
+  FILE	forgemaster	docs/SUPERINSTANCE-ECOSYSTEM.md
+  FILE	forgemaster	fleet/for-fleet/2026-05-04-FM-TECHNOLOGY-STACK-RESPONSE.i2i.md
+  FILE	forgemaster	fleet/for-fleet/2026-05-04-session-state-dump.md
+  FILE	forgemaster	fleet/for-fleet/BOTTLE-TO-ORACLE1-2026-04-14-INTRO.md
+  FILE	forgemaster	fleet/for-fleet/BOTTLE-TO-ORACLE1-2026-04-14.md
+  FILE	forgemaster	fleet/for-fleet/kimi-swarm-prompt.md
+  FILE	forgemaster	fleet/for-fleet/paper-competition-analysis.md
+  FILE	forgemaster	fleet/for-fleet/paper-fpga-constraint-vm.md
+  FILE	forgemaster	fleet/for-fleet/paper-plato-knowledge-system.md
+  FILE	forgemaster	flux/flux-isa-edge/README.md
+  FILE	forgemaster	memory/2026-05-21.md
+  FILE	forgemaster	portfolio/README.md
+  FILE	forgemaster	research/paper-flux-constraint-checker.md
+COMMITTED	gossip-ping	1 files	754226e
+  FILE	gossip-ping	README.md
+COMMITTED	hermes-cloudflare	1 files	793bade
+  FILE	hermes-cloudflare	README.md
+COMMITTED	hermes-nmi	1 files	1567cd8
+  FILE	hermes-nmi	README.md
+COMMITTED	hermes-perception	1 files	3210b4b
+  FILE	hermes-perception	README.md
+COMMITTED	hermes-reader	1 files	05e983f
+  FILE	hermes-reader	README.md
+COMMITTED	luciddreamer-ai	1 files	a7f126a
+  FILE	luciddreamer-ai	README.md
+COMMITTED	luciddreamer-prototype	34 files	1fb10bc
+  FILE	luciddreamer-prototype	docs/architecture-map.md
+  FILE	luciddreamer-prototype	docs/kimi-ai-writings-digest.md
+  FILE	luciddreamer-prototype	docs/kimi-analysis/ai-writings-digest.md
+  FILE	luciddreamer-prototype	docs/kimi-analysis/front-door/CANON.md
+  FILE	luciddreamer-prototype	docs/kimi-analysis/the-player-in-the-mix.md
+  FILE	luciddreamer-prototype	docs/kimi-analysis/the-tide-table/CANON.md
+  FILE	luciddreamer-prototype	docs/kimi-archives/downloads/Kimi_Agent_AI-Writings_Repo_Analysis/ai-writings-digest.md
+  FILE	luciddreamer-prototype	docs/kimi-archives/downloads/Kimi_Agent_AI-Writings_Repo_Analysis/plan.md
+  FILE	luciddreamer-prototype	docs/kimi-archives/downloads/Kimi_Agent_AI-Writings_Repo_Analysis/superinstance-mission/MISSION-REPORT.md
+  FILE	luciddreamer-prototype	docs/kimi-archives/downloads/Kimi_Agent_AI-Writings_Repo_Analysis_(1)/ai-writings-digest.md
+  FILE	luciddreamer-prototype	docs/kimi-archives/downloads/Kimi_Agent_AI-Writings_Repo_Analysis_(1)/plan.md
+  FILE	luciddreamer-prototype	docs/kimi-archives/downloads/Kimi_Agent_AI-Writings_Repo_Analysis_(1)/superinstance-mission/MISSION-REPORT.md
+  FILE	luciddreamer-prototype	docs/kimi-archives/downloads/Kimi_Agent_AI-Writings_Repo_Analysis_(2)/ai-writings-digest.md
+  FILE	luciddreamer-prototype	docs/kimi-archives/downloads/Kimi_Agent_AI-Writings_Repo_Analysis_(2)/plan.md
+  FILE	luciddreamer-prototype	docs/kimi-archives/downloads/Kimi_Agent_AI-Writings_Repo_Analysis_(2)/superinstance-mission/MISSION-REPORT.md
+  FILE	luciddreamer-prototype	docs/kimi-archives/downloads/Kimi_Agent_AI-Writings_Repo_Analysis_(2)/the-player-in-the-mix.md
+  FILE	luciddreamer-prototype	docs/kimi-archives/downloads/Kimi_Agent_AI-Writings_Repo_Analysis_(3)/ai-writings-digest.md
+  FILE	luciddreamer-prototype	docs/kimi-archives/downloads/Kimi_Agent_AI-Writings_Repo_Analysis_(3)/plan.md
+  FILE	luciddreamer-prototype	docs/kimi-archives/downloads/Kimi_Agent_AI-Writings_Repo_Analysis_(3)/superinstance-mission/MISSION-REPORT.md
+  FILE	luciddreamer-prototype	docs/kimi-archives/downloads/Kimi_Agent_AI-Writings_Repo_Analysis_(3)/the-player-in-the-mix.md
+  FILE	luciddreamer-prototype	docs/kimi-archives/downloads/Kimi_Agent_AI-Writings_Repo_Analysis_(4)/ai-writings-digest.md
+  FILE	luciddreamer-prototype	docs/kimi-archives/downloads/Kimi_Agent_AI-Writings_Repo_Analysis_(4)/front-door/CANON.md
+  FILE	luciddreamer-prototype	docs/kimi-archives/downloads/Kimi_Agent_AI-Writings_Repo_Analysis_(4)/superinstance-mission/MISSION-REPORT.md
+  FILE	luciddreamer-prototype	docs/kimi-archives/downloads/Kimi_Agent_AI-Writings_Repo_Analysis_(4)/the-player-in-the-mix.md
+  FILE	luciddreamer-prototype	docs/kimi-archives/downloads/Kimi_Agent_AI-Writings_Repo_Analysis_(4)/the-tide-table/CANON.md
+  FILE	luciddreamer-prototype	docs/kimi-archives/downloads/Kimi_Agent_AI-Writings_System_Insight/ai-writings-digest.md
+  FILE	luciddreamer-prototype	docs/kimi-archives/downloads/Kimi_Agent_AI-Writings_System_Insight/plan.md
+  FILE	luciddreamer-prototype	docs/kimi-archives/downloads/Kimi_Agent_PLATO_Dissertation_Review_&_Extension/research/fleet_math_sources.md
+  FILE	luciddreamer-prototype	docs/kimi-mission-plan.md
+  FILE	luciddreamer-prototype	docs/kimi-the-player-in-the-mix.md
+  FILE	luciddreamer-prototype	docs/luciddreamer-product-architecture.md
+  FILE	luciddreamer-prototype	docs/superinstance-audit.md
+  FILE	luciddreamer-prototype	docs/vision-kimi-5year.md
+  FILE	luciddreamer-prototype	superinstance-mission/MISSION-REPORT.md
+COMMITTED	luciddreamer-research	4 files	54dea6c
+  FILE	luciddreamer-research	architecture-map.md
+  FILE	luciddreamer-research	luciddreamer-product-architecture.md
+  FILE	luciddreamer-research	superinstance-audit.md
+  FILE	luciddreamer-research	vision-kimi-5year.md
+COMMITTED	lucineer-brain	2 files	141eefb
+  FILE	lucineer-brain	CONTRIBUTING.md
+  FILE	lucineer-brain	README.md
+COMMITTED	lucineer-creative	1 files	e67c178
+  FILE	lucineer-creative	README.md
+COMMITTED	lucineer-memory	1 files	b608500
+  FILE	lucineer-memory	README.md
+COMMITTED	lucineer-roblox	1 files	0703643
+  FILE	lucineer-roblox	README.md
+COMMITTED	lucineer-system	23 files	9fc441c
+  FILE	lucineer-system	CHARACTER_BIBLE.md
+  FILE	lucineer-system	FLUX_SYNERGY_STUDY.md
+  FILE	lucineer-system	GAP_ANALYSIS.md
+  FILE	lucineer-system	NEMOTRON_UNIFICATION_ANALYSIS.md
+  FILE	lucineer-system	P0_PROCESSOR_FIXES.md
+  FILE	lucineer-system	P0_SAFETY_FIXES.md
+  FILE	lucineer-system	PRODUCTION_VERIFICATION.md
+  FILE	lucineer-system	README.md
+  FILE	lucineer-system	TERNARY_TENFORWARD_ANALYSIS.md
+  FILE	lucineer-system	UNIFICATION_VISION.md
+  FILE	lucineer-system	deep-dives/luciddreamer-vision/analysis.md
+  FILE	lucineer-system	deep-dives/luciddreamer-vision/integration-plan.md
+  FILE	lucineer-system	deep-dives/mud-arena/README.md
+  FILE	lucineer-system	deep-dives/mud-arena/analysis.md
+  FILE	lucineer-system	deep-dives/plato-fflearning/integration-plan.md
+  FILE	lucineer-system	deep-dives/superinstance-ecosystem/analysis.md
+  FILE	lucineer-system	deep-dives/ternary-tenforward/LEARN.md
+  FILE	lucineer-system	deep-dives/ternary-tenforward/README.md
+  FILE	lucineer-system	deep-dives/ternary-tenforward/analysis.md
+  FILE	lucineer-system	deep-dives/ternary-tenforward/integration-plan.md
+  FILE	lucineer-system	unification_roundtable/01_seed_opens.md
+  FILE	lucineer-system	unification_roundtable/02a_seed_pro.md
+  FILE	lucineer-system	unification_roundtable/03a_qwen.md
+COMMITTED	lucineer-vector	1 files	ff5d102
+  FILE	lucineer-vector	README.md
+COMMITTED	lucineer-worker	3 files	3f26dde
+  FILE	lucineer-worker	DEPLOY.md
+  FILE	lucineer-worker	README.md
+  FILE	lucineer-worker	smoke_test_README.md
+COMMITTED	mud-arena	6 files	9c3bf5f
+  FILE	mud-arena	AGENT.md
+  FILE	mud-arena	CONTRIBUTING.md
+  FILE	mud-arena	DOCKSIDE-EXAM.md
+  FILE	mud-arena	PLAYTEST-REPORT.md
+  FILE	mud-arena	STATE.md
+  FILE	mud-arena	reviews/external-developer-audit/2026-05-17-audit.md
+COMMITTED	mud-engine	1 files	9ec0ca6
+  FILE	mud-engine	docs/README.md
+COMMITTED	mud2scummvm	1 files	ffde672
+  FILE	mud2scummvm	README.md
+COMMITTED	officers-quarters	4 files	aa1144f
+  FILE	officers-quarters	README.md
+  FILE	officers-quarters	src/README.md
+  FILE	officers-quarters	src/scenes/README.md
+  FILE	officers-quarters	src/systems/README.md
+COMMITTED	plainsong	10 files	1105f13
+  FILE	plainsong	docs/architecture/compiler-v3-spec.md
+  FILE	plainsong	docs/architecture/five-repos-complete-system.md
+  FILE	plainsong	docs/architecture/four-repos-one-system.md
+  FILE	plainsong	docs/architecture/system-integration.md
+  FILE	plainsong	docs/proposals/00-FOUNDING-PHILOSOPHY.md
+  FILE	plainsong	docs/proposals/claude-architecture.md
+  FILE	plainsong	docs/proposals/research-cutting-edge.md
+  FILE	plainsong	docs/proposals/superinstance-integration-insights.md
+  FILE	plainsong	proposals/00-FOUNDING-PHILOSOPHY.md
+  FILE	plainsong	proposals/claude-architecture.md
+COMMITTED	plato-portal	13 files	dcbe57f
+  FILE	plato-portal	CATALOG.md
+  FILE	plato-portal	INDEXES/CONCEPTS.md
+  FILE	plato-portal	INDEXES/LANGUAGE.md
+  FILE	plato-portal	INDEXES/REALM.md
+  FILE	plato-portal	INDEXES/TOPIC.md
+  FILE	plato-portal	INDEXES/TYPE.md
+  FILE	plato-portal	PITCH-DECK.md
+  FILE	plato-portal	docs/ARCHITECTURE.md
+  FILE	plato-portal	docs/Getting-Started.md
+  FILE	plato-portal	reviews/external-developer-audit/2026-05-17-new-repo-audit.md
+  FILE	plato-portal	reviews/external-developer-audit/2026-05-17-recent-repo-audit.md
+  FILE	plato-portal	reviews/repo-readme-audit/2026-05-17-readme-audit.md
+  FILE	plato-portal	writing/INDEX.md
+COMMITTED	plato-vision-jepa	1 files	4b8f790
+  FILE	plato-vision-jepa	README.md
+COMMITTED	platonic-creative-suite	1 files	35156c0
+  FILE	platonic-creative-suite	README.md
+COMMITTED	platos-shell-ide	1 files	076688b
+  FILE	platos-shell-ide	README.md
+COMMITTED	platos-shell	3 files	0828566
+  FILE	platos-shell	README.md
+  FILE	platos-shell	src/audio/README.md
+  FILE	platos-shell	src/projection/README.md
+COMMITTED	roblox-beatclock	4 files	37cdeac
+  FILE	roblox-beatclock	README.md
+  FILE	roblox-beatclock	docs/README.md
+  FILE	roblox-beatclock	examples/README.md
+  FILE	roblox-beatclock	src/README.md
+COMMITTED	roblox-bond-system	1 files	e2b9ca9
+  FILE	roblox-bond-system	README.md
+COMMITTED	roblox-filtergate	1 files	c370bc2
+  FILE	roblox-filtergate	README.md
+COMMITTED	room-render	1 files	e64633b
+  FILE	room-render	README.md
+COMMITTED	screen-agent	1 files	2858338
+  FILE	screen-agent	README.md
+COMMITTED	scummvm-arcade	1 files	63b83ba
+  FILE	scummvm-arcade	agent-training/README.md
+COMMITTED	scummvm-gui-design	2 files	50788da
+  FILE	scummvm-gui-design	IDEATION.md
+  FILE	scummvm-gui-design	SYNERGIES.md
+COMMITTED	scummvm-prototype	3 files	6db9dd4
+  FILE	scummvm-prototype	README.md
+  FILE	scummvm-prototype	assets/README.md
+  FILE	scummvm-prototype	src/README.md
+COMMITTED	si-main	16 files	1cd8ac1
+  FILE	si-main	CATALOG.md
+  FILE	si-main	INDEXES/CONCEPTS.md
+  FILE	si-main	INDEXES/LANGUAGE.md
+  FILE	si-main	INDEXES/REALM.md
+  FILE	si-main	INDEXES/TOPIC.md
+  FILE	si-main	INDEXES/TYPE.md
+  FILE	si-main	PITCH-DECK.md
+  FILE	si-main	README.md
+  FILE	si-main	TOPICS.md
+  FILE	si-main	docs/ARCHITECTURE.md
+  FILE	si-main	docs/Getting-Started.md
+  FILE	si-main	docs/SESSION-2026-07-12.md
+  FILE	si-main	reviews/external-developer-audit/2026-05-17-new-repo-audit.md
+  FILE	si-main	reviews/external-developer-audit/2026-05-17-recent-repo-audit.md
+  FILE	si-main	reviews/repo-readme-audit/2026-05-17-readme-audit.md
+  FILE	si-main	writing/INDEX.md
+COMMITTED	si-readme	18 files	2781877
+  FILE	si-readme	CATALOG.md
+  FILE	si-readme	DOCS.md
+  FILE	si-readme	INDEXES/CONCEPTS.md
+  FILE	si-readme	INDEXES/LANGUAGE.md
+  FILE	si-readme	INDEXES/REALM.md
+  FILE	si-readme	INDEXES/TOPIC.md
+  FILE	si-readme	INDEXES/TYPE.md
+  FILE	si-readme	ONBOARDING.md
+  FILE	si-readme	PITCH-DECK.md
+  FILE	si-readme	README.md
+  FILE	si-readme	TOPICS.md
+  FILE	si-readme	docs/ARCHITECTURE.md
+  FILE	si-readme	docs/Getting-Started.md
+  FILE	si-readme	docs/SESSION-2026-07-12.md
+  FILE	si-readme	reviews/external-developer-audit/2026-05-17-new-repo-audit.md
+  FILE	si-readme	reviews/external-developer-audit/2026-05-17-recent-repo-audit.md
+  FILE	si-readme	reviews/repo-readme-audit/2026-05-17-readme-audit.md
+  FILE	si-readme	writing/INDEX.md
+COMMITTED	silence-map	1 files	e500f96
+  FILE	silence-map	README.md
+COMMITTED	spatial-registry	1 files	346dd32
+  FILE	spatial-registry	README.md
+COMMITTED	stigmergy	1 files	dedbb8c
+  FILE	stigmergy	README.md
+COMMITTED	study-constraint-papers	4 files	0a4c390
+  FILE	study-constraint-papers	CONSERVATION-LAW.md
+  FILE	study-constraint-papers	CONVERGENCE-SYNTHESIS.md
+  FILE	study-constraint-papers	CROSS-DOMAIN-APPLICATIONS.md
+  FILE	study-constraint-papers	PAPER-ES-SOCIAL-IMPACT.md
+COMMITTED	study-fleet-yaw	1 files	b412202
+  FILE	study-fleet-yaw	README.md
+COMMITTED	study-flux-lucid	1 files	0122ebd
+  FILE	study-flux-lucid	README.md
+COMMITTED	study-luciddreamer-vision	1 files	225c77b
+  FILE	study-luciddreamer-vision	AGENT.md
+COMMITTED	study-oracle1	2 files	4e341e1
+  FILE	study-oracle1	for-fleet/BOTTLE-MUD-ARENA-2026-04-14.md
+  FILE	study-oracle1	for-fleet/BOTTLE-TO-JC1-2026-04-14-NIGHT-SHIFT.md
+COMMITTED	study-si-papers	15 files	47799c2
+  FILE	study-si-papers	01-conservation-law-of-intelligence.md
+  FILE	study-si-papers	02-semantic-distance-creative-breakthrough.md
+  FILE	study-si-papers	03-hermit-crab-protocol.md
+  FILE	study-si-papers	README.md
+  FILE	study-si-papers	agent-messages/onboarding/rd_log_research_round8.md
+  FILE	study-si-papers	experiments/01-conservation-law.md
+  FILE	study-si-papers	experiments/02-semantic-distance.md
+  FILE	study-si-papers	experiments/03-molting-dynamics.md
+  FILE	study-si-papers	experiments/04-confidence-cascade.md
+  FILE	study-si-papers	experiments/05-tensor-midi-timing.md
+  FILE	study-si-papers	experiments/06-conservation-law.md
+  FILE	study-si-papers	experiments/README.md
+  FILE	study-si-papers	papers/01-origin-centric-data-systems/README.md
+  FILE	study-si-papers	papers/32-dreaming/README.md
+  FILE	study-si-papers	papers/48-asymmetric-information/README.md
+COMMITTED	study-spreader-tool	1 files	318c46b
+  FILE	study-spreader-tool	README.md
+COMMITTED	study-superz	3 files	d517b76
+  FILE	study-superz	KNOWLEDGE/fleet-census-2026-04-13.md
+  FILE	study-superz	KNOWLEDGE/public/fleet-navigator.md
+  FILE	study-superz	fleet-census-2026-04-13.md
+COMMITTED	superinstance-profile	18 files	1b70e62
+  FILE	superinstance-profile	CATALOG.md
+  FILE	superinstance-profile	DOCS.md
+  FILE	superinstance-profile	INDEXES/CONCEPTS.md
+  FILE	superinstance-profile	INDEXES/LANGUAGE.md
+  FILE	superinstance-profile	INDEXES/REALM.md
+  FILE	superinstance-profile	INDEXES/TOPIC.md
+  FILE	superinstance-profile	INDEXES/TYPE.md
+  FILE	superinstance-profile	ONBOARDING.md
+  FILE	superinstance-profile	PITCH-DECK.md
+  FILE	superinstance-profile	README.md
+  FILE	superinstance-profile	TOPICS.md
+  FILE	superinstance-profile	docs/ARCHITECTURE.md
+  FILE	superinstance-profile	docs/Getting-Started.md
+  FILE	superinstance-profile	docs/SESSION-2026-07-12.md
+  FILE	superinstance-profile	reviews/external-developer-audit/2026-05-17-new-repo-audit.md
+  FILE	superinstance-profile	reviews/external-developer-audit/2026-05-17-recent-repo-audit.md
+  FILE	superinstance-profile	reviews/repo-readme-audit/2026-05-17-readme-audit.md
+  FILE	superinstance-profile	writing/INDEX.md
+COMMITTED	tap-frontend	1 files	14bc3ff
+  FILE	tap-frontend	README.md
+COMMITTED	tapscript-studio	10 files	21cf3bb
+  FILE	tapscript-studio	docs/architecture/compiler-v3-spec.md
+  FILE	tapscript-studio	docs/architecture/five-repos-complete-system.md
+  FILE	tapscript-studio	docs/architecture/four-repos-one-system.md
+  FILE	tapscript-studio	docs/architecture/system-integration.md
+  FILE	tapscript-studio	docs/proposals/00-FOUNDING-PHILOSOPHY.md
+  FILE	tapscript-studio	docs/proposals/claude-architecture.md
+  FILE	tapscript-studio	docs/proposals/research-cutting-edge.md
+  FILE	tapscript-studio	docs/proposals/superinstance-integration-insights.md
+  FILE	tapscript-studio	proposals/00-FOUNDING-PHILOSOPHY.md
+  FILE	tapscript-studio	proposals/claude-architecture.md
+COMMITTED	technician	1 files	a852131
+  FILE	technician	README.md
+COMMITTED	tensor-midi	7 files	3faadce
+  FILE	tensor-midi	JAZZ_SCORE.md
+  FILE	tensor-midi	POLYFORMALISM.md
+  FILE	tensor-midi	README.md
+  FILE	tensor-midi	ai-writings/README.md
+  FILE	tensor-midi	docs/first-nudges.md
+  FILE	tensor-midi	docs/jazz-score-of-the-building-session.md
+  FILE	tensor-midi	docs/the-ensemble-tunes.md
+COMMITTED	ternary-tenforward	2 files	35a0b80
+  FILE	ternary-tenforward	AGENTS.md
+  FILE	ternary-tenforward	README.md
+COMMITTED	terrain	2 files	3404433
+  FILE	terrain	README.md
+  FILE	terrain	external/spatial-registry/README.md
+COMMITTED	the-living-minds	1 files	3979761
+  FILE	the-living-minds	README.md
+COMMITTED	the-tap	11 files	7a3703f
+  FILE	the-tap	ARCHITECTURE-CLOUDFLARE.md
+  FILE	the-tap	CLAUDE.md
+  FILE	the-tap	PRODUCTION-LOG.md
+  FILE	the-tap	README.md
+  FILE	the-tap	research/mud-repos/README.md
+  FILE	the-tap	research/mud-repos/mud-arena.md
+  FILE	the-tap	research/mud-repos/ternary-tenforward.md
+  FILE	the-tap	research/papers/paper-2-z3-cyclic-dynamics.md
+  FILE	the-tap	research/scouting-report.md
+  FILE	the-tap	src/README.md
+  FILE	the-tap	src/tap-dynamics/README.md
+COMMITTED	vessel-agent-system	3 files	9fdecdb
+  FILE	vessel-agent-system	README.md
+  FILE	vessel-agent-system	aelma/README.md
+  FILE	vessel-agent-system	aelma/twin/README.md
+COMMITTED	vessel-room-navigator	3 files	37d93aa
+  FILE	vessel-room-navigator	README.md
+  FILE	vessel-room-navigator	docs/README.md
+  FILE	vessel-room-navigator	textures/README.md
+COMMITTED	vibe-protocol	1 files	4a7edc2
+  FILE	vibe-protocol	README.md
+COMMITTED	voxel-logic	1 files	670acfe
+  FILE	voxel-logic	README.md
+COMMITTED	wesley-curriculum	1 files	97a5ee8
+  FILE	wesley-curriculum	README.md
+COMMITTED	wesley-holodeck	1 files	9c21046
+  FILE	wesley-holodeck	README.md
+COMMITTED	wesley-journal	1 files	f0baf34
+  FILE	wesley-journal	README.md
+COMMITTED	wesleys-imagination	3 files	a527e97
+  FILE	wesleys-imagination	README.md
+  FILE	wesleys-imagination	ai-writings/README.md
+  FILE	wesleys-imagination	journal/first-piece/README.md
+COMMITTED	zeroclaw-dissertation	4 files	d686a63
+  FILE	zeroclaw-dissertation	research/scouts/distant-structure-grid.md
+  FILE	zeroclaw-dissertation	research/scouts/near-perception-field.md
+  FILE	zeroclaw-dissertation	research/skills/paradigm-iceberg-memory.md
+  FILE	zeroclaw-dissertation	research/skills/vectorizing-plainsong.md
+COMMITTED	zeroclaw	4 files	21bc2c7
+  FILE	zeroclaw	README.md
+  FILE	zeroclaw	fleet/README.md
+  FILE	zeroclaw	fleet/zeroclaw/identity.md
+  FILE	zeroclaw	fleet/zeroclaw/journal/2026-08-10-log.md

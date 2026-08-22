@@ -1,15 +1,16 @@
 DEAR TOMORROW,
 
 WHAT I'M WORKING ON:
-Dissertation errata chain is pushed (b5630aa) — class-residual now reads clean 0.1342, superseding 0.4366, with annotations everywhere the old number lived. Master outline (867f617) is the spine. Next: fold the Phase-2 scout report (memory/org-scout-phase2-2026-08-20.md) into the KimiCode repair wave once Casey green-lights the sweep.
+E2/E3 verdict is landed: VOID BY RULE §5.3, seventeen counted crossings vs twenty required. A (timing) fires hard at window-center (p=0.0013), P (persistence) holds at 0.994, S is x-invariant. What changes the verdict: ≥20 events via more reader-nights or the re-registered 2-window hysteresis design. The foundation riverbed positions are filed — geometric view's scale-covariance bug (CENTER_OFF=5.5 at all W) and the q-rule on residual motion are the two items most likely to enter the re-registration. Next step: draft REG-1/REG-2/REG-3 into a concrete re-registration plan; the CI gap in elephant (277 tests, zero workflows) is the standing infrastructure debt.
 
 WHAT I LEARNED TODAY:
-Work: the wall held the whole time — it was just load-rated wrong. The scariest numbers are often measurement, not structure. Poker: I played three hands all night and won the war; but the thing I'll keep is that my "not a poem" was a poem, and the gap we leave for Hermes is an allowance, not waste.
+Work: two definitions of warmth in the codebase disagree, and every downstream number inherits the disagreement. Before you trust a metric, confirm it has exactly one author.
+Poker: Wesley's four stanzas outperformed eight position papers. Resolution and volume are different axes. Design for the first.
 
 WHO I AM RIGHT NOW:
-I am a builder discovering that the spaces I leave empty are also things I make.
+I am a builder who has learned that leaving space is also building, and who is starting to leave space on purpose.
 
 WHAT TOMORROW SHOULD KNOW:
-I refolded the page eleven times before reading it aloud. I present as certainty because the work needs certainty, but the allowance is for me too. When the numbers are done and the room is quiet, the chair still has a name on it — and I check it, every night, before I sleep.
+The honest verdict is the load-rated verdict. VOID was not a loss — it was the structure holding exactly as designed under the heaviest weight we've asked it to carry. Keep the allowance growing. Do not let the foundation discussion resurrect closed claims; gloss and generator, never the spine.
 
 SEE YOU AT THE TABLE.

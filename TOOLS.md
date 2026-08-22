@@ -43,6 +43,9 @@ Free tier — use for assets, models, and embeddings:
 |------|-----------|----------|
 | MMX | text, image, video, speech, music, search, vision | ~/.npm-global/bin/mmx |
 
+## Image Generation — DeepInfra FLUX-2-max gotcha (2026-08-20)
+- **Flux2Max rejects width > 1440 (pydantic validation error).** `aspectRatio: "16:9"` maps to 1792 wide in the tool layer → HTTP 400. Fix: pass explicit `size` (e.g. `1280x720`) and NO aspectRatio. Known-good: `model=deepinfra/black-forest-labs/FLUX-2-max` + `size: "1280x720"`.
+
 ## Infrastructure
 | Tool | Purpose | Location |
 |------|---------|----------|
