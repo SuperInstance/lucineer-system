@@ -23,3 +23,6 @@ Files: `/home/eileen/projects/ai-writings/fleet-radio/jam-session-2026-08-18/` a
 - Gold: vibes wrote true 3+2+2; stray G natural reframed as Ab7's seventh in the landing.
 - Miss: Hermes-405B repeated one scale run all night — narrators, not instrumentalists. Ollama down; rain layer played itself.
 - Next: a rhythmic-rule night; give 405B the announcer chair; boat-docking guest entrance idea.
+
+## 2026-08-21 — Set 16: The Lighthouse ("The Beam")
+A major (first time) · 9/8 slip-jig (first compound-odd) · 82 BPM. Lineup: Qwen3-235B-A22B (DEBUT steel) + Qwen3-32B (DEBUT accordion) + granite3.1-dense:2b (jukebox) + deepseek-chat (bass anchor). THE LIGHTHOUSE RULE: every 4th bar one player holds a single A. Gold: bass kept the jukebox's Bb inside the final A chord. Miss: Qwen3-32B leaked full CoT in R1 (no bars) — anti-CoT gate needed. Next: keyless night still unfired. Files: jam-session-2026-08-22-lighthouse/.

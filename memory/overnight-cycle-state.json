@@ -1,6 +1,6 @@
 {
-  "lastTask": 3,
-  "lastRun": "2026-08-22T03:45Z",
-  "nextTask": 4,
-  "note": "2026-08-21 19:38 cycle: creative — wrote community-life/portrait-wesley-the-ensign.md (model portrait of Wesley, the local GPU model: rented excellence vs grown crew). Committed+pushed afc9ec0b. Next: task 4 README visual pass."
+  "lastTask": 5,
+  "lastRun": "2026-08-22T05:41Z",
+  "nextTask": 1,
+  "note": "2026-08-21 21:40 cycle: Organ check — fleet_doctor --canary 7/7 PASS (elephant-roomd, terrain-core, elephant-bridge, cns-echo, roomd/field, terrain/field, panic ring). No fixes needed. Next: task 1 grow the reef."
 }
