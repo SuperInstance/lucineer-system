@@ -312,6 +312,52 @@ class EnergyAdapter:
             "base_bpm": self.base_bpm,
         }
 
+    # ── CNS v3 telemetry hook ────────────────────────────────────────
+
+    def emit_telemetry(self, role: str = "lucineer-energy-adapter") -> str | None:
+        """Emit a CNS v3 pulse derived from current energy adapter state.
+
+        Production callers should call this after _adapt() or record_action()
+        so the fleet receives live creative/thermal telemetry. The packet
+        format and CNS bus IO are handled by the shared helper.
+        """
+        try:
+            from lucineer.cns_telemetry import TelemetryQuantum, emit_cns_pulse
+        except Exception:
+            return None
+
+        idle_seconds = self.idle_time
+        idle_fraction = min(1.0, max(0.0, idle_seconds / 60.0))
+        bpm = self.shadow_bpm
+
+        tq = TelemetryQuantum(
+            agent_id="energy-adapter-1",
+            gamma=0.5,
+            eta=0.25,
+            delta=0.25,
+            temperature=idle_fraction * 2.0,
+            semantic_distance=idle_fraction,
+            melt_pressure=0.0,
+            max_crystallization_rate=0.0,
+            deterministic=False,
+            molt_count=0,
+            capability=1.0 - idle_fraction,
+            tau=idle_fraction,
+            timestamp=datetime.now(timezone.utc).isoformat(),
+            is_dreaming=idle_fraction > 0.8,
+            temperature_idle=idle_seconds / 60.0,
+            temperature_task=1.0,
+            molt_phase="stable",
+            creative_value=1.0 - (bpm / 120.0),
+            kappa_delta=0.0,
+        )
+        return emit_cns_pulse(
+            agent_id="energy-adapter-1",
+            telemetry=tq,
+            role=role,
+            model="lucineer-energy-adapter",
+        )
+
     def __repr__(self) -> str:
         mode = "SHADOW" if self.get_bpm() == self.base_bpm else "LIVE"
         return (

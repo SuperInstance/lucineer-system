@@ -384,6 +384,58 @@ class Governor:
             "pocket_fraction": pocket / len(self.shadow_log),
         }
 
+    # ── CNS v3 telemetry hook ────────────────────────────────────────
+
+    def emit_telemetry(self, role: str = "lucineer-governor") -> str | None:
+        """Emit a CNS v3 pulse derived from current governor state.
+
+        Production implementations should call this from observe() once
+        per observation cycle. The shared helper handles packet formatting
+        and CNS bus write atomics.
+        """
+        try:
+            from lucineer.cns_telemetry import TelemetryQuantum, emit_cns_pulse
+        except Exception:
+            return None
+
+        phi = self.current_phi
+        now = time.time()
+        idle_seconds = (now - self._action_types[-1]) if self._action_types else 0.0
+
+        temperature = phi * 5.0
+        idle_fraction = self._compute_idle_fraction(idle_seconds)
+        last_entry = self.shadow_log[-1] if self.shadow_log else None
+        last_validation = last_entry.timestamp if last_entry else ""
+
+        tq = TelemetryQuantum(
+            agent_id="governor-1",
+            gamma=0.5,
+            eta=0.25,
+            delta=0.25,
+            temperature=temperature,
+            semantic_distance=0.5,
+            melt_pressure=0.0,
+            max_crystallization_rate=0.0,
+            deterministic=False,
+            molt_count=0,
+            capability=1.0 - idle_fraction,
+            tau=phi,
+            timestamp=datetime.now(timezone.utc).isoformat(),
+            is_dreaming=idle_fraction > 0.8,
+            temperature_idle=idle_seconds / 60.0,
+            temperature_task=1.0 - temperature / 5.0,
+            time_since_validation_seconds=now - last_validation if last_validation else 0.0,
+            molt_phase="stable",
+            creative_value=0.5,
+            kappa_delta=0.0,
+        )
+        return emit_cns_pulse(
+            agent_id="governor-1",
+            telemetry=tq,
+            role=role,
+            model="lucineer-governor",
+        )
+
     def __repr__(self) -> str:
         mode = "SHADOW"
         phi = self.current_phi
