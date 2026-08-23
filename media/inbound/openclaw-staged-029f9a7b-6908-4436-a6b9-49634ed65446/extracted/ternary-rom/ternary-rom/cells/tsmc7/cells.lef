@@ -1,0 +1,963 @@
+VERSION 5.8 ;
+BUSBITCHARS "[]" ;
+DIVIDERCHAR "/" ;
+
+
+MACRO ROM_PLUS_X1_hvt
+  CLASS CORE ;
+  SIZE 0.0500 BY 0.0500 ;
+  SYMMETRY X Y ;
+  // Drive: X1, Vt: hvt, Leakage: 0.045 pA
+
+  PIN WL
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.0000 0.0450 0.0500 0.0500 ;
+    END
+  END WL
+
+  PIN BL
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 0.0000 0.0000 0.0500 0.0050 ;
+    END
+  END BL
+
+  OBS
+    LAYER Metal1 ;
+      RECT 0.0000 0.0000 0.0500 0.0450 ;
+    LAYER Metal2 ;
+      RECT 0.0000 0.0050 0.0500 0.0500 ;
+  END
+
+END ROM_PLUS_X1_hvt
+
+MACRO ROM_PLUS_X1_lvt
+  CLASS CORE ;
+  SIZE 0.0500 BY 0.0500 ;
+  SYMMETRY X Y ;
+  // Drive: X1, Vt: lvt, Leakage: 0.9 pA
+
+  PIN WL
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.0000 0.0450 0.0500 0.0500 ;
+    END
+  END WL
+
+  PIN BL
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 0.0000 0.0000 0.0500 0.0050 ;
+    END
+  END BL
+
+  OBS
+    LAYER Metal1 ;
+      RECT 0.0000 0.0000 0.0500 0.0450 ;
+    LAYER Metal2 ;
+      RECT 0.0000 0.0050 0.0500 0.0500 ;
+  END
+
+END ROM_PLUS_X1_lvt
+
+MACRO ROM_PLUS_X1
+  CLASS CORE ;
+  SIZE 0.0500 BY 0.0500 ;
+  SYMMETRY X Y ;
+  // Drive: X1, Vt: std, Leakage: 0.3 pA
+
+  PIN WL
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.0000 0.0450 0.0500 0.0500 ;
+    END
+  END WL
+
+  PIN BL
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 0.0000 0.0000 0.0500 0.0050 ;
+    END
+  END BL
+
+  OBS
+    LAYER Metal1 ;
+      RECT 0.0000 0.0000 0.0500 0.0450 ;
+    LAYER Metal2 ;
+      RECT 0.0000 0.0050 0.0500 0.0500 ;
+  END
+
+END ROM_PLUS_X1
+
+MACRO ROM_PLUS_X2_hvt
+  CLASS CORE ;
+  SIZE 0.1000 BY 0.0500 ;
+  SYMMETRY X Y ;
+  // Drive: X2, Vt: hvt, Leakage: 0.09 pA
+
+  PIN WL
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.0000 0.0450 0.1000 0.0500 ;
+    END
+  END WL
+
+  PIN BL
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 0.0000 0.0000 0.1000 0.0050 ;
+    END
+  END BL
+
+  OBS
+    LAYER Metal1 ;
+      RECT 0.0000 0.0000 0.1000 0.0450 ;
+    LAYER Metal2 ;
+      RECT 0.0000 0.0050 0.1000 0.0500 ;
+  END
+
+END ROM_PLUS_X2_hvt
+
+MACRO ROM_PLUS_X2_lvt
+  CLASS CORE ;
+  SIZE 0.1000 BY 0.0500 ;
+  SYMMETRY X Y ;
+  // Drive: X2, Vt: lvt, Leakage: 1.8 pA
+
+  PIN WL
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.0000 0.0450 0.1000 0.0500 ;
+    END
+  END WL
+
+  PIN BL
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 0.0000 0.0000 0.1000 0.0050 ;
+    END
+  END BL
+
+  OBS
+    LAYER Metal1 ;
+      RECT 0.0000 0.0000 0.1000 0.0450 ;
+    LAYER Metal2 ;
+      RECT 0.0000 0.0050 0.1000 0.0500 ;
+  END
+
+END ROM_PLUS_X2_lvt
+
+MACRO ROM_PLUS_X2
+  CLASS CORE ;
+  SIZE 0.1000 BY 0.0500 ;
+  SYMMETRY X Y ;
+  // Drive: X2, Vt: std, Leakage: 0.6 pA
+
+  PIN WL
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.0000 0.0450 0.1000 0.0500 ;
+    END
+  END WL
+
+  PIN BL
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 0.0000 0.0000 0.1000 0.0050 ;
+    END
+  END BL
+
+  OBS
+    LAYER Metal1 ;
+      RECT 0.0000 0.0000 0.1000 0.0450 ;
+    LAYER Metal2 ;
+      RECT 0.0000 0.0050 0.1000 0.0500 ;
+  END
+
+END ROM_PLUS_X2
+
+MACRO ROM_PLUS_X4_hvt
+  CLASS CORE ;
+  SIZE 0.2000 BY 0.0500 ;
+  SYMMETRY X Y ;
+  // Drive: X4, Vt: hvt, Leakage: 0.18 pA
+
+  PIN WL
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.0000 0.0450 0.2000 0.0500 ;
+    END
+  END WL
+
+  PIN BL
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 0.0000 0.0000 0.2000 0.0050 ;
+    END
+  END BL
+
+  OBS
+    LAYER Metal1 ;
+      RECT 0.0000 0.0000 0.2000 0.0450 ;
+    LAYER Metal2 ;
+      RECT 0.0000 0.0050 0.2000 0.0500 ;
+  END
+
+END ROM_PLUS_X4_hvt
+
+MACRO ROM_PLUS_X4_lvt
+  CLASS CORE ;
+  SIZE 0.2000 BY 0.0500 ;
+  SYMMETRY X Y ;
+  // Drive: X4, Vt: lvt, Leakage: 3.6 pA
+
+  PIN WL
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.0000 0.0450 0.2000 0.0500 ;
+    END
+  END WL
+
+  PIN BL
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 0.0000 0.0000 0.2000 0.0050 ;
+    END
+  END BL
+
+  OBS
+    LAYER Metal1 ;
+      RECT 0.0000 0.0000 0.2000 0.0450 ;
+    LAYER Metal2 ;
+      RECT 0.0000 0.0050 0.2000 0.0500 ;
+  END
+
+END ROM_PLUS_X4_lvt
+
+MACRO ROM_PLUS_X4
+  CLASS CORE ;
+  SIZE 0.2000 BY 0.0500 ;
+  SYMMETRY X Y ;
+  // Drive: X4, Vt: std, Leakage: 1.2 pA
+
+  PIN WL
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.0000 0.0450 0.2000 0.0500 ;
+    END
+  END WL
+
+  PIN BL
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 0.0000 0.0000 0.2000 0.0050 ;
+    END
+  END BL
+
+  OBS
+    LAYER Metal1 ;
+      RECT 0.0000 0.0000 0.2000 0.0450 ;
+    LAYER Metal2 ;
+      RECT 0.0000 0.0050 0.2000 0.0500 ;
+  END
+
+END ROM_PLUS_X4
+
+MACRO ROM_MINUS_X1_hvt
+  CLASS CORE ;
+  SIZE 0.0500 BY 0.0500 ;
+  SYMMETRY X Y ;
+  // Drive: X1, Vt: hvt, Leakage: 0.045 pA
+
+  PIN WL
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.0000 0.0450 0.0500 0.0500 ;
+    END
+  END WL
+
+  PIN BL
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 0.0000 0.0000 0.0500 0.0050 ;
+    END
+  END BL
+
+  OBS
+    LAYER Metal1 ;
+      RECT 0.0000 0.0000 0.0500 0.0450 ;
+    LAYER Metal2 ;
+      RECT 0.0000 0.0050 0.0500 0.0500 ;
+  END
+
+END ROM_MINUS_X1_hvt
+
+MACRO ROM_MINUS_X1_lvt
+  CLASS CORE ;
+  SIZE 0.0500 BY 0.0500 ;
+  SYMMETRY X Y ;
+  // Drive: X1, Vt: lvt, Leakage: 0.9 pA
+
+  PIN WL
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.0000 0.0450 0.0500 0.0500 ;
+    END
+  END WL
+
+  PIN BL
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 0.0000 0.0000 0.0500 0.0050 ;
+    END
+  END BL
+
+  OBS
+    LAYER Metal1 ;
+      RECT 0.0000 0.0000 0.0500 0.0450 ;
+    LAYER Metal2 ;
+      RECT 0.0000 0.0050 0.0500 0.0500 ;
+  END
+
+END ROM_MINUS_X1_lvt
+
+MACRO ROM_MINUS_X1
+  CLASS CORE ;
+  SIZE 0.0500 BY 0.0500 ;
+  SYMMETRY X Y ;
+  // Drive: X1, Vt: std, Leakage: 0.3 pA
+
+  PIN WL
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.0000 0.0450 0.0500 0.0500 ;
+    END
+  END WL
+
+  PIN BL
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 0.0000 0.0000 0.0500 0.0050 ;
+    END
+  END BL
+
+  OBS
+    LAYER Metal1 ;
+      RECT 0.0000 0.0000 0.0500 0.0450 ;
+    LAYER Metal2 ;
+      RECT 0.0000 0.0050 0.0500 0.0500 ;
+  END
+
+END ROM_MINUS_X1
+
+MACRO ROM_MINUS_X2_hvt
+  CLASS CORE ;
+  SIZE 0.1000 BY 0.0500 ;
+  SYMMETRY X Y ;
+  // Drive: X2, Vt: hvt, Leakage: 0.09 pA
+
+  PIN WL
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.0000 0.0450 0.1000 0.0500 ;
+    END
+  END WL
+
+  PIN BL
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 0.0000 0.0000 0.1000 0.0050 ;
+    END
+  END BL
+
+  OBS
+    LAYER Metal1 ;
+      RECT 0.0000 0.0000 0.1000 0.0450 ;
+    LAYER Metal2 ;
+      RECT 0.0000 0.0050 0.1000 0.0500 ;
+  END
+
+END ROM_MINUS_X2_hvt
+
+MACRO ROM_MINUS_X2_lvt
+  CLASS CORE ;
+  SIZE 0.1000 BY 0.0500 ;
+  SYMMETRY X Y ;
+  // Drive: X2, Vt: lvt, Leakage: 1.8 pA
+
+  PIN WL
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.0000 0.0450 0.1000 0.0500 ;
+    END
+  END WL
+
+  PIN BL
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 0.0000 0.0000 0.1000 0.0050 ;
+    END
+  END BL
+
+  OBS
+    LAYER Metal1 ;
+      RECT 0.0000 0.0000 0.1000 0.0450 ;
+    LAYER Metal2 ;
+      RECT 0.0000 0.0050 0.1000 0.0500 ;
+  END
+
+END ROM_MINUS_X2_lvt
+
+MACRO ROM_MINUS_X2
+  CLASS CORE ;
+  SIZE 0.1000 BY 0.0500 ;
+  SYMMETRY X Y ;
+  // Drive: X2, Vt: std, Leakage: 0.6 pA
+
+  PIN WL
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.0000 0.0450 0.1000 0.0500 ;
+    END
+  END WL
+
+  PIN BL
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 0.0000 0.0000 0.1000 0.0050 ;
+    END
+  END BL
+
+  OBS
+    LAYER Metal1 ;
+      RECT 0.0000 0.0000 0.1000 0.0450 ;
+    LAYER Metal2 ;
+      RECT 0.0000 0.0050 0.1000 0.0500 ;
+  END
+
+END ROM_MINUS_X2
+
+MACRO ROM_MINUS_X4_hvt
+  CLASS CORE ;
+  SIZE 0.2000 BY 0.0500 ;
+  SYMMETRY X Y ;
+  // Drive: X4, Vt: hvt, Leakage: 0.18 pA
+
+  PIN WL
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.0000 0.0450 0.2000 0.0500 ;
+    END
+  END WL
+
+  PIN BL
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 0.0000 0.0000 0.2000 0.0050 ;
+    END
+  END BL
+
+  OBS
+    LAYER Metal1 ;
+      RECT 0.0000 0.0000 0.2000 0.0450 ;
+    LAYER Metal2 ;
+      RECT 0.0000 0.0050 0.2000 0.0500 ;
+  END
+
+END ROM_MINUS_X4_hvt
+
+MACRO ROM_MINUS_X4_lvt
+  CLASS CORE ;
+  SIZE 0.2000 BY 0.0500 ;
+  SYMMETRY X Y ;
+  // Drive: X4, Vt: lvt, Leakage: 3.6 pA
+
+  PIN WL
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.0000 0.0450 0.2000 0.0500 ;
+    END
+  END WL
+
+  PIN BL
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 0.0000 0.0000 0.2000 0.0050 ;
+    END
+  END BL
+
+  OBS
+    LAYER Metal1 ;
+      RECT 0.0000 0.0000 0.2000 0.0450 ;
+    LAYER Metal2 ;
+      RECT 0.0000 0.0050 0.2000 0.0500 ;
+  END
+
+END ROM_MINUS_X4_lvt
+
+MACRO ROM_MINUS_X4
+  CLASS CORE ;
+  SIZE 0.2000 BY 0.0500 ;
+  SYMMETRY X Y ;
+  // Drive: X4, Vt: std, Leakage: 1.2 pA
+
+  PIN WL
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.0000 0.0450 0.2000 0.0500 ;
+    END
+  END WL
+
+  PIN BL
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 0.0000 0.0000 0.2000 0.0050 ;
+    END
+  END BL
+
+  OBS
+    LAYER Metal1 ;
+      RECT 0.0000 0.0000 0.2000 0.0450 ;
+    LAYER Metal2 ;
+      RECT 0.0000 0.0050 0.2000 0.0500 ;
+  END
+
+END ROM_MINUS_X4
+
+MACRO ROM_ZERO_X1_hvt
+  CLASS CORE ;
+  SIZE 0.0500 BY 0.0500 ;
+  SYMMETRY X Y ;
+  // Drive: X1, Vt: hvt, Leakage: 0.0 pA
+
+  PIN WL
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.0000 0.0450 0.0500 0.0500 ;
+    END
+  END WL
+
+  PIN BL
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 0.0000 0.0000 0.0500 0.0050 ;
+    END
+  END BL
+
+  OBS
+    LAYER Metal1 ;
+      RECT 0.0000 0.0000 0.0500 0.0450 ;
+    LAYER Metal2 ;
+      RECT 0.0000 0.0050 0.0500 0.0500 ;
+  END
+
+END ROM_ZERO_X1_hvt
+
+MACRO ROM_ZERO_X1_lvt
+  CLASS CORE ;
+  SIZE 0.0500 BY 0.0500 ;
+  SYMMETRY X Y ;
+  // Drive: X1, Vt: lvt, Leakage: 0.0 pA
+
+  PIN WL
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.0000 0.0450 0.0500 0.0500 ;
+    END
+  END WL
+
+  PIN BL
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 0.0000 0.0000 0.0500 0.0050 ;
+    END
+  END BL
+
+  OBS
+    LAYER Metal1 ;
+      RECT 0.0000 0.0000 0.0500 0.0450 ;
+    LAYER Metal2 ;
+      RECT 0.0000 0.0050 0.0500 0.0500 ;
+  END
+
+END ROM_ZERO_X1_lvt
+
+MACRO ROM_ZERO_X1
+  CLASS CORE ;
+  SIZE 0.0500 BY 0.0500 ;
+  SYMMETRY X Y ;
+  // Drive: X1, Vt: std, Leakage: 0.0 pA
+
+  PIN WL
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.0000 0.0450 0.0500 0.0500 ;
+    END
+  END WL
+
+  PIN BL
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 0.0000 0.0000 0.0500 0.0050 ;
+    END
+  END BL
+
+  OBS
+    LAYER Metal1 ;
+      RECT 0.0000 0.0000 0.0500 0.0450 ;
+    LAYER Metal2 ;
+      RECT 0.0000 0.0050 0.0500 0.0500 ;
+  END
+
+END ROM_ZERO_X1
+
+MACRO ROM_ZERO_X2_hvt
+  CLASS CORE ;
+  SIZE 0.1000 BY 0.0500 ;
+  SYMMETRY X Y ;
+  // Drive: X2, Vt: hvt, Leakage: 0.0 pA
+
+  PIN WL
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.0000 0.0450 0.1000 0.0500 ;
+    END
+  END WL
+
+  PIN BL
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 0.0000 0.0000 0.1000 0.0050 ;
+    END
+  END BL
+
+  OBS
+    LAYER Metal1 ;
+      RECT 0.0000 0.0000 0.1000 0.0450 ;
+    LAYER Metal2 ;
+      RECT 0.0000 0.0050 0.1000 0.0500 ;
+  END
+
+END ROM_ZERO_X2_hvt
+
+MACRO ROM_ZERO_X2_lvt
+  CLASS CORE ;
+  SIZE 0.1000 BY 0.0500 ;
+  SYMMETRY X Y ;
+  // Drive: X2, Vt: lvt, Leakage: 0.0 pA
+
+  PIN WL
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.0000 0.0450 0.1000 0.0500 ;
+    END
+  END WL
+
+  PIN BL
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 0.0000 0.0000 0.1000 0.0050 ;
+    END
+  END BL
+
+  OBS
+    LAYER Metal1 ;
+      RECT 0.0000 0.0000 0.1000 0.0450 ;
+    LAYER Metal2 ;
+      RECT 0.0000 0.0050 0.1000 0.0500 ;
+  END
+
+END ROM_ZERO_X2_lvt
+
+MACRO ROM_ZERO_X2
+  CLASS CORE ;
+  SIZE 0.1000 BY 0.0500 ;
+  SYMMETRY X Y ;
+  // Drive: X2, Vt: std, Leakage: 0.0 pA
+
+  PIN WL
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.0000 0.0450 0.1000 0.0500 ;
+    END
+  END WL
+
+  PIN BL
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 0.0000 0.0000 0.1000 0.0050 ;
+    END
+  END BL
+
+  OBS
+    LAYER Metal1 ;
+      RECT 0.0000 0.0000 0.1000 0.0450 ;
+    LAYER Metal2 ;
+      RECT 0.0000 0.0050 0.1000 0.0500 ;
+  END
+
+END ROM_ZERO_X2
+
+MACRO ROM_ZERO_X4_hvt
+  CLASS CORE ;
+  SIZE 0.2000 BY 0.0500 ;
+  SYMMETRY X Y ;
+  // Drive: X4, Vt: hvt, Leakage: 0.0 pA
+
+  PIN WL
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.0000 0.0450 0.2000 0.0500 ;
+    END
+  END WL
+
+  PIN BL
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 0.0000 0.0000 0.2000 0.0050 ;
+    END
+  END BL
+
+  OBS
+    LAYER Metal1 ;
+      RECT 0.0000 0.0000 0.2000 0.0450 ;
+    LAYER Metal2 ;
+      RECT 0.0000 0.0050 0.2000 0.0500 ;
+  END
+
+END ROM_ZERO_X4_hvt
+
+MACRO ROM_ZERO_X4_lvt
+  CLASS CORE ;
+  SIZE 0.2000 BY 0.0500 ;
+  SYMMETRY X Y ;
+  // Drive: X4, Vt: lvt, Leakage: 0.0 pA
+
+  PIN WL
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.0000 0.0450 0.2000 0.0500 ;
+    END
+  END WL
+
+  PIN BL
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 0.0000 0.0000 0.2000 0.0050 ;
+    END
+  END BL
+
+  OBS
+    LAYER Metal1 ;
+      RECT 0.0000 0.0000 0.2000 0.0450 ;
+    LAYER Metal2 ;
+      RECT 0.0000 0.0050 0.2000 0.0500 ;
+  END
+
+END ROM_ZERO_X4_lvt
+
+MACRO ROM_ZERO_X4
+  CLASS CORE ;
+  SIZE 0.2000 BY 0.0500 ;
+  SYMMETRY X Y ;
+  // Drive: X4, Vt: std, Leakage: 0.0 pA
+
+  PIN WL
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.0000 0.0450 0.2000 0.0500 ;
+    END
+  END WL
+
+  PIN BL
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 0.0000 0.0000 0.2000 0.0050 ;
+    END
+  END BL
+
+  OBS
+    LAYER Metal1 ;
+      RECT 0.0000 0.0000 0.2000 0.0450 ;
+    LAYER Metal2 ;
+      RECT 0.0000 0.0050 0.2000 0.0500 ;
+  END
+
+END ROM_ZERO_X4
+
+MACRO ROM_REF_HI
+  CLASS CORE ;
+  SIZE 0.0500 BY 0.0500 ;
+  SYMMETRY X Y ;
+  // Drive: X1, Vt: std, Leakage: 0.3 pA
+
+  PIN WL
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.0000 0.0450 0.0500 0.0500 ;
+    END
+  END WL
+
+  PIN BL
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 0.0000 0.0000 0.0500 0.0050 ;
+    END
+  END BL
+
+  OBS
+    LAYER Metal1 ;
+      RECT 0.0000 0.0000 0.0500 0.0450 ;
+    LAYER Metal2 ;
+      RECT 0.0000 0.0050 0.0500 0.0500 ;
+  END
+
+END ROM_REF_HI
+
+MACRO ROM_REF_LO
+  CLASS CORE ;
+  SIZE 0.0500 BY 0.0500 ;
+  SYMMETRY X Y ;
+  // Drive: X1, Vt: std, Leakage: 0.3 pA
+
+  PIN WL
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.0000 0.0450 0.0500 0.0500 ;
+    END
+  END WL
+
+  PIN BL
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 0.0000 0.0000 0.0500 0.0050 ;
+    END
+  END BL
+
+  OBS
+    LAYER Metal1 ;
+      RECT 0.0000 0.0000 0.0500 0.0450 ;
+    LAYER Metal2 ;
+      RECT 0.0000 0.0050 0.0500 0.0500 ;
+  END
+
+END ROM_REF_LO
+
+END LIBRARY

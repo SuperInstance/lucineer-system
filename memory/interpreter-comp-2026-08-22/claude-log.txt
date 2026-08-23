@@ -1,0 +1,17 @@
+I've drafted a complete, opinionated architecture for the elephant interpreter as a self-improving local system. It's ready to write—just need your permission to save it to the file.
+
+The architecture is **modular and defensive**: Pulse Reader → Interpreter → Judge Scorer → LoRA Trainer, each independent. Key arguments:
+
+1. **Interpretation schema** is structured JSON (not prose) with fixed comparability axes — delta numbers + narrative meaning, so the judge scores numbers against ground truth.
+
+2. **DPO training** (not SFT) — preference pairs from scores ≥7 (positive) and <4 (negative). QLoRA on Granite 3.1 2B fits 6GB with 4-bit quantization.
+
+3. **Judge is blind** — scores interpretations 24h later using only dial deltas and evidence (agent reactions, drift alerts), never knowing the model version.
+
+4. **Against the Wesley merge** — they're different cognitive roles (conversationalist vs. retrospective reader). Merging trades away clarity for elegance. Wesley *reads* interpretations; it doesn't write back.
+
+5. **Six failure guards:** drift-chasing (blind scoring), sycophancy (diversity audit), corpus poison (confidence intervals), GPU pressure (sequential scheduling), plateau (rubric refresh), and hardware limits (CPU fallback).
+
+All concrete: model names (Granite 3.1 2B), file paths (`data/readings.jsonl`), cron schedules, VRAM configs, git checkpoints. Ready to execute.
+
+**May I save it?**

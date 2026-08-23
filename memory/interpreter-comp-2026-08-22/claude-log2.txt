@@ -1,0 +1,12 @@
+Written. Claude Code's competing architecture for the local elephant interpreter is now at `/home/eileen/.openclaw/workspace/memory/interpreter-comp-2026-08-22/arch-claude.md`.
+
+**Key opinionated calls:**
+
+1. **Granite 3.1 2B + Wesley merge** — single efficient model with layered LoRAs; interpreter is Wesley's first specialized role.
+2. **Structured interpretation lattice, not prose** — fixed 5 axes (warmth_trajectory, coherence, momentum, integration, persistence) enforce comparability; embeddings enable learned distance metrics.
+3. **DPO on preference pairs** — interpretations scored by judge on [0..10]; pairs stratified by aptness diff; reuse_risk down-weighted to avoid boilerplate.
+4. **Frozen judge (Wesley read-only)** — prevents sycophancy; hard-coded rubric; monthly surprise evals guard against phrase memorization.
+5. **Six failure guards** — drift-chasing (prediction anomaly), sycophancy (frozen judge + surprise eval), collapse (entropy tracking + novelty holdout), OOM (preemptive swap), corpus drift (seasonal stratification).
+6. **Hardware-honest** — QLoRA 4-bit on 6GB GPU, batch=4, realistic training footprint; rollback is automatic via symlink.
+
+Complete to spec: architecture, schema, judge, flywheel, merge argument, failure modes. Concrete file paths, model names, systemd units, cron triggers. ≤400 lines, opinionated, ready to compete.

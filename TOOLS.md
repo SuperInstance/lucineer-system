@@ -84,3 +84,8 @@ Free tier — use for assets, models, and embeddings:
 - **MMX (Starter plan)**: use ONLY for asset generation the others can't do — images, video, speech, music.
 - **DeepInfra**: use for models we can't get elsewhere (Seed-2.0-pro, Hermes-3-Llama-405B, FLUX-2-max). Not for DeepSeek models — use direct API instead.
 - **When in doubt**: dispatch a GLM subagent AND a DeepSeek call in parallel. Redundancy is cheap. Use DeepSeek the most.
+
+## Liquid AI (local GPU lane — added 2026-08-21)
+- **Liquid-LFM2.5-2.6B** — the boat brain. Agentic (planning, tool calling, multi-step), device-native, private, offline. Local Ollama: `Liquid-LFM2.5-2.6B` on http://127.0.0.1:11434 (~42–67 tok/s on RTX 4050; HF GGUF Q4_K_M; ollama upgraded 0.9.6 → 0.32.15 to unlock lfm2 arch).
+- Fits the "hundred boats" doctrine: many cheap local agents, no per-token cost; edge-native like the CF migration; future F/V EILEEN boat brain (no cloud 60mi offshore).
+- Also on the bench: `LiquidAI/lfm2.5-350m` (nano, was corrupt — re-pulled) and `LiquidAI/lfm2.5-1.2b-instruct` (pulled but needs the 0.32.15 engine to load — now available).

@@ -1,0 +1,16 @@
+{
+  "project": {
+    "name": "ternary-rom 8x8 MAC tile",
+    "description": "Mask-locked ternary inference proof-of-concept. 8x8 matrix-vector multiply with weights in ROM cells. No multipliers, no SRAM for weights.",
+    "author": "ternary-rom contributors",
+    "category": "processor",
+    "top_module": "ternary_mac_8x8",
+    "language": "verilog",
+    " CLOCK_HZ ": 10000000
+  },
+  "documentation": {
+    "how_it_works": "Weights {-1,0,+1} are encoded in mask-programmed ROM cells. Each clock cycle processes one input element. The accumulator adds (weight=+1), subtracts (weight=-1), or skips (weight=0). After 8 cycles, the output holds the dot product result for the selected column.",
+    "how_to_test": "Apply a known input vector, select a column (0-7), assert start, wait for 8 cycles, read the output. Compare against expected dot product computed in software.",
+    "external_hw": "None required. Self-contained test in testbench."
+  }
+}

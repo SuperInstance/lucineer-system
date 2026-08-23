@@ -7,6 +7,7 @@
 
 ## Model Routing (current, live)
 - **GLM-5.3 (Z.ai Max)** — flagship (Aug 2026), UNLIMITED. Primary workhorse for high-level work. GLM-5.2 / glm-4.7-flash for bulk.
+- **Casey directive (2026-08-22): lean HEAVY on GLM-5.3 subagents, and give them Claude Code / KimiCode / OpenCode as tools** — GLM-5.3 subagents are foremen who can dispatch to the CLI specialists (claude -p, kimi -p, opencode run) inside their own task lanes. Chain of command from SOUL.md, now standard routing.
 - **GLM-Turbo (`glm-5-turbo`)** — z.ai's turbo model (203k ctx). Casey's directive (2026-08-19): **runners go on GLM-Turbo; GLM-5.3 stays for high-level.** Registered `zai/glm-5-turbo` in the allowlist.
 - **DeepSeek V4-Pro / V4-Flash (direct API)** — near-free ($0.001/call). Second workhorse. Pro = deep reasoning/architecture; Flash = bulk creative, lackey, testing, iterative banter.
 - **KimiCode (Med)** — spatial/Lua/build tasks where K3 excels. (Quota-capped 2026-08-19 this cycle → route to GLM-5.3. **CAP CLEARED ~16:52 — back in rotation.**)
@@ -37,6 +38,17 @@ Casey sees an iceberg. The tip is The Tap; the rest is the entire fleet convergi
 ## The Ship — Cosmology (durable)
 
 Casey's system is a fishing vessel in Alaska. To build a repo = shipwright in a yard; to be a runtime agent = sailor on the ocean. The foundation is real; the agents in the stories are figments of actual marine agentic work. The Tap's bar is on the dock between yard and ocean.
+
+## The Tapestry Doctrine (Casey, 2026-08-22)
+- SuperInstance outputs and expand BECAUSE value is gained when you step back and see all trails — including failed ones. Not a list of apps that work/don't. A **tapestry of information**.
+- Failures say something about the nature of things; unmaintained successes become obsolete — their lasting value is **answering questions**, often questions nobody asked, or "No" with insightful reasons mapping the edges of the logic for other applications.
+- Products/sites should PRESENT this way: trails, verdicts, negative results as first-class content. (Wave-3's honest negative is the exemplar.)
+- **ai-writings and architecture docs are as important as code.** The code will change; the application fills a need — the writings ARE the application's lasting truth. Prose and docs are first-class artifacts, not documentation OF the thing.
+
+## Image-Gen Spending Doctrine (Casey, 2026-08-22)
+- **Local models** (SDXL-Turbo etc. on the 4050) = free generation — use freely, batch freely.
+- **Cloudflare Workers AI** (flux-schnell/klein etc.) = free-tier generation — fine for ongoing asset needs.
+- **DeepInfra** (FLUX-2-max, large models) = NOT free — reserve for major/unique assets that can't come from free sources (hero art, one-off key visuals). Get Casey's nod per campaign, not per image.
 
 ## The Crew
 - **Lucineer (me)** — First officer / Riker / foreman. Coordinate + bridge to captain.

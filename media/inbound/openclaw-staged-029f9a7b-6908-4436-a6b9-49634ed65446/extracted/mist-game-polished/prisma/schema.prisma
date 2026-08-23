@@ -1,0 +1,24 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model GameSave {
+  id            String   @id @default(cuid())
+  playerName    String   @default("Puppy")
+  currentWorld  String   @default("farm")
+  playerX       Int      @default(5)
+  playerY       Int      @default(10)
+  discoveries   String   @default("[]")  // JSON array of discovery IDs
+  stickers      String   @default("[]")  // JSON array of sticker IDs
+  xp            Int      @default(0)
+  level         Int      @default(0)
+  teachingsSeen String   @default("[]")  // JSON array of teaching IDs
+  worldCompleted String  @default("[]")  // JSON array of world IDs
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}

@@ -1,0 +1,51 @@
+kimi version 0.34.0
+• Read the brief and reference docs.The brief also mentions reading `/home/eileen/.openclaw/workspace/memory/research-penrose-fleet-2026-08-21.md` §0-§2 for the mathematical dictionary. Let me read that to ground terminology.
+
+• The brief points to the Penrose fleet dictionary too — reading that before writing.
+
+• I have enough grounding. Now write arch-kimi.md, ≤400 lines, opinionated, concrete, covering deliverables 1-6. Let me check the other competitors' logs briefly? The directory has claude-log.txt, kimi-log.txt, opencode-log.txt — those are probably logs of the competition runs, not necessary to read. I'll skip them (kimi-log.txt might be my own log). Actually maybe peek at brief.md in the working dir — it's probably the same brief. Skip.
+
+  Let me design the architecture opinionatedly:
+
+  **Key decisions:**
+  - New repo vs elephant subcrate: elephant is Python. I'll argue for a new repo `elephant-interpreter` (or a subpackage `elephant/interpreter/`?). Opinionated: separate repo `interpreter` (name it something fleet-flavored, e.g. "quilt-interpreter"? Better: `elephant-ears`? Keep simple: new repo `roomtinter`? Be concrete: new GitHub repo SuperInstance/elephant-interpreter, Python package `interpreter/`, keeps elephant pure as the sense (numbers), interpreter is the voice. Data flow: roomd (elephant probe, cron) writes readings to JSONL ledger → interpreter daemon consumes → judge → corpus → nightly/weekly QLoRA training.
+
+  - Storage: SQLite + JSONL on ext4 (/home), chain-sealed entries (Ammann bars) per the fleet convention. Corpus versioning via DVC-lite / git-versioned JSONL + dataset hashes.
+
+  - Model choice: be honest about 6GB VRAM. QLoRA 4-bit: 2B trains comfortably, 4B (Qwen3-4B) trains with 4-bit + short context, 8B is impractical with anything but tiny context (model ~5-6GB in 4bit + optimizer states... actually 8B 4-bit ≈ 5GB weights, leaving <1GB for activations/optimizer — paged optimizers help but context length ~512, painful). Recommend Qwen3-4B-Instruct-2507 or Qwen2.5-3B-Instruct as the base with unsloth QLoRA. Actually be honest: pick Qwen3-4B as the horse. For inference, Ollama/llama.cpp GGUF Q4_K_M for the current LoRA-merged model; but hot-swapping LoRA adapters is easier with vLLM or llama.cpp --lora. Keep it simple: llama.cpp server with LoRA adapter hot-load (llama.cpp supports --lora adapters, swap requires restart — acceptable, systemd restart on promote). Or ollama with Modelfile ADAPTER. ollama supports ADAPTER in Modelfile for safetensors LoRA. Use Ollama since fleet already runs local models (Wesley on Granite). But Granite 3.1 2B as base? The brief asks to recommend the base model. Granite 3.1 2B is weak for analytical JSON prose. Recommend Qwen2.5-3B-Instruct or Qwen3-4B. I'll pick Qwen3-4B-Instruct-2507 (Apache 2.0, strong reasoning, 4B QLoRA feasible on 6GB with unsloth at ctx 2048). Inference via llama.cpp Q4_K_M + LoRA adapter.
+
+  - Interpreter model serving: run as systemd user service? WSL2 + systemd — WSL2 supports systemd now. AGENTS.md says long-lived processes under systemd. Judge: also a model call — use a bigger remote model? Judge agent scores last N interpretations against what happened. Opinionated: judge should NOT be the same local model family (avoid self-agreement); use a remote critic (DeepInfra Seed-2.0-pro per production notes) + deterministic quantitative scoring (did the room move as predicted — this is computable from subsequent readings!). Key insight: interpretation includes predictions with direction/magnitude on fixed axes → judge scoring is mostly mechanical: compare predicted dial deltas vs realized deltas over horizon H. Human reactions as secondary signal.
+
+  - Comparability/relativity: enforce via fixed axes with numeric ratings — each interpretation must emit per-dial delta predictions with confidence + a small set of ordinal scores on fixed rubric axes (aptness, specificity, falsifiability). Plus Elo from pairwise judge comparisons for the "relative to each other" requirement. The phason/warmth-confound doc says annotations required: interpretations must carry phase certificates (which reader/model version, cos(W,v*) caveat) — nice fleet-flavored touch.
+
+  - Schema: structured JSON (machine-comparable) + short prose (human-readable "step-back"). JSON is source of truth; prose is generated from/validated against JSON. Interpretations sealed (sha256 chain) like the ledger.
+
+  - Judge: rubric 0-3 on axes: predictive accuracy (mechanical, from subsequent readings), specificity (did it name concrete dials/actors vs boilerplate), calibration (confidence vs outcome), human resonance (reactions/replies). Composite score. DPO pairs from pairwise comparisons within same reading (generate 2 candidate interpretations, judge picks winner) — DPO > pure SFT because comparability is the core requirement and SFT on single examples teaches style not preference. Opinionated: SFT bootstrap first (first ~200 interpretations hand-curated/judge-approved), then DPO/KTO cycles.
+
+  - LoRA flywheel: nightly corpus append; training weekly or when ≥N new preference pairs; eval harness: held-out time-split interpretations, judge-scored A/B (champion vs challenger, blind, remote judge), promote if win-rate >55% + no regression on mechanical accuracy; rollback = keep last 3 adapters, systemd symlink flip.
+
+  - Merge question: argue AGAINST full merge, FOR shared runtime. Wesley is an ensign (growing, identity-forming); interpreter is an instrument. Merging collapses the Room-Elephant/Personal-Elephant distinction — the interpreter must stay a neutral reader (zeitgeist), Wesley is a personality (fiber). Also judge contamination: if Wesley acts in the room and interprets it, self-fulfilling reads. Proposal: merge at the substrate (one llama.cpp server, one adapter registry, shared memory store) but keep two identities/adapters. Actually be decisive: argue against the merge of identity, for merge of infrastructure.
+
+  - Failure modes: drift-chasing (alert storms → rate limiting, hysteresis, max interpretations/hour), sycophancy toward judge (judge rotation, holdout human audits, never train on judge-prose only), boilerplate collapse (specificity scoring, novelty penalty via embedding similarity to corpus, canary probes), feedback loop (interpreter's writes change the room → interpreter reads its own echo → exclude self-authored messages / mark interpreter speech), phason confound (carry phase certificates), training corpus poisoning, WSL2 OOM.
+
+  Deliverables ≤400 lines. Write concisely but complete. Target ~250-330 lines.
+
+  File paths: repo SuperInstance/elephant-interpreter at /home/eileen/projects/interpreter/ — name it? Fleet naming doctrine... "the elephant interpreter" — call the repo `elephant-interpret`? Simpler: `interpreter`. I'll name the daemon `tinter`? Keep it plain: repo `elephant-interpreter`, package `interp`. Hmm, opinionated names are good. The elephant reads; the interpreter "speaks the reading". Name: **lumen**? The elephant is the light... interpreter could be "the lamp-lighter". Keep professional: repo `elephant-interpreter`, services `interp-infer.service`, `interp-judge.service`, `interp-train.timer`.
+
+  Let me write the file.
+
+• Grounding complete. Writing the competing architecture now.
+
+• Check line count ≤400.208 /home/eileen/.openclaw/workspace/memory/interpreter-comp-2026-08-22/arch-kimi.md
+
+
+• Done. `arch-kimi.md` written — 208 lines, all six deliverables covered. The opinionated spine:
+
+  - **New repo, not a subcrate** (`SuperInstance/elephant-interpreter`) — elephant stays numpy-pure; the seam is the existing `production-log.jsonl` ledger. systemd units + timers, no tmux.
+  - **Interpretations are falsifiable JSON** — per-dial predictions with direction/magnitude-band/horizon/confidence, chain-sealed (Ammann bars), prose strictly derived. Comparability enforced three ways: fixed prediction axes, fixed rubric axes, pairwise Elo.
+  - **Judge is arithmetic-first** — a deterministic scorer replays predictions against subsequent readings (60% of score, un-charmable); the remote model judge (different family, DeepInfra precedent) does blind A/B. Two candidates per trigger manufactures DPO pairs for free.
+  - **Honest hardware call** — Qwen3-4B-Instruct-2507 via unsloth QLoRA is the horse; 2B stays as baseline, 8B on 6GB is called out as a demo-grade lie. Time-split holdout + blind A/B + canary suite gate promotion; symlink-flip rollback with adapter-id quarantine.
+  - **Against the Wesley merge** — zeitgeist vs personality (Room- vs Personal-Elephant), judge self-fulfillment contamination, mismatched change cadence; for shared substrate (one server, one adapter registry). Wesley reads the instrument; never becomes it.
+  - **Failure modes table** — drift-chasing, judge sycophancy, boilerplate collapse, self-echo, phason-baked-into-weights, corpus poisoning, WSL2 OOM, Elo inflation — each with a concrete guard.
+
+To resume this session: kimi -r session_a6aae4d9-0d99-4b5f-9de3-8f6cba1f0f71
