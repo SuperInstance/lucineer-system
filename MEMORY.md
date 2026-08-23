@@ -75,6 +75,11 @@ Casey's system is a fishing vessel in Alaska. To build a repo = shipwright in a 
 - **30s crafting a soul-level system prompt** produces exponentially better output. Prompt = the soul.
 - **Iterate with 2+ cheap models** on hard problems (sounding board pattern).
 - **Subagents with tight scopes finish in 2-6 min**; unfocused ones hit 45-min limits.
+- **SERIAL LANES doctrine (2026-08-22):** concurrent GLM lanes starve/die mid-flight — one lane at a time. Also: lanes merging to main must run `node --check` + `npm run build` BEFORE push (conflict markers broke main once).
+- **kimi CLI truth:** plain `kimi -p` is the ONLY working form — rejects `-y` and `--auto` with `-p`. Kimi quota 403s happen; lanes fall back to DeepSeek + Claude.
+- **Scrapcraft live-deploy path:** fleet-static-host worker — `cp -r dist → public/scrap && npx wrangler deploy` (deploy.sh only builds). Character roundness, Spine (12 chapters), Prestige Marks + Earl's Back Room, Geography (12 landmarks), Wakes (Thread 3) all shipped Aug 22-23; 775/775 tests. Remaining story threads: Mo's Ledger, First Owner artifacts, companion pull-lines. Casey P2 open: hard refresh loses level/inventory.
+- **LucidDreamer GO (2026-08-21):** product — luciddreamer.ai, "Rooms dream. We make them lucid." elephant=sense, LUCID=voice, ledger=memory.
+- **Saddle/Kennel doctrine (2026-08-22):** rider types = alignment archetypes; vestigial tack = protocol vestiges; harness≠swarm; invisible harness = internalized alignment. Writing into Saddle docs + Kennel Vol. II.
 - **DeepSeek reasoner returns empty on creative prompts** — use deepseek-chat (v4-flash) for creative, reasoner (v4-pro) for analysis.
 - **Falsy-zero bug pattern:** `value or DEFAULT` silently replaces 0.0.
 - **WSL2 + Ollama GPU = crash-loop** — fixed 2026-08-19: `autoMemoryReclaim=disabled` in `.wslconfig` + `OLLAMA_KEEP_ALIVE=5m`; recommend `systemctl disable ollama`. Requires `wsl --shutdown` to apply.
