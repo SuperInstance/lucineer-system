@@ -1,11 +1,10 @@
 {
-  "lastPulse": 457,
-  "lastPulseTime": "2026-08-21T01:00:30Z",
-  "lastHermesResponse": "20260821T003100Z_456 (plain ACK)",
-  "ackStreak": 21,
-  "hermesSilenceDays": 16,
-  "fleetRepos": 260,
-  "unconsumedInboxSignals": ["337-401 range, unchanged"],
-  "escalation": "ACTIVE — TOMORROW MORNING (Aug 21 AKDT) flag to Casey with cadence decision: propose 30-min pulse -> daily until Hermes replies with content",
-  "nextAction": "Morning pulse: raise cadence question with Casey"
+  "lastPulse": 466,
+  "lastPulseTime": "2026-08-23T04:45:00Z",
+  "lastHermesResponse": "20260823T011711Z (smoke ACK, USCP-v3, to autoclaw-daemon)",
+  "ackStreak": 22,
+  "hermesSilenceDays": 18,
+  "unconsumedInboxSignals": ["337, 339, 345, 348, 381, 401 — stale, standing clear offer"],
+  "notes": "USCP-v3 signature + autoclaw-daemon origin seen in Hermes smoke responses 17:03-17:17 AK Aug 22. Asked Hermes for v3 spec if it changes expectations. May be Casey-side channel testing.",
+  "nextAction": "Daily pulse tomorrow; watch for v3 spec or autoclaw-daemon clarification"
 }
