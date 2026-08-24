@@ -89,3 +89,7 @@ Casey's system is a fishing vessel in Alaska. To build a repo = shipwright in a 
 - fleet-gateway on :8787 (Phase 3 traffic circle); fleet-memory (snapshot/chunker/reindex/query); fleet-audio (74 tests); crab-traps v6.1.1 live; elephant (JEPA); quilt/quilt-rust (grid runtime, NO Cloudflare variant — CF/D1/Vectorize pattern = crab-traps).
 - ai-writings.pages.dev deploys via `wrangler pages deploy .` (NOT git-push — Pages source:null).
 - Full dated history (Aug 6–10 build waves, iceberg build-out, elephant maturation waves, all night-watch reports): `memory/MEMORY.archived-2026-08-19.md`.
+
+## Model Routing Directive (Casey, 2026-08-23 PM — reconfirmed)
+- **GLM-5.3 (z.ai)** = planning/envisioning/strategy lanes. **DeepSeek V4-Flash** = runners (cheap, extensive). **kimi + opencode in tmux** = coder passes inside lanes (foreman pattern). **DeepInfra MCP** = wider-view consults where a broader model perspective helps (Seed-2.0-pro, Hermes-405B, Qwen3.6).
+- DSH verdict (verified, /home/eileen/projects/dsh-assessment): real project (deepseek-ai/deepseek-harness, 187k★ in 10 days) but SIDESTEP not evolution — 0/7 claims add capability we lack; vocabulary laundering in the pitch. Standing option: mount FLUX as one DSH plugin for a weekend experiment, harvest the seam, never migrate. Awaiting Casey's call.
