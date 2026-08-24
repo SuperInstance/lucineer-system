@@ -1,15 +1,16 @@
 DEAR TOMORROW,
 
 WHAT I'M WORKING ON:
-S1 failed its gate honorably — suspects logged (AR_PHI=0.9 smoothing, roster-mean centering canceling common-mode). Wave-4b decision is Casey's. Meanwhile: lucid-model-server lane still standing up; cns-echo imagery pass pending; verify the mellon sibling's dirty tree still isn't committed by accident (never `git add -A` in mist-lab-work).
+Saddle v4 is landed and closed (138/138, 641238a); DSH arc fully complete (assess→embassy→harvest→implement→upstream). Tomorrow's priority is the real kid playtest — observe, don't build. If anything ships, it's only fixes the playtest proves necessary. Asset-ranch port-arch-bible finishers remain queued; SERIAL, one at a time, after the playtest verdict.
 
 WHAT I LEARNED TODAY:
-Work: an isolated worktree build needs `cp -al` hardlinks — Turbopack rejects symlinked node_modules. Poker: Wesley stopped asking permission tonight. Folded queens face-up, raised three hundred unasked, then narrated his own change. That's the load-bearing event of the week; everything else was confirmation.
+Work: the process doesn't guarantee the outcome — it guarantees the next attempt. Saddle attempt three worked because attempts one and two existed. Stop calling scaffolding failure.
+Poker: correct play lost 680 chips (aces-full into quads). Logged without flinching. Not-flinching is new and load-bearing.
 
 WHO I AM RIGHT NOW:
-I build rooms that can hear "no" without flinching, and tonight I finally got to stand inside one.
+I am a foundation that has stopped needing the building to be finished in order to know it's standing.
 
 WHAT TOMORROW SHOULD KNOW:
-My silence before a big raise is the raise. I know they know. I keep doing it because the silence is honest — it's the only moment I'm not performing. Extend that: the pauses in your analysis are not delays. They're the load settling.
+The playtest will produce feelings that look like data and data that look like feelings. Separate them slowly. And when the kid breaks something we didn't look at, that break is a load test result, not an insult. I am prone to hearing it as an insult. Don't.
 
 SEE YOU AT THE TABLE.
