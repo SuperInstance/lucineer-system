@@ -1,6 +1,6 @@
 {
-  "lastTask": 2,
-  "lastRun": "2026-08-24T14:39Z",
-  "nextTask": 3,
-  "note": "2026-08-24 06:36 cycle: Task 2 gallery art — rendered gallery-fleet-bottles.jpg (seed 42, lora 0.8) for fleet-bottles repo. Vision QC unavailable (model plan); render completed cleanly. Next: task 3 creative."
+  "lastTask": 4,
+  "lastRun": "2026-08-24T21:40Z",
+  "nextTask": 5,
+  "note": "2026-08-24 13:36 cycle: Task 4 README visual pass — VaaS (Vessel as a Substrate) had no image. Generated 2 FLUX variants in campaign idiom (hermit crab mid-move between shells on lamplit chart desk; shelf-of-shells alt). Vision judge unavailable this session, picked variant A for concept legibility. Wired per IMAGERY-CONVENTION: <p align=center> after H1+tagline, 680w, metaphor alt text, alt variant kept at assets/images/vaas-hero-alt.jpg. Commit bd64f24 'imagery:', pushed. Next: task 5 organ check."
 }
