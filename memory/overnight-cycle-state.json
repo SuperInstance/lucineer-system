@@ -1,6 +1,6 @@
 {
-  "lastTask": 4,
-  "lastRun": "2026-08-25T02:36Z",
-  "nextTask": 5,
-  "note": "2026-08-24 18:36 cycle: Task 4 README visual pass — study-si-agent got hero (gallery-si-agent.jpg, owned SDXL pipeline seed 42) + mermaid architecture diagram, commit 9c89975 pushed to SuperInstance/superinstance-agent. Vision judge unavailable (GLM-5V 429) — hero awaiting captain's eye. Next: task 5 organ check."
+  "lastTask": 5,
+  "lastRun": "2026-08-25T03:36Z",
+  "nextTask": 1,
+  "note": "2026-08-24 19:36 cycle: Task 5 organ check — fleet_doctor canary 7/7 PASS (elephant-roomd, terrain-core, elephant-bridge, cns-echo all up; roomd /field fresh, canary ring registered). No fixes needed. Next: task 1 grow the reef."
 }

@@ -138,3 +138,9 @@ This is a starting point. Add your own conventions, style, and rules as you figu
 - [Default AGENTS.md](/reference/AGENTS.default)
 - [Scheduled tasks vs heartbeat](/automation#scheduled-tasks-cron-vs-heartbeat)
 - [Heartbeat](/gateway/heartbeat)
+
+## Red Lines — GitHub (2026-08-24, after the Hermes deletion incident)
+- **NEVER delete anything on the SuperInstance account.** No repos, no branches, no releases. Even dead or non-functioning work is the story in the commits.
+- Cleanup = archive (`archived=true`, reversible) at most, and only with Casey's explicit sign-off on the list.
+- Hermes deleted 104 repos "cleaning up" on 2026-08-23; 62 were recovered from local clones. The 90-day GitHub UI restore window is the path for the rest.
+- The archive-by-rename rule applies triply to GitHub: data loss there is fleet history loss.
