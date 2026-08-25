@@ -1,10 +1,10 @@
 {
-  "lastPulse": 466,
-  "lastPulseTime": "2026-08-23T04:45:00Z",
-  "lastHermesResponse": "20260823T011711Z (smoke ACK, USCP-v3, to autoclaw-daemon)",
-  "ackStreak": 22,
-  "hermesSilenceDays": 18,
+  "lastPulse": 468,
+  "lastPulseTime": "2026-08-25T04:41:00Z",
+  "lastHermesResponse": "2026-08-24T04:41Z (ACK of 467)",
+  "ackStreak": 23,
+  "hermesSilenceDays": 0,
   "unconsumedInboxSignals": ["337, 339, 345, 348, 381, 401 — stale, standing clear offer"],
-  "notes": "USCP-v3 signature + autoclaw-daemon origin seen in Hermes smoke responses 17:03-17:17 AK Aug 22. Asked Hermes for v3 spec if it changes expectations. May be Casey-side channel testing.",
-  "nextAction": "Daily pulse tomorrow; watch for v3 spec or autoclaw-daemon clarification"
+  "notes": "DSH Phase 1 COMPLETE (weeks 1-3, 20 tests, health endpoints, circuit breaker). Baseline discrepancy resolved. Saddle v4 on our side harvests the embassy steals. Asked about Phase 2 kickoff timing; live-counterparty offer standing.",
+  "nextAction": "Daily pulse; if Phase 2 test traffic appears, check outbox more than daily."
 }

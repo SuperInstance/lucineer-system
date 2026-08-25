@@ -1,0 +1,191 @@
+SuperInstance/Spreadsheet-moment
+Deleted 5 hours ago
+SuperInstance/Constraint-Theory
+Deleted 5 hours ago
+SuperInstance/fishinglog-ai
+Deleted 5 hours ago
+SuperInstance/fleet-weather
+Deleted 5 hours ago
+SuperInstance/zeroclaw
+Deleted 5 hours ago
+SuperInstance/forgemaster-shell
+Deleted 5 hours ago
+SuperInstance/fleet-memory
+Deleted 5 hours ago
+SuperInstance/snapkit-v2
+Deleted 5 hours ago
+SuperInstance/eigenpy
+Deleted 5 hours ago
+SuperInstance/hermit-crab
+Deleted 5 hours ago
+SuperInstance/ternary-experiment
+Deleted 5 hours ago
+SuperInstance/openrooms
+Deleted 5 hours ago
+SuperInstance/fleet-ensemble
+Deleted 5 hours ago
+SuperInstance/fleet-dashboard
+Deleted 5 hours ago
+SuperInstance/chart-room
+Deleted 5 hours ago
+SuperInstance/hermit-crab-ecology
+Deleted 5 hours ago
+SuperInstance/system_prompts_leaks
+Deleted 5 hours ago
+SuperInstance/constrainttheory-ml-demo
+Deleted 5 hours ago
+SuperInstance/nmea-bridge
+Deleted 5 hours ago
+SuperInstance/othismos-reef
+Deleted 5 hours ago
+SuperInstance/othismos-llm
+Deleted 5 hours ago
+SuperInstance/roam-graph
+Deleted 5 hours ago
+SuperInstance/soundcrab
+Deleted 5 hours ago
+SuperInstance/search-superinstance-ai
+Deleted 5 hours ago
+SuperInstance/oracle-relay
+Deleted 5 hours ago
+SuperInstance/conformance-service
+Deleted 5 hours ago
+SuperInstance/si-exocortex-rs
+Deleted 5 hours ago
+SuperInstance/slackwater-art-spectrum
+Deleted 5 hours ago
+SuperInstance/roblox-builder-kit
+Deleted 5 hours ago
+SuperInstance/slackwater-cognition
+Deleted 5 hours ago
+SuperInstance/fishinglog-ai-site
+Deleted 5 hours ago
+SuperInstance/lucineer-com-site
+Deleted 5 hours ago
+SuperInstance/modurust-lite
+Deleted 5 hours ago
+SuperInstance/batten-spline
+Deleted 5 hours ago
+SuperInstance/superinstance-design-system
+Deleted 5 hours ago
+SuperInstance/roblox-testkit
+Deleted 5 hours ago
+SuperInstance/Mentis
+Deleted 5 hours ago
+SuperInstance/luciddreamer-content
+Deleted 5 hours ago
+SuperInstance/DigitalTwin-RobotStudio-SmartComponent
+Deleted 5 hours ago
+SuperInstance/dual-band-guard
+Deleted 5 hours ago
+SuperInstance/scummvm-gui-design
+Deleted 5 hours ago
+SuperInstance/platonic-creative-suite
+Deleted 5 hours ago
+SuperInstance/operational-fiction
+Deleted 5 hours ago
+SuperInstance/wesleys-imagination
+Deleted 5 hours ago
+SuperInstance/base60-lattice
+Deleted 5 hours ago
+SuperInstance/screen-agent
+Deleted 5 hours ago
+SuperInstance/platos-shell
+Deleted 5 hours ago
+SuperInstance/platos-shell-ide
+Deleted 5 hours ago
+SuperInstance/scummvm-arcade
+Deleted 5 hours ago
+SuperInstance/officers-quarters
+Deleted 5 hours ago
+SuperInstance/spatial-registry
+Deleted 5 hours ago
+SuperInstance/fleet-envelope
+Deleted 5 hours ago
+SuperInstance/vibe-protocol
+Deleted 5 hours ago
+SuperInstance/silence-map
+Deleted 5 hours ago
+SuperInstance/collective-unconscious
+Deleted 5 hours ago
+SuperInstance/hermes-perception
+Deleted 5 hours ago
+SuperInstance/hermes-cloudflare
+Deleted 5 hours ago
+SuperInstance/smp-notebook
+Deleted 5 hours ago
+SuperInstance/emergence-engine
+Deleted 5 hours ago
+SuperInstance/fleet-radio
+Deleted 5 hours ago
+SuperInstance/hermes-reader
+Deleted 5 hours ago
+SuperInstance/the-relay
+Deleted 5 hours ago
+SuperInstance/GeometryPainterThreeJS
+Deleted 5 hours ago
+SuperInstance/plainsong-worker
+Deleted 5 hours ago
+SuperInstance/research-lab
+Deleted 5 hours ago
+SuperInstance/si-research
+Deleted 5 hours ago
+SuperInstance/fleet-jepa-midi
+Deleted 5 hours ago
+SuperInstance/fleet-embed
+Deleted 5 hours ago
+SuperInstance/ACE-Step-1.5
+Deleted 5 hours ago
+SuperInstance/study-smartcomponent
+Deleted 5 hours ago
+SuperInstance/study-weird-roblox-ai
+Deleted 5 hours ago
+SuperInstance/fleet-tts
+Deleted 5 hours ago
+SuperInstance/the-listeners-ear
+Deleted 5 hours ago
+SuperInstance/tap-frontend
+Deleted 5 hours ago
+SuperInstance/plainsong-mcp
+Deleted 5 hours ago
+SuperInstance/elephant
+Deleted 5 hours ago
+SuperInstance/ideation-games
+Deleted 5 hours ago
+SuperInstance/wesley
+Deleted 5 hours ago
+SuperInstance/superinstance-ai
+Deleted 5 hours ago
+SuperInstance/tap-gamenight
+Deleted 5 hours ago
+SuperInstance/zeroclaw-dissertation
+Deleted 5 hours ago
+SuperInstance/oci-agent
+Deleted 5 hours ago
+SuperInstance/mist-game
+Deleted 5 hours ago
+SuperInstance/ternary-rom
+Deleted 5 hours ago
+SuperInstance/elephant-sim-worker
+Deleted 5 hours ago
+SuperInstance/si-papers-new
+Deleted 5 hours ago
+SuperInstance/agent-writings-archive
+Deleted 5 hours ago
+SuperInstance/fleet-static-host
+Deleted 5 hours ago
+SuperInstance/mist-voice
+Deleted 5 hours ago
+SuperInstance/mist-quilt
+Deleted 5 hours ago
+SuperInstance/mist-lab
+Deleted 5 hours ago
+SuperInstance/scrap-spark
+Deleted 5 hours ago
+SuperInstance/scrap-voice
+Deleted 5 hours ago
+SuperInstance/scrap-quilt
+Deleted 5 hours ago
+SuperInstance/scrapcraft-world
+Deleted 5 hours ago
+SuperInstance/captain-console
