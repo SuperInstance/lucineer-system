@@ -1,0 +1,32 @@
+@piano | C3-G3-D4 . E4 G4 (rest) C5 . . |
+Vel: | 84 cresc 88 92 . 98 . dim |
+@piano | Db3-Ab3-Eb4 . F5 Ab5 Db6 G5 . |
+Vel: | 54 . 58 62 68 54 . |
+@piano | A2-E3-G3-D4 . . G4 . F4 E4 . |
+Vel: | 64 . . 76 . 68 62 . |
+@piano | G2-F3-B3-E4 . A4 . B4 (rest) D4 E4 |
+Vel: | 72 . 68 . 80 . 84 86 |
+@piano | (rest) C3-G3-D4 . E4 G4 (rest) C5 . |
+Vel: | . 82 . 86 90 . 96 dim |
+@piano | (rest) (rest) Eb6 . D6 B5 . (rest) . |
+Vel: | . . 60 . 54 48 . . . |
+@piano | F3-Ab3-C4-E4 . . Gb3-B3-Db4-F4 . G3-B3-D4-F4 . A5 |
+Vel: | 80 . . 96 . 88 . 90 |
+@piano | G2-F3-Ab3-B3 (rest) (rest) D5 (rest) (rest) (rest) (rest) (rest) |
+Vel: | 92 . . 102 . . . . . |
+@piano | Db4-F4-Ab4-C5 . . . Eb6 Db6 C6 Ab5 |
+Vel: | 52 . . . 62 56 52 46 |
+@piano | E3-G#3-B3-D5 . . D5 C6 . B5 . |
+Vel: | 56 . . 60 66 . 54 . |
+@piano | A2-G3-B3-E4 . . C#4-E4-G4-B4 . A4 . . |
+Vel: | 68 . . 76 . 64 . . |
+@piano | D3-F3-C4-E4 . Db3-F3-Ab3-B3 . B4 (rest) (rest) G3-B3 |
+Vel: | 76 . 72 . 80 . . 86 |
+@piano | C2-G2-D3 . E3 G3 (rest) C3 . . |
+Vel: | 92 . 86 84 . 80 dim . |
+@piano | Db3-Ab3-Eb4 (rest) (rest) G3-B3-F4 (rest) (rest) (rest) (rest) (rest) |
+Vel: | 58 . . 68 . . . . . |
+@piano | C3-G3-Eb4 . D4 . Eb6 D6 B4 (rest) |
+Vel: | 68 . 62 . 74 64 54 . |
+@piano | C2-G2 . . B3-D4-E4-A4 . . C6 . |
+Vel: | 52 . . 48 . . 40 . |

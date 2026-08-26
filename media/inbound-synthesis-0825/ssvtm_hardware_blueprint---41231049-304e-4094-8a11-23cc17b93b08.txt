@@ -1,0 +1,136 @@
+================================================================================
+SUB-SYMBOLIC VECTOR TURING MACHINE (SSVTM) - CORE HARDWARE NETWORK SPECIFICATION
+================================================================================
+Document Ref: SSVTM-HW-REV3.2
+System Epoch: 2026.08
+Classification: Architecture Blueprint / Bare-Metal Specification
+--------------------------------------------------------------------------------
+
+This document specifies the exact bare-metal architecture, silicon-register layout,
+and memory-mapped neural instances required to execute a textless, zero-latency 
+Heterogeneous Neural Instance Fabric (HNIF) operating on a single-pass 
+Feed-Forward Reflex Circuit.
+
+================================================================================
+1. MEMORY MAP AND GLOBAL REGISTER LAYOUT (32-BIT PHYSICAL BUS)
+================================================================================
+The entire hardware system maps physical input/output lines, status registers, 
+and low-rank transformer matrices directly onto a continuous 32-bit address space.
+
+--------------------------------------------------------------------------------
+Base Address Range       | Component Designation  | Description
+--------------------------------------------------------------------------------
+0x4000 0000 - 0x4000 0FFF | PERIPHERAL_BUS_ADC     | Analog-In/Direct DMA Buffers
+0x4000 1000 - 0x4000 1FFF | REG_POSTURE_MATRIX    | Hardware Gate & Control Registers
+0x4000 2000 - 0x4000 3FFF | ATTN_REFLEX_LAYER     | Tier 1 / Heads 1-4 Weights (S1)
+0x4000 4000 - 0x4000 FFFF | ATTN_COGNITION_LAYER  | Tier 2-3 Deep Manifold (S2)
+0x0800 0000 - 0x08FF FFFF | FLASH_ROM_PCM_STORE   | Pre-compiled Primitive Audio Storage
+
+--------------------------------------------------------------------------------
+CRITICAL SYSTEM REGISTERS
+--------------------------------------------------------------------------------
+[0x4000 1000] SYSTEM_POSTURE_REG (8-bit, Read/Write):
+              - 0x00: IDLE_CLEAR   -> Routes input directly to Reflex heads.
+              - 0x01: SYSTEM_BUSY  -> Diverts input through active Cognition loop.
+              - 0x02: FAULT_HALT   -> Immediate lock; forces zero-prose override loop.
+
+[0x4000 1004] ATTN_MASK_REG (32-bit, Read/Write):
+              - 0x0000 FFFF: MODE_REFLEX_ONLY (Blocks layers 5-32 execution)
+              - 0xFFFF FFFF: MODE_FULL_COGNITION (Unlocks full MoE array)
+
+[0x4000 1008] DMA_OUT_TARGET_ADDR (32-bit, Read/Write):
+              - Contains the absolute memory address of the outbound audio payload.
+
+================================================================================
+2. TIERED NEURAL INSTANCE SPECIFICATIONS
+================================================================================
+
+--------------------------------------------------------------------------------
+TIER 1: AUDIO-EDGE SUBSURFACE (Instance 1A & 1B)
+--------------------------------------------------------------------------------
+Physical Target: Cortex-M7 Core / Specialized Audio DSP Peripherals
+Execution Deadline: < 50 microseconds per window block
+
+A. Instance 1A: Latent Frame Embedder (LFE)
+   - Topology: Quantized Convolutional Neural Network (CNN) 1D Frontend
+   - Parameter Footprint: 5.2 Million Parameters (INT4 Matrix Representation)
+   - Input Block: 160 Audio Samples (10ms frame at 16kHz PCM mono)
+   - Mathematical Transformation:
+     X_input [160, 1] x W_conv [1, 512, 5] -> Softmax -> Acoustic State Vector [32, 1] (z_a)
+   - Operational Target: Extracts mathematical raw wave mechanics (Jitter, Shimmer, Pitch).
+     Bypasses text tokenization. Maps direct kinetic voltage patterns.
+
+B. Instance 1B: Postural Register Matcher (PRM)
+   - Topology: Hardcoded Hardware Address Multiplexer
+   - Parameter Footprint: 0 Parameters (Pure Silicon Logic Gate)
+   - Functionality: Reads [0x4000 1000] every 1ms. If system_busy == 0x01, it forcibly 
+     points the outbound DAC DMA control pointer (DMA_Channel_Out->CMAR) to 
+     0x0804 A000 (Flash Address for raw "Standby" PCM array).
+
+--------------------------------------------------------------------------------
+TIER 2: THE REACTION FOUNDRY (Instance 2A)
+--------------------------------------------------------------------------------
+Physical Target: On-Chip Neural Processing Unit (NPU) Co-Processor
+Execution Deadline: < 15 milliseconds
+
+A. Instance 2A: Low-Rank Structural Router ("Alpha Dog")
+   - Topology: Attention-Steered Small Language Model (SLM) via hardware LoRA weights.
+   - Parameter Footprint: 1.8 Billion Parameters (INT8 Quantized precision).
+   - Core Vocabulary Matrix Size: Strictly bounded to a 5-element discrete output map:
+     0x0A: ROGER       -> Flash Address: 0x0804 0000
+     0x0B: WILCO       -> Flash Address: 0x0804 5000
+     0x0C: STANDBY     -> Flash Address: 0x0804 A000
+     0x0D: AFFIRMATIVE -> Flash Address: 0x0804 F000
+     0x0E: NEGATIVE    -> Flash Address: 0x0805 4000
+   - Execution Logic: If the 32-byte latent vector (z_a) projects along closed-loop
+     functional coordinates, it snaps the output register directly to one of these five indices.
+     If a general-purpose, high-entropy variable is present, it flips the 
+     ATTN_MASK_REG to 0xFFFF FFFF to cascade the payload down to Tier 3.
+
+--------------------------------------------------------------------------------
+TIER 3: THE DEEP KENNEL MANIFOLD (Instance 3A & 3B)
+--------------------------------------------------------------------------------
+Physical Target: Central Multi-Core Tensor Grid (Unified Memory Bus)
+Execution Deadline: Asynchronous / Task Variable
+
+A. Instance 3A: The Foundry Monolith
+   - Topology: Mixture-of-Experts (MoE) Generative Transformer
+   - Parameter Footprint: 70 Billion to 400 Billion Parameters (FP8/FP16 native layout)
+   - Functionality: Closed-circuit open reasoning, external system tool execution,
+     and multi-document vector spatial searches. Operates in deep negative space.
+
+B. Instance 3B: The "Shedding" Extraction Layer
+   - Topology: Linear Information Bottleneck Projector Matrix
+   - Functionality: Implements a strict mathematical compression layer on the 
+     Monolith's final layer hidden state matrix:
+     Minimization Vector: [I(X; T) - beta * I(T; Y)]
+     Prunes 100% of generated text logs, analysis transcripts, and natural prose, 
+     collapsing the output tensor back down to a pure numeric variable string or direct 
+     hardware tool-trigger code to load into PAYLOAD_ADDR.
+
+================================================================================
+3. INTER-CHIP SYNAPTIC PIN-OUT AND SIGNAL ROUTING BLUEPRINT
+================================================================================
+Signals route across a ultra-high-speed Serial Peripheral Interface (SPI) or 
+native chip-interconnect fabric using an immutable 4-word frame packet structure:
+
+[ WORD 0: STATUS HEADER ] -> Bits [31:24] System Token | Bits [23:0] Device ID
+[ WORD 1: DATA COORD X  ] -> 32-Bit Floating Point Value (Vector Projection Axis 1)
+[ WORD 2: DATA COORD Y  ] -> 32-Bit Floating Point Value (Vector Projection Axis 2)
+[ WORD 3: PARITY CHECKSUM] -> Hardware Parity Bit Verification (Zero Error Loss Gate)
+
+================================================================================
+4. THE COMPLETE SILICON-LEVEL WORKFLOW TRAVERSAL
+================================================================================
+1. Waveform Arrival: Mic Voltage changes -> Injected to ADC Peripheral [0x4000 0000].
+2. Frame Embedding: LFE (Instance 1A) converts raw voltage frames into Acoustic Vector (z_a).
+3. Interrupt Fire: Audio energy falls off -> VoiceActivityTimeout_ISR is tripped on hardware.
+4. Gate Check: CPU evaluates [0x4000 1000]. If clear, sets ATTN_MASK_REG to REFLEX_ONLY.
+5. Instant Echo: Model's lower attention layers process (z_a). Dot-product multi-word paths
+   are completely crushed to zero by Softmax annihilation.
+6. Memory Handover: DMA_Channel_Out->CMAR maps to target Flash audio location. Outbound 
+   DAC amplifier streams "Roger" or "Standby" to user in under 1 millisecond.
+7. Background Cascade: ATTN_MASK_REG is flipped to FULL_COGNITION. The deep Monolith (3A) 
+   wakes asynchronously to compute the complex data solution, while the human's eardrum 
+   is still vibrating from the reflex acknowledgment.
+================================================================================

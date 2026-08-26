@@ -1,0 +1,49 @@
+{
+ "session": "duke-lab",
+ "ok": true,
+ "score": "/home/eileen/projects/plainsong-mcp/.plainsong/workspace/ensemble/duke-lab/score.song",
+ "midi": "/home/eileen/projects/plainsong-mcp/.plainsong/workspace/ensemble/duke-lab/duke-lab.mid",
+ "audio": "/home/eileen/projects/plainsong-mcp/.plainsong/workspace/ensemble/duke-lab/duke-lab.wav",
+ "summary": {
+  "score": {
+   "title": "Unheard Duke",
+   "key": "C",
+   "tempo": 112.0,
+   "meter": "4/4",
+   "dialect": "absolute",
+   "sections": 1,
+   "bars": 1,
+   "players": [
+    "piano"
+   ],
+   "errors": 0,
+   "warnings": 0
+  },
+  "arrangement": {
+   "tracks": [
+    {
+     "name": "piano",
+     "role": "player",
+     "instrument": "piano",
+     "program": 0,
+     "notes": 116
+    }
+   ],
+   "beats": 64.0,
+   "seconds": 34.29,
+   "notes": 116,
+   "lyrics": 0
+  },
+  "midi": "/home/eileen/projects/plainsong-mcp/.plainsong/workspace/ensemble/duke-lab/duke-lab.mid",
+  "audio": "/home/eileen/projects/plainsong-mcp/.plainsong/workspace/ensemble/duke-lab/duke-lab.wav",
+  "audio_backend": "fluidsynth",
+  "elapsed": {
+   "parse": 0.0,
+   "arrange": 0.001,
+   "midi": 0.0,
+   "audio": 1.262
+  },
+  "diagnostics": []
+ },
+ "describe": "Unheard Duke  --  C, 112 bpm, 4/4\n1 sections, dialect: absolute\n116 notes across piano (116)\nlength 34.29s\nmidi  /home/eileen/projects/plainsong-mcp/.plainsong/workspace/ensemble/duke-lab/duke-lab.mid\naudio /home/eileen/projects/plainsong-mcp/.plainsong/workspace/ensemble/duke-lab/duke-lab.wav  [fluidsynth]"
+}
