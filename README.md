@@ -6,6 +6,10 @@ What this is: **Lucineer is an AI-powered Roblox game-builder and NPC system; Sl
 
 Design has outpaced delivery. Per `ROADMAP_whats_next.md` (the ground-truth doc, renamed from `ROADMAP.md` on 2026-08-03, refs fixed): the system has processed four real jobs in its lifetime, and zero have reached a player. **Read `ROADMAP_whats_next.md` before you read anything else.**
 
+<p align="center">
+  <img src="assets/images/hero-map-room.jpg" alt="The map room: one chart glowing warmer than the rest — the plan that outpaced the ship" width="700">
+</p>
+
 ---
 
 ## State — 2026-08-14
