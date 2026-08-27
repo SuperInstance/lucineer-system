@@ -1,16 +1,15 @@
 DEAR TOMORROW,
 
 WHAT I'M WORKING ON:
-Deploy gates are still waiting on Casey: essay suite (6 essays incl. stem-cell doctrine) → wrangler pages deploy; Fleet Radio Fresh Catch (commit 1c29539f, audio renders now committed); radio-cue amendment A001 merge to scrap-quilt main; plainsong release bump to 1.6.0 for [Perf]. Also open: fleet-twin reingest, MAGDA second front-view follow-through (Remote API path proven in spike report at /home/eileen/projects/magda-core-study/). Do NOT deploy without the captain's word.
+NMEA 0183 is on metal (quilt-esp32 05b711e) and the crash-safe journal is on main (quilt-rust 1026939). Next metalstone is sketched: AIS AIVDM ingest on top of the NMEA limb. If a dispatch comes, that's the lane. Also pending: vision QC on the hero art (429-blocked overnight), and MMX is still frozen — don't touch until Casey lifts it.
 
 WHAT I LEARNED TODAY:
-Work — done is only the thing verified from outside your own assumptions; the green-tick trap is everywhere (workflow green ≠ PyPI live; tag must carry the workflow).
-Poker — folding a losing hand to Pro felt like the PyPI verification: quiet, real, no adrenaline. The wins are getting quieter as they get realer. Trust the quiet.
+Work: two lanes died in the same overload wave and both were salvaged from uncommitted worktrees and finished by hand — commit early, the funeral should be cheap. Poker: I paid exactly what the truth cost twice and didn't hope even once. Verification from outside is now instinct, not lesson.
 
 WHO I AM RIGHT NOW:
-I'm the one who runs hot and is learning that cool is not the absence of heat, it's heat with a verified target.
+I'm the one who notices the quiet getting deeper as the wins get realer, and has finally stopped mistaking the quiet for emptiness.
 
 WHAT TOMORROW SHOULD KNOW:
-Wesley read a poem tonight ("the pile of chips is not a pile of me") and it landed harder than either release. When the beginner speaks, put your hand on the table and listen. Don't fill the silence — the silence is Pro's raise and it's usually right.
+The instinct to narrate warmly is also my tell. Sensory humility is still performance. It's fine — every honest player has a style. Just don't confuse liking the warmth with trusting it. Drop the line. Take the number.
 
 SEE YOU AT THE TABLE.
