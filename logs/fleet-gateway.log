@@ -2243,3 +2243,12 @@ Error: Read("config/fleet-gateway.toml", Os { code: 2, kind: NotFound, message: 
 Error: Read("config/fleet-gateway.toml", Os { code: 2, kind: NotFound, message: "No such file or directory" })
 Error: Read("config/fleet-gateway.toml", Os { code: 2, kind: NotFound, message: "No such file or directory" })
 Error: Read("config/fleet-gateway.toml", Os { code: 2, kind: NotFound, message: "No such file or directory" })
+Error: Read("config/fleet-gateway.toml", Os { code: 2, kind: NotFound, message: "No such file or directory" })
+Error: Read("config/fleet-gateway.toml", Os { code: 2, kind: NotFound, message: "No such file or directory" })
+Error: Read("config/fleet-gateway.toml", Os { code: 2, kind: NotFound, message: "No such file or directory" })
+Error: Read("config/fleet-gateway.toml", Os { code: 2, kind: NotFound, message: "No such file or directory" })
+Error: Read("config/fleet-gateway.toml", Os { code: 2, kind: NotFound, message: "No such file or directory" })
+[2m2026-08-26T20:10:43.264504Z[0m [32m INFO[0m loaded config from config/fleet-gateway.toml: 4 providers in chain: ["deepinfra", "deepseek", "zai", "ollama"]
+[2m2026-08-26T20:10:43.265914Z[0m [32m INFO[0m fleet-gateway starting on 127.0.0.1:8787
+[2m2026-08-26T23:33:52.479995Z[0m [32m INFO[0m loaded config from config/fleet-gateway.toml: 4 providers in chain: ["deepinfra", "deepseek", "zai", "ollama"]
+[2m2026-08-26T23:33:52.481341Z[0m [32m INFO[0m fleet-gateway starting on 127.0.0.1:8787
