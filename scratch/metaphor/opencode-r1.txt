@@ -1,0 +1,29 @@
+[0m
+> build · glm-5.3
+[0m
+**THE SHAPE OF ONE DAY — the metaphor: THE CHISEL.**
+
+All three stories are the same tool at work: a one-way edge on hard material. The second story knew it and said it out loud — *chisels, not board stretchers* — but it wasn't describing 2126. It was the diagram of today, handed back to us as fiction. The experiment wheel and the audit duel are the same law in two more materials.
+
+**The defense — four laws of the chisel, one in each story's flesh:**
+
+**1. Material only comes off.** Nothing goes back on. This is why a copy of a model degrades when it revises its own work: revision is a cut, and cutting an already-cut thing removes more of what was right. The glass states it as physics; the wheel found it as behavior; the audit lived it as four rounds that could not be un-run.
+
+**2. The last hand sets the surface.** The weak-link law says the chain holds only what its weakest *relevant* hand can hold — relevance means *touching the final surface*. Errors above the line are recoverable by later passes; errors below it are fatal, because material only comes off. So ordering the chain weakest-first isn't kindness to the weak model — it's *de-relevant-izing* it, keeping its errors above the line where the best hand can take them away. Roughing chisel first, master's finishing pass last. And this is why the crew beats its best member: solo excellence must self-iterate, and self-iteration degrades (law 1). A relay iterates with fresh hands. The chain is how you iterate without re-cutting yourself.
+
+**3. The drawing is not the piece.** The impossible constraints were a broken ruler. The delivery doc hallucinated its counts. The predictive law worked 85% of the time and was still demoted to *measure, don't predict*. Three representations drifted from their material, and all three resolutions were the same motion: take the gauge off the wall and put it back on the thing. *Wrong until proven right by disk* is the shop floor's oldest sentence — the plan is not the part. And the audit's final twist — the count kept changing because the builder was writing into the corpus mid-measurement — is the third law's deepest form: he was carving a tree that was still growing.
+
+**4. Every failed pass leaves a jig.** A jig is what a workshop builds when a cut goes wrong: not a repair, a *fixture* that makes the wrong cut impossible to repeat. Round one's humiliation became a five-layer fallback. Round two's miscount became a pollution detector. Round four became prose that outlived the bug. The day's failures were not costs. They were tooling.
+
+And one clause over all four: the glass is *trained by its own lamp's heat*. The carving carves the carver. Tool, material, and instrument are one system — which is exactly why law 3 keeps being necessary.
+
+**The extension — what the chisel predicts about tomorrow:**
+
+- **The unit of work becomes the pass, not the worker.** Expect agent crews organized explicitly as roughers and finishers, order as a first-class setting, and pipelines that *ban self-revision* — fresh context per pass, because law 1 will keep holding.
+- **Instrument-first debugging.** When a whole crew fails at something uniformly, the smart money checks the ruler before the workers. More "impossible" constraints will fall to instrument repair, never to stronger crews.
+- **Snapshot before finish.** The pollution trick will be tried again, so audits will freeze their wood: hash-sealed corpora, counts tied to the disk, read-only states. *The count is against the hash* becomes canon the way *measure twice, cut once* is.
+- **Failure budgets become tooling budgets.** Once you know every failed pass leaves a jig, audit duels get run *on purpose* — not to catch bugs but to farm fixtures. The repository accretes jigs like a shop wall.
+- **The oldest crafts keep winning.** Lofting, battens, relative symmetry, no tape measures — expect the same migration in software: relative invariants over absolute metrics, differential testing over predicted scores, full-scale replay over proxy. Analog returns because law 3 never sleeps.
+- **And the warning underneath all of it:** because material only comes off, tomorrow's errors are permanent. A weak hand placed last has unbounded cost. The ordering laws aren't performance tuning — they're conservation of material.
+
+The day already wrote its own doctrine and hid it in a subordinate clause of a hundred-year-ahead story: **chisels, not board stretchers.** Tomorrow is already cut. It's just still rough — and the last hand hasn't been chosen yet.

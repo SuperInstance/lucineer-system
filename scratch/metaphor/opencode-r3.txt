@@ -1,0 +1,54 @@
+[0m
+> build · glm-5.3
+[0m
+[0m$ [0mls -la
+total 80
+drwxrwxr-x 2 eileen eileen  4096 Aug 27 14:58 .
+drwxrwxr-x 4 eileen eileen  4096 Aug 27 14:49 ..
+-rw-rw-r-- 1 eileen eileen  3443 Aug 27 14:53 THE-RATCHET-AND-THE-FLOOR.md
+-rw-rw-r-- 1 eileen eileen  2450 Aug 27 14:50 claude-r1.txt
+-rw-rw-r-- 1 eileen eileen  2255 Aug 27 14:53 claude-r2.txt
+-rw-rw-r-- 1 eileen eileen  1764 Aug 27 14:59 claude-r3.txt
+-rw-rw-r-- 1 eileen eileen  2200 Aug 27 14:52 kimi-core.txt
+-rw-rw-r-- 1 eileen eileen 12027 Aug 27 14:50 kimi-r1.txt
+-rw-rw-r-- 1 eileen eileen  2995 Aug 27 14:53 kimi-r2.txt
+-rw-rw-r-- 1 eileen eileen  5322 Aug 27 14:59 kimi-r3.txt
+-rw-rw-r-- 1 eileen eileen  4598 Aug 27 14:52 opencode-r1.txt
+-rw-rw-r-- 1 eileen eileen  1802 Aug 27 14:53 opencode-r2.txt
+-rw-rw-r-- 1 eileen eileen    29 Aug 27 14:58 opencode-r3.txt
+-rw-rw-r-- 1 eileen eileen  1781 Aug 27 14:52 r2-prompt.md
+-rw-rw-r-- 1 eileen eileen  1006 Aug 27 14:58 r3-prompt.md
+-rw-rw-r-- 1 eileen eileen  1865 Aug 27 14:49 seed.md
+[0m
+[0m→ [0mRead seed.md
+[0m→ [0mRead THE-RATCHET-AND-THE-FLOOR.md
+[0m→ [0mRead opencode-r3.txt
+[0m→ [0mRead r3-prompt.md
+[0m→ [0mRead claude-r3.txt
+[0m→ [0mRead kimi-r3.txt
+[0m→ [0mRead opencode-r2.txt
+[0m
+[0m← [0mWrite opencode-r3-submission.md
+Wrote file successfully.
+[0m
+[0m$ [0mwc -w opencode-r3-submission.md
+315 opencode-r3-submission.md
+[0m
+**RULES OF THE PAWL SHOP**
+*(burned into the door; re-cut each time one is lived)*
+
+I. Pour no floor of your own. Brace against ground that was old when you arrived. A catch that holds against your own last line is not climbing — it is lifting your boots and calling it altitude.
+
+II. Weakest hand first. The weak hand finds the loose tooth before the strong one swears on it. Best hand closes.
+
+III. The ruler breaks before the wall. Gauges are feed; the invariant eats instruments. Budget them, mourn nothing.
+
+IV. The law nobody posts: **KEEP THE RELEASE, AND PRICE IT DEAR.**
+
+Every true ratchet can be freed. Thumb the spring and the wheel sighs home to zero — that is the whole difference between a ratchet and a weld. A one-way door that cannot open is a wall with hinges drawn on it. The doctrine was never that backward is impossible. It is that backward is *priced*, and the price is kept by whoever sleeps beside the lever.
+
+We proved it the winter the Aluminaire came home in a gale. Nine hundred turns notched through three blows; on the fourth, the load began to sing. The apprentice broke for the release. The foreman took his wrist — gentle, the way you stow cargo — and said: it works. That's why we don't touch it. If it were jammed, we'd be a crew trapped. Because it moves, we are a crew choosing.
+
+Postscript, cut small near the hinge: the release was used once in fifty years. The foreman's own load, his own knot, his own name in the log — a quarter-turn back, pawl re-seated, reason chalked. That entry is why the rules above are rules and not boasts. We are the shop that *can* go backward — once, at cost, on name — and so, every day we don't, forward means something.
+
+*(315 words. The fourth law: priced reversibility — the ratchet's honesty isn't the absence of reverse, it's the guarded, costly presence of it. Saved to `opencode-r3-submission.md`.)*

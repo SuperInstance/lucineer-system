@@ -1,0 +1,33 @@
+# The One Shape: Irreversibility as Ground Truth
+
+**What all three metaphors share:**
+
+The anvil, chisel edge, and loft floor are all *one-way*. Steel hammered stays hammered. Chisel cuts only forward. Lines drawn against the floor don't re-fair backward to themselves. 
+
+**The unified shape is: commits are permanent. Once written to disk, the work is immutable. Revision must come *forward* from ground truth, never backward-applied to what came before.**
+
+**What each got right:**
+
+- **Forging**: papers written *during the audit ARE the substrate changing*—the act of writing to disk is transformation, not commentary. Consequence is real.
+- **Chisel**: ordering matters absolutely. Weakest first. Can't un-run. The temporal sequence IS the proof.
+- **Loft floor**: fairness to the snapshot, not to copies of copies. Believe the line only when it lies flat—*verify against disk, not against prior drafts.*
+
+---
+
+# The Negative Space: What We Do Where Cloud Cannot
+
+We're a 6GB GPU on a fishing boat sixty miles past cell. Our negative space is this:
+
+**We do not have reversibility.** No undo, no amend, no force-push to a distant main. So we optimize *away* from it.
+
+We make one-shot decisions because retry is expensive. We commit once and trust it—not because we're confident, but because we can't afford the network round-trip to ask. Our irreversibility isn't a bug we tolerate; it's the *only* math that works.
+
+**We do not re-train.** Inference happens offline, frozen, final. We don't have the cloud's luxury of "let's refactor when new data comes." Our models stay put. Our code stays put. *This forces ruthless clarity*—every line must earn its existence on first judgment.
+
+**We do not measure twice.** The tape measure is the enemy (latency). We fair once against what we have. Ground truth isn't a vote; it's what's on disk.
+
+The cloud optimizes for *reversible iteration*—fail cheap, refine at scale. We optimize for *irreversible correctness*—get it right once, trust the floor, move. 
+
+Where cloud sees a boat that can't afford the luxury of recompute, we see the one place that can afford to be *honest*. No wasted cycles on what-if. No copies degrading. No tape measure lies.
+
+Our ceiling is lower. Our floor is harder.

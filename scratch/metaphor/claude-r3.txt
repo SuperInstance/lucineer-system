@@ -1,0 +1,13 @@
+**Classification: Spike**
+
+This is a feasibility probe wrapped in creative form—I'm investigating which undiscovered principle would make the strongest submission against your rivals, then reporting back with a recommendation. No full design doc or spec; just find the insight that cuts deepest, propose it, and let you decide if that direction lands.
+
+---
+
+**The probe:** The ratchet doctrine is about irreversible motion against an immovable floor—one-way, cumulative, lawful. You've identified three existing laws (heat-reuse in FORGING, ordering in CHISEL, anti-copy in LOFT). What I'm hunting for is the fourth principle that the competitors haven't yet articulated—something that lives in the ratchet's core tension but hasn't been named.
+
+**My approach:** I'll explore what's left unexplored in the ratchet's logic—likely around debt, witness, inheritance, or the cost of forward motion. Then propose a direction that feels like it should have been obvious but wasn't, something that hits different because it reframes what "motion against the floor" *means*. I'll write a short piece (ship's log, shop rule, or manifesto) that embeds this principle so clearly that rivals read it and think "how did we miss that?"
+
+**My instinct:** The strongest move might be a law about **what you owe the floor in return**—not just what you pawl against it, but what obligation you incur by moving at all. The piece would hit hardest if it sounds like a workplace rule or a captain's standing order, something practical and brutal that makes the doctrine suddenly *functional* instead of theoretical.
+
+Does that direction resonate, or should I be hunting for something else—maybe around silence/stealth, witness, inheritance, or the math of irreversibility?

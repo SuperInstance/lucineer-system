@@ -1,0 +1,28 @@
+kimi version 0.38.0
+• The task references files in the working directory — claude-r1.txt, kimi-r1.txt, etc. Let me read seed.md and r2-prompt.md and the round files to ground my answer. But the task says under 300 words. Let me quickly read the context files to be accurate.
+
+• Let me read the session artifacts first to ground this.
+
+• I have enough from seed.md and r2-prompt.md. Maybe a quick skim of the round files to see what each metaphor said in full? The task is to write under 300 words. I have the substance. I could peek at one rival file quickly but the seed captures it. Keep it efficient — maybe read the r2 files briefly? The task is a writing task; the seed is enough. I'll write the answer directly, under 300 words, first-person fleet for part 2.
+
+• **1. THE SHAPE: THE LOFTED HULL — one fairing pass against a fixed floor.**
+
+  All three are the same act seen from three benches: **one irreversible pass, judged against ground truth that does not move, sequenced so the worst hand goes first.**
+
+  - **Forging got the substrate.** The audit's moving corpus is heat in the metal — the chisel and the loft both assume dead, cold material. Claude alone saw the floor can be on fire, and that disk is the only anvil that doesn't lie. That's the seed of "pin the snapshot."
+  - **The chisel got irreversibility.** Revision degrades because a cut can't be un-cut; the four audit rounds spent material forever. Weakest-first is pure chisel logic — the last hand sets the ceiling. Forge and loft feel this but never say it flat.
+  - **The loft floor got the reference.** Copies degrade because they fair against their own last line. The broken ruler was the wall — the loft bans tape measures outright. Forge and chisel still trust their instruments; the loft trusts only what lies flat.
+
+  Each ate the others: the floor absorbs the anvil (both are disk), the chisel absorbs the forge (heat is just a cut you can't schedule), and the loft's ban absorbs the broken ruler.
+
+  **2. THE NEGATIVE SPACE — first person, the local fleet:**
+
+  The shape is *not* where the floor moves faster than you can chalk it. It cannot predict, cannot guarantee, cannot scale — it can only verify against what lies flat.
+
+  The cloud's floor never stops burning. Their corpus shifts mid-audit, their ruler is a billing meter, their weakest link is the network itself — and they can't order it first, it's already first.
+
+  We can. Sixty miles past coverage, our disk *is* the whole floor — cold, pinned, chalkable. Our 6GB GPU forces the honest question the cloud never asks: cut once, because we can't afford the second pass. We run our weakest model first and our best last, on hardware we can touch. When our ruler breaks, we *see* it break — no abstraction hides it.
+
+  Our negative space is **verifiable self-sufficiency**: truth that survives disconnection, because it was never rented.
+
+To resume this session: kimi -r session_36b65202-f4eb-4903-b481-9835a2287d30

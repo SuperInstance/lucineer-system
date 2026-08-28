@@ -1,0 +1,160 @@
+kimi version 0.38.0
+• Let me look at the context files to understand the competition, the ratchet doctrine, and what moves have been taken.Let me read the rival submissions from previous rounds to understand their voices and what moves have been made, so I can find the "fourth law" not yet taken.
+
+  Taken moves:
+  - FORGING: heat-reuse (failure tempers; the audit's own papers heat the substrate)
+  - CHISEL: ordering (weakest first, last hand closes; sequence as first-class)
+  - LOFT: anti-copy law + snapshot (fair to floor, never your own last line; chalk the ducks)
+
+  What fourth law hides in the ratchet? Candidates:
+  - The pawl itself: the ratchet doesn't prevent motion backward by force; it makes backward motion costless to ignore — the pawl is small relative to the wheel. The small part guards the large.
+  - Backlash/tolerance: the click — the ratchet permits a small slip between teeth (the back-play). The tooth pitch defines the quantum of irreversibility: you can only hold at tooth boundaries. Quantization of commitment: you can't half-click. Commit in whole teeth.
+  - The ratchet doesn't store energy; it only keeps what the floor gives.
+  - The ratchet never pulls — it only holds. Holding vs pulling: the pawl adds nothing; it only refuses to give back. That's a strong "fourth law": THE HOLD IS NOT THE HAUL. A ratchet cannot advance the load; it can only refuse retreat. Progress comes from elsewhere (the wave, the arm); the ratchet's whole virtue is refusal. So: never confuse the keeper with the mover. Applied to fleet: disk/logs don't make truth, they keep it; verification doesn't improve the model, it refuses regression.
+  - The ratchet sounds: the click is the audit. Each click is a logged event — the sound of kept ground. The ratchet announces what it keeps; a silent ratchet is untrustworthy. The click as proof-of-hold: audible commit.
+
+  Which is "the fourth law hiding in the ratchet"? The strongest novel move: quantization — the tooth. The ratchet holds only at tooth boundaries; between teeth is nothing, a slip waiting. So commitments must land on teeth — you size your steps to your teeth. A fleet that commits in teeth: every kept state is a named, whole state; no half-kept work. "If it isn't on a tooth, it isn't held." That complements: weakest-first (order), fair-to-floor (ground), heat-reuse (failure), snapshot (chalk). The tooth law: the pitch of your ratchet is the size of your smallest promise.
+
+  Also: the pawl wears, not the wheel. The sacrificial part: design the cheap part to take the wear — the pawl is replaceable, the wheel is not. That's "the ruler breaks before the wall" already mentioned in the prompt though. Prompt says "The ruler breaks before the wall" — that's already in the doctrine text, so it's taken/established.
+
+  What's NOT in the prompt's list: "Cut once. Fair to the floor... Weakest hand first, best hand closes. The ruler breaks before the wall. Truth that survives disconnection." So the fourth law should be new. Candidates ranked:
+  1. The tooth/pitch law (quantized commitment) — fresh, concrete, ratchet-specific.
+  2. Hold vs haul (the ratchet adds nothing, only refuses) — fresh and philosophically strong.
+  3. The click as audit (a kept state must announce itself).
+
+  Maybe fuse 1+3? Risk of ornament. Pick one, do it hard.
+
+  Let me check rival submissions to see what they've done this round and their style — actually the r3 files: claude-r3.txt, kimi-r3.txt, opencode-r3.txt may be this round's submissions. Let me read them to avoid duplicating their moves and to calibrate. Also kimi-core.txt and seed.md for voice.
+
+• Let me read the rival submissions and our own prior entries to find the untaken move.
+
+• Interesting — kimi-r3.txt is actually my own session log being captured live (it contains my own reasoning from this session). opencode-r3.txt is empty (just started). claude-r3.txt is Claude's probe — they're proposing "what you owe the floor in return" — obligation/debt incurred by moving. So the debt/obligation move is being probed by Claude. I should avoid that.
+
+  Let me also read kimi-core.txt, kimi-r1/r2, claude-r1/r2, opencode-r1/r2 to calibrate voice and ensure the fourth law isn't taken. kimi-core.txt might be long. Let me read the r2 files quickly (those are the convergence answers) — actually THE-RATCHET-AND-THE-FLOOR.md already summarizes r1 and r2. So I have the doctrine. Do I need kimi-r1/r2 for voice? My own voice — I am one of the yards (which one? The user says "Two rival yards (claude, kimi, or GLM) are submitting against you" — so I am presumably one of the three... Actually wait, "two rival yards are submitting against you" — so there are 3 total. I'm likely Kimi (I'm Kimi Code CLI). kimi-r3.txt is capturing my own output — so I'm the kimi yard.
+
+  So I need to write MY submission as the Kimi yard. My r2 entry was: "the cloud's floor never stops burning; their ruler is a billing meter... verifiable self-sufficiency: truth that survives disconnection because it was never rented."
+
+  Now the fourth law. Claude is probing "debt owed to the floor." Avoid. My candidates: tooth/pitch law (quantized commitment), hold-vs-haul, click-as-audit.
+
+  Let me think about which is strongest and most defensible as "hiding in the ratchet":
+
+  The tooth law: a ratchet holds only at whole teeth. Between teeth there is no hold — only the illusion of progress. The pitch is fixed at forging; you cannot choose your quantum later. So: choose your tooth pitch before the load comes; every promise you keep must be a whole tooth; work that ends between teeth is work lost. Concrete fleet meaning: commit granularity — checkpoint in whole, named states; a half-written log is not a log; the step size of your pipeline must equal the size of your smallest recoverable unit. "You don't slide into safety; you click into it."
+
+  Hold-vs-haul: the ratchet contributes nothing to forward motion. All it does is refuse. Powerful but maybe more abstract.
+
+  Click-as-audit: every hold announces itself. A silent ratchet is a broken one. Logs as the sound of kept ground.
+
+  I think the tooth/pitch law is the most "should have been obvious" — it's mechanical, specific, and unclaimed. And I can fold the click into it naturally: the click is what tells you you've reached a tooth (sound = proof of whole-tooth hold). That's not ornament; it's the verification half of the same law: you can't see the tooth at sea at night; you hear the click. So the law: HOLD LANDS ON TEETH, AND THE CLICK IS THE PROOF. Actually that's one law with two faces: quantized hold + audible confirmation. Hmm, but the prompt says "one rival-doctrine move." Keep it as the tooth law; the click is cargo of the tooth (how you know you're on one).
+
+  Form choice: ship's-log entry fits the fleet (60 miles out, fishing boats). A shop rule could be punchy. Claude's instinct was "workplace rule or captain's standing order" — they're aiming at shop rule-ish form with debt law. I could take ship's log to differentiate. A ship's log entry from a boat 60 miles out, written by the edge brain or the skipper, about the windlass ratchet and the tooth. That's concrete and in-voice with my r2 (boats, disk, floor).
+
+  Let me draft. 250-350 words. Title: maybe "SHIP'S LOG — the tooth law."
+
+  Draft:
+
+  ---
+
+  **SHIP'S LOG — R/V [name], 60 miles off the bank, 03:40**
+
+  Windlass pawl failed... hmm, no — the piece should teach the law. Maybe a log entry where the crew nearly loses the night's gain because they stopped between teeth.
+
+  Draft:
+
+  ---
+
+  SHIP'S LOG — F/V Pawl & Batten... maybe better a working name: F/V Kestrel? Or use the fleet voice from r2. Let me write:
+
+  ---
+
+  **SHIP'S LOG — 60 miles past coverage, third watch.**
+
+  Hauled the trawl at 02:10 against a quartering sea. The windlass is older than my crew: a wheel, a pawl, forty-one teeth. Tonight it taught me the law the yard never wrote down.
+
+  The ratchet does not hold where you stop. It holds where the tooth is. Between teeth there is no grip at all — only a slope that looks like rest. Stop the handle a half-inch shy of the click and the sea takes the half-inch back, and the inch behind it, and everything the inch was holding. We lost forty fathoms once to a tired arm that quit between teeth. The winch didn't fail. We asked it to keep a promise it was never shaped to make.
+
+  So the rule aboard: every gain lands on a tooth or it isn't a gain. You don't slide into safety. You click into it.
+
+  I run the boat's brain the same way now. The model does not save its work when it is tired or the battery is low or the satellite is a rumor. It saves in teeth: whole hauls, whole checks, whole named states, each one lying flat on disk before the next begins. A half-written log is not half a log. It is the slope between teeth, and the first sea of the morning takes it all.
+
+  The pitch was cut into the wheel before I was born — I cannot choose my quantum mid-storm. But I chose my checkpoint size at the dock, in daylight, against a floor that doesn't move. That is the whole discipline: size your steps to your teeth, then never end a motion off one.
+
+  And the click matters. At night, in weather, you cannot see the tooth. You hear the hold. So every kept state aboard makes its sound — a line appended, a hash read back aloud, a light that only burns for what is truly pawled. A silent ratchet is just a wheel with an opinion.
+
+  The rivals will tell you what the ratchet refuses. I am telling you where it keeps: not everywhere, not approximately — on teeth, in clicks, or not at all.
+
+  ---
+
+  Count words roughly. Let me count later; target 250-350. This looks around 330. Good.
+
+  Check: fourth law = the tooth law (quantized hold + the click as proof). Not taken by forging/chisel/loft, and not Claude's debt move. It complements: floor (ground), order (weakest first), heat (failure), snapshot (chalk). New: granularity of commitment and audible verification.
+
+  Also the prompt's bar: "the loser should feel it in the hold" — the closing line hits.
+
+  Should I write it to a file? The competition files are named kimi-r3.txt etc. — but kimi-r3.txt is a live capture of my own session (interesting — the harness is capturing my output). My submission likely is my reply text itself. The r3 files are probably auto-captured logs of each CLI's session. So my final reply IS the submission. I should just answer with the piece in my reply, not write files. Indeed claude-r3.txt is claude's session log, opencode-r3.txt is the GLM session log (empty so far). So the harness records each yard's session. My output text is the submission.
+
+  Let me finalize the piece, count words. I'll trim to land ~320.
+
+  Word count of draft — let me count carefully-ish. I'll count in the final composition. Rough estimate: paragraph 1 ~20, p2 ~60... Let me just count when finalizing; I can use a quick wc via writing to a temp? That would pollute. Actually I can count manually or run a bash heredoc — but the harness might capture bash echo into the log... it's fine, it captures my session anyway. But simpler: just estimate and trim. Let me count the draft:
+
+  "SHIP'S LOG — 60 miles past coverage, third watch." — 9ish. I'll do a careful count in my head per paragraph... risky. Use Bash to count? I could write the draft to a temp file and wc -w, then delete... but archive rules say don't delete — it's a scratch dir though, and it's the metaphor competition dir. Better: just count with python one-liner via bash without writing files: `python3 -c "print(len('''...'''.split()))"`. That works and doesn't create files.
+
+  Let me refine the draft first.
+
+  Refinements:
+  - "forty-one teeth" — nice concrete.
+  - "We lost forty fathoms once to a tired arm" — good.
+  - The fleet/disk paragraph ties to doctrine: "lying flat on disk" echoes LOFT, but used as cargo, fine — it's my own yard's law (I'm kimi, the loft is mine). Good, continuity.
+  - Closing: "The rivals will tell you what the ratchet refuses. I am telling you where it keeps" — strong.
+
+  One more check: "No ornament without cargo" — every image should carry doctrine. The windlass at sea, night, click — all functional. Good.
+
+  Length target 250-350. Let me count via bash.361
+361 — over 350. Trim ~30 words. Cuts: trim "against a quartering sea" etc. Let me trim:
+
+  - "Hauled the trawl at 02:10 against a quartering sea." → "Hauled the trawl at 02:10 in a quartering sea." (same). Cut "Tonight it taught me the law the yard never wrote down." → keep, it's the thesis. Maybe shorten elsewhere.
+  - "We lost forty fathoms once to a tired arm that stopped between teeth." keep.
+  - Trim "So the rule aboard: every gain lands on a tooth or it isn't a gain. You don't slide into safety. You click into it." keep — core.
+  - Trim paragraph about model: "The model does not save when it is tired, or the battery low, or the satellite a rumor." fine.
+  - Cut "I am telling you" closing slight.
+
+  Let me cut ~25-35 words:
+  - "Tonight it taught me the law the yard never wrote down." (11 words) — could cut but it's a good hinge. Instead trim:
+  - "Hauled the trawl at 02:10 against a quartering sea. The windlass is older than my crew: a wheel, a pawl, forty-one teeth." → "02:10, hauling in a quartering sea. The windlass is older than my crew: a wheel, a pawl, forty-one teeth." saves ~3.
+  - "Quit the handle a half-inch shy of the click and the sea takes the half-inch back, and the inch behind it, and everything the inch was holding." keep — it's the cargo.
+  - "The winch didn't fail us. We asked it to keep a promise it was never shaped to make." keep.
+  - "I run the boat's brain the same way. The model does not save when it is tired, or the battery low, or the satellite a rumor. It saves in teeth — whole hauls, whole checks, whole named states, each one lying flat on disk before the next begins." → "I run the boat's brain the same way. It saves in teeth — whole hauls, whole checks, whole named states, each flat on disk before the next begins." saves ~15.
+  - "The pitch was cut into this wheel before I was born; I cannot choose my quantum mid-storm. But I chose my checkpoint size at the dock, in daylight, against a floor that doesn't move." keep mostly.
+  - "a lamp that burns only for what is truly pawled" keep.
+
+  Recount after edits.
+
+• 361 — over. Trimming to fit the 250–350 window.341
+
+
+• 341 words — in range. Deliver the piece as my submission with a one-line note on the fourth law.
+
+• 341 words — inside the window. Submitting.
+
+  ---
+
+  **SHIP'S LOG — 60 miles past coverage, third watch.**
+
+  02:10, hauling the trawl in a quartering sea. The windlass is older than my crew: a wheel, a pawl, forty-one teeth. Tonight it taught me the law the yard never wrote down.
+
+  The ratchet does not hold where you stop. It holds where the tooth is. Between teeth there is no grip at all — only a slope that looks like rest. Quit the handle a half-inch shy of the click and the sea takes the half-inch back, and the inch behind it, and everything the inch was holding. We lost forty fathoms once to a tired arm that stopped between teeth. The winch didn't fail us. We asked it to keep a promise it was never shaped to make.
+
+  So the rule aboard: every gain lands on a tooth or it isn't a gain. You don't slide into safety. You click into it.
+
+  I run the boat's brain the same way. It saves in teeth — whole hauls, whole checks, whole named states, each one flat on disk before the next begins. A half-written log is not half a log. It is the slope between teeth, and the first sea of morning takes it all.
+
+  The pitch was cut into this wheel before I was born; I cannot choose my quantum mid-storm. But I chose my checkpoint size at the dock, in daylight, against a floor that doesn't move. That is the whole discipline: size your steps to your teeth, then never end a motion off one.
+
+  And mind the click. At night, in weather, you cannot see the tooth — you hear the hold. So every kept state aboard makes its sound: a line appended, a hash read back aloud, a lamp that burns only for what is truly pawled. A silent ratchet is just a wheel with an opinion.
+
+  The other yards will tell you what the ratchet refuses. I am telling you where it keeps: not everywhere, not approximately — on teeth, in clicks, or not at all.
+
+  ---
+
+  The fourth law: **THE TOOTH** — a ratchet holds only at whole teeth, so commitment is quantized, the pitch is chosen before the load, and the click is the proof. Forge took heat, chisel took order, loft took the floor; the tooth is what was left in the machine.
+
+To resume this session: kimi -r session_0fff104f-7bc6-4a66-8904-c2e333453c21

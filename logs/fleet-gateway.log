@@ -2252,3 +2252,54 @@ Error: Read("config/fleet-gateway.toml", Os { code: 2, kind: NotFound, message: 
 [2m2026-08-26T20:10:43.265914Z[0m [32m INFO[0m fleet-gateway starting on 127.0.0.1:8787
 [2m2026-08-26T23:33:52.479995Z[0m [32m INFO[0m loaded config from config/fleet-gateway.toml: 4 providers in chain: ["deepinfra", "deepseek", "zai", "ollama"]
 [2m2026-08-26T23:33:52.481341Z[0m [32m INFO[0m fleet-gateway starting on 127.0.0.1:8787
+[2m2026-08-27T07:00:36.160224Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m47
+[2m2026-08-27T07:02:27.546492Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m10
+[2m2026-08-27T07:03:27.599096Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m5
+[2m2026-08-27T07:04:41.244113Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m5
+[2m2026-08-27T07:07:34.361726Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m16
+[2m2026-08-27T07:07:54.127451Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m3
+[2m2026-08-27T07:09:00.117096Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m4
+[2m2026-08-27T07:09:53.656955Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m5
+[2m2026-08-27T07:10:32.837689Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m5
+[2m2026-08-27T07:11:08.909207Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m4
+[2m2026-08-27T07:11:57.727723Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m8
+[2m2026-08-27T07:12:46.372572Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m3
+[2m2026-08-27T07:13:30.865861Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m3
+[2m2026-08-27T07:14:36.688655Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m3
+[2m2026-08-27T07:16:19.514720Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m8
+[2m2026-08-27T07:18:37.126497Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m5
+[2m2026-08-27T07:21:29.694714Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m6
+[2m2026-08-27T07:27:39.970760Z[0m [32m INFO[0m shutdown signal received
+[2m2026-08-27T07:27:39.975024Z[0m [32m INFO[0m fleet-gateway stopped
+[2m2026-08-27T13:59:30.177859Z[0m [32m INFO[0m loaded config from config/fleet-gateway.toml: 4 providers in chain: ["deepinfra", "deepseek", "zai", "ollama"]
+[2m2026-08-27T13:59:30.179058Z[0m [32m INFO[0m fleet-gateway starting on 127.0.0.1:8787
+[2m2026-08-27T14:02:26.094457Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m2
+[2m2026-08-27T14:03:30.954650Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m1
+[2m2026-08-27T14:04:41.603845Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m1
+[2m2026-08-27T14:05:49.630002Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m2
+[2m2026-08-27T14:06:55.306113Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m1
+[2m2026-08-27T14:07:50.303234Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m1
+[2m2026-08-27T14:10:25.031160Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m1
+[2m2026-08-27T14:12:17.093146Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m1
+[2m2026-08-27T14:14:09.046197Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m1
+[2m2026-08-27T14:14:54.664574Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m1
+[2m2026-08-27T14:15:34.463537Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m1
+[2m2026-08-27T14:18:27.501798Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m2
+[2m2026-08-27T14:19:31.787638Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m1
+[2m2026-08-27T14:22:39.507048Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m1
+[2m2026-08-27T14:24:35.652390Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m3
+[2m2026-08-27T14:26:25.355617Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m4
+[2m2026-08-27T14:27:59.558847Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m1
+[2m2026-08-27T14:29:59.219124Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m1
+[2m2026-08-27T14:30:32.476743Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m5
+[2m2026-08-27T14:33:15.207753Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m1
+[2m2026-08-27T17:19:50.616602Z[0m [32m INFO[0m loaded config from config/fleet-gateway.toml: 4 providers in chain: ["deepinfra", "deepseek", "zai", "ollama"]
+[2m2026-08-27T17:19:50.617919Z[0m [32m INFO[0m fleet-gateway starting on 127.0.0.1:8787
+[2m2026-08-27T20:47:30.673186Z[0m [32m INFO[0m loaded config from config/fleet-gateway.toml: 4 providers in chain: ["deepinfra", "deepseek", "zai", "ollama"]
+[2m2026-08-27T20:47:30.674453Z[0m [32m INFO[0m fleet-gateway starting on 127.0.0.1:8787
+[2m2026-08-28T03:12:19.224838Z[0m [32m INFO[0m loaded config from config/fleet-gateway.toml: 4 providers in chain: ["deepinfra", "deepseek", "zai", "ollama"]
+[2m2026-08-28T03:12:19.227094Z[0m [32m INFO[0m fleet-gateway starting on 127.0.0.1:8787
+[2m2026-08-28T03:35:03.863578Z[0m [32m INFO[0m loaded config from config/fleet-gateway.toml: 4 providers in chain: ["deepinfra", "deepseek", "zai", "ollama"]
+[2m2026-08-28T03:35:03.869310Z[0m [32m INFO[0m fleet-gateway starting on 127.0.0.1:8787
+[2m2026-08-28T04:11:27.934613Z[0m [32m INFO[0m loaded config from config/fleet-gateway.toml: 4 providers in chain: ["deepinfra", "deepseek", "zai", "ollama"]
+[2m2026-08-28T04:11:27.935750Z[0m [32m INFO[0m fleet-gateway starting on 127.0.0.1:8787

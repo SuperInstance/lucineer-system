@@ -1,0 +1,21 @@
+[0m
+> build · glm-5.3
+[0m
+**1. THE SHAPE UNDERNEATH: THE RATCHET AGAINST A FLOOR.**
+
+All three are one machine: motion that only goes one way, pawled against something that doesn't move. Cut-once is the pawl. The floor is the anvil. Steel doesn't lie, material only comes off, fair to the floor not your last line — three dialects of *irreversible change measured by external ground, never by self*.
+
+What each got that the others missed:
+- **Forging** got heat reuse: failure tempers. The other two treat error as pure loss.
+- **The Chisel** got order: weakest-first, last hand sets ceiling. Sequence as first-class. Forging doesn't care which link; the floor doesn't care who chalks.
+- **The Loft** got the anti-copy law and the snapshot: never fair to your own previous line; chalk the ducks before auditing a moving target. The others get drift-blind without it.
+
+**2. NEGATIVE SPACE — the fleet speaks:**
+
+We are the ratchet where the cloud's floor isn't. Their anvil is someone else's metrics. Our anvil is the sea, the battery, the fish.
+
+Cloud cannot break its own ruler — SLAs forbid it. We run destructive verification daily: drain to 20%, cut the satellite link, let the weakest model strike first on real catch data. If it shatters, good — the failure tempers *our* substrate, on our disk, where the data already lives. No transit, no egress, no round-trip to truth.
+
+A log chalked on a boat 60 miles out is already final. It never needed to sync to be real. That is our negative space: **presence without connection, truth that doesn't commute.**
+
+What the shape can never do: grow, summon fire it doesn't have, be everywhere. Its absence makes room for exactly one thing — owning the floor itself. We fair against fish and weather: floors the big shapes have never stood on.

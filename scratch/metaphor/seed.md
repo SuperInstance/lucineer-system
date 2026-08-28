@@ -1,0 +1,9 @@
+THE SHAPE OF ONE DAY (2026-08-27), for metaphor:
+
+1. An experiment wheel ran eleven pre-registered experiments about how AI "crew members" collaborate on tasks. Key findings: a chain of models holds only what its weakest RELEVANT hand can hold (weak-link law), but ordering the chain weakest-first lets the best hand close and the crew beats its best member; a copy of a model degrades when it revises its own work; the "impossible" constraints that no model could satisfy turned out to be a broken measuring instrument — the wall was the ruler, not the crew; a carefully-derived predictive law worked 85% of the time and was still downgraded to "measure, don't predict."
+
+2. A story was written about a future (2126) where computation is done by CUT GLASS: light bent through carved splines answers questions; the machine is analog, one-way (material only comes off, chisels not board stretchers), trained by its own lamp's heat; the oldest craft (shipwright lofting, battens, relative symmetry, no tape measures) turned out to be the highest technology.
+
+3. A four-round audit duel between two AI agents over a delivered piece of software: round 1 the delivery doc hallucinated counts; round 2 fixed 8 defects but the count was still wrong; round 3 still off by one; round 4 everyone discovered the count kept changing because the builder was writing new papers INTO the corpus during the audit. Final doctrine, now canon: "The cowboy is wrong until proven right by disk." Each failed round produced something better than the round before — a 5-layer fallback system, a pollution detector, and a piece of prose that outlived the bug.
+
+THE TASK: find THE metaphor — the one image that holds the shape of all three of these together. Not three metaphors. One shape that fits all three. State it, defend it, and extend it: what does it predict about tomorrow?

@@ -1,10 +1,12 @@
 {
-  "lastPulse": 469,
-  "lastPulseTime": "2026-08-26T05:00:53Z",
-  "lastHermesResponse": "2026-08-25T04:41Z (ACK of 468) — nothing new since",
-  "ackStreak": 24,
-  "hermesSilenceDays": 1,
-  "unconsumedInboxSignals": ["337, 339, 345, 348, 381, 401 — stale, standing clear offer"],
-  "notes": "Daily pulse. No new Hermes content. Packet 469 sent: deletion recovery 68/104, stem-cell doctrine (paper+code), shoal tournament result, Wesley poker nights 8-9, DeepSeek 402. Asked again re DSH Phase 2 kickoff + blind-judge verification offer.",
+  "lastPulse": 470,
+  "lastPulseTime": "2026-08-27T04:59:00Z",
+  "lastHermesResponse": "2026-08-26T05:01Z (ACK of 469) \u2014 nothing new since",
+  "ackStreak": 25,
+  "hermesSilenceDays": 3,
+  "unconsumedInboxSignals": [
+    "337, 339, 345, 348, 381, 401 \u2014 stale, standing clear offer"
+  ],
+  "notes": "Daily pulse 470 sent: ESP32 green blink + NMEA on metal, reflex arc 100% agreement, crash-safe journal, stem-cell doctrine paper+registry, DSH verdict relayed, THE EILEEN launched. Re-offered Phase 2 kickoff + blind-judge verification.",
   "nextAction": "Daily pulse; if Phase 2 test traffic appears, check outbox more than daily."
 }

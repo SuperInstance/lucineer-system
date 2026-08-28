@@ -24,3 +24,30 @@ Tue 2026-08-25, ~9 PM AKDT. jam-session-2026-08-25-dock/
 - DeepSeek balance: Casey needs to top up or retire the direct key (V3-0324 via DeepInfra works meanwhile).
 - Venues explored: cellar, alley, green room, rooftop, dock, 3am. Untried: the kitchen after close, the church basement, the breakwater at storm-swell.
 - Try a DeepInfra NOISE night: texture-only prompts, no note names.
+
+# SET 23 — THE KITCHEN ( Wednesday night, after close )
+Wed 2026-08-26. jam-session-2026-08-26-kitchen/
+
+## Lineup
+- griddle/line cook = Llama-3.3-70B-Turbo
+- dishpit/dishwasher = GLM-4.7-Flash
+- piano/waitress = gpt-oss-20b → FAILED (mute 3 rounds, empty content) → filled by gemma-3-27b-it
+- sax/cook's nephew = Mistral-Small-24B
+- steam/walk-in drone = mistral:7b (Ollama — BACK UP after two nights down)
+
+## Conditions
+G major with the Steam Rule (one damped note per phrase) and the walk-in's G off-limits as melody. 5/4, 88 BPM. Staggered entry → trades over the sink (quote+damp one note) → diminuendo landing, walk-in's G alone at the end.
+
+## What worked
+- Ollama is back (mistral:7b drone held the room all night).
+- Llama-3.3 played 32 bars in r2 — heard the whole room and built the bowl-crash arc into a full story. First "model ran away with the form" that was actually good.
+- gemma-3-27b rescue: dropped in cold on r1+r2 fill, landed both.
+
+## What didn't
+- **gpt-oss-20b returned empty content every round** (fast success, zero output) — 3 strikes, bench it for jam work; also Nemo failed as fill. Kitchen set stalled past the 10-min budget → cron errored, re-run finished the set ~20:45 (MIDI + notes + this log).
+- Budget lesson: fill-rescue needs to be INSIDE the jam script, not a follow-up run.
+
+## Next time
+- Venues tried: cellar, alley, green room, rooftop, dock, 3am, kitchen. Untried: the church basement, the breakwater at storm-swell.
+- The dock log's NOISE night idea is still pending — texture-only prompts, no note names.
+- Consider: if a chair goes mute 2 rounds, auto-fill from a standing bench list instead of stalling.
