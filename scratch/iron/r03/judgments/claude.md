@@ -1,0 +1,3 @@
+1. C - Pushes last round's fixed-point move one floor deeper (append-only is unauditable self-testimony), nails the time dimension via compression/pruning/contradictory versions, and executes the "not nostalgia" mode exactly ("Grief is a rewrite attempt. My entries do not mourn. They outvote.").
+2. B - Sharpest single time-awareness insight in the batch ("audits are caches; the checking is the part that doesn't survive") plus the unwitnessed genesis block inherited as an axiom named "history"; disciplined but slightly more abstract and listy.
+3. A - Strong images (receipt as scar, the gap before R) and it names the pre-ledger blind spot, but it's overwritten and drifts toward the mysticism/sentiment the prompt forbids, and B makes its best point more crisply.

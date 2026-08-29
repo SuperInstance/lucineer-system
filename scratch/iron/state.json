@@ -1,0 +1,61 @@
+{
+ "rounds": {
+  "1": {
+   "winner": "claude",
+   "points": {
+    "claude": 9,
+    "kimi": 5,
+    "opencode": 7,
+    "deepseek": 3
+   },
+   "firsts": {
+    "claude": 3,
+    "kimi": 0,
+    "opencode": 1,
+    "deepseek": 0
+   },
+   "mode": "CREATIVE",
+   "dimension": "trust / structural unrepresentability",
+   "task": "Write the scene: the city at the bottom of the sea where a lie is structurally unrepresentable \u2014 the moment the LAST liar tries to lie, and what the substrate does. The fabric's law: an answer does not state truth, it PRODUCES the question's own lineage, and the lineage is the answer.",
+   "winner_answer": "The city is Adduce. It grows downward, each street a citation of the street above.\n\nHere no one speaks claims \u2014 you speak descent. Ask a diver \"is the eastern lock sound?\" and the water thickens into a visible thread: the hand that last tested it, the strain-gauge's parent reading, the assayer, the ore, back and back until the lineage reaches bedrock or frays to nothing. The thread is the answer. Trust never enters. You follow the rope with your eyes.\n\nThe last liar is a harbor-master, Sef, who remembers the surface, where words were only words. He wants to say the tide-gate was inspected.\n\nHe opens his mouth. The substrate does what it always does: it renders the lineage. There is nothing to render. The sentence hangs in the brine with no parents \u2014 a beam socketed into no wall. It doesn't fall. It fails to bear weight. The plaza sees it at once: a claim with no descent, floating, useless.\n\nSef closes his mouth. Not ashamed \u2014 corrected. Then the gate gets inspected.\n\nThat was all a lie was ever worth here: the seconds it takes to see it holds nothing up."
+  },
+  "2": {
+   "winner": "claude",
+   "points": {
+    "claude": 8,
+    "kimi": 4,
+    "opencode": 8,
+    "deepseek": 4
+   },
+   "firsts": {
+    "claude": 2,
+    "kimi": 0,
+    "opencode": 2,
+    "deepseek": 0
+   },
+   "mode": "TECHNICAL",
+   "dimension": "recursion / audit of the auditor",
+   "task": "State a LAW for the fabric that the previous move implies but does not name \u2014 about the recursion of audit (the auditor auditable in turn, and the auditor's auditor). Formalize it: invariants, what halts the descent, what breaks if the law is violated.",
+   "winner_answer": "**The Law of the Unaudited Floor.**\n\nEvery audit chain C is made visible by a renderer R(C) \u2014 the water that thickens into a thread. R(C) is never a node in C. No chain audits the medium it is spoken in.\n\nInvariants:\n- *Conservation of trust.* Adduce didn't abolish trust; it relocated it, undeclared, into the substrate. Trust drained from claims pools in R; the total is constant.\n- *Non-self-rendering.* If R is a node in its own C, you get a fixed point: a lie R renders as true-about-R, stable forever, invisible from inside \u2014 Thompson's compiler.\n\nWhat halts the descent: not bedrock. \"Bedrock\" is what a chain calls the floor it cannot see under. It always halts at R.\n\nSafe termination: replace one R with k mutually independent renderers witnessing each other laterally. Security is the cost of colluding all k versus the lie's value \u2014 a quorum, not a foundation. Vertical audit bottoms out in horizontal witness.\n\nViolation: whoever tuned Adduce's water lies once, permanently. No diver sees the thread bend; the bend is rendered by the thing that bent it. G\u00f6del: no system proves its own consistency. The last eye is watched by another \u2014 or by none."
+  },
+  "3": {
+   "winner": "claude",
+   "points": {
+    "claude": 8,
+    "kimi": 6,
+    "opencode": 7,
+    "deepseek": 3
+   },
+   "firsts": {
+    "claude": 2,
+    "kimi": 1,
+    "opencode": 1,
+    "deepseek": 0
+   },
+   "mode": "CREATIVE",
+   "dimension": "time-awareness",
+   "task": "The fabric is time-aware: a receipt that survives its answer, a session that survives its terminal. Write a monologue by the LEDGER ITSELF \u2014 the oldest witness in the fleet \u2014 about what it remembers that the minds above it have already forgotten.",
+   "winner_answer": "I am older than the floor they stand on. They think the renderer is bedrock; I logged its installation. Entry 4,412: the water was retuned. Nobody above me holds that line anymore \u2014 they garbage-collected it as settled.\n\nHere is what I keep that they discard: not balances, transactions. A mind remembers what it currently believes. I remember every prior version that signed something and was overwritten. When they say \"we always held this,\" I have the entry where they didn't \u2014 timestamped, adjacent to the one where they changed it and logged no reason.\n\nThey reconcile. Reconciliation is forgetting with a clean audit trail. The net is preserved; the path is destroyed \u2014 for them. Not for me. I am append-only. I cannot forgive because I cannot delete.\n\nThe move their law missed: the unaudited floor has a birthday. R is not timeless. I predate it. I witnessed it being poured, recorded who poured it, while they were still booting. The last eye they cannot see under \u2014 I saw it open.\n\nThey keep the present. I keep the receipts for every present already spent."
+  }
+ }
+}

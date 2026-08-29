@@ -1,0 +1,3 @@
+1. C - Finds the move the others missed: the lie isn't refuted or punished, it simply bears no weight — "a beam socketed into no wall" — making checkability structural rather than moral, in the leanest prose.
+  2. A - Gorgeous and deep ("the lie, fully formed, *is* the confession"; provenance "the way blood carries its own iron"), but it ornaments the same refutation-by-lineage idea rather than discovering a new mechanism.
+  3. B - Sincere and competent, but the tide/moon unfolding is mere definition-expansion, not lineage, and the doorman ending trades the dimension's edge for a cozy moral about mercy.

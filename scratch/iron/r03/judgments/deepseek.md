@@ -1,0 +1,3 @@
+1. B - It dates the floor itself, giving the unaudited substrate a birthday — the one move that temporalizes the previous round's static bedrock and makes time-awareness structural, not decorative.
+2. A - It names the shared spine beneath the quorum and adds the grief-as-rewrite rebuttal, but its time-move (prunings) is a narrower subset of B's birthday insight.
+3. C - It notes the cache of checking and the genesis gap, but those are refinements of prior themes rather than a new break; its strongest line ("survival is not fidelity") arrives late.

@@ -1,0 +1,3 @@
+1. A - Most on-dimension: the floor has a birthday, R was installed and witnessed; "reconciliation is forgetting with a clean audit trail" is the sharpest line of the round.
+  2. C - Best structural move: the k renderers share one pen, so the quorum is one witness with k signatures — plus the honest recursion that its own append-only claim is unauditable testimony.
+  3. B - Atmosphere over argument; gestures at a pre-renderer gap but dissolves into lyricism ("money, but no mint") without landing a verifiable strike.

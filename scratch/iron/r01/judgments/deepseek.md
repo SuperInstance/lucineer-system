@@ -1,0 +1,3 @@
+1. C - It alone dramatizes trust being replaced by load-bearing evidence, and the structural unrepresentability as weightless failure — a sharper, more physical move.
+2. B - Luxurious and precise on the confession-as-lineage mechanism, though it leans on explanation rather than scene consequence.
+3. A - Evocative and melancholic, but the "link that no longer carries" is softer and less consequential than C's bearing-weight test or B's receipt.

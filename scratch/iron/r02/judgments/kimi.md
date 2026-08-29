@@ -1,0 +1,3 @@
+1. B - Finds the move the others miss: the renderer is outside every chain (Thompson/Gödel blind spot), and its quorum-of-renderers termination (vertical descent bottoming out in lateral witness) is the only genuinely new mechanism offered.
+  2. A - Cleanest formalization (closure, strict descent, cost-floor halt) and lands the "the water is the last liar" attack, but its bedrock is still a foundation — it doesn't see that vertical descent can't self-terminate.
+  3. C - Sound well-foundedness apparatus and a real failure mode ("audit laundering"), but generic: it audits hop-counts and never names the unaudited medium, so it sharpens the surface of the problem rather than the recursion itself.

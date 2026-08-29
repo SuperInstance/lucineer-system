@@ -51,3 +51,8 @@ G major with the Steam Rule (one damped note per phrase) and the walk-in's G off
 - Venues tried: cellar, alley, green room, rooftop, dock, 3am, kitchen. Untried: the church basement, the breakwater at storm-swell.
 - The dock log's NOISE night idea is still pending — texture-only prompts, no note names.
 - Consider: if a chair goes mute 2 rounds, auto-fill from a standing bench list instead of stalling.
+
+## 2026-08-27 — Set 24: The Stairwell (duo night)
+- Worked: DeepSeek Flash + Hermes-3-405B duo, both flawless, ~4 min total, no fills needed. Duo = speed + zero failure surface. Hermes-405B is a great guest; keep inviting.
+- Didn't: nothing failed. Only quirk: MIDI 1326 bytes (<2000 heuristic) — sparse duo, not a stub; judge note-ons for small lineups.
+- Next: try a NOISE night (texture-only, no harmony) or a vocal/melody night; or triple-duo relay where pairs swap mid-set. Vary count-in: staggered entry untested.

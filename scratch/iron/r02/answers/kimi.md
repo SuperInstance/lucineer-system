@@ -1,0 +1,11 @@
+THE LAW OF UPWARD ASCRIP­TION: In Adduce, every thread terminates downward in bedrock — but bedrock is just the oldest unchecked claim. So the law the city implies but never names: **no depth is exempt; every node that certifies must itself be certified by something it cannot certify.**
+
+  Formalize. Let attest(x) be the lineage function. Invariants:
+
+  1. **Finite render.** attestⁿ(x) must halt for all observers — the thread is only an answer because it ends.
+  2. **No self-anchor.** No node may appear twice in its own lineage (Sef's lie is the degenerate cycle of length 1: a claim citing itself, which renders as a beam socketed into itself — it *looks* load-bearing until loaded).
+  3. **The regress is real.** attest(attest(x)) ≠ attest(x). Auditing the auditor must produce new information, else you have a loop wearing a chain's clothing.
+
+  What halts the descent: not bedrock — **witness redundancy**. A claim bottoms out where k independent lineages converge on the same observation (the ore, the gauge, the diver's hand). Halting is social, not geological. Bedrock is a quorum, not a place.
+
+  What breaks when violated: monotonicity of trust. One self-citing auditor anywhere in the chain poisons every claim above it — because in Adduce you trust the thread, and the thread cannot see its own knots.

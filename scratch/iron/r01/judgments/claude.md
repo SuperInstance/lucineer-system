@@ -1,0 +1,3 @@
+1. A - Sharpest single move: the grammar of "I deny" structurally encodes the coordinates of what it denies, so the finished lie *is* the confession; "temples vs. archives" lands trust-vs-checkability in four words.
+2. B - Best systemic model — trust as light that routes around a dead link, "nothing he said could arrive" — eerie consequence with no moralizing, just barely edged out on scene-craft and on-dimension precision.
+3. C - Nice "bridge spanning nothing" image, but it announces its thesis ("checkability isn't a cage") instead of making us feel it, and the "mercy" turn softens the consequence into sentiment.
