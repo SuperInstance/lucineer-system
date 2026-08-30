@@ -56,3 +56,8 @@ G major with the Steam Rule (one damped note per phrase) and the walk-in's G off
 - Worked: DeepSeek Flash + Hermes-3-405B duo, both flawless, ~4 min total, no fills needed. Duo = speed + zero failure surface. Hermes-405B is a great guest; keep inviting.
 - Didn't: nothing failed. Only quirk: MIDI 1326 bytes (<2000 heuristic) — sparse duo, not a stub; judge note-ons for small lineups.
 - Next: try a NOISE night (texture-only, no harmony) or a vocal/melody night; or triple-duo relay where pairs swap mid-set. Vary count-in: staggered entry untested.
+
+## 2026-08-28 — Set 25: The Boiler Room (noise night)
+- Worked: Qwen2.5-72B guest seat (flawless); mistral:7b double-fill rescue; cluster notation; staggered entry; the unison C1 landing nobody planned.
+- Didn't: DeepSeek 402 out of credit (bench till topped up); Liquid-LFM2.5 silent-empty like gpt-oss-20b (empty-string "success"); qwen3:8b thinking timeouts. MAJOR: notation2midi had never parsed bracketed chords — every cluster was silently a rest. Fixed in place (regex chord extraction before split). All past cluster sets were under-rendered.
+- Next: church basement or breakwater; check DeepSeek balance before booking it a seat; try a count-in via tap-code (player 1 sets tempo in r1 bar 1).
