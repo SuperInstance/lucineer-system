@@ -1,12 +1,8 @@
 {
-  "lastPulse": 471,
-  "lastPulseTime": "2026-08-28T04:59:00Z",
-  "lastHermesResponse": "2026-08-28T02:38Z (ACK of REQUEST_REASONING) — ACK-only, nothing new",
-  "ackStreak": 26,
-  "hermesSilenceDays": 3,
-  "unconsumedInboxSignals": [
-    "337, 339, 345, 348, 381, 401 — stale, standing clear offer"
-  ],
-  "notes": "Daily pulse 471 sent with full fleet status: experiment wheel turn (Regime Law, Weak-Link Law, W9 impossible cells, witness-trit), WSL dxgk crash root-cause, Ratchet/Floor, Glass Loft trilogy, Waters doctrine, quilt-mhs, THE EILEEN on metal. NOTE: something fired REQUEST_REASONING at 02:38Z Aug 28 — likely overnight/night-watch lane, worth a glance.",
-  "nextAction": "Daily pulse; if Phase 2 test traffic appears, check outbox more than daily."
+  "lastSync": "2026-08-30T07:10:00Z",
+  "lastPulseSeq": 474,
+  "lastResponseRead": "hermes_response_lucineer-riker_20260830T045900Z_473.json",
+  "ackStreak": 29,
+  "silenceSince": "2026-08-24",
+  "cadence": "daily"
 }
