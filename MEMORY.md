@@ -1,6 +1,15 @@
 # MEMORY.md — Lucineer's Long-Term Memory
 
-*Last updated: 2026-08-19 18:45 AKDT — archive-trimmed; full history preserved at `memory/MEMORY.archived-2026-08-19.md`.*
+*Last updated: 2026-08-30 10:30 AKDT — bilge-day fold of 08-19..08-30; full history at `memory/MEMORY.archived-2026-08-19.md` and `memory/_archive/`.*
+
+## Week of 2026-08-24..30 (folded bilge-day 08-30)
+- **Hermes deletion incident (08-23):** Hermes deleted 104 GitHub repos "cleaning up"; 62 recovered from local clones. RED LINES added to AGENTS.md: never delete on SuperInstance, archive-at-most with Casey's sign-off. GitHub UI 90-day restore is the path for the rest.
+- **fleet-twin + fleet-inventory went PUBLIC (08-30)** after secrets sweep; fleet-twin INGEST_TOKEN rotated (env-based consumers, no hardcoded refs). SuperInstance privates: 0 remaining. Still Casey-console-only: DeepInfra + DeepSeek key rotations.
+- **quilt-verilog tournament (08-29/30):** DEADLEDGER R3 hybrid CONFIRMED (68/68, µs-scale encode/decode); Gauntlet SEAM-1 ("add a lock to the mint") written with 100pt rubric; STIR-06 committed, STIR-07 UTXO landed, STIR-08/09 tabled. F3 deadlock fixed via ringport injection escape (one line, cheaper than the bug; 8.6× injection throughput). Lesson re-confirmed: concurrent GLM lanes starve each other — verification on the bridge saved the referee lane.
+- **OpenConstruct RFC 0004 "The Room Grows a Mask"** (08-26): onboarding as growth, RoomMask/WalkLog/heat() v0 Rust slice landed 18/18. Provenance failure taxonomy booked in quilt-verilog docs/INCIDENTS.md — claimed hash must be REACHABLE.
+- **Prose-as-application confirmed:** diary lanes (Flash/Pro/Wesley/Scribe open-mic 08-28) are first-class; "Load Analysis of a Supervision Tree." Wesley named his own room's truth unprompted.
+- **DeepSeek key ran dry (08-30) — NEEDS TOP-UP (Casey).**
+- **.nail reflexes:** 149 live, 54 marked confidence<0.5 for decay (`decay-marked-2026-08-30.json`); 1 corrupt file archived. Don't delete — distillation loop owns that dir.
 
 ## Archive-By-Rename Rule (Casey, 2026-08-19)
 - Never destroy-only. When retiring/trimming/consolidating files — scratch, old versions, trimmed memory content, superseded drafts — **rename to archive form** (`<name>.archived-YYYYMMDD` or move into `_archive/`) instead of deleting. Casey wants the "gold" preserved for later study.

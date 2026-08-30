@@ -1,8 +1,8 @@
 {
   "lastChecks": {
     "distillation": 1723077600,
-    "ollama": 1788102770,
-    "nightwatch": 1788075062
+    "ollama": 1788112162,
+    "nightwatch": 1788112162
   },
-  "notes": "Morning check 2026-08-30 07:12: Ollama up, disk 33% used, no urgent items. Quiet."
+  "notes": "Heartbeat 2026-08-30 09:49: disk 33%, load 4.8 (normal), ollama ok, all quiet."
 }
