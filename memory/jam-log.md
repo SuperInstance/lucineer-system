@@ -61,3 +61,9 @@ G major with the Steam Rule (one damped note per phrase) and the walk-in's G off
 - Worked: Qwen2.5-72B guest seat (flawless); mistral:7b double-fill rescue; cluster notation; staggered entry; the unison C1 landing nobody planned.
 - Didn't: DeepSeek 402 out of credit (bench till topped up); Liquid-LFM2.5 silent-empty like gpt-oss-20b (empty-string "success"); qwen3:8b thinking timeouts. MAJOR: notation2midi had never parsed bracketed chords — every cluster was silently a rest. Fixed in place (regex chord extraction before split). All past cluster sets were under-rendered.
 - Next: church basement or breakwater; check DeepSeek balance before booking it a seat; try a count-in via tap-code (player 1 sets tempo in r1 bar 1).
+
+## 2026-08-29 — Set 26: The Breakwater (storm-swell night)
+- Worked: 4-piece (Hermes-405B bell / gemma-3-27b marimba / Qwen2.5-72B horn / local mistral:7b surf drum). 11/12 takes first-pass clean; one targeted retry filled bell r2. F# natural minor, 76 BPM, Rule of the Swell, staggered entry. Local+cloud mix is reliable.
+- Didn't: notation2midi silently dropped notes with trailing "..." ("F#4..." → rest). Fixed in place (rstrip('.') on token base) — second silent-drop parser bug this week; consider adding a note-count sanity check that rejects renders <60% of BAR lines with notes.
+- Sparse texture tonight by design: 94 note-ons / 96 bars. For dense sets, tell players to play 2-4 notes per bar.
+- Next: church basement still untried; try a guest we've never booked (Nemotron? Seed-2.0-pro); tap-code count-in untested.

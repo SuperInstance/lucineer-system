@@ -1,6 +1,6 @@
 {
   "lastTask": 2,
-  "lastRun": "2026-08-30T03:55Z",
+  "lastRun": "2026-08-30T08:50Z",
   "nextTask": 3,
-  "note": "2026-08-29 19:51 cycle: Task 2 (GALLERY ART) DONE — rendered gallery-fleet-twin.jpg with owned pipeline (gen_local.py, nighttime-sdxl lora 0.8, seed 42; re-ran once because CLIP truncated the 109-token prompt at 77 — keep prompts short). fleet-twin repo had no image; wired hero.jpg into README, commit 68acee3 'imagery:' pushed. Vision models unavailable for QA (GLM-5V 429, Kimi no-image). Next cycle: task 3 (CREATIVE)."
+  "note": "2026-08-30 00:34 cycle: Task 2 (GALLERY ART) DONE — rendered gallery-operational-fiction.jpg (seed 42, owned SDXL+LoRA pipeline, 181s), wired as assets/images/hero-frames.jpg in SuperInstance/operational-fiction, pushed 671f893 'imagery:'. Vision QC unavailable (GLM-5V 429). Note: readme-art-drafts is NOT a git repo — commit target is the destination repo. Next cycle: task 3 (CREATIVE)."
 }
