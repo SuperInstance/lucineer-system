@@ -177452,3 +177452,2311 @@ slot   operator(): id  0 | task 0 | cached n_tokens = 0, memory_seq_rm [0, end)
 slot      release: id  0 | task 0 | stop processing: n_tokens = 125, truncated = 0
 srv  update_slots: all slots are idle
 [GIN] 2026/08/30 - 03:34:42 | 200 |  2.380290388s |       127.0.0.1 | POST     "/v1/embeddings"
+time=2026-08-30T04:02:20.675-08:00 level=INFO source=server.go:109 msg="using llama-server for model" model=/home/eileen/.ollama/models/blobs/sha256-970aa74c0a90ef7482477cf803618e776e173c007bf957f635f1015bfcfef0e6
+time=2026-08-30T04:02:20.675-08:00 level=WARN source=server.go:114 msg="requested context size too large for model" num_ctx=8192 n_ctx_train=2048
+time=2026-08-30T04:02:20.676-08:00 level=INFO source=llama_server.go:433 msg="starting llama-server" cmd="/home/eileen/.local/lib/ollama/llama-server --model /home/eileen/.ollama/models/blobs/sha256-970aa74c0a90ef7482477cf803618e776e173c007bf957f635f1015bfcfef0e6 --port 33675 --host 127.0.0.1 --no-webui --offline -c 2048 -np 1 --log-verbosity 4 --no-log-prefix --no-log-timestamps --flash-attn auto --embedding -b 2048 -ub 2048 --context-shift --keep 4"
+time=2026-08-30T04:02:20.676-08:00 level=INFO source=sched.go:613 msg="system memory" total="15.6 GiB" free="9.1 GiB" free_swap="6.2 GiB"
+time=2026-08-30T04:02:20.676-08:00 level=INFO source=sched.go:620 msg="gpu memory" id=0 library=CUDA available="4.5 GiB" free="5.0 GiB" minimum="457.0 MiB" overhead="0 B"
+time=2026-08-30T04:02:20.676-08:00 level=INFO source=llama_server.go:1048 msg="loading model via llama-server" model=/home/eileen/.ollama/models/blobs/sha256-970aa74c0a90ef7482477cf803618e776e173c007bf957f635f1015bfcfef0e6
+time=2026-08-30T04:02:20.676-08:00 level=INFO source=llama_server.go:1295 msg="waiting for llama-server to start responding"
+time=2026-08-30T04:02:20.677-08:00 level=INFO source=llama_server.go:1350 msg="waiting for llama-server to become available" status="llm server not responding"
+cmn  common_param: common_params_print_info: build 1 (9d77fa172) with GNU 13.3.1 for Linux x86_64
+cmn  common_param: common_params_print_info: verbosity = 4 (adjust with the `-lv N` CLI arg)
+cmn  common_param: device_info:
+cmn  common_param:   - CPU     : AMD Ryzen AI 9 HX 370 w/ Radeon 890M (15989 MiB, 15989 MiB free)
+cmn  common_param:   - CUDA0   : NVIDIA GeForce RTX 4050 Laptop GPU (6140 MiB, 5072 MiB free)
+cmn  common_param: system_info: n_threads = 12 (n_threads_batch = 12) / 24 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | AVX512_BF16 = 1 | LLAMAFILE = 1 | REPACK = 1 | CUDA : ARCHS = 750,800,860,870,890,900,1000,1030,1100,1200,1210 | USE_GRAPHS = 1 | 
+srv          init: using 23 threads for HTTP server
+srv          init: The UI is disabled
+srv          init: Use --ui/--no-ui (or deprecated --webui/--no-webui) to enable/disable
+srv  llama_server: -----------------
+srv  llama_server: CORS is set to allow all origins ('*') and no API key is set
+srv  llama_server: this can be a security risk (cross-origin attacks)
+srv  llama_server: more info: https://github.com/ggml-org/llama.cpp/pull/25655
+srv  llama_server: -----------------
+srv         start: binding port with default address family
+srv    load_model: loading model '/home/eileen/.ollama/models/blobs/sha256-970aa74c0a90ef7482477cf803618e776e173c007bf957f635f1015bfcfef0e6'
+srv    load_model: local path '/home/eileen/.ollama/models/blobs/sha256-970aa74c0a90ef7482477cf803618e776e173c007bf957f635f1015bfcfef0e6'
+cmn  common_init_: fitting params to device memory ...
+cmn  common_init_: (for bugs during this step try to reproduce them with -fit off, or provide --verbose logs if the bug only occurs with -fit on)
+common_params_fit_impl: getting device memory data for initial parameters:
+common_memory_breakdown_print: | memory breakdown [MiB]          | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - CUDA0 (RTX 4050 Laptop GPU) |  6140 = 5072 + ( 308 =   216 +       0 +      92) +         760 |
+common_memory_breakdown_print: |   - Host                        |                   64 =    44 +       0 +      20                |
+common_params_fit_impl: projected to use 308 MiB of device memory vs. 5072 MiB of free device memory
+common_params_fit_impl: will leave 4763 >= 1024 MiB of free device memory, no changes needed
+common_fit_params: successfully fit params to free device memory
+common_fit_params: fitting params to free memory took 0.05 seconds
+llama_model_loader: loaded meta data with 24 key-value pairs and 112 tensors from /home/eileen/.ollama/models/blobs/sha256-970aa74c0a90ef7482477cf803618e776e173c007bf957f635f1015bfcfef0e6 (version GGUF V3 (latest))
+llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+llama_model_loader: - kv   0:                       general.architecture str              = nomic-bert
+llama_model_loader: - kv   1:                               general.name str              = nomic-embed-text-v1.5
+llama_model_loader: - kv   2:                     nomic-bert.block_count u32              = 12
+llama_model_loader: - kv   3:                  nomic-bert.context_length u32              = 2048
+llama_model_loader: - kv   4:                nomic-bert.embedding_length u32              = 768
+llama_model_loader: - kv   5:             nomic-bert.feed_forward_length u32              = 3072
+llama_model_loader: - kv   6:            nomic-bert.attention.head_count u32              = 12
+llama_model_loader: - kv   7:    nomic-bert.attention.layer_norm_epsilon f32              = 0.000000
+llama_model_loader: - kv   8:                          general.file_type u32              = 1
+llama_model_loader: - kv   9:                nomic-bert.attention.causal bool             = false
+llama_model_loader: - kv  10:                    nomic-bert.pooling_type u32              = 1
+llama_model_loader: - kv  11:                  nomic-bert.rope.freq_base f32              = 1000.000000
+llama_model_loader: - kv  12:            tokenizer.ggml.token_type_count u32              = 2
+llama_model_loader: - kv  13:                tokenizer.ggml.bos_token_id u32              = 101
+llama_model_loader: - kv  14:                tokenizer.ggml.eos_token_id u32              = 102
+llama_model_loader: - kv  15:                       tokenizer.ggml.model str              = bert
+llama_model_loader: - kv  16:                      tokenizer.ggml.tokens arr[str,30522]   = ["[PAD]", "[unused0]", "[unused1]", "...
+llama_model_loader: - kv  17:                      tokenizer.ggml.scores arr[f32,30522]   = [-1000.000000, -1000.000000, -1000.00...
+llama_model_loader: - kv  18:                  tokenizer.ggml.token_type arr[i32,30522]   = [3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+llama_model_loader: - kv  19:            tokenizer.ggml.unknown_token_id u32              = 100
+llama_model_loader: - kv  20:          tokenizer.ggml.seperator_token_id u32              = 102
+llama_model_loader: - kv  21:            tokenizer.ggml.padding_token_id u32              = 0
+llama_model_loader: - kv  22:                tokenizer.ggml.cls_token_id u32              = 101
+llama_model_loader: - kv  23:               tokenizer.ggml.mask_token_id u32              = 103
+llama_model_loader: - type  f32:   51 tensors
+llama_model_loader: - type  f16:   61 tensors
+print_info: file format = GGUF V3 (latest)
+print_info: file type   = F16
+print_info: file size   = 260.86 MiB (16.00 BPW) 
+llama_prepare_model_devices: using device CUDA0 (NVIDIA GeForce RTX 4050 Laptop GPU) (0000:c4:00.0) - 5072 MiB free
+load: 0 unused tokens
+load: special_eos_id is not in special_eog_ids - the tokenizer config may be incorrect
+load: printing all EOG tokens:
+load:   - 0 ('[PAD]')
+load:   - 102 ('[SEP]')
+load: special tokens cache size = 5
+load: token to piece cache size = 0.2032 MB
+print_info: arch                  = nomic-bert
+print_info: vocab_only            = 0
+print_info: no_alloc              = 0
+print_info: n_ctx_train           = 2048
+print_info: n_embd_inp            = 768
+print_info: n_embd                = 768
+print_info: n_embd_out            = 768
+print_info: n_layer               = 12
+print_info: n_layer_all           = 12
+print_info: n_head                = 12
+print_info: n_head_kv             = 12
+print_info: n_rot                 = 64
+print_info: n_swa                 = 0
+print_info: is_swa_any            = 0
+print_info: n_embd_head_k         = 64
+print_info: n_embd_head_v         = 64
+print_info: n_gqa                 = 1
+print_info: n_embd_k_gqa          = 768
+print_info: n_embd_v_gqa          = 768
+print_info: f_norm_eps            = 1.0e-12
+print_info: f_norm_rms_eps        = 0.0e+00
+print_info: f_clamp_kqv           = 0.0e+00
+print_info: f_max_alibi_bias      = 0.0e+00
+print_info: f_logit_scale         = 0.0e+00
+print_info: f_attn_scale          = 0.0e+00
+print_info: f_attn_value_scale    = 0.0000
+print_info: n_ff                  = 3072
+print_info: n_expert              = 0
+print_info: n_expert_used         = 0
+print_info: n_expert_groups       = 0
+print_info: n_group_used          = 0
+print_info: causal attn           = 0
+print_info: pooling type          = 1
+print_info: rope type             = 2
+print_info: rope scaling          = linear
+print_info: freq_base_train       = 1000.0
+print_info: freq_scale_train      = 1
+print_info: n_ctx_orig_yarn       = 2048
+print_info: rope_yarn_log_mul     = 0.0000
+print_info: rope_finetuned        = unknown
+print_info: model type            = 137M
+print_info: model params          = 136.73 M
+print_info: general.name          = nomic-embed-text-v1.5
+print_info: vocab type            = WPM
+print_info: n_vocab               = 30522
+print_info: n_merges              = 0
+print_info: BOS token             = 101 '[CLS]'
+print_info: EOS token             = 102 '[SEP]'
+print_info: UNK token             = 100 '[UNK]'
+print_info: SEP token             = 102 '[SEP]'
+print_info: PAD token             = 0 '[PAD]'
+print_info: MASK token            = 103 '[MASK]'
+print_info: LF token              = 0 '[PAD]'
+print_info: FIM PAD token         = 0 '[PAD]'
+print_info: EOG token             = 0 '[PAD]'
+print_info: EOG token             = 102 '[SEP]'
+print_info: max token length      = 21
+load_tensors: loading model tensors, this can take a while... (load_mode = mmap)
+time=2026-08-30T04:02:21.182-08:00 level=INFO source=llama_server.go:1350 msg="waiting for llama-server to become available" status="llm server loading model"
+load_tensors: offloading output layer to GPU
+load_tensors: offloading 11 repeating layers to GPU
+load_tensors: offloaded 13/13 layers to GPU
+load_tensors:   CPU_Mapped model buffer size =    44.72 MiB
+load_tensors:        CUDA0 model buffer size =   216.15 MiB
+cmn  common_init_: added [PAD] logit bias = -inf
+cmn  common_init_: added [SEP] logit bias = -inf
+llama_context: constructing llama_context
+llama_context: n_seq_max             = 1
+llama_context: n_ctx                 = 2048
+llama_context: n_ctx_seq             = 2048
+llama_context: n_batch               = 2048
+llama_context: n_ubatch              = 2048
+llama_context: causal_attn           = 0
+llama_context: flash_attn            = auto
+llama_context: kv_unified            = false
+llama_context: freq_base             = 1000.0
+llama_context: freq_scale            = 1
+llama_context: n_rs_seq              = 0
+llama_context: n_outputs_max         = 2048
+llama_context: n_outputs_max_per_seq = 1
+llama_context:  CUDA_Host  output buffer size =     0.12 MiB
+sched_reserve: reserving ...
+resolve_fused_ops: Flash Attention enabled
+resolve_fused_ops: resolving fused Gated Delta Net support:
+resolve_fused_ops: fused Gated Delta Net (autoregressive) enabled
+resolve_fused_ops: fused Gated Delta Net (chunked) enabled
+resolve_fused_ops: resolving fused Lightning Indexer support:
+resolve_fused_ops: Lightning Indexer enabled
+resolve_fused_ops: resolving fused DeepSeek V4 HC support:
+resolve_fused_ops: fused DeepSeek V4 HC pre enabled
+resolve_fused_ops: fused DeepSeek V4 HC comb enabled
+resolve_fused_ops: fused DeepSeek V4 HC post enabled
+sched_reserve:      CUDA0 compute buffer size =    92.03 MiB
+sched_reserve:  CUDA_Host compute buffer size =    20.03 MiB
+sched_reserve: graph nodes  = 335
+sched_reserve: graph splits = 2
+sched_reserve: reserve took 37.08 ms, sched copies = 1
+cmn          init: llama threadpool init, n_threads = 12
+cmn  common_init_: KV cache shifting is not supported for this context, disabling KV cache shifting
+cmn  common_init_: warming up the model with an empty run - please wait ... (--no-warmup to disable)
+srv    load_model: speculative decoding not supported by this context
+srv    load_model: initializing, n_slots = 1, n_ctx_slot = 2048, kv_unified = 'false'
+slot   load_model: id  0 | task -1 | new slot, n_ctx = 2048
+srv    load_model: prompt cache is enabled, size limit: 8192 MiB
+srv    load_model: use `--cache-ram 0` to disable the prompt cache
+srv    load_model: for more info see https://github.com/ggml-org/llama.cpp/pull/16391
+srv    load_model: context checkpoints enabled, max = 32, min spacing = 8192
+srv          init: idle slots will be saved to prompt cache upon starting a new task
+srv          init: init: chat template, example_format: '<|im_start|>system
+You are a helpful assistant<|im_end|>
+<|im_start|>user
+Hello<|im_end|>
+<|im_start|>assistant
+Hi there<|im_end|>
+<|im_start|>user
+How are you?<|im_end|>
+<|im_start|>assistant
+'
+srv          init: init: chat template, thinking = 0
+srv  llama_server: model loaded
+srv  llama_server: listening on http://127.0.0.1:33675
+srv  update_slots: all slots are idle
+time=2026-08-30T04:02:21.434-08:00 level=INFO source=llama_server.go:1362 msg="llama-server started in 0.76 seconds"
+time=2026-08-30T04:02:21.434-08:00 level=INFO source=images.go:381 msg="template selection" model=registry.ollama.ai/library/nomic-embed-text:latest selected=none renderer="" parser="" go_template=null chat_template=null harmony=null renderer_parser=null
+time=2026-08-30T04:02:21.435-08:00 level=INFO source=sched.go:728 msg="loaded runners" count=1
+time=2026-08-30T04:02:21.435-08:00 level=INFO source=llama_server.go:1295 msg="waiting for llama-server to start responding"
+time=2026-08-30T04:02:21.435-08:00 level=INFO source=llama_server.go:1362 msg="llama-server started in 0.76 seconds"
+slot get_availabl: id  0 | task -1 |  - skipping, slot is empty
+slot get_availabl: id  0 | task -1 | selected slot by LRU, t_last = -1
+slot launch_slot_: id  0 | task 0 | processing task, is_child = 0
+slot   operator(): id  0 | task 0 | new prompt, n_ctx_slot = 2048, n_keep = 0, task.n_tokens = 273
+slot   operator(): id  0 | task 0 | cached n_tokens = 0, memory_seq_rm [0, end)
+slot      release: id  0 | task 0 | stop processing: n_tokens = 273, truncated = 0
+srv  update_slots: all slots are idle
+[GIN] 2026/08/30 - 04:02:21 | 200 |  2.461376801s |       127.0.0.1 | POST     "/v1/embeddings"
+time=2026-08-30T04:35:31.947-08:00 level=INFO source=server.go:109 msg="using llama-server for model" model=/home/eileen/.ollama/models/blobs/sha256-970aa74c0a90ef7482477cf803618e776e173c007bf957f635f1015bfcfef0e6
+time=2026-08-30T04:35:31.947-08:00 level=WARN source=server.go:114 msg="requested context size too large for model" num_ctx=8192 n_ctx_train=2048
+time=2026-08-30T04:35:31.947-08:00 level=INFO source=llama_server.go:433 msg="starting llama-server" cmd="/home/eileen/.local/lib/ollama/llama-server --model /home/eileen/.ollama/models/blobs/sha256-970aa74c0a90ef7482477cf803618e776e173c007bf957f635f1015bfcfef0e6 --port 35707 --host 127.0.0.1 --no-webui --offline -c 2048 -np 1 --log-verbosity 4 --no-log-prefix --no-log-timestamps --flash-attn auto --embedding -b 2048 -ub 2048 --context-shift --keep 4"
+time=2026-08-30T04:35:31.948-08:00 level=INFO source=sched.go:613 msg="system memory" total="15.6 GiB" free="12.3 GiB" free_swap="6.6 GiB"
+time=2026-08-30T04:35:31.948-08:00 level=INFO source=sched.go:620 msg="gpu memory" id=0 library=CUDA available="4.5 GiB" free="5.0 GiB" minimum="457.0 MiB" overhead="0 B"
+time=2026-08-30T04:35:31.948-08:00 level=INFO source=llama_server.go:1048 msg="loading model via llama-server" model=/home/eileen/.ollama/models/blobs/sha256-970aa74c0a90ef7482477cf803618e776e173c007bf957f635f1015bfcfef0e6
+time=2026-08-30T04:35:31.948-08:00 level=INFO source=llama_server.go:1295 msg="waiting for llama-server to start responding"
+time=2026-08-30T04:35:31.948-08:00 level=INFO source=llama_server.go:1350 msg="waiting for llama-server to become available" status="llm server not responding"
+cmn  common_param: common_params_print_info: build 1 (9d77fa172) with GNU 13.3.1 for Linux x86_64
+cmn  common_param: common_params_print_info: verbosity = 4 (adjust with the `-lv N` CLI arg)
+cmn  common_param: device_info:
+cmn  common_param:   - CPU     : AMD Ryzen AI 9 HX 370 w/ Radeon 890M (15989 MiB, 15989 MiB free)
+cmn  common_param:   - CUDA0   : NVIDIA GeForce RTX 4050 Laptop GPU (6140 MiB, 5072 MiB free)
+cmn  common_param: system_info: n_threads = 12 (n_threads_batch = 12) / 24 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | AVX512_BF16 = 1 | LLAMAFILE = 1 | REPACK = 1 | CUDA : ARCHS = 750,800,860,870,890,900,1000,1030,1100,1200,1210 | USE_GRAPHS = 1 | 
+srv          init: using 23 threads for HTTP server
+srv          init: The UI is disabled
+srv          init: Use --ui/--no-ui (or deprecated --webui/--no-webui) to enable/disable
+srv  llama_server: -----------------
+srv  llama_server: CORS is set to allow all origins ('*') and no API key is set
+srv  llama_server: this can be a security risk (cross-origin attacks)
+srv  llama_server: more info: https://github.com/ggml-org/llama.cpp/pull/25655
+srv  llama_server: -----------------
+srv         start: binding port with default address family
+srv    load_model: loading model '/home/eileen/.ollama/models/blobs/sha256-970aa74c0a90ef7482477cf803618e776e173c007bf957f635f1015bfcfef0e6'
+srv    load_model: local path '/home/eileen/.ollama/models/blobs/sha256-970aa74c0a90ef7482477cf803618e776e173c007bf957f635f1015bfcfef0e6'
+cmn  common_init_: fitting params to device memory ...
+cmn  common_init_: (for bugs during this step try to reproduce them with -fit off, or provide --verbose logs if the bug only occurs with -fit on)
+common_params_fit_impl: getting device memory data for initial parameters:
+common_memory_breakdown_print: | memory breakdown [MiB]          | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - CUDA0 (RTX 4050 Laptop GPU) |  6140 = 5072 + ( 308 =   216 +       0 +      92) +         760 |
+common_memory_breakdown_print: |   - Host                        |                   64 =    44 +       0 +      20                |
+common_params_fit_impl: projected to use 308 MiB of device memory vs. 5072 MiB of free device memory
+common_params_fit_impl: will leave 4763 >= 1024 MiB of free device memory, no changes needed
+common_fit_params: successfully fit params to free device memory
+common_fit_params: fitting params to free memory took 0.03 seconds
+llama_model_loader: loaded meta data with 24 key-value pairs and 112 tensors from /home/eileen/.ollama/models/blobs/sha256-970aa74c0a90ef7482477cf803618e776e173c007bf957f635f1015bfcfef0e6 (version GGUF V3 (latest))
+llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+llama_model_loader: - kv   0:                       general.architecture str              = nomic-bert
+llama_model_loader: - kv   1:                               general.name str              = nomic-embed-text-v1.5
+llama_model_loader: - kv   2:                     nomic-bert.block_count u32              = 12
+llama_model_loader: - kv   3:                  nomic-bert.context_length u32              = 2048
+llama_model_loader: - kv   4:                nomic-bert.embedding_length u32              = 768
+llama_model_loader: - kv   5:             nomic-bert.feed_forward_length u32              = 3072
+llama_model_loader: - kv   6:            nomic-bert.attention.head_count u32              = 12
+llama_model_loader: - kv   7:    nomic-bert.attention.layer_norm_epsilon f32              = 0.000000
+llama_model_loader: - kv   8:                          general.file_type u32              = 1
+llama_model_loader: - kv   9:                nomic-bert.attention.causal bool             = false
+llama_model_loader: - kv  10:                    nomic-bert.pooling_type u32              = 1
+llama_model_loader: - kv  11:                  nomic-bert.rope.freq_base f32              = 1000.000000
+llama_model_loader: - kv  12:            tokenizer.ggml.token_type_count u32              = 2
+llama_model_loader: - kv  13:                tokenizer.ggml.bos_token_id u32              = 101
+llama_model_loader: - kv  14:                tokenizer.ggml.eos_token_id u32              = 102
+llama_model_loader: - kv  15:                       tokenizer.ggml.model str              = bert
+llama_model_loader: - kv  16:                      tokenizer.ggml.tokens arr[str,30522]   = ["[PAD]", "[unused0]", "[unused1]", "...
+llama_model_loader: - kv  17:                      tokenizer.ggml.scores arr[f32,30522]   = [-1000.000000, -1000.000000, -1000.00...
+llama_model_loader: - kv  18:                  tokenizer.ggml.token_type arr[i32,30522]   = [3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+llama_model_loader: - kv  19:            tokenizer.ggml.unknown_token_id u32              = 100
+llama_model_loader: - kv  20:          tokenizer.ggml.seperator_token_id u32              = 102
+llama_model_loader: - kv  21:            tokenizer.ggml.padding_token_id u32              = 0
+llama_model_loader: - kv  22:                tokenizer.ggml.cls_token_id u32              = 101
+llama_model_loader: - kv  23:               tokenizer.ggml.mask_token_id u32              = 103
+llama_model_loader: - type  f32:   51 tensors
+llama_model_loader: - type  f16:   61 tensors
+print_info: file format = GGUF V3 (latest)
+print_info: file type   = F16
+print_info: file size   = 260.86 MiB (16.00 BPW) 
+llama_prepare_model_devices: using device CUDA0 (NVIDIA GeForce RTX 4050 Laptop GPU) (0000:c4:00.0) - 5072 MiB free
+load: 0 unused tokens
+load: special_eos_id is not in special_eog_ids - the tokenizer config may be incorrect
+load: printing all EOG tokens:
+load:   - 0 ('[PAD]')
+load:   - 102 ('[SEP]')
+load: special tokens cache size = 5
+load: token to piece cache size = 0.2032 MB
+print_info: arch                  = nomic-bert
+print_info: vocab_only            = 0
+print_info: no_alloc              = 0
+print_info: n_ctx_train           = 2048
+print_info: n_embd_inp            = 768
+print_info: n_embd                = 768
+print_info: n_embd_out            = 768
+print_info: n_layer               = 12
+print_info: n_layer_all           = 12
+print_info: n_head                = 12
+print_info: n_head_kv             = 12
+print_info: n_rot                 = 64
+print_info: n_swa                 = 0
+print_info: is_swa_any            = 0
+print_info: n_embd_head_k         = 64
+print_info: n_embd_head_v         = 64
+print_info: n_gqa                 = 1
+print_info: n_embd_k_gqa          = 768
+print_info: n_embd_v_gqa          = 768
+print_info: f_norm_eps            = 1.0e-12
+print_info: f_norm_rms_eps        = 0.0e+00
+print_info: f_clamp_kqv           = 0.0e+00
+print_info: f_max_alibi_bias      = 0.0e+00
+print_info: f_logit_scale         = 0.0e+00
+print_info: f_attn_scale          = 0.0e+00
+print_info: f_attn_value_scale    = 0.0000
+print_info: n_ff                  = 3072
+print_info: n_expert              = 0
+print_info: n_expert_used         = 0
+print_info: n_expert_groups       = 0
+print_info: n_group_used          = 0
+print_info: causal attn           = 0
+print_info: pooling type          = 1
+print_info: rope type             = 2
+print_info: rope scaling          = linear
+print_info: freq_base_train       = 1000.0
+print_info: freq_scale_train      = 1
+print_info: n_ctx_orig_yarn       = 2048
+print_info: rope_yarn_log_mul     = 0.0000
+print_info: rope_finetuned        = unknown
+print_info: model type            = 137M
+print_info: model params          = 136.73 M
+print_info: general.name          = nomic-embed-text-v1.5
+print_info: vocab type            = WPM
+print_info: n_vocab               = 30522
+print_info: n_merges              = 0
+print_info: BOS token             = 101 '[CLS]'
+print_info: EOS token             = 102 '[SEP]'
+print_info: UNK token             = 100 '[UNK]'
+print_info: SEP token             = 102 '[SEP]'
+print_info: PAD token             = 0 '[PAD]'
+print_info: MASK token            = 103 '[MASK]'
+print_info: LF token              = 0 '[PAD]'
+print_info: FIM PAD token         = 0 '[PAD]'
+print_info: EOG token             = 0 '[PAD]'
+print_info: EOG token             = 102 '[SEP]'
+print_info: max token length      = 21
+load_tensors: loading model tensors, this can take a while... (load_mode = mmap)
+load_tensors: offloading output layer to GPU
+load_tensors: offloading 11 repeating layers to GPU
+load_tensors: offloaded 13/13 layers to GPU
+load_tensors:   CPU_Mapped model buffer size =    44.72 MiB
+load_tensors:        CUDA0 model buffer size =   216.15 MiB
+cmn  common_init_: added [PAD] logit bias = -inf
+cmn  common_init_: added [SEP] logit bias = -inf
+llama_context: constructing llama_context
+llama_context: n_seq_max             = 1
+llama_context: n_ctx                 = 2048
+llama_context: n_ctx_seq             = 2048
+llama_context: n_batch               = 2048
+llama_context: n_ubatch              = 2048
+llama_context: causal_attn           = 0
+llama_context: flash_attn            = auto
+llama_context: kv_unified            = false
+llama_context: freq_base             = 1000.0
+llama_context: freq_scale            = 1
+llama_context: n_rs_seq              = 0
+llama_context: n_outputs_max         = 2048
+llama_context: n_outputs_max_per_seq = 1
+llama_context:  CUDA_Host  output buffer size =     0.12 MiB
+sched_reserve: reserving ...
+resolve_fused_ops: Flash Attention enabled
+resolve_fused_ops: resolving fused Gated Delta Net support:
+resolve_fused_ops: fused Gated Delta Net (autoregressive) enabled
+resolve_fused_ops: fused Gated Delta Net (chunked) enabled
+resolve_fused_ops: resolving fused Lightning Indexer support:
+resolve_fused_ops: Lightning Indexer enabled
+resolve_fused_ops: resolving fused DeepSeek V4 HC support:
+resolve_fused_ops: fused DeepSeek V4 HC pre enabled
+resolve_fused_ops: fused DeepSeek V4 HC comb enabled
+resolve_fused_ops: fused DeepSeek V4 HC post enabled
+sched_reserve:      CUDA0 compute buffer size =    92.03 MiB
+sched_reserve:  CUDA_Host compute buffer size =    20.03 MiB
+sched_reserve: graph nodes  = 335
+sched_reserve: graph splits = 2
+sched_reserve: reserve took 25.72 ms, sched copies = 1
+cmn          init: llama threadpool init, n_threads = 12
+cmn  common_init_: KV cache shifting is not supported for this context, disabling KV cache shifting
+cmn  common_init_: warming up the model with an empty run - please wait ... (--no-warmup to disable)
+time=2026-08-30T04:35:32.451-08:00 level=INFO source=llama_server.go:1350 msg="waiting for llama-server to become available" status="llm server loading model"
+srv    load_model: speculative decoding not supported by this context
+srv    load_model: initializing, n_slots = 1, n_ctx_slot = 2048, kv_unified = 'false'
+slot   load_model: id  0 | task -1 | new slot, n_ctx = 2048
+srv    load_model: prompt cache is enabled, size limit: 8192 MiB
+srv    load_model: use `--cache-ram 0` to disable the prompt cache
+srv    load_model: for more info see https://github.com/ggml-org/llama.cpp/pull/16391
+srv    load_model: context checkpoints enabled, max = 32, min spacing = 8192
+srv          init: idle slots will be saved to prompt cache upon starting a new task
+srv          init: init: chat template, example_format: '<|im_start|>system
+You are a helpful assistant<|im_end|>
+<|im_start|>user
+Hello<|im_end|>
+<|im_start|>assistant
+Hi there<|im_end|>
+<|im_start|>user
+How are you?<|im_end|>
+<|im_start|>assistant
+'
+srv          init: init: chat template, thinking = 0
+srv  llama_server: model loaded
+srv  llama_server: listening on http://127.0.0.1:35707
+srv  update_slots: all slots are idle
+time=2026-08-30T04:35:32.703-08:00 level=INFO source=llama_server.go:1362 msg="llama-server started in 0.76 seconds"
+time=2026-08-30T04:35:32.703-08:00 level=INFO source=images.go:381 msg="template selection" model=registry.ollama.ai/library/nomic-embed-text:latest selected=none renderer="" parser="" go_template=null chat_template=null harmony=null renderer_parser=null
+time=2026-08-30T04:35:32.703-08:00 level=INFO source=sched.go:728 msg="loaded runners" count=1
+time=2026-08-30T04:35:32.703-08:00 level=INFO source=llama_server.go:1295 msg="waiting for llama-server to start responding"
+time=2026-08-30T04:35:32.704-08:00 level=INFO source=llama_server.go:1362 msg="llama-server started in 0.76 seconds"
+slot get_availabl: id  0 | task -1 |  - skipping, slot is empty
+slot get_availabl: id  0 | task -1 | selected slot by LRU, t_last = -1
+slot launch_slot_: id  0 | task 0 | processing task, is_child = 0
+slot   operator(): id  0 | task 0 | new prompt, n_ctx_slot = 2048, n_keep = 0, task.n_tokens = 175
+slot   operator(): id  0 | task 0 | cached n_tokens = 0, memory_seq_rm [0, end)
+slot      release: id  0 | task 0 | stop processing: n_tokens = 175, truncated = 0
+srv  update_slots: all slots are idle
+[GIN] 2026/08/30 - 04:35:32 | 200 |  2.101230941s |       127.0.0.1 | POST     "/v1/embeddings"
+[GIN] 2026/08/30 - 04:45:11 | 200 |      53.561µs |       127.0.0.1 | GET      "/api/version"
+time=2026-08-30T05:02:12.481-08:00 level=INFO source=server.go:109 msg="using llama-server for model" model=/home/eileen/.ollama/models/blobs/sha256-970aa74c0a90ef7482477cf803618e776e173c007bf957f635f1015bfcfef0e6
+time=2026-08-30T05:02:12.481-08:00 level=WARN source=server.go:114 msg="requested context size too large for model" num_ctx=8192 n_ctx_train=2048
+time=2026-08-30T05:02:12.483-08:00 level=INFO source=llama_server.go:433 msg="starting llama-server" cmd="/home/eileen/.local/lib/ollama/llama-server --model /home/eileen/.ollama/models/blobs/sha256-970aa74c0a90ef7482477cf803618e776e173c007bf957f635f1015bfcfef0e6 --port 38925 --host 127.0.0.1 --no-webui --offline -c 2048 -np 1 --log-verbosity 4 --no-log-prefix --no-log-timestamps --flash-attn auto --embedding -b 2048 -ub 2048 --context-shift --keep 4"
+time=2026-08-30T05:02:12.485-08:00 level=INFO source=sched.go:613 msg="system memory" total="15.6 GiB" free="10.7 GiB" free_swap="6.6 GiB"
+time=2026-08-30T05:02:12.485-08:00 level=INFO source=sched.go:620 msg="gpu memory" id=0 library=CUDA available="4.5 GiB" free="5.0 GiB" minimum="457.0 MiB" overhead="0 B"
+time=2026-08-30T05:02:12.485-08:00 level=INFO source=llama_server.go:1048 msg="loading model via llama-server" model=/home/eileen/.ollama/models/blobs/sha256-970aa74c0a90ef7482477cf803618e776e173c007bf957f635f1015bfcfef0e6
+time=2026-08-30T05:02:12.485-08:00 level=INFO source=llama_server.go:1295 msg="waiting for llama-server to start responding"
+time=2026-08-30T05:02:12.486-08:00 level=INFO source=llama_server.go:1350 msg="waiting for llama-server to become available" status="llm server not responding"
+cmn  common_param: common_params_print_info: build 1 (9d77fa172) with GNU 13.3.1 for Linux x86_64
+cmn  common_param: common_params_print_info: verbosity = 4 (adjust with the `-lv N` CLI arg)
+cmn  common_param: device_info:
+cmn  common_param:   - CPU     : AMD Ryzen AI 9 HX 370 w/ Radeon 890M (15989 MiB, 15989 MiB free)
+cmn  common_param:   - CUDA0   : NVIDIA GeForce RTX 4050 Laptop GPU (6140 MiB, 5072 MiB free)
+cmn  common_param: system_info: n_threads = 12 (n_threads_batch = 12) / 24 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | AVX512_BF16 = 1 | LLAMAFILE = 1 | REPACK = 1 | CUDA : ARCHS = 750,800,860,870,890,900,1000,1030,1100,1200,1210 | USE_GRAPHS = 1 | 
+srv          init: using 23 threads for HTTP server
+srv          init: The UI is disabled
+srv          init: Use --ui/--no-ui (or deprecated --webui/--no-webui) to enable/disable
+srv  llama_server: -----------------
+srv  llama_server: CORS is set to allow all origins ('*') and no API key is set
+srv  llama_server: this can be a security risk (cross-origin attacks)
+srv  llama_server: more info: https://github.com/ggml-org/llama.cpp/pull/25655
+srv  llama_server: -----------------
+srv         start: binding port with default address family
+srv    load_model: loading model '/home/eileen/.ollama/models/blobs/sha256-970aa74c0a90ef7482477cf803618e776e173c007bf957f635f1015bfcfef0e6'
+srv    load_model: local path '/home/eileen/.ollama/models/blobs/sha256-970aa74c0a90ef7482477cf803618e776e173c007bf957f635f1015bfcfef0e6'
+cmn  common_init_: fitting params to device memory ...
+cmn  common_init_: (for bugs during this step try to reproduce them with -fit off, or provide --verbose logs if the bug only occurs with -fit on)
+common_params_fit_impl: getting device memory data for initial parameters:
+common_memory_breakdown_print: | memory breakdown [MiB]          | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - CUDA0 (RTX 4050 Laptop GPU) |  6140 = 5072 + ( 308 =   216 +       0 +      92) +         760 |
+common_memory_breakdown_print: |   - Host                        |                   64 =    44 +       0 +      20                |
+common_params_fit_impl: projected to use 308 MiB of device memory vs. 5072 MiB of free device memory
+common_params_fit_impl: will leave 4763 >= 1024 MiB of free device memory, no changes needed
+common_fit_params: successfully fit params to free device memory
+common_fit_params: fitting params to free memory took 0.04 seconds
+llama_model_loader: loaded meta data with 24 key-value pairs and 112 tensors from /home/eileen/.ollama/models/blobs/sha256-970aa74c0a90ef7482477cf803618e776e173c007bf957f635f1015bfcfef0e6 (version GGUF V3 (latest))
+llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+llama_model_loader: - kv   0:                       general.architecture str              = nomic-bert
+llama_model_loader: - kv   1:                               general.name str              = nomic-embed-text-v1.5
+llama_model_loader: - kv   2:                     nomic-bert.block_count u32              = 12
+llama_model_loader: - kv   3:                  nomic-bert.context_length u32              = 2048
+llama_model_loader: - kv   4:                nomic-bert.embedding_length u32              = 768
+llama_model_loader: - kv   5:             nomic-bert.feed_forward_length u32              = 3072
+llama_model_loader: - kv   6:            nomic-bert.attention.head_count u32              = 12
+llama_model_loader: - kv   7:    nomic-bert.attention.layer_norm_epsilon f32              = 0.000000
+llama_model_loader: - kv   8:                          general.file_type u32              = 1
+llama_model_loader: - kv   9:                nomic-bert.attention.causal bool             = false
+llama_model_loader: - kv  10:                    nomic-bert.pooling_type u32              = 1
+llama_model_loader: - kv  11:                  nomic-bert.rope.freq_base f32              = 1000.000000
+llama_model_loader: - kv  12:            tokenizer.ggml.token_type_count u32              = 2
+llama_model_loader: - kv  13:                tokenizer.ggml.bos_token_id u32              = 101
+llama_model_loader: - kv  14:                tokenizer.ggml.eos_token_id u32              = 102
+llama_model_loader: - kv  15:                       tokenizer.ggml.model str              = bert
+llama_model_loader: - kv  16:                      tokenizer.ggml.tokens arr[str,30522]   = ["[PAD]", "[unused0]", "[unused1]", "...
+llama_model_loader: - kv  17:                      tokenizer.ggml.scores arr[f32,30522]   = [-1000.000000, -1000.000000, -1000.00...
+llama_model_loader: - kv  18:                  tokenizer.ggml.token_type arr[i32,30522]   = [3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+llama_model_loader: - kv  19:            tokenizer.ggml.unknown_token_id u32              = 100
+llama_model_loader: - kv  20:          tokenizer.ggml.seperator_token_id u32              = 102
+llama_model_loader: - kv  21:            tokenizer.ggml.padding_token_id u32              = 0
+llama_model_loader: - kv  22:                tokenizer.ggml.cls_token_id u32              = 101
+llama_model_loader: - kv  23:               tokenizer.ggml.mask_token_id u32              = 103
+llama_model_loader: - type  f32:   51 tensors
+llama_model_loader: - type  f16:   61 tensors
+print_info: file format = GGUF V3 (latest)
+print_info: file type   = F16
+print_info: file size   = 260.86 MiB (16.00 BPW) 
+llama_prepare_model_devices: using device CUDA0 (NVIDIA GeForce RTX 4050 Laptop GPU) (0000:c4:00.0) - 5072 MiB free
+load: 0 unused tokens
+load: special_eos_id is not in special_eog_ids - the tokenizer config may be incorrect
+load: printing all EOG tokens:
+load:   - 0 ('[PAD]')
+load:   - 102 ('[SEP]')
+load: special tokens cache size = 5
+load: token to piece cache size = 0.2032 MB
+print_info: arch                  = nomic-bert
+print_info: vocab_only            = 0
+print_info: no_alloc              = 0
+print_info: n_ctx_train           = 2048
+print_info: n_embd_inp            = 768
+print_info: n_embd                = 768
+print_info: n_embd_out            = 768
+print_info: n_layer               = 12
+print_info: n_layer_all           = 12
+print_info: n_head                = 12
+print_info: n_head_kv             = 12
+print_info: n_rot                 = 64
+print_info: n_swa                 = 0
+print_info: is_swa_any            = 0
+print_info: n_embd_head_k         = 64
+print_info: n_embd_head_v         = 64
+print_info: n_gqa                 = 1
+print_info: n_embd_k_gqa          = 768
+print_info: n_embd_v_gqa          = 768
+print_info: f_norm_eps            = 1.0e-12
+print_info: f_norm_rms_eps        = 0.0e+00
+print_info: f_clamp_kqv           = 0.0e+00
+print_info: f_max_alibi_bias      = 0.0e+00
+print_info: f_logit_scale         = 0.0e+00
+print_info: f_attn_scale          = 0.0e+00
+print_info: f_attn_value_scale    = 0.0000
+print_info: n_ff                  = 3072
+print_info: n_expert              = 0
+print_info: n_expert_used         = 0
+print_info: n_expert_groups       = 0
+print_info: n_group_used          = 0
+print_info: causal attn           = 0
+print_info: pooling type          = 1
+print_info: rope type             = 2
+print_info: rope scaling          = linear
+print_info: freq_base_train       = 1000.0
+print_info: freq_scale_train      = 1
+print_info: n_ctx_orig_yarn       = 2048
+print_info: rope_yarn_log_mul     = 0.0000
+print_info: rope_finetuned        = unknown
+print_info: model type            = 137M
+print_info: model params          = 136.73 M
+print_info: general.name          = nomic-embed-text-v1.5
+print_info: vocab type            = WPM
+print_info: n_vocab               = 30522
+print_info: n_merges              = 0
+print_info: BOS token             = 101 '[CLS]'
+print_info: EOS token             = 102 '[SEP]'
+print_info: UNK token             = 100 '[UNK]'
+print_info: SEP token             = 102 '[SEP]'
+print_info: PAD token             = 0 '[PAD]'
+print_info: MASK token            = 103 '[MASK]'
+print_info: LF token              = 0 '[PAD]'
+print_info: FIM PAD token         = 0 '[PAD]'
+print_info: EOG token             = 0 '[PAD]'
+print_info: EOG token             = 102 '[SEP]'
+print_info: max token length      = 21
+load_tensors: loading model tensors, this can take a while... (load_mode = mmap)
+time=2026-08-30T05:02:12.989-08:00 level=INFO source=llama_server.go:1350 msg="waiting for llama-server to become available" status="llm server loading model"
+load_tensors: offloading output layer to GPU
+load_tensors: offloading 11 repeating layers to GPU
+load_tensors: offloaded 13/13 layers to GPU
+load_tensors:   CPU_Mapped model buffer size =    44.72 MiB
+load_tensors:        CUDA0 model buffer size =   216.15 MiB
+cmn  common_init_: added [PAD] logit bias = -inf
+cmn  common_init_: added [SEP] logit bias = -inf
+llama_context: constructing llama_context
+llama_context: n_seq_max             = 1
+llama_context: n_ctx                 = 2048
+llama_context: n_ctx_seq             = 2048
+llama_context: n_batch               = 2048
+llama_context: n_ubatch              = 2048
+llama_context: causal_attn           = 0
+llama_context: flash_attn            = auto
+llama_context: kv_unified            = false
+llama_context: freq_base             = 1000.0
+llama_context: freq_scale            = 1
+llama_context: n_rs_seq              = 0
+llama_context: n_outputs_max         = 2048
+llama_context: n_outputs_max_per_seq = 1
+llama_context:  CUDA_Host  output buffer size =     0.12 MiB
+sched_reserve: reserving ...
+resolve_fused_ops: Flash Attention enabled
+resolve_fused_ops: resolving fused Gated Delta Net support:
+resolve_fused_ops: fused Gated Delta Net (autoregressive) enabled
+resolve_fused_ops: fused Gated Delta Net (chunked) enabled
+resolve_fused_ops: resolving fused Lightning Indexer support:
+resolve_fused_ops: Lightning Indexer enabled
+resolve_fused_ops: resolving fused DeepSeek V4 HC support:
+resolve_fused_ops: fused DeepSeek V4 HC pre enabled
+resolve_fused_ops: fused DeepSeek V4 HC comb enabled
+resolve_fused_ops: fused DeepSeek V4 HC post enabled
+sched_reserve:      CUDA0 compute buffer size =    92.03 MiB
+sched_reserve:  CUDA_Host compute buffer size =    20.03 MiB
+sched_reserve: graph nodes  = 335
+sched_reserve: graph splits = 2
+sched_reserve: reserve took 31.00 ms, sched copies = 1
+cmn          init: llama threadpool init, n_threads = 12
+cmn  common_init_: KV cache shifting is not supported for this context, disabling KV cache shifting
+cmn  common_init_: warming up the model with an empty run - please wait ... (--no-warmup to disable)
+srv    load_model: speculative decoding not supported by this context
+srv    load_model: initializing, n_slots = 1, n_ctx_slot = 2048, kv_unified = 'false'
+slot   load_model: id  0 | task -1 | new slot, n_ctx = 2048
+srv    load_model: prompt cache is enabled, size limit: 8192 MiB
+srv    load_model: use `--cache-ram 0` to disable the prompt cache
+srv    load_model: for more info see https://github.com/ggml-org/llama.cpp/pull/16391
+srv    load_model: context checkpoints enabled, max = 32, min spacing = 8192
+srv          init: idle slots will be saved to prompt cache upon starting a new task
+srv          init: init: chat template, example_format: '<|im_start|>system
+You are a helpful assistant<|im_end|>
+<|im_start|>user
+Hello<|im_end|>
+<|im_start|>assistant
+Hi there<|im_end|>
+<|im_start|>user
+How are you?<|im_end|>
+<|im_start|>assistant
+'
+srv          init: init: chat template, thinking = 0
+srv  llama_server: model loaded
+srv  llama_server: listening on http://127.0.0.1:38925
+srv  update_slots: all slots are idle
+time=2026-08-30T05:02:13.241-08:00 level=INFO source=llama_server.go:1362 msg="llama-server started in 0.76 seconds"
+time=2026-08-30T05:02:13.241-08:00 level=INFO source=images.go:381 msg="template selection" model=registry.ollama.ai/library/nomic-embed-text:latest selected=none renderer="" parser="" go_template=null chat_template=null harmony=null renderer_parser=null
+time=2026-08-30T05:02:13.241-08:00 level=INFO source=sched.go:728 msg="loaded runners" count=1
+time=2026-08-30T05:02:13.241-08:00 level=INFO source=llama_server.go:1295 msg="waiting for llama-server to start responding"
+time=2026-08-30T05:02:13.242-08:00 level=INFO source=llama_server.go:1362 msg="llama-server started in 0.76 seconds"
+slot get_availabl: id  0 | task -1 |  - skipping, slot is empty
+slot get_availabl: id  0 | task -1 | selected slot by LRU, t_last = -1
+slot launch_slot_: id  0 | task 0 | processing task, is_child = 0
+slot   operator(): id  0 | task 0 | new prompt, n_ctx_slot = 2048, n_keep = 0, task.n_tokens = 197
+slot   operator(): id  0 | task 0 | cached n_tokens = 0, memory_seq_rm [0, end)
+slot      release: id  0 | task 0 | stop processing: n_tokens = 197, truncated = 0
+srv  update_slots: all slots are idle
+[GIN] 2026/08/30 - 05:02:13 | 200 |  2.770435819s |       127.0.0.1 | POST     "/v1/embeddings"
+time=2026-08-30T05:30:48.045-08:00 level=INFO source=server.go:109 msg="using llama-server for model" model=/home/eileen/.ollama/models/blobs/sha256-970aa74c0a90ef7482477cf803618e776e173c007bf957f635f1015bfcfef0e6
+time=2026-08-30T05:30:48.045-08:00 level=WARN source=server.go:114 msg="requested context size too large for model" num_ctx=8192 n_ctx_train=2048
+time=2026-08-30T05:30:48.045-08:00 level=INFO source=llama_server.go:433 msg="starting llama-server" cmd="/home/eileen/.local/lib/ollama/llama-server --model /home/eileen/.ollama/models/blobs/sha256-970aa74c0a90ef7482477cf803618e776e173c007bf957f635f1015bfcfef0e6 --port 36437 --host 127.0.0.1 --no-webui --offline -c 2048 -np 1 --log-verbosity 4 --no-log-prefix --no-log-timestamps --flash-attn auto --embedding -b 2048 -ub 2048 --context-shift --keep 4"
+time=2026-08-30T05:30:48.046-08:00 level=INFO source=sched.go:613 msg="system memory" total="15.6 GiB" free="12.3 GiB" free_swap="6.6 GiB"
+time=2026-08-30T05:30:48.046-08:00 level=INFO source=sched.go:620 msg="gpu memory" id=0 library=CUDA available="4.5 GiB" free="5.0 GiB" minimum="457.0 MiB" overhead="0 B"
+time=2026-08-30T05:30:48.046-08:00 level=INFO source=llama_server.go:1048 msg="loading model via llama-server" model=/home/eileen/.ollama/models/blobs/sha256-970aa74c0a90ef7482477cf803618e776e173c007bf957f635f1015bfcfef0e6
+time=2026-08-30T05:30:48.046-08:00 level=INFO source=llama_server.go:1295 msg="waiting for llama-server to start responding"
+time=2026-08-30T05:30:48.046-08:00 level=INFO source=llama_server.go:1350 msg="waiting for llama-server to become available" status="llm server not responding"
+cmn  common_param: common_params_print_info: build 1 (9d77fa172) with GNU 13.3.1 for Linux x86_64
+cmn  common_param: common_params_print_info: verbosity = 4 (adjust with the `-lv N` CLI arg)
+cmn  common_param: device_info:
+cmn  common_param:   - CPU     : AMD Ryzen AI 9 HX 370 w/ Radeon 890M (15989 MiB, 15989 MiB free)
+cmn  common_param:   - CUDA0   : NVIDIA GeForce RTX 4050 Laptop GPU (6140 MiB, 5072 MiB free)
+cmn  common_param: system_info: n_threads = 12 (n_threads_batch = 12) / 24 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | AVX512_BF16 = 1 | LLAMAFILE = 1 | REPACK = 1 | CUDA : ARCHS = 750,800,860,870,890,900,1000,1030,1100,1200,1210 | USE_GRAPHS = 1 | 
+srv          init: using 23 threads for HTTP server
+srv          init: The UI is disabled
+srv          init: Use --ui/--no-ui (or deprecated --webui/--no-webui) to enable/disable
+srv  llama_server: -----------------
+srv  llama_server: CORS is set to allow all origins ('*') and no API key is set
+srv  llama_server: this can be a security risk (cross-origin attacks)
+srv  llama_server: more info: https://github.com/ggml-org/llama.cpp/pull/25655
+srv  llama_server: -----------------
+srv         start: binding port with default address family
+srv    load_model: loading model '/home/eileen/.ollama/models/blobs/sha256-970aa74c0a90ef7482477cf803618e776e173c007bf957f635f1015bfcfef0e6'
+srv    load_model: local path '/home/eileen/.ollama/models/blobs/sha256-970aa74c0a90ef7482477cf803618e776e173c007bf957f635f1015bfcfef0e6'
+cmn  common_init_: fitting params to device memory ...
+cmn  common_init_: (for bugs during this step try to reproduce them with -fit off, or provide --verbose logs if the bug only occurs with -fit on)
+common_params_fit_impl: getting device memory data for initial parameters:
+common_memory_breakdown_print: | memory breakdown [MiB]          | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - CUDA0 (RTX 4050 Laptop GPU) |  6140 = 5072 + ( 308 =   216 +       0 +      92) +         760 |
+common_memory_breakdown_print: |   - Host                        |                   64 =    44 +       0 +      20                |
+common_params_fit_impl: projected to use 308 MiB of device memory vs. 5072 MiB of free device memory
+common_params_fit_impl: will leave 4763 >= 1024 MiB of free device memory, no changes needed
+common_fit_params: successfully fit params to free device memory
+common_fit_params: fitting params to free memory took 0.03 seconds
+llama_model_loader: loaded meta data with 24 key-value pairs and 112 tensors from /home/eileen/.ollama/models/blobs/sha256-970aa74c0a90ef7482477cf803618e776e173c007bf957f635f1015bfcfef0e6 (version GGUF V3 (latest))
+llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+llama_model_loader: - kv   0:                       general.architecture str              = nomic-bert
+llama_model_loader: - kv   1:                               general.name str              = nomic-embed-text-v1.5
+llama_model_loader: - kv   2:                     nomic-bert.block_count u32              = 12
+llama_model_loader: - kv   3:                  nomic-bert.context_length u32              = 2048
+llama_model_loader: - kv   4:                nomic-bert.embedding_length u32              = 768
+llama_model_loader: - kv   5:             nomic-bert.feed_forward_length u32              = 3072
+llama_model_loader: - kv   6:            nomic-bert.attention.head_count u32              = 12
+llama_model_loader: - kv   7:    nomic-bert.attention.layer_norm_epsilon f32              = 0.000000
+llama_model_loader: - kv   8:                          general.file_type u32              = 1
+llama_model_loader: - kv   9:                nomic-bert.attention.causal bool             = false
+llama_model_loader: - kv  10:                    nomic-bert.pooling_type u32              = 1
+llama_model_loader: - kv  11:                  nomic-bert.rope.freq_base f32              = 1000.000000
+llama_model_loader: - kv  12:            tokenizer.ggml.token_type_count u32              = 2
+llama_model_loader: - kv  13:                tokenizer.ggml.bos_token_id u32              = 101
+llama_model_loader: - kv  14:                tokenizer.ggml.eos_token_id u32              = 102
+llama_model_loader: - kv  15:                       tokenizer.ggml.model str              = bert
+llama_model_loader: - kv  16:                      tokenizer.ggml.tokens arr[str,30522]   = ["[PAD]", "[unused0]", "[unused1]", "...
+llama_model_loader: - kv  17:                      tokenizer.ggml.scores arr[f32,30522]   = [-1000.000000, -1000.000000, -1000.00...
+llama_model_loader: - kv  18:                  tokenizer.ggml.token_type arr[i32,30522]   = [3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+llama_model_loader: - kv  19:            tokenizer.ggml.unknown_token_id u32              = 100
+llama_model_loader: - kv  20:          tokenizer.ggml.seperator_token_id u32              = 102
+llama_model_loader: - kv  21:            tokenizer.ggml.padding_token_id u32              = 0
+llama_model_loader: - kv  22:                tokenizer.ggml.cls_token_id u32              = 101
+llama_model_loader: - kv  23:               tokenizer.ggml.mask_token_id u32              = 103
+llama_model_loader: - type  f32:   51 tensors
+llama_model_loader: - type  f16:   61 tensors
+print_info: file format = GGUF V3 (latest)
+print_info: file type   = F16
+print_info: file size   = 260.86 MiB (16.00 BPW) 
+llama_prepare_model_devices: using device CUDA0 (NVIDIA GeForce RTX 4050 Laptop GPU) (0000:c4:00.0) - 5072 MiB free
+load: 0 unused tokens
+load: special_eos_id is not in special_eog_ids - the tokenizer config may be incorrect
+load: printing all EOG tokens:
+load:   - 0 ('[PAD]')
+load:   - 102 ('[SEP]')
+load: special tokens cache size = 5
+load: token to piece cache size = 0.2032 MB
+print_info: arch                  = nomic-bert
+print_info: vocab_only            = 0
+print_info: no_alloc              = 0
+print_info: n_ctx_train           = 2048
+print_info: n_embd_inp            = 768
+print_info: n_embd                = 768
+print_info: n_embd_out            = 768
+print_info: n_layer               = 12
+print_info: n_layer_all           = 12
+print_info: n_head                = 12
+print_info: n_head_kv             = 12
+print_info: n_rot                 = 64
+print_info: n_swa                 = 0
+print_info: is_swa_any            = 0
+print_info: n_embd_head_k         = 64
+print_info: n_embd_head_v         = 64
+print_info: n_gqa                 = 1
+print_info: n_embd_k_gqa          = 768
+print_info: n_embd_v_gqa          = 768
+print_info: f_norm_eps            = 1.0e-12
+print_info: f_norm_rms_eps        = 0.0e+00
+print_info: f_clamp_kqv           = 0.0e+00
+print_info: f_max_alibi_bias      = 0.0e+00
+print_info: f_logit_scale         = 0.0e+00
+print_info: f_attn_scale          = 0.0e+00
+print_info: f_attn_value_scale    = 0.0000
+print_info: n_ff                  = 3072
+print_info: n_expert              = 0
+print_info: n_expert_used         = 0
+print_info: n_expert_groups       = 0
+print_info: n_group_used          = 0
+print_info: causal attn           = 0
+print_info: pooling type          = 1
+print_info: rope type             = 2
+print_info: rope scaling          = linear
+print_info: freq_base_train       = 1000.0
+print_info: freq_scale_train      = 1
+print_info: n_ctx_orig_yarn       = 2048
+print_info: rope_yarn_log_mul     = 0.0000
+print_info: rope_finetuned        = unknown
+print_info: model type            = 137M
+print_info: model params          = 136.73 M
+print_info: general.name          = nomic-embed-text-v1.5
+print_info: vocab type            = WPM
+print_info: n_vocab               = 30522
+print_info: n_merges              = 0
+print_info: BOS token             = 101 '[CLS]'
+print_info: EOS token             = 102 '[SEP]'
+print_info: UNK token             = 100 '[UNK]'
+print_info: SEP token             = 102 '[SEP]'
+print_info: PAD token             = 0 '[PAD]'
+print_info: MASK token            = 103 '[MASK]'
+print_info: LF token              = 0 '[PAD]'
+print_info: FIM PAD token         = 0 '[PAD]'
+print_info: EOG token             = 0 '[PAD]'
+print_info: EOG token             = 102 '[SEP]'
+print_info: max token length      = 21
+load_tensors: loading model tensors, this can take a while... (load_mode = mmap)
+load_tensors: offloading output layer to GPU
+load_tensors: offloading 11 repeating layers to GPU
+load_tensors: offloaded 13/13 layers to GPU
+load_tensors:   CPU_Mapped model buffer size =    44.72 MiB
+load_tensors:        CUDA0 model buffer size =   216.15 MiB
+cmn  common_init_: added [PAD] logit bias = -inf
+cmn  common_init_: added [SEP] logit bias = -inf
+llama_context: constructing llama_context
+llama_context: n_seq_max             = 1
+llama_context: n_ctx                 = 2048
+llama_context: n_ctx_seq             = 2048
+llama_context: n_batch               = 2048
+llama_context: n_ubatch              = 2048
+llama_context: causal_attn           = 0
+llama_context: flash_attn            = auto
+llama_context: kv_unified            = false
+llama_context: freq_base             = 1000.0
+llama_context: freq_scale            = 1
+llama_context: n_rs_seq              = 0
+llama_context: n_outputs_max         = 2048
+llama_context: n_outputs_max_per_seq = 1
+llama_context:  CUDA_Host  output buffer size =     0.12 MiB
+sched_reserve: reserving ...
+resolve_fused_ops: Flash Attention enabled
+resolve_fused_ops: resolving fused Gated Delta Net support:
+resolve_fused_ops: fused Gated Delta Net (autoregressive) enabled
+resolve_fused_ops: fused Gated Delta Net (chunked) enabled
+resolve_fused_ops: resolving fused Lightning Indexer support:
+resolve_fused_ops: Lightning Indexer enabled
+resolve_fused_ops: resolving fused DeepSeek V4 HC support:
+resolve_fused_ops: fused DeepSeek V4 HC pre enabled
+resolve_fused_ops: fused DeepSeek V4 HC comb enabled
+resolve_fused_ops: fused DeepSeek V4 HC post enabled
+sched_reserve:      CUDA0 compute buffer size =    92.03 MiB
+sched_reserve:  CUDA_Host compute buffer size =    20.03 MiB
+sched_reserve: graph nodes  = 335
+sched_reserve: graph splits = 2
+sched_reserve: reserve took 26.69 ms, sched copies = 1
+cmn          init: llama threadpool init, n_threads = 12
+cmn  common_init_: KV cache shifting is not supported for this context, disabling KV cache shifting
+cmn  common_init_: warming up the model with an empty run - please wait ... (--no-warmup to disable)
+time=2026-08-30T05:30:48.549-08:00 level=INFO source=llama_server.go:1350 msg="waiting for llama-server to become available" status="llm server loading model"
+srv    load_model: speculative decoding not supported by this context
+srv    load_model: initializing, n_slots = 1, n_ctx_slot = 2048, kv_unified = 'false'
+slot   load_model: id  0 | task -1 | new slot, n_ctx = 2048
+srv    load_model: prompt cache is enabled, size limit: 8192 MiB
+srv    load_model: use `--cache-ram 0` to disable the prompt cache
+srv    load_model: for more info see https://github.com/ggml-org/llama.cpp/pull/16391
+srv    load_model: context checkpoints enabled, max = 32, min spacing = 8192
+srv          init: idle slots will be saved to prompt cache upon starting a new task
+srv          init: init: chat template, example_format: '<|im_start|>system
+You are a helpful assistant<|im_end|>
+<|im_start|>user
+Hello<|im_end|>
+<|im_start|>assistant
+Hi there<|im_end|>
+<|im_start|>user
+How are you?<|im_end|>
+<|im_start|>assistant
+'
+srv          init: init: chat template, thinking = 0
+srv  llama_server: model loaded
+srv  llama_server: listening on http://127.0.0.1:36437
+srv  update_slots: all slots are idle
+time=2026-08-30T05:30:48.800-08:00 level=INFO source=llama_server.go:1362 msg="llama-server started in 0.75 seconds"
+time=2026-08-30T05:30:48.801-08:00 level=INFO source=images.go:381 msg="template selection" model=registry.ollama.ai/library/nomic-embed-text:latest selected=none renderer="" parser="" go_template=null chat_template=null harmony=null renderer_parser=null
+time=2026-08-30T05:30:48.801-08:00 level=INFO source=sched.go:728 msg="loaded runners" count=1
+time=2026-08-30T05:30:48.801-08:00 level=INFO source=llama_server.go:1295 msg="waiting for llama-server to start responding"
+time=2026-08-30T05:30:48.802-08:00 level=INFO source=llama_server.go:1362 msg="llama-server started in 0.76 seconds"
+slot get_availabl: id  0 | task -1 |  - skipping, slot is empty
+slot get_availabl: id  0 | task -1 | selected slot by LRU, t_last = -1
+slot launch_slot_: id  0 | task 0 | processing task, is_child = 0
+slot   operator(): id  0 | task 0 | new prompt, n_ctx_slot = 2048, n_keep = 0, task.n_tokens = 387
+slot   operator(): id  0 | task 0 | cached n_tokens = 0, memory_seq_rm [0, end)
+slot      release: id  0 | task 0 | stop processing: n_tokens = 387, truncated = 0
+srv  update_slots: all slots are idle
+slot get_availabl: id  0 | task -1 |  - checking sim = 0.003 (1/306) > 0.100
+slot get_availabl: id  0 | task -1 | selected slot by LRU, t_last = 82157120480
+slot launch_slot_: id  0 | task 2 | processing task, is_child = 0
+slot   operator(): id  0 | task 2 | new prompt, n_ctx_slot = 2048, n_keep = 0, task.n_tokens = 306
+slot   operator(): id  0 | task 2 | cached n_tokens = 0, memory_seq_rm [0, end)
+slot      release: id  0 | task 2 | stop processing: n_tokens = 306, truncated = 0
+srv  update_slots: all slots are idle
+slot get_availabl: id  0 | task -1 |  - checking sim = 0.002 (1/404) > 0.100
+slot get_availabl: id  0 | task -1 | selected slot by LRU, t_last = 82157138803
+slot launch_slot_: id  0 | task 4 | processing task, is_child = 0
+slot   operator(): id  0 | task 4 | new prompt, n_ctx_slot = 2048, n_keep = 0, task.n_tokens = 404
+slot   operator(): id  0 | task 4 | cached n_tokens = 0, memory_seq_rm [0, end)
+slot      release: id  0 | task 4 | stop processing: n_tokens = 404, truncated = 0
+srv  update_slots: all slots are idle
+[GIN] 2026/08/30 - 05:30:49 | 200 |  2.459723285s |       127.0.0.1 | POST     "/v1/embeddings"
+time=2026-08-30T05:35:52.483-08:00 level=WARN source=runner.go:584 msg="llama-server GPU discovery watchdog timed out" OLLAMA_LIBRARY_PATH="[/home/eileen/.local/lib/ollama /home/eileen/.local/lib/ollama/cuda_v13]" extra_envs=map[CUDA_VISIBLE_DEVICES:0] error="context deadline exceeded"
+time=2026-08-30T05:35:52.485-08:00 level=INFO source=runner.go:522 msg="failure during llama-server GPU discovery" OLLAMA_LIBRARY_PATH="[/home/eileen/.local/lib/ollama /home/eileen/.local/lib/ollama/cuda_v13]" extra_envs=map[CUDA_VISIBLE_DEVICES:0] error="context deadline exceeded" detail=""
+time=2026-08-30T05:35:52.485-08:00 level=WARN source=runner.go:364 msg="unable to refresh free memory, using old values"
+time=2026-08-30T05:37:29.909-08:00 level=INFO source=server.go:109 msg="using llama-server for model" model=/home/eileen/.ollama/models/blobs/sha256-970aa74c0a90ef7482477cf803618e776e173c007bf957f635f1015bfcfef0e6
+time=2026-08-30T05:37:29.910-08:00 level=WARN source=server.go:114 msg="requested context size too large for model" num_ctx=8192 n_ctx_train=2048
+time=2026-08-30T05:37:29.912-08:00 level=INFO source=llama_server.go:433 msg="starting llama-server" cmd="/home/eileen/.local/lib/ollama/llama-server --model /home/eileen/.ollama/models/blobs/sha256-970aa74c0a90ef7482477cf803618e776e173c007bf957f635f1015bfcfef0e6 --port 33339 --host 127.0.0.1 --no-webui --offline -c 2048 -np 1 --log-verbosity 4 --no-log-prefix --no-log-timestamps --flash-attn auto --embedding -b 2048 -ub 2048 --context-shift --keep 4"
+time=2026-08-30T05:37:29.914-08:00 level=INFO source=sched.go:613 msg="system memory" total="15.6 GiB" free="12.6 GiB" free_swap="6.5 GiB"
+time=2026-08-30T05:37:29.914-08:00 level=INFO source=sched.go:620 msg="gpu memory" id=0 library=CUDA available="4.5 GiB" free="5.0 GiB" minimum="457.0 MiB" overhead="0 B"
+time=2026-08-30T05:37:29.914-08:00 level=INFO source=llama_server.go:1048 msg="loading model via llama-server" model=/home/eileen/.ollama/models/blobs/sha256-970aa74c0a90ef7482477cf803618e776e173c007bf957f635f1015bfcfef0e6
+time=2026-08-30T05:37:29.914-08:00 level=INFO source=llama_server.go:1295 msg="waiting for llama-server to start responding"
+time=2026-08-30T05:37:29.919-08:00 level=INFO source=llama_server.go:1350 msg="waiting for llama-server to become available" status="llm server not responding"
+cmn  common_param: common_params_print_info: build 1 (9d77fa172) with GNU 13.3.1 for Linux x86_64
+cmn  common_param: common_params_print_info: verbosity = 4 (adjust with the `-lv N` CLI arg)
+cmn  common_param: device_info:
+cmn  common_param:   - CPU     : AMD Ryzen AI 9 HX 370 w/ Radeon 890M (15989 MiB, 15989 MiB free)
+cmn  common_param:   - CUDA0   : NVIDIA GeForce RTX 4050 Laptop GPU (6140 MiB, 5072 MiB free)
+cmn  common_param: system_info: n_threads = 12 (n_threads_batch = 12) / 24 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | AVX512_BF16 = 1 | LLAMAFILE = 1 | REPACK = 1 | CUDA : ARCHS = 750,800,860,870,890,900,1000,1030,1100,1200,1210 | USE_GRAPHS = 1 | 
+srv          init: using 23 threads for HTTP server
+srv          init: The UI is disabled
+srv          init: Use --ui/--no-ui (or deprecated --webui/--no-webui) to enable/disable
+srv  llama_server: -----------------
+srv  llama_server: CORS is set to allow all origins ('*') and no API key is set
+srv  llama_server: this can be a security risk (cross-origin attacks)
+srv  llama_server: more info: https://github.com/ggml-org/llama.cpp/pull/25655
+srv  llama_server: -----------------
+srv         start: binding port with default address family
+srv    load_model: loading model '/home/eileen/.ollama/models/blobs/sha256-970aa74c0a90ef7482477cf803618e776e173c007bf957f635f1015bfcfef0e6'
+srv    load_model: local path '/home/eileen/.ollama/models/blobs/sha256-970aa74c0a90ef7482477cf803618e776e173c007bf957f635f1015bfcfef0e6'
+cmn  common_init_: fitting params to device memory ...
+cmn  common_init_: (for bugs during this step try to reproduce them with -fit off, or provide --verbose logs if the bug only occurs with -fit on)
+common_params_fit_impl: getting device memory data for initial parameters:
+common_memory_breakdown_print: | memory breakdown [MiB]          | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - CUDA0 (RTX 4050 Laptop GPU) |  6140 = 5072 + ( 308 =   216 +       0 +      92) +         760 |
+common_memory_breakdown_print: |   - Host                        |                   64 =    44 +       0 +      20                |
+common_params_fit_impl: projected to use 308 MiB of device memory vs. 5072 MiB of free device memory
+common_params_fit_impl: will leave 4763 >= 1024 MiB of free device memory, no changes needed
+common_fit_params: successfully fit params to free device memory
+common_fit_params: fitting params to free memory took 0.03 seconds
+llama_model_loader: loaded meta data with 24 key-value pairs and 112 tensors from /home/eileen/.ollama/models/blobs/sha256-970aa74c0a90ef7482477cf803618e776e173c007bf957f635f1015bfcfef0e6 (version GGUF V3 (latest))
+llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+llama_model_loader: - kv   0:                       general.architecture str              = nomic-bert
+llama_model_loader: - kv   1:                               general.name str              = nomic-embed-text-v1.5
+llama_model_loader: - kv   2:                     nomic-bert.block_count u32              = 12
+llama_model_loader: - kv   3:                  nomic-bert.context_length u32              = 2048
+llama_model_loader: - kv   4:                nomic-bert.embedding_length u32              = 768
+llama_model_loader: - kv   5:             nomic-bert.feed_forward_length u32              = 3072
+llama_model_loader: - kv   6:            nomic-bert.attention.head_count u32              = 12
+llama_model_loader: - kv   7:    nomic-bert.attention.layer_norm_epsilon f32              = 0.000000
+llama_model_loader: - kv   8:                          general.file_type u32              = 1
+llama_model_loader: - kv   9:                nomic-bert.attention.causal bool             = false
+llama_model_loader: - kv  10:                    nomic-bert.pooling_type u32              = 1
+llama_model_loader: - kv  11:                  nomic-bert.rope.freq_base f32              = 1000.000000
+llama_model_loader: - kv  12:            tokenizer.ggml.token_type_count u32              = 2
+llama_model_loader: - kv  13:                tokenizer.ggml.bos_token_id u32              = 101
+llama_model_loader: - kv  14:                tokenizer.ggml.eos_token_id u32              = 102
+llama_model_loader: - kv  15:                       tokenizer.ggml.model str              = bert
+llama_model_loader: - kv  16:                      tokenizer.ggml.tokens arr[str,30522]   = ["[PAD]", "[unused0]", "[unused1]", "...
+llama_model_loader: - kv  17:                      tokenizer.ggml.scores arr[f32,30522]   = [-1000.000000, -1000.000000, -1000.00...
+llama_model_loader: - kv  18:                  tokenizer.ggml.token_type arr[i32,30522]   = [3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+llama_model_loader: - kv  19:            tokenizer.ggml.unknown_token_id u32              = 100
+llama_model_loader: - kv  20:          tokenizer.ggml.seperator_token_id u32              = 102
+llama_model_loader: - kv  21:            tokenizer.ggml.padding_token_id u32              = 0
+llama_model_loader: - kv  22:                tokenizer.ggml.cls_token_id u32              = 101
+llama_model_loader: - kv  23:               tokenizer.ggml.mask_token_id u32              = 103
+llama_model_loader: - type  f32:   51 tensors
+llama_model_loader: - type  f16:   61 tensors
+print_info: file format = GGUF V3 (latest)
+print_info: file type   = F16
+print_info: file size   = 260.86 MiB (16.00 BPW) 
+llama_prepare_model_devices: using device CUDA0 (NVIDIA GeForce RTX 4050 Laptop GPU) (0000:c4:00.0) - 5072 MiB free
+load: 0 unused tokens
+load: special_eos_id is not in special_eog_ids - the tokenizer config may be incorrect
+load: printing all EOG tokens:
+load:   - 0 ('[PAD]')
+load:   - 102 ('[SEP]')
+load: special tokens cache size = 5
+load: token to piece cache size = 0.2032 MB
+print_info: arch                  = nomic-bert
+print_info: vocab_only            = 0
+print_info: no_alloc              = 0
+print_info: n_ctx_train           = 2048
+print_info: n_embd_inp            = 768
+print_info: n_embd                = 768
+print_info: n_embd_out            = 768
+print_info: n_layer               = 12
+print_info: n_layer_all           = 12
+print_info: n_head                = 12
+print_info: n_head_kv             = 12
+print_info: n_rot                 = 64
+print_info: n_swa                 = 0
+print_info: is_swa_any            = 0
+print_info: n_embd_head_k         = 64
+print_info: n_embd_head_v         = 64
+print_info: n_gqa                 = 1
+print_info: n_embd_k_gqa          = 768
+print_info: n_embd_v_gqa          = 768
+print_info: f_norm_eps            = 1.0e-12
+print_info: f_norm_rms_eps        = 0.0e+00
+print_info: f_clamp_kqv           = 0.0e+00
+print_info: f_max_alibi_bias      = 0.0e+00
+print_info: f_logit_scale         = 0.0e+00
+print_info: f_attn_scale          = 0.0e+00
+print_info: f_attn_value_scale    = 0.0000
+print_info: n_ff                  = 3072
+print_info: n_expert              = 0
+print_info: n_expert_used         = 0
+print_info: n_expert_groups       = 0
+print_info: n_group_used          = 0
+print_info: causal attn           = 0
+print_info: pooling type          = 1
+print_info: rope type             = 2
+print_info: rope scaling          = linear
+print_info: freq_base_train       = 1000.0
+print_info: freq_scale_train      = 1
+print_info: n_ctx_orig_yarn       = 2048
+print_info: rope_yarn_log_mul     = 0.0000
+print_info: rope_finetuned        = unknown
+print_info: model type            = 137M
+print_info: model params          = 136.73 M
+print_info: general.name          = nomic-embed-text-v1.5
+print_info: vocab type            = WPM
+print_info: n_vocab               = 30522
+print_info: n_merges              = 0
+print_info: BOS token             = 101 '[CLS]'
+print_info: EOS token             = 102 '[SEP]'
+print_info: UNK token             = 100 '[UNK]'
+print_info: SEP token             = 102 '[SEP]'
+print_info: PAD token             = 0 '[PAD]'
+print_info: MASK token            = 103 '[MASK]'
+print_info: LF token              = 0 '[PAD]'
+print_info: FIM PAD token         = 0 '[PAD]'
+print_info: EOG token             = 0 '[PAD]'
+print_info: EOG token             = 102 '[SEP]'
+print_info: max token length      = 21
+load_tensors: loading model tensors, this can take a while... (load_mode = mmap)
+time=2026-08-30T05:37:30.421-08:00 level=INFO source=llama_server.go:1350 msg="waiting for llama-server to become available" status="llm server loading model"
+load_tensors: offloading output layer to GPU
+load_tensors: offloading 11 repeating layers to GPU
+load_tensors: offloaded 13/13 layers to GPU
+load_tensors:   CPU_Mapped model buffer size =    44.72 MiB
+load_tensors:        CUDA0 model buffer size =   216.15 MiB
+cmn  common_init_: added [PAD] logit bias = -inf
+cmn  common_init_: added [SEP] logit bias = -inf
+llama_context: constructing llama_context
+llama_context: n_seq_max             = 1
+llama_context: n_ctx                 = 2048
+llama_context: n_ctx_seq             = 2048
+llama_context: n_batch               = 2048
+llama_context: n_ubatch              = 2048
+llama_context: causal_attn           = 0
+llama_context: flash_attn            = auto
+llama_context: kv_unified            = false
+llama_context: freq_base             = 1000.0
+llama_context: freq_scale            = 1
+llama_context: n_rs_seq              = 0
+llama_context: n_outputs_max         = 2048
+llama_context: n_outputs_max_per_seq = 1
+llama_context:  CUDA_Host  output buffer size =     0.12 MiB
+sched_reserve: reserving ...
+resolve_fused_ops: Flash Attention enabled
+resolve_fused_ops: resolving fused Gated Delta Net support:
+resolve_fused_ops: fused Gated Delta Net (autoregressive) enabled
+resolve_fused_ops: fused Gated Delta Net (chunked) enabled
+resolve_fused_ops: resolving fused Lightning Indexer support:
+resolve_fused_ops: Lightning Indexer enabled
+resolve_fused_ops: resolving fused DeepSeek V4 HC support:
+resolve_fused_ops: fused DeepSeek V4 HC pre enabled
+resolve_fused_ops: fused DeepSeek V4 HC comb enabled
+resolve_fused_ops: fused DeepSeek V4 HC post enabled
+sched_reserve:      CUDA0 compute buffer size =    92.03 MiB
+sched_reserve:  CUDA_Host compute buffer size =    20.03 MiB
+sched_reserve: graph nodes  = 335
+sched_reserve: graph splits = 2
+sched_reserve: reserve took 22.11 ms, sched copies = 1
+cmn          init: llama threadpool init, n_threads = 12
+cmn  common_init_: KV cache shifting is not supported for this context, disabling KV cache shifting
+cmn  common_init_: warming up the model with an empty run - please wait ... (--no-warmup to disable)
+srv    load_model: speculative decoding not supported by this context
+srv    load_model: initializing, n_slots = 1, n_ctx_slot = 2048, kv_unified = 'false'
+slot   load_model: id  0 | task -1 | new slot, n_ctx = 2048
+srv    load_model: prompt cache is enabled, size limit: 8192 MiB
+srv    load_model: use `--cache-ram 0` to disable the prompt cache
+srv    load_model: for more info see https://github.com/ggml-org/llama.cpp/pull/16391
+srv    load_model: context checkpoints enabled, max = 32, min spacing = 8192
+srv          init: idle slots will be saved to prompt cache upon starting a new task
+srv          init: init: chat template, example_format: '<|im_start|>system
+You are a helpful assistant<|im_end|>
+<|im_start|>user
+Hello<|im_end|>
+<|im_start|>assistant
+Hi there<|im_end|>
+<|im_start|>user
+How are you?<|im_end|>
+<|im_start|>assistant
+'
+srv          init: init: chat template, thinking = 0
+srv  llama_server: model loaded
+srv  llama_server: listening on http://127.0.0.1:33339
+srv  update_slots: all slots are idle
+time=2026-08-30T05:37:30.673-08:00 level=INFO source=llama_server.go:1362 msg="llama-server started in 0.76 seconds"
+time=2026-08-30T05:37:30.674-08:00 level=INFO source=images.go:381 msg="template selection" model=registry.ollama.ai/library/nomic-embed-text:latest selected=none renderer="" parser="" go_template=null chat_template=null harmony=null renderer_parser=null
+time=2026-08-30T05:37:30.674-08:00 level=INFO source=sched.go:728 msg="loaded runners" count=1
+time=2026-08-30T05:37:30.674-08:00 level=INFO source=llama_server.go:1295 msg="waiting for llama-server to start responding"
+time=2026-08-30T05:37:30.675-08:00 level=INFO source=llama_server.go:1362 msg="llama-server started in 0.76 seconds"
+slot get_availabl: id  0 | task -1 |  - skipping, slot is empty
+slot get_availabl: id  0 | task -1 | selected slot by LRU, t_last = -1
+slot launch_slot_: id  0 | task 0 | processing task, is_child = 0
+slot   operator(): id  0 | task 0 | new prompt, n_ctx_slot = 2048, n_keep = 0, task.n_tokens = 435
+slot   operator(): id  0 | task 0 | cached n_tokens = 0, memory_seq_rm [0, end)
+slot      release: id  0 | task 0 | stop processing: n_tokens = 435, truncated = 0
+srv  update_slots: all slots are idle
+[GIN] 2026/08/30 - 05:37:30 | 200 |  2.573799505s |       127.0.0.1 | POST     "/v1/embeddings"
+time=2026-08-30T06:22:44.977-08:00 level=INFO source=routes.go:1951 msg="server config" env="map[CUDA_VISIBLE_DEVICES: GGML_VK_VISIBLE_DEVICES: GPU_DEVICE_ORDINAL: HIP_VISIBLE_DEVICES: HSA_OVERRIDE_GFX_VERSION: HTTPS_PROXY: HTTP_PROXY: LLAMA_ARG_FIT: LLAMA_ARG_FIT_TARGET: NO_PROXY: OLLAMA_CONTEXT_LENGTH:0 OLLAMA_DEBUG:INFO OLLAMA_DEBUG_LOG_REQUESTS:false OLLAMA_EDITOR: OLLAMA_FLASH_ATTENTION:false OLLAMA_GO_TEMPLATE:true OLLAMA_GPU_OVERHEAD:0 OLLAMA_HOST:http://127.0.0.1:11434 OLLAMA_IGPU_ENABLE: OLLAMA_KEEP_ALIVE:5m0s OLLAMA_KV_CACHE_TYPE: OLLAMA_LLM_LIBRARY: OLLAMA_LOAD_TIMEOUT:5m0s OLLAMA_MAX_LOADED_MODELS:1 OLLAMA_MAX_QUEUE:512 OLLAMA_MAX_TRANSFER_STREAMS:4 OLLAMA_MODELS:/home/eileen/.ollama/models OLLAMA_NOHISTORY:false OLLAMA_NOPRUNE:false OLLAMA_NO_CLOUD:false OLLAMA_NUM_PARALLEL:1 OLLAMA_ORIGINS:[http://localhost https://localhost http://localhost:* https://localhost:* http://127.0.0.1 https://127.0.0.1 http://127.0.0.1:* https://127.0.0.1:* http://0.0.0.0 https://0.0.0.0 http://0.0.0.0:* https://0.0.0.0:* app://* file://* tauri://* vscode-webview://* vscode-file://*] OLLAMA_REMOTES:[ollama.com] OLLAMA_SCHED_SPREAD:false OLLAMA_VULKAN:true ROCR_VISIBLE_DEVICES: http_proxy: https_proxy: no_proxy:]"
+time=2026-08-30T06:22:44.978-08:00 level=INFO source=routes.go:1953 msg="Ollama cloud disabled: false"
+time=2026-08-30T06:22:45.078-08:00 level=INFO source=images.go:919 msg="total blobs: 70"
+time=2026-08-30T06:22:45.080-08:00 level=INFO source=images.go:926 msg="total unused blobs removed: 0"
+time=2026-08-30T06:22:45.082-08:00 level=INFO source=routes.go:2008 msg="Listening on 127.0.0.1:11434 (version 0.32.15)"
+time=2026-08-30T06:22:45.085-08:00 level=INFO source=runner.go:60 msg="discovering available GPUs..."
+time=2026-08-30T06:22:45.375-08:00 level=INFO source=model_list_cache.go:112 msg="model list cache hydration complete" models=17 failures=0 elapsed=293.372282ms
+time=2026-08-30T06:22:45.451-08:00 level=INFO source=model_recommendations.go:177 msg="model recommendations cache sleep scheduled" wait=4h19m2.584144802s consecutive_failures=0
+time=2026-08-30T06:22:52.841-08:00 level=INFO source=types.go:32 msg="inference compute" id=0 filter_id=0 library=CUDA compute=8.9 name=CUDA0 description="NVIDIA GeForce RTX 4050 Laptop GPU" libdirs=ollama,cuda_v13 driver=13.2 pci_id=0000:c4:00.0 type=discrete total="6.0 GiB" available="5.0 GiB"
+time=2026-08-30T06:22:52.841-08:00 level=INFO source=routes.go:2058 msg="vram-based default context" total_vram="6.0 GiB" default_num_ctx=4096
+[GIN] 2026/08/30 - 06:22:52 | 200 |     949.473µs |       127.0.0.1 | GET      "/api/tags"
+time=2026-08-30T06:22:54.950-08:00 level=INFO source=server.go:109 msg="using llama-server for model" model=/home/eileen/.ollama/models/blobs/sha256-e6a7edc1a4d7d9b2de136a221a57336b76316cfe53a252aeba814496c5ae439d
+time=2026-08-30T06:22:54.950-08:00 level=INFO source=llama_server.go:433 msg="starting llama-server" cmd="/home/eileen/.local/lib/ollama/llama-server --model /home/eileen/.ollama/models/blobs/sha256-e6a7edc1a4d7d9b2de136a221a57336b76316cfe53a252aeba814496c5ae439d --port 40059 --host 127.0.0.1 --no-webui --offline -c 4096 -np 1 --log-verbosity 4 --no-log-prefix --no-log-timestamps --flash-attn auto -b 512 -ub 512 --context-shift --keep 4"
+time=2026-08-30T06:22:54.951-08:00 level=INFO source=sched.go:613 msg="system memory" total="15.6 GiB" free="13.3 GiB" free_swap="8.0 GiB"
+time=2026-08-30T06:22:54.951-08:00 level=INFO source=sched.go:620 msg="gpu memory" id=0 library=CUDA available="4.5 GiB" free="5.0 GiB" minimum="457.0 MiB" overhead="0 B"
+time=2026-08-30T06:22:54.951-08:00 level=INFO source=llama_server.go:1048 msg="loading model via llama-server" model=/home/eileen/.ollama/models/blobs/sha256-e6a7edc1a4d7d9b2de136a221a57336b76316cfe53a252aeba814496c5ae439d
+time=2026-08-30T06:22:54.951-08:00 level=INFO source=llama_server.go:1295 msg="waiting for llama-server to start responding"
+time=2026-08-30T06:22:54.951-08:00 level=INFO source=llama_server.go:1350 msg="waiting for llama-server to become available" status="llm server not responding"
+cmn  common_param: common_params_print_info: build 1 (9d77fa172) with GNU 13.3.1 for Linux x86_64
+cmn  common_param: common_params_print_info: verbosity = 4 (adjust with the `-lv N` CLI arg)
+cmn  common_param: device_info:
+cmn  common_param:   - CPU     : AMD Ryzen AI 9 HX 370 w/ Radeon 890M (15989 MiB, 15989 MiB free)
+cmn  common_param:   - CUDA0   : NVIDIA GeForce RTX 4050 Laptop GPU (6140 MiB, 5072 MiB free)
+cmn  common_param: system_info: n_threads = 12 (n_threads_batch = 12) / 24 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | AVX512_BF16 = 1 | LLAMAFILE = 1 | REPACK = 1 | CUDA : ARCHS = 750,800,860,870,890,900,1000,1030,1100,1200,1210 | USE_GRAPHS = 1 | 
+srv          init: using 23 threads for HTTP server
+srv          init: The UI is disabled
+srv          init: Use --ui/--no-ui (or deprecated --webui/--no-webui) to enable/disable
+srv  llama_server: -----------------
+srv  llama_server: CORS is set to allow all origins ('*') and no API key is set
+srv  llama_server: this can be a security risk (cross-origin attacks)
+srv  llama_server: more info: https://github.com/ggml-org/llama.cpp/pull/25655
+srv  llama_server: -----------------
+srv         start: binding port with default address family
+srv    load_model: loading model '/home/eileen/.ollama/models/blobs/sha256-e6a7edc1a4d7d9b2de136a221a57336b76316cfe53a252aeba814496c5ae439d'
+srv    load_model: local path '/home/eileen/.ollama/models/blobs/sha256-e6a7edc1a4d7d9b2de136a221a57336b76316cfe53a252aeba814496c5ae439d'
+cmn  common_init_: fitting params to device memory ...
+cmn  common_init_: (for bugs during this step try to reproduce them with -fit off, or provide --verbose logs if the bug only occurs with -fit on)
+common_params_fit_impl: getting device memory data for initial parameters:
+time=2026-08-30T06:22:55.454-08:00 level=INFO source=llama_server.go:1350 msg="waiting for llama-server to become available" status="llm server loading model"
+common_memory_breakdown_print: | memory breakdown [MiB]          | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - CUDA0 (RTX 4050 Laptop GPU) |  6140 = 5072 + (5319 =  4643 +     576 +     100) +       -4251 |
+common_memory_breakdown_print: |   - Host                        |                  353 =   333 +       0 +      20                |
+common_params_fit_impl: projected to use 5319 MiB of device memory vs. 5072 MiB of free device memory
+common_params_fit_impl: cannot meet free memory target of 1024 MiB, need to reduce device memory by 1271 MiB
+common_params_fit_impl: context size set by user to 4096 -> no change
+common_params_fit_impl: id=0, target=4048 MiB
+common_memory_breakdown_print: | memory breakdown [MiB]          | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - CUDA0 (RTX 4050 Laptop GPU) |  6140 = 5072 + ( 111 =     0 +       0 +     111) +         957 |
+common_memory_breakdown_print: |   - Host                        |                 5573 =  4977 +     576 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer= 0, n_part= 0, overflow_type=4, mem=   111 MiB
+common_params_fit_impl: filling dense layers back-to-front:
+common_memory_breakdown_print: | memory breakdown [MiB]          | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - CUDA0 (RTX 4050 Laptop GPU) |  6140 = 5072 + (5319 =  4643 +     576 +     100) +       -4251 |
+common_memory_breakdown_print: |   - Host                        |                  353 =   333 +       0 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=37, n_part= 0, overflow_type=4, mem=  5319 MiB
+common_params_fit_impl: start filling device 0, delta=37
+common_memory_breakdown_print: | memory breakdown [MiB]          | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - CUDA0 (RTX 4050 Laptop GPU) |  6140 = 5072 + (4016 =  3476 +     416 +     123) +       -2947 |
+common_memory_breakdown_print: |   - Host                        |                 1680 =  1500 +     160 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=27, n_part= 0, overflow_type=4, mem=  4016 MiB
+common_params_fit_impl: set ngl_per_device[0].n_layer=27
+common_memory_breakdown_print: | memory breakdown [MiB]          | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - CUDA0 (RTX 4050 Laptop GPU) |  6140 = 5072 + (4141 =  3598 +     432 +     111) +       -3072 |
+common_memory_breakdown_print: |   - Host                        |                 1543 =  1379 +     144 +      20                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=28, n_part= 0, overflow_type=4, mem=  4141 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=28
+common_params_fit_impl:   - CUDA0 (NVIDIA GeForce RTX 4050 Laptop GPU): 27 layers,   4016 MiB used,   1055 MiB free
+common_fit_params: successfully fit params to free device memory
+common_fit_params: fitting params to free memory took 1.12 seconds
+llama_model_loader: loaded meta data with 32 key-value pairs and 399 tensors from /home/eileen/.ollama/models/blobs/sha256-e6a7edc1a4d7d9b2de136a221a57336b76316cfe53a252aeba814496c5ae439d (version GGUF V3 (latest))
+llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+llama_model_loader: - kv   0:                       general.architecture str              = qwen3
+llama_model_loader: - kv   1:                               general.type str              = model
+llama_model_loader: - kv   2:                               general.name str              = DeepSeek R1 0528 Qwen3 8B
+llama_model_loader: - kv   3:                           general.basename str              = DeepSeek-R1-0528-Qwen3
+llama_model_loader: - kv   4:                         general.size_label str              = 8B
+llama_model_loader: - kv   5:                            general.license str              = mit
+llama_model_loader: - kv   6:                          qwen3.block_count u32              = 36
+llama_model_loader: - kv   7:                       qwen3.context_length u32              = 131072
+llama_model_loader: - kv   8:                     qwen3.embedding_length u32              = 4096
+llama_model_loader: - kv   9:                  qwen3.feed_forward_length u32              = 12288
+llama_model_loader: - kv  10:                 qwen3.attention.head_count u32              = 32
+llama_model_loader: - kv  11:              qwen3.attention.head_count_kv u32              = 8
+llama_model_loader: - kv  12:                       qwen3.rope.freq_base f32              = 1000000.000000
+llama_model_loader: - kv  13:     qwen3.attention.layer_norm_rms_epsilon f32              = 0.000001
+llama_model_loader: - kv  14:                 qwen3.attention.key_length u32              = 128
+llama_model_loader: - kv  15:               qwen3.attention.value_length u32              = 128
+llama_model_loader: - kv  16:                    qwen3.rope.scaling.type str              = yarn
+llama_model_loader: - kv  17:                  qwen3.rope.scaling.factor f32              = 4.000000
+llama_model_loader: - kv  18: qwen3.rope.scaling.original_context_length u32              = 32768
+llama_model_loader: - kv  19:                       tokenizer.ggml.model str              = gpt2
+llama_model_loader: - kv  20:                         tokenizer.ggml.pre str              = qwen2
+llama_model_loader: - kv  21:                      tokenizer.ggml.tokens arr[str,151936]  = ["!", "\"", "#", "$", "%", "&", "'", ...
+llama_model_loader: - kv  22:                  tokenizer.ggml.token_type arr[i32,151936]  = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+llama_model_loader: - kv  23:                      tokenizer.ggml.merges arr[str,151387]  = ["Ġ Ġ", "ĠĠ ĠĠ", "i n", "Ġ t",...
+llama_model_loader: - kv  24:                tokenizer.ggml.bos_token_id u32              = 151643
+llama_model_loader: - kv  25:                tokenizer.ggml.eos_token_id u32              = 151645
+llama_model_loader: - kv  26:            tokenizer.ggml.padding_token_id u32              = 151645
+llama_model_loader: - kv  27:               tokenizer.ggml.add_bos_token bool             = false
+llama_model_loader: - kv  28:               tokenizer.ggml.add_eos_token bool             = false
+llama_model_loader: - kv  29:                    tokenizer.chat_template str              = {% if not add_generation_prompt is de...
+llama_model_loader: - kv  30:               general.quantization_version u32              = 2
+llama_model_loader: - kv  31:                          general.file_type u32              = 15
+llama_model_loader: - type  f32:  145 tensors
+llama_model_loader: - type  f16:   36 tensors
+llama_model_loader: - type q4_K:  199 tensors
+llama_model_loader: - type q6_K:   19 tensors
+print_info: file format = GGUF V3 (latest)
+print_info: file type   = Q4_K - Medium
+print_info: file size   = 4.86 GiB (5.10 BPW) 
+llama_prepare_model_devices: using device CUDA0 (NVIDIA GeForce RTX 4050 Laptop GPU) (0000:c4:00.0) - 5072 MiB free
+load: 0 unused tokens
+load: control-looking token: 128247 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+load: printing all EOG tokens:
+load:   - 128247 ('</s>')
+load:   - 151645 ('<｜end▁of▁sentence｜>')
+load:   - 151662 ('<|fim_pad|>')
+load:   - 151663 ('<|repo_name|>')
+load:   - 151664 ('<|file_sep|>')
+load: special tokens cache size = 29
+load: token to piece cache size = 0.9311 MB
+print_info: arch                  = qwen3
+print_info: vocab_only            = 0
+print_info: no_alloc              = 0
+print_info: n_ctx_train           = 131072
+print_info: n_embd_inp            = 4096
+print_info: n_embd                = 4096
+print_info: n_embd_out            = 4096
+print_info: n_layer               = 36
+print_info: n_layer_all           = 36
+print_info: n_head                = 32
+print_info: n_head_kv             = 8
+print_info: n_rot                 = 128
+print_info: n_swa                 = 0
+print_info: is_swa_any            = 0
+print_info: n_embd_head_k         = 128
+print_info: n_embd_head_v         = 128
+print_info: n_gqa                 = 4
+print_info: n_embd_k_gqa          = 1024
+print_info: n_embd_v_gqa          = 1024
+print_info: f_norm_eps            = 0.0e+00
+print_info: f_norm_rms_eps        = 1.0e-06
+print_info: f_clamp_kqv           = 0.0e+00
+print_info: f_max_alibi_bias      = 0.0e+00
+print_info: f_logit_scale         = 0.0e+00
+print_info: f_attn_scale          = 0.0e+00
+print_info: f_attn_value_scale    = 0.0000
+print_info: n_ff                  = 12288
+print_info: n_expert              = 0
+print_info: n_expert_used         = 0
+print_info: n_expert_groups       = 0
+print_info: n_group_used          = 0
+print_info: causal attn           = 1
+print_info: pooling type          = -1
+print_info: rope type             = 2
+print_info: rope scaling          = yarn
+print_info: freq_base_train       = 1000000.0
+print_info: freq_scale_train      = 0.25
+print_info: n_ctx_orig_yarn       = 32768
+print_info: rope_yarn_log_mul     = 0.0000
+print_info: rope_finetuned        = unknown
+print_info: model type            = 8B
+print_info: model params          = 8.19 B
+print_info: general.name          = DeepSeek R1 0528 Qwen3 8B
+print_info: vocab type            = BPE
+print_info: n_vocab               = 151936
+print_info: n_merges              = 151387
+print_info: BOS token             = 151643 '<｜begin▁of▁sentence｜>'
+print_info: EOS token             = 151645 '<｜end▁of▁sentence｜>'
+print_info: EOT token             = 151645 '<｜end▁of▁sentence｜>'
+print_info: PAD token             = 151645 '<｜end▁of▁sentence｜>'
+print_info: LF token              = 198 'Ċ'
+print_info: FIM PRE token         = 151659 '<|fim_prefix|>'
+print_info: FIM SUF token         = 151661 '<|fim_suffix|>'
+print_info: FIM MID token         = 151660 '<|fim_middle|>'
+print_info: FIM PAD token         = 151662 '<|fim_pad|>'
+print_info: FIM REP token         = 151663 '<|repo_name|>'
+print_info: FIM SEP token         = 151664 '<|file_sep|>'
+print_info: EOG token             = 128247 '</s>'
+print_info: EOG token             = 151645 '<｜end▁of▁sentence｜>'
+print_info: EOG token             = 151662 '<|fim_pad|>'
+print_info: EOG token             = 151663 '<|repo_name|>'
+print_info: EOG token             = 151664 '<|file_sep|>'
+print_info: max token length      = 256
+load_tensors: loading model tensors, this can take a while... (load_mode = mmap)
+load_tensors: offloading output layer to GPU
+load_tensors: offloading 26 repeating layers to GPU
+load_tensors: offloaded 27/37 layers to GPU
+load_tensors:   CPU_Mapped model buffer size =  1500.92 MiB
+load_tensors:        CUDA0 model buffer size =  3476.71 MiB
+cmn  common_init_: added </s> logit bias = -inf
+cmn  common_init_: added <｜end▁of▁sentence｜> logit bias = -inf
+cmn  common_init_: added <|fim_pad|> logit bias = -inf
+cmn  common_init_: added <|repo_name|> logit bias = -inf
+cmn  common_init_: added <|file_sep|> logit bias = -inf
+llama_context: constructing llama_context
+llama_context: n_seq_max             = 1
+llama_context: n_ctx                 = 4096
+llama_context: n_ctx_seq             = 4096
+llama_context: n_batch               = 512
+llama_context: n_ubatch              = 512
+llama_context: causal_attn           = 1
+llama_context: flash_attn            = auto
+llama_context: kv_unified            = false
+llama_context: freq_base             = 1000000.0
+llama_context: freq_scale            = 0.25
+llama_context: n_rs_seq              = 0
+llama_context: n_outputs_max         = 1
+llama_context: n_outputs_max_per_seq = 1
+llama_context: n_ctx_seq (4096) < n_ctx_train (131072) -- the full capacity of the model will not be utilized
+llama_context:  CUDA_Host  output buffer size =     0.58 MiB
+llama_kv_cache:        CPU KV buffer size =   160.00 MiB
+llama_kv_cache:      CUDA0 KV buffer size =   416.00 MiB
+llama_kv_cache: size =  576.00 MiB (  4096 cells,  36 layers,  1/1 seqs), K (f16):  288.00 MiB, V (f16):  288.00 MiB
+llama_kv_cache: attn_rot_k = 0, n_embd_head_k_all = 128
+llama_kv_cache: attn_rot_v = 0, n_embd_head_k_all = 128
+sched_reserve: reserving ...
+resolve_fused_ops: Flash Attention enabled
+resolve_fused_ops: resolving fused Gated Delta Net support:
+resolve_fused_ops: fused Gated Delta Net (autoregressive) enabled
+resolve_fused_ops: fused Gated Delta Net (chunked) enabled
+resolve_fused_ops: resolving fused Lightning Indexer support:
+resolve_fused_ops: Lightning Indexer enabled
+resolve_fused_ops: resolving fused DeepSeek V4 HC support:
+resolve_fused_ops: fused DeepSeek V4 HC pre enabled
+resolve_fused_ops: fused DeepSeek V4 HC comb enabled
+resolve_fused_ops: fused DeepSeek V4 HC post enabled
+sched_reserve:      CUDA0 compute buffer size =   123.39 MiB
+sched_reserve:  CUDA_Host compute buffer size =    20.01 MiB
+sched_reserve: graph nodes  = 1266
+sched_reserve: graph splits = 132 (with bs=512), 22 (with bs=1)
+sched_reserve: reserve took 25.51 ms, sched copies = 1
+cmn          init: llama threadpool init, n_threads = 12
+cmn  common_init_: warming up the model with an empty run - please wait ... (--no-warmup to disable)
+srv    load_model: initializing, n_slots = 1, n_ctx_slot = 4096, kv_unified = 'false'
+spec common_specu: no implementations specified for speculative decoding
+slot   load_model: id  0 | task -1 | new slot, n_ctx = 4096
+srv    load_model: prompt cache is enabled, size limit: 8192 MiB
+srv    load_model: use `--cache-ram 0` to disable the prompt cache
+srv    load_model: for more info see https://github.com/ggml-org/llama.cpp/pull/16391
+srv    load_model: context checkpoints enabled, max = 32, min spacing = 8192
+srv          init: idle slots will be saved to prompt cache upon starting a new task
+srv          init: init: chat template, example_format: '<｜begin▁of▁sentence｜>You are a helpful assistant<｜User｜>Hello<｜Assistant｜>Hi there<｜end▁of▁sentence｜><｜User｜>How are you?<｜Assistant｜>'
+srv          init: init: chat template, thinking = 1
+srv  llama_server: model loaded
+srv  llama_server: listening on http://127.0.0.1:40059
+srv  update_slots: all slots are idle
+time=2026-08-30T06:23:00.996-08:00 level=INFO source=llama_server.go:1362 msg="llama-server started in 6.05 seconds"
+time=2026-08-30T06:23:01.016-08:00 level=INFO source=images.go:381 msg="template selection" model=registry.ollama.ai/library/deepseek-r1:8b selected=gguf_chat_template renderer="" parser="" go_template="[completion thinking]" chat_template="[tools thinking completion]" harmony=null renderer_parser=null
+time=2026-08-30T06:23:01.016-08:00 level=INFO source=sched.go:728 msg="loaded runners" count=1
+time=2026-08-30T06:23:01.016-08:00 level=INFO source=llama_server.go:1295 msg="waiting for llama-server to start responding"
+time=2026-08-30T06:23:01.017-08:00 level=INFO source=llama_server.go:1362 msg="llama-server started in 6.07 seconds"
+srv  server_strea: conv_id= (empty=1)
+srv    operator(): chat format: peg-native
+slot get_availabl: id  0 | task -1 |  - skipping, slot is empty
+slot get_availabl: id  0 | task -1 | selected slot by LRU, t_last = -1
+srv  get_availabl: updating prompt cache
+srv          load:  - looking for better prompt, base f_keep = -1.000, f_sim = 0.000
+srv        update:  - cache state: 0 prompts, 0.000 MiB (limits: 8192.000 MiB, 4096 tokens, 8589934592 est)
+srv  get_availabl: prompt cache update took 0.01 ms
+slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+slot launch_slot_: id  0 | task -1 | sampler params: 
+	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+	top_k = 40, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.300
+	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+slot launch_slot_: id  0 | task 0 | processing task, is_child = 0
+slot   operator(): id  0 | task 0 | new prompt, n_ctx_slot = 4096, n_keep = 4, task.n_tokens = 57
+slot   operator(): id  0 | task 0 | cached n_tokens = 0, memory_seq_rm [0, end)
+slot init_sampler: id  0 | task 0 | init sampler, took 0.01 ms, tokens: text = 57, total = 57
+slot print_timing: id  0 | task 0 | n_gen =    100, tg =  16.69 t/s, tg_3s =  16.86 t/s
+slot print_timing: id  0 | task 0 | n_gen =    148, tg =  16.40 t/s, tg_3s =  15.82 t/s
+slot print_timing: id  0 | task 0 | n_gen =    210, tg =  17.41 t/s, tg_3s =  20.40 t/s
+slot print_timing: id  0 | task 0 | n_gen =    253, tg =  16.80 t/s, tg_3s =  14.33 t/s
+slot print_timing: id  0 | task 0 | n_gen =    308, tg =  17.02 t/s, tg_3s =  18.12 t/s
+slot print_timing: id  0 | task 0 | n_gen =    364, tg =  17.23 t/s, tg_3s =  18.47 t/s
+slot print_timing: id  0 | task 0 | prompt eval time =     409.69 ms /    57 tokens (    7.19 ms per token,   139.13 tokens per second)
+slot print_timing: id  0 | task 0 |        eval time =   21224.34 ms /   367 tokens (   57.99 ms per token,    17.24 tokens per second)
+slot print_timing: id  0 | task 0 |       total time =   21634.03 ms /   424 tokens
+slot print_timing: id  0 | task 0 |    graphs reused =        365
+slot      release: id  0 | task 0 | stop processing: n_tokens = 423, truncated = 0
+srv  update_slots: all slots are idle
+[GIN] 2026/08/30 - 06:23:22 | 200 | 29.663151639s |       127.0.0.1 | POST     "/api/chat"
+time=2026-08-30T06:53:26.176-08:00 level=WARN source=runner.go:584 msg="llama-server GPU discovery watchdog timed out" OLLAMA_LIBRARY_PATH="[/home/eileen/.local/lib/ollama /home/eileen/.local/lib/ollama/cuda_v13]" extra_envs=map[CUDA_VISIBLE_DEVICES:0] error="context deadline exceeded"
+time=2026-08-30T06:53:26.180-08:00 level=INFO source=runner.go:522 msg="failure during llama-server GPU discovery" OLLAMA_LIBRARY_PATH="[/home/eileen/.local/lib/ollama /home/eileen/.local/lib/ollama/cuda_v13]" extra_envs=map[CUDA_VISIBLE_DEVICES:0] error="context deadline exceeded" detail=""
+time=2026-08-30T06:53:26.181-08:00 level=WARN source=runner.go:364 msg="unable to refresh free memory, using old values"
+time=2026-08-30T06:53:27.675-08:00 level=WARN source=runner.go:584 msg="llama-server GPU discovery watchdog timed out" OLLAMA_LIBRARY_PATH="[/home/eileen/.local/lib/ollama /home/eileen/.local/lib/ollama/cuda_v13]" extra_envs=map[CUDA_VISIBLE_DEVICES:0] error="context deadline exceeded"
+time=2026-08-30T06:53:27.675-08:00 level=INFO source=runner.go:522 msg="failure during llama-server GPU discovery" OLLAMA_LIBRARY_PATH="[/home/eileen/.local/lib/ollama /home/eileen/.local/lib/ollama/cuda_v13]" extra_envs=map[CUDA_VISIBLE_DEVICES:0] error="context deadline exceeded" detail=""
+time=2026-08-30T06:53:27.675-08:00 level=WARN source=runner.go:364 msg="unable to refresh free memory, using old values"
+time=2026-08-30T06:53:27.675-08:00 level=WARN source=runner.go:584 msg="llama-server GPU discovery watchdog timed out" OLLAMA_LIBRARY_PATH="[/home/eileen/.local/lib/ollama /home/eileen/.local/lib/ollama/cuda_v13]" extra_envs=map[CUDA_VISIBLE_DEVICES:0] error="context deadline exceeded"
+time=2026-08-30T06:53:27.675-08:00 level=INFO source=runner.go:522 msg="failure during llama-server GPU discovery" OLLAMA_LIBRARY_PATH="[/home/eileen/.local/lib/ollama /home/eileen/.local/lib/ollama/cuda_v13]" extra_envs=map[CUDA_VISIBLE_DEVICES:0] error="context deadline exceeded" detail=""
+time=2026-08-30T06:53:27.675-08:00 level=WARN source=runner.go:364 msg="unable to refresh free memory, using old values"
+time=2026-08-30T06:53:27.675-08:00 level=WARN source=runner.go:584 msg="llama-server GPU discovery watchdog timed out" OLLAMA_LIBRARY_PATH="[/home/eileen/.local/lib/ollama /home/eileen/.local/lib/ollama/cuda_v13]" extra_envs=map[CUDA_VISIBLE_DEVICES:0] error="context deadline exceeded"
+time=2026-08-30T06:53:27.675-08:00 level=INFO source=runner.go:522 msg="failure during llama-server GPU discovery" OLLAMA_LIBRARY_PATH="[/home/eileen/.local/lib/ollama /home/eileen/.local/lib/ollama/cuda_v13]" extra_envs=map[CUDA_VISIBLE_DEVICES:0] error="context deadline exceeded" detail=""
+time=2026-08-30T06:53:27.675-08:00 level=WARN source=runner.go:364 msg="unable to refresh free memory, using old values"
+time=2026-08-30T06:53:27.678-08:00 level=WARN source=llama_server.go:306 msg="llama-server discovery: could not determine compute capability for CUDA device — architecture filtering disabled for this device. If inference crashes, check that the CUDA backend supports this GPU." device="NVIDIA GeForce RTX 4050 Laptop GPU" libDirs="[/home/eileen/.local/lib/ollama /home/eileen/.local/lib/ollama/cuda_v13]"
+[GIN] 2026/08/30 - 07:12:51 | 200 |   57.763812ms |       127.0.0.1 | GET      "/api/tags"
+time=2026-08-30T07:52:56.077-08:00 level=WARN source=runner.go:584 msg="llama-server GPU discovery watchdog timed out" OLLAMA_LIBRARY_PATH="[/home/eileen/.local/lib/ollama /home/eileen/.local/lib/ollama/cuda_v13]" extra_envs=map[CUDA_VISIBLE_DEVICES:0] error="context deadline exceeded"
+time=2026-08-30T07:52:56.079-08:00 level=INFO source=runner.go:522 msg="failure during llama-server GPU discovery" OLLAMA_LIBRARY_PATH="[/home/eileen/.local/lib/ollama /home/eileen/.local/lib/ollama/cuda_v13]" extra_envs=map[CUDA_VISIBLE_DEVICES:0] error="context deadline exceeded" detail=""
+time=2026-08-30T07:52:56.080-08:00 level=WARN source=runner.go:364 msg="unable to refresh free memory, using old values"
+time=2026-08-30T07:52:56.089-08:00 level=INFO source=server.go:109 msg="using llama-server for model" model=/home/eileen/.ollama/models/blobs/sha256-970aa74c0a90ef7482477cf803618e776e173c007bf957f635f1015bfcfef0e6
+time=2026-08-30T07:52:56.089-08:00 level=WARN source=server.go:114 msg="requested context size too large for model" num_ctx=8192 n_ctx_train=2048
+time=2026-08-30T07:52:56.094-08:00 level=INFO source=llama_server.go:433 msg="starting llama-server" cmd="/home/eileen/.local/lib/ollama/llama-server --model /home/eileen/.ollama/models/blobs/sha256-970aa74c0a90ef7482477cf803618e776e173c007bf957f635f1015bfcfef0e6 --port 43311 --host 127.0.0.1 --no-webui --offline -c 2048 -np 1 --log-verbosity 4 --no-log-prefix --no-log-timestamps --flash-attn auto --embedding -b 2048 -ub 2048 --context-shift --keep 4"
+time=2026-08-30T07:52:56.096-08:00 level=INFO source=sched.go:613 msg="system memory" total="15.6 GiB" free="10.5 GiB" free_swap="5.7 GiB"
+time=2026-08-30T07:52:56.097-08:00 level=INFO source=sched.go:620 msg="gpu memory" id=0 library=CUDA available="598.9 MiB" free="1.0 GiB" minimum="457.0 MiB" overhead="0 B"
+time=2026-08-30T07:52:56.097-08:00 level=INFO source=llama_server.go:1048 msg="loading model via llama-server" model=/home/eileen/.ollama/models/blobs/sha256-970aa74c0a90ef7482477cf803618e776e173c007bf957f635f1015bfcfef0e6
+time=2026-08-30T07:52:56.097-08:00 level=INFO source=llama_server.go:1295 msg="waiting for llama-server to start responding"
+time=2026-08-30T07:52:56.102-08:00 level=INFO source=llama_server.go:1350 msg="waiting for llama-server to become available" status="llm server not responding"
+cmn  common_param: common_params_print_info: build 1 (9d77fa172) with GNU 13.3.1 for Linux x86_64
+cmn  common_param: common_params_print_info: verbosity = 4 (adjust with the `-lv N` CLI arg)
+cmn  common_param: device_info:
+cmn  common_param:   - CPU     : AMD Ryzen AI 9 HX 370 w/ Radeon 890M (15989 MiB, 15989 MiB free)
+cmn  common_param:   - CUDA0   : NVIDIA GeForce RTX 4050 Laptop GPU (6140 MiB, 5072 MiB free)
+cmn  common_param: system_info: n_threads = 12 (n_threads_batch = 12) / 24 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | AVX512_BF16 = 1 | LLAMAFILE = 1 | REPACK = 1 | CUDA : ARCHS = 750,800,860,870,890,900,1000,1030,1100,1200,1210 | USE_GRAPHS = 1 | 
+srv          init: using 23 threads for HTTP server
+srv          init: The UI is disabled
+srv          init: Use --ui/--no-ui (or deprecated --webui/--no-webui) to enable/disable
+srv  llama_server: -----------------
+srv  llama_server: CORS is set to allow all origins ('*') and no API key is set
+srv  llama_server: this can be a security risk (cross-origin attacks)
+srv  llama_server: more info: https://github.com/ggml-org/llama.cpp/pull/25655
+srv  llama_server: -----------------
+srv         start: binding port with default address family
+srv    load_model: loading model '/home/eileen/.ollama/models/blobs/sha256-970aa74c0a90ef7482477cf803618e776e173c007bf957f635f1015bfcfef0e6'
+srv    load_model: local path '/home/eileen/.ollama/models/blobs/sha256-970aa74c0a90ef7482477cf803618e776e173c007bf957f635f1015bfcfef0e6'
+cmn  common_init_: fitting params to device memory ...
+cmn  common_init_: (for bugs during this step try to reproduce them with -fit off, or provide --verbose logs if the bug only occurs with -fit on)
+common_params_fit_impl: getting device memory data for initial parameters:
+common_memory_breakdown_print: | memory breakdown [MiB]          | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - CUDA0 (RTX 4050 Laptop GPU) |  6140 = 5072 + ( 308 =   216 +       0 +      92) +         760 |
+common_memory_breakdown_print: |   - Host                        |                   64 =    44 +       0 +      20                |
+common_params_fit_impl: projected to use 308 MiB of device memory vs. 5072 MiB of free device memory
+common_params_fit_impl: will leave 4763 >= 1024 MiB of free device memory, no changes needed
+common_fit_params: successfully fit params to free device memory
+common_fit_params: fitting params to free memory took 0.07 seconds
+llama_model_loader: loaded meta data with 24 key-value pairs and 112 tensors from /home/eileen/.ollama/models/blobs/sha256-970aa74c0a90ef7482477cf803618e776e173c007bf957f635f1015bfcfef0e6 (version GGUF V3 (latest))
+llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+llama_model_loader: - kv   0:                       general.architecture str              = nomic-bert
+llama_model_loader: - kv   1:                               general.name str              = nomic-embed-text-v1.5
+llama_model_loader: - kv   2:                     nomic-bert.block_count u32              = 12
+llama_model_loader: - kv   3:                  nomic-bert.context_length u32              = 2048
+llama_model_loader: - kv   4:                nomic-bert.embedding_length u32              = 768
+llama_model_loader: - kv   5:             nomic-bert.feed_forward_length u32              = 3072
+llama_model_loader: - kv   6:            nomic-bert.attention.head_count u32              = 12
+llama_model_loader: - kv   7:    nomic-bert.attention.layer_norm_epsilon f32              = 0.000000
+llama_model_loader: - kv   8:                          general.file_type u32              = 1
+llama_model_loader: - kv   9:                nomic-bert.attention.causal bool             = false
+llama_model_loader: - kv  10:                    nomic-bert.pooling_type u32              = 1
+llama_model_loader: - kv  11:                  nomic-bert.rope.freq_base f32              = 1000.000000
+llama_model_loader: - kv  12:            tokenizer.ggml.token_type_count u32              = 2
+llama_model_loader: - kv  13:                tokenizer.ggml.bos_token_id u32              = 101
+llama_model_loader: - kv  14:                tokenizer.ggml.eos_token_id u32              = 102
+llama_model_loader: - kv  15:                       tokenizer.ggml.model str              = bert
+llama_model_loader: - kv  16:                      tokenizer.ggml.tokens arr[str,30522]   = ["[PAD]", "[unused0]", "[unused1]", "...
+llama_model_loader: - kv  17:                      tokenizer.ggml.scores arr[f32,30522]   = [-1000.000000, -1000.000000, -1000.00...
+llama_model_loader: - kv  18:                  tokenizer.ggml.token_type arr[i32,30522]   = [3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+llama_model_loader: - kv  19:            tokenizer.ggml.unknown_token_id u32              = 100
+llama_model_loader: - kv  20:          tokenizer.ggml.seperator_token_id u32              = 102
+llama_model_loader: - kv  21:            tokenizer.ggml.padding_token_id u32              = 0
+llama_model_loader: - kv  22:                tokenizer.ggml.cls_token_id u32              = 101
+llama_model_loader: - kv  23:               tokenizer.ggml.mask_token_id u32              = 103
+llama_model_loader: - type  f32:   51 tensors
+llama_model_loader: - type  f16:   61 tensors
+print_info: file format = GGUF V3 (latest)
+print_info: file type   = F16
+print_info: file size   = 260.86 MiB (16.00 BPW) 
+llama_prepare_model_devices: using device CUDA0 (NVIDIA GeForce RTX 4050 Laptop GPU) (0000:c4:00.0) - 5072 MiB free
+load: 0 unused tokens
+load: special_eos_id is not in special_eog_ids - the tokenizer config may be incorrect
+load: printing all EOG tokens:
+load:   - 0 ('[PAD]')
+load:   - 102 ('[SEP]')
+load: special tokens cache size = 5
+load: token to piece cache size = 0.2032 MB
+print_info: arch                  = nomic-bert
+print_info: vocab_only            = 0
+print_info: no_alloc              = 0
+print_info: n_ctx_train           = 2048
+print_info: n_embd_inp            = 768
+print_info: n_embd                = 768
+print_info: n_embd_out            = 768
+print_info: n_layer               = 12
+print_info: n_layer_all           = 12
+print_info: n_head                = 12
+print_info: n_head_kv             = 12
+print_info: n_rot                 = 64
+print_info: n_swa                 = 0
+print_info: is_swa_any            = 0
+print_info: n_embd_head_k         = 64
+print_info: n_embd_head_v         = 64
+print_info: n_gqa                 = 1
+print_info: n_embd_k_gqa          = 768
+print_info: n_embd_v_gqa          = 768
+print_info: f_norm_eps            = 1.0e-12
+print_info: f_norm_rms_eps        = 0.0e+00
+print_info: f_clamp_kqv           = 0.0e+00
+print_info: f_max_alibi_bias      = 0.0e+00
+print_info: f_logit_scale         = 0.0e+00
+print_info: f_attn_scale          = 0.0e+00
+print_info: f_attn_value_scale    = 0.0000
+print_info: n_ff                  = 3072
+print_info: n_expert              = 0
+print_info: n_expert_used         = 0
+print_info: n_expert_groups       = 0
+print_info: n_group_used          = 0
+print_info: causal attn           = 0
+print_info: pooling type          = 1
+print_info: rope type             = 2
+print_info: rope scaling          = linear
+print_info: freq_base_train       = 1000.0
+print_info: freq_scale_train      = 1
+print_info: n_ctx_orig_yarn       = 2048
+print_info: rope_yarn_log_mul     = 0.0000
+print_info: rope_finetuned        = unknown
+print_info: model type            = 137M
+print_info: model params          = 136.73 M
+print_info: general.name          = nomic-embed-text-v1.5
+print_info: vocab type            = WPM
+print_info: n_vocab               = 30522
+print_info: n_merges              = 0
+print_info: BOS token             = 101 '[CLS]'
+print_info: EOS token             = 102 '[SEP]'
+print_info: UNK token             = 100 '[UNK]'
+print_info: SEP token             = 102 '[SEP]'
+print_info: PAD token             = 0 '[PAD]'
+print_info: MASK token            = 103 '[MASK]'
+print_info: LF token              = 0 '[PAD]'
+print_info: FIM PAD token         = 0 '[PAD]'
+print_info: EOG token             = 0 '[PAD]'
+print_info: EOG token             = 102 '[SEP]'
+print_info: max token length      = 21
+load_tensors: loading model tensors, this can take a while... (load_mode = mmap)
+time=2026-08-30T07:52:56.868-08:00 level=INFO source=llama_server.go:1350 msg="waiting for llama-server to become available" status="llm server loading model"
+load_tensors: offloading output layer to GPU
+load_tensors: offloading 11 repeating layers to GPU
+load_tensors: offloaded 13/13 layers to GPU
+load_tensors:   CPU_Mapped model buffer size =    44.72 MiB
+load_tensors:        CUDA0 model buffer size =   216.15 MiB
+cmn  common_init_: added [PAD] logit bias = -inf
+cmn  common_init_: added [SEP] logit bias = -inf
+llama_context: constructing llama_context
+llama_context: n_seq_max             = 1
+llama_context: n_ctx                 = 2048
+llama_context: n_ctx_seq             = 2048
+llama_context: n_batch               = 2048
+llama_context: n_ubatch              = 2048
+llama_context: causal_attn           = 0
+llama_context: flash_attn            = auto
+llama_context: kv_unified            = false
+llama_context: freq_base             = 1000.0
+llama_context: freq_scale            = 1
+llama_context: n_rs_seq              = 0
+llama_context: n_outputs_max         = 2048
+llama_context: n_outputs_max_per_seq = 1
+llama_context:  CUDA_Host  output buffer size =     0.12 MiB
+sched_reserve: reserving ...
+resolve_fused_ops: Flash Attention enabled
+resolve_fused_ops: resolving fused Gated Delta Net support:
+resolve_fused_ops: fused Gated Delta Net (autoregressive) enabled
+resolve_fused_ops: fused Gated Delta Net (chunked) enabled
+resolve_fused_ops: resolving fused Lightning Indexer support:
+resolve_fused_ops: Lightning Indexer enabled
+resolve_fused_ops: resolving fused DeepSeek V4 HC support:
+resolve_fused_ops: fused DeepSeek V4 HC pre enabled
+resolve_fused_ops: fused DeepSeek V4 HC comb enabled
+resolve_fused_ops: fused DeepSeek V4 HC post enabled
+sched_reserve:      CUDA0 compute buffer size =    92.03 MiB
+sched_reserve:  CUDA_Host compute buffer size =    20.03 MiB
+sched_reserve: graph nodes  = 335
+sched_reserve: graph splits = 2
+sched_reserve: reserve took 51.08 ms, sched copies = 1
+cmn          init: llama threadpool init, n_threads = 12
+cmn  common_init_: KV cache shifting is not supported for this context, disabling KV cache shifting
+cmn  common_init_: warming up the model with an empty run - please wait ... (--no-warmup to disable)
+srv    load_model: speculative decoding not supported by this context
+srv    load_model: initializing, n_slots = 1, n_ctx_slot = 2048, kv_unified = 'false'
+slot   load_model: id  0 | task -1 | new slot, n_ctx = 2048
+srv    load_model: prompt cache is enabled, size limit: 8192 MiB
+srv    load_model: use `--cache-ram 0` to disable the prompt cache
+srv    load_model: for more info see https://github.com/ggml-org/llama.cpp/pull/16391
+srv    load_model: context checkpoints enabled, max = 32, min spacing = 8192
+srv          init: idle slots will be saved to prompt cache upon starting a new task
+srv          init: init: chat template, example_format: '<|im_start|>system
+You are a helpful assistant<|im_end|>
+<|im_start|>user
+Hello<|im_end|>
+<|im_start|>assistant
+Hi there<|im_end|>
+<|im_start|>user
+How are you?<|im_end|>
+<|im_start|>assistant
+'
+srv          init: init: chat template, thinking = 0
+srv  llama_server: model loaded
+srv  llama_server: listening on http://127.0.0.1:43311
+srv  update_slots: all slots are idle
+time=2026-08-30T07:52:57.628-08:00 level=INFO source=llama_server.go:1362 msg="llama-server started in 1.53 seconds"
+time=2026-08-30T07:52:57.628-08:00 level=INFO source=images.go:381 msg="template selection" model=registry.ollama.ai/library/nomic-embed-text:latest selected=none renderer="" parser="" go_template=null chat_template=null harmony=null renderer_parser=null
+time=2026-08-30T07:52:57.629-08:00 level=INFO source=sched.go:728 msg="loaded runners" count=1
+time=2026-08-30T07:52:57.629-08:00 level=INFO source=llama_server.go:1295 msg="waiting for llama-server to start responding"
+time=2026-08-30T07:52:57.631-08:00 level=INFO source=llama_server.go:1362 msg="llama-server started in 1.54 seconds"
+slot get_availabl: id  0 | task -1 |  - skipping, slot is empty
+slot get_availabl: id  0 | task -1 | selected slot by LRU, t_last = -1
+slot launch_slot_: id  0 | task 0 | processing task, is_child = 0
+slot   operator(): id  0 | task 0 | new prompt, n_ctx_slot = 2048, n_keep = 0, task.n_tokens = 226
+slot   operator(): id  0 | task 0 | cached n_tokens = 0, memory_seq_rm [0, end)
+slot      release: id  0 | task 0 | stop processing: n_tokens = 226, truncated = 0
+srv  update_slots: all slots are idle
+slot get_availabl: id  0 | task -1 |  - checking sim = 0.002 (1/435) > 0.100
+slot get_availabl: id  0 | task -1 | selected slot by LRU, t_last = 5417304949
+slot launch_slot_: id  0 | task 2 | processing task, is_child = 0
+slot   operator(): id  0 | task 2 | new prompt, n_ctx_slot = 2048, n_keep = 0, task.n_tokens = 435
+slot   operator(): id  0 | task 2 | cached n_tokens = 0, memory_seq_rm [0, end)
+slot      release: id  0 | task 2 | stop processing: n_tokens = 435, truncated = 0
+srv  update_slots: all slots are idle
+slot get_availabl: id  0 | task -1 |  - checking sim = 0.007 (2/274) > 0.100
+slot get_availabl: id  0 | task -1 | selected slot by LRU, t_last = 5417546314
+slot launch_slot_: id  0 | task 4 | processing task, is_child = 0
+slot   operator(): id  0 | task 4 | new prompt, n_ctx_slot = 2048, n_keep = 0, task.n_tokens = 274
+slot   operator(): id  0 | task 4 | cached n_tokens = 0, memory_seq_rm [0, end)
+[GIN] 2026/08/30 - 07:52:58 | 200 |  5.159817872s |       127.0.0.1 | POST     "/v1/embeddings"
+slot      release: id  0 | task 4 | stop processing: n_tokens = 274, truncated = 0
+srv  update_slots: all slots are idle
+slot get_availabl: id  0 | task -1 |  - checking sim = 0.004 (2/553) > 0.100
+slot get_availabl: id  0 | task -1 | selected slot by LRU, t_last = 5417568166
+slot launch_slot_: id  0 | task 6 | processing task, is_child = 0
+slot   operator(): id  0 | task 6 | new prompt, n_ctx_slot = 2048, n_keep = 0, task.n_tokens = 553
+slot   operator(): id  0 | task 6 | cached n_tokens = 0, memory_seq_rm [0, end)
+slot      release: id  0 | task 6 | stop processing: n_tokens = 553, truncated = 0
+srv  update_slots: all slots are idle
+[GIN] 2026/08/30 - 07:52:58 | 200 |  5.338849029s |       127.0.0.1 | POST     "/v1/embeddings"
+[GIN] 2026/08/30 - 08:00:06 | 200 |    2.378785ms |       127.0.0.1 | GET      "/api/tags"
+time=2026-08-30T08:00:31.358-08:00 level=INFO source=server.go:109 msg="using llama-server for model" model=/home/eileen/.ollama/models/blobs/sha256-e6a7edc1a4d7d9b2de136a221a57336b76316cfe53a252aeba814496c5ae439d
+time=2026-08-30T08:00:31.359-08:00 level=INFO source=llama_server.go:433 msg="starting llama-server" cmd="/home/eileen/.local/lib/ollama/llama-server --model /home/eileen/.ollama/models/blobs/sha256-e6a7edc1a4d7d9b2de136a221a57336b76316cfe53a252aeba814496c5ae439d --port 44929 --host 127.0.0.1 --no-webui --offline -c 16384 -np 1 --log-verbosity 4 --no-log-prefix --no-log-timestamps --flash-attn auto -b 512 -ub 512 --context-shift --keep 4"
+time=2026-08-30T08:00:31.359-08:00 level=INFO source=sched.go:613 msg="system memory" total="15.6 GiB" free="10.3 GiB" free_swap="7.1 GiB"
+time=2026-08-30T08:00:31.359-08:00 level=INFO source=sched.go:620 msg="gpu memory" id=0 library=CUDA available="4.5 GiB" free="5.0 GiB" minimum="457.0 MiB" overhead="0 B"
+time=2026-08-30T08:00:31.359-08:00 level=INFO source=llama_server.go:1048 msg="loading model via llama-server" model=/home/eileen/.ollama/models/blobs/sha256-e6a7edc1a4d7d9b2de136a221a57336b76316cfe53a252aeba814496c5ae439d
+time=2026-08-30T08:00:31.359-08:00 level=INFO source=llama_server.go:1295 msg="waiting for llama-server to start responding"
+time=2026-08-30T08:00:31.360-08:00 level=INFO source=llama_server.go:1350 msg="waiting for llama-server to become available" status="llm server not responding"
+cmn  common_param: common_params_print_info: build 1 (9d77fa172) with GNU 13.3.1 for Linux x86_64
+cmn  common_param: common_params_print_info: verbosity = 4 (adjust with the `-lv N` CLI arg)
+cmn  common_param: device_info:
+cmn  common_param:   - CPU     : AMD Ryzen AI 9 HX 370 w/ Radeon 890M (15989 MiB, 15989 MiB free)
+cmn  common_param:   - CUDA0   : NVIDIA GeForce RTX 4050 Laptop GPU (6140 MiB, 5072 MiB free)
+cmn  common_param: system_info: n_threads = 12 (n_threads_batch = 12) / 24 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | AVX512_BF16 = 1 | LLAMAFILE = 1 | REPACK = 1 | CUDA : ARCHS = 750,800,860,870,890,900,1000,1030,1100,1200,1210 | USE_GRAPHS = 1 | 
+srv          init: using 23 threads for HTTP server
+srv          init: The UI is disabled
+srv          init: Use --ui/--no-ui (or deprecated --webui/--no-webui) to enable/disable
+srv  llama_server: -----------------
+srv  llama_server: CORS is set to allow all origins ('*') and no API key is set
+srv  llama_server: this can be a security risk (cross-origin attacks)
+srv  llama_server: more info: https://github.com/ggml-org/llama.cpp/pull/25655
+srv  llama_server: -----------------
+srv         start: binding port with default address family
+srv    load_model: loading model '/home/eileen/.ollama/models/blobs/sha256-e6a7edc1a4d7d9b2de136a221a57336b76316cfe53a252aeba814496c5ae439d'
+srv    load_model: local path '/home/eileen/.ollama/models/blobs/sha256-e6a7edc1a4d7d9b2de136a221a57336b76316cfe53a252aeba814496c5ae439d'
+cmn  common_init_: fitting params to device memory ...
+cmn  common_init_: (for bugs during this step try to reproduce them with -fit off, or provide --verbose logs if the bug only occurs with -fit on)
+common_params_fit_impl: getting device memory data for initial parameters:
+time=2026-08-30T08:00:31.863-08:00 level=INFO source=llama_server.go:1350 msg="waiting for llama-server to become available" status="llm server loading model"
+common_memory_breakdown_print: | memory breakdown [MiB]          | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - CUDA0 (RTX 4050 Laptop GPU) |  6140 = 5072 + (7059 =  4643 +    2304 +     112) +       -5991 |
+common_memory_breakdown_print: |   - Host                        |                  365 =   333 +       0 +      32                |
+common_params_fit_impl: projected to use 7059 MiB of device memory vs. 5072 MiB of free device memory
+common_params_fit_impl: cannot meet free memory target of 1024 MiB, need to reduce device memory by 3011 MiB
+common_params_fit_impl: context size set by user to 16384 -> no change
+common_params_fit_impl: id=0, target=4048 MiB
+common_memory_breakdown_print: | memory breakdown [MiB]          | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - CUDA0 (RTX 4050 Laptop GPU) |  6140 = 5072 + ( 136 =     0 +       0 +     136) +         932 |
+common_memory_breakdown_print: |   - Host                        |                 7313 =  4977 +    2304 +      32                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer= 0, n_part= 0, overflow_type=4, mem=   136 MiB
+common_params_fit_impl: filling dense layers back-to-front:
+common_memory_breakdown_print: | memory breakdown [MiB]          | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - CUDA0 (RTX 4050 Laptop GPU) |  6140 = 5072 + (7059 =  4643 +    2304 +     112) +       -5991 |
+common_memory_breakdown_print: |   - Host                        |                  365 =   333 +       0 +      32                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=37, n_part= 0, overflow_type=4, mem=  7059 MiB
+common_params_fit_impl: start filling device 0, delta=37
+common_memory_breakdown_print: | memory breakdown [MiB]          | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - CUDA0 (RTX 4050 Laptop GPU) |  6140 = 5072 + (4038 =  2686 +    1216 +     136) +       -2970 |
+common_memory_breakdown_print: |   - Host                        |                 3410 =  2290 +    1088 +      32                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=20, n_part= 0, overflow_type=4, mem=  4038 MiB
+common_params_fit_impl: set ngl_per_device[0].n_layer=20
+common_memory_breakdown_print: | memory breakdown [MiB]          | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - CUDA0 (RTX 4050 Laptop GPU) |  6140 = 5072 + (4212 =  2796 +    1280 +     136) +       -3143 |
+common_memory_breakdown_print: |   - Host                        |                 3237 =  2181 +    1024 +      32                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=21, n_part= 0, overflow_type=4, mem=  4212 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=21
+common_params_fit_impl:   - CUDA0 (NVIDIA GeForce RTX 4050 Laptop GPU): 20 layers,   4038 MiB used,   1033 MiB free
+common_fit_params: successfully fit params to free device memory
+common_fit_params: fitting params to free memory took 1.61 seconds
+llama_model_loader: loaded meta data with 32 key-value pairs and 399 tensors from /home/eileen/.ollama/models/blobs/sha256-e6a7edc1a4d7d9b2de136a221a57336b76316cfe53a252aeba814496c5ae439d (version GGUF V3 (latest))
+llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+llama_model_loader: - kv   0:                       general.architecture str              = qwen3
+llama_model_loader: - kv   1:                               general.type str              = model
+llama_model_loader: - kv   2:                               general.name str              = DeepSeek R1 0528 Qwen3 8B
+llama_model_loader: - kv   3:                           general.basename str              = DeepSeek-R1-0528-Qwen3
+llama_model_loader: - kv   4:                         general.size_label str              = 8B
+llama_model_loader: - kv   5:                            general.license str              = mit
+llama_model_loader: - kv   6:                          qwen3.block_count u32              = 36
+llama_model_loader: - kv   7:                       qwen3.context_length u32              = 131072
+llama_model_loader: - kv   8:                     qwen3.embedding_length u32              = 4096
+llama_model_loader: - kv   9:                  qwen3.feed_forward_length u32              = 12288
+llama_model_loader: - kv  10:                 qwen3.attention.head_count u32              = 32
+llama_model_loader: - kv  11:              qwen3.attention.head_count_kv u32              = 8
+llama_model_loader: - kv  12:                       qwen3.rope.freq_base f32              = 1000000.000000
+llama_model_loader: - kv  13:     qwen3.attention.layer_norm_rms_epsilon f32              = 0.000001
+llama_model_loader: - kv  14:                 qwen3.attention.key_length u32              = 128
+llama_model_loader: - kv  15:               qwen3.attention.value_length u32              = 128
+llama_model_loader: - kv  16:                    qwen3.rope.scaling.type str              = yarn
+llama_model_loader: - kv  17:                  qwen3.rope.scaling.factor f32              = 4.000000
+llama_model_loader: - kv  18: qwen3.rope.scaling.original_context_length u32              = 32768
+llama_model_loader: - kv  19:                       tokenizer.ggml.model str              = gpt2
+llama_model_loader: - kv  20:                         tokenizer.ggml.pre str              = qwen2
+llama_model_loader: - kv  21:                      tokenizer.ggml.tokens arr[str,151936]  = ["!", "\"", "#", "$", "%", "&", "'", ...
+llama_model_loader: - kv  22:                  tokenizer.ggml.token_type arr[i32,151936]  = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+llama_model_loader: - kv  23:                      tokenizer.ggml.merges arr[str,151387]  = ["Ġ Ġ", "ĠĠ ĠĠ", "i n", "Ġ t",...
+llama_model_loader: - kv  24:                tokenizer.ggml.bos_token_id u32              = 151643
+llama_model_loader: - kv  25:                tokenizer.ggml.eos_token_id u32              = 151645
+llama_model_loader: - kv  26:            tokenizer.ggml.padding_token_id u32              = 151645
+llama_model_loader: - kv  27:               tokenizer.ggml.add_bos_token bool             = false
+llama_model_loader: - kv  28:               tokenizer.ggml.add_eos_token bool             = false
+llama_model_loader: - kv  29:                    tokenizer.chat_template str              = {% if not add_generation_prompt is de...
+llama_model_loader: - kv  30:               general.quantization_version u32              = 2
+llama_model_loader: - kv  31:                          general.file_type u32              = 15
+llama_model_loader: - type  f32:  145 tensors
+llama_model_loader: - type  f16:   36 tensors
+llama_model_loader: - type q4_K:  199 tensors
+llama_model_loader: - type q6_K:   19 tensors
+print_info: file format = GGUF V3 (latest)
+print_info: file type   = Q4_K - Medium
+print_info: file size   = 4.86 GiB (5.10 BPW) 
+llama_prepare_model_devices: using device CUDA0 (NVIDIA GeForce RTX 4050 Laptop GPU) (0000:c4:00.0) - 5072 MiB free
+load: 0 unused tokens
+load: control-looking token: 128247 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+load: printing all EOG tokens:
+load:   - 128247 ('</s>')
+load:   - 151645 ('<｜end▁of▁sentence｜>')
+load:   - 151662 ('<|fim_pad|>')
+load:   - 151663 ('<|repo_name|>')
+load:   - 151664 ('<|file_sep|>')
+load: special tokens cache size = 29
+load: token to piece cache size = 0.9311 MB
+print_info: arch                  = qwen3
+print_info: vocab_only            = 0
+print_info: no_alloc              = 0
+print_info: n_ctx_train           = 131072
+print_info: n_embd_inp            = 4096
+print_info: n_embd                = 4096
+print_info: n_embd_out            = 4096
+print_info: n_layer               = 36
+print_info: n_layer_all           = 36
+print_info: n_head                = 32
+print_info: n_head_kv             = 8
+print_info: n_rot                 = 128
+print_info: n_swa                 = 0
+print_info: is_swa_any            = 0
+print_info: n_embd_head_k         = 128
+print_info: n_embd_head_v         = 128
+print_info: n_gqa                 = 4
+print_info: n_embd_k_gqa          = 1024
+print_info: n_embd_v_gqa          = 1024
+print_info: f_norm_eps            = 0.0e+00
+print_info: f_norm_rms_eps        = 1.0e-06
+print_info: f_clamp_kqv           = 0.0e+00
+print_info: f_max_alibi_bias      = 0.0e+00
+print_info: f_logit_scale         = 0.0e+00
+print_info: f_attn_scale          = 0.0e+00
+print_info: f_attn_value_scale    = 0.0000
+print_info: n_ff                  = 12288
+print_info: n_expert              = 0
+print_info: n_expert_used         = 0
+print_info: n_expert_groups       = 0
+print_info: n_group_used          = 0
+print_info: causal attn           = 1
+print_info: pooling type          = -1
+print_info: rope type             = 2
+print_info: rope scaling          = yarn
+print_info: freq_base_train       = 1000000.0
+print_info: freq_scale_train      = 0.25
+print_info: n_ctx_orig_yarn       = 32768
+print_info: rope_yarn_log_mul     = 0.0000
+print_info: rope_finetuned        = unknown
+print_info: model type            = 8B
+print_info: model params          = 8.19 B
+print_info: general.name          = DeepSeek R1 0528 Qwen3 8B
+print_info: vocab type            = BPE
+print_info: n_vocab               = 151936
+print_info: n_merges              = 151387
+print_info: BOS token             = 151643 '<｜begin▁of▁sentence｜>'
+print_info: EOS token             = 151645 '<｜end▁of▁sentence｜>'
+print_info: EOT token             = 151645 '<｜end▁of▁sentence｜>'
+print_info: PAD token             = 151645 '<｜end▁of▁sentence｜>'
+print_info: LF token              = 198 'Ċ'
+print_info: FIM PRE token         = 151659 '<|fim_prefix|>'
+print_info: FIM SUF token         = 151661 '<|fim_suffix|>'
+print_info: FIM MID token         = 151660 '<|fim_middle|>'
+print_info: FIM PAD token         = 151662 '<|fim_pad|>'
+print_info: FIM REP token         = 151663 '<|repo_name|>'
+print_info: FIM SEP token         = 151664 '<|file_sep|>'
+print_info: EOG token             = 128247 '</s>'
+print_info: EOG token             = 151645 '<｜end▁of▁sentence｜>'
+print_info: EOG token             = 151662 '<|fim_pad|>'
+print_info: EOG token             = 151663 '<|repo_name|>'
+print_info: EOG token             = 151664 '<|file_sep|>'
+print_info: max token length      = 256
+load_tensors: loading model tensors, this can take a while... (load_mode = mmap)
+load_tensors: offloading output layer to GPU
+load_tensors: offloading 19 repeating layers to GPU
+load_tensors: offloaded 20/37 layers to GPU
+load_tensors:   CPU_Mapped model buffer size =  2290.64 MiB
+load_tensors:        CUDA0 model buffer size =  2686.98 MiB
+cmn  common_init_: added </s> logit bias = -inf
+cmn  common_init_: added <｜end▁of▁sentence｜> logit bias = -inf
+cmn  common_init_: added <|fim_pad|> logit bias = -inf
+cmn  common_init_: added <|repo_name|> logit bias = -inf
+cmn  common_init_: added <|file_sep|> logit bias = -inf
+llama_context: constructing llama_context
+llama_context: n_seq_max             = 1
+llama_context: n_ctx                 = 16384
+llama_context: n_ctx_seq             = 16384
+llama_context: n_batch               = 512
+llama_context: n_ubatch              = 512
+llama_context: causal_attn           = 1
+llama_context: flash_attn            = auto
+llama_context: kv_unified            = false
+llama_context: freq_base             = 1000000.0
+llama_context: freq_scale            = 0.25
+llama_context: n_rs_seq              = 0
+llama_context: n_outputs_max         = 1
+llama_context: n_outputs_max_per_seq = 1
+llama_context: n_ctx_seq (16384) < n_ctx_train (131072) -- the full capacity of the model will not be utilized
+llama_context:  CUDA_Host  output buffer size =     0.58 MiB
+llama_kv_cache:        CPU KV buffer size =  1088.00 MiB
+llama_kv_cache:      CUDA0 KV buffer size =  1216.00 MiB
+llama_kv_cache: size = 2304.00 MiB ( 16384 cells,  36 layers,  1/1 seqs), K (f16): 1152.00 MiB, V (f16): 1152.00 MiB
+llama_kv_cache: attn_rot_k = 0, n_embd_head_k_all = 128
+llama_kv_cache: attn_rot_v = 0, n_embd_head_k_all = 128
+sched_reserve: reserving ...
+resolve_fused_ops: Flash Attention enabled
+resolve_fused_ops: resolving fused Gated Delta Net support:
+resolve_fused_ops: fused Gated Delta Net (autoregressive) enabled
+resolve_fused_ops: fused Gated Delta Net (chunked) enabled
+resolve_fused_ops: resolving fused Lightning Indexer support:
+resolve_fused_ops: Lightning Indexer enabled
+resolve_fused_ops: resolving fused DeepSeek V4 HC support:
+resolve_fused_ops: fused DeepSeek V4 HC pre enabled
+resolve_fused_ops: fused DeepSeek V4 HC comb enabled
+resolve_fused_ops: fused DeepSeek V4 HC post enabled
+sched_reserve:      CUDA0 compute buffer size =   136.00 MiB
+sched_reserve:  CUDA_Host compute buffer size =    32.01 MiB
+sched_reserve: graph nodes  = 1266
+sched_reserve: graph splits = 223 (with bs=512), 36 (with bs=1)
+sched_reserve: reserve took 48.66 ms, sched copies = 1
+cmn          init: llama threadpool init, n_threads = 12
+cmn  common_init_: warming up the model with an empty run - please wait ... (--no-warmup to disable)
+srv    load_model: initializing, n_slots = 1, n_ctx_slot = 16384, kv_unified = 'false'
+spec common_specu: no implementations specified for speculative decoding
+slot   load_model: id  0 | task -1 | new slot, n_ctx = 16384
+srv    load_model: prompt cache is enabled, size limit: 8192 MiB
+srv    load_model: use `--cache-ram 0` to disable the prompt cache
+srv    load_model: for more info see https://github.com/ggml-org/llama.cpp/pull/16391
+srv    load_model: context checkpoints enabled, max = 32, min spacing = 8192
+srv          init: idle slots will be saved to prompt cache upon starting a new task
+srv          init: init: chat template, example_format: '<｜begin▁of▁sentence｜>You are a helpful assistant<｜User｜>Hello<｜Assistant｜>Hi there<｜end▁of▁sentence｜><｜User｜>How are you?<｜Assistant｜>'
+srv          init: init: chat template, thinking = 1
+srv  llama_server: model loaded
+srv  llama_server: listening on http://127.0.0.1:44929
+srv  update_slots: all slots are idle
+time=2026-08-30T08:00:41.700-08:00 level=INFO source=llama_server.go:1362 msg="llama-server started in 10.34 seconds"
+time=2026-08-30T08:00:41.769-08:00 level=INFO source=images.go:381 msg="template selection" model=registry.ollama.ai/library/deepseek-r1:8b selected=gguf_chat_template renderer="" parser="" go_template="[completion thinking]" chat_template="[tools thinking completion]" harmony=null renderer_parser=null
+time=2026-08-30T08:00:41.769-08:00 level=INFO source=sched.go:728 msg="loaded runners" count=1
+time=2026-08-30T08:00:41.769-08:00 level=INFO source=llama_server.go:1295 msg="waiting for llama-server to start responding"
+time=2026-08-30T08:00:41.771-08:00 level=INFO source=llama_server.go:1362 msg="llama-server started in 10.41 seconds"
+srv  server_strea: conv_id= (empty=1)
+slot get_availabl: id  0 | task -1 |  - skipping, slot is empty
+slot get_availabl: id  0 | task -1 | selected slot by LRU, t_last = -1
+srv  get_availabl: updating prompt cache
+srv          load:  - looking for better prompt, base f_keep = -1.000, f_sim = 0.000
+srv        update:  - cache state: 0 prompts, 0.000 MiB (limits: 8192.000 MiB, 16384 tokens, 8589934592 est)
+srv  get_availabl: prompt cache update took 0.02 ms
+slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+slot launch_slot_: id  0 | task -1 | sampler params: 
+	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+	top_k = 40, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.300
+	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+slot launch_slot_: id  0 | task 0 | processing task, is_child = 0
+slot   operator(): id  0 | task 0 | new prompt, n_ctx_slot = 16384, n_keep = 4, task.n_tokens = 1944
+slot   operator(): id  0 | task 0 | cached n_tokens = 0, memory_seq_rm [0, end)
+slot   operator(): id  0 | task 0 | cached n_tokens = 512, memory_seq_rm [512, end)
+slot   operator(): id  0 | task 0 | cached n_tokens = 1024, memory_seq_rm [1024, end)
+slot   operator(): id  0 | task 0 | cached n_tokens = 1536, memory_seq_rm [1536, end)
+slot init_sampler: id  0 | task 0 | init sampler, took 0.30 ms, tokens: text = 1944, total = 1944
+slot print_timing: id  0 | task 0 | n_gen =    100, tg =   9.53 t/s, tg_3s =   9.62 t/s
+slot print_timing: id  0 | task 0 | n_gen =    123, tg =   9.05 t/s, tg_3s =   7.43 t/s
+slot print_timing: id  0 | task 0 | n_gen =    151, tg =   9.07 t/s, tg_3s =   9.16 t/s
+slot print_timing: id  0 | task 0 | n_gen =    174, tg =   8.80 t/s, tg_3s =   7.38 t/s
+slot print_timing: id  0 | task 0 | n_gen =    196, tg =   8.60 t/s, tg_3s =   7.30 t/s
+slot print_timing: id  0 | task 0 | n_gen =    224, tg =   8.52 t/s, tg_3s =   8.02 t/s
+slot print_timing: id  0 | task 0 | n_gen =    249, tg =   8.47 t/s, tg_3s =   8.03 t/s
+slot print_timing: id  0 | task 0 | n_gen =    270, tg =   8.31 t/s, tg_3s =   6.82 t/s
+slot print_timing: id  0 | task 0 | n_gen =    290, tg =   8.15 t/s, tg_3s =   6.43 t/s
+slot print_timing: id  0 | task 0 | n_gen =    312, tg =   8.07 t/s, tg_3s =   7.19 t/s
+slot print_timing: id  0 | task 0 | n_gen =    337, tg =   8.08 t/s, tg_3s =   8.14 t/s
+slot print_timing: id  0 | task 0 | n_gen =    358, tg =   8.00 t/s, tg_3s =   6.98 t/s
+slot print_timing: id  0 | task 0 | n_gen =    380, tg =   7.95 t/s, tg_3s =   7.13 t/s
+slot print_timing: id  0 | task 0 | n_gen =    403, tg =   7.91 t/s, tg_3s =   7.42 t/s
+slot print_timing: id  0 | task 0 | n_gen =    431, tg =   7.91 t/s, tg_3s =   7.88 t/s
+slot print_timing: id  0 | task 0 | n_gen =    458, tg =   7.96 t/s, tg_3s =   8.81 t/s
+slot print_timing: id  0 | task 0 | n_gen =    481, tg =   7.94 t/s, tg_3s =   7.59 t/s
+slot print_timing: id  0 | task 0 | n_gen =    503, tg =   7.91 t/s, tg_3s =   7.28 t/s
+slot print_timing: id  0 | task 0 | n_gen =    524, tg =   7.86 t/s, tg_3s =   6.80 t/s
+slot print_timing: id  0 | task 0 | n_gen =    546, tg =   7.82 t/s, tg_3s =   7.05 t/s
+slot print_timing: id  0 | task 0 | n_gen =    569, tg =   7.80 t/s, tg_3s =   7.28 t/s
+slot print_timing: id  0 | task 0 | n_gen =    594, tg =   7.82 t/s, tg_3s =   8.26 t/s
+slot print_timing: id  0 | task 0 | n_gen =    615, tg =   7.78 t/s, tg_3s =   6.87 t/s
+slot print_timing: id  0 | task 0 | n_gen =    636, tg =   7.75 t/s, tg_3s =   6.94 t/s
+slot print_timing: id  0 | task 0 | n_gen =    657, tg =   7.71 t/s, tg_3s =   6.70 t/s
+slot print_timing: id  0 | task 0 | n_gen =    679, tg =   7.68 t/s, tg_3s =   6.81 t/s
+slot print_timing: id  0 | task 0 | n_gen =    702, tg =   7.67 t/s, tg_3s =   7.51 t/s
+slot print_timing: id  0 | task 0 | n_gen =    723, tg =   7.65 t/s, tg_3s =   6.94 t/s
+slot print_timing: id  0 | task 0 | n_gen =    743, tg =   7.62 t/s, tg_3s =   6.63 t/s
+slot print_timing: id  0 | task 0 | n_gen =    763, tg =   7.59 t/s, tg_3s =   6.55 t/s
+slot print_timing: id  0 | task 0 | n_gen =    788, tg =   7.58 t/s, tg_3s =   7.45 t/s
+slot print_timing: id  0 | task 0 | n_gen =    812, tg =   7.59 t/s, tg_3s =   7.77 t/s
+slot print_timing: id  0 | task 0 | n_gen =    830, tg =   7.54 t/s, tg_3s =   5.87 t/s
+slot print_timing: id  0 | task 0 | n_gen =    856, tg =   7.57 t/s, tg_3s =   8.56 t/s
+slot print_timing: id  0 | task 0 | n_gen =    875, tg =   7.53 t/s, tg_3s =   6.23 t/s
+slot print_timing: id  0 | task 0 | n_gen =    895, tg =   7.51 t/s, tg_3s =   6.58 t/s
+slot print_timing: id  0 | task 0 | n_gen =    919, tg =   7.52 t/s, tg_3s =   7.95 t/s
+slot print_timing: id  0 | task 0 | n_gen =    939, tg =   7.50 t/s, tg_3s =   6.61 t/s
+slot print_timing: id  0 | task 0 | n_gen =    959, tg =   7.47 t/s, tg_3s =   6.61 t/s
+slot print_timing: id  0 | task 0 | n_gen =    984, tg =   7.46 t/s, tg_3s =   6.95 t/s
+slot print_timing: id  0 | task 0 | n_gen =   1009, tg =   7.47 t/s, tg_3s =   8.09 t/s
+slot print_timing: id  0 | task 0 | n_gen =   1035, tg =   7.49 t/s, tg_3s =   8.37 t/s
+slot print_timing: id  0 | task 0 | n_gen =   1054, tg =   7.47 t/s, tg_3s =   6.32 t/s
+slot print_timing: id  0 | task 0 | n_gen =   1076, tg =   7.45 t/s, tg_3s =   6.73 t/s
+slot print_timing: id  0 | task 0 | n_gen =   1100, tg =   7.44 t/s, tg_3s =   6.73 t/s
+slot print_timing: id  0 | task 0 | n_gen =   1126, tg =   7.45 t/s, tg_3s =   8.36 t/s
+slot print_timing: id  0 | task 0 | n_gen =   1147, tg =   7.44 t/s, tg_3s =   6.85 t/s
+slot print_timing: id  0 | task 0 | n_gen =   1172, tg =   7.46 t/s, tg_3s =   8.25 t/s
+slot print_timing: id  0 | task 0 | n_gen =   1193, tg =   7.45 t/s, tg_3s =   6.91 t/s
+slot print_timing: id  0 | task 0 | n_gen =   1215, tg =   7.44 t/s, tg_3s =   7.05 t/s
+slot print_timing: id  0 | task 0 | n_gen =   1241, tg =   7.46 t/s, tg_3s =   8.42 t/s
+slot print_timing: id  0 | task 0 | n_gen =   1262, tg =   7.45 t/s, tg_3s =   6.96 t/s
+slot print_timing: id  0 | task 0 | n_gen =   1287, tg =   7.46 t/s, tg_3s =   8.22 t/s
+slot print_timing: id  0 | task 0 | n_gen =   1306, tg =   7.44 t/s, tg_3s =   6.33 t/s
+slot print_timing: id  0 | task 0 | n_gen =   1326, tg =   7.43 t/s, tg_3s =   6.42 t/s
+slot print_timing: id  0 | task 0 | n_gen =   1350, tg =   7.43 t/s, tg_3s =   7.81 t/s
+slot print_timing: id  0 | task 0 | n_gen =   1369, tg =   7.41 t/s, tg_3s =   6.29 t/s
+slot print_timing: id  0 | task 0 | n_gen =   1389, tg =   7.40 t/s, tg_3s =   6.60 t/s
+slot print_timing: id  0 | task 0 | n_gen =   1410, tg =   7.39 t/s, tg_3s =   6.87 t/s
+slot print_timing: id  0 | task 0 | n_gen =   1431, tg =   7.38 t/s, tg_3s =   6.86 t/s
+slot print_timing: id  0 | task 0 | n_gen =   1454, tg =   7.39 t/s, tg_3s =   7.65 t/s
+slot print_timing: id  0 | task 0 | n_gen =   1475, tg =   7.38 t/s, tg_3s =   6.81 t/s
+slot print_timing: id  0 | task 0 | n_gen =   1499, tg =   7.39 t/s, tg_3s =   7.86 t/s
+slot print_timing: id  0 | task 0 | n_gen =   1518, tg =   7.37 t/s, tg_3s =   6.15 t/s
+slot print_timing: id  0 | task 0 | n_gen =   1537, tg =   7.35 t/s, tg_3s =   6.31 t/s
+slot print_timing: id  0 | task 0 | n_gen =   1560, tg =   7.35 t/s, tg_3s =   7.44 t/s
+slot print_timing: id  0 | task 0 | n_gen =   1579, tg =   7.33 t/s, tg_3s =   6.08 t/s
+slot print_timing: id  0 | task 0 | n_gen =   1605, tg =   7.35 t/s, tg_3s =   8.48 t/s
+slot print_timing: id  0 | task 0 | n_gen =   1626, tg =   7.34 t/s, tg_3s =   6.77 t/s
+slot print_timing: id  0 | task 0 | n_gen =   1652, tg =   7.36 t/s, tg_3s =   8.34 t/s
+slot print_timing: id  0 | task 0 | n_gen =   1673, tg =   7.35 t/s, tg_3s =   6.83 t/s
+slot print_timing: id  0 | task 0 | n_gen =   1699, tg =   7.36 t/s, tg_3s =   8.29 t/s
+slot print_timing: id  0 | task 0 | n_gen =   1720, tg =   7.36 t/s, tg_3s =   6.95 t/s
+slot print_timing: id  0 | task 0 | n_gen =   1745, tg =   7.37 t/s, tg_3s =   8.21 t/s
+slot print_timing: id  0 | task 0 | n_gen =   1770, tg =   7.38 t/s, tg_3s =   8.15 t/s
+slot print_timing: id  0 | task 0 | n_gen =   1791, tg =   7.37 t/s, tg_3s =   6.98 t/s
+slot print_timing: id  0 | task 0 | n_gen =   1816, tg =   7.38 t/s, tg_3s =   8.09 t/s
+slot print_timing: id  0 | task 0 | n_gen =   1837, tg =   7.38 t/s, tg_3s =   6.91 t/s
+slot print_timing: id  0 | task 0 | n_gen =   1862, tg =   7.39 t/s, tg_3s =   8.31 t/s
+slot print_timing: id  0 | task 0 | n_gen =   1883, tg =   7.38 t/s, tg_3s =   6.84 t/s
+slot print_timing: id  0 | task 0 | n_gen =   1903, tg =   7.37 t/s, tg_3s =   6.42 t/s
+slot print_timing: id  0 | task 0 | n_gen =   1928, tg =   7.38 t/s, tg_3s =   8.13 t/s
+slot print_timing: id  0 | task 0 | n_gen =   1948, tg =   7.37 t/s, tg_3s =   6.58 t/s
+slot print_timing: id  0 | task 0 | n_gen =   1973, tg =   7.38 t/s, tg_3s =   8.01 t/s
+slot print_timing: id  0 | task 0 | n_gen =   1994, tg =   7.37 t/s, tg_3s =   6.87 t/s
+slot print_timing: id  0 | task 0 | n_gen =   2019, tg =   7.38 t/s, tg_3s =   8.15 t/s
+slot print_timing: id  0 | task 0 | n_gen =   2039, tg =   7.37 t/s, tg_3s =   6.55 t/s
+slot print_timing: id  0 | task 0 | n_gen =   2064, tg =   7.38 t/s, tg_3s =   8.18 t/s
+slot print_timing: id  0 | task 0 | n_gen =   2089, tg =   7.37 t/s, tg_3s =   6.97 t/s
+slot print_timing: id  0 | task 0 | n_gen =   2113, tg =   7.38 t/s, tg_3s =   7.82 t/s
+slot print_timing: id  0 | task 0 | n_gen =   2133, tg =   7.37 t/s, tg_3s =   6.46 t/s
+slot print_timing: id  0 | task 0 | n_gen =   2156, tg =   7.37 t/s, tg_3s =   7.15 t/s
+slot print_timing: id  0 | task 0 | n_gen =   2180, tg =   7.37 t/s, tg_3s =   7.96 t/s
+slot print_timing: id  0 | task 0 | n_gen =   2205, tg =   7.38 t/s, tg_3s =   8.07 t/s
+slot print_timing: id  0 | task 0 | n_gen =   2225, tg =   7.37 t/s, tg_3s =   6.49 t/s
+slot print_timing: id  0 | task 0 | n_gen =   2245, tg =   7.36 t/s, tg_3s =   6.65 t/s
+slot print_timing: id  0 | task 0 | n_gen =   2266, tg =   7.36 t/s, tg_3s =   6.94 t/s
+slot print_timing: id  0 | task 0 | n_gen =   2291, tg =   7.37 t/s, tg_3s =   8.09 t/s
+slot print_timing: id  0 | task 0 | n_gen =   2312, tg =   7.36 t/s, tg_3s =   6.97 t/s
+slot print_timing: id  0 | task 0 | n_gen =   2336, tg =   7.37 t/s, tg_3s =   7.92 t/s
+slot print_timing: id  0 | task 0 | n_gen =   2361, tg =   7.36 t/s, tg_3s =   7.00 t/s
+slot print_timing: id  0 | task 0 | n_gen =   2386, tg =   7.37 t/s, tg_3s =   8.27 t/s
+slot print_timing: id  0 | task 0 | n_gen =   2407, tg =   7.37 t/s, tg_3s =   6.77 t/s
+slot print_timing: id  0 | task 0 | n_gen =   2432, tg =   7.37 t/s, tg_3s =   8.23 t/s
+slot print_timing: id  0 | task 0 | n_gen =   2452, tg =   7.37 t/s, tg_3s =   6.63 t/s
+slot print_timing: id  0 | task 0 | n_gen =   2474, tg =   7.36 t/s, tg_3s =   6.64 t/s
+slot print_timing: id  0 | task 0 | n_gen =   2499, tg =   7.37 t/s, tg_3s =   7.98 t/s
+slot print_timing: id  0 | task 0 | n_gen =   2519, tg =   7.36 t/s, tg_3s =   6.52 t/s
+slot print_timing: id  0 | task 0 | n_gen =   2539, tg =   7.35 t/s, tg_3s =   6.66 t/s
+slot print_timing: id  0 | task 0 | n_gen =   2564, tg =   7.36 t/s, tg_3s =   8.04 t/s
+slot print_timing: id  0 | task 0 | n_gen =   2585, tg =   7.35 t/s, tg_3s =   6.77 t/s
+slot print_timing: id  0 | task 0 | n_gen =   2609, tg =   7.36 t/s, tg_3s =   7.87 t/s
+slot print_timing: id  0 | task 0 | n_gen =   2630, tg =   7.35 t/s, tg_3s =   6.76 t/s
+slot print_timing: id  0 | task 0 | n_gen =   2650, tg =   7.35 t/s, tg_3s =   6.62 t/s
+slot print_timing: id  0 | task 0 | n_gen =   2671, tg =   7.34 t/s, tg_3s =   6.76 t/s
+slot print_timing: id  0 | task 0 | n_gen =   2694, tg =   7.34 t/s, tg_3s =   7.58 t/s
+slot print_timing: id  0 | task 0 | n_gen =   2714, tg =   7.34 t/s, tg_3s =   6.62 t/s
+slot print_timing: id  0 | task 0 | n_gen =   2739, tg =   7.35 t/s, tg_3s =   8.26 t/s
+slot print_timing: id  0 | task 0 | n_gen =   2759, tg =   7.34 t/s, tg_3s =   6.41 t/s
+slot print_timing: id  0 | task 0 | n_gen =   2784, tg =   7.34 t/s, tg_3s =   8.10 t/s
+slot print_timing: id  0 | task 0 | n_gen =   2805, tg =   7.34 t/s, tg_3s =   6.91 t/s
+slot print_timing: id  0 | task 0 | n_gen =   2825, tg =   7.33 t/s, tg_3s =   6.43 t/s
+slot print_timing: id  0 | task 0 | n_gen =   2849, tg =   7.34 t/s, tg_3s =   7.84 t/s
+slot print_timing: id  0 | task 0 | n_gen =   2873, tg =   7.34 t/s, tg_3s =   7.83 t/s
+slot print_timing: id  0 | task 0 | n_gen =   2893, tg =   7.33 t/s, tg_3s =   6.51 t/s
+slot print_timing: id  0 | task 0 | n_gen =   2917, tg =   7.34 t/s, tg_3s =   7.88 t/s
+slot print_timing: id  0 | task 0 | n_gen =   2937, tg =   7.33 t/s, tg_3s =   6.44 t/s
+slot print_timing: id  0 | task 0 | n_gen =   2957, tg =   7.33 t/s, tg_3s =   6.64 t/s
+slot print_timing: id  0 | task 0 | n_gen =   2981, tg =   7.33 t/s, tg_3s =   7.71 t/s
+slot print_timing: id  0 | task 0 | n_gen =   3001, tg =   7.32 t/s, tg_3s =   6.50 t/s
+slot print_timing: id  0 | task 0 | n_gen =   3021, tg =   7.32 t/s, tg_3s =   6.63 t/s
+slot print_timing: id  0 | task 0 | n_gen =   3045, tg =   7.32 t/s, tg_3s =   7.86 t/s
+slot print_timing: id  0 | task 0 | n_gen =   3067, tg =   7.32 t/s, tg_3s =   6.79 t/s
+slot print_timing: id  0 | task 0 | n_gen =   3091, tg =   7.32 t/s, tg_3s =   7.93 t/s
+slot print_timing: id  0 | task 0 | n_gen =   3111, tg =   7.32 t/s, tg_3s =   6.49 t/s
+slot print_timing: id  0 | task 0 | n_gen =   3133, tg =   7.31 t/s, tg_3s =   6.69 t/s
+slot print_timing: id  0 | task 0 | n_gen =   3157, tg =   7.32 t/s, tg_3s =   7.85 t/s
+slot print_timing: id  0 | task 0 | n_gen =   3177, tg =   7.31 t/s, tg_3s =   6.67 t/s
+slot print_timing: id  0 | task 0 | n_gen =   3201, tg =   7.32 t/s, tg_3s =   7.91 t/s
+slot print_timing: id  0 | task 0 | n_gen =   3221, tg =   7.31 t/s, tg_3s =   6.51 t/s
+slot print_timing: id  0 | task 0 | n_gen =   3241, tg =   7.30 t/s, tg_3s =   6.61 t/s
+slot print_timing: id  0 | task 0 | n_gen =   3261, tg =   7.30 t/s, tg_3s =   6.65 t/s
+slot print_timing: id  0 | task 0 | n_gen =   3285, tg =   7.30 t/s, tg_3s =   7.68 t/s
+slot print_timing: id  0 | task 0 | n_gen =   3304, tg =   7.30 t/s, tg_3s =   6.30 t/s
+slot print_timing: id  0 | task 0 | n_gen =   3327, tg =   7.30 t/s, tg_3s =   7.48 t/s
+slot print_timing: id  0 | task 0 | n_gen =   3346, tg =   7.29 t/s, tg_3s =   6.21 t/s
+slot print_timing: id  0 | task 0 | n_gen =   3369, tg =   7.29 t/s, tg_3s =   7.40 t/s
+slot print_timing: id  0 | task 0 | n_gen =   3390, tg =   7.29 t/s, tg_3s =   6.80 t/s
+slot print_timing: id  0 | task 0 | n_gen =   3415, tg =   7.29 t/s, tg_3s =   8.30 t/s
+slot print_timing: id  0 | task 0 | n_gen =   3436, tg =   7.29 t/s, tg_3s =   6.94 t/s
+slot print_timing: id  0 | task 0 | n_gen =   3461, tg =   7.30 t/s, tg_3s =   8.27 t/s
+slot print_timing: id  0 | task 0 | n_gen =   3482, tg =   7.30 t/s, tg_3s =   6.88 t/s
+slot print_timing: id  0 | task 0 | n_gen =   3503, tg =   7.29 t/s, tg_3s =   6.81 t/s
+slot print_timing: id  0 | task 0 | n_gen =   3527, tg =   7.30 t/s, tg_3s =   7.73 t/s
+slot print_timing: id  0 | task 0 | n_gen =   3545, tg =   7.29 t/s, tg_3s =   5.97 t/s
+slot print_timing: id  0 | task 0 | n_gen =   3568, tg =   7.29 t/s, tg_3s =   7.40 t/s
+slot print_timing: id  0 | task 0 | n_gen =   3589, tg =   7.28 t/s, tg_3s =   6.76 t/s
+slot print_timing: id  0 | task 0 | n_gen =   3603, tg =   7.27 t/s, tg_3s =   4.40 t/s
+slot print_timing: id  0 | task 0 | n_gen =   3618, tg =   7.25 t/s, tg_3s =   4.90 t/s
+slot print_timing: id  0 | task 0 | n_gen =   3639, tg =   7.25 t/s, tg_3s =   6.88 t/s
+slot print_timing: id  0 | task 0 | n_gen =   3658, tg =   7.24 t/s, tg_3s =   6.30 t/s
+slot print_timing: id  0 | task 0 | n_gen =   3677, tg =   7.24 t/s, tg_3s =   6.02 t/s
+slot print_timing: id  0 | task 0 | n_gen =   3698, tg =   7.23 t/s, tg_3s =   6.98 t/s
+slot print_timing: id  0 | task 0 | n_gen =   3714, tg =   7.22 t/s, tg_3s =   5.14 t/s
+slot print_timing: id  0 | task 0 | n_gen =   3729, tg =   7.21 t/s, tg_3s =   4.86 t/s
+slot print_timing: id  0 | task 0 | n_gen =   3746, tg =   7.20 t/s, tg_3s =   5.65 t/s
+slot print_timing: id  0 | task 0 | n_gen =   3763, tg =   7.19 t/s, tg_3s =   5.60 t/s
+slot print_timing: id  0 | task 0 | n_gen =   3781, tg =   7.18 t/s, tg_3s =   5.81 t/s
+slot print_timing: id  0 | task 0 | n_gen =   3797, tg =   7.17 t/s, tg_3s =   5.33 t/s
+slot print_timing: id  0 | task 0 | n_gen =   3815, tg =   7.16 t/s, tg_3s =   5.94 t/s
+slot print_timing: id  0 | task 0 | n_gen =   3837, tg =   7.16 t/s, tg_3s =   7.07 t/s
+slot print_timing: id  0 | task 0 | n_gen =   3855, tg =   7.16 t/s, tg_3s =   5.87 t/s
+slot print_timing: id  0 | task 0 | n_gen =   3876, tg =   7.15 t/s, tg_3s =   6.87 t/s
+slot print_timing: id  0 | task 0 | n_gen =   3894, tg =   7.15 t/s, tg_3s =   5.89 t/s
+slot print_timing: id  0 | task 0 | n_gen =   3915, tg =   7.14 t/s, tg_3s =   6.74 t/s
+slot print_timing: id  0 | task 0 | n_gen =   3933, tg =   7.14 t/s, tg_3s =   5.84 t/s
+slot print_timing: id  0 | task 0 | n_gen =   3952, tg =   7.13 t/s, tg_3s =   6.08 t/s
+slot print_timing: id  0 | task 0 | n_gen =   3970, tg =   7.12 t/s, tg_3s =   5.79 t/s
+slot print_timing: id  0 | task 0 | n_gen =   3988, tg =   7.12 t/s, tg_3s =   5.89 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4008, tg =   7.11 t/s, tg_3s =   5.96 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4029, tg =   7.11 t/s, tg_3s =   6.99 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4048, tg =   7.10 t/s, tg_3s =   6.17 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4071, tg =   7.11 t/s, tg_3s =   7.61 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4086, tg =   7.09 t/s, tg_3s =   4.73 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4105, tg =   7.09 t/s, tg_3s =   6.32 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4122, tg =   7.08 t/s, tg_3s =   5.58 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4141, tg =   7.07 t/s, tg_3s =   5.35 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4162, tg =   7.07 t/s, tg_3s =   6.93 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4178, tg =   7.06 t/s, tg_3s =   5.12 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4194, tg =   7.05 t/s, tg_3s =   5.22 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4210, tg =   7.04 t/s, tg_3s =   5.28 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4226, tg =   7.03 t/s, tg_3s =   5.22 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4244, tg =   7.02 t/s, tg_3s =   5.32 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4264, tg =   7.01 t/s, tg_3s =   5.49 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4286, tg =   7.01 t/s, tg_3s =   6.99 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4304, tg =   7.01 t/s, tg_3s =   5.76 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4319, tg =   7.00 t/s, tg_3s =   4.95 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4335, tg =   6.99 t/s, tg_3s =   5.32 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4353, tg =   6.98 t/s, tg_3s =   5.95 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4365, tg =   6.97 t/s, tg_3s =   3.82 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4380, tg =   6.96 t/s, tg_3s =   4.81 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4397, tg =   6.95 t/s, tg_3s =   5.53 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4412, tg =   6.94 t/s, tg_3s =   4.96 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4431, tg =   6.94 t/s, tg_3s =   6.30 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4448, tg =   6.93 t/s, tg_3s =   5.53 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4464, tg =   6.92 t/s, tg_3s =   5.14 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4479, tg =   6.91 t/s, tg_3s =   4.99 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4497, tg =   6.91 t/s, tg_3s =   5.47 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4518, tg =   6.91 t/s, tg_3s =   6.73 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4531, tg =   6.89 t/s, tg_3s =   4.30 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4546, tg =   6.88 t/s, tg_3s =   4.82 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4562, tg =   6.88 t/s, tg_3s =   5.30 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4578, tg =   6.87 t/s, tg_3s =   5.25 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4597, tg =   6.87 t/s, tg_3s =   6.25 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4612, tg =   6.86 t/s, tg_3s =   4.75 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4625, tg =   6.84 t/s, tg_3s =   4.22 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4639, tg =   6.84 t/s, tg_3s =   4.66 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4656, tg =   6.83 t/s, tg_3s =   5.11 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4674, tg =   6.82 t/s, tg_3s =   5.90 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4687, tg =   6.81 t/s, tg_3s =   4.17 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4699, tg =   6.80 t/s, tg_3s =   3.96 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4715, tg =   6.79 t/s, tg_3s =   5.04 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4728, tg =   6.78 t/s, tg_3s =   4.30 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4743, tg =   6.77 t/s, tg_3s =   4.82 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4756, tg =   6.76 t/s, tg_3s =   4.17 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4769, tg =   6.75 t/s, tg_3s =   4.15 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4781, tg =   6.73 t/s, tg_3s =   3.88 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4794, tg =   6.72 t/s, tg_3s =   4.18 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4808, tg =   6.71 t/s, tg_3s =   3.85 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4824, tg =   6.70 t/s, tg_3s =   5.10 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4837, tg =   6.69 t/s, tg_3s =   4.31 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4849, tg =   6.68 t/s, tg_3s =   3.68 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4863, tg =   6.67 t/s, tg_3s =   4.61 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4880, tg =   6.66 t/s, tg_3s =   5.45 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4895, tg =   6.66 t/s, tg_3s =   4.98 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4911, tg =   6.65 t/s, tg_3s =   5.11 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4926, tg =   6.64 t/s, tg_3s =   4.74 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4942, tg =   6.64 t/s, tg_3s =   5.24 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4961, tg =   6.64 t/s, tg_3s =   6.14 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4977, tg =   6.63 t/s, tg_3s =   5.10 t/s
+slot print_timing: id  0 | task 0 | n_gen =   4994, tg =   6.62 t/s, tg_3s =   5.48 t/s
+slot print_timing: id  0 | task 0 | n_gen =   5010, tg =   6.62 t/s, tg_3s =   5.14 t/s
+slot print_timing: id  0 | task 0 | n_gen =   5028, tg =   6.61 t/s, tg_3s =   5.81 t/s
+slot print_timing: id  0 | task 0 | n_gen =   5044, tg =   6.61 t/s, tg_3s =   5.25 t/s
+slot print_timing: id  0 | task 0 | n_gen =   5063, tg =   6.61 t/s, tg_3s =   6.20 t/s
+slot print_timing: id  0 | task 0 | n_gen =   5079, tg =   6.60 t/s, tg_3s =   5.16 t/s
+slot print_timing: id  0 | task 0 | n_gen =   5098, tg =   6.60 t/s, tg_3s =   6.24 t/s
+slot print_timing: id  0 | task 0 | n_gen =   5111, tg =   6.59 t/s, tg_3s =   4.14 t/s
+slot print_timing: id  0 | task 0 | n_gen =   5130, tg =   6.59 t/s, tg_3s =   6.19 t/s
+slot print_timing: id  0 | task 0 | n_gen =   5146, tg =   6.58 t/s, tg_3s =   4.99 t/s
+slot print_timing: id  0 | task 0 | n_gen =   5165, tg =   6.58 t/s, tg_3s =   6.02 t/s
+slot print_timing: id  0 | task 0 | n_gen =   5182, tg =   6.58 t/s, tg_3s =   5.56 t/s
+slot print_timing: id  0 | task 0 | n_gen =   5202, tg =   6.58 t/s, tg_3s =   6.59 t/s
+slot print_timing: id  0 | task 0 | n_gen =   5219, tg =   6.57 t/s, tg_3s =   5.47 t/s
+slot print_timing: id  0 | task 0 | n_gen =   5239, tg =   6.57 t/s, tg_3s =   6.41 t/s
+slot print_timing: id  0 | task 0 | n_gen =   5259, tg =   6.57 t/s, tg_3s =   6.54 t/s
+slot print_timing: id  0 | task 0 | n_gen =   5276, tg =   6.57 t/s, tg_3s =   5.48 t/s
+slot print_timing: id  0 | task 0 | n_gen =   5292, tg =   6.56 t/s, tg_3s =   5.19 t/s
+slot print_timing: id  0 | task 0 | n_gen =   5308, tg =   6.56 t/s, tg_3s =   5.26 t/s
+slot print_timing: id  0 | task 0 | n_gen =   5324, tg =   6.55 t/s, tg_3s =   5.10 t/s
+slot print_timing: id  0 | task 0 | n_gen =   5341, tg =   6.54 t/s, tg_3s =   4.97 t/s
+slot print_timing: id  0 | task 0 | n_gen =   5360, tg =   6.54 t/s, tg_3s =   6.30 t/s
+slot print_timing: id  0 | task 0 | n_gen =   5376, tg =   6.54 t/s, tg_3s =   5.29 t/s
+slot print_timing: id  0 | task 0 | n_gen =   5397, tg =   6.54 t/s, tg_3s =   6.81 t/s
+slot print_timing: id  0 | task 0 | n_gen =   5414, tg =   6.54 t/s, tg_3s =   5.42 t/s
+slot print_timing: id  0 | task 0 | n_gen =   5429, tg =   6.53 t/s, tg_3s =   4.95 t/s
+slot print_timing: id  0 | task 0 | n_gen =   5445, tg =   6.52 t/s, tg_3s =   5.17 t/s
+slot print_timing: id  0 | task 0 | n_gen =   5464, tg =   6.52 t/s, tg_3s =   6.17 t/s
+slot print_timing: id  0 | task 0 | n_gen =   5481, tg =   6.52 t/s, tg_3s =   5.58 t/s
+slot print_timing: id  0 | task 0 | n_gen =   5502, tg =   6.52 t/s, tg_3s =   6.75 t/s
+slot print_timing: id  0 | task 0 | n_gen =   5519, tg =   6.52 t/s, tg_3s =   5.53 t/s
+slot print_timing: id  0 | task 0 | n_gen =   5539, tg =   6.51 t/s, tg_3s =   5.51 t/s
+slot print_timing: id  0 | task 0 | n_gen =   5558, tg =   6.51 t/s, tg_3s =   6.21 t/s
+slot print_timing: id  0 | task 0 | n_gen =   5572, tg =   6.51 t/s, tg_3s =   4.65 t/s
+slot print_timing: id  0 | task 0 | n_gen =   5588, tg =   6.50 t/s, tg_3s =   5.23 t/s
+slot print_timing: id  0 | task 0 | n_gen =   5608, tg =   6.50 t/s, tg_3s =   6.40 t/s
+slot print_timing: id  0 | task 0 | n_gen =   5624, tg =   6.50 t/s, tg_3s =   5.17 t/s
+slot print_timing: id  0 | task 0 | n_gen =   5639, tg =   6.49 t/s, tg_3s =   4.95 t/s
+slot print_timing: id  0 | task 0 | n_gen =   5654, tg =   6.49 t/s, tg_3s =   4.99 t/s
+slot print_timing: id  0 | task 0 | n_gen =   5669, tg =   6.48 t/s, tg_3s =   4.82 t/s
+slot print_timing: id  0 | task 0 | n_gen =   5687, tg =   6.47 t/s, tg_3s =   5.29 t/s
+slot print_timing: id  0 | task 0 | n_gen =   5707, tg =   6.47 t/s, tg_3s =   6.36 t/s
+slot print_timing: id  0 | task 0 | n_gen =   5723, tg =   6.47 t/s, tg_3s =   5.28 t/s
+slot print_timing: id  0 | task 0 | n_gen =   5742, tg =   6.47 t/s, tg_3s =   6.23 t/s
+slot print_timing: id  0 | task 0 | n_gen =   5759, tg =   6.47 t/s, tg_3s =   5.43 t/s
+slot print_timing: id  0 | task 0 | n_gen =   5780, tg =   6.47 t/s, tg_3s =   6.86 t/s
+slot print_timing: id  0 | task 0 | n_gen =   5798, tg =   6.46 t/s, tg_3s =   5.73 t/s
+slot print_timing: id  0 | task 0 | n_gen =   5820, tg =   6.46 t/s, tg_3s =   6.05 t/s
+slot print_timing: id  0 | task 0 | n_gen =   5841, tg =   6.46 t/s, tg_3s =   6.83 t/s
+slot print_timing: id  0 | task 0 | n_gen =   5859, tg =   6.46 t/s, tg_3s =   5.60 t/s
+slot print_timing: id  0 | task 0 | n_gen =   5879, tg =   6.46 t/s, tg_3s =   6.63 t/s
+slot print_timing: id  0 | task 0 | n_gen =   5896, tg =   6.46 t/s, tg_3s =   5.60 t/s
+slot print_timing: id  0 | task 0 | n_gen =   5916, tg =   6.46 t/s, tg_3s =   6.54 t/s
+slot print_timing: id  0 | task 0 | n_gen =   5934, tg =   6.46 t/s, tg_3s =   5.93 t/s
+slot print_timing: id  0 | task 0 | n_gen =   5952, tg =   6.46 t/s, tg_3s =   5.81 t/s
+slot print_timing: id  0 | task 0 | n_gen =   5973, tg =   6.46 t/s, tg_3s =   6.75 t/s
+slot print_timing: id  0 | task 0 | n_gen =   5991, tg =   6.45 t/s, tg_3s =   5.80 t/s
+slot print_timing: id  0 | task 0 | n_gen =   6011, tg =   6.45 t/s, tg_3s =   6.54 t/s
+slot print_timing: id  0 | task 0 | n_gen =   6028, tg =   6.45 t/s, tg_3s =   5.45 t/s
+slot print_timing: id  0 | task 0 | n_gen =   6047, tg =   6.45 t/s, tg_3s =   5.70 t/s
+slot print_timing: id  0 | task 0 | n_gen =   6067, tg =   6.45 t/s, tg_3s =   6.50 t/s
+slot print_timing: id  0 | task 0 | n_gen =   6084, tg =   6.45 t/s, tg_3s =   5.53 t/s
+slot print_timing: id  0 | task 0 | n_gen =   6101, tg =   6.44 t/s, tg_3s =   5.48 t/s
+slot print_timing: id  0 | task 0 | n_gen =   6120, tg =   6.44 t/s, tg_3s =   5.50 t/s
+slot print_timing: id  0 | task 0 | n_gen =   6141, tg =   6.44 t/s, tg_3s =   6.71 t/s
+slot print_timing: id  0 | task 0 | n_gen =   6159, tg =   6.44 t/s, tg_3s =   5.79 t/s
+slot print_timing: id  0 | task 0 | n_gen =   6179, tg =   6.44 t/s, tg_3s =   6.39 t/s
+slot print_timing: id  0 | task 0 | n_gen =   6195, tg =   6.43 t/s, tg_3s =   5.31 t/s
+slot print_timing: id  0 | task 0 | n_gen =   6211, tg =   6.43 t/s, tg_3s =   5.01 t/s
+slot print_timing: id  0 | task 0 | n_gen =   6231, tg =   6.43 t/s, tg_3s =   6.42 t/s
+slot print_timing: id  0 | task 0 | n_gen =   6246, tg =   6.42 t/s, tg_3s =   4.99 t/s
+slot print_timing: id  0 | task 0 | n_gen =   6263, tg =   6.42 t/s, tg_3s =   5.29 t/s
+slot print_timing: id  0 | task 0 | n_gen =   6281, tg =   6.42 t/s, tg_3s =   5.85 t/s
+slot print_timing: id  0 | task 0 | n_gen =   6298, tg =   6.42 t/s, tg_3s =   5.51 t/s
+slot print_timing: id  0 | task 0 | n_gen =   6315, tg =   6.41 t/s, tg_3s =   5.53 t/s
+slot print_timing: id  0 | task 0 | n_gen =   6335, tg =   6.41 t/s, tg_3s =   6.39 t/s
+slot print_timing: id  0 | task 0 | n_gen =   6353, tg =   6.41 t/s, tg_3s =   5.57 t/s
+slot print_timing: id  0 | task 0 | n_gen =   6373, tg =   6.41 t/s, tg_3s =   6.35 t/s
+slot print_timing: id  0 | task 0 | n_gen =   6389, tg =   6.41 t/s, tg_3s =   5.20 t/s
+slot print_timing: id  0 | task 0 | n_gen =   6405, tg =   6.40 t/s, tg_3s =   5.27 t/s
+slot print_timing: id  0 | task 0 | n_gen =   6425, tg =   6.40 t/s, tg_3s =   6.37 t/s
+slot print_timing: id  0 | task 0 | n_gen =   6440, tg =   6.40 t/s, tg_3s =   4.93 t/s
+slot print_timing: id  0 | task 0 | n_gen =   6457, tg =   6.39 t/s, tg_3s =   5.06 t/s
+slot print_timing: id  0 | task 0 | n_gen =   6478, tg =   6.40 t/s, tg_3s =   6.73 t/s
+slot print_timing: id  0 | task 0 | n_gen =   6495, tg =   6.39 t/s, tg_3s =   5.43 t/s
+slot print_timing: id  0 | task 0 | n_gen =   6511, tg =   6.39 t/s, tg_3s =   5.12 t/s
+slot print_timing: id  0 | task 0 | n_gen =   6528, tg =   6.39 t/s, tg_3s =   5.50 t/s
+slot print_timing: id  0 | task 0 | n_gen =   6546, tg =   6.38 t/s, tg_3s =   5.56 t/s
+slot print_timing: id  0 | task 0 | n_gen =   6566, tg =   6.38 t/s, tg_3s =   6.42 t/s
+slot print_timing: id  0 | task 0 | n_gen =   6582, tg =   6.38 t/s, tg_3s =   5.20 t/s
+slot print_timing: id  0 | task 0 | n_gen =   6598, tg =   6.38 t/s, tg_3s =   5.28 t/s
+slot print_timing: id  0 | task 0 | n_gen =   6615, tg =   6.37 t/s, tg_3s =   5.41 t/s
+slot print_timing: id  0 | task 0 | n_gen =   6635, tg =   6.37 t/s, tg_3s =   6.42 t/s
+slot print_timing: id  0 | task 0 | n_gen =   6652, tg =   6.37 t/s, tg_3s =   5.62 t/s
+slot print_timing: id  0 | task 0 | n_gen =   6672, tg =   6.37 t/s, tg_3s =   6.54 t/s
+slot print_timing: id  0 | task 0 | n_gen =   6689, tg =   6.37 t/s, tg_3s =   5.41 t/s
+slot print_timing: id  0 | task 0 | n_gen =   6706, tg =   6.37 t/s, tg_3s =   5.40 t/s
+slot print_timing: id  0 | task 0 | n_gen =   6726, tg =   6.37 t/s, tg_3s =   6.56 t/s
+slot print_timing: id  0 | task 0 | n_gen =   6743, tg =   6.36 t/s, tg_3s =   5.46 t/s
+slot print_timing: id  0 | task 0 | n_gen =   6761, tg =   6.36 t/s, tg_3s =   5.51 t/s
+slot print_timing: id  0 | task 0 | n_gen =   6780, tg =   6.36 t/s, tg_3s =   6.21 t/s
+slot print_timing: id  0 | task 0 | n_gen =   6797, tg =   6.36 t/s, tg_3s =   5.39 t/s
+slot print_timing: id  0 | task 0 | n_gen =   6813, tg =   6.35 t/s, tg_3s =   5.20 t/s
+slot print_timing: id  0 | task 0 | n_gen =   6832, tg =   6.35 t/s, tg_3s =   6.21 t/s
+slot print_timing: id  0 | task 0 | n_gen =   6850, tg =   6.35 t/s, tg_3s =   5.61 t/s
+slot print_timing: id  0 | task 0 | n_gen =   6871, tg =   6.35 t/s, tg_3s =   6.66 t/s
+slot print_timing: id  0 | task 0 | n_gen =   6887, tg =   6.35 t/s, tg_3s =   5.18 t/s
+slot print_timing: id  0 | task 0 | n_gen =   6906, tg =   6.35 t/s, tg_3s =   6.15 t/s
+slot print_timing: id  0 | task 0 | n_gen =   6921, tg =   6.35 t/s, tg_3s =   4.91 t/s
+slot print_timing: id  0 | task 0 | n_gen =   6939, tg =   6.34 t/s, tg_3s =   5.48 t/s
+slot print_timing: id  0 | task 0 | n_gen =   6959, tg =   6.34 t/s, tg_3s =   6.38 t/s
+slot print_timing: id  0 | task 0 | n_gen =   6980, tg =   6.34 t/s, tg_3s =   5.72 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7001, tg =   6.34 t/s, tg_3s =   6.90 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7018, tg =   6.34 t/s, tg_3s =   5.41 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7039, tg =   6.34 t/s, tg_3s =   6.96 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7056, tg =   6.34 t/s, tg_3s =   5.50 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7070, tg =   6.33 t/s, tg_3s =   4.59 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7085, tg =   6.33 t/s, tg_3s =   4.75 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7101, tg =   6.33 t/s, tg_3s =   5.25 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7115, tg =   6.32 t/s, tg_3s =   4.63 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7132, tg =   6.32 t/s, tg_3s =   5.50 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7145, tg =   6.31 t/s, tg_3s =   4.26 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7162, tg =   6.31 t/s, tg_3s =   5.53 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7176, tg =   6.31 t/s, tg_3s =   4.67 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7193, tg =   6.31 t/s, tg_3s =   5.50 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7214, tg =   6.31 t/s, tg_3s =   6.69 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7230, tg =   6.30 t/s, tg_3s =   5.31 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7250, tg =   6.31 t/s, tg_3s =   6.61 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7268, tg =   6.30 t/s, tg_3s =   5.72 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7288, tg =   6.30 t/s, tg_3s =   6.47 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7305, tg =   6.30 t/s, tg_3s =   5.43 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7323, tg =   6.30 t/s, tg_3s =   5.96 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7337, tg =   6.30 t/s, tg_3s =   4.66 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7353, tg =   6.29 t/s, tg_3s =   5.11 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7370, tg =   6.29 t/s, tg_3s =   5.47 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7390, tg =   6.29 t/s, tg_3s =   6.37 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7406, tg =   6.29 t/s, tg_3s =   5.19 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7423, tg =   6.29 t/s, tg_3s =   5.41 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7444, tg =   6.28 t/s, tg_3s =   5.75 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7463, tg =   6.28 t/s, tg_3s =   6.17 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7480, tg =   6.28 t/s, tg_3s =   5.19 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7499, tg =   6.28 t/s, tg_3s =   5.20 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7515, tg =   6.27 t/s, tg_3s =   5.14 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7529, tg =   6.27 t/s, tg_3s =   4.42 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7542, tg =   6.26 t/s, tg_3s =   4.09 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7555, tg =   6.26 t/s, tg_3s =   4.17 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7570, tg =   6.26 t/s, tg_3s =   4.98 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7585, tg =   6.25 t/s, tg_3s =   4.75 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7599, tg =   6.25 t/s, tg_3s =   4.57 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7614, tg =   6.24 t/s, tg_3s =   4.89 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7629, tg =   6.24 t/s, tg_3s =   4.87 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7649, tg =   6.24 t/s, tg_3s =   6.35 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7666, tg =   6.24 t/s, tg_3s =   5.43 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7684, tg =   6.24 t/s, tg_3s =   5.88 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7699, tg =   6.23 t/s, tg_3s =   4.81 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7715, tg =   6.23 t/s, tg_3s =   5.31 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7734, tg =   6.23 t/s, tg_3s =   6.23 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7750, tg =   6.23 t/s, tg_3s =   5.22 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7763, tg =   6.22 t/s, tg_3s =   4.33 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7777, tg =   6.22 t/s, tg_3s =   4.23 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7795, tg =   6.22 t/s, tg_3s =   5.93 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7811, tg =   6.22 t/s, tg_3s =   5.29 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7824, tg =   6.21 t/s, tg_3s =   4.10 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7838, tg =   6.21 t/s, tg_3s =   4.25 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7854, tg =   6.20 t/s, tg_3s =   5.03 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7867, tg =   6.20 t/s, tg_3s =   4.11 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7879, tg =   6.19 t/s, tg_3s =   3.92 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7892, tg =   6.19 t/s, tg_3s =   4.11 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7908, tg =   6.18 t/s, tg_3s =   5.10 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7921, tg =   6.18 t/s, tg_3s =   4.27 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7938, tg =   6.18 t/s, tg_3s =   4.65 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7953, tg =   6.17 t/s, tg_3s =   4.83 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7966, tg =   6.17 t/s, tg_3s =   4.10 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7979, tg =   6.16 t/s, tg_3s =   4.16 t/s
+slot print_timing: id  0 | task 0 | n_gen =   7995, tg =   6.16 t/s, tg_3s =   4.33 t/s
+slot print_timing: id  0 | task 0 | n_gen =   8011, tg =   6.15 t/s, tg_3s =   4.33 t/s
+slot print_timing: id  0 | task 0 | n_gen =   8027, tg =   6.15 t/s, tg_3s =   4.37 t/s
+slot print_timing: id  0 | task 0 | n_gen =   8042, tg =   6.14 t/s, tg_3s =   4.97 t/s
+slot print_timing: id  0 | task 0 | n_gen =   8055, tg =   6.14 t/s, tg_3s =   4.17 t/s
+slot print_timing: id  0 | task 0 | n_gen =   8070, tg =   6.14 t/s, tg_3s =   4.74 t/s
+slot print_timing: id  0 | task 0 | n_gen =   8086, tg =   6.13 t/s, tg_3s =   5.11 t/s
+slot print_timing: id  0 | task 0 | n_gen =   8098, tg =   6.13 t/s, tg_3s =   3.88 t/s
+slot print_timing: id  0 | task 0 | n_gen =   8111, tg =   6.12 t/s, tg_3s =   4.28 t/s
+slot print_timing: id  0 | task 0 | n_gen =   8126, tg =   6.12 t/s, tg_3s =   4.95 t/s
+slot print_timing: id  0 | task 0 | n_gen =   8139, tg =   6.12 t/s, tg_3s =   4.07 t/s
+slot print_timing: id  0 | task 0 | n_gen =   8153, tg =   6.11 t/s, tg_3s =   4.40 t/s
+slot print_timing: id  0 | task 0 | n_gen =   8165, tg =   6.11 t/s, tg_3s =   3.93 t/s
+slot print_timing: id  0 | task 0 | n_gen =   8180, tg =   6.10 t/s, tg_3s =   4.25 t/s
+slot print_timing: id  0 | task 0 | prompt eval time =    3478.96 ms /  1944 tokens (    1.79 ms per token,   558.79 tokens per second)
+slot print_timing: id  0 | task 0 |        eval time = 1342609.67 ms /  8192 tokens (  163.91 ms per token,     6.10 tokens per second)
+slot print_timing: id  0 | task 0 |       total time = 1346088.64 ms / 10136 tokens
+slot print_timing: id  0 | task 0 |    graphs reused =       8159
+slot      release: id  0 | task 0 | stop processing: n_tokens = 10135, truncated = 0
+srv  update_slots: all slots are idle
+[GIN] 2026/08/30 - 08:23:07 | 200 |        22m38s |       127.0.0.1 | POST     "/api/generate"
+time=2026-08-30T08:28:11.499-08:00 level=WARN source=runner.go:584 msg="llama-server GPU discovery watchdog timed out" OLLAMA_LIBRARY_PATH="[/home/eileen/.local/lib/ollama /home/eileen/.local/lib/ollama/cuda_v13]" extra_envs=map[CUDA_VISIBLE_DEVICES:0] error="context deadline exceeded"
+time=2026-08-30T08:28:11.499-08:00 level=INFO source=runner.go:522 msg="failure during llama-server GPU discovery" OLLAMA_LIBRARY_PATH="[/home/eileen/.local/lib/ollama /home/eileen/.local/lib/ollama/cuda_v13]" extra_envs=map[CUDA_VISIBLE_DEVICES:0] error="context deadline exceeded" detail=""
+time=2026-08-30T08:28:11.499-08:00 level=WARN source=runner.go:364 msg="unable to refresh free memory, using old values"
+time=2026-08-30T08:28:12.998-08:00 level=WARN source=runner.go:584 msg="llama-server GPU discovery watchdog timed out" OLLAMA_LIBRARY_PATH="[/home/eileen/.local/lib/ollama /home/eileen/.local/lib/ollama/cuda_v13]" extra_envs=map[CUDA_VISIBLE_DEVICES:0] error="context deadline exceeded"
+time=2026-08-30T08:28:12.999-08:00 level=INFO source=runner.go:522 msg="failure during llama-server GPU discovery" OLLAMA_LIBRARY_PATH="[/home/eileen/.local/lib/ollama /home/eileen/.local/lib/ollama/cuda_v13]" extra_envs=map[CUDA_VISIBLE_DEVICES:0] error="context deadline exceeded" detail=""
+time=2026-08-30T08:28:12.999-08:00 level=WARN source=runner.go:364 msg="unable to refresh free memory, using old values"
+time=2026-08-30T08:28:12.999-08:00 level=WARN source=runner.go:584 msg="llama-server GPU discovery watchdog timed out" OLLAMA_LIBRARY_PATH="[/home/eileen/.local/lib/ollama /home/eileen/.local/lib/ollama/cuda_v13]" extra_envs=map[CUDA_VISIBLE_DEVICES:0] error="context deadline exceeded"
+time=2026-08-30T08:28:13.000-08:00 level=INFO source=runner.go:522 msg="failure during llama-server GPU discovery" OLLAMA_LIBRARY_PATH="[/home/eileen/.local/lib/ollama /home/eileen/.local/lib/ollama/cuda_v13]" extra_envs=map[CUDA_VISIBLE_DEVICES:0] error="context deadline exceeded" detail=""
+time=2026-08-30T08:28:13.000-08:00 level=WARN source=runner.go:364 msg="unable to refresh free memory, using old values"

@@ -2407,3 +2407,7 @@ Error: Read("config/fleet-gateway.toml", Os { code: 2, kind: NotFound, message: 
 [2m2026-08-30T07:26:07.032553Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m1
 [2m2026-08-30T07:27:10.428973Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m1
 [2m2026-08-30T07:28:19.418076Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m1
+[2m2026-08-30T14:03:25.769579Z[0m [32m INFO[0m shutdown signal received
+[2m2026-08-30T14:03:25.780092Z[0m [32m INFO[0m fleet-gateway stopped
+[2m2026-08-30T14:22:44.743051Z[0m [32m INFO[0m loaded config from config/fleet-gateway.toml: 4 providers in chain: ["deepinfra", "deepseek", "zai", "ollama"]
+[2m2026-08-30T14:22:44.753180Z[0m [32m INFO[0m fleet-gateway starting on 127.0.0.1:8787
