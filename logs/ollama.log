@@ -189898,3 +189898,18 @@ slot   operator(): id  0 | task 4 | cached n_tokens = 0, memory_seq_rm [0, end)
 slot      release: id  0 | task 4 | stop processing: n_tokens = 291, truncated = 0
 srv  update_slots: all slots are idle
 [GIN] 2026/08/30 - 20:02:07 | 200 |  153.572488ms |       127.0.0.1 | POST     "/v1/embeddings"
+slot get_availabl: id  0 | task -1 |  - checking sim = 0.003 (1/383) > 0.100
+slot get_availabl: id  0 | task -1 | selected slot by LRU, t_last = 25248305476
+slot launch_slot_: id  0 | task 6 | processing task, is_child = 0
+slot   operator(): id  0 | task 6 | new prompt, n_ctx_slot = 2048, n_keep = 0, task.n_tokens = 383
+slot   operator(): id  0 | task 6 | cached n_tokens = 0, memory_seq_rm [0, end)
+slot      release: id  0 | task 6 | stop processing: n_tokens = 383, truncated = 0
+srv  update_slots: all slots are idle
+slot get_availabl: id  0 | task -1 |  - checking sim = 0.002 (1/405) > 0.100
+slot get_availabl: id  0 | task -1 | selected slot by LRU, t_last = 25379824203
+slot launch_slot_: id  0 | task 8 | processing task, is_child = 0
+slot   operator(): id  0 | task 8 | new prompt, n_ctx_slot = 2048, n_keep = 0, task.n_tokens = 405
+slot   operator(): id  0 | task 8 | cached n_tokens = 0, memory_seq_rm [0, end)
+slot      release: id  0 | task 8 | stop processing: n_tokens = 405, truncated = 0
+srv  update_slots: all slots are idle
+[GIN] 2026/08/30 - 20:04:19 | 200 |  307.536564ms |       127.0.0.1 | POST     "/v1/embeddings"
