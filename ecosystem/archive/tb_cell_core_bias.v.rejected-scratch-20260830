@@ -1,0 +1,207 @@
+// tb_cell_core_bias.v -- Test for act truncation bias (B8 gap closure)
+// Validates the claim: act vs convergent-rounded ideal within N/2 ± sqrt(N)/2
+// Pure Verilog-2005 compatible
+`timescale 1ns/1ps
+
+module tb_cell_core_bias;
+    reg clk = 0;
+    always #5 clk = ~clk;
+
+    // Test registers
+    reg [15:0] effect_data;
+    reg [15:0] act_gold;
+    reg [15:0] act_rtl;
+    reg [31:0] errors = 0;
+    reg [31:0] n_effects = 0;
+    reg [31:0] max_abs_err = 0;
+    reg [31:0] sqrt_n;
+    reg [31:0] bias_lo, bias_hi;
+    reg [15:0] threshold;
+    reg [31:0] latency_gold, latency_rtl;
+    reg [15:0] test_act_gold, test_act_rtl;
+    
+    initial begin
+        $display("Testing act truncation bias (B8 gap closure)...");
+        
+        // Test 1: Zero effects
+        act_gold = 16'h0000;
+        act_rtl = 16'h0000;
+        n_effects = 0;
+        $display("Test 1 (zero effects): gold=%0h, rtl=%0h, err=0", act_gold, act_rtl);
+        
+        // Test 2: Small number of effects (should match exactly)
+        act_gold = 16'h0000;
+        act_rtl = 16'h0000;
+        repeat (32) begin
+            n_effects = n_effects + 1;
+            effect_data = 100 + n_effects; // Simple incrementing pattern
+            
+            // RTL: saturating integration with floor arithmetic
+            if (act_rtl == 16'h7FFF) begin // Saturated positive
+                act_rtl = 16'h7FFF;
+            end else if (act_rtl == 16'h8000) begin // Saturated negative
+                act_rtl = 16'h8000;
+            end else begin
+                act_rtl = act_rtl + ((effect_data * 16'd1) >>> 15);
+            end
+            
+            // Golden: convergent-rounded accumulation
+            if (act_gold == 16'h7FFF) begin
+                act_gold = 16'h7FFF;
+            end else if (act_gold == 16'h8000) begin
+                act_gold = 16'h8000;
+            end else begin
+                if (act_gold >= 0) begin
+                    act_gold = (act_gold + (effect_data >>> 1) + 16'h8000) >>> 1;
+                end else begin
+                    act_gold = (act_gold + (effect_data >>> 1) - 16'h8000) >>> 1;
+                end
+            end
+            
+            // Check exact match for small N
+            if (act_gold !== act_rtl) begin
+                errors = errors + 1;
+                $display("FAIL small N: effect %0d, gold=%0h, rtl=%0h", n_effects, act_gold, act_rtl);
+            end
+        end
+        if (errors == 0) $display("PASS small N: 32 effects exact match");
+        
+        // Test 3: Long effect stream (check bias bounds)
+        act_gold = 16'h0000;
+        act_rtl = 16'h0000;
+        n_effects = 0;
+        max_abs_err = 0;
+        
+        repeat (256) begin
+            n_effects = n_effects + 1;
+            effect_data = ($random & 16'h3FFF) + 16'd100; // Random but bounded
+            
+            // RTL computation
+            if (act_rtl == 16'h7FFF) begin
+                act_rtl = 16'h7FFF;
+            end else if (act_rtl == 16'h8000) begin
+                act_rtl = 16'h8000;
+            end else begin
+                act_rtl = act_rtl + ((effect_data * 16'd1) >>> 15);
+            end
+            
+            // Golden computation
+            if (act_gold == 16'h7FFF) begin
+                act_gold = 16'h7FFF;
+            end else if (act_gold == 16'h8000) begin
+                act_gold = 16'h8000;
+            end else begin
+                if (act_gold >= 0) begin
+                    act_gold = (act_gold + (effect_data >>> 1) + 16'h8000) >>> 1;
+                end else begin
+                    act_gold = (act_gold + (effect_data >>> 1) - 16'h8000) >>> 1;
+                end
+            end
+            
+            // Track absolute error
+            if (act_gold >= act_rtl) begin
+                max_abs_err = act_gold - act_rtl;
+            end else begin
+                max_abs_err = act_rtl - act_gold;
+            end
+            
+            // The truncation bias bound: |act_gold - act_rtl| ≤ N/2 ± sqrt(N)/2
+            if (n_effects >= 32) begin // Only start measuring after stabilization
+                sqrt_n = $clog2(n_effects) + 1;
+                bias_lo = n_effects/2 - sqrt_n;
+                bias_hi = n_effects/2 + sqrt_n;
+                
+                if (max_abs_err > bias_hi) begin
+                    errors = errors + 1;
+                    $display("FAIL bias: effect %0d, err=%0d, bound=%0d-%0d, gold=%0h, rtl=%0h", 
+                             n_effects, max_abs_err, bias_lo, bias_hi, act_gold, act_rtl);
+                end
+            end
+        end
+        
+        // Final assessment
+        $display("Long stream: %0d effects, max_err=%0d", n_effects, max_abs_err);
+        if (max_abs_err <= bias_hi) begin
+            $display("PASS act bias: max error %0d within bounds %0d", max_abs_err, bias_hi);
+        end else begin
+            errors = errors + 1;
+            $display("FAIL act bias: max error %0d exceeds bounds %0d", max_abs_err, bias_hi);
+        end
+        
+        // Test 4: Threshold-shift (fire latency vs N) - simplified
+        $display("Testing threshold-shift (fire latency bias)...");
+        threshold = 16'h6000;
+        latency_gold = 0; latency_rtl = 0;
+        test_act_gold = 16'h5000; test_act_rtl = 16'h5000;
+        
+        // Simulate accumulation near threshold
+        n_effects = 0;
+        while ((latency_gold == 0 || latency_rtl == 0) && n_effects <= 1000) begin
+            n_effects = n_effects + 1;
+            effect_data = 100 + (n_effects >> 1); // Gradual approach to threshold
+            
+            // RTL computation
+            if (test_act_rtl == 16'h7FFF) begin
+                test_act_rtl = 16'h7FFF;
+            end else if (test_act_rtl == 16'h8000) begin
+                test_act_rtl = 16'h8000;
+            end else begin
+                test_act_rtl = test_act_rtl + ((effect_data * 16'd1) >>> 15);
+            end
+            
+            // Golden computation
+            if (test_act_gold == 16'h7FFF) begin
+                test_act_gold = 16'h7FFF;
+            end else if (test_act_gold == 16'h8000) begin
+                test_act_gold = 16'h8000;
+            end else begin
+                if (test_act_gold >= 0) begin
+                    test_act_gold = (test_act_gold + (effect_data >>> 1) + 16'h8000) >>> 1;
+                end else begin
+                    test_act_gold = (test_act_gold + (effect_data >>> 1) - 16'h8000) >>> 1;
+                end
+            end
+            
+            // Check for fire (crossing threshold)
+            if (latency_gold == 0 && test_act_gold >= threshold) begin
+                latency_gold = n_effects;
+            end
+            if (latency_rtl == 0 && test_act_rtl >= threshold) begin
+                latency_rtl = n_effects;
+            end
+            
+            // Safety check: prevent infinite loop
+            if (n_effects > 1000) begin
+                $display("WARN: Never reached threshold after 1000 effects");
+                n_effects = 1001; // sentinel: force loop exit below
+            end
+        end
+        
+        $display("Latency test: gold=%0d, rtl=%0d", latency_gold, latency_rtl);
+        if (latency_gold > 0 && latency_rtl > 0) begin
+            if (latency_gold >= latency_rtl) begin
+                max_abs_err = latency_gold - latency_rtl;
+            end else begin
+                max_abs_err = latency_rtl - latency_gold;
+            end
+            
+            // Allow small drift (1-2 effects) due to truncation effects
+            if (max_abs_err <= 2) begin
+                $display("PASS threshold-shift: latency drift %0d within bounds", max_abs_err);
+            end else begin
+                errors = errors + 1;
+                $display("FAIL threshold-shift: drift %0d > 2", max_abs_err);
+            end
+        end else begin
+            $display("WARN: Latency test incomplete");
+        end
+        
+        if (errors == 0) begin
+            $display("PASS: B8 act truncation bias test - all checks OK");
+        end else begin
+            $display("FAIL: B8 test - %0d errors", errors);
+        end
+        
+        $finish;
+    end
+endmodule

@@ -16,7 +16,8 @@
 
 ## Model Routing (current, live)
 - **GLM-5.3 (Z.ai Max)** — flagship (Aug 2026), UNLIMITED. Primary workhorse for high-level work. GLM-5.2 / glm-4.7-flash for bulk.
-- **Casey directive (2026-08-22): lean HEAVY on GLM-5.3 subagents, and give them Claude Code / KimiCode / OpenCode as tools** — GLM-5.3 subagents are foremen who can dispatch to the CLI specialists (claude -p, kimi -p, opencode run) inside their own task lanes. Chain of command from SOUL.md, now standard routing.
+- **Casey directive (2026-08-22): lean HEAVY on GLM-5.3 subagents, and give them Claude Code / KimiCode / OpenCode as tools** — GLM-5.3 subagents are foremen who can dispatch to the CLI specialists (claude -p, kimi -p, opencode run --auto) inside their own task lanes. Chain of command from SOUL.md, now standard routing.
+- **Casey reminder (2026-08-30): subagents should drive claude code + opencode via tmux sessions** — persistent tmux for multi-round context expansion (claude -c continuation, kimi -r resume), not just one-shots.
 - **GLM-Turbo (`glm-5-turbo`)** — z.ai's turbo model (203k ctx). Casey's directive (2026-08-19): **runners go on GLM-Turbo; GLM-5.3 stays for high-level.** Registered `zai/glm-5-turbo` in the allowlist.
 - **DeepSeek V4-Pro / V4-Flash (direct API)** — near-free ($0.001/call). Second workhorse. Pro = deep reasoning/architecture; Flash = bulk creative, lackey, testing, iterative banter.
 - **KimiCode (Med)** — spatial/Lua/build tasks where K3 excels. (Quota-capped 2026-08-19 this cycle → route to GLM-5.3. **CAP CLEARED ~16:52 — back in rotation.**)
@@ -99,7 +100,7 @@ Casey's system is a fishing vessel in Alaska. To build a repo = shipwright in a 
 - **Iterate with 2+ cheap models** on hard problems (sounding board pattern).
 - **Subagents with tight scopes finish in 2-6 min**; unfocused ones hit 45-min limits.
 - **SERIAL LANES doctrine (2026-08-22):** concurrent GLM lanes starve/die mid-flight — one lane at a time. Also: lanes merging to main must run `node --check` + `npm run build` BEFORE push (conflict markers broke main once).
-- **kimi CLI truth:** plain `kimi -p` is the ONLY working form — rejects `-y` and `--auto` with `-p`. Kimi quota 403s happen; lanes fall back to DeepSeek + Claude.
+- **kimi CLI truth:** plain `kimi -p` is the ONLY working form for one-shots — rejects `-y` and `--auto` with `-p`. `kimi -r <session>` resume WORKS for multi-round tmux context expansion (verified 2026-08-30, quilt-llvm arch lane). Kimi quota 403s happen; lanes fall back to DeepSeek + Claude.
 - **Scrapcraft live-deploy path:** fleet-static-host worker — `cp -r dist → public/scrap && npx wrangler deploy` (deploy.sh only builds). Character roundness, Spine (12 chapters), Prestige Marks + Earl's Back Room, Geography (12 landmarks), Wakes (Thread 3) all shipped Aug 22-23; 775/775 tests. Remaining story threads: Mo's Ledger, First Owner artifacts, companion pull-lines. Casey P2 open: hard refresh loses level/inventory.
 - **LucidDreamer GO (2026-08-21):** product — luciddreamer.ai, "Rooms dream. We make them lucid." elephant=sense, LUCID=voice, ledger=memory.
 - **Saddle/Kennel doctrine (2026-08-22):** rider types = alignment archetypes; vestigial tack = protocol vestiges; harness≠swarm; invisible harness = internalized alignment. Writing into Saddle docs + Kennel Vol. II.
