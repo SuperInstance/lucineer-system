@@ -1,6 +1,6 @@
 {
   "lastChecks": {
-    "system": 1788234665
+    "system": 1788242191
   },
-  "notes": "Heartbeat 2026-08-31 19:51: runaway find (PID 118514) gone. Load 3.77 (down from 6.03 spike), disk 34%, mem OK. No action needed."
+  "notes": "Heartbeat 2026-08-31 21:56: ANOTHER reboot (~21:56, uptime 0min again — second today after ~21:25). Load 4.43 decaying, ollama ok (3 procs), mem 12G avail, disk 35%. Watch for repeat reboots; if pattern continues, investigate WSL restart cause at next heartbeat."
 }
