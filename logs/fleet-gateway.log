@@ -2413,3 +2413,27 @@ Error: Read("config/fleet-gateway.toml", Os { code: 2, kind: NotFound, message: 
 [2m2026-08-30T14:22:44.753180Z[0m [32m INFO[0m fleet-gateway starting on 127.0.0.1:8787
 [2m2026-08-30T21:01:23.725156Z[0m [32m INFO[0m loaded config from config/fleet-gateway.toml: 4 providers in chain: ["deepinfra", "deepseek", "zai", "ollama"]
 [2m2026-08-30T21:01:23.727659Z[0m [32m INFO[0m fleet-gateway starting on 127.0.0.1:8787
+[2m2026-08-31T04:58:59.021027Z[0m [32m INFO[0m shutdown signal received
+[2m2026-08-31T04:58:59.039501Z[0m [32m INFO[0m fleet-gateway stopped
+[2m2026-08-31T23:40:00.338064Z[0m [32m INFO[0m loaded config from config/fleet-gateway.toml: 4 providers in chain: ["deepinfra", "deepseek", "zai", "ollama"]
+[2m2026-08-31T23:40:00.339506Z[0m [32m INFO[0m fleet-gateway starting on 127.0.0.1:8787
+[2m2026-09-01T00:13:04.303300Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m9
+[2m2026-09-01T00:14:02.020059Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m1
+[2m2026-09-01T00:14:53.374788Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m1
+[2m2026-09-01T00:15:44.452317Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m1
+[2m2026-09-01T00:16:32.246648Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m1
+[2m2026-09-01T00:17:24.714272Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m1
+[2m2026-09-01T00:18:14.143794Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m1
+[2m2026-09-01T00:18:47.031350Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m1
+[2m2026-09-01T00:19:36.214723Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m1
+[2m2026-09-01T00:20:04.174366Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m1
+[2m2026-09-01T00:20:56.743828Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m1
+[2m2026-09-01T00:21:46.901214Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m2
+[2m2026-09-01T00:22:27.714117Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m1
+[2m2026-09-01T00:23:38.350685Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m1
+[2m2026-09-01T00:24:10.145701Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m3
+[2m2026-09-01T00:24:46.167692Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m2
+[2m2026-09-01T00:25:21.010249Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m1
+[2m2026-09-01T00:25:55.286865Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m1
+[2m2026-09-01T00:26:43.978481Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m1
+[2m2026-09-01T00:27:21.185617Z[0m [32m INFO[0m request succeeded [3mprovider[0m[2m=[0mollama [3mlatency_ms[0m[2m=[0m1

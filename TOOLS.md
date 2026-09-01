@@ -6,14 +6,14 @@ Last updated: 2026-08-02
 | Tool | Plan | Model | Best For | Location |
 |------|------|-------|----------|----------|
 | Z.ai (GLM) | **Max** | **GLM-5.3** (new, high-level) · GLM-5.2 · **GLM-5-turbo** (runners) | Subagent workhorse — unlimited tokens, cheapest high-quality option. Push hard. **GLM-5.3 is the new flagship (released Aug 2026) — use for high-level/deep work.** GLM-5.2 still available for bulk. **GLM-5-turbo = the runner model (Casey's directive: turbo models for runners).** Primary bulk creative + engineering. | (API, subagents use this — provider `zai`, also `zai-coding-plan` in OpenCode config) |
-| **DeepSeek (direct API)** | **Pay-per-use (extremely cheap)** | V4-Pro / V4-Flash | **Second workhorse — hammer extensively.** Flash for bulk creative, Pro for deep reasoning. Nearly free. Key: DEEPSEEK_KEY_FROM_ENV. **Working model names: `deepseek-chat` (V4-Flash) and `deepseek-reasoner` (V4-Pro) — NOT "v4-pro"/"v4-flash", those strings are invalid and 400.** | api.deepseek.com |
+| **DeepSeek (direct API)** | **REVOKED (2026-08-31)** | — | **ACCESS PULLED by Casey after the burn incident. Do not call.** Bulk/runner work defaults to GLM on Z.ai Max; local Ollama models for offline/bulk classification. Reinstatement only by Casey's explicit word. | — |
 | KimiCode | **Med** | K3 | Excellent at what it does — build intelligence, spatial decomposition, fast iteration. Use confidently for spatial/Lua/build tasks. | ~/.npm-global/bin/kimi |
-| Claude Code | **Pro** | Opus 5 / Sonnet 5 / Haiku 5 (renewing) · Fable 5 (finite, non-renewing) | Opus/Sonnet/Haiku: use freely within Pro plan. **Fable: reserve for golden-ticket moments only.** Use Sonnet 5 as the daily driver. Use Haiku 5 for creative work — it's small, fast, full of wonder, and highly creative. Like Wesley, its size is its voice. Do NOT default to Fable. Fable burns usage credits ($76 remaining). Only switch to Fable when Casey explicitly asks or for a piece that truly needs the most expensive voice. | ~/.local/bin/claude |
+| Claude Code | **Pro** | Opus 5 / Sonnet 5 / Haiku 5 (renewing) · Fable 5 (finite, non-renewing) | Opus/Sonnet/Haiku: use freely within Pro plan. **Opus 5 = via the `claude` CLI subscription ONLY — NEVER route anthropic/* through DeepInfra/MCP metered ($142.39 lesson, 2026-08-31).** **Fable: reserve for golden-ticket moments only.** Use Sonnet 5 as the daily driver. Use Haiku 5 for creative work — it's small, fast, full of wonder, and highly creative. Like Wesley, its size is its voice. Do NOT default to Fable. Fable burns usage credits ($76 remaining). Only switch to Fable when Casey explicitly asks or for a piece that truly needs the most expensive voice. | ~/.local/bin/claude |
 | MMX | **Starter** | MiniMax-M3 | Media generation — text, image, video, speech, music. Use at capacity since we have the subscription. Push hard. | ~/.npm-global/bin/mmx |
 | OpenCode | Pay-per-use | GLM-4.6 / GLM-4.5-air | **Cheapest option.** Memory systems, structured design docs. Run in parallel tmux sessions alongside subagents. | ~/.opencode/bin/opencode |
 _DeepSeek moved up to workhorse tier — see above._
 
-## DeepInfra MCP — Model Routing (179 models)
+## DeepInfra MCP — ⚠️ ACCESS REVOKED (Casey, 2026-08-31, after the $142.39 opus-5 charge). DO NOT CALL. "Models we can't get elsewhere" now means Cloudflare Workers AI (free tier) or Casey's explicit nod. Reinstatement only by Casey's word.
 | Task | Model | Why |
 |------|-------|-----|
 | Creative ideation | ByteDance/Seed-2.0-mini | Cheap, fast, highly creative |

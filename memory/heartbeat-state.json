@@ -1,1 +1,6 @@
-{"lastChecks":{"ollama":1788151754,"nightwatch":1788151754},"notes":"Heartbeat 2026-08-30 19:49: all quiet. Disk 33%, procs live, ollama ok, load ~2.7 slightly up but steady pattern."}
+{
+  "lastChecks": {
+    "system": 1788234665
+  },
+  "notes": "Heartbeat 2026-08-31 19:51: runaway find (PID 118514) gone. Load 3.77 (down from 6.03 spike), disk 34%, mem OK. No action needed."
+}

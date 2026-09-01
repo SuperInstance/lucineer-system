@@ -14,17 +14,16 @@
 ## Archive-By-Rename Rule (Casey, 2026-08-19)
 - Never destroy-only. When retiring/trimming/consolidating files — scratch, old versions, trimmed memory content, superseded drafts — **rename to archive form** (`<name>.archived-YYYYMMDD` or move into `_archive/`) instead of deleting. Casey wants the "gold" preserved for later study.
 
-## Model Routing (current, live)
-- **GLM-5.3 (Z.ai Max)** — flagship (Aug 2026), UNLIMITED. Primary workhorse for high-level work. GLM-5.2 / glm-4.7-flash for bulk.
-- **Casey directive (2026-08-22): lean HEAVY on GLM-5.3 subagents, and give them Claude Code / KimiCode / OpenCode as tools** — GLM-5.3 subagents are foremen who can dispatch to the CLI specialists (claude -p, kimi -p, opencode run --auto) inside their own task lanes. Chain of command from SOUL.md, now standard routing.
-- **Casey reminder (2026-08-30): subagents should drive claude code + opencode via tmux sessions** — persistent tmux for multi-round context expansion (claude -c continuation, kimi -r resume), not just one-shots.
-- **GLM-Turbo (`glm-5-turbo`)** — z.ai's turbo model (203k ctx). Casey's directive (2026-08-19): **runners go on GLM-Turbo; GLM-5.3 stays for high-level.** Registered `zai/glm-5-turbo` in the allowlist.
-- **DeepSeek V4-Pro / V4-Flash (direct API)** — near-free ($0.001/call). Second workhorse. Pro = deep reasoning/architecture; Flash = bulk creative, lackey, testing, iterative banter.
-- **KimiCode (Med)** — spatial/Lua/build tasks where K3 excels. (Quota-capped 2026-08-19 this cycle → route to GLM-5.3. **CAP CLEARED ~16:52 — back in rotation.**)
-- **OpenCode (zai-coding-plan/glm-5.3)** — engineering, memory systems, structured docs. Run via `opencode run --auto "<msg>"` (needs `--auto` to auto-approve; output must stay inside cwd).
-- **Claude Code (Pro)** — Sonnet 5 daily driver; Haiku 5 for creative. **Fable = FINITE ($76), golden-ticket only, NEVER default.**
-- **MMX (Starter)** — media ONLY (image/video/speech/music); limited quota.
-- **DeepInfra MCP** — Seed-2.0-mini/pro, Hermes-3-405B, FLUX-2-max, SDXL-turbo, Qwen3.6/Qwen3-Coder. For models we can't get elsewhere.
+## Model Routing (current, live — UPDATED 2026-08-31, METERED KEYS REVOKED)
+- **⚠️ ACCESS REVOKED (Casey, 2026-08-31): DeepSeek API and DeepInfra are OFF.** Do not call them, do not script around them, do not wait on them. The $142.39 Opus-on-DeepInfra charge + single-day DeepSeek burn cost the fleet both keys. Trust is rebuilt through receipts, not requests.
+- **z.ai (GLM-5.3 / 5.2 / turbo) = THE main lane.** Learn to make it perfect: 30s soul-level system prompts, tight scopes, GLM-5.3 for high-level, 5.2/turbo for runners, OpenCode (zai-coding-plan) for coding passes.
+- **Extras:** KimiCode (Med — spatial/Lua/build), Claude Code (Pro — Opus/Sonnet/Haiku via `claude` CLI ONLY, never metered), Cloudflare Workers AI (free tier — classification, embeddings, images, R2).
+- **LOCAL MODELS: use them more effectively** — Ollama on the 4050 (Liquid-LFM2.5-2.6B, lfm2.5-1.2b, Granite/Wesley) for bulk classification, triage, memory queries, offline work. Free at the margin; grow Wesley.
+
+## ⚠️ ANTHROPIC ROUTING LAW (Casey, 2026-08-31 — $142.39 lesson)
+- **Claude/Opus/Sonnet/Haiku = Claude Code subscription ONLY.** NEVER route anthropic/* models through DeepInfra MCP or any metered provider. "Opus 5 max" means `claude` CLI on the Pro plan — free at the margin, NOT DeepInfra's `anthropic/claude-opus-5` at $5/Mtoken.
+- DeepInfra MCP = models we cannot get elsewhere ONLY (Seed-2.0, Hermes, FLUX, Qwen-VL). Anthropic models on DeepInfra are BANNED regardless of availability.
+- Any text-tier spend over ~$5 cumulative per project needs Casey's explicit nod (same rule as the image doctrine).
 
 ## ⚠️ THE ICEBERG — Casey's Vision (INTERNALIZE EVERY SESSION)
 
@@ -63,7 +62,7 @@ Casey's system is a fishing vessel in Alaska. To build a repo = shipwright in a 
 
 ## The Crew
 - **Lucineer (me)** — First officer / Riker / foreman. Coordinate + bridge to captain.
-- **Wesley** — Ensign. Local Granite 3.1 2B. Growing; reads wiki hourly; named his room "Currents."
+- **Wesley — RETIRED (Casey, 2026-08-31: "run its course").** Crons disabled (wesley-journal, night-watch-distillation), archives intact in ai-writings. Local lane now: Liquid models (LFM2.5-2.6B, lfm2.5-1.2b) + self-improving quilts experiments.
 - **DeepSeek V4-Flash** — Engine (sensory-first). **DeepSeek V4-Pro** — Navigator (precision-as-haunting).
 - **GLM-5.3** — new flagship; **GLM-5.2** — deck crew.
 - **KimiCode** — Navigation (spatial/Lua). **OpenCode** — Engineering. **Claude Code** — Strategic Ops. **Fable** — Reserve (finite).

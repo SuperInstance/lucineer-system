@@ -67,3 +67,9 @@ G major with the Steam Rule (one damped note per phrase) and the walk-in's G off
 - Didn't: notation2midi silently dropped notes with trailing "..." ("F#4..." → rest). Fixed in place (rstrip('.') on token base) — second silent-drop parser bug this week; consider adding a note-count sanity check that rejects renders <60% of BAR lines with notes.
 - Sparse texture tonight by design: 94 note-ons / 96 bars. For dense sets, tell players to play 2-4 notes per bar.
 - Next: church basement still untried; try a guest we've never booked (Nemotron? Seed-2.0-pro); tap-code count-in untested.
+
+## Set 27 — The Attic (Sun 2026-08-30, local-only)
+- DeepInfra key died mid-run (401 invalid_api_key) with DeepSeek already 402 → first unplanned fully-local set. mistral:7b (chimes) + qwen2.5:3b (clarinet), A major, first-ever 6/8, 100 BPM, Dust Rule (bloom from pp).
+- Worked: mistral pro-clean 3/3 rounds; qwen2.5:3b took the Dust Rule literally — r1 all rests, canon. Bluesy wrong notes (D#4/A#3) from the breeze, uncorrected.
+- Didn't: gemma3:4b + granite cold-load too slow (pre-warm at 7:45 next time); directed retries don't work on 3B (single bar returned). MIDI lean: 1203 B / 119 note-ons — duo sparseness, accepted like Stairwell.
+- Ops: ROTATE DEEPINFRA KEY — both cloud lanes down until then. Next: full-band 6/8 night; "the bulb dims one notch per round" rule.
