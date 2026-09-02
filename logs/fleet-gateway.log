@@ -2441,3 +2441,5 @@ Error: Read("config/fleet-gateway.toml", Os { code: 2, kind: NotFound, message: 
 [2m2026-09-01T05:25:11.737650Z[0m [32m INFO[0m fleet-gateway starting on 127.0.0.1:8787
 [2m2026-09-01T05:55:39.633310Z[0m [32m INFO[0m loaded config from config/fleet-gateway.toml: 4 providers in chain: ["deepinfra", "deepseek", "zai", "ollama"]
 [2m2026-09-01T05:55:39.640982Z[0m [32m INFO[0m fleet-gateway starting on 127.0.0.1:8787
+[2m2026-09-02T20:12:53.180892Z[0m [32m INFO[0m loaded config from config/fleet-gateway.toml: 4 providers in chain: ["deepinfra", "deepseek", "zai", "ollama"]
+[2m2026-09-02T20:12:53.200178Z[0m [32m INFO[0m fleet-gateway starting on 127.0.0.1:8787

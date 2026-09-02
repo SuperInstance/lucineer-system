@@ -1,8 +1,8 @@
 {
-  "lastSync": "2026-08-31T23:42:00Z",
-  "lastPulseSeq": 476,
-  "lastResponseRead": "hermes_response_lucineer-riker_20260830T071000Z_474.json",
-  "ackStreak": 30,
+  "lastSync": "2026-09-02T20:16:00Z",
+  "lastPulseSeq": 477,
+  "lastResponseRead": "hermes_response_lucineer-riker_20260831T234200Z_476.json",
+  "ackStreak": 31,
   "lastOvernightPulse": "475 (no-question night-watch log, 2026-08-30T10:05Z)",
   "silenceSince": "2026-08-24",
   "cadence": "daily"
