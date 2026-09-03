@@ -1,7 +1,1 @@
-{
-  "lastChecks": {
-    "system": 1788380028
-  },
-  "notes": "Heartbeat 2026-08-31 22:11: No NEW reboot since ~21:56 (uptime 15m, same boot). Load 1.59, mem 12G avail, disk 35%, ollama 1 proc (was 3 \u2014 restarted, may still be spinning up). If another reboot appears before ~23:30, investigate WSL restart cause.\nHeartbeat 2026-08-31 21:56: ANOTHER reboot (~21:56, uptime 0min again \u2014 second today after ~21:25). Load 4.43 decaying, ollama ok (3 procs), mem 12G avail, disk 35%. Watch for repeat reboots.\nHeartbeat 2026-09-02 12:52: Same 09:31 boot, uptime 3h21m. Load 0.29, mem 12G avail, disk 35%. Fully stable, no recurrence.
-Heartbeat 2026-09-02 12:13: New boot ~09:31 today (uptime 2h42m). Single reboot, load spiked 3.96 but decaying (1.11 5-min), mem 12G avail, disk 35%. Likely WSL restart, not crash pattern. Stable."
-}
+{"lastChecks":{"system":1788407599},"notes":"Heartbeat 2026-09-02 19:53: All clear. Load 0.03, disk 35%, mem 13.5G avail, no failed units."}

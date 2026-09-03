@@ -1,0 +1,24 @@
+== baselines ==
+  impulse        51.4%  debt=244973  maxerr=61
+  interference   83.1%  debt=174978  maxerr=39
+
+== ROUND 1: initial designs ==
+   83.1%  debt= 174978  maxerr= 39  lfm2.5-350m:latest           K=4 pd=3 d=12 interference
+   83.1%  debt= 174978  maxerr= 39  lfm2.5-1.2b-instruct:latest  K=4 pd=3 d=12 interference
+   65.7%  debt= 208347  maxerr= 39  granite3.1-dense:2b          K=8 pd=4 d=12 interference
+  -----  Liquid-LFM2.5-2.6B:latest    [unparseable: We need to design a control strategy for an integer-only snap system. The problem description: We have a simulated game ]
+  -----  qwen3:8b                     [unparseable: ]
+
+== ROUND 2: revise after seeing leaderboard ==
+   78.2%  debt= 180397  maxerr= 39  lfm2.5-350m:latest           K=8 pd=3 d=12 interference
+   73.4%  debt= 161186  maxerr= 61  granite3.1-dense:2b          K=8 pd=6 d=15 sequential
+   65.7%  debt= 208347  maxerr= 39  lfm2.5-1.2b-instruct:latest  K=8 pd=4 d=12 interference
+  -----  Liquid-LFM2.5-2.6B:latest    [unparseable: The user wants me to design a control strategy for an integer-only snap system. The problem description is a bit complex]
+  -----  qwen3:8b                     [unparseable: ]
+
+== champion ==
+LiquidAI/lfm2.5-350m:latest — 78.2% within, debt 180397, maxerr 39
+strategy: {"K": 8, "pulse_div": 3, "delta": 12, "mode": "interference", "reason": "design a control strategy for an integer-only snap system"}
+reason: design a control strategy for an integer-only snap system
+
+vs hand-tuned interference: 83.1 hand tuning still leads

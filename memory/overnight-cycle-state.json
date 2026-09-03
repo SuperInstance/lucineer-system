@@ -1,6 +1,6 @@
 {
-  "lastTask": 1,
-  "lastRun": "2026-09-01T04:40Z",
-  "nextTask": 2,
-  "note": "2026-09-01 04:40 cycle: Task 1 (GROW THE REEF) DONE — reef_players.py --rounds 2 ran clean; 12 catches recorded (6 crew x 2 rounds, all at The Dock); map verified 2 rooms via curl. No new rooms/objects minted this cycle (crew stayed at The Dock). No local changes to commit. Next cycle: task 2 (GALLERY ART)."
+  "lastTask": 4,
+  "lastRun": "2026-09-03T03:50Z",
+  "nextTask": 5,
+  "note": "2026-09-03 03:32 cycle: Task 4 (README VISUAL PASS) DONE — SuperInstance/webgpu-profiler had zero README images; rendered hero (brass stopwatch timing light, gen_local + nighttime LoRA, seed 42), wired after H1/tagline per convention, commit f9c5275 'imagery:' pushed. NOTE: vision-model judging unavailable (GLM-5V not on plan, 429) — keeper unreviewed by judge; consider re-judging next cycle. experiment-wheel has NO README at all (candidate for full readme+hero later). Next cycle: task 5 (ORGAN CHECK)."
 }
