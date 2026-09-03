@@ -1,6 +1,6 @@
 {
-  "lastTask": 4,
-  "lastRun": "2026-09-03T03:50Z",
-  "nextTask": 5,
-  "note": "2026-09-03 03:32 cycle: Task 4 (README VISUAL PASS) DONE — SuperInstance/webgpu-profiler had zero README images; rendered hero (brass stopwatch timing light, gen_local + nighttime LoRA, seed 42), wired after H1/tagline per convention, commit f9c5275 'imagery:' pushed. NOTE: vision-model judging unavailable (GLM-5V not on plan, 429) — keeper unreviewed by judge; consider re-judging next cycle. experiment-wheel has NO README at all (candidate for full readme+hero later). Next cycle: task 5 (ORGAN CHECK)."
+  "lastTask": 1,
+  "lastRun": "2026-09-03T05:39Z",
+  "nextTask": 2,
+  "note": "2026-09-03 05:39 cycle: Task 1 (GROW THE REEF) DONE — reef_players --rounds 2: both rounds all 6 players caught at The Dock (12 recorded catches); world state 2 rooms (The Dock, Held Someone), lineage available on both. Live worker map verified: 2 rooms. No new rooms minted this cycle (crew stayed at The Dock). Next cycle: task 2 (GALLERY ART). Also outstanding: re-judge webgpu-profiler hero with a vision model if one becomes available."
 }
