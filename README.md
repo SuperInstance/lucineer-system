@@ -31,7 +31,7 @@ Design has outpaced delivery. Per `ROADMAP_whats_next.md` (the ground-truth doc,
 
 ### The Brain Pipeline
 
-The canonical 5-stage brain pipeline (implemented in `lucineer-system/brain.py`):
+The canonical 5-stage brain pipeline (implemented in `brain.py`, which lives in the **[lucineer-brain](../lucineer-brain)** sibling repo — not in this repo; see the honest-boundary note below):
 
 ```
 Stage 1: Intent Parse        Seed-2.0-mini      (Allegro, 120+ BPM)
@@ -44,9 +44,13 @@ Stage 5: Safety Check        Nemotron-Ultra     (Largo, 40-55 BPM)
          (in processor)
 ```
 
+### Honest boundary (2026-09-02 audit)
+
+The pipeline above is *designed and implemented*, not *running*: per `ROADMAP_whats_next.md` the brain is "Local — ❌ Not wired" (`--creative` never used in production), and `process_v2.py`'s deep path describes a 3-stage Seed → Planner → Coder run. Four real jobs processed, zero delivered to a player. Don't read this section as a live-system description; read `ROADMAP_whats_next.md` for that. (Style borrowed from quilt-verilog's "what is verified, matter-of-fact" discipline.)
+
 ### The Processor Daemon
 
-The processor (`process_v2.py`, in the `lucineer-relay` repo) is the orchestration layer:
+The processor (`process_v2.py`, in the `lucineer-relay` repo — cloned locally as `lucineer-worker`) is the orchestration layer:
 
 ```
 ┌─────────────────────────────────────────────────────────┐
@@ -234,11 +238,11 @@ This repo is the map, not the machine. To run anything end-to-end, clone the sib
 | Repository | Role |
 |-----------|------|
 | [lucineer-relay](../lucineer-relay) | Cloudflare Worker relay + processor daemon (`process_v2.py`) |
-| [lucineer-system](../lucineer-system) | 4-stage AI pipeline implementation |
+| [lucineer-brain](../lucineer-brain) | 5-stage AI brain pipeline (`brain.py` — intent, plan, commands, hermes, safety) |
 | [lucineer-creative](../lucineer-creative) | MMX-powered creative asset generation |
 | [lucineer-memory](../lucineer-memory) | D1 persistent memory store |
 | [lucineer-vector](../lucineer-vector) | Vectorize semantic skill library |
-| [lucineer-roblox](../lucineer-roblox) | Roblox client (16 Lua modules) |
+| [lucineer-roblox](../lucineer-roblox) | Roblox client (38 modules, ~36k lines, per `ROADMAP_whats_next.md`) |
 | [casting-call](../casting-call) | Model routing atlas (Layer 8) |
 
 ---
