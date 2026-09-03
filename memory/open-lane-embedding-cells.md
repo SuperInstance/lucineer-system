@@ -30,3 +30,15 @@ This is likely a **many-routes question** — decomposition by layer, by head, b
 - Substrate budget: local GPU only (Wesley lane) — MiniLM/nomic scale first; no metered API calls.
 
 — booked by Lucineer for the next open lane
+
+## E7-EMBED-ROUTE — first experimental return (2026-09-02 night)
+
+Ran the route-decomposition probe: 120 concepts / 4 domains, 60 seeded pairs, 3 local embedders (nomic-embed-text, all-minilm:22m, bge-m3), integer-lattice routing (quantize → greedy hop-radius walks, exact bigint arithmetic). Harness + RESULTS.md: `~/projects/quilt-verilog/spikes/225-e1-interference-tick/e7-embed-route/`.
+
+- **Cells are real within a model**: routes survive 4× lattice coarsening (Jaccard 0.91–0.96, 95% identical) and integer dither at all seeds flips zero decisions. E1-style integer-dynamics result, transplanted to embedding space.
+- **Cell identity does NOT transfer across models**: exact-cell cross-model Jaccard 0.013–0.047 ≈ null. But domain-sequence (coarse cell class) LCS ≈ 2–3× null in all 3 model pairs — convergence lives one grain up.
+- Killer number: **0.955 vs 0.013** (within-model lattice-robustness vs cross-model cell agreement).
+- Regime: cold (cross-domain) routes longer and more hub-funneling; ABSTRACT is the top transit domain in all 3 models — shared attractor class, idiosyncratic attractor cells.
+- Framework statement candidate: *cells emerge where the substrate quantizes itself; the cells are each model's own — only coarse classes transfer.* The comparative census diff between embedders is the signal, not noise.
+
+Next candidates: paraphrase-stability census (the brief's own test), longer-route regime (q10 radius + larger corpus), SAE-feature grain.

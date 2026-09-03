@@ -73,3 +73,9 @@ G major with the Steam Rule (one damped note per phrase) and the walk-in's G off
 - Worked: mistral pro-clean 3/3 rounds; qwen2.5:3b took the Dust Rule literally — r1 all rests, canon. Bluesy wrong notes (D#4/A#3) from the breeze, uncorrected.
 - Didn't: gemma3:4b + granite cold-load too slow (pre-warm at 7:45 next time); directed retries don't work on 3B (single bar returned). MIDI lean: 1203 B / 119 note-ons — duo sparseness, accepted like Stairwell.
 - Ops: ROTATE DEEPINFRA KEY — both cloud lanes down until then. Next: full-band 6/8 night; "the bulb dims one notch per round" rule.
+
+## 2026-09-02 — Guest Night at the Pier (jam-session-2026-09-02-pier)
+- **Lineup:** mistral:7b (accordion) + granite3.1-dense:2b (bowed bass) + Liquid-LFM2.5-2.6B (nyckelharpa — FIRST GIG). D major, 3/4, 84 BPM. Rendered pier-waltz.mid (180 note-ons, 3 tracks).
+- **Worked:** Liquid's debut — failed on long prompts, SUCCEEDED on a minimal "SOLO SPOT. 8 bars. Go." prompt. Small models need small asks. Mistral:7b is reliable and fast, produces chord+poetry hybrid output (clean the staves before rendering). The notation2midi oven handled everything first try.
+- **Didn't:** DeepSeek key is DEAD (auth error twice) — Casey needs to refresh it. qwen3:8b cold-load timed out at 90s. Granite drifts from its stated intent (said "sustain D2," played C3-B2) — hand-fix final bars.
+- **Next time:** Try Liquid from the start with micro-prompts all night. Rotate in phi4-mini or gemma3:4b (unused). Consider a 5/4 or 7/8 meter night — the oven takes --beats-per-bar.
