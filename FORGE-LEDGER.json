@@ -1,0 +1,192 @@
+{
+  "what": "FORGE-LEDGER \u2014 disk-budget law for the FORGEMASTER model rotation (charter: ai-writings/docs/FORGEMASTER-CHARTER.md)",
+  "updated": "2026-09-03T16:55:00-08:00",
+  "budget": {
+    "model_dir": "/home/eileen/.ollama/models",
+    "floor_gb": 38,
+    "growth_allowance_gb": 20,
+    "hard_cap_gb": 58,
+    "budget_remaining_gb": 20,
+    "note": "floor = du-measured 2026-09-03. Manifest sizes below are nominal (shared blobs dedupe on disk; phi3 and phi3:3.8b share ID 4f2222927938)."
+  },
+  "models": [
+    {
+      "name": "bge-m3:latest",
+      "size_gb": 1.2,
+      "tier": "embedder",
+      "status": "installed",
+      "roster": true,
+      "role": "primary embedder \u2014 skill recall, quilt similarity"
+    },
+    {
+      "name": "all-minilm:22m",
+      "size_gb": 0.045,
+      "tier": "embedder",
+      "status": "installed",
+      "roster": false,
+      "role": "tiny embed lane"
+    },
+    {
+      "name": "nomic-embed-text:latest",
+      "size_gb": 0.3,
+      "tier": "embedder",
+      "status": "installed",
+      "roster": true,
+      "role": "backup embedder"
+    },
+    {
+      "name": "qwen2.5vl:3b",
+      "size_gb": 3.2,
+      "tier": "vision",
+      "status": "installed",
+      "roster": true,
+      "role": "primary vision \u2014 screenshots, quilt panels"
+    },
+    {
+      "name": "llava:7b",
+      "size_gb": 4.7,
+      "tier": "vision",
+      "status": "installed",
+      "roster": false,
+      "role": "vision fallback, not default"
+    },
+    {
+      "name": "qwen3:8b",
+      "size_gb": 5.2,
+      "tier": "workhorse",
+      "status": "installed",
+      "roster": true,
+      "role": "daily driver"
+    },
+    {
+      "name": "deepseek-r1:8b",
+      "size_gb": 5.2,
+      "tier": "reasoner",
+      "status": "installed",
+      "roster": true,
+      "role": "slow thinking, kill-condition design"
+    },
+    {
+      "name": "mistral:7b",
+      "size_gb": 4.4,
+      "tier": "bench",
+      "status": "installed",
+      "roster": false,
+      "role": "bench \u2014 audition material"
+    },
+    {
+      "name": "gemma3:4b",
+      "size_gb": 3.3,
+      "tier": "bench",
+      "status": "installed",
+      "roster": false,
+      "role": "bench"
+    },
+    {
+      "name": "phi4-mini:latest",
+      "size_gb": 2.5,
+      "tier": "bench",
+      "status": "installed",
+      "roster": false,
+      "role": "bench"
+    },
+    {
+      "name": "phi3:latest",
+      "size_gb": 2.2,
+      "tier": "bench",
+      "status": "installed",
+      "roster": false,
+      "role": "bench (alias-shared with phi3:3.8b)"
+    },
+    {
+      "name": "phi3:3.8b",
+      "size_gb": 2.2,
+      "tier": "bench",
+      "status": "installed",
+      "roster": false,
+      "role": "bench (same blobs as phi3:latest)"
+    },
+    {
+      "name": "qwen2.5:3b",
+      "size_gb": 1.9,
+      "tier": "bench",
+      "status": "installed",
+      "roster": false,
+      "role": "bench"
+    },
+    {
+      "name": "llama3.2:1b",
+      "size_gb": 1.3,
+      "tier": "triage",
+      "status": "installed",
+      "roster": true,
+      "role": "triage routing"
+    },
+    {
+      "name": "qwen2.5:0.5b",
+      "size_gb": 0.4,
+      "tier": "triage",
+      "status": "installed",
+      "roster": true,
+      "role": "cheapest gatekeeper"
+    },
+    {
+      "name": "granite3.1-dense:2b",
+      "size_gb": 1.6,
+      "tier": "triage",
+      "status": "installed",
+      "roster": true,
+      "role": "triage"
+    },
+    {
+      "name": "Liquid-LFM2.5-2.6B:latest",
+      "size_gb": 1.7,
+      "tier": "triage",
+      "status": "installed",
+      "roster": true,
+      "role": "agentic boat-brain lane"
+    },
+    {
+      "name": "LiquidAI/lfm2.5-1.2b-instruct:latest",
+      "size_gb": 0.73,
+      "tier": "bench",
+      "status": "installed",
+      "roster": false,
+      "role": "bench"
+    },
+    {
+      "name": "LiquidAI/lfm2.5-350m:latest",
+      "size_gb": 0.379,
+      "tier": "bench",
+      "status": "installed",
+      "roster": false,
+      "role": "bench"
+    }
+  ],
+  "to_pull": [
+    {
+      "name": "qwen2.5-coder:7b",
+      "est_size_gb": 4.7,
+      "tier": "workhorse-alt",
+      "status": "to-pull",
+      "role": "code-shaped experiments; fits current budget"
+    }
+  ],
+  "rules": [
+    "No pull without a ledger entry first (pre-check vs hard cap 58 GB).",
+    "Disk cap breach = auto-pause all pulls + notify Casey before any byte lands.",
+    "Every pull/rm logged in events with size delta; budget_remaining updated in the same edit.",
+    "Ledger-vs-du disagreement = canary failure of the forge: pause and report.",
+    "Roster models are infrastructure \u2014 never rm'd without Casey's word."
+  ],
+  "events": [
+    {
+      "ts": "2026-09-03T17:21:00-08:00",
+      "action": "pull",
+      "model": "qwen2.5-coder:7b",
+      "size_gb": 4.7,
+      "reason": "workhorse-alt per charter roster",
+      "authorized": "charter ce444286 + Casey GO 17:20"
+    }
+  ]
+}

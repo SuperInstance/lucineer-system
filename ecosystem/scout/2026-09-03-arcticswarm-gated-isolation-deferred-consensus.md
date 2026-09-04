@@ -1,0 +1,12 @@
+# ArcticSwarm — Deferring Early Consensus in Long-Horizon Multi-Agent Research
+
+**What:** arXiv:2609.01870 (cs.MA, Sep 2026). Multi-agent research pipelines without verifiers (majority voting / self-consistency as proxy) suffer **early-consensus collapse**: parallel agents repeatedly explore the same evidence, and access to peers' partial findings makes search converge on the first plausible candidate before alternatives are tested. ArcticSwarm's fix has three parts: (1) subagents publish to a shared bulletin board but **gated isolation** lets selected search tasks keep their own prior — peers can't read them during gathering; (2) evidence gathering is separated from evidence integration; (3) **structured review at three commitment boundaries** — only confident candidates propagate. Results: 82.6% BrowseComp-Plus with open-weight Qwen 3.5-27B (vs 78.8% ungated, 74.5% without structured review); 73.6% live-web BrowseComp with GPT-5 vs provider system 54.9%.
+
+**Why it matters to us:** This is an outside-fleet, measured validation of patterns we run on intuition:
+
+- **Gated isolation ≈ our SERIAL LANES doctrine** (2026-08-22: concurrent GLM lanes starve each other / converge on each other's partial state). ArcticSwarm quantifies the *epistemic* cost too, not just throughput: peers' partial findings actively narrow the search — the two-independent-derivators protocol for zeroclaw (GLM-5.3 derivation + Claude derivation, compared only AFTER both complete) is exactly their gated isolation, and this paper says the gate is worth ~4pp on hard search even when it costs parallelism.
+- **Commitment boundaries ≈ our cross-read adjudication step.** Publishing to the bulletin board early (pre-adjudication) is the failure mode; structured review before propagation is our "no carrying booked-not-done across a checkpoint" rule (DEVIL, 2026-09-01).
+- **The Tap / committee design:** room-engine cross-talk (agents overhearing each other in the bar) is a *warmth feature* for social dynamics but a *contamination vector* for verification lanes. ArcticSwarm gives the vocabulary to say when each is right: bulletin-board-open for lore/conversation, gated for derivations and corpus labeling. Relevant to fc1b seeded-arm design (density-controlled seeds = peers' priors leaking).
+- Their ablation numbers (gating +4pp, structured review +4pp on top) are a cheap argument the next time serial-lane discipline feels slow.
+
+**Pointer:** https://arxiv.org/abs/2609.01870

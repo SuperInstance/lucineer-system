@@ -1,0 +1,12 @@
+# TNC/ai.fish Edge AI Catch Monitoring on Working Fishing Vessels
+
+**What:** The Nature Conservancy's electronic-monitoring program (ai.fish/project/edge-ai, globalseafood.org coverage, 2025–2026): "Edge AI" modules that analyze catch video **on the vessel, in real time**, on low-power embedded boards (NVIDIA Jetson class) — fish detection, species recognition, counting, and size/weight estimation from deck camera streams without cloud connectivity. Cuts review times dramatically vs. shoreside manual review and helps detect under-reporting. Part of the same wave as AI-RCAS (real-time catch analysis for TAC management, cited across the 2026 edge-AI-marine literature) and FPGA-based marine vision inference at ~2.2W (oil-spill detection reference point). Companion context from the same survey: LEO satcom (Starlink/Kuiper) is transforming connectivity at sea, but edge AI stays load-bearing for when links drop — exactly the intermittent-connectivity regime.
+
+**Why it matters to us (Boat lane / F/V EILEEN):**
+
+- **This is the F/V EILEEN camera lane, already productized by someone else.** Deck/wheelhouse cameras + species/catch detection on Jetson-class hardware is exactly Casey's "Wesley watching cameras, spotting fish" vision — The Nature Conservancy is running it in production fisheries now. Import-and-adapt, don't define-from-scratch: their pipeline architecture (video → on-board inference → compressed events for shoreside review) is the pattern for the boat brain.
+- **Power budget evidence.** FPGA vision inference at 2.2W and Jetson boards as the standard bearer give us measured reference points for the boat's power envelope. Our local lane (Liquid LFM2.5-2.6B on the 4050, ~40-67 tok/s) plus a vision front-end of this class = a wheelhouse assistant that runs with the satcom down.
+- **Push-pull MAC synergy.** This finding pairs with the 2026-09-02 scout filing (Popovski push-pull digital-twin alignment): catch events = the "push" urgent class (anomaly/decision-relevant), routine telemetry = scheduled "pull". The ai.fish architecture validates the same split empirically — heavy video stays local, only structured events leave the boat.
+- **Regulatory tailwind.** TAC/bycatch compliance drivers mean funding and field-proven hardware configs exist; when we spec the EILEEN build, EM-vendors' part lists are a shortcut.
+
+**Pointer:** https://www.ai.fish/project/edge-ai and https://www.globalseafood.org/advocate/tnc-backed-edge-ai-seeks-to-streamline-electronic-monitoring-in-the-ongoing-effort-to-fight-iuu-fishing/
