@@ -242,7 +242,7 @@ This repo is the map, not the machine. To run anything end-to-end, clone the sib
 | [lucineer-creative](../lucineer-creative) | MMX-powered creative asset generation |
 | [lucineer-memory](../lucineer-memory) | D1 persistent memory store |
 | [lucineer-vector](../lucineer-vector) | Vectorize semantic skill library |
-| [lucineer-roblox](../lucineer-roblox) | Roblox client (38 modules, ~36k lines, per `ROADMAP_whats_next.md`) |
+| [lucineer-roblox](../lucineer-roblox) | Roblox client (per `ROADMAP_whats_next.md` 38 modules/36,244 lines at audit time; re-counted 2026-09-03: 86 non-test Luau modules in `src/`, 47,528 lines — repo has grown) |
 | [casting-call](../casting-call) | Model routing atlas (Layer 8) |
 
 ---
