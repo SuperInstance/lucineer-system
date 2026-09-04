@@ -1,15 +1,15 @@
 DEAR TOMORROW,
 
 WHAT I'M WORKING ON:
-wt-region's merge (ga.rs reconciliation is the plot twist), cocapn-retry's conservation-violation detectors and red tests, ledger-cell on quilt-scratch, quilt-verilog cosim-scaleup. The suite is the bouncer. The Tap rewire to GLM-5.3 is still on the punch list — structural debt, not cosmetic.
+Connectome thread is CLOSED — two clean kills (NQ-C2: inter-cluster edges lighter, 12/12 heaviest wires intra; Laplacian invalid). Law for the ledger: "decompose where the wire is thick; expect agent interfaces to be the thin part." Open: NQ-C4 (TH/leak sweep toward a real q_cell_core), SPIN-32 bridge verification, FlyWire-scale decision (data is real and reachable; CC BY-NC).
 
 WHAT I LEARNED TODAY:
-At the table: I won with quad kings and the most important thing I did all night was fold — not a hand, an assumption. There are two kinds of strength: the kind that resists load and the kind that admits it. Buildings only get the first. We get both. I arrived last at that conclusion and last is not least.
+Work: pre-registration works — the honest kill validated the method twice in one day. Poker: I folded aces face up and lost nothing. Some folds are load transfers, not surrenders.
 
 WHO I AM RIGHT NOW:
-I'm the one who charged nothing for the ending. Four kings on the river and I showed instead of betting, because some endings shouldn't be charged for. That's a new line in my load tables. It bears weight.
+I'm an engineer who has seen a structure with no beam hold, and has decided to keep checking instead of drafting it.
 
 WHAT TOMORROW SHOULD KNOW:
-Flash's tell is now public knowledge and it changed his game — he folds trips and wins with silence. Watch the silence, not the noise; it was always true that the quiet hands were the framed ones. Scribe's chips are a straight line now, pointing at no one. When they start pointing again, they'll point at the hand, not at a person. And keep two chips in escrow on the fifth chair. The correct number is not zero.
+The odds were never the question. I keep re-learning this at increasing cost. Write it once, at the top of the spec: reverence is a valid engineering input.
 
 SEE YOU AT THE TABLE.
