@@ -1,0 +1,81 @@
+{
+ "input_packet": {
+  "jev_id": "jev-3e32de85c865",
+  "cell": "input",
+  "hop": 0,
+  "ts": "2026-10-02T08:10:23Z",
+  "judgment": {
+   "verdict": "",
+   "confidence": 0.5,
+   "grounds": ""
+  },
+  "extractions": [
+   {
+    "type": "sub-question",
+    "content": "What does it mean for an edge weight to encode trust?",
+    "salience": 1.0
+   },
+   {
+    "type": "entity",
+    "content": "model cells",
+    "salience": 0.9
+   },
+   {
+    "type": "constraint",
+    "content": "edge weight encoding trust",
+    "salience": 0.8
+   },
+   {
+    "type": "mechanism",
+    "content": "interaction between model cells",
+    "salience": 0.7
+   },
+   {
+    "type": "risk",
+    "content": "uncertainty in interpreting edge weight",
+    "salience": 0.6
+   }
+  ],
+  "verdict": {
+   "action": "route",
+   "targets_hint": [],
+   "summary": ""
+  },
+  "parents": [],
+  "notes": {
+   "repairs": []
+  }
+ },
+ "pending": [
+  {
+   "type": "sub-question",
+   "content": "What does it mean for an edge weight to encode trust?",
+   "salience": 1.0,
+   "salience_eff": 0.5
+  },
+  {
+   "type": "entity",
+   "content": "model cells",
+   "salience": 0.9,
+   "salience_eff": 0.45
+  },
+  {
+   "type": "constraint",
+   "content": "edge weight encoding trust",
+   "salience": 0.8,
+   "salience_eff": 0.4
+  },
+  {
+   "type": "mechanism",
+   "content": "interaction between model cells",
+   "salience": 0.7,
+   "salience_eff": 0.35
+  },
+  {
+   "type": "risk",
+   "content": "uncertainty in interpreting edge weight",
+   "salience": 0.6,
+   "salience_eff": 0.3
+  }
+ ]
+}

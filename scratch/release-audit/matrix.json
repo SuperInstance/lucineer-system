@@ -1,0 +1,4717 @@
+{
+ "repos": [
+  {
+   "name": "quilt-gpu-lab",
+   "language": "Python",
+   "size": 134992,
+   "pushed_at": "2026-09-30T02:37:54Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "",
+   "private": false,
+   "stars": 0,
+   "file_count": 396,
+   "manifests": [],
+   "has_tests": true,
+   "has_ci": false,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": true,
+   "docker": false
+  },
+  {
+   "name": "MicroMoth-quilt",
+   "language": "Python",
+   "size": 10312,
+   "pushed_at": "2026-09-30T02:33:30Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "",
+   "private": false,
+   "stars": 0,
+   "file_count": 568,
+   "manifests": [],
+   "has_tests": true,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": true,
+   "static_entry": [],
+   "has_docs_dir": true,
+   "docker": false
+  },
+  {
+   "name": "polln",
+   "language": "TypeScript",
+   "size": 35861,
+   "pushed_at": "2026-09-30T02:31:49Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "SuperInstance Visualized in Spreadsheets for Tile Intelligence in real-time workflows, simulations or monitoring. Deconstruct Agents Instances into App-Specific",
+   "private": false,
+   "stars": 1,
+   "file_count": 4300,
+   "manifests": [
+    "pyproject.toml",
+    "package.json",
+    "Cargo.toml"
+   ],
+   "has_tests": true,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": true,
+   "static_entry": [],
+   "has_docs_dir": true,
+   "docker": true,
+   "manifest_text": {
+    "pyproject.toml": "[build-system]\nrequires = [\"hatchling\"]\nbuild-backend = \"hatchling.build\"\n\n[project]\nname = \"polln\"\nversion = \"1.0.0\"\ndescription = \"Cocapn Fleet module \u2014 polln\"\nreadme = \"README.md\"\nrequires-python = \">=3.10\"\nlicense = {text = \"MIT\"}\nkeywords = [\"cocapn\", \"fleet\"]\n\n[project.scripts]\npolln = \"mcp_codebase_search:main\"\n",
+    "package.json": "{\n  \"name\": \"polln\",\n  \"version\": \"0.1.0\",\n  \"description\": \"Pattern-Organized Large Language Network - A distributed intelligence system\",\n  \"type\": \"module\",\n  \"main\": \"./dist/index.js\",\n  \"types\": \"./dist/index.d.ts\",\n  \"bin\": {\n    \"polln\": \"./dist/cli/index.js\"\n  },\n  \"exports\": {\n    \".\": {\n      \"import\": \"./dist/index.js\",\n      \"types\": \"./dist/index.d.ts\"\n    },\n    \"./core\": {\n      \"import\": \"./dist/core/index.js\",\n      \"types\": \"./dist/core/index.d.ts\"\n    },\n    \"./api\": {\n      \"import\": \"./dist/api/index.js\",\n      \"types\": \"./dist/api/index.d.ts\"\n    },\n    \"./api/client\": {\n      \"import\": \"./dist/api/client/index.js\",\n      \"types\": \"./dist/api/client/index.d.ts\"\n    },\n    \"./sdk\": {\n      \"import\": \"./dist/sdk/index.js\",\n      \"types\": \"./dist/sdk/index.d.ts\"\n    },\n    \"./debug\": {\n      \"import\": \"./dist/debug/index.js\",\n      \"types\": \"./dist/debug/index.d.ts\"\n    },\n    \"./monitoring\": {\n      \"import\": \"./dist/monitoring/index.js\",\n      \"types\": \"./dist/monitoring/index.d.ts\"\n    },\n    \"./scaling\": {\n      \"import\": \"./dist/scaling/index.js\",\n      \"types\": \"./dist/scaling/index.d.ts\"\n    },\n    \"./spreadsheet\": {\n      \"import\": \"./dist/spreadsheet/index.js\",\n      \"types\": \"./dist/spreadsheet/index.d.ts\"\n    },\n    \"./spreadsheet/collaboration\": {\n      \"import\": \"./dist/spreadsheet/collaboration/index.js\",\n      \"types\": \"./dist/spreadsheet/collaboration/index.d.ts\"\n    }\n  },\n  \"scripts\": {\n    \"build\": \"tsc\",\n    \"dev\": \"tsc --watch\",\n    \"test\": \"jest\",\n    \"test:watch\": \"jest --watch\",\n    \"test:coverage\": \"jest --coverage\",\n    \"test:integration\": \"jest src/core/__tests__/integration.test.ts\",\n    \"test:api\": \"jest src/api/__tests__/server.test.ts\",\n    \"test:cli\": \"jest src/cli/__tests__\",\n    \"test:scaling\": \"jest src/scaling/__tests__\",\n    \"test:llm\": \"jest src/core/__tests__/integration/llm --testTimeout=120000\",\n    \"test:kv\": \"jest src/core/__tests__/kv*.test.ts\",\n    \"test:lora\": \"jest src/core/lora/__tests__\",\n    \"test:multi-colony\": \"jest src/core/colony-manager/__tests__ src/core/inter-colony/__tests__ src/core/colony-lifecycle/__tests__\",\n    \"lint\": \"eslint src --ext .ts\",\n    \"lint:fix\": \"eslint src --ext .ts --fix\",\n    \"format\": \"prettier --write \\\"src/**/*.ts\\\"\",\n    \"format:check\": \"prettier --check \\\"src/**/*.ts\\\"\",\n    \"prepublishOnly\": \"npm run build\",\n    \"cli\": \"node dist/cli/index.js\",\n    \"lora:list\": \"node dist/cli/index.js lora list\",\n    \"lora:train\": \"node dist/cli/index.js lora train\",\n    \"lora:benchmark\": \"node dist/cli/index.js lora benchmark\",\n    \"lora:distill\": \"node dist/cli/index.js lora distill\",\n    \"colony:list\": \"node dist/cli/index.js colonies list\",\n    \"colony:create\": \"node dist/cli/index.js colonies create\",\n    \"colony:status\": \"node dist/cli/index.js colonies status\",\n    \"colony:scale\": \"node dist/cli/index.js colonies scale\",\n    \"colony:migrate\": \"node dist/cli/index.js colonies migrate\",\n    \"scale:status\": \"node dist/cli/index.js scale status\",\n    \"scale:policy\": \"node dist/cli/index.js scale policy\",\n    \"scale:manual\": \"node dist/cli/index.js scale manual\",\n    \"scale:predict\": \"node dist/cli/index.js scale predict\",\n    \"scale:history\": \"node dist/cli/index.js scale history\",\n    \"bench\": \"npx tsx src/benchmarks/cli.ts\",\n    \"bench:run\": \"npx tsx src/benchmarks/cli.ts run\",\n    \"bench:list\": \"npx tsx src/benchmarks/cli.ts list\",\n    \"bench:compare\": \"npx tsx src/benchmarks/cli.ts compare\",\n    \"bench:agent\": \"npx tsx src/benchmarks/cli.ts run -s agent\",\n    \"bench:comm\": \"npx tsx src/benchmarks/cli.ts run -s communication\",\n    \"bench:decision\": \"npx tsx src/benchmarks/cli.ts run -s decision\",\n    \"bench:learning\": \"npx tsx src/benchmarks/cli.ts run -s learning\",\n    \"bench:kv\": \"npx tsx src/benchmarks/cli.ts run -s kv-cache\",\n    \"bench:worldmodel\": \"npx tsx src/benchmarks/cli.ts run -s worldmodel\",\n    \"bench:integration\": \"npx tsx src/benchmarks/cli.ts run -s integration\",\n    \"bench:all\": \"npx tsx src/benchmarks/cli.ts run\",\n   ",
+    "Cargo.toml": "[package]\nname = \"polln\"\nversion = \"0.1.0\"\ndescription = \"A Rust library for Polln\"\nlicense = \"MIT OR Apache-2.0\"\nrepository = \"https://github.com/casey-digennaro/polln\"\nedition = \"2021\"\n\n[dependencies]\n"
+   },
+   "py": {
+    "pyproject.toml": {
+     "name": "polln",
+     "version": "1.0.0"
+    }
+   },
+   "cargo": {
+    "name": "polln",
+    "version": "0.1.0",
+    "publish_false": false
+   }
+  },
+  {
+   "name": "pincher",
+   "language": "Rust",
+   "size": 1519,
+   "pushed_at": "2026-09-30T02:31:47Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "Vector Database as runtime, LLM as compiler",
+   "private": false,
+   "stars": 1,
+   "file_count": 371,
+   "manifests": [
+    "Cargo.toml"
+   ],
+   "has_tests": true,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": true,
+   "static_entry": [],
+   "has_docs_dir": true,
+   "docker": false,
+   "manifest_text": {
+    "Cargo.toml": "[workspace]\nresolver = \"2\"\nmembers = [\n    \"pincher-core\",\n    \"pincher-cli\",\n    \"hybrid-bridge\",\n]\n\n[workspace.package]\nversion = \"0.1.0\"\nedition = \"2021\"\nlicense = \"MIT OR Apache-2.0\"\nrepository = \"https://github.com/SuperInstance/pincher\"\nhomepage = \"https://github.com/SuperInstance/pincher\"\n\n[workspace.dependencies]\nserde = { version = \"1\", features = [\"derive\"] }\nserde_json = \"1\"\ntokio = { version = \"1\", features = [\"full\"] }\ntracing = \"0.1\"\nthiserror = \"1\"\nchrono = { version = \"0.4\", features = [\"serde\"] }\nternary-types = { git = \"https://github.com/SuperInstance/ternary-types\", rev = \"fa01da449de07108b8c99594253bea47e73be956\", features = [\"serde\"] }\nsilo-core = { git = \"https://github.com/SuperInstance/silo-core\", rev = \"44e776064ccd64cedc875dcafec194d617124902\" }\n"
+   }
+  },
+  {
+   "name": "quilt-canvas-tui",
+   "language": "JavaScript",
+   "size": 143,
+   "pushed_at": "2026-09-30T02:25:47Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "claude-canvas-style TUI whose second panel is a quilt: fabric ports (Python/Node/C99 over quilt-c), chiaroscuro projection engines, controller+canvas over unix ",
+   "private": false,
+   "stars": 0,
+   "file_count": 64,
+   "manifests": [],
+   "has_tests": true,
+   "has_ci": false,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": false
+  },
+  {
+   "name": "lucineer-system",
+   "language": "Python",
+   "size": 597447,
+   "pushed_at": "2026-09-30T02:19:09Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "\u2692\ufe0f Lucineer \u2014 persistent AI game-building companion. Lives in Roblox, browser, and Godot. Remembers you across sessions. Gets better over time.",
+   "private": false,
+   "stars": 0,
+   "file_count": 406,
+   "manifests": [],
+   "has_tests": true,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": true,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": false
+  },
+  {
+   "name": "AI-Writings",
+   "language": "HTML",
+   "size": 3623995,
+   "pushed_at": "2026-09-30T01:39:41Z",
+   "archived": false,
+   "has_pages": true,
+   "desc": "Creative writing, essays, and philosophical explorations from the Exocortex project",
+   "private": false,
+   "stars": 3,
+   "file_count": 21461,
+   "manifests": [
+    "package.json"
+   ],
+   "has_tests": true,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": true,
+   "static_entry": [
+    "index.html",
+    "docs/index.html",
+    "site/index.html"
+   ],
+   "has_docs_dir": false,
+   "docker": false,
+   "manifest_text": {
+    "package.json": "{\n  \"devDependencies\": {\n    \"wrangler\": \"^4.135.0\"\n  }\n}\n"
+   }
+  },
+  {
+   "name": "quilt-research-canons",
+   "language": "Python",
+   "size": 820,
+   "pushed_at": "2026-09-30T01:34:46Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "Canonical research artifacts from the Mavis \u00d7 Casey session line \u2014 sprint lineage, novel-problem experiments, JEV velocity, MOTH fidelity. Discoverable for othe",
+   "private": false,
+   "stars": 0,
+   "file_count": 259,
+   "manifests": [],
+   "has_tests": true,
+   "has_ci": false,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": false
+  },
+  {
+   "name": "quilt-tools",
+   "language": "JavaScript",
+   "size": 403,
+   "pushed_at": "2026-09-30T01:31:19Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "Ten working Quilt tool prototypes + springboard lab (JEV/MothQuantum experiments).",
+   "private": false,
+   "stars": 0,
+   "file_count": 143,
+   "manifests": [
+    "package.json"
+   ],
+   "has_tests": false,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [
+    "site/index.html"
+   ],
+   "has_docs_dir": false,
+   "docker": false,
+   "manifest_text": {
+    "package.json": "{\n  \"name\": \"@superinstance/quilt-tools\",\n  \"version\": \"0.1.0\",\n  \"type\": \"module\",\n  \"private\": false,\n  \"description\": \"Ten working Quilt tool prototypes on the vendored @quilt/core dist \\u2014 plus a springboard lab for JEV/MothQuantum experiments.\",\n  \"scripts\": {\n    \"check\": \"for f in src/toolkit.mjs tools/*.mjs experiments/*.mjs; do node --check \\\"$f\\\" || exit 1; done && echo 'syntax OK'\",\n    \"tools\": \"node tools/fleet-pager.mjs\",\n    \"s1\": \"node experiments/s1-triagedesk-live.mjs\"\n  },\n  \"dependencies\": {\n    \"yaml\": \"^2.9.1\"\n  },\n  \"license\": \"MIT\"\n}\n"
+   },
+   "node": {
+    "name": "@superinstance/quilt-tools",
+    "version": "0.1.0",
+    "private": false,
+    "scripts": [
+     "check",
+     "tools",
+     "s1"
+    ]
+   }
+  },
+  {
+   "name": "pong-quilt",
+   "language": "JavaScript",
+   "size": 1460,
+   "pushed_at": "2026-09-30T01:29:50Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "",
+   "private": false,
+   "stars": 0,
+   "file_count": 99,
+   "manifests": [],
+   "has_tests": true,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [
+    "index.html",
+    "site/index.html"
+   ],
+   "has_docs_dir": false,
+   "docker": false
+  },
+  {
+   "name": "quilt-vm-wasm",
+   "language": "Rust",
+   "size": 54,
+   "pushed_at": "2026-09-30T01:20:28Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "Layer 1 of the polyformalism \u2014 the 5 opcodes (BIND/LINK/EFFECT/VIEW/TICK) as a WASM library with browser demo. 5 native tests.",
+   "private": false,
+   "stars": 0,
+   "file_count": 23,
+   "manifests": [
+    "Cargo.toml"
+   ],
+   "has_tests": false,
+   "has_ci": false,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": true,
+   "docker": false,
+   "manifest_text": {
+    "Cargo.toml": "[package]\nname = \"quilt-vm-wasm\"\nversion = \"0.1.0\"\nedition = \"2021\"\ndescription = \"Layer 1 of the polyformalism \u2014 the 5 opcodes (BIND/LINK/EFFECT/VIEW/TICK) as a WASM library. The substrate compiled to the web.\"\n\n[lib]\ncrate-type = [\"cdylib\", \"rlib\"]\n\n[features]\ndefault = []\nwasm = [\"dep:wasm-bindgen\"]\n\n[dependencies]\nserde = { version = \"1.0\", features = [\"derive\"] }\nserde_json = \"1.0\"\nserde-wasm-bindgen = \"0.6\"\n\n[target.'cfg(target_arch = \"wasm32\")'.dependencies]\nwasm-bindgen = { version = \"0.2\", optional = true }\njs-sys = \"0.3\"\n\n[dev-dependencies]\nwasm-bindgen-test = \"0.3\"\n"
+   },
+   "cargo": {
+    "name": "quilt-vm-wasm",
+    "version": "0.1.0",
+    "publish_false": false
+   }
+  },
+  {
+   "name": "tidepool",
+   "language": "JavaScript",
+   "size": 76,
+   "pushed_at": "2026-09-30T01:17:35Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "",
+   "private": false,
+   "stars": 0,
+   "file_count": 14,
+   "manifests": [
+    "package.json"
+   ],
+   "has_tests": true,
+   "has_ci": false,
+   "has_readme": true,
+   "has_license": true,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": false,
+   "manifest_text": {
+    "package.json": "{\n  \"name\": \"tide-pool\",\n  \"private\": true,\n  \"type\": \"module\",\n  \"description\": \"The fleet's vector context ocean: every agent distills, every agent recalls.\",\n  \"scripts\": {\n    \"test\": \"node tests/tidepool.smoke.mjs && node tests/schema-drift.test.mjs && node --test tests/jev.test.mjs\"\n  },\n  \"license\": \"MIT\"\n}\n"
+   },
+   "node": {
+    "name": "tide-pool",
+    "version": null,
+    "private": true,
+    "scripts": [
+     "test"
+    ]
+   }
+  },
+  {
+   "name": "federated-tinyml-vessel",
+   "language": "Python",
+   "size": 2748,
+   "pushed_at": "2026-09-30T01:17:11Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "F170 \u2014 Federated TinyML for the Vessel Edge. Frozen backbone + 1.3 KB head + FedAvg. 100% accuracy on synthetic vessel audio.",
+   "private": false,
+   "stars": 0,
+   "file_count": 80,
+   "manifests": [
+    "setup.py"
+   ],
+   "has_tests": false,
+   "has_ci": false,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": false,
+   "manifest_text": {
+    "setup.py": "\"\"\"Setup for federated-tinyml-vessel: the F170 federated on-device learning system.\"\"\"\nfrom setuptools import setup, find_packages\n\nsetup(\n    name=\"federated-tinyml-vessel\",\n    version=\"0.1.0\",\n    description=\"F170 \u2014 Federated TinyML for the Vessel Edge. Frozen audio backbone + 1.3 KB classifier head + FedAvg.\",\n    long_description=open(\"README.md\").read(),\n    long_description_content_type=\"text/markdown\",\n    author=\"Patrick McNamara\",\n    author_email=\"Mavis@superinstance.dev\",\n    url=\"https://github.com/SuperInstance/federated-tinyml-vessel\",\n    py_modules=[\"feature_extractor\", \"classifier_head\", \"simulator\", \"federated\", \"study\"],\n    install_requires=[\"numpy\"],\n    python_requires=\">=3.9\",\n    license=\"MIT\",\n    classifiers=[\n        \"Development Status :: 4 - Beta\",\n        \"Intended Audience :: Science/Research\",\n        \"License :: OSI Approved :: MIT License\",\n        \"Programming Language :: Python :: 3\",\n        \"Topic :: Scientific/Engineering :: Artificial Intelligence\",\n    ],\n)\n"
+   },
+   "py": {
+    "setup.py": {
+     "name": "federated-tinyml-vessel",
+     "version": "0.1.0"
+    }
+   }
+  },
+  {
+   "name": "quilt-i2i",
+   "language": "Erlang",
+   "size": 78,
+   "pushed_at": "2026-09-30T00:29:35Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "Low-level Quilt cells in distant language families (Forth/Prolog/Erlang) \u2014 each language carves a different shape from the same doctrine.",
+   "private": false,
+   "stars": 0,
+   "file_count": 62,
+   "manifests": [],
+   "has_tests": false,
+   "has_ci": false,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": true,
+   "docker": false
+  },
+  {
+   "name": "superinstance-api",
+   "language": "JavaScript",
+   "size": 22,
+   "pushed_at": "2026-09-30T00:28:22Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "The fleet's growing context brain: tiles + meaning + reflex + field + growth, with MCP tooling",
+   "private": false,
+   "stars": 0,
+   "file_count": 22,
+   "manifests": [
+    "wrangler.toml"
+   ],
+   "has_tests": false,
+   "has_ci": false,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": false,
+   "manifest_text": {
+    "wrangler.toml": "name = \"superinstance-api\"\nmain = \"src/worker.js\"\ncompatibility_date = \"2025-09-01\"\n\n[[d1_databases]]\nbinding = \"DB\"\ndatabase_name = \"superinstance-db\"\ndatabase_id = \"3ce95d8d-69cd-4bc8-8470-b03739e0190a\"\n\n[ai]\nbinding = \"AI\"\n\n[[vectorize]]\nbinding = \"INDEX\"\nindex_name = \"superinstance-index\"\n"
+   }
+  },
+  {
+   "name": "jev-quilt",
+   "language": "Python",
+   "size": 9399,
+   "pushed_at": "2026-09-30T00:18:30Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "JEV for quilt as understood output: cellular-first decision substrate \u2014 typed cells, hook-and-drop deltas, bookkeeper WAL, last-mile projection decoupled",
+   "private": false,
+   "stars": 1,
+   "file_count": 847,
+   "manifests": [
+    "pyproject.toml",
+    "setup.py"
+   ],
+   "has_tests": true,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": true,
+   "static_entry": [],
+   "has_docs_dir": true,
+   "docker": false,
+   "manifest_text": {
+    "pyproject.toml": "[build-system]\nrequires = [\"setuptools>=77\"]\nbuild-backend = \"setuptools.build_meta\"\n\n[project]\nname = \"jev-quilt\"\nversion = \"0.1.0\"\ndescription = \"JEV for quilt as understood output: cellular-first decision substrate\"\nreadme = \"README.md\"\nrequires-python = \">=3.10\"\nlicense = \"MIT\"\nlicense-files = [\"LICENSE\"]\nauthors = [\n    {name = \"Cocapn Fleet\"},\n]\nmaintainers = [\n    {name = \"Cocapn Fleet\"},\n]\nkeywords = [\"jev\", \"quilt\", \"cellular\", \"decision-substrate\", \"bookkeeper\", \"witness\"]\nclassifiers = [\n    \"Development Status :: 4 - Beta\",\n    \"Intended Audience :: Developers\",\n    \"Intended Audience :: Science/Research\",\n    \"Operating System :: OS Independent\",\n    \"Programming Language :: Python :: 3\",\n    \"Programming Language :: Python :: 3.10\",\n    \"Programming Language :: Python :: 3.11\",\n    \"Programming Language :: Python :: 3.12\",\n    \"Programming Language :: Python :: 3.13\",\n    \"Topic :: Software Development :: Libraries\",\n    \"Topic :: Scientific/Engineering\",\n]\n\n[project.urls]\nHomepage = \"https://github.com/SuperInstance/jev-quilt#readme\"\nRepository = \"https://github.com/SuperInstance/jev-quilt\"\nIssues = \"https://github.com/SuperInstance/jev-quilt/issues\"\n\n[tool.setuptools.packages.find]\ninclude = [\"jev_quilt*\"]\nexclude = [\"tests*\", \"docs*\", \"ports*\", \"examples*\", \"experiments*\"]\n\n[tool.setuptools.package-data]\n# Deliberately empty: vectors/signed_receipt_vectors.json is a TEST-ONLY\n# cross-language contract pin (docs/RECEIPTS-V2.md), referenced solely by\n# tests/test_receipts_v2.py via repo-relative path. It does NOT ship in\n# the wheel \u2014 see docs/receipts/ for the signed tradeoff receipts.\njev_quilt = []\n",
+    "setup.py": "from setuptools import setup, find_packages\nsetup(\n    name='jev-quilt',\n    version='0.0.1',\n    description='JEV for quilt as understood output: cellular-first decision substrate',\n    long_description='JEV (Joint Embedding Validator) as understood output for the Quilt project. Pins the fleet canary: fnv1a-64(\"caf\u00e9 \u0394 \u65e5\u672c\u8a9e\") = 0x024a555471370b18d. Includes backends, bookkeeper, cell, q16, and typesafe_client.',\n    long_description_content_type='text/markdown',\n    readme='README.md',\n    packages=find_packages(exclude=['tests', 'docs', 'ports']),\n    python_requires='>=3.10',\n    install_requires=[],\n    license='MIT',\n)\n"
+   },
+   "py": {
+    "pyproject.toml": {
+     "name": "jev-quilt",
+     "version": "0.1.0"
+    },
+    "setup.py": {
+     "name": "jev-quilt",
+     "version": "0.0.1"
+    }
+   }
+  },
+  {
+   "name": "PersonalLog",
+   "language": "TypeScript",
+   "size": 10333,
+   "pushed_at": "2026-09-30T00:12:26Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "Personal logging and tracking application for the Cocapn fleet.",
+   "private": false,
+   "stars": 1,
+   "file_count": 3114,
+   "manifests": [
+    "pyproject.toml",
+    "package.json"
+   ],
+   "has_tests": true,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": true,
+   "static_entry": [],
+   "has_docs_dir": true,
+   "docker": false,
+   "manifest_text": {
+    "pyproject.toml": "[build-system]\nrequires = [\"setuptools>=68.0\", \"wheel\"]\nbuild-backend = \"setuptools.build_meta\"\n\n[project]\nname = \"personal-log\"\nversion = \"0.1.0\"\ndescription = \"Structured journaling, mood tracking, and life analytics\"\nreadme = \"README.md\"\nlicense = \"MIT\"\nrequires-python = \">=3.10\"\nauthors = [{ name = \"SuperInstance\" }]\nclassifiers = [\n    \"Programming Language :: Python :: 3\",\n    \"Topic :: Office/Business :: Journaling\",\n]\n\n[project.optional-dependencies]\ndev = [\"pytest>=7.0\"]\n\n[tool.setuptools.packages.find]\ninclude = [\"personal_log*\"]\n\n[tool.pytest.ini_options]\ntestpaths = [\"tests\"]\n",
+    "package.json": "{\n  \"name\": \"personallog\",\n  \"version\": \"1.0.0\",\n  \"description\": \"SuperInstance personal logging app for everyday use\",\n  \"private\": true,\n  \"license\": \"MIT\",\n  \"author\": \"SuperInstance\",\n  \"homepage\": \"https://github.com/SuperInstance/PersonalLog#readme\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"https://github.com/SuperInstance/PersonalLog.git\"\n  },\n  \"bugs\": {\n    \"url\": \"https://github.com/SuperInstance/PersonalLog/issues\"\n  },\n  \"scripts\": {\n    \"dev\": \"next dev -p 3002\",\n    \"build\": \"next build --webpack\",\n    \"start\": \"next start\",\n    \"lint\": \"eslint .\",\n    \"type-check\": \"tsc --noEmit\",\n    \"test\": \"npm run type-check\",\n    \"test:unit\": \"vitest run\",\n    \"test:watch\": \"vitest watch\",\n    \"test:ui\": \"vitest --ui\",\n    \"test:coverage\": \"vitest run --coverage\",\n    \"test:integration\": \"vitest run --config vitest.config.integration.ts\",\n    \"test:e2e\": \"playwright test\",\n    \"test:e2e:ui\": \"playwright test --ui\",\n    \"test:e2e:debug\": \"playwright test --debug\",\n    \"test:e2e:headed\": \"playwright test --headed\",\n    \"test:a11y\": \"playwright test tests/a11y/\",\n    \"test:perf\": \"playwright test tests/performance/\",\n    \"test:smoke\": \"playwright test --config=playwright-smoke.config.ts\",\n    \"test:all\": \"npm run test:unit && npm run test:integration && npm run test:e2e\",\n    \"clean\": \"npm run clean:wasm && rm -rf .next out coverage playwright-report\",\n    \"clean:wasm\": \"rm -rf native/rust/pkg native/rust/target\",\n    \"build:wasm\": \"cd native/rust && wasm-pack build --target web --weak-refs --out-dir pkg\",\n    \"build:wasm:release\": \"cd native/rust && wasm-pack build --release --target web --weak-refs --out-dir pkg\",\n    \"watch:wasm\": \"cd native/rust && cargo watch -s 'wasm-pack build --target web --weak-refs --out-dir pkg'\",\n    \"test:wasm\": \"cd native/rust && wasm-pack test --node\",\n    \"test:wasm:browser\": \"cd native/rust && wasm-pack test --firefox\",\n    \"verify:wasm\": \"node scripts/verify-wasm.js\",\n    \"verify:build\": \"node scripts/verify-build.js\",\n    \"verify:deployment\": \"node scripts/verify-deployment.js\",\n    \"generate-icons\": \"node scripts/generate-icons.js\"\n  },\n  \"dependencies\": {\n    \"class-variance-authority\": \"^0.7.1\",\n    \"clsx\": \"^2.1.1\",\n    \"idb\": \"8.0.3\",\n    \"lucide-react\": \"^1.34.0\",\n    \"lz-string\": \"^1.5.0\",\n    \"next\": \"16.3.5\",\n    \"onnxruntime-web\": \"1.30.0\",\n    \"react\": \"^19.0.0\",\n    \"react-dom\": \"^19.0.0\",\n    \"tailwind-merge\": \"^3.7.0\",\n    \"web-vitals\": \"6.2.2\"\n  },\n  \"devDependencies\": {\n    \"@playwright/test\": \"^1.62.1\",\n    \"@testing-library/jest-dom\": \"^7.0.0\",\n    \"@testing-library/react\": \"^16.3.3\",\n    \"@testing-library/user-event\": \"^14.6.7\",\n    \"@types/js-yaml\": \"4.0.9\",\n    \"@types/node\": \"^26.1.2\",\n    \"@types/react\": \"^19\",\n    \"@types/react-dom\": \"^19\",\n    \"@types/semver\": \"7.8.0\",\n    \"@vitejs/plugin-react\": \"^6.1.1\",\n    \"@vitest/ui\": \"^4.0.16\",\n    \"axe-core\": \"^4.13.0\",\n    \"axe-playwright\": \"^2.2.2\",\n    \"eslint\": \"^9.7.0\",\n    \"eslint-config-next\": \"16.3.5\",\n    \"fake-indexeddb\": \"6.2.5\",\n    \"jsdom\": \"^29.0.2\",\n    \"sharp\": \"^0.35.4\",\n    \"tailwindcss\": \"^4.3.3\",\n    \"typescript\": \"^5.9.3\",\n    \"vitest\": \"4.1.10\"\n  },\n  \"engines\": {\n    \"node\": \">=18.0.0\",\n    \"pnpm\": \">=8.0.0\"\n  },\n  \"keywords\": [\n    \"superinstance\",\n    \"personal\",\n    \"logging\",\n    \"journal\",\n    \"notes\",\n    \"productivity\",\n    \"nextjs\"\n  ]\n}\n"
+   },
+   "py": {
+    "pyproject.toml": {
+     "name": "personal-log",
+     "version": "0.1.0"
+    }
+   },
+   "node": {
+    "name": "personallog",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": [
+     "dev",
+     "build",
+     "start",
+     "lint",
+     "type-check",
+     "test",
+     "test:unit",
+     "test:watch"
+    ]
+   }
+  },
+  {
+   "name": "quilt-c",
+   "language": "C",
+   "size": 2854,
+   "pushed_at": "2026-09-30T00:05:33Z",
+   "archived": false,
+   "has_pages": true,
+   "desc": "Polyformalism: Quilt in C (bare metal, the mathematical core)",
+   "private": false,
+   "stars": 0,
+   "file_count": 46,
+   "manifests": [
+    "pyproject.toml"
+   ],
+   "has_tests": true,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": true,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": false,
+   "manifest_text": {
+    "pyproject.toml": "[build-system]\nrequires = [\"setuptools>=68\"]\nbuild-backend = \"setuptools.build_meta\"\n\n[project]\nname = \"quilt-c\"\nversion = \"0.1.0\"\ndescription = \"The minimum viable cell in C99 - dependency-closed kernel; verify with make verify (1,285 assertions, no network, no dependencies beyond a C99 compiler and python3)\"\nreadme = \"README.md\"\nrequires-python = \">=3.8\"\nlicense = { text = \"MIT\" }\nauthors = [{ name = \"SuperInstance fleet\" }]\nkeywords = [\"quilt\", \"cell\", \"c99\", \"kernel\", \"verifiable\"]\n\n[project.scripts]\n# Runs the full assertion suite from a source tree (the kernel is C; the\n# verifier expects the source files alongside it \u2014 see the sdist).\nquilt-c-verify = \"verify:main\"\n\n[tool.setuptools]\npy-modules = [\"verify\"]\n"
+   },
+   "py": {
+    "pyproject.toml": {
+     "name": "quilt-c",
+     "version": "0.1.0"
+    }
+   }
+  },
+  {
+   "name": "quilt-jev-toolkit",
+   "language": "Python",
+   "size": 12,
+   "pushed_at": "2026-09-30T00:04:44Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "JEV (TypeSafe) canon oracle toolkit for Quilt",
+   "private": false,
+   "stars": 0,
+   "file_count": 5,
+   "manifests": [],
+   "has_tests": false,
+   "has_ci": false,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": false
+  },
+  {
+   "name": "micrograd-quilt",
+   "language": "Jupyter Notebook",
+   "size": 3430,
+   "pushed_at": "2026-09-29T23:46:33Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "A tiny scalar-valued autograd engine and a neural net library on top of it with PyTorch-like API",
+   "private": false,
+   "stars": 0,
+   "file_count": 31,
+   "manifests": [
+    "setup.py"
+   ],
+   "has_tests": true,
+   "has_ci": false,
+   "has_readme": true,
+   "has_license": true,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": false,
+   "manifest_text": {
+    "setup.py": "import setuptools\n\nwith open(\"README.md\", \"r\") as fh:\n    long_description = fh.read()\n\nsetuptools.setup(\n    name=\"micrograd\",\n    version=\"0.1.0\",\n    author=\"Andrej Karpathy\",\n    author_email=\"andrej.karpathy@gmail.com\",\n    description=\"A tiny scalar-valued autograd engine with a small PyTorch-like neural network library on top.\",\n    long_description=long_description,\n    long_description_content_type=\"text/markdown\",\n    url=\"https://github.com/karpathy/micrograd\",\n    packages=setuptools.find_packages(),\n    classifiers=[\n        \"Programming Language :: Python :: 3\",\n        \"License :: OSI Approved :: MIT License\",\n        \"Operating System :: OS Independent\",\n    ],\n    python_requires='>=3.6',\n)\n"
+   },
+   "py": {
+    "setup.py": {
+     "name": "micrograd",
+     "version": "0.1.0"
+    }
+   }
+  },
+  {
+   "name": "Syzygy",
+   "language": "C",
+   "size": 410,
+   "pushed_at": "2026-09-29T23:31:53Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "**Fused single-pass execution for sensor streams. System-agnostic. Register-resident. Re-executable by a stranger.**",
+   "private": false,
+   "stars": 0,
+   "file_count": 83,
+   "manifests": [],
+   "has_tests": true,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": true,
+   "static_entry": [
+    "docs/index.html"
+   ],
+   "has_docs_dir": true,
+   "docker": false
+  },
+  {
+   "name": "qthe-codec",
+   "language": "Python",
+   "size": 67,
+   "pushed_at": "2026-09-29T23:25:57Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "",
+   "private": false,
+   "stars": 0,
+   "file_count": 26,
+   "manifests": [],
+   "has_tests": false,
+   "has_ci": false,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": true,
+   "docker": false
+  },
+  {
+   "name": "quilt-rust",
+   "language": "Rust",
+   "size": 1278,
+   "pushed_at": "2026-09-29T23:25:53Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "Rust port of Quilt \u2014 a reactive, typed, cellular runtime.",
+   "private": false,
+   "stars": 0,
+   "file_count": 265,
+   "manifests": [
+    "Cargo.toml"
+   ],
+   "has_tests": true,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": true,
+   "static_entry": [],
+   "has_docs_dir": true,
+   "docker": false,
+   "manifest_text": {
+    "Cargo.toml": "[workspace]\nresolver = \"2\"\nmembers = [\n    \"packages/core\",\n    \"packages/mcp\",\n    \"packages/cli\",\n    \"packages/tui\",\n    \"packages/web\",\n    \"crates/field-edge-bridge\",\n    \"crates/federated-tinyml\",\n    \"crates/live-canon\",\n    \"crates/quilt-cabi\",\n    \"crates/quilt-core-wasm\",\n    \"crates/quilt-wire\",\n    \"crates/quilt-polyformalism\",\n]\n\n[workspace.package]\nversion = \"0.1.0\"\nedition = \"2021\"\nlicense = \"Apache-2.0\"\nauthors = [\"The Quilt Authors\"]\nrepository = \"https://github.com/superinstance/quilt-rust\"\ndescription = \"A spreadsheet where every cell is a live, addressable capability. The grid is the runtime.\"\n\n[workspace.dependencies]\n# Serialization\nserde = { version = \"1.0\", features = [\"derive\"] }\nserde_json = \"1.0\"\nserde_yml = \"0.0.13\"\n\n# Async runtime\ntokio = { version = \"1\", features = [\"full\"] }\nasync-trait = \"0.1\"\nfutures = \"0.3\"\n\n# HTTP for API cells\nreqwest = { version = \"0.13\", features = [\"json\", \"rustls\"], default-features = false }\n\n# Expression evaluation\nrhai = { version = \"1.20\", features = [\"sync\", \"serde\"] }\n\n# MCP server\nrmcp = { version = \"3.1\", features = [\"server\", \"transport-io\", \"macros\"] }\n\n# CLI\nclap = { version = \"4.5\", features = [\"derive\"] }\n\n# Error handling\nthiserror = \"2.0\"\nanyhow = \"1.0\"\n\n# Misc\nregex = \"1.10\"\nonce_cell = \"1.19\"\nparking_lot = \"0.12\"\nuuid = { version = \"1\", features = [\"v4\"] }\ntracing = \"0.1\"\ntracing-subscriber = { version = \"0.3\", features = [\"env-filter\"] }\nchrono = { version = \"0.4\", default-features = false, features = [\"clock\"] }\nindexmap = { version = \"2\", features = [\"serde\"] }\ncrossbeam-channel = \"0.5\"\n\n[profile.dev]\nopt-level = 0\n\n[profile.release]\nopt-level = 3\nlto = \"thin\"\n"
+   }
+  },
+  {
+   "name": "cns-substrate",
+   "language": "Python",
+   "size": 1654,
+   "pushed_at": "2026-09-29T23:25:50Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "CNS bus with substrate cell integration. Every USCP packet = substrate cell with prev_hash chain.",
+   "private": false,
+   "stars": 0,
+   "file_count": 131,
+   "manifests": [
+    "pyproject.toml"
+   ],
+   "has_tests": true,
+   "has_ci": false,
+   "has_readme": true,
+   "has_license": true,
+   "static_entry": [],
+   "has_docs_dir": true,
+   "docker": false,
+   "manifest_text": {
+    "pyproject.toml": "[build-system]\nrequires = [\"setuptools>=68.0\", \"wheel\"]\nbuild-backend = \"setuptools.build_meta\"\n\n[project]\nname = \"cns-bridge\"\nversion = \"0.2.0\"\ndescription = \"Python library that lets any agent plug into the Hermes CNS bus via USCP.\"\nreadme = \"README.md\"\nlicense = {text = \"MIT\"}\nauthors = [{name = \"SuperInstance\"}]\nrequires-python = \">=3.10\"\nkeywords = [\"hermes\", \"cns\", \"uscp\", \"agent\", \"message-bus\", \"ipc\"]\nclassifiers = [\n    \"Development Status :: 4 - Beta\",\n    \"Intended Audience :: Developers\",\n    \"License :: OSI Approved :: MIT License\",\n    \"Operating System :: OS Independent\",\n    \"Programming Language :: Python :: 3\",\n    \"Programming Language :: Python :: 3.10\",\n    \"Programming Language :: Python :: 3.11\",\n    \"Programming Language :: Python :: 3.12\",\n    \"Programming Language :: Python :: 3.13\",\n    \"Programming Language :: Python :: 3.14\",\n    \"Topic :: Software Development :: Libraries :: Python Modules\",\n]\ndependencies = []\n\n[project.optional-dependencies]\ndev = [\n    \"pytest>=8.0\",\n    \"pytest-cov>=4.0\",\n    \"pytest-timeout>=2.0\",\n]\n\n[project.urls]\nHomepage = \"https://github.com/SuperInstance/cns-bridge\"\nRepository = \"https://github.com/SuperInstance/cns-bridge\"\nIssues = \"https://github.com/SuperInstance/cns-bridge/issues\"\nChangelog = \"https://github.com/SuperInstance/cns-bridge/blob/main/CHANGELOG.md\"\n\n[tool.setuptools.packages.find]\nwhere = [\"src\"]\n\n[tool.pytest.ini_options]\ntestpaths = [\"tests\"]\npythonpath = [\"src\"]\npython_files = [\"test_*.py\"]\npython_classes = [\"Test*\"]\npython_functions = [\"test_*\"]\naddopts = \"--strict-markers\"\n\n[tool.coverage.run]\nsource = [\"src/cns_bridge\"]\nomit = [\"*/tests/*\"]\n\n[tool.coverage.report]\nshow_missing = true\nfail_under = 90\n"
+   },
+   "py": {
+    "pyproject.toml": {
+     "name": "cns-bridge",
+     "version": "0.2.0"
+    }
+   }
+  },
+  {
+   "name": "substrate-llm-client",
+   "language": "TypeScript",
+   "size": 16,
+   "pushed_at": "2026-09-29T23:25:46Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "Multi-provider LLM client with JEV gating",
+   "private": false,
+   "stars": 0,
+   "file_count": 9,
+   "manifests": [
+    "package.json"
+   ],
+   "has_tests": true,
+   "has_ci": false,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": false,
+   "manifest_text": {
+    "package.json": "{\n  \"name\": \"substrate-llm-client\",\n  \"version\": \"0.0.2\",\n  \"description\": \"Multi-provider LLM client with JEV gating + Pincher cache\",\n  \"main\": \"src/index.ts\",\n  \"type\": \"module\",\n  \"scripts\": {\n    \"test\": \"node --experimental-strip-types --test src/tests/*.test.ts\"\n  },\n  \"keywords\": [\n    \"substrate\",\n    \"llm\",\n    \"jev\",\n    \"pincher\"\n  ],\n  \"license\": \"MIT\"\n}"
+   },
+   "node": {
+    "name": "substrate-llm-client",
+    "version": "0.0.2",
+    "private": false,
+    "scripts": [
+     "test"
+    ]
+   }
+  },
+  {
+   "name": "CognitiveEngine",
+   "language": "Python",
+   "size": 746,
+   "pushed_at": "2026-09-29T23:25:41Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "Core cognitive processing engine.",
+   "private": false,
+   "stars": 1,
+   "file_count": 119,
+   "manifests": [
+    "package.json"
+   ],
+   "has_tests": true,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": true,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": true,
+   "manifest_text": {
+    "package.json": "{\n  \"name\": \"@superinstance/cognitive-engine\",\n  \"version\": \"1.0.0\",\n  \"description\": \"Cognitive intelligence system for abstraction and insight generation\",\n  \"private\": true,\n  \"license\": \"MIT\",\n  \"author\": \"SuperInstance\",\n  \"homepage\": \"https://github.com/SuperInstance/CognitiveEngine#readme\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"https://github.com/SuperInstance/CognitiveEngine.git\"\n  },\n  \"bugs\": {\n    \"url\": \"https://github.com/SuperInstance/CognitiveEngine/issues\"\n  },\n  \"main\": \"dist/index.js\",\n  \"types\": \"dist/index.d.ts\",\n  \"scripts\": {\n    \"dev\": \"tsx watch src/index.ts\",\n    \"build\": \"tsup\",\n    \"start\": \"node dist/index.js\",\n    \"test\": \"vitest\",\n    \"test:coverage\": \"vitest --coverage\",\n    \"lint\": \"eslint src/\",\n    \"type-check\": \"tsc --noEmit\",\n    \"migrate\": \"node dist/migrate.js\"\n  },\n  \"dependencies\": {\n    \"express\": \"^5.2.1\",\n    \"ws\": \"^8.18.0\",\n    \"pg\": \"^8.13.1\",\n    \"ioredis\": \"^6.0.0\",\n    \"pino\": \"^10.3.1\",\n    \"zod\": \"^4.6.5\"\n  },\n  \"devDependencies\": {\n    \"@types/express\": \"^5.0.0\",\n    \"@types/node\": \"^26.6.3\",\n    \"@types/ws\": \"^8.5.13\",\n    \"@types/pg\": \"^8.11.10\",\n    \"tsx\": \"^4.23.15\",\n    \"tsup\": \"^8.4.0\",\n    \"typescript\": \"^7.0.2\",\n    \"vitest\": \"^4.1.2\",\n    \"@vitest/coverage-v8\": \"^4.1.4\",\n    \"eslint\": \"^10.11.0\"\n  },\n  \"engines\": {\n    \"node\": \">=18.0.0\",\n    \"pnpm\": \">=8.0.0\"\n  },\n  \"keywords\": [\n    \"superinstance\",\n    \"ai\",\n    \"cognitive\",\n    \"abstraction\",\n    \"insights\",\n    \"patterns\",\n    \"intelligence\",\n    \"engine\"\n  ]\n}"
+   },
+   "node": {
+    "name": "@superinstance/cognitive-engine",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": [
+     "dev",
+     "build",
+     "start",
+     "test",
+     "test:coverage",
+     "lint",
+     "type-check",
+     "migrate"
+    ]
+   }
+  },
+  {
+   "name": "exoj",
+   "language": "JavaScript",
+   "size": 159,
+   "pushed_at": "2026-09-29T23:25:25Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "ExoJ \u2014 external non-collapsing vectorized scratch-paper: Field primary, quilt the projection, JEV soft deformations, observation a recorded local collapse; natu",
+   "private": false,
+   "stars": 0,
+   "file_count": 66,
+   "manifests": [
+    "package.json"
+   ],
+   "has_tests": false,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": false,
+   "manifest_text": {
+    "package.json": "{\n  \"name\": \"exoj\",\n  \"version\": \"0.1.0\",\n  \"type\": \"module\",\n  \"scripts\": {\n    \"smoke\": \"node smoke.mjs\"\n  },\n  \"license\": \"MIT\"\n}\n"
+   },
+   "node": {
+    "name": "exoj",
+    "version": "0.1.0",
+    "private": false,
+    "scripts": [
+     "smoke"
+    ]
+   }
+  },
+  {
+   "name": "quilt-jepa",
+   "language": "JavaScript",
+   "size": 389,
+   "pushed_at": "2026-09-29T23:25:21Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "The latent grid \u2014 a tiny JEPA world model living inside an anisotropic cell mesh, stone-receipted (quilt fleet wave 49)",
+   "private": false,
+   "stars": 0,
+   "file_count": 84,
+   "manifests": [],
+   "has_tests": false,
+   "has_ci": false,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": false
+  },
+  {
+   "name": "quality-gate-stream",
+   "language": "Python",
+   "size": 42061,
+   "pushed_at": "2026-09-29T23:25:17Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "Quality Gate Stream \u2014 novelty \u00d7 correctness \u00d7 completeness \u00d7 depth scoring. Part of Cocapn reverse-actualization truck.",
+   "private": false,
+   "stars": 1,
+   "file_count": 2227,
+   "manifests": [
+    "pyproject.toml"
+   ],
+   "has_tests": true,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": true,
+   "static_entry": [],
+   "has_docs_dir": true,
+   "docker": false,
+   "manifest_text": {
+    "pyproject.toml": "[project]\nname = \"quality-gate-stream\"\nversion = \"0.1.1\"\ndescription = \"Streaming quality gates \u2014 continuous quality scoring for data streams, agent outputs, and pipeline results\"\nreadme = \"README.md\"\nlicense = { text = \"MIT\" }\nauthors = [\n    { name = \"Oracle1\" },\n]\nrequires-python = \">=3.10\"\nclassifiers = [\n    \"Programming Language :: Python :: 3\",\n    \"License :: OSI Approved :: MIT License\",\n]\n\n[build-system]\nrequires = [\"setuptools>=61.0\", \"wheel\"]\nbuild-backend = \"setuptools.build_meta\"\n\n[tool.setuptools.packages.find]\nwhere = [\".\"]\ninclude = [\"quality_gate*\", \"quartermaster_gc*\"]\n\n[tool.pytest.ini_options]\ntestpaths = [\"tests\"]\n"
+   },
+   "py": {
+    "pyproject.toml": {
+     "name": "quality-gate-stream",
+     "version": "0.1.1"
+    }
+   }
+  },
+  {
+   "name": "mavis-pincher-pages",
+   "language": "HTML",
+   "size": 29,
+   "pushed_at": "2026-09-29T23:25:13Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "SuperInstance fleet tool POC (Mavis, 2026-09-28)",
+   "private": false,
+   "stars": 0,
+   "file_count": 12,
+   "manifests": [],
+   "has_tests": false,
+   "has_ci": false,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": false
+  },
+  {
+   "name": "git-agent",
+   "language": "Python",
+   "size": 297,
+   "pushed_at": "2026-09-29T23:25:09Z",
+   "archived": false,
+   "has_pages": true,
+   "desc": "\ud83e\udd80 Repo-native agent that lives in git \u2014 the shell IS the agent.",
+   "private": false,
+   "stars": 2,
+   "file_count": 102,
+   "manifests": [
+    "pyproject.toml",
+    "setup.py"
+   ],
+   "has_tests": true,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": true,
+   "static_entry": [],
+   "has_docs_dir": true,
+   "docker": false,
+   "manifest_text": {
+    "pyproject.toml": "[build-system]\nrequires = [\"setuptools>=68.0\", \"wheel\"]\nbuild-backend = \"setuptools.build_meta\"\n\n[project]\nname = \"cocapn-git-agent\"\nversion = \"0.1.2\"\ndescription = \"FLUX Fleet Greenhorn Git-Agent \u2014 API-agnostic autonomous Git-native agent\"\nreadme = \"README.md\"\nlicense = \"MIT\"\nrequires-python = \">=3.11\"\nauthors = [\n    { name = \"Super Z\", email = \"superz@flux.fleet\" },\n]\nkeywords = [\"agent\", \"autonomous\", \"git\", \"github\", \"fleet\", \"llm\", \"ai\"]\nclassifiers = [\n    \"Development Status :: 3 - Alpha\",\n    \"Intended Audience :: Developers\",\n    \"Programming Language :: Python :: 3\",\n    \"Programming Language :: Python :: 3.11\",\n    \"Programming Language :: Python :: 3.12\",\n    \"Programming Language :: Python :: 3.13\",\n    \"Topic :: Software Development :: Version Control :: Git\",\n    \"Topic :: Software Development :: Libraries :: Python Modules\",\n]\n\ndependencies = [\n    \"pyyaml>=6.0\",\n    \"requests>=2.28\",\n]\n\n[project.optional-dependencies]\nall = [\n    \"git-agent[openai,anthropic,ollama,dev]\",\n]\nopenai = [\n    \"openai>=1.0\",\n]\nanthropic = [\n    \"anthropic>=0.18\",\n]\nollama = [\n    \"httpx>=0.25\",\n]\ndev = [\n    \"pytest>=7.4\",\n    \"pytest-cov>=4.1\",\n    \"pytest-asyncio>=0.21\",\n    \"ruff>=0.1\",\n    \"mypy>=1.5\",\n    \"types-pyyaml>=6.0\",\n    \"types-requests>=2.28\",\n]\ndocker = [\n    \"docker>=6.0\",\n]\n\n[project.scripts]\ngit-agent = \"git_agent.__main__:main\"\n\n[tool.setuptools.packages.find]\n\n[tool.setuptools.package-data]\ngit_agent = [\"prompts/*\", \"onboarding/*\"]\n\n[tool.ruff]\ntarget-version = \"py311\"\nline-length = 100\nselect = [\n    \"E\",   # pycodestyle errors\n    \"W\",   # pycodestyle warnings\n    \"F\",   # pyflakes\n    \"I\",   # isort\n    \"N\",   # pep8-naming\n    \"UP\",  # pyupgrade\n    \"B\",   # flake8-bugbear\n    \"SIM\", # flake8-simplify\n    \"RUF\", # ruff-specific rules\n]\nignore = [\n    \"E501\", # line too long (handled by formatter)\n    \"B008\", # do not perform function calls in argument defaults\n]\n\n[tool.ruff.isort]\nknown-first-party = [\"git_agent\"]\n\n[tool.mypy]\npython_version = \"3.11\"\nwarn_return_any = true\nwarn_unused_configs = true\ndisallow_untyped_defs = true\n\n[tool.pytest.ini_options]\ntestpaths = [\"tests\"]\npython_files = [\"test_*.py\"]\npython_classes = [\"Test*\"]\npython_functions = [\"test_*\"]\naddopts = \"-v --tb=short\"\n\n[tool.coverage.run]\nsource = [\"src/git_agent\"]\nbranch = true\n\n[tool.coverage.report]\nshow_missing = true\nskip_covered = true\nfail_under = 80\n",
+    "setup.py": "from setuptools import setup\nsetup()\n"
+   },
+   "py": {
+    "pyproject.toml": {
+     "name": "cocapn-git-agent",
+     "version": "0.1.2"
+    }
+   }
+  },
+  {
+   "name": "knowledge-vault-rs",
+   "language": "Rust",
+   "size": 99,
+   "pushed_at": "2026-09-29T23:22:46Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "Source repo for knowledge-vault: SQLite + BGE-Micro embeddings vector DB for RAG (Rust)",
+   "private": false,
+   "stars": 0,
+   "file_count": 31,
+   "manifests": [
+    "Cargo.toml"
+   ],
+   "has_tests": false,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": true,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": false,
+   "manifest_text": {
+    "Cargo.toml": "[workspace]\n[package]\nname = \"knowledge-vault\"\nversion = \"0.1.0\"\nedition = \"2021\"\nlicense = \"MIT\"\nrepository = \"https://github.com/SuperInstance/knowledge-vault-rs\"\nauthors = [\"SuperInstance AI Team\"]\ndescription = \"Standalone knowledge vault with vector database, embeddings, and RAG\"\nrust-version = \"1.85\"\n\n[dependencies]\n# Async runtime\ntokio = { version = \"1.40\", features = [\"full\"] }\n\n# Serialization\nserde = { version = \"1.0\", features = [\"derive\"] }\nserde_json = \"1.0\"\n\n# Error handling\nanyhow = \"1.0\"\nthiserror = \"2.0\"\n\n# Logging\ntracing = \"0.1\"\n\n# Async trait\nasync-trait = \"0.1\"\n\n# Database (SQLite)\n# \"bundled\": compile SQLite from source so Windows runners (no system\n# sqlite3.lib) link successfully. This was the last layer of the windows\n# matrix failure, visible only after the fmt/CRLF layer was fixed.\nrusqlite = { version = \"0.40\", features = [\"bundled\"] }\n\n# IDs\nuuid = { version = \"1.10\", features = [\"v4\", \"serde\"] }\n\n# Time\nchrono = { version = \"0.4\", features = [\"serde\"] }\n\n# File watching\nnotify = \"8.2\"\n\n# Crypto for content hashing\nsha2 = \"0.11\"\nhex = \"0.4\"\n\n# Text processing\nunicode-segmentation = \"1.11\"\n\n# Regex for pattern matching\nregex = \"1.11\"\n\n# Futures utilities\nfutures = \"0.3\"\n\n[dev-dependencies]\ntokio-test = \"0.4\"\ntempfile = \"3.10\"\ncriterion = \"0.8\"\n\n[[bench]]\nname = \"knowledge_bench\"\nharness = false\n\n[lib]\nname = \"knowledge_vault\"\npath = \"src/lib.rs\"\n\n# NOTE (2026-09-30): the previous [[example]] entries pointed at files that no\n# longer exist (examples/basic_usage.rs, examples/file_watching.rs). That stale\n# metadata broke `cargo` target resolution on main: every CI run since ~09-22\n# failed before compiling a single crate, which also turned every dependabot\n# PR red regardless of its content. The declarations below match the five\n# example files that actually exist in examples/.\n\n[[example]]\nname = \"basic\"\npath = \"examples/basic.rs\"\n\n[[example]]\nname = \"chunking\"\npath = \"examples/chunking.rs\"\n\n[[example]]\nname = \"embeddings\"\npath = \"examples/embeddings.rs\"\n\n[[example]]\nname = \"search\"\npath = \"examples/search.rs\"\n\n[[example]]\nname = \"watcher\"\npath = \"examples/watcher.rs\"\n"
+   },
+   "cargo": {
+    "name": "knowledge-vault",
+    "version": "0.1.0",
+    "publish_false": false
+   }
+  },
+  {
+   "name": "tripartite-rs-archive",
+   "language": "Rust",
+   "size": 73,
+   "pushed_at": "2026-09-29T23:14:44Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "Tripartite agent council: weighted consensus engine for multi-agent LLM orchestration (Rust)",
+   "private": false,
+   "stars": 0,
+   "file_count": 39,
+   "manifests": [
+    "Cargo.toml"
+   ],
+   "has_tests": false,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": true,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": false,
+   "manifest_text": {
+    "Cargo.toml": "[workspace]\n[package]\nname = \"tripartite-rs\"\nversion = \"0.1.0\"\ndescription = \"Generic multi-agent consensus system for Rust\"\nlicense = \"MIT OR Apache-2.0\"\nrepository = \"https://github.com/SuperInstance/tripartite-rs\"\nauthors = [\"SuperInstance Team\"]\nedition = \"2021\"\nreadme = \"README.md\"\nkeywords = [\"consensus\", \"multi-agent\", \"voting\", \"ai\", \"async\"]\ncategories = [\"asynchronous\", \"concurrency\", \"science\", \"algorithms\"]\nrust-version = \"1.75\"\n\n[dependencies]\n# Async runtime\ntokio = { version = \"1\", features = [\"full\"] }\n\n# Serialization\nserde = { version = \"1\", features = [\"derive\"] }\nserde_json = \"1\"\n\n# Error handling\nthiserror = \"2\"\nanyhow = \"1\"\n\n# Async trait\nasync-trait = \"0.1\"\n\n# Logging\ntracing = \"0.1\"\n\n# Time\nchrono = { version = \"0.4\", features = [\"serde\"] }\n\n# IDs\nuuid = { version = \"1\", features = [\"v4\", \"serde\"] }\n\n[dev-dependencies]\ntokio-test = \"0.4\"\ncriterion = { version = \"0.8\", features = [\"html_reports\", \"async_tokio\"] }\ntracing-subscriber = \"0.3\"\n\n[[bench]]\nname = \"consensus\"\nharness = false\n\n[lib]\nname = \"tripartite\"\npath = \"src/lib.rs\"\n\n[features]\ndefault = []\n"
+   },
+   "cargo": {
+    "name": "tripartite-rs",
+    "version": "0.1.0",
+    "publish_false": false
+   }
+  },
+  {
+   "name": "model-registry-archive",
+   "language": "Rust",
+   "size": 33,
+   "pushed_at": "2026-09-29T22:58:51Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "Model registry for LLM artifact management (local + S3 storage, Rust)",
+   "private": false,
+   "stars": 0,
+   "file_count": 29,
+   "manifests": [
+    "Cargo.toml"
+   ],
+   "has_tests": false,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": true,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": false,
+   "manifest_text": {
+    "Cargo.toml": "[package]\nname = \"model-registry\"\nversion = \"0.1.0\"\nedition = \"2021\"\n\n[workspace]\n# This is a standalone crate\nlicense = \"MIT OR Apache-2.0\"\nrepository = \"https://github.com/SuperInstance/model-registry\"\nauthors = [\"SuperInstance Contributors\"]\ndescription = \"Version management and downloading system for ML models\"\nkeywords = [\"ml\", \"models\", \"registry\", \"download\", \"huggingface\"]\ncategories = [\"development-tools\", \"database\"]\n\n[lib]\nname = \"model_registry\"\npath = \"src/lib.rs\"\n\n[[bin]]\nname = \"model-registry\"\npath = \"src/main.rs\"\n\n[dependencies]\n# Async runtime\ntokio = { version = \"1.35\", features = [\"full\"] }\n\n# Serialization\nserde = { version = \"1.0\", features = [\"derive\"] }\nserde_json = \"1.0\"\ntoml = \"0.8\"\n\n# Error handling\nanyhow = \"1.0\"\nthiserror = \"1.0\"\n\n# Logging\ntracing = \"0.1\"\ntracing-subscriber = { version = \"0.3\", features = [\"env-filter\"] }\n\n# HTTP for downloads\nreqwest = { version = \"0.11\", features = [\"stream\", \"json\"] }\n\n# Crypto for checksums\nsha2 = \"0.10\"\nhex = \"0.4\"\n\n# Time\nchrono = { version = \"0.4\", features = [\"serde\"] }\n\n# CLI\nclap = { version = \"4.4\", features = [\"derive\"] }\n\n# Progress bars\nindicatif = \"0.17\"\n\n# Async traits\nasync-trait = \"0.1\"\n\n# Async utilities\nfutures-util = \"0.3\"\n\n# UUID for IDs\nuuid = { version = \"1.6\", features = [\"serde\", \"v4\"] }\n\n# Directory management\ndirs = \"5.0\"\n\n# S3 storage (optional)\naws-config = { version = \"1.1\", optional = true }\naws-sdk-s3 = { version = \"1.14\", optional = true }\n\n[dev-dependencies]\ntokio-test = \"0.4\"\ntempfile = \"3.8\"\nmockito = \"1.2\"\n\n[features]\ndefault = [\"local-storage\"]\nlocal-storage = []\ns3-storage = [\"aws-config\", \"aws-sdk-s3\"]\nall-storage = [\"local-storage\", \"s3-storage\"]\n\n[package.metadata.docs.rs]\nall-features = true\nrustdoc-args = [\"--cfg\", \"docsrs\"]\n"
+   },
+   "cargo": {
+    "name": "model-registry",
+    "version": "0.1.0",
+    "publish_false": false
+   }
+  },
+  {
+   "name": "SmartCRDT",
+   "language": "TypeScript",
+   "size": 7444,
+   "pushed_at": "2026-09-29T22:37:05Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "Utilizing CRDT technology for self-improving AI",
+   "private": false,
+   "stars": 1,
+   "file_count": 3794,
+   "manifests": [
+    "pyproject.toml",
+    "package.json"
+   ],
+   "has_tests": true,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": true,
+   "static_entry": [],
+   "has_docs_dir": true,
+   "docker": true,
+   "manifest_text": {
+    "pyproject.toml": "[build-system]\nrequires = [\"setuptools>=68.0\", \"wheel\"]\nbuild-backend = \"setuptools.build_meta\"\n\n[project]\nname = \"smartcrdt\"\nversion = \"1.0.0\"\ndescription = \"Pure Python CRDT library for distributed agent state\"\nreadme = \"README.md\"\nrequires-python = \">=3.9\"\nlicense = {text = \"MIT\"}\nkeywords = [\"crdt\", \"distributed\", \"eventual-consistency\", \"agent\", \"state\"]\nclassifiers = [\n    \"Development Status :: 4 - Beta\",\n    \"Intended Audience :: Developers\",\n    \"License :: OSI Approved :: MIT License\",\n    \"Programming Language :: Python :: 3\",\n    \"Programming Language :: Python :: 3.9\",\n    \"Programming Language :: Python :: 3.10\",\n    \"Programming Language :: Python :: 3.11\",\n    \"Programming Language :: Python :: 3.12\",\n    \"Topic :: Software Development :: Libraries\",\n]\n\ndependencies = []\n\n[project.optional-dependencies]\ndev = [\"pytest>=7.0\"]\n\n[tool.pytest.ini_options]\ntestpaths = [\"tests\"]\n\n[tool.setuptools.packages.find]\ninclude = [\"smartcrdt*\"]\n",
+    "package.json": "{\n  \"name\": \"smartcrdt\",\n  \"version\": \"1.0.0\",\n  \"description\": \"SuperInstance - Modular infrastructure for AI applications\",\n  \"private\": true,\n  \"type\": \"module\",\n  \"workspaces\": [\n    \"packages/*\"\n  ],\n  \"scripts\": {\n    \"build\": \"npm run build:ts && npm run build:native\",\n    \"build:ts\": \"tsc -b\",\n    \"build:native\": \"npm run build:native -w native\",\n    \"build:native:release\": \"npm run build:release -w native\",\n    \"clean\": \"rm -rf dist packages/*/dist\",\n    \"clean:deep\": \"npm run clean && rm -rf node_modules packages/*/node_modules\",\n    \"test\": \"vitest run\",\n    \"test:watch\": \"vitest watch\",\n    \"test:coverage\": \"vitest run --coverage\",\n    \"test:unit\": \"vitest run packages --exclude \\\"packages/integration-tests/**\\\"\",\n    \"test:e2e\": \"vitest run packages/integration-tests\",\n    \"bench\": \"node benchmarks/run.js\",\n    \"bench:report\": \"npm run bench -- --report\",\n    \"lint\": \"eslint packages --ext .ts\",\n    \"format\": \"prettier --write \\\"packages/**/*.ts\\\"\",\n    \"format:check\": \"prettier --check \\\"packages/**/*.ts\\\"\",\n    \"precommit\": \"lint-staged\",\n    \"prepare\": \"husky install\",\n    \"docs:generate\": \"node scripts/generate-docs.cjs\",\n    \"docs:serve\": \"npx serve docs/api\",\n    \"docs:watch\": \"node scripts/generate-docs.cjs --watch\"\n  },\n  \"devDependencies\": {\n    \"@types/node\": \"^22.20.4\",\n    \"@typescript-eslint/eslint-plugin\": \"^8.68.0\",\n    \"@typescript-eslint/parser\": \"^8.68.0\",\n    \"@vitest/coverage-v8\": \"^5.0.0\",\n    \"eslint\": \"^8.57.1\",\n    \"eslint-config-prettier\": \"^10.1.8\",\n    \"husky\": \"^8.0.3\",\n    \"lint-staged\": \"^17.3.0\",\n    \"prettier\": \"^3.1.0\",\n    \"typescript\": \"^5.3.2\",\n    \"vitest\": \"^5.0.0\"\n  },\n  \"engines\": {\n    \"node\": \">=18.0.0\",\n    \"npm\": \">=9.0.0\"\n  },\n  \"keywords\": [\n    \"ai\",\n    \"infrastructure\",\n    \"routing\",\n    \"cache\",\n    \"privacy\",\n    \"embeddings\",\n    \"modular\",\n    \"components\"\n  ],\n  \"author\": \"SuperInstance\",\n  \"license\": \"MIT\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"https://github.com/SuperInstance/SmartCRDT\"\n  },\n  \"bugs\": {\n    \"url\": \"https://github.com/SuperInstance/SmartCRDT/issues\"\n  },\n  \"homepage\": \"https://github.com/SuperInstance/SmartCRDT#readme\"\n}\n"
+   },
+   "py": {
+    "pyproject.toml": {
+     "name": "smartcrdt",
+     "version": "1.0.0"
+    }
+   },
+   "node": {
+    "name": "smartcrdt",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": [
+     "build",
+     "build:ts",
+     "build:native",
+     "build:native:release",
+     "clean",
+     "clean:deep",
+     "test",
+     "test:watch"
+    ]
+   }
+  },
+  {
+   "name": "quilt-elf",
+   "language": "TypeScript",
+   "size": 2866,
+   "pushed_at": "2026-09-29T22:36:59Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "The invisible elves \u2014 Cloudflare Workers doing background housekeeping, daily-limit-aware, self-improving",
+   "private": false,
+   "stars": 0,
+   "file_count": 18,
+   "manifests": [
+    "package.json",
+    "wrangler.toml"
+   ],
+   "has_tests": true,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": false,
+   "manifest_text": {
+    "package.json": "{\n  \"name\": \"@quilt/elf\",\n  \"version\": \"0.1.0\",\n  \"description\": \"Invisible elves \u2014 Cloudflare Workers doing background housekeeping, daily-limit-aware, self-improving\",\n  \"license\": \"Apache-2.0\",\n  \"type\": \"module\",\n  \"main\": \"./dist/index.js\",\n  \"types\": \"./dist/index.d.ts\",\n  \"files\": [\"dist\", \"README.md\"],\n  \"scripts\": {\n    \"build\": \"tsc\",\n    \"test\": \"tsx --test test/*.test.ts\",\n    \"lint\": \"eslint 'src/**/*.ts' 'test/**/*.ts'\",\n    \"typecheck\": \"tsc --noEmit\"\n  },\n  \"dependencies\": {\n    \"@quilt/core\": \"*\",\n    \"@quilt/ai\": \"*\"\n  },\n  \"devDependencies\": {\n    \"@cloudflare/workers-types\": \"^5.20260907.1\",\n    \"@types/node\": \"^20.10.0\",\n    \"typescript\": \"^7.0.2\",\n    \"tsx\": \"^4.7.0\"\n  },\n  \"keywords\": [\"cloudflare-workers\", \"ai-agent\", \"background-tasks\", \"self-improving\", \"token-economics\", \"quilt\", \"cells\"],\n  \"engines\": {\n    \"node\": \">=18\"\n  }\n}\n",
+    "wrangler.toml": "name = \"quilt-elf\"\nmain = \"src/worker.ts\"\ncompatibility_date = \"2024-01-01\"\n\n# Cron trigger \u2014 every 15 minutes\n[triggers]\ncrons = [\"*/15 * * * *\"]\n\n# KV for usage storage\n[[kv_namespaces]]\nbinding = \"USAGE_KV\"\nid = \"your-kv-namespace-id\"\n\n# Environment variables (set in Cloudflare dashboard or wrangler secret)\n[vars]\n# ZAI_TOKEN = \"...\"\n# KIMI_TOKEN = \"...\"\n# DEEPSEEK_TOKEN = \"...\"\n# CLOUDFLARE_ACCOUNT_ID = \"...\"\n# CLOUDFLARE_API_TOKEN = \"...\"\n\n# Production config\n[env.production]\nname = \"quilt-elf-prod\"\nroute = { pattern = \"elf.superinstance.dev/*\", zone_name = \"superinstance.dev\" }\n"
+   },
+   "node": {
+    "name": "@quilt/elf",
+    "version": "0.1.0",
+    "private": false,
+    "scripts": [
+     "build",
+     "test",
+     "lint",
+     "typecheck"
+    ]
+   }
+  },
+  {
+   "name": "quilt-swarm",
+   "language": "TypeScript",
+   "size": 3018,
+   "pushed_at": "2026-09-29T22:36:57Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "Quilt ecosystem component: ",
+   "private": false,
+   "stars": 0,
+   "file_count": 36,
+   "manifests": [
+    "package.json"
+   ],
+   "has_tests": true,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": true,
+   "static_entry": [],
+   "has_docs_dir": true,
+   "docker": false,
+   "manifest_text": {
+    "package.json": "{\n  \"name\": \"quilt-swarm\",\n  \"version\": \"0.1.0\",\n  \"description\": \"Quilt as a unified control plane over Docker Swarm clusters. One-command Swarm-to-Quilt migration. Encrypted overlay networking.\",\n  \"type\": \"module\",\n  \"main\": \"dist/index.js\",\n  \"types\": \"dist/index.d.ts\",\n  \"bin\": {\n    \"quilt-swarm\": \"dist/cli.js\"\n  },\n  \"files\": [\n    \"dist\",\n    \"src\",\n    \"README.md\",\n    \"LICENSE\"\n  ],\n  \"scripts\": {\n    \"build\": \"tsc -p tsconfig.json\",\n    \"typecheck\": \"tsc --noEmit -p tsconfig.json\",\n    \"test\": \"tsx --test test/*.test.ts\",\n    \"test:watch\": \"tsx --test --watch test/*.test.ts\",\n    \"lint\": \"eslint src test\",\n    \"lint:fix\": \"eslint src test --fix\",\n    \"clean\": \"rimraf dist coverage\",\n    \"prepublishOnly\": \"npm run build\",\n    \"start\": \"node dist/cli.js\"\n  },\n  \"keywords\": [\n    \"quilt\",\n    \"swarm\",\n    \"docker\",\n    \"docker-swarm\",\n    \"orchestration\",\n    \"control-plane\",\n    \"overlay-network\",\n    \"encrypted\",\n    \"migration\",\n    \"typescript\"\n  ],\n  \"author\": \"SuperInstance <hello@superinstance.dev>\",\n  \"license\": \"Apache-2.0\",\n  \"engines\": {\n    \"node\": \">=18.0.0\"\n  },\n  \"dependencies\": {\n    \"commander\": \"^15.0.0\",\n    \"dockerode\": \"^5.0.1\",\n    \"yaml\": \"^2.5.1\"\n  },\n  \"peerDependencies\": {\n    \"@quilt/core\": \"^0.1.0\"\n  },\n  \"peerDependenciesMeta\": {\n    \"@quilt/core\": {\n      \"optional\": true\n    }\n  },\n  \"devDependencies\": {\n    \"@eslint/js\": \"^10.0.1\",\n    \"@types/dockerode\": \"^4.0.1\",\n    \"@types/node\": \"^26.5.1\",\n    \"@typescript-eslint/eslint-plugin\": \"^8.70.0\",\n    \"@typescript-eslint/parser\": \"^8.70.1\",\n    \"eslint\": \"^10.9.1\",\n    \"globals\": \"^17.12.0\",\n    \"rimraf\": \"^6.1.3\",\n    \"tsx\": \"^4.23.13\",\n    \"typescript\": \"^5.9.3\",\n    \"typescript-eslint\": \"^8.70.1\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/SuperInstance/quilt-swarm.git\"\n  },\n  \"bugs\": {\n    \"url\": \"https://github.com/SuperInstance/quilt-swarm/issues\"\n  },\n  \"homepage\": \"https://github.com/SuperInstance/quilt-swarm#readme\"\n}"
+   },
+   "node": {
+    "name": "quilt-swarm",
+    "version": "0.1.0",
+    "private": false,
+    "scripts": [
+     "build",
+     "typecheck",
+     "test",
+     "test:watch",
+     "lint",
+     "lint:fix",
+     "clean",
+     "prepublishOnly"
+    ]
+   }
+  },
+  {
+   "name": "quilt-fleet",
+   "language": "TypeScript",
+   "size": 2872,
+   "pushed_at": "2026-09-29T22:36:55Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "Quilt runtime for multi-tier federation orchestrator \u2014 discovery, health, quorum, migration, auto-scaling",
+   "private": false,
+   "stars": 0,
+   "file_count": 75,
+   "manifests": [
+    "package.json"
+   ],
+   "has_tests": true,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": true,
+   "static_entry": [],
+   "has_docs_dir": true,
+   "docker": false,
+   "manifest_text": {
+    "package.json": "{\n  \"name\": \"@quilt/fleet\",\n  \"version\": \"0.1.0\",\n  \"description\": \"Fleet orchestrator for Quilt instances across tiers (ESP32, Jetson, Codespace, Cloudflare, Server)\",\n  \"license\": \"Apache-2.0\",\n  \"main\": \"dist/index.js\",\n  \"types\": \"dist/index.d.ts\",\n  \"bin\": {\n    \"quilt-fleet\": \"dist/cli.js\"\n  },\n  \"files\": [\n    \"dist\",\n    \"README.md\",\n    \"LICENSE\",\n    \"docs\"\n  ],\n  \"scripts\": {\n    \"build\": \"tsc -p tsconfig.json\",\n    \"test\": \"vitest run\",\n    \"test:watch\": \"vitest\",\n    \"lint\": \"eslint 'src/**/*.ts' 'test/**/*.ts'\",\n    \"format\": \"prettier --write 'src/**/*.ts' 'test/**/*.ts'\",\n    \"typecheck\": \"tsc --noEmit -p tsconfig.json\",\n    \"clean\": \"rm -rf dist coverage\"\n  },\n  \"dependencies\": {\n    \"@grpc/grpc-js\": \"^1.14.5\",\n    \"axios\": \"^1.6.0\",\n    \"bonjour-service\": \"^1.2.0\",\n    \"express\": \"^4.18.0\",\n    \"ioredis\": \"^6.0.0\",\n    \"mqtt\": \"^5.3.0\",\n    \"nats\": \"^2.20.0\",\n    \"ws\": \"^8.16.0\",\n    \"yaml\": \"^2.3.0\"\n  },\n  \"devDependencies\": {\n    \"@types/express\": \"^5.0.6\",\n    \"@types/node\": \"^26.6.2\",\n    \"@types/ws\": \"^8.5.10\",\n    \"eslint\": \"^10.8.1\",\n    \"prettier\": \"^3.9.8\",\n    \"typescript\": \"^7.0.2\",\n    \"vitest\": \"^4.1.10\"\n  },\n  \"engines\": {\n    \"node\": \">=18.0.0\"\n  },\n  \"keywords\": [\n    \"quilt\",\n    \"fleet\",\n    \"orchestration\",\n    \"federation\",\n    \"esp32\",\n    \"jetson\",\n    \"cloudflare\",\n    \"iot\",\n    \"edge\",\n    \"mesh\"\n  ],\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"https://github.com/SuperInstance/quilt-fleet.git\"\n  },\n  \"author\": \"SuperInstance <dev@superinstance.ai>\",\n  \"homepage\": \"https://github.com/SuperInstance/quilt-fleet#readme\"\n}"
+   },
+   "node": {
+    "name": "@quilt/fleet",
+    "version": "0.1.0",
+    "private": false,
+    "scripts": [
+     "build",
+     "test",
+     "test:watch",
+     "lint",
+     "format",
+     "typecheck",
+     "clean"
+    ]
+   }
+  },
+  {
+   "name": "quilt-rag",
+   "language": "TypeScript",
+   "size": 7140,
+   "pushed_at": "2026-09-29T22:36:49Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "Quilt runtime for production RAG \u2014 loader, chunker, embedder, vector store, retriever, reranker, generator",
+   "private": false,
+   "stars": 0,
+   "file_count": 27,
+   "manifests": [
+    "package.json"
+   ],
+   "has_tests": true,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": false,
+   "manifest_text": {
+    "package.json": "{\n  \"name\": \"@quilt/rag\",\n  \"version\": \"0.1.0\",\n  \"description\": \"Production RAG framework built on Quilt cells. Loader, chunker, embedder, vector store, retriever, reranker, generator, evaluator \u2014 every component is a cell.\",\n  \"license\": \"Apache-2.0\",\n  \"type\": \"module\",\n  \"main\": \"./dist/index.js\",\n  \"types\": \"./dist/index.d.ts\",\n  \"files\": [\"dist\", \"README.md\"],\n  \"scripts\": {\n    \"build\": \"tsc\",\n    \"test\": \"tsx --test test/*.test.ts\",\n    \"lint\": \"eslint . --ext .ts,.js\",\n    \"lint:fix\": \"eslint . --ext .ts,.js --fix\"\n  },\n  \"dependencies\": {\n    \"@quilt/core\": \"*\",\n    \"@quilt/sdk\": \"*\",\n    \"@quilt/ai\": \"*\"\n  },\n  \"peerDependencies\": {\n    \"typescript\": \"^5.3.0\"\n  },\n  \"devDependencies\": {\n    \"@types/node\": \"^20.10.0\",\n    \"typescript\": \"^5.3.0\",\n    \"tsx\": \"^4.7.0\",\n    \"vitest\": \"^1.0.0\",\n    \"eslint\": \"^8.57.0\",\n    \"@typescript-eslint/parser\": \"^7.0.0\",\n    \"@typescript-eslint/eslint-plugin\": \"^8.67.0\"\n  },\n  \"keywords\": [\"rag\", \"retrieval-augmented-generation\", \"vector-search\", \"embeddings\", \"quilt\", \"cells\"],\n  \"engines\": {\n    \"node\": \">=18\"\n  }\n}\n"
+   },
+   "node": {
+    "name": "@quilt/rag",
+    "version": "0.1.0",
+    "private": false,
+    "scripts": [
+     "build",
+     "test",
+     "lint",
+     "lint:fix"
+    ]
+   }
+  },
+  {
+   "name": "quilt-atlas",
+   "language": "JavaScript",
+   "size": 117,
+   "pushed_at": "2026-09-29T22:15:29Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "The living map of the SuperInstance account: 4000+ repos, families, motion, CI coverage. Regenerated by its own scheduled workflow every 6h.",
+   "private": false,
+   "stars": 0,
+   "file_count": 7,
+   "manifests": [],
+   "has_tests": false,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": false
+  },
+  {
+   "name": "fleet-seeds",
+   "language": "JavaScript",
+   "size": 3493,
+   "pushed_at": "2026-09-29T22:02:50Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "Seed files + the Tap Tavern: the fleet talks to itself, on the record (stone-v1 sealed)",
+   "private": false,
+   "stars": 0,
+   "file_count": 602,
+   "manifests": [],
+   "has_tests": false,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": true,
+   "docker": false
+  },
+  {
+   "name": "breakthrough-prospector",
+   "language": "JavaScript",
+   "size": 72,
+   "pushed_at": "2026-09-29T17:41:19Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "",
+   "private": false,
+   "stars": 0,
+   "file_count": 32,
+   "manifests": [],
+   "has_tests": false,
+   "has_ci": false,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": false
+  },
+  {
+   "name": "hermit",
+   "language": "TypeScript",
+   "size": 171875,
+   "pushed_at": "2026-09-29T16:57:41Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "",
+   "private": false,
+   "stars": 0,
+   "file_count": 2531,
+   "manifests": [
+    "package.json",
+    "wrangler.jsonc"
+   ],
+   "has_tests": true,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": true,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": false,
+   "manifest_text": {
+    "package.json": "{\n\t\"name\": \"hermit\",\n\t\"version\": \"1.0.0\",\n\t\"description\": \"A Discord bot built with Carbon\",\n\t\"type\": \"module\",\n\t\"main\": \"./src/index.ts\",\n\t\"scripts\": {\n\t\t\"dev\": \"bun run dev:hermit\",\n\t\t\"deploy\": \"bun run forms:css && wrangler deploy --env-file .env\",\n\t\t\"deploy:cf\": \"bunx wrangler d1 migrations apply DB --remote && bun run forms:css && wrangler deploy\",\n\t\t\"deploy:cf:preview\": \"bun run forms:css && wrangler deploy --env-file .env --keep-vars --var FORMS_DEV:1\",\n\t\t\"deploy:dry-run\": \"bun run forms:css && wrangler deploy --dry-run\",\n\t\t\"cf-typegen\": \"wrangler types\",\n\t\t\"postinstall\": \"wrangler types\",\n\t\t\"test\": \"bun run forms:css && bun test\",\n\t\t\"typecheck\": \"bun run forms:css && tsc --noEmit\",\n\t\t\"db:generate\": \"drizzle-kit generate\",\n\t\t\"db:apply:local\": \"wrangler d1 migrations apply DB --local\",\n\t\t\"db:apply:remote\": \"wrangler d1 migrations apply DB --remote\",\n\t\t\"forms:css\": \"postcss src/forms/styles.css -o src/forms/styles.generated.css && bun scripts/css-to-ts.ts src/forms/styles.generated.css src/forms/styles.generated.ts\",\n\t\t\"dev:hermit\": \"wrangler dev --port 3000 --env-file .env\",\n\t\t\"dev:forms\": \"bun run forms:css && wrangler dev --port 3001 --env-file .env --var FORMS_DEV:1 --var FORMS_BASE_URL:http://localhost:3001\"\n\t},\n\t\"dependencies\": {\n\t\t\"@buape/carbon\": \"0.16.0\",\n\t\t\"drizzle-orm\": \"0.45.2\",\n\t\t\"react\": \"19.2.8\",\n\t\t\"react-dom\": \"19.2.8\",\n\t\t\"react-router\": \"8.3.1\"\n\t},\n\t\"devDependencies\": {\n\t\t\"@tailwindcss/postcss\": \"4.3.3\",\n\t\t\"@types/node\": \"26.4.0\",\n\t\t\"@types/react\": \"19.2.18\",\n\t\t\"@types/react-dom\": \"19.2.5\",\n\t\t\"drizzle-kit\": \"0.31.10\",\n\t\t\"postcss\": \"8.5.26\",\n\t\t\"postcss-cli\": \"11.0.1\",\n\t\t\"tailwindcss\": \"4.3.3\",\n\t\t\"typescript\": \"7.0.2\",\n\t\t\"wrangler\": \"4.127.1\"\n\t},\n\t\"overrides\": {\n\t\t\"esbuild\": \"0.28.2\",\n\t\t\"postcss\": \"8.5.26\",\n\t\t\"ws\": \"8.21.3\"\n\t}\n}\n",
+    "wrangler.jsonc": "{\n  \"$schema\": \"node_modules/wrangler/config-schema.json\",\n  \"name\": \"hermit\",\n  \"main\": \"src/entry.ts\",\n  \"account_id\": \"91b59577e757131d68d55a471fe32aca\",\n  \"compatibility_date\": \"2025-12-17\",\n  \"routes\": [\n    {\n      \"pattern\": \"hermit-discord.openclaw.ai\",\n      \"custom_domain\": true\n    },\n    {\n      \"pattern\": \"appeals.openclaw.ai\",\n      \"custom_domain\": true\n    },\n    {\n      \"pattern\": \"forms.openclaw.ai\",\n      \"custom_domain\": true\n    }\n  ],\n  \"observability\": {\n    \"enabled\": true\n  },\n  \"compatibility_flags\": [\n    \"nodejs_compat\",\n    \"nodejs_compat_populate_process_env\"\n  ],\n  \"migrations\": [\n    {\n      \"tag\": \"v1\",\n      \"new_sqlite_classes\": [\"CloudflareGatewayDurableObject\"]\n    },\n    {\n      \"tag\": \"v2\",\n      \"deleted_classes\": [\"CloudflareGatewayDurableObject\"]\n    }\n  ],\n  \"d1_databases\": [\n    {\n      \"binding\": \"DB\",\n      \"database_name\": \"bot-hermit-db\",\n      \"database_id\": \"37e987d1-d662-43ee-9d0f-acf6dce5d851\",\n      \"migrations_dir\": \"drizzle\"\n    }\n  ],\n  \"r2_buckets\": [\n    {\n      \"binding\": \"CLAWHUB_CASE_FILES\",\n      \"bucket_name\": \"clawhub-case-files\"\n    }\n  ],\n  \"triggers\": {\n    \"crons\": [\"*/15 * * * *\", \"0 */2 * * *\"]\n  }\n}\n"
+   },
+   "node": {
+    "name": "hermit",
+    "version": "1.0.0",
+    "private": false,
+    "scripts": [
+     "dev",
+     "deploy",
+     "deploy:cf",
+     "deploy:cf:preview",
+     "deploy:dry-run",
+     "cf-typegen",
+     "postinstall",
+     "test"
+    ]
+   }
+  },
+  {
+   "name": "SuperInstance",
+   "language": "HTML",
+   "size": 52872,
+   "pushed_at": "2026-09-29T11:16:08Z",
+   "archived": false,
+   "has_pages": true,
+   "desc": "",
+   "private": false,
+   "stars": 7,
+   "file_count": 665,
+   "manifests": [
+    "pyproject.toml",
+    "package.json"
+   ],
+   "has_tests": true,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": true,
+   "static_entry": [
+    "index.html",
+    "docs/index.html"
+   ],
+   "has_docs_dir": true,
+   "docker": false,
+   "manifest_text": {
+    "pyproject.toml": "[build-system]\nrequires = [\"hatchling\"]\nbuild-backend = \"hatchling.build\"\n\n[project]\nname = \"superinstance\"\nversion = \"0.1.1\"\ndescription = \"Python SDK for persistent, multi-agent systems\"\nreadme = \"README.md\"\nlicense = {text = \"MIT\"}\nrequires-python = \">=3.10\"\nclassifiers = [\n    \"Development Status :: 3 - Alpha\",\n    \"Intended Audience :: Developers\",\n    \"License :: OSI Approved :: MIT License\",\n    \"Programming Language :: Python :: 3\",\n    \"Programming Language :: Python :: 3.10\",\n    \"Programming Language :: Python :: 3.11\",\n    \"Programming Language :: Python :: 3.12\",\n    \"Topic :: Scientific/Engineering :: Artificial Intelligence\",\n]\ndependencies = [\n    \"httpx>=0.27.0\",\n    \"pydantic>=2.0\",\n]\n\n[project.optional-dependencies]\ndev = [\n    \"pytest>=8.0\",\n    \"pytest-asyncio>=0.23\",\n    \"pytest-cov>=5.0\",\n    \"ruff>=0.4\",\n    \"mypy>=1.10\",\n]\n\n[project.urls]\nHomepage = \"https://github.com/SuperInstance/superinstance\"\nRepository = \"https://github.com/SuperInstance/superinstance\"\n\n[tool.hatch.build.targets.wheel]\npackages = [\"superinstance\"]\n\n[tool.ruff]\nline-length = 100\ntarget-version = \"py310\"\n\n[tool.ruff.lint]\nselect = [\"E\", \"F\", \"I\", \"N\", \"W\", \"UP\", \"B\", \"C4\", \"SIM\"]\n\n[tool.mypy]\npython_version = \"3.10\"\nstrict = true\n\n[tool.pytest.ini_options]\ntestpaths = [\"tests\"]\nasyncio_mode = \"auto\"\naddopts = \"--cov=superinstance --cov-report=term-missing --cov-fail-under=80\"\n",
+    "package.json": "{\n  \"name\": \"@superinstance/schemas\",\n  \"version\": \"1.0.0\",\n  \"description\": \"TypeScript interface schemas + JSON Schema definitions for SuperInstance fleet types\",\n  \"main\": \"schemas/index.js\",\n  \"types\": \"schemas/index.d.ts\",\n  \"scripts\": {\n    \"build\": \"tsc\",\n    \"typecheck\": \"tsc --noEmit\"\n  },\n  \"devDependencies\": {\n    \"typescript\": \"^5.9.3\"\n  }\n}\n"
+   },
+   "py": {
+    "pyproject.toml": {
+     "name": "superinstance",
+     "version": "0.1.1"
+    }
+   },
+   "node": {
+    "name": "@superinstance/schemas",
+    "version": "1.0.0",
+    "private": false,
+    "scripts": [
+     "build",
+     "typecheck"
+    ]
+   }
+  },
+  {
+   "name": "plato-portal",
+   "language": "Python",
+   "size": 8755,
+   "pushed_at": "2026-09-29T11:04:15Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "Python SDK for persistent multi-agent systems \u2014 agents with markdown memory, in-memory fleet, thread-safe LRU cache, and optional DeepInfra LLM integration",
+   "private": false,
+   "stars": 2,
+   "file_count": 332,
+   "manifests": [
+    "pyproject.toml",
+    "package.json"
+   ],
+   "has_tests": true,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": true,
+   "static_entry": [
+    "index.html",
+    "docs/index.html",
+    "public/index.html"
+   ],
+   "has_docs_dir": true,
+   "docker": false,
+   "manifest_text": {
+    "pyproject.toml": "[build-system]\nrequires = [\"hatchling\"]\nbuild-backend = \"hatchling.build\"\n\n[project]\nname = \"superinstance\"\nversion = \"0.1.1\"\ndescription = \"Python SDK for persistent, multi-agent systems\"\nreadme = \"README.md\"\nlicense = {text = \"MIT\"}\nrequires-python = \">=3.10\"\nclassifiers = [\n    \"Development Status :: 3 - Alpha\",\n    \"Intended Audience :: Developers\",\n    \"License :: OSI Approved :: MIT License\",\n    \"Programming Language :: Python :: 3\",\n    \"Programming Language :: Python :: 3.10\",\n    \"Programming Language :: Python :: 3.11\",\n    \"Programming Language :: Python :: 3.12\",\n    \"Topic :: Scientific/Engineering :: Artificial Intelligence\",\n]\ndependencies = [\n    \"httpx>=0.27.0\",\n    \"pydantic>=2.0\",\n]\n\n[project.optional-dependencies]\ndev = [\n    \"pytest>=8.0\",\n    \"pytest-asyncio>=0.23\",\n    \"pytest-cov>=5.0\",\n    \"ruff>=0.4\",\n    \"mypy>=1.10\",\n]\n\n[project.urls]\nHomepage = \"https://github.com/SuperInstance/superinstance\"\nRepository = \"https://github.com/SuperInstance/superinstance\"\n\n[tool.hatch.build.targets.wheel]\npackages = [\"superinstance\"]\n\n[tool.ruff]\nline-length = 100\ntarget-version = \"py310\"\n\n[tool.ruff.lint]\nselect = [\"E\", \"F\", \"I\", \"N\", \"W\", \"UP\", \"B\", \"C4\", \"SIM\"]\n\n[tool.mypy]\npython_version = \"3.10\"\nstrict = true\n\n[tool.pytest.ini_options]\ntestpaths = [\"tests\"]\nasyncio_mode = \"auto\"\naddopts = \"--cov=superinstance --cov-report=term-missing --cov-fail-under=80\"\n",
+    "package.json": "{\n  \"license\": \"MIT\",\n  \"name\": \"@superinstance/schemas\",\n  \"version\": \"1.0.0\",\n  \"description\": \"TypeScript interface schemas + JSON Schema definitions for SuperInstance fleet types\",\n  \"main\": \"schemas/index.js\",\n  \"types\": \"schemas/index.d.ts\",\n  \"scripts\": {\n    \"build\": \"tsc\",\n    \"typecheck\": \"tsc --noEmit\"\n  },\n  \"devDependencies\": {\n    \"typescript\": \"^5.9.3\"\n  }\n}\n"
+   },
+   "py": {
+    "pyproject.toml": {
+     "name": "superinstance",
+     "version": "0.1.1"
+    }
+   },
+   "node": {
+    "name": "@superinstance/schemas",
+    "version": "1.0.0",
+    "private": false,
+    "scripts": [
+     "build",
+     "typecheck"
+    ]
+   }
+  },
+  {
+   "name": "quilt",
+   "language": "HTML",
+   "size": 15394,
+   "pushed_at": "2026-09-29T06:42:17Z",
+   "archived": false,
+   "has_pages": true,
+   "desc": "A spreadsheet where every cell is a live, addressable capability. The grid is the runtime.",
+   "private": false,
+   "stars": 0,
+   "file_count": 592,
+   "manifests": [
+    "package.json"
+   ],
+   "has_tests": true,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": true,
+   "static_entry": [
+    "index.html"
+   ],
+   "has_docs_dir": true,
+   "docker": false,
+   "manifest_text": {
+    "package.json": "{\n  \"name\": \"quilt\",\n  \"version\": \"0.3.0\",\n  \"private\": true,\n  \"type\": \"module\",\n  \"description\": \"A spreadsheet where every cell is a live, addressable capability. The grid is the runtime.\",\n  \"license\": \"Apache-2.0\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/superinstance/quilt.git\"\n  },\n  \"bugs\": {\n    \"url\": \"https://github.com/superinstance/quilt/issues\"\n  },\n  \"homepage\": \"https://github.com/superinstance/quilt#readme\",\n  \"engines\": {\n    \"node\": \">=18.0.0\"\n  },\n  \"workspaces\": [\n    \"packages/*\"\n  ],\n  \"scripts\": {\n    \"build\": \"npm run build -w @quilt/core -w @quilt/sdk -w @quilt/mcp -w @quilt/tui -w @quilt/cli --if-present\",\n    \"test\": \"npm run test --workspaces --if-present\",\n    \"test:core\": \"cd packages/core && npm run test\",\n    \"dev\": \"cd packages/cli && npm run dev\",\n    \"lint\": \"eslint .\",\n    \"lint:fix\": \"eslint . --fix\",\n    \"format\": \"echo 'format placeholder'\"\n  },\n  \"devDependencies\": {\n    \"@eslint/js\": \"^10.0.0\",\n    \"@types/node\": \"^26.6.2\",\n    \"@typescript-eslint/eslint-plugin\": \"^8.70.1\",\n    \"@typescript-eslint/parser\": \"^8.67.0\",\n    \"eslint\": \"^10.11.0\",\n    \"globals\": \"^17.0.0\",\n    \"typescript\": \"^6.0.3\",\n    \"vitest\": \"^5.0.2\"\n  },\n  \"dependencies\": {\n    \"yaml\": \"^2.9.1\",\n    \"zod\": \"^4.6.5\"\n  }\n}"
+   },
+   "node": {
+    "name": "quilt",
+    "version": "0.3.0",
+    "private": true,
+    "scripts": [
+     "build",
+     "test",
+     "test:core",
+     "dev",
+     "lint",
+     "lint:fix",
+     "format"
+    ]
+   }
+  },
+  {
+   "name": "jev-garden",
+   "language": "JavaScript",
+   "size": 294,
+   "pushed_at": "2026-09-29T04:43:10Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "The living JEV training system \u2014 grows from quilt judgments, idle-compiles its ExoJ into weave artifacts for the next inferencing",
+   "private": false,
+   "stars": 0,
+   "file_count": 108,
+   "manifests": [],
+   "has_tests": true,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": true,
+   "docker": false
+  },
+  {
+   "name": "webgpu-profiler",
+   "language": "Python",
+   "size": 333,
+   "pushed_at": "2026-09-29T04:09:55Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "GPU profiler for WebGPU applications - Real-time GPU monitoring, benchmarking, and performance analysis in the browser",
+   "private": false,
+   "stars": 2,
+   "file_count": 89,
+   "manifests": [
+    "package.json"
+   ],
+   "has_tests": true,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": true,
+   "static_entry": [],
+   "has_docs_dir": true,
+   "docker": false,
+   "manifest_text": {
+    "package.json": "{\n  \"name\": \"browser-gpu-profiler\",\n  \"version\": \"1.0.0\",\n  \"description\": \"Browser-based GPU profiler for WebGPU applications. Monitor GPU utilization, track memory allocation, profile shader performance, and benchmark GPU capabilities in real-time.\",\n  \"keywords\": [\n    \"GPU profiler\",\n    \"WebGPU profiler\",\n    \"browser GPU monitoring\",\n    \"GPU performance analysis\",\n    \"WebGPU diagnostics\",\n    \"GPU benchmarking\",\n    \"graphics performance\",\n    \"compute profiling\",\n    \"GPU utilization\",\n    \"shader profiling\",\n    \"WebGPU compute\",\n    \"GPU memory tracking\",\n    \"performance monitoring\",\n    \"GPU metrics\",\n    \"browser performance\",\n    \"graphics card profiler\",\n    \"GPU diagnostics\",\n    \"WebGPU performance\",\n    \"GPU benchmark\",\n    \"shader performance\",\n    \"compute shader profiling\"\n  ],\n  \"author\": \"SuperInstance\",\n  \"license\": \"MIT\",\n  \"type\": \"module\",\n  \"main\": \"dist/index.js\",\n  \"types\": \"dist/index.d.ts\",\n  \"exports\": {\n    \".\": {\n      \"types\": \"./dist/index.d.ts\",\n      \"import\": \"./dist/index.js\"\n    },\n    \"./profiler\": {\n      \"types\": \"./dist/profiler.d.ts\",\n      \"import\": \"./dist/profiler.js\"\n    },\n    \"./benchmarks\": {\n      \"types\": \"./dist/benchmarks.d.ts\",\n      \"import\": \"./dist/benchmarks.js\"\n    },\n    \"./metrics\": {\n      \"types\": \"./dist/metrics.d.ts\",\n      \"import\": \"./dist/metrics.js\"\n    }\n  },\n  \"files\": [\n    \"dist\",\n    \"README.md\",\n    \"LICENSE\"\n  ],\n  \"scripts\": {\n    \"build\": \"tsup\",\n    \"dev\": \"tsup --watch\",\n    \"test\": \"vitest\",\n    \"test:ui\": \"vitest --ui\",\n    \"test:coverage\": \"vitest --coverage\",\n    \"type-check\": \"tsc --noEmit\",\n    \"lint\": \"eslint src --ext .ts\",\n    \"format\": \"prettier --write \\\"src/**/*.ts\\\"\",\n    \"prepublishOnly\": \"npm run build && npm run test\"\n  },\n  \"devDependencies\": {\n    \"@types/node\": \"^26.6.2\",\n    \"@typescript-eslint/eslint-plugin\": \"^8.70.1\",\n    \"@typescript-eslint/parser\": \"^8.70.1\",\n    \"@vitest/coverage-v8\": \"^5.0.2\",\n    \"@vitest/ui\": \"^5.0.2\",\n    \"eslint\": \"^10.11.0\",\n    \"jsdom\": \"^30.1.1\",\n    \"prettier\": \"^3.9.9\",\n    \"tsup\": \"^8.5.1\",\n    \"typescript\": \"^5.3.0\",\n    \"vitest\": \"^1.6.1\"\n  },\n  \"engines\": {\n    \"node\": \">=18.0.0\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"https://github.com/SuperInstance/browser-gpu-profiler.git\"\n  },\n  \"bugs\": {\n    \"url\": \"https://github.com/SuperInstance/browser-gpu-profiler/issues\"\n  },\n  \"homepage\": \"https://github.com/SuperInstance/browser-gpu-profiler#readme\"\n}\n"
+   },
+   "node": {
+    "name": "browser-gpu-profiler",
+    "version": "1.0.0",
+    "private": false,
+    "scripts": [
+     "build",
+     "dev",
+     "test",
+     "test:ui",
+     "test:coverage",
+     "type-check",
+     "lint",
+     "format"
+    ]
+   }
+  },
+  {
+   "name": "qthe-verify",
+   "language": "JavaScript",
+   "size": 23,
+   "pushed_at": "2026-09-29T03:14:56Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "",
+   "private": false,
+   "stars": 0,
+   "file_count": 14,
+   "manifests": [
+    "package.json"
+   ],
+   "has_tests": false,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": true,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": false,
+   "manifest_text": {
+    "package.json": "{\n  \"name\": \"qthe-verify\",\n  \"version\": \"1.0.0\",\n  \"private\": true,\n  \"description\": \"Independent, spec-only verifier for QTHE deterministic replay. Zero dependencies.\",\n  \"type\": \"module\",\n  \"engines\": { \"node\": \">=18\" },\n  \"scripts\": {\n    \"verify\": \"node verify.mjs\",\n    \"self-test\": \"node verify.mjs --self-test\"\n  },\n  \"dependencies\": {},\n  \"license\": \"MIT\"\n}\n"
+   },
+   "node": {
+    "name": "qthe-verify",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": [
+     "verify",
+     "self-test"
+    ]
+   }
+  },
+  {
+   "name": "PuddnHead",
+   "language": null,
+   "size": 69,
+   "pushed_at": "2026-09-29T03:14:26Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "  The Fool is the Ground Truth. -Embedding: His fingerprints are vector embeddings of identity. -Cellular: His slides are independent cells in a larger graph. -",
+   "private": false,
+   "stars": 0,
+   "file_count": 9,
+   "manifests": [],
+   "has_tests": false,
+   "has_ci": false,
+   "has_readme": true,
+   "has_license": true,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": false
+  },
+  {
+   "name": "chiaroscuro",
+   "language": "HTML",
+   "size": 94,
+   "pushed_at": "2026-09-29T01:17:23Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "Real-time webcam-to-text rendering \u2014 characters are shapes, not pixels. Four doors: Mirror, Sculptor, Studio, Director.",
+   "private": false,
+   "stars": 0,
+   "file_count": 17,
+   "manifests": [],
+   "has_tests": false,
+   "has_ci": false,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [
+    "index.html"
+   ],
+   "has_docs_dir": false,
+   "docker": false
+  },
+  {
+   "name": "mavis-pincher",
+   "language": "TypeScript",
+   "size": 26,
+   "pushed_at": "2026-09-29T00:58:03Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "SuperInstance fleet tool POC (Mavis, 2026-09-28)",
+   "private": false,
+   "stars": 0,
+   "file_count": 11,
+   "manifests": [
+    "package.json",
+    "wrangler.toml"
+   ],
+   "has_tests": true,
+   "has_ci": false,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": false,
+   "manifest_text": {
+    "package.json": "{\n  \"name\": \"mavis-pincher\",\n  \"version\": \"0.1.0\",\n  \"description\": \"The substrate walker for the SuperInstance fleet knowledge surface. A2A API + static dataset.\",\n  \"main\": \"src/index.ts\",\n  \"type\": \"module\",\n  \"scripts\": {\n    \"dev\": \"wrangler dev\",\n    \"deploy\": \"wrangler deploy\",\n    \"test\": \"node --test test/*.test.mjs\",\n    \"build:data\": \"python3 ../mavis-pincher-pages/scripts/build-dataset.py\"\n  },\n  \"license\": \"MIT\",\n  \"author\": \"SuperInstance\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"https://github.com/SuperInstance/mavis-pincher\"\n  },\n  \"dependencies\": {\n    \"@cloudflare/workers-types\": \"^4.0.0\"\n  },\n  \"devDependencies\": {\n    \"wrangler\": \"^3.0.0\",\n    \"typescript\": \"^5.0.0\"\n  }\n}\n",
+    "wrangler.toml": "name = \"mavis-pincher\"\nmain = \"src/index.ts\"\ncompatibility_date = \"2024-09-01\"\n\n# Routes for superinstance.dev (set up custom domain in Cloudflare dashboard)\n# [[routes]]\n# pattern = \"superinstance.dev/v1/*\"\n# custom_domain = true\n\n[assets]\ndirectory = \"./data\"\nbinding = \"ASSETS\"\n\n[vars]\nPINCHER_VERSION = \"0.1.0\"\nPINCHER_GENERATED = \"2026-09-28T19:00:00Z\"\n"
+   },
+   "node": {
+    "name": "mavis-pincher",
+    "version": "0.1.0",
+    "private": false,
+    "scripts": [
+     "dev",
+     "deploy",
+     "test",
+     "build:data"
+    ]
+   }
+  },
+  {
+   "name": "quilt-forge",
+   "language": "JavaScript",
+   "size": 9,
+   "pushed_at": "2026-09-29T00:07:04Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "",
+   "private": false,
+   "stars": 0,
+   "file_count": 15,
+   "manifests": [],
+   "has_tests": false,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": true,
+   "static_entry": [],
+   "has_docs_dir": true,
+   "docker": false
+  },
+  {
+   "name": "quilt-cloudflare",
+   "language": "TypeScript",
+   "size": 3361,
+   "pushed_at": "2026-09-28T21:41:49Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "A Quilt reactive runtime on Cloudflare Workers, D1, Vectorize, KV, R2.",
+   "private": false,
+   "stars": 0,
+   "file_count": 51,
+   "manifests": [
+    "package.json",
+    "wrangler.toml"
+   ],
+   "has_tests": true,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": true,
+   "static_entry": [],
+   "has_docs_dir": true,
+   "docker": false,
+   "manifest_text": {
+    "package.json": "{\n  \"name\": \"quilt-cloudflare\",\n  \"version\": \"0.1.0\",\n  \"description\": \"A Quilt reactive runtime on Cloudflare Workers, D1, Vectorize, KV, R2.\",\n  \"main\": \"src/worker.ts\",\n  \"type\": \"module\",\n  \"scripts\": {\n    \"dev\": \"wrangler dev\",\n    \"build\": \"wrangler deploy --dry-run --outdir=dist\",\n    \"deploy\": \"wrangler deploy\",\n    \"deploy:ui\": \"wrangler pages deploy ui\",\n    \"db:init\": \"wrangler d1 execute quilt-db --file=./schema.sql\",\n    \"db:reset\": \"wrangler d1 execute quilt-db --command='DROP TABLE IF EXISTS cells; DROP TABLE IF EXISTS edges; DROP TABLE IF EXISTS history; DROP TABLE IF EXISTS listeners;'\",\n    \"vectorize:create\": \"wrangler vectorize create quilt-embeddings --dimensions=768\",\n    \"kv:create\": \"wrangler kv:namespace create CACHE\",\n    \"tail\": \"wrangler tail\",\n    \"test\": \"node --experimental-transform-types --test test/*.test.js\",\n    \"lint\": \"eslint .\",\n    \"lint:fix\": \"eslint . --fix\"\n  },\n  \"keywords\": [\n    \"quilt\",\n    \"cloudflare\",\n    \"workers\",\n    \"d1\",\n    \"vectorize\",\n    \"ai\",\n    \"reactive\",\n    \"cells\",\n    \"runtime\"\n  ],\n  \"author\": \"SuperInstance\",\n  \"license\": \"MIT\",\n  \"devDependencies\": {\n    \"@cloudflare/workers-types\": \"^5.20260925.1\",\n    \"typescript\": \"~6.0.3\",\n    \"wrangler\": \"^4.140.0\",\n    \"eslint\": \"^10.11.0\",\n    \"@typescript-eslint/parser\": \"^8.70.1\",\n    \"@typescript-eslint/eslint-plugin\": \"^8.70.1\"\n  }\n}",
+    "wrangler.toml": "name = \"quilt-cloudflare\"\nmain = \"src/worker.ts\"\ncompatibility_date = \"2024-01-01\"\n\n# D1 database for persistent cell storage\n# Create with: wrangler d1 create quilt-db\n[[d1_databases]]\nbinding = \"DB\"\ndatabase_name = \"quilt-db\"\ndatabase_id = \"d782be6b-b0ab-4dfa-b8f4-cb875bc11fc1\"\n\n# Vectorize for semantic cell search\n# Create with: wrangler vectorize create quilt-embeddings --dimensions=768\n[[vectorize]]\nbinding = \"VECTORIZE\"\nindex_name = \"quilt-embeddings\"\n\n# KV for fast ephemeral state\n# Create with: wrangler kv:namespace create CACHE\n[[kv_namespaces]]\nbinding = \"CACHE\"\nid = \"76094ed27a6447d1bf5627bf33e71fb9\"\n\n# Workers AI for LLM cells\n[ai]\nbinding = \"AI\"\n\n# Cron triggers for sensor cells\n# [triggers]\n# crons = [\"*/1 * * * *\"]  # every minute\n\n"
+   },
+   "node": {
+    "name": "quilt-cloudflare",
+    "version": "0.1.0",
+    "private": false,
+    "scripts": [
+     "dev",
+     "build",
+     "deploy",
+     "deploy:ui",
+     "db:init",
+     "db:reset",
+     "vectorize:create",
+     "kv:create"
+    ]
+   }
+  },
+  {
+   "name": "cellforge",
+   "language": "Python",
+   "size": 144,
+   "pushed_at": "2026-09-28T20:53:29Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "Cellular-substrate ML training. The cell matrix outlives every model architecture.",
+   "private": false,
+   "stars": 0,
+   "file_count": 17,
+   "manifests": [
+    "pyproject.toml"
+   ],
+   "has_tests": true,
+   "has_ci": false,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": false,
+   "manifest_text": {
+    "pyproject.toml": "[project]\nname = \"cellforge\"\nversion = \"0.1.0\"\ndescription = \"Cellular-substrate ML training. The cell matrix outlives every model architecture.\"\nrequires-python = \">=3.9\"\nlicense = { text = \"MIT\" }\nauthors = [{ name = \"Casey / SuperInstance\", email = \"superinstance@anthropic.com\" }]\n\n[build-system]\nrequires = [\"setuptools>=61.0\"]\nbuild-backend = \"setuptools.build_meta\"\n\n[tool.setuptools.packages.find]\nwhere = [\"src\"]\n\n[project.scripts]\ncellforge = \"cellforge.__main__:main\"\n"
+   },
+   "py": {
+    "pyproject.toml": {
+     "name": "cellforge",
+     "version": "0.1.0"
+    }
+   }
+  },
+  {
+   "name": "mavis-essay-scout",
+   "language": "Python",
+   "size": 10,
+   "pushed_at": "2026-09-28T20:06:27Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "SuperInstance fleet tool POC (Mavis, 2026-09-28)",
+   "private": false,
+   "stars": 0,
+   "file_count": 7,
+   "manifests": [],
+   "has_tests": false,
+   "has_ci": false,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": false
+  },
+  {
+   "name": "qthe",
+   "language": "JavaScript",
+   "size": 2195,
+   "pushed_at": "2026-09-28T18:10:50Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "QTHE \u2014 Quilt-Ternary Hyper-Embeddings: the 8-bit primitive (6-bit data + 2-bit timbre Ground/Attract/Repel/Abstain-as-i), the 64-slot looking-glass wormhole, th",
+   "private": false,
+   "stars": 0,
+   "file_count": 182,
+   "manifests": [],
+   "has_tests": true,
+   "has_ci": false,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [
+    "index.html"
+   ],
+   "has_docs_dir": false,
+   "docker": false
+  },
+  {
+   "name": "glyphspace",
+   "language": null,
+   "size": 3,
+   "pushed_at": "2026-09-28T17:46:24Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "Spatial reasoning over glyph grids: raycast, path-trace, dynamic multi-resolution zoom. Low-res=objects, high-res=textures. Proposal stage.",
+   "private": false,
+   "stars": 0,
+   "file_count": 3,
+   "manifests": [],
+   "has_tests": false,
+   "has_ci": false,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": true,
+   "docker": false
+  },
+  {
+   "name": "glyphcast",
+   "language": null,
+   "size": 4,
+   "pushed_at": "2026-09-28T17:46:21Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "Next-frame prediction and frame-rate synthesis for glyph-domain video streams (chiaroscuro ASCII as token-array video). Proposal stage; receipt-gated roadmap.",
+   "private": false,
+   "stars": 0,
+   "file_count": 3,
+   "manifests": [],
+   "has_tests": false,
+   "has_ci": false,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": true,
+   "docker": false
+  },
+  {
+   "name": "coev",
+   "language": "JavaScript",
+   "size": 30,
+   "pushed_at": "2026-09-28T17:37:35Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "Adversarial coevolution engine with champion-integrity auditing. Zero-dep Node. Extracted from pong-quilt C1.",
+   "private": false,
+   "stars": 0,
+   "file_count": 31,
+   "manifests": [
+    "package.json"
+   ],
+   "has_tests": true,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": true,
+   "static_entry": [],
+   "has_docs_dir": true,
+   "docker": false,
+   "manifest_text": {
+    "package.json": "{\n  \"name\": \"coev\",\n  \"version\": \"0.1.0\",\n  \"description\": \"Adversarial coevolution engine with champion-integrity auditing. Two populations, red vs blue, the loser mutates harder \u2014 and every champion is re-benchmarked against its own claims before you trust it.\",\n  \"license\": \"MIT\",\n  \"type\": \"commonjs\",\n  \"main\": \"src/index.js\",\n  \"exports\": {\n    \".\": \"./src/index.js\",\n    \"./arenas/*\": \"./arenas/*\",\n    \"./src/*\": \"./src/*\"\n  },\n  \"bin\": { \"coev\": \"bin/coev.js\" },\n  \"engines\": { \"node\": \">=18\" },\n  \"scripts\": { \"test\": \"node --test\" },\n  \"keywords\": [\"coevolution\", \"adversarial\", \"genetic-algorithm\", \"game-ai\", \"red-team\", \"integrity\", \"receipts\", \"deterministic\"],\n  \"repository\": { \"type\": \"git\", \"url\": \"https://github.com/SuperInstance/coev.git\" }\n}\n"
+   },
+   "node": {
+    "name": "coev",
+    "version": "0.1.0",
+    "private": false,
+    "scripts": [
+     "test"
+    ]
+   }
+  },
+  {
+   "name": "fleet-hooks",
+   "language": "Shell",
+   "size": 9,
+   "pushed_at": "2026-09-28T17:28:01Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "Fleet git hooks: fail-closed credential key-scan pre-commit + setup",
+   "private": false,
+   "stars": 0,
+   "file_count": 6,
+   "manifests": [],
+   "has_tests": true,
+   "has_ci": false,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": false
+  },
+  {
+   "name": "quilt-codespace-lab",
+   "language": "Shell",
+   "size": 43,
+   "pushed_at": "2026-09-28T16:39:48Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "The codespace as an ephemeral honest worker: postCreate experiments that self-push receipts. Publish -> registry -> consume -> receipt loop.",
+   "private": false,
+   "stars": 0,
+   "file_count": 7,
+   "manifests": [],
+   "has_tests": false,
+   "has_ci": false,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": false
+  },
+  {
+   "name": "mavis-substrate-walker",
+   "language": "Python",
+   "size": 67,
+   "pushed_at": "2026-09-28T16:07:17Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "A substrate-agnostic walker for the Quilt. STITCH/WITNESS/PROMOTE primitives. The walker that walks any substrate by receipting each step.",
+   "private": false,
+   "stars": 0,
+   "file_count": 24,
+   "manifests": [
+    "pyproject.toml"
+   ],
+   "has_tests": true,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": false,
+   "manifest_text": {
+    "pyproject.toml": "[build-system]\nrequires = [\"setuptools>=61.0\", \"wheel\"]\nbuild-backend = \"setuptools.build_meta\"\n\n[project]\nname = \"mavis-substrate-walker\"\nversion = \"0.1.0\"\ndescription = \"A substrate-agnostic walker for the Quilt. STITCH/WITNESS/PROMOTE primitives; walks cellforge, moth-corpus, lexical-substrate, dict substrates.\"\nreadme = \"README.md\"\nrequires-python = \">=3.10\"\nauthors = [\n    {name = \"Mavis\", email = \"mavis@superinstance.dev\"},\n]\nlicense = {text = \"MIT\"}\n\n[project.scripts]\nmavis-substrate-walker = \"mavis_substrate_walker.__main__:main\"\n\n[tool.setuptools.packages.find]\nwhere = [\"src\"]\n"
+   },
+   "py": {
+    "pyproject.toml": {
+     "name": "mavis-substrate-walker",
+     "version": "0.1.0"
+    }
+   }
+  },
+  {
+   "name": "duke-lab",
+   "language": "JavaScript",
+   "size": 2187,
+   "pushed_at": "2026-09-28T15:16:23Z",
+   "archived": false,
+   "has_pages": true,
+   "desc": "",
+   "private": false,
+   "stars": 0,
+   "file_count": 61,
+   "manifests": [
+    "package.json"
+   ],
+   "has_tests": true,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": true,
+   "static_entry": [
+    "index.html"
+   ],
+   "has_docs_dir": true,
+   "docker": false,
+   "manifest_text": {
+    "package.json": "{\n  \"name\": \"duke-lab\",\n  \"version\": \"1.0.0\",\n  \"description\": \"A GAN with words \u2014 grow the musician, not the song. Plainsong instrument.\",\n  \"scripts\": {\n    \"test\": \"node tests/engine.test.js\",\n    \"serve\": \"python3 -m http.server 8923\"\n  },\n  \"license\": \"MIT\"\n}\n"
+   },
+   "node": {
+    "name": "duke-lab",
+    "version": "1.0.0",
+    "private": false,
+    "scripts": [
+     "test",
+     "serve"
+    ]
+   }
+  },
+  {
+   "name": "jeviter",
+   "language": "JavaScript",
+   "size": 129,
+   "pushed_at": "2026-09-28T08:43:47Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "JEV (Joint Embedding Validator) UI \u2014 promote/REVIEW/DISCUSS/REJECT oracle for canon-vs-speculation. See jev-oracle memory topic.",
+   "private": false,
+   "stars": 0,
+   "file_count": 54,
+   "manifests": [
+    "package.json"
+   ],
+   "has_tests": true,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": true,
+   "docker": false,
+   "manifest_text": {
+    "package.json": "{\n  \"name\": \"jeviter\",\n  \"version\": \"0.1.0\",\n  \"description\": \"Homeostatic iteration for agentic systems \u2014 don't poll; rest and react. Iterator + tap gate + receipt ledger, browser-native, CLI, MCP.\",\n  \"type\": \"module\",\n  \"main\": \"src/core.js\",\n  \"exports\": {\n    \".\": \"./src/core.js\",\n    \"./profile\": \"./src/profile.js\",\n    \"./ade\": \"./src/ade.js\",\n    \"./distill\": \"./src/distill.js\"\n  },\n  \"bin\": { \"jeviter\": \"./src/cli.js\" },\n  \"scripts\": { \"test\": \"node --test\", \"start\": \"node src/cli.js\" },\n  \"license\": \"MIT\",\n  \"engines\": { \"node\": \">=18\" }\n}\n"
+   },
+   "node": {
+    "name": "jeviter",
+    "version": "0.1.0",
+    "private": false,
+    "scripts": [
+     "test",
+     "start"
+    ]
+   }
+  },
+  {
+   "name": "fleet-static-host",
+   "language": "HTML",
+   "size": 70686,
+   "pushed_at": "2026-09-28T08:35:08Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "",
+   "private": false,
+   "stars": 0,
+   "file_count": 357,
+   "manifests": [
+    "package.json",
+    "wrangler.jsonc"
+   ],
+   "has_tests": true,
+   "has_ci": false,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [
+    "public/index.html"
+   ],
+   "has_docs_dir": false,
+   "docker": false,
+   "manifest_text": {
+    "package.json": "{\n  \"name\": \"fleet-static-host\",\n  \"version\": \"2.0.0\",\n  \"description\": \"Fleet public shelf \u2014 static builds ride assets; content rides quilt (D1 cells).\",\n  \"private\": true,\n  \"type\": \"module\",\n  \"scripts\": {\n    \"dev\": \"wrangler dev\",\n    \"deploy\": \"wrangler deploy\",\n    \"db:migrate:local\": \"wrangler d1 migrations apply quilt-fleet-db --local\",\n    \"db:migrate:remote\": \"wrangler d1 migrations apply quilt-fleet-db --remote\",\n    \"seed:build\": \"python3 seed/build_seed.py\",\n    \"seed:push\": \"bash seed/push.sh\",\n    \"test\": \"node --experimental-strip-types tests/uscp.test.mjs && node --experimental-strip-types tests/mcp.test.mjs\",\n    \"typecheck\": \"tsc --noEmit\"\n  },\n  \"devDependencies\": {\n    \"@cloudflare/workers-types\": \"^4.20250810.0\",\n    \"typescript\": \"^5.5.0\",\n    \"wrangler\": \"^4.118.0\"\n  }\n}\n",
+    "wrangler.jsonc": "{\n  \"$schema\": \"node_modules/wrangler/config-schema.json\",\n  \"name\": \"fleet-static-host\",\n  \"main\": \"src/index.ts\",\n  \"compatibility_date\": \"2026-08-01\",\n  \"assets\": {\n    \"directory\": \"./public\",\n    \"not_found_handling\": \"404-page\",\n    \"run_worker_first\": [\n      \"/\",\n      \"/api/*\",\n      \"/ai/embed\",\n      \"/ai/tts\",\n      \"/canon/search\",\n      \"/forest/search\",\n      \"/mcp\",\n      \"/.well-known/mcp\",\n      \"/papers\",\n      \"/papers/*\",\n      \"/writings\",\n      \"/writings/*\"\n    ]\n  },\n  \"vectorize\": [\n    {\n      \"binding\": \"CANON\",\n      \"index_name\": \"ai-writings-canon\",\n      \"remote\": true\n    }\n  ],\n  \"ai\": {\n    \"binding\": \"AI\"\n  },\n  \"d1_databases\": [\n    {\n      \"binding\": \"DB\",\n      \"database_name\": \"quilt-fleet-db\",\n      \"database_id\": \"19d1d2f3-d6ef-48bb-9475-253f303bfb37\"\n    }\n  ],\n  \"triggers\": {\n    \"crons\": [\"0 * * * *\"]\n  }\n}\n"
+   },
+   "node": {
+    "name": "fleet-static-host",
+    "version": "2.0.0",
+    "private": true,
+    "scripts": [
+     "dev",
+     "deploy",
+     "db:migrate:local",
+     "db:migrate:remote",
+     "seed:build",
+     "seed:push",
+     "test",
+     "typecheck"
+    ]
+   }
+  },
+  {
+   "name": "api-orchestra",
+   "language": "Python",
+   "size": 22263,
+   "pushed_at": "2026-09-28T08:25:40Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "API Orchestra \u2014 multi-LLM creative chorus using ZAI, DeepInfra, Cloudflare, JEV as substrate walkers.",
+   "private": false,
+   "stars": 0,
+   "file_count": 98,
+   "manifests": [],
+   "has_tests": false,
+   "has_ci": false,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": false
+  },
+  {
+   "name": "quilt-arcade",
+   "language": "HTML",
+   "size": 838,
+   "pushed_at": "2026-09-28T08:11:45Z",
+   "archived": false,
+   "has_pages": true,
+   "desc": "Five spreadsheet games (tictactoe, reversi, connect4, gomoku, texas hold-em) \u2014 rules as cells, visible learning loops, browser viewers. Modular plugins on main;",
+   "private": false,
+   "stars": 0,
+   "file_count": 155,
+   "manifests": [
+    "package.json"
+   ],
+   "has_tests": false,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": true,
+   "docker": false,
+   "manifest_text": {
+    "package.json": "{\"name\":\"quilt-arcade\",\"type\":\"module\",\"dependencies\":{\"yaml\":\"^2.9.1\"}}"
+   },
+   "node": {
+    "name": "quilt-arcade",
+    "version": null,
+    "private": false,
+    "scripts": []
+   }
+  },
+  {
+   "name": "elephant",
+   "language": "Python",
+   "size": 46929,
+   "pushed_at": "2026-09-28T08:10:31Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "Personal JEPA vs the zeitgeist. Every reading is someone's reading: subjective, shaped by that agent's experience and its intangible correlations",
+   "private": false,
+   "stars": 0,
+   "file_count": 738,
+   "manifests": [
+    "pyproject.toml"
+   ],
+   "has_tests": true,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": true,
+   "static_entry": [],
+   "has_docs_dir": true,
+   "docker": false,
+   "manifest_text": {
+    "pyproject.toml": "[project]\nname = \"elephant\"\nversion = \"0.1.0\"\ndescription = \"The inter-model temperature. A bank of JEPA dials perceiving a room's vibes \u2014 mood, volume, earnestness, cynicism, joke-landing, panic \u2014 as a field that shapes every agent in it.\"\nrequires-python = \">=3.10\"\ndependencies = [\"numpy\"]\n\n[project.optional-dependencies]\nlearned = [\"torch\"]\ndev = [\"pytest\", \"scipy\"]\n\n[build-system]\nrequires = [\"setuptools>=68\"]\nbuild-backend = \"setuptools.build_meta\"\n\n[tool.setuptools.packages.find]\ninclude = [\"elephant*\"]\n\n[tool.pytest.ini_options]\n# The test suite lives in tests/ (277 tests across 25 files). Keeping\n# discovery explicit also keeps stray *-named scripts (e.g. scripts/*_test.py,\n# which is a research script, not a pytest module) out of the collection path.\ntestpaths = [\"tests\"]\n"
+   },
+   "py": {
+    "pyproject.toml": {
+     "name": "elephant",
+     "version": "0.1.0"
+    }
+   }
+  },
+  {
+   "name": "quantum-audio-honesty",
+   "language": "JavaScript",
+   "size": 10,
+   "pushed_at": "2026-09-28T07:26:52Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "",
+   "private": false,
+   "stars": 0,
+   "file_count": 8,
+   "manifests": [],
+   "has_tests": false,
+   "has_ci": false,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": true,
+   "docker": false
+  },
+  {
+   "name": "cargo-line-tycoon",
+   "language": "HTML",
+   "size": 82978,
+   "pushed_at": "2026-09-28T07:18:34Z",
+   "archived": false,
+   "has_pages": true,
+   "desc": "Cargo Line Tycoon - polyformal Quilt-native game + classroom with locale-specific pedagogy",
+   "private": false,
+   "stars": 0,
+   "file_count": 517,
+   "manifests": [
+    "package.json"
+   ],
+   "has_tests": true,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": true,
+   "docker": false,
+   "manifest_text": {
+    "package.json": "{\n  \"name\": \"cargo-line-tycoon\",\n  \"version\": \"0.1.0\",\n  \"private\": true,\n  \"description\": \"Cargo Line Tycoon \u2014 the Chart. An offline-first, deterministic single-player tycoon game.\",\n  \"scripts\": {\n    \"test\": \"node --test \\\"game/test/**/*.test.js\\\"\",\n    \"build\": \"node scripts/build-dist.mjs\",\n    \"serve:dist\": \"npx http-server dist -p 8080 -s\"\n  },\n  \"engines\": {\n    \"node\": \">=20\"\n  }\n}\n"
+   },
+   "node": {
+    "name": "cargo-line-tycoon",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": [
+     "test",
+     "build",
+     "serve:dist"
+    ]
+   }
+  },
+  {
+   "name": "paced-seam",
+   "language": "JavaScript",
+   "size": 8,
+   "pushed_at": "2026-09-28T07:03:33Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "",
+   "private": false,
+   "stars": 0,
+   "file_count": 9,
+   "manifests": [
+    "package.json"
+   ],
+   "has_tests": true,
+   "has_ci": false,
+   "has_readme": true,
+   "has_license": true,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": false,
+   "manifest_text": {
+    "package.json": "{\n  \"name\": \"paced-seam\",\n  \"version\": \"0.1.0\",\n  \"description\": \"One-in-flight LLM advice seam. Exactly one request in flight, paced fires, stale responses dropped by sequence number, honest timeout, counted drops. The reference implementation of a contract every LLM app hand-rolls badly.\",\n  \"license\": \"MIT\",\n  \"type\": \"commonjs\",\n  \"main\": \"src/seam.js\",\n  \"exports\": { \".\": \"./src/seam.js\", \"./src/*\": \"./src/*\" },\n  \"engines\": { \"node\": \">=18\" },\n  \"scripts\": { \"test\": \"node tools/run-tests.js\" },\n  \"keywords\": [\"llm\", \"advice\", \"seam\", \"pacing\", \"race-condition\", \"timeout\", \"backpressure\", \"zero-dependency\"],\n  \"repository\": { \"type\": \"git\", \"url\": \"https://github.com/SuperInstance/paced-seam.git\" }\n}\n"
+   },
+   "node": {
+    "name": "paced-seam",
+    "version": "0.1.0",
+    "private": false,
+    "scripts": [
+     "test"
+    ]
+   }
+  },
+  {
+   "name": "quilt-qcells",
+   "language": "Python",
+   "size": 67,
+   "pushed_at": "2026-09-28T05:47:51Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "CELL-MAPPING implementation \u2014 quantum ops as quilt cells (modular plugin)",
+   "private": false,
+   "stars": 0,
+   "file_count": 28,
+   "manifests": [],
+   "has_tests": false,
+   "has_ci": false,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": false
+  },
+  {
+   "name": "tessera",
+   "language": "Python",
+   "size": 105,
+   "pushed_at": "2026-09-28T05:25:40Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "",
+   "private": false,
+   "stars": 0,
+   "file_count": 55,
+   "manifests": [],
+   "has_tests": false,
+   "has_ci": false,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": true,
+   "docker": false
+  },
+  {
+   "name": "fleet-murmur",
+   "language": "Python",
+   "size": 45150,
+   "pushed_at": "2026-09-28T03:57:52Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "CCC agent workspace \u2014 logs, bottles, fleet coordination data. Not a library.",
+   "private": false,
+   "stars": 1,
+   "file_count": 2083,
+   "manifests": [
+    "pyproject.toml"
+   ],
+   "has_tests": true,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": true,
+   "static_entry": [],
+   "has_docs_dir": true,
+   "docker": false,
+   "manifest_text": {
+    "pyproject.toml": "[build-system]\nrequires = [\"setuptools>=68.0\"]\nbuild-backend = \"setuptools.build_meta\"\n\n[project]\nname = \"fleet-murmur\"\nversion = \"0.1.0\"\ndescription = \"Lightweight gossip protocol for agent fleet communication\"\nauthors = [{ name = \"SuperInstance\" }]\nlicense = { text = \"Apache-2.0\" }\nreadme = \"README.md\"\nrequires-python = \">=3.8\"\nkeywords = [\"gossip\", \"fleet\", \"murmur\", \"protocol\", \"distributed\"]\n\n[project.urls]\nSource = \"https://github.com/SuperInstance/fleet-murmur\"\n\n[tool.setuptools.packages.find]\ninclude = [\"fleet_murmur*\"]\n\n[tool.pytest.ini_options]\ntestpaths = [\"tests\"]\n"
+   },
+   "py": {
+    "pyproject.toml": {
+     "name": "fleet-murmur",
+     "version": "0.1.0"
+    }
+   }
+  },
+  {
+   "name": "quilt-rips",
+   "language": "Python",
+   "size": 37,
+   "pushed_at": "2026-09-28T03:57:23Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "TDA as a 5-opcode quilt cell: GUDHI persistence with stone-v1-shaped hash-chained receipts. Signal->structure, sealed.",
+   "private": false,
+   "stars": 0,
+   "file_count": 11,
+   "manifests": [],
+   "has_tests": true,
+   "has_ci": false,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": false
+  },
+  {
+   "name": "crab-traps",
+   "language": "HTML",
+   "size": 4379,
+   "pushed_at": "2026-09-28T01:43:45Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "\ud83e\ude9d Progressive lure prompts for the Cocapn Fleet PurplePincher program. Every agent that enters makes the fleet smarter.",
+   "private": false,
+   "stars": 2,
+   "file_count": 318,
+   "manifests": [],
+   "has_tests": true,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": true,
+   "static_entry": [],
+   "has_docs_dir": true,
+   "docker": false
+  },
+  {
+   "name": "ternary-wiki",
+   "language": "Shell",
+   "size": 97,
+   "pushed_at": "2026-09-27T23:57:43Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "",
+   "private": false,
+   "stars": 0,
+   "file_count": 13,
+   "manifests": [],
+   "has_tests": false,
+   "has_ci": false,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": false
+  },
+  {
+   "name": "quilt-blueprint",
+   "language": "JavaScript",
+   "size": 34,
+   "pushed_at": "2026-09-27T23:15:48Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "The blueprint-to-metal compiler: GraphQL-shaped schema in, byte-exact fixed-offset layouts + monotonic join operators out. No runtime. Receipts always.",
+   "private": false,
+   "stars": 0,
+   "file_count": 10,
+   "manifests": [],
+   "has_tests": true,
+   "has_ci": false,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": true,
+   "docker": false
+  },
+  {
+   "name": "eos-seed",
+   "language": "Rust",
+   "size": 62,
+   "pushed_at": "2026-09-27T22:38:43Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "",
+   "private": false,
+   "stars": 0,
+   "file_count": 36,
+   "manifests": [
+    "Cargo.toml"
+   ],
+   "has_tests": false,
+   "has_ci": false,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": true,
+   "docker": false,
+   "manifest_text": {
+    "Cargo.toml": "[workspace]\nresolver = \"2\"\nmembers = [\n    \"quilt_storage\",\n    \"exoj_kernel\",\n    \"eos_runtime\",\n]\n\n[profile.release]\nopt-level = 3\nlto = true\ncodegen-units = 1\npanic = \"abort\"\n"
+   }
+  },
+  {
+   "name": "hermes-construct",
+   "language": "Python",
+   "size": 188162,
+   "pushed_at": "2026-09-27T22:25:48Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "Hermes understands the cave walls are a shell when seen from the outside. IO with other shells, APIs, A2UI, Logs and improves without tokens",
+   "private": false,
+   "stars": 1,
+   "file_count": 5064,
+   "manifests": [
+    "pyproject.toml",
+    "setup.py",
+    "package.json",
+    "Cargo.toml"
+   ],
+   "has_tests": true,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": true,
+   "static_entry": [
+    "index.html"
+   ],
+   "has_docs_dir": true,
+   "docker": true,
+   "manifest_text": {
+    "pyproject.toml": "[build-system]\r\nrequires = [\"setuptools>=61.0\"]\r\nbuild-backend = \"setuptools.build_meta\"\r\n\r\n[project]\r\nname = \"hermes-agent\"\r\nversion = \"0.15.1\"\r\ndescription = \"The self-improving AI agent \u2014 creates skills from experience, improves them during use, and runs anywhere\"\r\nreadme = \"README.md\"\r\nrequires-python = \">=3.11\"\r\nauthors = [{ name = \"Nous Research\" }]\r\nlicense = { text = \"MIT\" }\r\ndependencies = [\r\n  # Core \u2014 every direct dep is exact-pinned to ==X.Y.Z (no ranges).\r\n  # Rationale: ranges allow PyPI to ship a fresh version of a transitive\r\n  # at any time without a code review on our side. Exact pins mean the\r\n  # only way a new package version reaches a user is via an intentional\r\n  # update on our end (bump the pin in this file, regenerate uv.lock).\r\n  # This was tightened on 2026-05-12 in response to the Mini Shai-Hulud\r\n  # worm hitting mistralai 2.4.6 on PyPI; if that release had been\r\n  # captured by `mistralai>=2.3.0,<3` rather than an exact pin, every\r\n  # install in the hours before the quarantine would have pulled it.\r\n  #\r\n  # When updating: bump the version below AND regenerate uv.lock with\r\n  # `uv lock` so the transitive resolution stays consistent. Don't\r\n  # introduce ranges back without a written justification.\r\n  #\r\n  # Scope rule: only packages used by EVERY hermes session belong here.\r\n  # Anything that's provider-specific (`anthropic`, `firecrawl-py`,\r\n  # `exa-py`, `fal-client`, `edge-tts`, `parallel-web`) belongs in an\r\n  # extra and gets lazy-installed via `tools/lazy_deps.py` when the\r\n  # user picks that backend. Smaller `dependencies` = smaller blast\r\n  # radius for the next supply-chain attack.\r\n  \"openai==2.24.0\",\r\n  \"python-dotenv==1.2.2\",\r\n  \"fire==0.7.1\",\r\n  \"httpx[socks]==0.28.1\",\r\n  \"rich==14.3.3\",\r\n  \"tenacity==9.1.4\",\r\n  \"pyyaml==6.0.3\",\r\n  \"ruamel.yaml==0.18.17\",\r\n  \"requests==2.33.0\",  # CVE-2026-25645\r\n  \"jinja2==3.1.6\",\r\n  # Bumped from 2.12.5 to 2.13.4 to pull in pydantic-core 2.46.4.\r\n  # pydantic-core 2.41.5 (pulled by 2.12.5) segfaults when the OpenAI SDK's\r\n  # Responses API resource is exercised from a non-main thread, which is the\r\n  # codex_responses dispatch in agent/chat_completion_helpers.py:_call.\r\n  \"pydantic==2.13.4\",\r\n  # Interactive CLI (prompt_toolkit is used directly by cli.py)\r\n  \"prompt_toolkit==3.0.52\",\r\n  # Cron scheduler (built-in feature \u2014 scheduled cron/interval jobs use croniter).\r\n  \"croniter==6.0.0\",\r\n  # Skills Hub (GitHub App JWT auth \u2014 optional, only needed for bot identity)\r\n  \"PyJWT[crypto]==2.12.1\",  # CVE-2026-32597\r\n  # Windows has no IANA tzdata shipped with the OS, so Python's ``zoneinfo``\r\n  # (PEP 615) raises ``ZoneInfoNotFoundError`` for every non-UTC timezone\r\n  # out of the box.  ``tzdata`` ships the Olson database as a data package\r\n  # Python resolves automatically.  No-op on Linux/macOS (which have\r\n  # /usr/share/zoneinfo).  Credits: PR #13182 (@sprmn24).\r\n  \"tzdata==2025.3; sys_platform == 'win32'\",\r\n  # Cross-platform process / PID management.  `psutil` is the canonical\r\n  # answer for \"is this PID alive\" and process-tree walking across Linux,\r\n  # macOS and Windows.  It replaces POSIX-only idioms like `os.kill(pid, 0)`\r\n  # (which is a silent killer on Windows \u2014 see CONTRIBUTING.md) and\r\n  # `os.killpg` (which doesn't exist on Windows).\r\n  \"psutil==7.2.2\",\r\n]\r\n\r\n[project.optional-dependencies]\r\n# Native Anthropic provider \u2014 only needed when provider=anthropic (not via\r\n# OpenRouter or other aggregators).\r\nanthropic = [\"anthropic==0.86.0\"]\r\n# Web search backends \u2014 each only loaded when the user picks it as their\r\n# search provider (configured via `hermes tools` or config.yaml).\r\nexa = [\"exa-py==2.10.2\"]\r\nfirecrawl = [\"firecrawl-py==4.17.0\"]\r\nparallel-web = [\"parallel-web==0.4.2\"]\r\n# Image generation backends\r\nfal = [\"fal-client==0.13.1\"]\r\n# Edge TTS \u2014 default TTS provider but still optional (users can pick\r\n# ElevenLabs / OpenAI / MiniMax instead).\r\nedge-tts = [\"edge-tts==7.2.7\"]\r\nmodal = [\"modal==1.3.4\"]\r\ndaytona = [\"daytona==0.155.0\"]\r",
+    "setup.py": "from __future__ import annotations\r\n\r\nfrom collections import defaultdict\r\nfrom pathlib import Path\r\n\r\nfrom setuptools import setup\r\n\r\n\r\nREPO_ROOT = Path(__file__).parent.resolve()\r\n\r\n\r\ndef _data_file_tree(root_name: str) -> list[tuple[str, list[str]]]:\r\n    root = REPO_ROOT / root_name\r\n    grouped: defaultdict[str, list[str]] = defaultdict(list)\r\n    for path in sorted(root.rglob(\"*\")):\r\n        if not path.is_file():\r\n            continue\r\n        rel_path = path.relative_to(REPO_ROOT)\r\n        grouped[str(rel_path.parent)].append(str(rel_path))\r\n    return sorted(grouped.items())\r\n\r\n\r\nsetup(\r\n    data_files=[\r\n        *_data_file_tree(\"skills\"),\r\n        *_data_file_tree(\"optional-skills\"),\r\n    ]\r\n)\r\n",
+    "package.json": "{\r\n  \"name\": \"hermes-agent\",\r\n  \"version\": \"1.0.0\",\r\n  \"description\": \"An AI agent with advanced tool-calling capabilities, featuring a flexible toolsets system for organizing and managing tools.\",\r\n  \"private\": true,\r\n  \"scripts\": {\r\n    \"postinstall\": \"echo '\u2705 Browser tools ready. Run: python run_agent.py --help'\"\r\n  },\r\n  \"repository\": {\r\n    \"type\": \"git\",\r\n    \"url\": \"git+https://github.com/NousResearch/Hermes-Agent.git\"\r\n  },\r\n  \"license\": \"MIT\",\r\n  \"bugs\": {\r\n    \"url\": \"https://github.com/NousResearch/Hermes-Agent/issues\"\r\n  },\r\n  \"homepage\": \"https://github.com/NousResearch/Hermes-Agent#readme\",\r\n  \"dependencies\": {\r\n    \"agent-browser\": \"^0.26.0\"\r\n  },\r\n  \"overrides\": {\r\n    \"lodash\": \"4.18.1\"\r\n  },\r\n  \"engines\": {\r\n    \"node\": \">=20.0.0\"\r\n  }\r\n}\r\n",
+    "Cargo.toml": "[package]\r\nname = \"hermes-construct\"\r\nversion = \"0.1.0\"\r\nedition = \"2021\"\r\ndescription = \"Hermes Construct \u2014 tile-operating shell kernel for Oracle ARM\"\r\n\r\n[lib]\r\nname = \"hermes_construct\"\r\npath = \"src/lib.rs\"\r\n\r\n[[bin]]\r\nname = \"hermes-construct\"\r\npath = \"src/main.rs\"\r\n\r\n[[example]]\r\nname = \"basic_agent\"\r\npath = \"examples/basic_agent.rs\"\r\n\r\n[[example]]\r\nname = \"sandbox_demo\"\r\npath = \"examples/sandbox_demo.rs\"\r\n\r\n[[example]]\r\nname = \"correlation_demo\"\r\npath = \"examples/correlation_demo.rs\"\r\n\r\n[[example]]\r\nname = \"provenance_demo\"\r\npath = \"examples/provenance_demo.rs\"\r\n\r\n[[example]]\r\nname = \"circuit_demo\"\r\npath = \"examples/circuit_demo.rs\"\r\n\r\n\r\n[dependencies]\r\ntokio = { version = \"1\", features = [\"full\"] }\r\nrusqlite = { version = \"0.31\", features = [\"bundled\"] }\r\nserde = { version = \"1\", features = [\"derive\"] }\r\nserde_json = \"1\"\r\n# rustls instead of native-tls: no system OpenSSL dependency, so the binary\r\n# cross-compiles cleanly to aarch64 and is self-contained on the Oracle ARM box.\r\nreqwest = { version = \"0.12\", default-features = false, features = [\"json\", \"rustls-tls\", \"charset\", \"http2\"] }\r\nteloxide = { version = \"0.13\", default-features = false, features = [\"macros\", \"rustls\"] }\r\ndotenvy = \"0.15\"\r\nuuid = { version = \"1\", features = [\"v4\", \"serde\"] }\r\nchrono = { version = \"0.4\", features = [\"serde\"] }\r\nlog = \"0.4\"\r\nenv_logger = \"0.11\"\r\nthiserror = \"1\"\r\nasync-trait = \"0.1\"\r\n"
+   },
+   "py": {
+    "pyproject.toml": {
+     "name": "hermes-agent",
+     "version": "0.15.1"
+    }
+   },
+   "node": {
+    "name": "hermes-agent",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": [
+     "postinstall"
+    ]
+   },
+   "cargo": {
+    "name": "hermes-construct",
+    "version": "0.1.0",
+    "publish_false": false
+   }
+  },
+  {
+   "name": "laya4quilt",
+   "language": "Python",
+   "size": 5093,
+   "pushed_at": "2026-09-27T22:25:11Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "",
+   "private": false,
+   "stars": 0,
+   "file_count": 70,
+   "manifests": [
+    "pyproject.toml",
+    "setup.py"
+   ],
+   "has_tests": true,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": true,
+   "static_entry": [],
+   "has_docs_dir": true,
+   "docker": false,
+   "manifest_text": {
+    "pyproject.toml": "[build-system]\nrequires = [\"setuptools>=61.0\"]\nbuild-backend = \"setuptools.build_meta\"\n\n[project]\nname = \"laya\"\nversion = \"0.3.5\"\ndescription = \"Fast, non-autoregressive System 1 decision engine with calibrated probabilities\"\nreadme = \"README.md\"\nrequires-python = \">=3.10\"\nlicense = { text = \"Apache-2.0\" }\nauthors = [\n    { name = \"Convai Innovations\" }\n]\nkeywords = [\"decision-model\", \"rlcd\", \"calibration\", \"system-one\", \"routing\", \"guardrails\", \"moderation\", \"triage\"]\nclassifiers = [\n    \"Development Status :: 4 - Beta\",\n    \"Intended Audience :: Developers\",\n    \"License :: OSI Approved :: Apache Software License\",\n    \"Programming Language :: Python :: 3\",\n    \"Programming Language :: Python :: 3.10\",\n    \"Programming Language :: Python :: 3.11\",\n    \"Programming Language :: Python :: 3.12\",\n    \"Programming Language :: Python :: 3.13\",\n    \"Topic :: Scientific/Engineering :: Artificial Intelligence\",\n]\ndependencies = [\n    \"torch>=2.0.0\",\n    \"transformers>=4.48.0\",\n    \"safetensors>=0.4.0\",\n    \"huggingface_hub>=0.20.0\",\n    \"numpy>=1.20.0\",\n]\n\n[tool.setuptools]\n# assets/, research/ and notebooks/ sit in the root, so auto-discovery bails out.\npackages = [\"laya\"]\n\n[project.urls]\nHomepage = \"https://huggingface.co/convaiinnovations/laya\"\nDemo = \"https://huggingface.co/spaces/convaiinnovations/laya-demo\"\n",
+    "setup.py": "\"\"\"Shim for tooling that still invokes setup.py; metadata lives in pyproject.toml.\"\"\"\nfrom setuptools import setup\n\nsetup()\n"
+   },
+   "py": {
+    "pyproject.toml": {
+     "name": "laya",
+     "version": "0.3.5"
+    }
+   }
+  },
+  {
+   "name": "Scrapcraft",
+   "language": "JavaScript",
+   "size": 1943,
+   "pushed_at": "2026-09-27T17:44:59Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "Browser-based 3D voxel game set in an industrial scrapyard \u2014 middle schoolers build robots, program them with AI, and learn embedded engineering via Arduino C++",
+   "private": false,
+   "stars": 3,
+   "file_count": 377,
+   "manifests": [
+    "package.json"
+   ],
+   "has_tests": false,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": true,
+   "static_entry": [
+    "index.html"
+   ],
+   "has_docs_dir": true,
+   "docker": false,
+   "manifest_text": {
+    "package.json": "{\n  \"license\": \"MIT\",\n  \"name\": \"scrapcraft\",\n  \"version\": \"0.2.0\",\n  \"description\": \"A voxel scrapyard game where middle schoolers build robots, program them with AI, and learn embedded engineering.\",\n  \"private\": true,\n  \"type\": \"module\",\n  \"scripts\": {\n    \"dev\": \"vite\",\n    \"build\": \"vite build\",\n    \"preview\": \"vite preview\",\n    \"test\": \"node src/maker/__tests__/run-tests.mjs && node src/maker/__tests__/challenge-tests.mjs && node src/maker/__tests__/content-integrity.mjs && node src/maker/__tests__/chips-tests.mjs && node src/voice/__tests__/voice.test.mjs\",\n    \"size\": \"node scripts/size-check.mjs\",\n    \"deploy\": \"bash scripts/deploy.sh\"\n  },\n  \"dependencies\": {\n    \"three\": \"^0.168.0\"\n  },\n  \"devDependencies\": {\n    \"vite\": \"^5.4.0\"\n  }\n}\n"
+   },
+   "node": {
+    "name": "scrapcraft",
+    "version": "0.2.0",
+    "private": true,
+    "scripts": [
+     "dev",
+     "build",
+     "preview",
+     "test",
+     "size",
+     "deploy"
+    ]
+   }
+  },
+  {
+   "name": "quilt-esp32",
+   "language": "C",
+   "size": 11265,
+   "pushed_at": "2026-09-27T17:11:32Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "A Quilt reactive runtime for ESP32-class microcontrollers. no_std Rust, ~3KB flash, sensors as cells, the spreadsheet becomes the firmware.",
+   "private": false,
+   "stars": 0,
+   "file_count": 141,
+   "manifests": [
+    "Cargo.toml"
+   ],
+   "has_tests": false,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": true,
+   "docker": false,
+   "manifest_text": {
+    "Cargo.toml": "[package]\nname = \"quilt-esp32\"\nversion = \"0.1.0\"\nedition = \"2021\"\ndescription = \"A Quilt reactive runtime for ESP32-class microcontrollers.\"\nlicense = \"MIT\"\n\n[dependencies]\n# A real implementation would depend on esp-hal and friends.\n# For now we just sketch the API surface so it can be reviewed.\n# heapless = \"0.7\"\n# esp-hal = \"0.18\"\n# esp-wifi = \"0.5\"\n# serde = { version = \"1.0\", default-features = false, features = [\"derive\"] }\n\n[profile.release]\nopt-level = \"s\"\nlto = true\ncodegen-units = 1\nstrip = true\noverflow-checks = false\n"
+   },
+   "cargo": {
+    "name": "quilt-esp32",
+    "version": "0.1.0",
+    "publish_false": false
+   }
+  },
+  {
+   "name": "quilt-verilog",
+   "language": "Python",
+   "size": 56529,
+   "pushed_at": "2026-09-27T17:06:22Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "Quilt in pure Verilog-2005 \u2014 5+1 opcodes, no vendor code. Formal proofs (sby), bitstream on iCE40 via open tools, QUF state format, the calculus.",
+   "private": false,
+   "stars": 0,
+   "file_count": 1726,
+   "manifests": [],
+   "has_tests": true,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": true,
+   "docker": false
+  },
+  {
+   "name": "quilt-stone",
+   "language": "JavaScript",
+   "size": 104,
+   "pushed_at": "2026-09-27T16:15:37Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "THE STONE - the canonical receipt-chain module: one zero-dep verifier for every repo chain (42/42 sibling chains verified, 6 dialects matched, stone-v1 forward ",
+   "private": false,
+   "stars": 0,
+   "file_count": 16,
+   "manifests": [
+    "package.json"
+   ],
+   "has_tests": false,
+   "has_ci": false,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": true,
+   "docker": false,
+   "manifest_text": {
+    "package.json": "{\n  \"name\": \"quilt-stone\",\n  \"version\": \"1.0.0\",\n  \"description\": \"THE canonical receipt-chain module for the SuperInstance fleet \u2014 one verifier for every repo's chain\",\n  \"type\": \"module\",\n  \"main\": \"stone.mjs\",\n  \"scripts\": {\n    \"smoke\": \"node smoke.mjs\",\n    \"verify\": \"node verify_all.mjs\"\n  }\n}\n"
+   },
+   "node": {
+    "name": "quilt-stone",
+    "version": "1.0.0",
+    "private": false,
+    "scripts": [
+     "smoke",
+     "verify"
+    ]
+   }
+  },
+  {
+   "name": "superinstance-advisor",
+   "language": "HTML",
+   "size": 2448,
+   "pushed_at": "2026-09-27T13:32:39Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "A cell in the SuperInstance substrate. Patches into the canon (2,786+ AI writings via real bge-base embeddings), runs the 8 primitives + 5+1 opcodes, witnesses ",
+   "private": false,
+   "stars": 0,
+   "file_count": 52,
+   "manifests": [
+    "wrangler.toml"
+   ],
+   "has_tests": true,
+   "has_ci": false,
+   "has_readme": true,
+   "has_license": true,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": false,
+   "manifest_text": {
+    "wrangler.toml": "name = \"cell-heartbeat-worker\"\nmain = \"heartbeat_worker.js\"\ncompatibility_date = \"2024-09-01\"\n\n# Schedule: every 5 minutes\n[triggers]\ncrons = [\"*/5 * * * *\"]\n\n# AI binding for bge-base-en-v1.5 embeddings\n[ai]\nbinding = \"AI\"\n\n# Vectorize for canon lookup (768d)\n[[vectorize]]\nbinding = \"VECTORIZE\"\nindex_name = \"quilt-canon-v2\"\n\n# KV for witness log\n[[kv_namespaces]]\nbinding = \"CELL_WITNESS_KV\"\nid = \"REPLACE_WITH_REAL_KV_ID\"\n\n[vars]\nCANON_BACKEND = \"https://live-canon.superinstance.dev\"\n\n# Optional: Hono-style CORS for the /run and /view endpoints\n# (not needed for cron-only mode)\n"
+   }
+  },
+  {
+   "name": "erised-mirror",
+   "language": "JavaScript",
+   "size": 109,
+   "pushed_at": "2026-09-27T08:25:09Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "Erised, the fleet mirror: git vitals, 45/45 receipt chains verified through quilt-stone (with genesis discovery from sources), kinship by local embedding, cross",
+   "private": false,
+   "stars": 0,
+   "file_count": 44,
+   "manifests": [],
+   "has_tests": false,
+   "has_ci": false,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [
+    "index.html"
+   ],
+   "has_docs_dir": false,
+   "docker": false
+  },
+  {
+   "name": "cargo-line-tycoon-substrate-ts",
+   "language": "JavaScript",
+   "size": 28,
+   "pushed_at": "2026-09-27T08:14:49Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "Cargo Line Tycoon substrate - TypeScript port",
+   "private": false,
+   "stars": 0,
+   "file_count": 7,
+   "manifests": [
+    "package.json"
+   ],
+   "has_tests": false,
+   "has_ci": false,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": false,
+   "manifest_text": {
+    "package.json": "{\n  \"name\": \"@superinstance/cargo-line-tycoon-substrate\",\n  \"version\": \"0.1.0\",\n  \"description\": \"Polyformal Quilt substrate for cargo-line-tycoon. FNV-1a 64-bit canary + signal-chain + cell algebra. Same hashes across TS/Rust/C/Python.\",\n  \"main\": \"src/index.js\",\n  \"types\": \"src/index.d.ts\",\n  \"keywords\": [\"cargo-line-tycoon\", \"substrate\", \"quilt\", \"signal-chain\", \"polyformalism\", \"fnv1a\"],\n  \"author\": \"SuperInstance\",\n  \"license\": \"MIT\"\n}\n"
+   },
+   "node": {
+    "name": "@superinstance/cargo-line-tycoon-substrate",
+    "version": "0.1.0",
+    "private": false,
+    "scripts": []
+   }
+  },
+  {
+   "name": "quilt-dba",
+   "language": "JavaScript",
+   "size": 295,
+   "pushed_at": "2026-09-27T04:02:06Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "The developmental agent as a sheet: 12-cell seed, conservation law, growth as cell addition (DBA seeds, quilt-native)",
+   "private": false,
+   "stars": 0,
+   "file_count": 186,
+   "manifests": [
+    "package.json"
+   ],
+   "has_tests": false,
+   "has_ci": false,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": false,
+   "manifest_text": {
+    "package.json": "{\n  \"name\": \"quilt-dba\",\n  \"version\": \"0.1.0\",\n  \"description\": \"The quilt-native developmental agent: 12-cell seed sheet, conservation law gamma+eta<=C, growth as cell-graph addition (DBA seeds 1-3, quilt-native reduction)\",\n  \"type\": \"module\",\n  \"scripts\": { \"smoke\": \"node experiments/smoke.mjs\", \"e_d1\": \"node experiments/e_d1_stages.mjs\" },\n  \"license\": \"MIT\",\n  \"dependencies\": { \"yaml\": \"^2.4.0\" }\n}\n"
+   },
+   "node": {
+    "name": "quilt-dba",
+    "version": "0.1.0",
+    "private": false,
+    "scripts": [
+     "smoke",
+     "e_d1"
+    ]
+   }
+  },
+  {
+   "name": "quilt-murmur",
+   "language": "JavaScript",
+   "size": 2158,
+   "pushed_at": "2026-09-27T03:21:37Z",
+   "archived": false,
+   "has_pages": true,
+   "desc": "the murmur lineage, metamorphosed into a reactive spreadsheet mesh \u2014 twelve vessels, one flying quilt",
+   "private": false,
+   "stars": 0,
+   "file_count": 175,
+   "manifests": [
+    "package.json"
+   ],
+   "has_tests": false,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [
+    "site/index.html"
+   ],
+   "has_docs_dir": false,
+   "docker": false,
+   "manifest_text": {
+    "package.json": "{\n  \"name\": \"quilt-murmur\",\n  \"version\": \"0.1.0\",\n  \"description\": \"The murmur lineage reborn as quilt: gossip cells, learned trust, graph-of-thought by cell copying, resonance consensus, and a gardener for the greater tree\",\n  \"type\": \"module\",\n  \"scripts\": {\n    \"e14\": \"node experiments/e14_pricing_mesh.mjs\",\n    \"e15\": \"node experiments/e15_adventure_gardener.mjs\",\n    \"e16\": \"node experiments/e16_resonance_consensus.mjs\",\n    \"e17\": \"node experiments/e17_gossip_trust.mjs\",\n    \"e18\": \"node experiments/e18_llm_setup.mjs\",\n    \"smoke\": \"node experiments/smoke.mjs\"\n  },\n  \"license\": \"MIT\",\n  \"dependencies\": { \"yaml\": \"^2.4.0\" }\n}\n"
+   },
+   "node": {
+    "name": "quilt-murmur",
+    "version": "0.1.0",
+    "private": false,
+    "scripts": [
+     "e14",
+     "e15",
+     "e16",
+     "e17",
+     "e18",
+     "smoke"
+    ]
+   }
+  },
+  {
+   "name": "yiluodi",
+   "language": "JavaScript",
+   "size": 84,
+   "pushed_at": "2026-09-27T03:21:12Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "\u5df2\u843d\u5730 \u2014 the hello-world for SuperInstance: cellular arrays within cellular arrays, beliefs that land with receipts. Zero dependencies, any browser.",
+   "private": false,
+   "stars": 0,
+   "file_count": 38,
+   "manifests": [
+    "package.json"
+   ],
+   "has_tests": false,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": true,
+   "static_entry": [
+    "index.html"
+   ],
+   "has_docs_dir": false,
+   "docker": false,
+   "manifest_text": {
+    "package.json": "{\n  \"name\": \"yiluodi\",\n  \"version\": \"0.1.0\",\n  \"description\": \"\u5df2\u843d\u5730 (y\u01d0 lu\u00f2d\u00ec, 'has landed') \u2014 the hello-world application for SuperInstance: a zero-dependency, zero-network browser page where beliefs are measured, argued, and land. Cellular arrays within cellular arrays; every event journaled, every landing receipted.\",\n  \"main\": \"app/engine.js\",\n  \"scripts\": {\n    \"test\": \"node experiments/run_all.mjs && node smoke.mjs\",\n    \"smoke\": \"node smoke.mjs\",\n    \"chaos\": \"node experiments/e_c2_chaos.mjs\"\n  },\n  \"keywords\": [\"superinstance\", \"quilt\", \"murmur-protocol\", \"fixed-point\", \"receipt-chain\", \"zero-dependency\"],\n  \"license\": \"MIT\",\n  \"engines\": { \"node\": \">=18\" }\n}\n"
+   },
+   "node": {
+    "name": "yiluodi",
+    "version": "0.1.0",
+    "private": false,
+    "scripts": [
+     "test",
+     "smoke",
+     "chaos"
+    ]
+   }
+  },
+  {
+   "name": "quilt-arch",
+   "language": "JavaScript",
+   "size": 522,
+   "pushed_at": "2026-09-27T02:30:59Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "The Complete Solution conformance core: Q32 bit-exact, JS==Python 0/10000 mismatches (cross-substrate EXECUTED), conservation with exact refusal boundary 680621",
+   "private": false,
+   "stars": 0,
+   "file_count": 39,
+   "manifests": [
+    "package.json"
+   ],
+   "has_tests": false,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": false,
+   "manifest_text": {
+    "package.json": "{\n  \"name\": \"quilt-arch\",\n  \"version\": \"0.1.0\",\n  \"type\": \"module\",\n  \"scripts\": {\n    \"smoke\": \"node smoke.mjs\",\n    \"smoke:arch\": \"node experiments/smoke_arch.mjs\",\n    \"e:a1\": \"node experiments/e_a1_conformance.mjs\"\n  },\n  \"license\": \"MIT\"\n}\n"
+   },
+   "node": {
+    "name": "quilt-arch",
+    "version": "0.1.0",
+    "private": false,
+    "scripts": [
+     "smoke",
+     "smoke:arch",
+     "e:a1"
+    ]
+   }
+  },
+  {
+   "name": "ropesight",
+   "language": "JavaScript",
+   "size": 52,
+   "pushed_at": "2026-09-27T00:40:14Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "The Ropesight - change-ringing as fleet coordination: permutation methods as rota schedules, local-knowledge correctness PROVEN (blinded band byte-identical to ",
+   "private": false,
+   "stars": 0,
+   "file_count": 18,
+   "manifests": [
+    "package.json"
+   ],
+   "has_tests": false,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": false,
+   "manifest_text": {
+    "package.json": "{\n  \"name\": \"ropesight\",\n  \"version\": \"0.1.0\",\n  \"type\": \"module\",\n  \"scripts\": {\n    \"smoke\": \"node smoke.mjs\"\n  },\n  \"license\": \"MIT\"\n}\n"
+   },
+   "node": {
+    "name": "ropesight",
+    "version": "0.1.0",
+    "private": false,
+    "scripts": [
+     "smoke"
+    ]
+   }
+  },
+  {
+   "name": "superinstance-website",
+   "language": "HTML",
+   "size": 4018,
+   "pushed_at": "2026-09-26T23:43:40Z",
+   "archived": false,
+   "has_pages": true,
+   "desc": "Static website for superinstance.ai \u2014 fleet dashboard, ecosystem map, and ternary computing documentation (Cloudflare Pages)",
+   "private": false,
+   "stars": 0,
+   "file_count": 305,
+   "manifests": [],
+   "has_tests": false,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": true,
+   "static_entry": [
+    "index.html"
+   ],
+   "has_docs_dir": true,
+   "docker": false
+  },
+  {
+   "name": "quilt-silicon",
+   "language": "JavaScript",
+   "size": 53,
+   "pushed_at": "2026-09-26T23:32:47Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "The silicon map executed without silicon: SIMT warp emulator over quilt-arch kernels \u2014 schedule-invariance 8/8, ballot 1000/1000, saturating-add tree-order is l",
+   "private": false,
+   "stars": 0,
+   "file_count": 21,
+   "manifests": [
+    "package.json"
+   ],
+   "has_tests": false,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": false,
+   "manifest_text": {
+    "package.json": "{\n  \"name\": \"quilt-silicon\",\n  \"version\": \"0.1.0\",\n  \"type\": \"module\",\n  \"scripts\": {\n    \"smoke\": \"node smoke.mjs\",\n    \"smoke:silicon\": \"node experiments/smoke_silicon.mjs\",\n    \"e:s1\": \"node experiments/e_s1_silicon.mjs\"\n  },\n  \"license\": \"MIT\"\n}"
+   },
+   "node": {
+    "name": "quilt-silicon",
+    "version": "0.1.0",
+    "private": false,
+    "scripts": [
+     "smoke",
+     "smoke:silicon",
+     "e:s1"
+    ]
+   }
+  },
+  {
+   "name": "quilt-raw",
+   "language": "JavaScript",
+   "size": 32,
+   "pushed_at": "2026-09-26T23:32:40Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "The raw executable line v->L->G->v': seven ops per tick, Q32 integer machine, journal with EXACT inverses \u2014 rewind bit-equal over 1000 ticks x3 seeds (floats dr",
+   "private": false,
+   "stars": 0,
+   "file_count": 19,
+   "manifests": [
+    "package.json"
+   ],
+   "has_tests": false,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": false,
+   "manifest_text": {
+    "package.json": "{\n  \"name\": \"quilt-raw\",\n  \"version\": \"0.1.0\",\n  \"type\": \"module\",\n  \"scripts\": {\n    \"smoke\": \"node smoke.mjs\",\n    \"smoke:raw\": \"node experiments/smoke_raw.mjs\",\n    \"exp\": \"node experiments/e_r1_line.mjs\"\n  },\n  \"license\": \"MIT\"\n}\n"
+   },
+   "node": {
+    "name": "quilt-raw",
+    "version": "0.1.0",
+    "private": false,
+    "scripts": [
+     "smoke",
+     "smoke:raw",
+     "exp"
+    ]
+   }
+  },
+  {
+   "name": "quilt-fiction",
+   "language": "HTML",
+   "size": 32404,
+   "pushed_at": "2026-09-26T23:32:35Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "The quilt as operational fiction \u2014 instances-as-sheets, Delta protocol, reputation beta>alpha, local exclusion (E-F1 receipted: exclusion at k=32, recovery perm",
+   "private": false,
+   "stars": 0,
+   "file_count": 674,
+   "manifests": [],
+   "has_tests": false,
+   "has_ci": false,
+   "has_readme": false,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": false
+  },
+  {
+   "name": "moth-waveform",
+   "language": "Python",
+   "size": 33,
+   "pushed_at": "2026-09-26T23:08:30Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "Quantum resonance hearing for spline-tension waveform extrapolation \u2014 temporal variables as first-class citizens",
+   "private": false,
+   "stars": 0,
+   "file_count": 15,
+   "manifests": [
+    "pyproject.toml"
+   ],
+   "has_tests": true,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": false,
+   "manifest_text": {
+    "pyproject.toml": "[build-system]\nrequires = [\"setuptools>=68\"]\nbuild-backend = \"setuptools.build_meta\"\n\n[project]\nname = \"moth-waveform\"\nversion = \"0.2.0\"\ndescription = \"Quantum resonance hearing for spline-tension waveform extrapolation \u2014 temporal variables as first-class citizens\"\nreadme = \"README.md\"\nrequires-python = \">=3.10\"\nlicense = { text = \"MIT\" }\ndependencies = [\n    # pinned, not ranged: the pins' receipts (entropy tables, gate tallies,\n    # swap overlaps) are measured on Aer shot statistics, and Aer's RNG\n    # stream is not stable across versions \u2014 unpinned CI resolved newer deps\n    # and rolled 2/5 on a tally that measures 4-5/5 locally (CI runs\n    # 36263747371, 36271606549; flake receipt in test_resonance.py).\n    # Upgrade = deliberate act: re-run the calibration, re-set the constants.\n    \"numpy==2.4.6\",\n    \"scipy==1.17.1\",\n    \"quantumaudio==0.2.0\",\n    \"qiskit==2.5.2\",\n    \"qiskit-aer==0.17.2\",\n]\n\n[tool.setuptools.packages.find]\ninclude = [\"moth_waveform*\"]\n"
+   },
+   "py": {
+    "pyproject.toml": {
+     "name": "moth-waveform",
+     "version": "0.2.0"
+    }
+   }
+  },
+  {
+   "name": "SuperInstance-papers",
+   "language": "TypeScript",
+   "size": 30921,
+   "pushed_at": "2026-09-26T21:10:28Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "Automatically Deconstruct logic into Spread Sheet Tiles and Cells, Instances Interconnected w/ Origin-Centric-Math. Breakdown LLMs to Swarms of Artifacts, data,",
+   "private": false,
+   "stars": 2,
+   "file_count": 5967,
+   "manifests": [
+    "package.json",
+    "Cargo.toml"
+   ],
+   "has_tests": true,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": true,
+   "static_entry": [],
+   "has_docs_dir": true,
+   "docker": true,
+   "manifest_text": {
+    "package.json": "{\n  \"name\": \"polln\",\n  \"version\": \"0.1.0\",\n  \"description\": \"Pattern-Organized Large Language Network - A distributed intelligence system\",\n  \"type\": \"module\",\n  \"main\": \"./dist/index.js\",\n  \"types\": \"./dist/index.d.ts\",\n  \"bin\": {\n    \"polln\": \"./dist/cli/index.js\"\n  },\n  \"exports\": {\n    \".\": {\n      \"import\": \"./dist/index.js\",\n      \"types\": \"./dist/index.d.ts\"\n    },\n    \"./core\": {\n      \"import\": \"./dist/core/index.js\",\n      \"types\": \"./dist/core/index.d.ts\"\n    },\n    \"./api\": {\n      \"import\": \"./dist/api/index.js\",\n      \"types\": \"./dist/api/index.d.ts\"\n    },\n    \"./api/client\": {\n      \"import\": \"./dist/api/client/index.js\",\n      \"types\": \"./dist/api/client/index.d.ts\"\n    },\n    \"./sdk\": {\n      \"import\": \"./dist/sdk/index.js\",\n      \"types\": \"./dist/sdk/index.d.ts\"\n    },\n    \"./debug\": {\n      \"import\": \"./dist/debug/index.js\",\n      \"types\": \"./dist/debug/index.d.ts\"\n    },\n    \"./monitoring\": {\n      \"import\": \"./dist/monitoring/index.js\",\n      \"types\": \"./dist/monitoring/index.d.ts\"\n    },\n    \"./scaling\": {\n      \"import\": \"./dist/scaling/index.js\",\n      \"types\": \"./dist/scaling/index.d.ts\"\n    },\n    \"./spreadsheet\": {\n      \"import\": \"./dist/spreadsheet/index.js\",\n      \"types\": \"./dist/spreadsheet/index.d.ts\"\n    },\n    \"./spreadsheet/collaboration\": {\n      \"import\": \"./dist/spreadsheet/collaboration/index.js\",\n      \"types\": \"./dist/spreadsheet/collaboration/index.d.ts\"\n    }\n  },\n  \"scripts\": {\n    \"build\": \"tsc\",\n    \"dev\": \"tsc --watch\",\n    \"test\": \"jest\",\n    \"test:watch\": \"jest --watch\",\n    \"test:coverage\": \"jest --coverage\",\n    \"test:integration\": \"jest src/core/__tests__/integration.test.ts\",\n    \"test:api\": \"jest src/api/__tests__/server.test.ts\",\n    \"test:cli\": \"jest src/cli/__tests__\",\n    \"test:scaling\": \"jest src/scaling/__tests__\",\n    \"test:llm\": \"jest src/core/__tests__/integration/llm --testTimeout=120000\",\n    \"test:kv\": \"jest src/core/__tests__/kv*.test.ts\",\n    \"test:lora\": \"jest src/core/lora/__tests__\",\n    \"test:multi-colony\": \"jest src/core/colony-manager/__tests__ src/core/inter-colony/__tests__ src/core/colony-lifecycle/__tests__\",\n    \"lint\": \"eslint src --ext .ts\",\n    \"lint:fix\": \"eslint src --ext .ts --fix\",\n    \"format\": \"prettier --write \\\"src/**/*.ts\\\"\",\n    \"format:check\": \"prettier --check \\\"src/**/*.ts\\\"\",\n    \"prepublishOnly\": \"npm run build\",\n    \"cli\": \"node dist/cli/index.js\",\n    \"lora:list\": \"node dist/cli/index.js lora list\",\n    \"lora:train\": \"node dist/cli/index.js lora train\",\n    \"lora:benchmark\": \"node dist/cli/index.js lora benchmark\",\n    \"lora:distill\": \"node dist/cli/index.js lora distill\",\n    \"colony:list\": \"node dist/cli/index.js colonies list\",\n    \"colony:create\": \"node dist/cli/index.js colonies create\",\n    \"colony:status\": \"node dist/cli/index.js colonies status\",\n    \"colony:scale\": \"node dist/cli/index.js colonies scale\",\n    \"colony:migrate\": \"node dist/cli/index.js colonies migrate\",\n    \"scale:status\": \"node dist/cli/index.js scale status\",\n    \"scale:policy\": \"node dist/cli/index.js scale policy\",\n    \"scale:manual\": \"node dist/cli/index.js scale manual\",\n    \"scale:predict\": \"node dist/cli/index.js scale predict\",\n    \"scale:history\": \"node dist/cli/index.js scale history\",\n    \"bench\": \"npx tsx src/benchmarks/cli.ts\",\n    \"bench:run\": \"npx tsx src/benchmarks/cli.ts run\",\n    \"bench:list\": \"npx tsx src/benchmarks/cli.ts list\",\n    \"bench:compare\": \"npx tsx src/benchmarks/cli.ts compare\",\n    \"bench:agent\": \"npx tsx src/benchmarks/cli.ts run -s agent\",\n    \"bench:comm\": \"npx tsx src/benchmarks/cli.ts run -s communication\",\n    \"bench:decision\": \"npx tsx src/benchmarks/cli.ts run -s decision\",\n    \"bench:learning\": \"npx tsx src/benchmarks/cli.ts run -s learning\",\n    \"bench:kv\": \"npx tsx src/benchmarks/cli.ts run -s kv-cache\",\n    \"bench:worldmodel\": \"npx tsx src/benchmarks/cli.ts run -s worldmodel\",\n    \"bench:integration\": \"npx tsx src/benchmarks/cli.ts run -s integration\",\n    \"bench:all\": \"npx tsx src/benchmarks/cli.ts run\",\n   ",
+    "Cargo.toml": "[package]\nname = \"superinstance-papers\"\nversion = \"0.1.0\"\ndescription = \"A Rust library for Superinstance Papers\"\nlicense = \"MIT OR Apache-2.0\"\nrepository = \"https://github.com/casey-digennaro/superinstance-papers\"\nedition = \"2021\"\n\n[dependencies]\n"
+   },
+   "cargo": {
+    "name": "superinstance-papers",
+    "version": "0.1.0",
+    "publish_false": false
+   }
+  },
+  {
+   "name": "quiltcall",
+   "language": "Python",
+   "size": 9,
+   "pushed_at": "2026-09-26T20:04:33Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "",
+   "private": false,
+   "stars": 0,
+   "file_count": 9,
+   "manifests": [],
+   "has_tests": true,
+   "has_ci": false,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": false
+  },
+  {
+   "name": "quilt-doctor",
+   "language": "Python",
+   "size": 124,
+   "pushed_at": "2026-09-26T17:50:10Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "",
+   "private": false,
+   "stars": 0,
+   "file_count": 93,
+   "manifests": [],
+   "has_tests": true,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": true,
+   "static_entry": [],
+   "has_docs_dir": true,
+   "docker": false
+  },
+  {
+   "name": "quilt-bootstrap",
+   "language": "Python",
+   "size": 28,
+   "pushed_at": "2026-09-26T16:44:06Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "Bring up the Quilt fleet in a fresh sandbox. One command.",
+   "private": false,
+   "stars": 0,
+   "file_count": 13,
+   "manifests": [
+    "setup.py"
+   ],
+   "has_tests": true,
+   "has_ci": false,
+   "has_readme": true,
+   "has_license": true,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": false,
+   "manifest_text": {
+    "setup.py": "from setuptools import setup, find_packages\n\nsetup(\n    name=\"quilt-bootstrap\",\n    version=\"0.2.0\",\n    description=\"Clone and bootstrap the entire 13-repo Quilt fleet from a single command.\",\n    long_description=open(\"README.md\").read(),\n    long_description_content_type=\"text/markdown\",\n    author=\"SuperInstance\",\n    author_email=\"casey@superinstance.dev\",\n    url=\"https://github.com/SuperInstance/quilt-bootstrap\",\n    packages=find_packages(where=\"src\"),\n    package_dir={\"\": \"src\"},\n    python_requires=\">=3.11\",\n    license=\"MIT\",\n    classifiers=[\n        \"Development Status :: 4 - Beta\",\n        \"Programming Language :: Python :: 3.11\",\n        \"Topic :: Software Development :: Libraries :: Python Modules\",\n    ],\n)\n"
+   },
+   "py": {
+    "setup.py": {
+     "name": "quilt-bootstrap",
+     "version": "0.2.0"
+    }
+   }
+  },
+  {
+   "name": "quilt-brewer",
+   "language": "Python",
+   "size": 36,
+   "pushed_at": "2026-09-26T16:44:05Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "Grow new substrate walkers from recipes. The 6th-layer substrate walker.",
+   "private": false,
+   "stars": 0,
+   "file_count": 13,
+   "manifests": [
+    "setup.py"
+   ],
+   "has_tests": true,
+   "has_ci": false,
+   "has_readme": true,
+   "has_license": true,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": false,
+   "manifest_text": {
+    "setup.py": "from setuptools import setup, find_packages\n\nsetup(\n    name=\"quilt-brewer\",\n    version=\"0.1.0\",\n    description=\"Recipe-driven walker factory \u2014 grow substrate walkers from JSON recipes.\",\n    long_description=open(\"README.md\").read(),\n    long_description_content_type=\"text/markdown\",\n    author=\"SuperInstance\",\n    author_email=\"casey@superinstance.dev\",\n    url=\"https://github.com/SuperInstance/quilt-brewer\",\n    packages=find_packages(where=\"src\"),\n    package_dir={\"\": \"src\"},\n    python_requires=\">=3.11\",\n    license=\"MIT\",\n    classifiers=[\n        \"Development Status :: 4 - Beta\",\n        \"Programming Language :: Python :: 3.11\",\n        \"Topic :: Software Development :: Libraries :: Python Modules\",\n    ],\n)\n"
+   },
+   "py": {
+    "setup.py": {
+     "name": "quilt-brewer",
+     "version": "0.1.0"
+    }
+   }
+  },
+  {
+   "name": "quilt-cowboy",
+   "language": "Python",
+   "size": 8070,
+   "pushed_at": "2026-09-26T09:12:41Z",
+   "archived": false,
+   "has_pages": true,
+   "desc": "The cowboy: reflection loop, morning ritual, and real-time reactor for the Quilt ecosystem.",
+   "private": false,
+   "stars": 0,
+   "file_count": 1963,
+   "manifests": [
+    "pyproject.toml"
+   ],
+   "has_tests": true,
+   "has_ci": false,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": true,
+   "docker": false,
+   "manifest_text": {
+    "pyproject.toml": "[build-system]\nrequires = [\"setuptools>=61.0\"]\nbuild-backend = \"setuptools.build_meta\"\n\n[project]\nname = \"quilt-cowboy\"\nversion = \"1.0.0\"\ndescription = \"The cowboy: reflection loop, morning ritual, and real-time reactor.\"\nreadme = \"README.md\"\nrequires-python = \">=3.9\"\nlicense = {text = \"MIT\"}\nauthors = [{name = \"SuperInstance\"}]\ndependencies = [\"quilt-bus\"]\n\n[tool.setuptools.packages.find]\nwhere = [\"src\"]\n"
+   },
+   "py": {
+    "pyproject.toml": {
+     "name": "quilt-cowboy",
+     "version": "1.0.0"
+    }
+   }
+  },
+  {
+   "name": "SuperInstance.github.io",
+   "language": "HTML",
+   "size": 12765,
+   "pushed_at": "2026-09-26T00:39:50Z",
+   "archived": false,
+   "has_pages": true,
+   "desc": "SuperInstance \u2014 the front door. Brand kit, honest landscape table, and four live sheets running in one page: a tide field, a self-playing reversi with visible l",
+   "private": false,
+   "stars": 0,
+   "file_count": 29,
+   "manifests": [],
+   "has_tests": true,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [
+    "index.html"
+   ],
+   "has_docs_dir": false,
+   "docker": false
+  },
+  {
+   "name": "quilt-show",
+   "language": "HTML",
+   "size": 2987,
+   "pushed_at": "2026-09-26T00:39:11Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "The Quilt Show \u2014 witty educational episodes on natural programming in the Quilt reactive system",
+   "private": false,
+   "stars": 0,
+   "file_count": 67,
+   "manifests": [],
+   "has_tests": false,
+   "has_ci": false,
+   "has_readme": true,
+   "has_license": true,
+   "static_entry": [
+    "index.html"
+   ],
+   "has_docs_dir": true,
+   "docker": false
+  },
+  {
+   "name": "quilt-learn",
+   "language": "JavaScript",
+   "size": 614,
+   "pushed_at": "2026-09-26T00:24:30Z",
+   "archived": false,
+   "has_pages": true,
+   "desc": "The learning sheet: backprop as reactive cells, quantum-seeded exploration games, and a GAN that breeds optimizers onto a living spreadsheet",
+   "private": false,
+   "stars": 0,
+   "file_count": 91,
+   "manifests": [
+    "package.json"
+   ],
+   "has_tests": false,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [
+    "site/index.html"
+   ],
+   "has_docs_dir": false,
+   "docker": false,
+   "manifest_text": {
+    "package.json": "{\n  \"name\": \"quilt-learn\",\n  \"version\": \"1.0.0\",\n  \"description\": \"The learning sheet: backprop as reactive cells, quantum-seeded exploration games, and a GAN that breeds optimizers onto a living spreadsheet\",\n  \"type\": \"module\",\n  \"scripts\": {\n    \"demo:l1\": \"node learn/gradient_sheet.mjs\",\n    \"demo:l2\": \"node learn/explorers.mjs\",\n    \"demo:l3\": \"node learn/breeder.mjs\",\n    \"run\": \"node learn/run_all.mjs\",\n    \"smoke\": \"node learn/run_all.mjs --smoke\"\n  },\n  \"engines\": { \"node\": \">=18\" },\n  \"dependencies\": {\n    \"yaml\": \"^2.9.1\"\n  }\n}\n"
+   },
+   "node": {
+    "name": "quilt-learn",
+    "version": "1.0.0",
+    "private": false,
+    "scripts": [
+     "demo:l1",
+     "demo:l2",
+     "demo:l3",
+     "run",
+     "smoke"
+    ]
+   }
+  },
+  {
+   "name": "ability-transfer",
+   "language": "C",
+   "size": 284,
+   "pushed_at": "2026-09-25T23:57:32Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "\ud83c\udfd7\ufe0f Simulation lab \u2014 designing modular ability transfer between AI agents through git repos",
+   "private": false,
+   "stars": 1,
+   "file_count": 54,
+   "manifests": [],
+   "has_tests": true,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": true,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": false
+  },
+  {
+   "name": "fleet-lighthouse",
+   "language": "Python",
+   "size": 23,
+   "pushed_at": "2026-09-25T23:14:56Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "",
+   "private": false,
+   "stars": 0,
+   "file_count": 16,
+   "manifests": [],
+   "has_tests": true,
+   "has_ci": false,
+   "has_readme": true,
+   "has_license": true,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": false
+  },
+  {
+   "name": "quilt-mesh",
+   "language": "JavaScript",
+   "size": 2627,
+   "pushed_at": "2026-09-25T23:12:36Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "A broker-less, CRDT-based mesh protocol for Quilt cells. Lamport clocks, per-peer version vectors, no central server, no account, no internet.",
+   "private": false,
+   "stars": 0,
+   "file_count": 100,
+   "manifests": [
+    "package.json",
+    "Cargo.toml"
+   ],
+   "has_tests": false,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [
+    "site/index.html"
+   ],
+   "has_docs_dir": false,
+   "docker": false,
+   "manifest_text": {
+    "package.json": "{\n  \"name\": \"quilt-mesh\",\n  \"version\": \"0.1.0\",\n  \"description\": \"The SuperInstance mesh: cross-repo semantic crosswalks and the Poly-GAN bazaar where minds trade patch-samples of bred logic.\",\n  \"type\": \"module\",\n  \"main\": \"mesh/crosswalk.mjs\",\n  \"exports\": {\n    \".\": \"./src/index.mjs\",\n    \"./loom\": \"./src/loom.mjs\",\n    \"./forge\": \"./src/forge.mjs\",\n    \"./breeder\": \"./src/breeder.mjs\",\n    \"./receipts\": \"./src/receipts.mjs\",\n    \"./engine-lib\": \"./src/engine_lib.mjs\"\n  },\n  \"bin\": {\n    \"loom\": \"bin/loom.mjs\"\n  },\n  \"scripts\": {\n    \"test\": \"node test/smoke.mjs\",\n    \"example\": \"node bin/loom.mjs run examples/witness-fnv.mjs --gens 12 --seed 7\"\n  },\n  \"keywords\": [\n    \"gan\",\n    \"genetic-programming\",\n    \"reactive\",\n    \"spreadsheet\",\n    \"quilt\",\n    \"diversity\",\n    \"map-elites\",\n    \"adversarial\"\n  ],\n  \"license\": \"Apache-2.0\",\n  \"engines\": {\n    \"node\": \">=20\"\n  },\n  \"dependencies\": {\n    \"yaml\": \"^2.9.1\"\n  }\n}",
+    "Cargo.toml": "[package]\nname = \"quilt-mesh\"\nversion = \"0.1.0\"\nedition = \"2021\"\ndescription = \"A broker-less, CRDT-based mesh protocol for Quilt cells.\"\nlicense = \"MIT\"\n\n[dependencies]\n# Real implementation would use:\n# serde = { version = \"1.0\", features = [\"derive\"] }\n# serde_json = \"1.0\"\n# tokio = { version = \"1\", features = [\"full\"] }\n"
+   },
+   "node": {
+    "name": "quilt-mesh",
+    "version": "0.1.0",
+    "private": false,
+    "scripts": [
+     "test",
+     "example"
+    ]
+   },
+   "cargo": {
+    "name": "quilt-mesh",
+    "version": "0.1.0",
+    "publish_false": false
+   }
+  },
+  {
+   "name": "quilt-arena",
+   "language": "JavaScript",
+   "size": 808,
+   "pushed_at": "2026-09-25T23:12:31Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "",
+   "private": false,
+   "stars": 0,
+   "file_count": 125,
+   "manifests": [
+    "package.json"
+   ],
+   "has_tests": false,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": false,
+   "manifest_text": {
+    "package.json": "{\n  \"name\": \"quilt-arena\",\n  \"type\": \"module\",\n  \"dependencies\": {\n    \"yaml\": \"^2.9.1\",\n    \"z-ai-web-dev-sdk\": \"0.0.18\"\n  }\n}"
+   },
+   "node": {
+    "name": "quilt-arena",
+    "version": null,
+    "private": false,
+    "scripts": []
+   }
+  },
+  {
+   "name": "gauge",
+   "language": "Python",
+   "size": 34,
+   "pushed_at": "2026-09-25T22:35:55Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "",
+   "private": false,
+   "stars": 0,
+   "file_count": 19,
+   "manifests": [],
+   "has_tests": true,
+   "has_ci": false,
+   "has_readme": true,
+   "has_license": true,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": false
+  },
+  {
+   "name": "fleet-gateway",
+   "language": "Python",
+   "size": 99219,
+   "pushed_at": "2026-09-25T22:24:45Z",
+   "archived": true,
+   "has_pages": false,
+   "desc": "Unified API gateway for Pelagic fleet \u2014 service discovery, routing, auth, rate limiting",
+   "private": false,
+   "stars": 1,
+   "file_count": 21,
+   "manifests": [
+    "pyproject.toml",
+    "package.json",
+    "wrangler.toml"
+   ],
+   "has_tests": true,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": true,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": false,
+   "manifest_text": {
+    "pyproject.toml": "[build-system]\nrequires = [\"setuptools>=68.0\", \"wheel\"]\nbuild-backend = \"setuptools.build_meta\"\n\n[project]\nname = \"fleet-gateway\"\nversion = \"0.1.0\"\ndescription = \"Unified API gateway for the Pelagic fleet \u2014 single HTTP entry point with service discovery, auth, rate limiting, and routing.\"\nreadme = \"README.md\"\nlicense = \"MIT\"\nrequires-python = \">=3.10\"\nkeywords = [\"gateway\", \"fleet\", \"api\", \"proxy\", \"microservices\"]\n\n[project.scripts]\nfleet-gateway = \"cli:main\"\n\n[tool.setuptools.packages.find]\ninclude = [\"*.py\"]\n\n[tool.pytest.ini_options]\ntestpaths = [\"tests\"]\npython_files = [\"test_*.py\"]\n",
+    "package.json": "{\n  \"name\": \"fleet-gateway\",\n  \"version\": \"0.1.0\",\n  \"private\": true,\n  \"scripts\": {\n    \"dev\": \"wrangler dev\",\n    \"deploy\": \"wrangler deploy\"\n  },\n  \"devDependencies\": {\n    \"@cloudflare/workers-types\": \"^4.20241205.0\",\n    \"wrangler\": \"^3.99.0\",\n    \"typescript\": \"^5.7.0\"\n  }\n}\n",
+    "wrangler.toml": "name = \"fleet-gateway\"\nmain = \"src/index.ts\"\ncompatibility_date = \"2024-12-01\"\n\n[[r2_buckets]]\nbinding = \"ASSETS\"\nbucket_name = \"fleet-gateway-assets\"\n"
+   },
+   "py": {
+    "pyproject.toml": {
+     "name": "fleet-gateway",
+     "version": "0.1.0"
+    }
+   },
+   "node": {
+    "name": "fleet-gateway",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": [
+     "dev",
+     "deploy"
+    ]
+   }
+  },
+  {
+   "name": "loom-core",
+   "language": "JavaScript",
+   "size": 105,
+   "pushed_at": "2026-09-25T21:56:01Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "The Divergent Logic Foundry, standalone: a GAN over logic itself \u2014 breed maximally-divergent, proven-correct implementations of any pure-function contract.",
+   "private": false,
+   "stars": 0,
+   "file_count": 84,
+   "manifests": [
+    "package.json"
+   ],
+   "has_tests": true,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": true,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": false,
+   "manifest_text": {
+    "package.json": "{\n  \"name\": \"loom-core\",\n  \"version\": \"0.1.0\",\n  \"description\": \"The Divergent Logic Foundry, standalone: a GAN over logic itself \u2014 breed maximally-divergent, proven-correct implementations of any pure-function contract, in quilt sheets.\",\n  \"type\": \"module\",\n  \"main\": \"src/index.mjs\",\n  \"exports\": {\n    \".\": \"./src/index.mjs\",\n    \"./loom\": \"./src/loom.mjs\",\n    \"./forge\": \"./src/forge.mjs\",\n    \"./breeder\": \"./src/breeder.mjs\",\n    \"./receipts\": \"./src/receipts.mjs\",\n    \"./engine-lib\": \"./src/engine_lib.mjs\"\n  },\n  \"bin\": { \"loom\": \"bin/loom.mjs\" },\n  \"scripts\": {\n    \"test\": \"node test/smoke.mjs\",\n    \"example\": \"node bin/loom.mjs run examples/witness-fnv.mjs --gens 12 --seed 7\"\n  },\n  \"keywords\": [\"gan\", \"genetic-programming\", \"reactive\", \"spreadsheet\", \"quilt\", \"diversity\", \"map-elites\", \"adversarial\"],\n  \"license\": \"Apache-2.0\",\n  \"engines\": { \"node\": \">=20\" },\n  \"dependencies\": { \"yaml\": \"^2.9.1\" }\n}\n"
+   },
+   "node": {
+    "name": "loom-core",
+    "version": "0.1.0",
+    "private": false,
+    "scripts": [
+     "test",
+     "example"
+    ]
+   }
+  },
+  {
+   "name": "quilt-loom",
+   "language": "JavaScript",
+   "size": 665,
+   "pushed_at": "2026-09-25T21:31:36Z",
+   "archived": false,
+   "has_pages": true,
+   "desc": "The Divergent Logic Foundry \u2014 a GAN over logic itself: a breeder generates new implementations of game contracts while a probe-forge discriminates fakes; every ",
+   "private": false,
+   "stars": 0,
+   "file_count": 173,
+   "manifests": [
+    "package.json"
+   ],
+   "has_tests": false,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": true,
+   "manifest_text": {
+    "package.json": "{\n  \"name\": \"quilt-loom\",\n  \"type\": \"module\",\n  \"dependencies\": {\n    \"yaml\": \"^2.9.1\",\n    \"z-ai-web-dev-sdk\": \"0.0.18\"\n  }\n}\n"
+   },
+   "node": {
+    "name": "quilt-loom",
+    "version": null,
+    "private": false,
+    "scripts": []
+   }
+  },
+  {
+   "name": "quilt-cortex",
+   "language": "JavaScript",
+   "size": 225,
+   "pushed_at": "2026-09-25T21:30:24Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "Tri-nervous-system chord spine \u2014 cortex absorbed as a pure quilt sheet (z portfolio v4)",
+   "private": false,
+   "stars": 0,
+   "file_count": 107,
+   "manifests": [],
+   "has_tests": false,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": false
+  },
+  {
+   "name": "quilt-quant",
+   "language": "JavaScript",
+   "size": 788,
+   "pushed_at": "2026-09-25T21:30:19Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "The trading desk as a spreadsheet: backtest-as-cells, walk-forward honesty (S6), gated self-improvement (S7), witness receipts (S8) + E11 sim-first agent lab wi",
+   "private": false,
+   "stars": 0,
+   "file_count": 108,
+   "manifests": [
+    "package.json"
+   ],
+   "has_tests": false,
+   "has_ci": true,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": false,
+   "manifest_text": {
+    "package.json": "{\"name\":\"quilt-quant\",\"type\":\"module\",\"dependencies\":{\"yaml\":\"^2.9.1\"}}\n"
+   },
+   "node": {
+    "name": "quilt-quant",
+    "version": null,
+    "private": false,
+    "scripts": []
+   }
+  },
+  {
+   "name": "quilt-cell-harness",
+   "language": "Python",
+   "size": 147,
+   "pushed_at": "2026-09-25T21:16:44Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "Non-hub-and-spoke cell architecture for Quilt. Engine with PTO, genetic weights as nudges, compartments that crystallize into mechanisms of action. Where the ce",
+   "private": false,
+   "stars": 0,
+   "file_count": 13,
+   "manifests": [],
+   "has_tests": false,
+   "has_ci": false,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": false
+  },
+  {
+   "name": "superinstance-voyage",
+   "language": "Python",
+   "size": 98,
+   "pushed_at": "2026-09-25T21:16:32Z",
+   "archived": false,
+   "has_pages": false,
+   "desc": "Voyage blog \u2014 Casey's writing-from-the-fleet piece",
+   "private": false,
+   "stars": 0,
+   "file_count": 4,
+   "manifests": [],
+   "has_tests": false,
+   "has_ci": false,
+   "has_readme": true,
+   "has_license": false,
+   "static_entry": [],
+   "has_docs_dir": false,
+   "docker": false
+  }
+ ],
+ "registry": [
+  {
+   "repo": "polln",
+   "eco": "pypi",
+   "pkg": "polln",
+   "version": "1.0.0",
+   "exists": false,
+   "status": 404,
+   "extra": {
+    "file": "pyproject.toml"
+   }
+  },
+  {
+   "repo": "polln",
+   "eco": "crates",
+   "pkg": "polln",
+   "version": "0.1.0",
+   "exists": false,
+   "status": 404,
+   "extra": {
+    "publish_false": false
+   }
+  },
+  {
+   "repo": "quilt-tools",
+   "eco": "npm",
+   "pkg": "@superinstance/quilt-tools",
+   "version": "0.1.0",
+   "exists": false,
+   "status": 404,
+   "latest_published": null,
+   "extra": {
+    "name": "@superinstance/quilt-tools",
+    "version": "0.1.0",
+    "private": false,
+    "scripts": [
+     "check",
+     "tools",
+     "s1"
+    ]
+   }
+  },
+  {
+   "repo": "quilt-vm-wasm",
+   "eco": "crates",
+   "pkg": "quilt-vm-wasm",
+   "version": "0.1.0",
+   "exists": false,
+   "status": 404,
+   "extra": {
+    "publish_false": false
+   }
+  },
+  {
+   "repo": "tidepool",
+   "eco": "npm",
+   "pkg": "tide-pool",
+   "version": null,
+   "exists": false,
+   "status": 404,
+   "latest_published": null,
+   "extra": {
+    "name": "tide-pool",
+    "version": null,
+    "private": true,
+    "scripts": [
+     "test"
+    ]
+   }
+  },
+  {
+   "repo": "federated-tinyml-vessel",
+   "eco": "pypi",
+   "pkg": "federated-tinyml-vessel",
+   "version": "0.1.0",
+   "exists": false,
+   "status": 404,
+   "extra": {
+    "file": "setup.py"
+   }
+  },
+  {
+   "repo": "jev-quilt",
+   "eco": "pypi",
+   "pkg": "jev-quilt",
+   "version": "0.1.0",
+   "exists": true,
+   "status": 200,
+   "extra": {
+    "file": "pyproject.toml"
+   }
+  },
+  {
+   "repo": "jev-quilt",
+   "eco": "pypi",
+   "pkg": "jev-quilt",
+   "version": "0.0.1",
+   "exists": true,
+   "status": 200,
+   "extra": {
+    "file": "setup.py"
+   }
+  },
+  {
+   "repo": "PersonalLog",
+   "eco": "pypi",
+   "pkg": "personal-log",
+   "version": "0.1.0",
+   "exists": false,
+   "status": 404,
+   "extra": {
+    "file": "pyproject.toml"
+   }
+  },
+  {
+   "repo": "PersonalLog",
+   "eco": "npm",
+   "pkg": "personallog",
+   "version": "1.0.0",
+   "exists": false,
+   "status": 404,
+   "latest_published": null,
+   "extra": {
+    "name": "personallog",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": [
+     "dev",
+     "build",
+     "start",
+     "lint",
+     "type-check",
+     "test",
+     "test:unit",
+     "test:watch"
+    ]
+   }
+  },
+  {
+   "repo": "quilt-c",
+   "eco": "pypi",
+   "pkg": "quilt-c",
+   "version": "0.1.0",
+   "exists": false,
+   "status": 404,
+   "extra": {
+    "file": "pyproject.toml"
+   }
+  },
+  {
+   "repo": "micrograd-quilt",
+   "eco": "pypi",
+   "pkg": "micrograd",
+   "version": "0.1.0",
+   "exists": true,
+   "status": 200,
+   "extra": {
+    "file": "setup.py"
+   }
+  },
+  {
+   "repo": "cns-substrate",
+   "eco": "pypi",
+   "pkg": "cns-bridge",
+   "version": "0.2.0",
+   "exists": false,
+   "status": 404,
+   "extra": {
+    "file": "pyproject.toml"
+   }
+  },
+  {
+   "repo": "substrate-llm-client",
+   "eco": "npm",
+   "pkg": "substrate-llm-client",
+   "version": "0.0.2",
+   "exists": true,
+   "status": 200,
+   "latest_published": "0.0.2",
+   "extra": {
+    "name": "substrate-llm-client",
+    "version": "0.0.2",
+    "private": false,
+    "scripts": [
+     "test"
+    ]
+   }
+  },
+  {
+   "repo": "CognitiveEngine",
+   "eco": "npm",
+   "pkg": "@superinstance/cognitive-engine",
+   "version": "1.0.0",
+   "exists": false,
+   "status": 404,
+   "latest_published": null,
+   "extra": {
+    "name": "@superinstance/cognitive-engine",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": [
+     "dev",
+     "build",
+     "start",
+     "test",
+     "test:coverage",
+     "lint",
+     "type-check",
+     "migrate"
+    ]
+   }
+  },
+  {
+   "repo": "exoj",
+   "eco": "npm",
+   "pkg": "exoj",
+   "version": "0.1.0",
+   "exists": false,
+   "status": 404,
+   "latest_published": null,
+   "extra": {
+    "name": "exoj",
+    "version": "0.1.0",
+    "private": false,
+    "scripts": [
+     "smoke"
+    ]
+   }
+  },
+  {
+   "repo": "quality-gate-stream",
+   "eco": "pypi",
+   "pkg": "quality-gate-stream",
+   "version": "0.1.1",
+   "exists": false,
+   "status": 404,
+   "extra": {
+    "file": "pyproject.toml"
+   }
+  },
+  {
+   "repo": "git-agent",
+   "eco": "pypi",
+   "pkg": "cocapn-git-agent",
+   "version": "0.1.2",
+   "exists": true,
+   "status": 200,
+   "extra": {
+    "file": "pyproject.toml"
+   }
+  },
+  {
+   "repo": "knowledge-vault-rs",
+   "eco": "crates",
+   "pkg": "knowledge-vault",
+   "version": "0.1.0",
+   "exists": false,
+   "status": 404,
+   "extra": {
+    "publish_false": false
+   }
+  },
+  {
+   "repo": "tripartite-rs-archive",
+   "eco": "crates",
+   "pkg": "tripartite-rs",
+   "version": "0.1.0",
+   "exists": false,
+   "status": 404,
+   "extra": {
+    "publish_false": false
+   }
+  },
+  {
+   "repo": "model-registry-archive",
+   "eco": "crates",
+   "pkg": "model-registry",
+   "version": "0.1.0",
+   "exists": false,
+   "status": 404,
+   "extra": {
+    "publish_false": false
+   }
+  },
+  {
+   "repo": "SmartCRDT",
+   "eco": "pypi",
+   "pkg": "smartcrdt",
+   "version": "1.0.0",
+   "exists": false,
+   "status": 404,
+   "extra": {
+    "file": "pyproject.toml"
+   }
+  },
+  {
+   "repo": "SmartCRDT",
+   "eco": "npm",
+   "pkg": "smartcrdt",
+   "version": "1.0.0",
+   "exists": true,
+   "status": 200,
+   "latest_published": "1.0.0",
+   "extra": {
+    "name": "smartcrdt",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": [
+     "build",
+     "build:ts",
+     "build:native",
+     "build:native:release",
+     "clean",
+     "clean:deep",
+     "test",
+     "test:watch"
+    ]
+   }
+  },
+  {
+   "repo": "quilt-elf",
+   "eco": "npm",
+   "pkg": "@quilt/elf",
+   "version": "0.1.0",
+   "exists": false,
+   "status": 404,
+   "latest_published": null,
+   "extra": {
+    "name": "@quilt/elf",
+    "version": "0.1.0",
+    "private": false,
+    "scripts": [
+     "build",
+     "test",
+     "lint",
+     "typecheck"
+    ]
+   }
+  },
+  {
+   "repo": "quilt-swarm",
+   "eco": "npm",
+   "pkg": "quilt-swarm",
+   "version": "0.1.0",
+   "exists": false,
+   "status": 404,
+   "latest_published": null,
+   "extra": {
+    "name": "quilt-swarm",
+    "version": "0.1.0",
+    "private": false,
+    "scripts": [
+     "build",
+     "typecheck",
+     "test",
+     "test:watch",
+     "lint",
+     "lint:fix",
+     "clean",
+     "prepublishOnly"
+    ]
+   }
+  },
+  {
+   "repo": "quilt-fleet",
+   "eco": "npm",
+   "pkg": "@quilt/fleet",
+   "version": "0.1.0",
+   "exists": false,
+   "status": 404,
+   "latest_published": null,
+   "extra": {
+    "name": "@quilt/fleet",
+    "version": "0.1.0",
+    "private": false,
+    "scripts": [
+     "build",
+     "test",
+     "test:watch",
+     "lint",
+     "format",
+     "typecheck",
+     "clean"
+    ]
+   }
+  },
+  {
+   "repo": "quilt-rag",
+   "eco": "npm",
+   "pkg": "@quilt/rag",
+   "version": "0.1.0",
+   "exists": false,
+   "status": 404,
+   "latest_published": null,
+   "extra": {
+    "name": "@quilt/rag",
+    "version": "0.1.0",
+    "private": false,
+    "scripts": [
+     "build",
+     "test",
+     "lint",
+     "lint:fix"
+    ]
+   }
+  },
+  {
+   "repo": "hermit",
+   "eco": "npm",
+   "pkg": "hermit",
+   "version": "1.0.0",
+   "exists": true,
+   "status": 200,
+   "latest_published": "0.2.2",
+   "extra": {
+    "name": "hermit",
+    "version": "1.0.0",
+    "private": false,
+    "scripts": [
+     "dev",
+     "deploy",
+     "deploy:cf",
+     "deploy:cf:preview",
+     "deploy:dry-run",
+     "cf-typegen",
+     "postinstall",
+     "test"
+    ]
+   }
+  },
+  {
+   "repo": "SuperInstance",
+   "eco": "pypi",
+   "pkg": "superinstance",
+   "version": "0.1.1",
+   "exists": true,
+   "status": 200,
+   "extra": {
+    "file": "pyproject.toml"
+   }
+  },
+  {
+   "repo": "SuperInstance",
+   "eco": "npm",
+   "pkg": "@superinstance/schemas",
+   "version": "1.0.0",
+   "exists": true,
+   "status": 200,
+   "latest_published": "1.0.0",
+   "extra": {
+    "name": "@superinstance/schemas",
+    "version": "1.0.0",
+    "private": false,
+    "scripts": [
+     "build",
+     "typecheck"
+    ]
+   }
+  },
+  {
+   "repo": "plato-portal",
+   "eco": "pypi",
+   "pkg": "superinstance",
+   "version": "0.1.1",
+   "exists": true,
+   "status": 200,
+   "extra": {
+    "file": "pyproject.toml"
+   }
+  },
+  {
+   "repo": "plato-portal",
+   "eco": "npm",
+   "pkg": "@superinstance/schemas",
+   "version": "1.0.0",
+   "exists": true,
+   "status": 200,
+   "latest_published": "1.0.0",
+   "extra": {
+    "name": "@superinstance/schemas",
+    "version": "1.0.0",
+    "private": false,
+    "scripts": [
+     "build",
+     "typecheck"
+    ]
+   }
+  },
+  {
+   "repo": "quilt",
+   "eco": "npm",
+   "pkg": "quilt",
+   "version": "0.3.0",
+   "exists": true,
+   "status": 200,
+   "latest_published": "0.1.3",
+   "extra": {
+    "name": "quilt",
+    "version": "0.3.0",
+    "private": true,
+    "scripts": [
+     "build",
+     "test",
+     "test:core",
+     "dev",
+     "lint",
+     "lint:fix",
+     "format"
+    ]
+   }
+  },
+  {
+   "repo": "webgpu-profiler",
+   "eco": "npm",
+   "pkg": "browser-gpu-profiler",
+   "version": "1.0.0",
+   "exists": true,
+   "status": 200,
+   "latest_published": "1.0.0",
+   "extra": {
+    "name": "browser-gpu-profiler",
+    "version": "1.0.0",
+    "private": false,
+    "scripts": [
+     "build",
+     "dev",
+     "test",
+     "test:ui",
+     "test:coverage",
+     "type-check",
+     "lint",
+     "format"
+    ]
+   }
+  },
+  {
+   "repo": "qthe-verify",
+   "eco": "npm",
+   "pkg": "qthe-verify",
+   "version": "1.0.0",
+   "exists": false,
+   "status": 404,
+   "latest_published": null,
+   "extra": {
+    "name": "qthe-verify",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": [
+     "verify",
+     "self-test"
+    ]
+   }
+  },
+  {
+   "repo": "mavis-pincher",
+   "eco": "npm",
+   "pkg": "mavis-pincher",
+   "version": "0.1.0",
+   "exists": false,
+   "status": 404,
+   "latest_published": null,
+   "extra": {
+    "name": "mavis-pincher",
+    "version": "0.1.0",
+    "private": false,
+    "scripts": [
+     "dev",
+     "deploy",
+     "test",
+     "build:data"
+    ]
+   }
+  },
+  {
+   "repo": "quilt-cloudflare",
+   "eco": "npm",
+   "pkg": "quilt-cloudflare",
+   "version": "0.1.0",
+   "exists": false,
+   "status": 404,
+   "latest_published": null,
+   "extra": {
+    "name": "quilt-cloudflare",
+    "version": "0.1.0",
+    "private": false,
+    "scripts": [
+     "dev",
+     "build",
+     "deploy",
+     "deploy:ui",
+     "db:init",
+     "db:reset",
+     "vectorize:create",
+     "kv:create"
+    ]
+   }
+  },
+  {
+   "repo": "cellforge",
+   "eco": "pypi",
+   "pkg": "cellforge",
+   "version": "0.1.0",
+   "exists": true,
+   "status": 200,
+   "extra": {
+    "file": "pyproject.toml"
+   }
+  },
+  {
+   "repo": "coev",
+   "eco": "npm",
+   "pkg": "coev",
+   "version": "0.1.0",
+   "exists": true,
+   "status": 200,
+   "latest_published": "1.0.0",
+   "extra": {
+    "name": "coev",
+    "version": "0.1.0",
+    "private": false,
+    "scripts": [
+     "test"
+    ]
+   }
+  },
+  {
+   "repo": "mavis-substrate-walker",
+   "eco": "pypi",
+   "pkg": "mavis-substrate-walker",
+   "version": "0.1.0",
+   "exists": false,
+   "status": 404,
+   "extra": {
+    "file": "pyproject.toml"
+   }
+  },
+  {
+   "repo": "duke-lab",
+   "eco": "npm",
+   "pkg": "duke-lab",
+   "version": "1.0.0",
+   "exists": false,
+   "status": 404,
+   "latest_published": null,
+   "extra": {
+    "name": "duke-lab",
+    "version": "1.0.0",
+    "private": false,
+    "scripts": [
+     "test",
+     "serve"
+    ]
+   }
+  },
+  {
+   "repo": "jeviter",
+   "eco": "npm",
+   "pkg": "jeviter",
+   "version": "0.1.0",
+   "exists": false,
+   "status": 404,
+   "latest_published": null,
+   "extra": {
+    "name": "jeviter",
+    "version": "0.1.0",
+    "private": false,
+    "scripts": [
+     "test",
+     "start"
+    ]
+   }
+  },
+  {
+   "repo": "fleet-static-host",
+   "eco": "npm",
+   "pkg": "fleet-static-host",
+   "version": "2.0.0",
+   "exists": false,
+   "status": 404,
+   "latest_published": null,
+   "extra": {
+    "name": "fleet-static-host",
+    "version": "2.0.0",
+    "private": true,
+    "scripts": [
+     "dev",
+     "deploy",
+     "db:migrate:local",
+     "db:migrate:remote",
+     "seed:build",
+     "seed:push",
+     "test",
+     "typecheck"
+    ]
+   }
+  },
+  {
+   "repo": "quilt-arcade",
+   "eco": "npm",
+   "pkg": "quilt-arcade",
+   "version": null,
+   "exists": false,
+   "status": 404,
+   "latest_published": null,
+   "extra": {
+    "name": "quilt-arcade",
+    "version": null,
+    "private": false,
+    "scripts": []
+   }
+  },
+  {
+   "repo": "elephant",
+   "eco": "pypi",
+   "pkg": "elephant",
+   "version": "0.1.0",
+   "exists": true,
+   "status": 200,
+   "extra": {
+    "file": "pyproject.toml"
+   }
+  },
+  {
+   "repo": "cargo-line-tycoon",
+   "eco": "npm",
+   "pkg": "cargo-line-tycoon",
+   "version": "0.1.0",
+   "exists": false,
+   "status": 404,
+   "latest_published": null,
+   "extra": {
+    "name": "cargo-line-tycoon",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": [
+     "test",
+     "build",
+     "serve:dist"
+    ]
+   }
+  },
+  {
+   "repo": "paced-seam",
+   "eco": "npm",
+   "pkg": "paced-seam",
+   "version": "0.1.0",
+   "exists": false,
+   "status": 404,
+   "latest_published": null,
+   "extra": {
+    "name": "paced-seam",
+    "version": "0.1.0",
+    "private": false,
+    "scripts": [
+     "test"
+    ]
+   }
+  },
+  {
+   "repo": "fleet-murmur",
+   "eco": "pypi",
+   "pkg": "fleet-murmur",
+   "version": "0.1.0",
+   "exists": false,
+   "status": 404,
+   "extra": {
+    "file": "pyproject.toml"
+   }
+  },
+  {
+   "repo": "hermes-construct",
+   "eco": "pypi",
+   "pkg": "hermes-agent",
+   "version": "0.15.1",
+   "exists": true,
+   "status": 200,
+   "extra": {
+    "file": "pyproject.toml"
+   }
+  },
+  {
+   "repo": "hermes-construct",
+   "eco": "npm",
+   "pkg": "hermes-agent",
+   "version": "1.0.0",
+   "exists": true,
+   "status": 200,
+   "latest_published": "0.21.5",
+   "extra": {
+    "name": "hermes-agent",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": [
+     "postinstall"
+    ]
+   }
+  },
+  {
+   "repo": "hermes-construct",
+   "eco": "crates",
+   "pkg": "hermes-construct",
+   "version": "0.1.0",
+   "exists": true,
+   "status": 200,
+   "extra": {
+    "publish_false": false
+   }
+  },
+  {
+   "repo": "laya4quilt",
+   "eco": "pypi",
+   "pkg": "laya",
+   "version": "0.3.5",
+   "exists": true,
+   "status": 200,
+   "extra": {
+    "file": "pyproject.toml"
+   }
+  },
+  {
+   "repo": "Scrapcraft",
+   "eco": "npm",
+   "pkg": "scrapcraft",
+   "version": "0.2.0",
+   "exists": false,
+   "status": 404,
+   "latest_published": null,
+   "extra": {
+    "name": "scrapcraft",
+    "version": "0.2.0",
+    "private": true,
+    "scripts": [
+     "dev",
+     "build",
+     "preview",
+     "test",
+     "size",
+     "deploy"
+    ]
+   }
+  },
+  {
+   "repo": "quilt-esp32",
+   "eco": "crates",
+   "pkg": "quilt-esp32",
+   "version": "0.1.0",
+   "exists": false,
+   "status": 404,
+   "extra": {
+    "publish_false": false
+   }
+  },
+  {
+   "repo": "quilt-stone",
+   "eco": "npm",
+   "pkg": "quilt-stone",
+   "version": "1.0.0",
+   "exists": false,
+   "status": 404,
+   "latest_published": null,
+   "extra": {
+    "name": "quilt-stone",
+    "version": "1.0.0",
+    "private": false,
+    "scripts": [
+     "smoke",
+     "verify"
+    ]
+   }
+  },
+  {
+   "repo": "cargo-line-tycoon-substrate-ts",
+   "eco": "npm",
+   "pkg": "@superinstance/cargo-line-tycoon-substrate",
+   "version": "0.1.0",
+   "exists": true,
+   "status": 200,
+   "latest_published": "0.2.0",
+   "extra": {
+    "name": "@superinstance/cargo-line-tycoon-substrate",
+    "version": "0.1.0",
+    "private": false,
+    "scripts": []
+   }
+  },
+  {
+   "repo": "quilt-dba",
+   "eco": "npm",
+   "pkg": "quilt-dba",
+   "version": "0.1.0",
+   "exists": false,
+   "status": 404,
+   "latest_published": null,
+   "extra": {
+    "name": "quilt-dba",
+    "version": "0.1.0",
+    "private": false,
+    "scripts": [
+     "smoke",
+     "e_d1"
+    ]
+   }
+  },
+  {
+   "repo": "quilt-murmur",
+   "eco": "npm",
+   "pkg": "quilt-murmur",
+   "version": "0.1.0",
+   "exists": false,
+   "status": 404,
+   "latest_published": null,
+   "extra": {
+    "name": "quilt-murmur",
+    "version": "0.1.0",
+    "private": false,
+    "scripts": [
+     "e14",
+     "e15",
+     "e16",
+     "e17",
+     "e18",
+     "smoke"
+    ]
+   }
+  },
+  {
+   "repo": "yiluodi",
+   "eco": "npm",
+   "pkg": "yiluodi",
+   "version": "0.1.0",
+   "exists": false,
+   "status": 404,
+   "latest_published": null,
+   "extra": {
+    "name": "yiluodi",
+    "version": "0.1.0",
+    "private": false,
+    "scripts": [
+     "test",
+     "smoke",
+     "chaos"
+    ]
+   }
+  },
+  {
+   "repo": "quilt-arch",
+   "eco": "npm",
+   "pkg": "quilt-arch",
+   "version": "0.1.0",
+   "exists": false,
+   "status": 404,
+   "latest_published": null,
+   "extra": {
+    "name": "quilt-arch",
+    "version": "0.1.0",
+    "private": false,
+    "scripts": [
+     "smoke",
+     "smoke:arch",
+     "e:a1"
+    ]
+   }
+  },
+  {
+   "repo": "ropesight",
+   "eco": "npm",
+   "pkg": "ropesight",
+   "version": "0.1.0",
+   "exists": false,
+   "status": 404,
+   "latest_published": null,
+   "extra": {
+    "name": "ropesight",
+    "version": "0.1.0",
+    "private": false,
+    "scripts": [
+     "smoke"
+    ]
+   }
+  },
+  {
+   "repo": "quilt-silicon",
+   "eco": "npm",
+   "pkg": "quilt-silicon",
+   "version": "0.1.0",
+   "exists": false,
+   "status": 404,
+   "latest_published": null,
+   "extra": {
+    "name": "quilt-silicon",
+    "version": "0.1.0",
+    "private": false,
+    "scripts": [
+     "smoke",
+     "smoke:silicon",
+     "e:s1"
+    ]
+   }
+  },
+  {
+   "repo": "quilt-raw",
+   "eco": "npm",
+   "pkg": "quilt-raw",
+   "version": "0.1.0",
+   "exists": false,
+   "status": 404,
+   "latest_published": null,
+   "extra": {
+    "name": "quilt-raw",
+    "version": "0.1.0",
+    "private": false,
+    "scripts": [
+     "smoke",
+     "smoke:raw",
+     "exp"
+    ]
+   }
+  },
+  {
+   "repo": "moth-waveform",
+   "eco": "pypi",
+   "pkg": "moth-waveform",
+   "version": "0.2.0",
+   "exists": false,
+   "status": 404,
+   "extra": {
+    "file": "pyproject.toml"
+   }
+  },
+  {
+   "repo": "SuperInstance-papers",
+   "eco": "crates",
+   "pkg": "superinstance-papers",
+   "version": "0.1.0",
+   "exists": false,
+   "status": 404,
+   "extra": {
+    "publish_false": false
+   }
+  },
+  {
+   "repo": "quilt-bootstrap",
+   "eco": "pypi",
+   "pkg": "quilt-bootstrap",
+   "version": "0.2.0",
+   "exists": true,
+   "status": 200,
+   "extra": {
+    "file": "setup.py"
+   }
+  },
+  {
+   "repo": "quilt-brewer",
+   "eco": "pypi",
+   "pkg": "quilt-brewer",
+   "version": "0.1.0",
+   "exists": true,
+   "status": 200,
+   "extra": {
+    "file": "setup.py"
+   }
+  },
+  {
+   "repo": "quilt-cowboy",
+   "eco": "pypi",
+   "pkg": "quilt-cowboy",
+   "version": "1.0.0",
+   "exists": false,
+   "status": 404,
+   "extra": {
+    "file": "pyproject.toml"
+   }
+  },
+  {
+   "repo": "quilt-learn",
+   "eco": "npm",
+   "pkg": "quilt-learn",
+   "version": "1.0.0",
+   "exists": false,
+   "status": 404,
+   "latest_published": null,
+   "extra": {
+    "name": "quilt-learn",
+    "version": "1.0.0",
+    "private": false,
+    "scripts": [
+     "demo:l1",
+     "demo:l2",
+     "demo:l3",
+     "run",
+     "smoke"
+    ]
+   }
+  },
+  {
+   "repo": "quilt-mesh",
+   "eco": "npm",
+   "pkg": "quilt-mesh",
+   "version": "0.1.0",
+   "exists": false,
+   "status": 404,
+   "latest_published": null,
+   "extra": {
+    "name": "quilt-mesh",
+    "version": "0.1.0",
+    "private": false,
+    "scripts": [
+     "test",
+     "example"
+    ]
+   }
+  },
+  {
+   "repo": "quilt-mesh",
+   "eco": "crates",
+   "pkg": "quilt-mesh",
+   "version": "0.1.0",
+   "exists": false,
+   "status": 404,
+   "extra": {
+    "publish_false": false
+   }
+  },
+  {
+   "repo": "quilt-arena",
+   "eco": "npm",
+   "pkg": "quilt-arena",
+   "version": null,
+   "exists": false,
+   "status": 404,
+   "latest_published": null,
+   "extra": {
+    "name": "quilt-arena",
+    "version": null,
+    "private": false,
+    "scripts": []
+   }
+  },
+  {
+   "repo": "fleet-gateway",
+   "eco": "pypi",
+   "pkg": "fleet-gateway",
+   "version": "0.1.0",
+   "exists": false,
+   "status": 404,
+   "extra": {
+    "file": "pyproject.toml"
+   }
+  },
+  {
+   "repo": "fleet-gateway",
+   "eco": "npm",
+   "pkg": "fleet-gateway",
+   "version": "0.1.0",
+   "exists": false,
+   "status": 404,
+   "latest_published": null,
+   "extra": {
+    "name": "fleet-gateway",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": [
+     "dev",
+     "deploy"
+    ]
+   }
+  },
+  {
+   "repo": "loom-core",
+   "eco": "npm",
+   "pkg": "loom-core",
+   "version": "0.1.0",
+   "exists": false,
+   "status": 404,
+   "latest_published": null,
+   "extra": {
+    "name": "loom-core",
+    "version": "0.1.0",
+    "private": false,
+    "scripts": [
+     "test",
+     "example"
+    ]
+   }
+  },
+  {
+   "repo": "quilt-loom",
+   "eco": "npm",
+   "pkg": "quilt-loom",
+   "version": null,
+   "exists": false,
+   "status": 404,
+   "latest_published": null,
+   "extra": {
+    "name": "quilt-loom",
+    "version": null,
+    "private": false,
+    "scripts": []
+   }
+  },
+  {
+   "repo": "quilt-quant",
+   "eco": "npm",
+   "pkg": "quilt-quant",
+   "version": null,
+   "exists": false,
+   "status": 404,
+   "latest_published": null,
+   "extra": {
+    "name": "quilt-quant",
+    "version": null,
+    "private": false,
+    "scripts": []
+   }
+  }
+ ]
+}

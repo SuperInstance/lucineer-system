@@ -1,0 +1,52 @@
+fleet-twin|branch:main|rc:1|To https://github.com/SuperInstance/fleet-twin.git  ! [rejected]        HEAD -> main (non-fast-forward) error: failed to push some refs to 'https://github.com/SuperInstance/fleet-twin.git' hint: Updates were rejected because the tip of your current branch is behind hint: its remote counterpart. If you want to integrate the remote changes, hint: use 'git pull' before pus
+
+fleet-gateway|branch:main|rc:128|remote: This repository was archived so it is read-only. fatal: unable to access 'https://github.com/SuperInstance/fleet-gateway.git/': The requested URL returned error: 403 
+
+quilt-llvm-wt-shape|branch:r1-shape-audit|rc:0|To github.com:SuperInstance/quilt-llvm.git    e086555..cb8d201  HEAD -> r1-shape-audit 
+
+quilt-mhs-playtest|branch:main|rc:1|To https://github.com/SuperInstance/quilt-mhs.git  ! [rejected]        HEAD -> main (non-fast-forward) error: failed to push some refs to 'https://github.com/SuperInstance/quilt-mhs.git' hint: Updates were rejected because the tip of your current branch is behind hint: its remote counterpart. If you want to integrate the remote changes, hint: use 'git pull' befo
+
+quilt-llvm|branch:r4-conception|rc:0|remote:  remote: Create a pull request for 'r4-conception' on GitHub by visiting:         remote:      https://github.com/SuperInstance/quilt-llvm/pull/new/r4-conception         remote:  To github.com:SuperInstance/quilt-llvm.git  * [new branch]      HEAD -> r4-conception 
+
+quilt-llvm-wt-r3lane1|branch:r3-lane1-region-edit-kinds|rc:0|remote:  remote: Create a pull request for 'r3-lane1-region-edit-kinds' on GitHub by visiting:         remote:      https://github.com/SuperInstance/quilt-llvm/pull/new/r3-lane1-region-edit-kinds         remote:  To github.com:SuperInstance/quilt-llvm.git  * [new branch]      HEAD -> r3-lane1-region-edit-kinds 
+
+quilt-llvm-wt-r3lane3|branch:r3-lane3-pass-graduation|rc:0|remote:  remote: Create a pull request for 'r3-lane3-pass-graduation' on GitHub by visiting:         remote:      https://github.com/SuperInstance/quilt-llvm/pull/new/r3-lane3-pass-graduation         remote:  To github.com:SuperInstance/quilt-llvm.git  * [new branch]      HEAD -> r3-lane3-pass-graduation 
+
+quilt-llvm-wt-r4lane1|branch:r4-lane1-external-differential|rc:0|remote:  remote: Create a pull request for 'r4-lane1-external-differential' on GitHub by visiting:         remote:      https://github.com/SuperInstance/quilt-llvm/pull/new/r4-lane1-external-differential         remote:  To github.com:SuperInstance/quilt-llvm.git  * [new branch]      HEAD -> r4-lane1-external-differential 
+
+quilt-llvm-wt-rivalry|branch:gam-cell-rivalry|rc:0|remote:  remote: Create a pull request for 'gam-cell-rivalry' on GitHub by visiting:         remote:      https://github.com/SuperInstance/quilt-llvm/pull/new/gam-cell-rivalry         remote:  To github.com:SuperInstance/quilt-llvm.git  * [new branch]      HEAD -> gam-cell-rivalry 
+
+quilt-rust-selfimprove|branch:selfimprove-harness|rc:0|remote:  remote: Create a pull request for 'selfimprove-harness' on GitHub by visiting:         remote:      https://github.com/SuperInstance/quilt-rust/pull/new/selfimprove-harness         remote:  To https://github.com/SuperInstance/quilt-rust.git  * [new branch]      HEAD -> selfimprove-harness 
+
+quilt-verilog|branch:g3-kinduction|rc:0|To github.com:SuperInstance/quilt-verilog.git    52c1aad..736d0a9  HEAD -> g3-kinduction 
+
+adinkra-math-pypi|branch:pr-fix|rc:0|Everything up-to-date 
+
+fleet-coordinate-js|branch:pr-fix|rc:0|remote:  remote: Create a pull request for 'pr-fix' on GitHub by visiting:         remote:      https://github.com/SuperInstance/fleet-coordinate-js/pull/new/pr-fix         remote:  To github.com:SuperInstance/fleet-coordinate-js.git  * [new branch]      HEAD -> pr-fix 
+
+fleet-config|branch:pr-fix|rc:0|remote:  remote: Create a pull request for 'pr-fix' on GitHub by visiting:         remote:      https://github.com/SuperInstance/fleet-config/pull/new/pr-fix         remote:  To github.com:SuperInstance/fleet-config.git  * [new branch]      HEAD -> pr-fix 
+
+fleet-constraint|branch:pr-fix|rc:0|remote:  remote: Create a pull request for 'pr-fix' on GitHub by visiting:         remote:      https://github.com/SuperInstance/fleet-constraint/pull/new/pr-fix         remote:  To github.com:SuperInstance/fleet-constraint.git  * [new branch]      HEAD -> pr-fix 
+
+si-readme.archived|branch:archive/si-readme-20260820|rc:0|To https://github.com/SuperInstance/SuperInstance.git    1aa136b..615f46a  HEAD -> archive/si-readme-20260820 
+
+lucid|branch:dpo-1|rc:0|remote:  remote: Create a pull request for 'dpo-1' on GitHub by visiting:         remote:      https://github.com/SuperInstance/lucid/pull/new/dpo-1         remote:  To github.com:SuperInstance/lucid.git  * [new branch]      HEAD -> dpo-1 
+
+quilt|branch:quilt-jupyter-conception|rc:1|To https://github.com/SuperInstance/quilt.git  ! [remote rejected] HEAD -> quilt-jupyter-conception (refusing to allow an OAuth App to create or update workflow `.github/workflows/ci.yml` without `workflow` scope) error: failed to push some refs to 'https://github.com/SuperInstance/quilt.git' 
+
+quilt-tournament|checkpoint-commit|made
+quilt-tournament|gh-create|https://github.com/SuperInstance/quilt-tournament To github.com:SuperInstance/quilt-tournament.git  * [new branch]      HEAD -> master branch 'master' set up to track 'origin/master'. 
+
+quilt-deck|checkpoint-commit|nothing-to-commit
+quilt-deck|gh-create|https://github.com/SuperInstance/quilt-deck To github.com:SuperInstance/quilt-deck.git  * [new branch]      HEAD -> main branch 'main' set up to track 'origin/main'. 
+
+deckboss-site|checkpoint-commit|nothing-to-commit
+deckboss-site|gh-create|https://github.com/SuperInstance/deckboss-site To github.com:SuperInstance/deckboss-site.git  * [new branch]      HEAD -> master branch 'master' set up to track 'origin/master'. 
+
+quilt-canvas|checkpoint-commit|nothing-to-commit
+quilt-canvas|gh-create|https://github.com/SuperInstance/quilt-canvas To github.com:SuperInstance/quilt-canvas.git  * [new branch]      HEAD -> main branch 'main' set up to track 'origin/main'. 
+
+svelte-quilt|checkpoint-commit|nothing-to-commit
+svelte-quilt|gh-create|https://github.com/SuperInstance/svelte-quilt To github.com:SuperInstance/svelte-quilt.git  * [new branch]      HEAD -> main branch 'main' set up to track 'origin/main'. 
+
+quilt-dpcpp|gh-create-empty|https://github.com/SuperInstance/quilt-dpcpp 

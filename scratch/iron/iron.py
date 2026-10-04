@@ -7,7 +7,14 @@ import json, os, random, re, subprocess, sys, time, urllib.request
 from concurrent.futures import ThreadPoolExecutor
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
-KEY = "sk-0a57cd44bc674f5caffd9b0ec10e284c"
+def _key_from_keytxt(name="DEEPSEEK_KEY"):
+    # House law: keys read at use-time from key.txt, never hardcoded.
+    for line in open("/mnt/c/Users/casey/key.txt"):
+        if line.startswith(name):
+            return line.split("=", 1)[1].strip()
+    raise SystemExit(f"{name} missing from key.txt")
+
+KEY = _key_from_keytxt()
 MINDS = ["claude", "kimi", "opencode", "deepseek"]
 
 CONTESTANT = ("You are a contestant in IRON-SHARPENING, a blind duel between AI minds on the deep "

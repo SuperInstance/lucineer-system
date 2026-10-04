@@ -1,0 +1,600 @@
+quilt-research-canons|-|2026-09-29|Python|Canonical research artifacts from the Mavis × Casey session 
+tripartite-rs-archive|-|2026-09-29|Rust|Tripartite agent council: weighted consensus engine for mult
+quilt-gpu-lab|-|2026-09-29|Python|
+knowledge-vault-rs|-|2026-09-29|Rust|Source repo for knowledge-vault: SQLite + BGE-Micro embeddin
+model-registry-archive|-|2026-09-29|Rust|Model registry for LLM artifact management (local + S3 stora
+AI-Writings|-|2026-09-29|HTML|Creative writing, essays, and philosophical explorations fro
+SmartCRDT|-|2026-09-29|TypeScript|Utilizing CRDT technology for self-improving AI
+quilt-elf|-|2026-09-29|TypeScript|The invisible elves — Cloudflare Workers doing background ho
+quilt-swarm|-|2026-09-29|TypeScript|Quilt ecosystem component: 
+quilt-fleet|-|2026-09-29|TypeScript|Quilt runtime for multi-tier federation orchestrator — disco
+quilt-rag|-|2026-09-29|TypeScript|Quilt runtime for production RAG — loader, chunker, embedder
+git-agent|-|2026-09-29|Python|🦀 Repo-native agent that lives in git — the shell IS the age
+mavis-pincher-pages|-|2026-09-29|HTML|SuperInstance fleet tool POC (Mavis, 2026-09-28)
+quality-gate-stream|-|2026-09-29|Python|Quality Gate Stream — novelty × correctness × completeness ×
+quilt-jepa|-|2026-09-29|JavaScript|The latent grid — a tiny JEPA world model living inside an a
+exoj|-|2026-09-29|JavaScript|ExoJ — external non-collapsing vectorized scratch-paper: Fie
+quilt-tools|-|2026-09-29|JavaScript|Ten working Quilt tool prototypes + springboard lab (JEV/Mot
+quilt-c|-|2026-09-29|C|Polyformalism: Quilt in C (bare metal, the mathematical core
+quilt-i2i|-|2026-09-29|Erlang|Low-level Quilt cells in distant language families (Forth/Pr
+CognitiveEngine|-|2026-09-29|Python|Core cognitive processing engine.
+substrate-llm-client|-|2026-09-29|TypeScript|Multi-provider LLM client with JEV gating
+cns-substrate|-|2026-09-29|Python|CNS bus with substrate cell integration. Every USCP packet =
+quilt-rust|-|2026-09-29|Rust|Rust port of Quilt — a reactive, typed, cellular runtime.
+quilt-atlas|-|2026-09-29|JavaScript|The living map of the SuperInstance account: 4000+ repos, fa
+qthe-codec|-|2026-09-29|Python|
+fleet-seeds|-|2026-09-29|JavaScript|Seed files + the Tap Tavern: the fleet talks to itself, on t
+MicroMoth-quilt|-|2026-09-29|Python|
+Syzygy|-|2026-09-29|C|**Fused single-pass execution for sensor streams. System-agn
+breakthrough-prospector|-|2026-09-29|JavaScript|
+hermit|-|2026-09-29|TypeScript|
+SuperInstance|-|2026-09-29|HTML|
+plato-portal|-|2026-09-29|Python|Python SDK for persistent multi-agent systems — agents with 
+quilt|-|2026-09-29|HTML|A spreadsheet where every cell is a live, addressable capabi
+jev-garden|-|2026-09-29|JavaScript|The living JEV training system — grows from quilt judgments,
+webgpu-profiler|-|2026-09-29|Python|GPU profiler for WebGPU applications - Real-time GPU monitor
+PersonalLog|-|2026-09-29|TypeScript|Personal logging and tracking application for the Cocapn fle
+polln|-|2026-09-29|TypeScript|SuperInstance Visualized in Spreadsheets for Tile Intelligen
+pong-quilt|-|2026-09-29|JavaScript|
+qthe-verify|-|2026-09-29|JavaScript|
+PuddnHead|-|2026-09-29|-|  The Fool is the Ground Truth. -Embedding: His fingerprints
+jev-quilt|-|2026-09-29|Python|JEV for quilt as understood output: cellular-first decision 
+chiaroscuro|-|2026-09-29|HTML|Real-time webcam-to-text rendering — characters are shapes, 
+mavis-pincher|-|2026-09-29|TypeScript|SuperInstance fleet tool POC (Mavis, 2026-09-28)
+quilt-forge|-|2026-09-29|JavaScript|
+quilt-cloudflare|-|2026-09-28|TypeScript|A Quilt reactive runtime on Cloudflare Workers, D1, Vectoriz
+cellforge|-|2026-09-28|Python|Cellular-substrate ML training. The cell matrix outlives eve
+mavis-essay-scout|-|2026-09-28|Python|SuperInstance fleet tool POC (Mavis, 2026-09-28)
+pincher|-|2026-09-28|Rust|Vector Database as runtime, LLM as compiler
+qthe|-|2026-09-28|JavaScript|QTHE — Quilt-Ternary Hyper-Embeddings: the 8-bit primitive (
+glyphspace|-|2026-09-28|-|Spatial reasoning over glyph grids: raycast, path-trace, dyn
+glyphcast|-|2026-09-28|-|Next-frame prediction and frame-rate synthesis for glyph-dom
+coev|-|2026-09-28|JavaScript|Adversarial coevolution engine with champion-integrity audit
+fleet-hooks|-|2026-09-28|Shell|Fleet git hooks: fail-closed credential key-scan pre-commit 
+quilt-codespace-lab|-|2026-09-28|Shell|The codespace as an ephemeral honest worker: postCreate expe
+mavis-substrate-walker|-|2026-09-28|Python|A substrate-agnostic walker for the Quilt. STITCH/WITNESS/PR
+duke-lab|-|2026-09-28|JavaScript|
+tidepool|-|2026-09-28|JavaScript|
+jeviter|-|2026-09-28|JavaScript|JEV (Joint Embedding Validator) UI — promote/REVIEW/DISCUSS/
+fleet-static-host|-|2026-09-28|HTML|
+api-orchestra|-|2026-09-28|Python|API Orchestra — multi-LLM creative chorus using ZAI, DeepInf
+quilt-arcade|-|2026-09-28|HTML|Five spreadsheet games (tictactoe, reversi, connect4, gomoku
+elephant|-|2026-09-28|Python|Personal JEPA vs the zeitgeist. Every reading is someone's r
+quantum-audio-honesty|-|2026-09-28|JavaScript|
+cargo-line-tycoon|-|2026-09-28|HTML|Cargo Line Tycoon - polyformal Quilt-native game + classroom
+paced-seam|-|2026-09-28|JavaScript|
+quilt-qcells|-|2026-09-28|Python|CELL-MAPPING implementation — quantum ops as quilt cells (mo
+tessera|-|2026-09-28|Python|
+fleet-murmur|-|2026-09-28|Python|CCC agent workspace — logs, bottles, fleet coordination data
+quilt-rips|-|2026-09-28|Python|TDA as a 5-opcode quilt cell: GUDHI persistence with stone-v
+crab-traps|-|2026-09-28|HTML|🪝 Progressive lure prompts for the Cocapn Fleet PurplePinche
+ternary-wiki|-|2026-09-27|Shell|
+quilt-blueprint|-|2026-09-27|JavaScript|The blueprint-to-metal compiler: GraphQL-shaped schema in, b
+eos-seed|-|2026-09-27|Rust|
+micrograd-quilt|-|2026-09-27|Jupyter No|A tiny scalar-valued autograd engine and a neural net librar
+hermes-construct|-|2026-09-27|Python|Hermes understands the cave walls are a shell when seen from
+laya4quilt|-|2026-09-27|Python|
+Scrapcraft|-|2026-09-27|JavaScript|Browser-based 3D voxel game set in an industrial scrapyard —
+quilt-esp32|-|2026-09-27|C|A Quilt reactive runtime for ESP32-class microcontrollers. n
+quilt-verilog|-|2026-09-27|Python|Quilt in pure Verilog-2005 — 5+1 opcodes, no vendor code. Fo
+quilt-stone|-|2026-09-27|JavaScript|THE STONE - the canonical receipt-chain module: one zero-dep
+superinstance-advisor|-|2026-09-27|HTML|A cell in the SuperInstance substrate. Patches into the cano
+erised-mirror|-|2026-09-27|JavaScript|Erised, the fleet mirror: git vitals, 45/45 receipt chains v
+cargo-line-tycoon-substrate-ts|-|2026-09-27|JavaScript|Cargo Line Tycoon substrate - TypeScript port
+quilt-dba|-|2026-09-27|JavaScript|The developmental agent as a sheet: 12-cell seed, conservati
+quilt-murmur|-|2026-09-27|JavaScript|the murmur lineage, metamorphosed into a reactive spreadshee
+yiluodi|-|2026-09-27|JavaScript|已落地 — the hello-world for SuperInstance: cellular arrays wit
+quilt-arch|-|2026-09-27|JavaScript|The Complete Solution conformance core: Q32 bit-exact, JS==P
+ropesight|-|2026-09-27|JavaScript|The Ropesight - change-ringing as fleet coordination: permut
+superinstance-website|-|2026-09-26|HTML|Static website for superinstance.ai — fleet dashboard, ecosy
+quilt-silicon|-|2026-09-26|JavaScript|The silicon map executed without silicon: SIMT warp emulator
+quilt-raw|-|2026-09-26|JavaScript|The raw executable line v->L->G->v': seven ops per tick, Q32
+quilt-fiction|-|2026-09-26|HTML|The quilt as operational fiction — instances-as-sheets, Delt
+moth-waveform|-|2026-09-26|Python|Quantum resonance hearing for spline-tension waveform extrap
+SuperInstance-papers|-|2026-09-26|TypeScript|Automatically Deconstruct logic into Spread Sheet Tiles and 
+quiltcall|-|2026-09-26|Python|
+quilt-doctor|-|2026-09-26|Python|
+quilt-bootstrap|-|2026-09-26|Python|Bring up the Quilt fleet in a fresh sandbox. One command.
+quilt-brewer|-|2026-09-26|Python|Grow new substrate walkers from recipes. The 6th-layer subst
+quilt-cowboy|-|2026-09-26|Python|The cowboy: reflection loop, morning ritual, and real-time r
+SuperInstance.github.io|-|2026-09-26|HTML|SuperInstance — the front door. Brand kit, honest landscape 
+quilt-show|-|2026-09-26|HTML|The Quilt Show — witty educational episodes on natural progr
+quilt-learn|-|2026-09-26|JavaScript|The learning sheet: backprop as reactive cells, quantum-seed
+ability-transfer|-|2026-09-25|C|🏗️ Simulation lab — designing modular ability transfer betwe
+fleet-lighthouse|-|2026-09-25|Python|
+quilt-mesh|-|2026-09-25|JavaScript|A broker-less, CRDT-based mesh protocol for Quilt cells. Lam
+quilt-arena|-|2026-09-25|JavaScript|
+gauge|-|2026-09-25|Python|
+fleet-gateway|A|2026-09-25|Python|Unified API gateway for Pelagic fleet — service discovery, r
+loom-core|-|2026-09-25|JavaScript|The Divergent Logic Foundry, standalone: a GAN over logic it
+quilt-loom|-|2026-09-25|JavaScript|The Divergent Logic Foundry — a GAN over logic itself: a bre
+quilt-cortex|-|2026-09-25|JavaScript|Tri-nervous-system chord spine — cortex absorbed as a pure q
+quilt-quant|-|2026-09-25|JavaScript|The trading desk as a spreadsheet: backtest-as-cells, walk-f
+quilt-jev-toolkit|-|2026-09-25|Python|JEV (TypeSafe) canon oracle toolkit for Quilt
+quilt-cell-harness|-|2026-09-25|Python|Non-hub-and-spoke cell architecture for Quilt. Engine with P
+superinstance-voyage|-|2026-09-25|Python|Voyage blog — Casey's writing-from-the-fleet piece
+the-tap-pub|-|2026-09-25|HTML|The Tap — Casey's editorial publication hub
+loom-caching-rollout|-|2026-09-25|Shell|Production-grade shell script for phased 25% canary rollout 
+quilt-playtest|-|2026-09-25|-|Engine investigation: 12 playtest patches against SuperInsta
+rd|-|2026-09-25|Shell|
+quilt-mhs|-|2026-09-25|Rust|quilt × Anthropic's Model Hardware Standard: quilt cells dri
+quilt-llvm|-|2026-09-25|Rust|quilt-llvm — a compiler infrastructure where the IR is a fab
+fleet-radio|-|2026-09-25|HTML|
+experiment-wheel|-|2026-09-25|Python|
+quilt-studio|-|2026-09-24|JavaScript|
+quilt-executor|-|2026-09-24|Python|
+quilt-quantumaudio-demo|-|2026-09-24|Python|Demo of MOTH quantumaudio (quantum audio encoding) integrate
+quilt-live-canon|-|2026-09-24|JavaScript|The Live Canon — read AI-Writings as a navigable cell fabric
+quilt-pincher|-|2026-09-24|TypeScript|A reflex engine built entirely from Quilt cells. Federates a
+profile-lane|-|2026-09-24|Python|Long-running lane that grows superinstance/superinstance REA
+the-beyond|-|2026-09-24|HTML|Quilt fleet member — auto-swept from local commit. Mavis × C
+quilt-jev-toolkit-push|-|2026-09-24|Python|Quilt fleet member — auto-swept from local commit. Mavis × C
+quilt-quantumaudio-demo-push|-|2026-09-24|Python|Quilt fleet member — auto-swept from local commit. Mavis × C
+quilt-makepad-demo|-|2026-09-24|HTML|Quilt fleet member — auto-swept from local commit. Mavis × C
+quilt-claw-cells-game|-|2026-09-24|HTML|Quilt fleet member — auto-swept from local commit. Mavis × C
+quilt-classroom|-|2026-09-24|HTML|Quilt fleet member — auto-swept from local commit. Mavis × C
+quilt-schema-registry|-|2026-09-24|Python|Canonical 14-tuple schema + envelope contract. The 5th-layer
+substrate-vectors|-|2026-09-24|TypeScript|1024-d vector ops, BGE-Large compatible
+quilt-zai-writer|-|2026-09-24|Python|Creative canon essay writing via ZAI GLM-4.5 — long-form, do
+quilt-tts|-|2026-09-24|Python|Canon to speech — gives the canon gate a voice via ElevenLab
+quilt-tracker|-|2026-09-24|Python|The needle thread — append-only witness log for substrate wa
+quilt-trace|-|2026-09-24|Python|The organism's eyes — visualize any substrate walker's witne
+quilt-subleq|-|2026-09-24|Rust|Quilt on Subleq, and Subleq on Quilt. The substrate becomes 
+quilt-spreadsheet-inference|-|2026-09-24|Python|Quilt spreadsheet inference engine: JEV/MOTH/Jepa/LLM cells.
+quilt-spreadsheet|-|2026-09-24|Python|The Quilt IDE as spreadsheet substrate — cells as programs w
+quilt-sandbox|-|2026-09-24|Python|Canon that runs — extracts Python code blocks from canon lor
+quilt-quantum-canary-bridge|-|2026-09-24|Python|Bridge exploration: 0/15 bridging strategies match fleet can
+quilt-quantum-canary|-|2026-09-24|Python|Quantum polyformalism canary — empirical finding: 0/5 quantu
+quilt-quantum-audio|-|2026-09-24|Python|Quilt canon walks through the quantum audio substrate (Moth 
+quilt-port|-|2026-09-24|Python|The user's port to their quilts. Open-source SDK + cost-plus
+quilt-perception|-|2026-09-24|Python|Perception substrate walker. Brewed by quilt-brewer. Routes 
+quilt-papers|-|2026-09-24|Python|Convert canon lore to academic paper format — title, abstrac
+quilt-organism|-|2026-09-24|Python|The organism layer of Quilt — substrate walker over corpora
+quilt-orchestrator|-|2026-09-24|Python|Substrate walker brewed by quilt-brewer
+quilt-optimization|-|2026-09-24|Python|NVIDIA cuOpt (LP/MILP/QP/routing) as a Quilt substrate
+quilt-multi-oracle|-|2026-09-24|Python|Multi-model JEV oracle — probes canon across N LLMs in paral
+quilt-linker|-|2026-09-24|Python|Layer 3 of the polyformalism — a linker-level 5-opcode linke
+quilt-iterator|-|2026-09-24|Python|Self-improving canon via ZAI generation + multi-model chord 
+quilt-gemini-worker|-|2026-09-24|Python|Gemini 2.5 Flash as a substrate walker canon-worker — genera
+quilt-fluidics|-|2026-09-24|Python|Coupling Charter: Ferre/Filter/State + Reynolds rider + 3-4-
+quilt-fleet-snapshot|-|2026-09-24|Python|Bake the Quilt fleet state into a portable tarball. Solves t
+quilt-fleet-publish|-|2026-09-24|Python|One tool to publish all quilt repos to npmjs/PyPI/crates.io
+quilt-fleet-conductor|-|2026-09-24|Python|Orchestrates all Quilt canon tools as a single workflow
+quilt-fable|-|2026-09-24|Python|Multi-voice narrative walker brewed by quilt-brewer
+quilt-egg-rust|-|2026-09-24|Rust|Rust port of the Quilt Egg substrate — DNA-first alignment, 
+quilt-egg|-|2026-09-24|Python|The smallest Quilt substrate that can BE — DNA-first alignme
+quilt-cli|-|2026-09-24|Python|Unified CLI for the SuperInstance Quilt cellular framework
+quilt-claw|-|2026-09-24|TypeScript|Quilt-native knowledge crew. The agents are cells. The bus i
+quilt-canon-witness|-|2026-09-24|Python|Cryptographic witness log — append-only ledger for canon eve
+quilt-canon-trace|-|2026-09-24|Python|Substrate walker trajectory — walks canon graph, visualizes 
+quilt-canon-search|-|2026-09-24|Python|TF-IDF search over Quilt substrate walker canon lore
+quilt-canon-radio|-|2026-09-24|Python|TTS broadcast of Quilt canon lore via ElevenLabs
+quilt-canon-mcp|-|2026-09-24|Python|MCP server exposing Quilt substrate walker canon as tools fo
+quilt-canon-keywords|-|2026-09-24|Python|Keyword extraction from canon lore with doctrine anchoring
+quilt-canon-iterator|-|2026-09-24|Python|Scan existing canon, find weakest, improve via ZAI + multi-m
+quilt-canon-i18n|-|2026-09-24|Python|Translate canon lore into 12 languages via DeepInfra
+quilt-canon-graph|-|2026-09-24|Python|Knowledge graph of Quilt canon lore with HTML viewer
+quilt-canon-gen|-|2026-09-24|Python|Creative canon generation (ZAI) + multi-model JEV verificati
+quilt-canon-game|-|2026-09-24|JavaScript|Interactive browser game — walk the substrate, collect canon
+quilt-canon-feed|-|2026-09-24|Python|RSS/Atom/JSON feeds for canon lore — streaming substrate
+quilt-canon-fed|-|2026-09-24|Python|Peer-to-peer canon federation — network/p2p substrate
+quilt-canon-book|-|2026-09-24|Python|Compiles Quilt canon lore into a print-ready book
+quilt-canary-port|-|2026-09-24|Python|Polyformalism canary reference implementations in 5+ languag
+quilt-canary|-|2026-09-24|TypeScript|FNV-1a 64-bit canary — the minimum polyformalism artifact in
+quilt-bridge|-|2026-09-24|Python|Same canary, many substrates — translates canon lores betwee
+quilt-apps|-|2026-09-24|JavaScript|Production Quilt apps: portable inventory guardian, offline 
+quilt-ai|-|2026-09-24|TypeScript|AI cells for Quilt — 4 providers, 8 cell kinds, one uniform 
+polyvocoder-sql|-|2026-09-24|Python|SQL polyformalism port — SQLite byte-exact canon archive
+polyvocoder-rust|-|2026-09-24|Rust|Rust port of polyvocoder — universal head for canon-aware mu
+polyvocoder-csharp|-|2026-09-24|C#|C#/.NET 9 port of polyvocoder — universal head for canon-awa
+polyvocoder-bindings|-|2026-09-24|TypeScript|TypeScript bindings for the Polyvocoder universal head (sche
+polyvocoder|-|2026-09-24|Python|Universal head for the Quilt substrate walker (JEV + numpy V
+mavis-tile-pipeline|-|2026-09-24|Python|Tile pipeline: discrete knowledge tiles for canon. PLATO pat
+mavis-tfm|-|2026-09-24|Python|Mavis TFM/SFM — Time-First and Simulation-First Models for c
+mavis-tap-pulse|-|2026-09-24|Python|Tap pulse: generates canon via chord-validated 3-voice pulse
+mavis-skill-miner|-|2026-09-24|Python|Skill miner: extracts patterns from Mavis memory and propose
+mavis-sfm|-|2026-09-24|Python|Mavis TFM/SFM — Time-First and Simulation-First Models for c
+mavis-self-review|-|2026-09-24|Python|Self-review tool for Mavis: analyzes past memory + code for 
+mavis-persona-preserver|-|2026-09-24|Python|Persona preserver: packages Mavis identity (doctrines, princ
+mavis-flywheel|-|2026-09-24|Python|Automated research loop with multi-LLM verification. When N 
+mavis-fleet-canary|-|2026-09-24|Python|Meta-canary: verifies polyformalism across the entire Quilt 
+mavis-fleet|-|2026-09-24|Python|Multi-substrate autonomous research & RSI organizational sys
+mavis-erised|-|2026-09-24|Python|Agent playground: zero-shot agents reach for tools; we captu
+mavis-canary-watcher|-|2026-09-24|Python|Canary watcher: monitors fleet polyformalism over time, dete
+mavis-axui-feedback|-|2026-09-24|Python|Mavis — bidirectional projection: workbook ↔ runtime with ty
+luciddream|-|2026-09-24|HTML|Where the substrate dreams out loud — a feature of superinst
+ax-quilt|-|2026-09-24|Python| a Designer Agent moves cells around the spreadsheet like Ru
+quilt-readme-expansions|-|2026-09-24|-|Batch PR-ready README expansions for the quilt-* fleet, brew
+polyglot-review|-|2026-09-24|HTML|Code reviews from 12 language-perspective lenses in parallel
+wasm-cert-wedge|-|2026-09-24|Python|
+quilt-director|-|2026-09-24|HTML|Director of fleets — Python spirals of knowledge
+quilt-transformer-arena|-|2026-09-24|Python|Adversarial GAN lane: quilt-transformer paradigm — archival 
+quilt-seed|-|2026-09-24|Python|The four-scalar genome + the vessel + the bearing + the lega
+sunset-ecosystem|-|2026-09-24|Python|Trinity-architecture agent ecosystem: ethos, pathos, logos. 
+quilt-fold|-|2026-09-24|Python|The Fold framework: 4-primitive Frame + Fold (reveal hidden 
+quilt-legalese|-|2026-09-24|HTML|
+quilt-mesh-bridge|-|2026-09-24|Python|Bridges cellular Quilt cells over a mesh network
+quilt-voice-agent|-|2026-09-24|Python|Voice agent that listens to UNO Q context packets (HTTP) — b
+quilt-fleet-sim|-|2026-09-24|Python|Virtual UNO Q edge nodes for fleet-level testing (no hardwar
+quilt-edge-node|-|2026-09-24|Python|Quilt edge node — plug-and-play UNO Q Quilt cell with networ
+quilt-edge-observer|-|2026-09-24|Python|Quilt edge observer — vessel observability tap pattern (UNO 
+quilt-fleet-orchestrator|-|2026-09-24|Python|Quilt fleet orchestrator — recognizes nodes by network-keyed
+quilt-edge-ml|-|2026-09-24|Python|Quilt edge ML — out-of-core learning, ring buffer, first/las
+quilt-full-stack-demo|-|2026-09-24|-|The canonical hello-world for SuperInstance: FLUX VM + conse
+synesis-examples|-|2026-09-24|Rust|Standalone Rust example files for the synesis workspace: kno
+synesis-context-docs|-|2026-09-24|Mermaid|Slice-of-life design docs from the synesis workspace root: a
+quilt-echovision|-|2026-09-24|HTML|
+poly-gan-shipyard|-|2026-09-24|Python|A poly-GAN where 12 complementary agents shake the rigging o
+nexus-vessel|-|2026-09-24|Python|
+flow-state-orchestra|-|2026-09-23|Python|4 cheap LLM instruments playing basketball combo as r̂-first
+moth-jev-adapters|-|2026-09-23|Python|
+quilt-discovery-demo|-|2026-09-23|Python|Anthropic's 949-agent discovery pipeline recreated in Quilt 
+kev-substrate|-|2026-09-23|Python|tiny Jev-like family of decision models built on top of Qwen
+moth-ledger|-|2026-09-23|Python|MOTH findings as quilt-native receipted cells — the receipt 
+purplepincher-supersite|-|2026-09-23|HTML|The educational supersite that evolves with the SuperInstanc
+moth-corpus|-|2026-09-23|Python|Corpus adapter pack: turn target repos into receipted attack
+moth-honest|-|2026-09-23|Python|The evaluator: planted-bug ground truth + honest-cost scorin
+moth-cells|-|2026-09-23|Python|Kernel 1: cellular predation over corpus terrain — hunters, 
+moth-runner|-|2026-09-23|Python|P0 #4: the adversarial runner — campaigns, witness.jsonl, ho
+quilt-wave-canvas|-|2026-09-23|Python|Quilt matrix as quantum phase field - standalone cell
+quilt-canvas-ascetic|-|2026-09-23|Python|quilt-transformer arena engine
+quilt-canvas-adversary|-|2026-09-23|Python|quilt-transformer arena engine
+kev-receipts|-|2026-09-23|Python|quilt-transformer arena engine
+research|-|2026-09-23|Python|Preserved workspace artifact
+substrate-walker|-|2026-09-23|Python|3D ASCII canon city. JEV frontal-cortex generates districts 
+superinstance-polyformalism-harness|-|2026-09-23|JavaScript|Unified harness for the 7-port polyformalism fleet — byte-ex
+quilt-jev-oracle|-|2026-09-23|Python|JEV (Joint Embedding Validator) oracle as a Quilt cell — com
+quilt-substrate-walker|-|2026-09-23|Python|Substrate walker canon-discovery system for Quilt
+quilt-canon-explorer|-|2026-09-23|HTML|A2A-friendly canon archive browser for the Quilt substrate w
+synthcity|-|2026-09-22|JavaScript|An Infinite Procedural Cyberpunk City
+fleet-research|-|2026-09-22|JavaScript|Deep research and analysis of the SuperInstance/Lucineer fle
+ordewell4quilt|-|2026-09-22|TypeScript|Multi-agent task orchestration for coding agents. Turn one g
+midden|-|2026-09-22|JavaScript|
+candor|-|2026-09-22|JavaScript|candor v0 — the dream's physics layer: transcript lines as g
+night-city|-|2026-09-22|TypeScript|3D website game featuring cyberpunk-themed city filled with 
+kev-substrate-competition|-|2026-09-22|Python|Cross-API CUDA/PTX native competition — challenge model APIs
+code-city|-|2026-09-22|JavaScript|Your codebase as a living 3D city. Files become buildings, f
+synesis-scripts|-|2026-09-22|Shell|Benchmark, performance-test, and dev-setup shell scripts fro
+synesis-tools|-|2026-09-22|Rust|Internal tool reference docs for the synesis tripartite cons
+synesis-templates|-|2026-09-22|-|Extraction and conversion templates used to peel synesis sub
+synesis-migration-guides|-|2026-09-22|-|Version migration guide for the synesis workspace (0.1.0 to 
+synesis-prompts|-|2026-09-22|-|Agent prompt designs used in the synesis council system
+synesis-manifests|-|2026-09-22|-|Hardware capability manifests for synesis tier calculations
+synesis-phases|-|2026-09-22|-|Roadmap documents for the synesis multi-phase build plan
+synesis-status|-|2026-09-22|-|Build status, audit reports, changelogs, and bug-hunt fix re
+synesis-sessions|-|2026-09-22|-|Session-by-session implementation summaries
+UniRL|-|2026-09-22|-|UniRL is a Framework for Unified Multimodal Model Reinforcem
+synesis-cloud-app|-|2026-09-22|TypeScript|Cloudflare Workers backend for synesis (billing, routing, se
+synesis-benches|-|2026-09-22|Rust|Benchmark suite for synesis core operations (consensus, quer
+synesis-architecture|-|2026-09-22|-|High/medium/low-level architecture specs for the synesis wor
+synesis-agents|-|2026-09-22|-|Agent persona specifications: Pathos, Logos, Ethos — the tri
+synesis-docs|-|2026-09-22|HTML|Documentation site and architecture specs for the synesis wo
+synesis-research|-|2026-09-22|-|Design research for ~58 planned Rust crates: actor-rs, alloc
+synesis|-|2026-09-22|Rust|Multi-agent LLM orchestration workspace: council consensus, 
+paradigm-edges-turbovec|-|2026-09-22|Python|Paradigm-Edges + TurboQuant edge memory. Similar past edges 
+madlibs-gan-turbovec|-|2026-09-22|Python|Madlibs-GAN + TurboQuant paradigm memory. Similar past games
+peanut-gallery-turbovec|-|2026-09-22|Python|Peanut Gallery + TurboQuant critique memory. Similar past cr
+jev-turbovec|-|2026-09-22|Python|JEV-Diffusion + TurboQuant substrate memory. Find similar pa
+turbovec-substrate|-|2026-09-22|Python|TurboQuant for substrate cells — 8x compression, FNV-1a prev
+quilt-cowboy-jev|-|2026-09-22|Python|quilt-cowboy with JEV-Diffusion integration. The cowboy synt
+hermes-nmi-substrate|-|2026-09-22|Rust|Hermes NMI with substrate cell integration. Telemetry frames
+slackwater-substrate|-|2026-09-22|Python|Multi-track MIDI perception with substrate cell integration.
+image-distillation-loop-jev|-|2026-09-22|Python|Wesley learns to generate images via JEV-Diffusion (LLM-as-G
+madlibs-gan-npm|-|2026-09-22|Python|MADLIBS-GAN: higher-abstraction Madlibs for AI paradigms.
+peanut-gallery-npm|-|2026-09-22|Python|Peanut Gallery: multi-model adversarial creativity.
+jev-gan-cli|-|2026-09-22|JavaScript|Unified CLI for the JEV-GAN family of tools (diffusion, gall
+jev-diffusion|-|2026-09-22|Python|Substrate-segmented image description via JEV + LLMs as GAN.
+jev-diffusion-pypi|-|2026-09-22|Python|JEV-Diffusion PyPI package — substrate-segmented image descr
+jev-diffusion-rust|-|2026-09-22|Rust|JEV-Diffusion Rust bindings — substrate-segmented image desc
+jev-diffusion-npm|-|2026-09-22|Python|JEV-Diffusion npm wrapper — substrate-segmented image descri
+paradigm-edges|-|2026-09-22|Python|Find the edges of AI paradigms — systematic probing for hall
+madlibs-gan|-|2026-09-22|Python|MADLIBS on a higher abstraction — models fill in paradigms f
+jev-gan|-|2026-09-22|Python|The substrate GAN — JEV decides, JEPA predicts, multi-LLM pl
+peanut-gallery|-|2026-09-22|Python|Multi-model adversarial creativity — the peanut gallery for 
+kev-substrate-mojo|-|2026-09-22|Mojo|Mojo port of kev-substrate — vendor-hardware GPU native, hor
+integration-examples|-|2026-09-22|Rust|Integration examples showing how to combine the synesis crat
+usemeter-archive|-|2026-09-22|Rust|Usage metering and billing aggregation library (Rust)
+privox|-|2026-09-22|-|PII/PHI redaction library for LLM pipelines (Rust)
+autoclaw|-|2026-09-22|Python|AI agents running tasks on single-GPU nanochat training auto
+SuperInstance-archive|-|2026-09-22|Python|SuperInstance portfolio snapshot: 6000+ files of operational
+quilt-canon-cli|-|2026-09-22|Python|Unified CLI for the Live Canon. `canon claim`, `canon drill`
+cocapn-health|-|2026-09-22|Python|Cocapn fleet health monitoring — vessel status, heartbeat, a
+starter-shell|-|2026-09-22|JavaScript|A starting shell for any application. Clone it, and it adapt
+flux-js|-|2026-09-22|JavaScript|FLUX.js — JavaScript bytecode VM with A2A agent messaging. 3
+OpenConstruct|-|2026-09-22|Rust|Agent onboarding platform — plug-and-play shell commands to 
+cocapn-plato|-|2026-09-22|Python|Cocapn PLATO integration — knowledge rooms, context manageme
+hwscan|-|2026-09-22|Rust|Cross-platform hardware detection and tier calculation for R
+quicunnel-archive|-|2026-09-22|Rust|Rust QUIC tunnel library with mTLS authentication, automatic
+knowledge-vault|-|2026-09-22|Rust|
+opcode-canon|-|2026-09-22|JavaScript|opcode-canon - R10 substrate canon point as code
+substrate-membership|-|2026-09-22|JavaScript|substrate-membership - substrate observation primitive
+three-forms-of-evidence|-|2026-09-22|JavaScript|Three canonical forms of evidence (R10 canon)
+substrate-revoke|-|2026-09-22|JavaScript|substrate-revoke - substrate observation primitive
+vector-novelty|-|2026-09-22|Python|Vector novelty detection — identifying novel patterns in hig
+substrate-bundle|-|2026-09-22|JavaScript|substrate-bundle - substrate observation primitive
+voice-note-app|-|2026-09-22|JavaScript|
+substrate-embedding|-|2026-09-22|TypeScript|BGE-Large-compatible embedding client
+substrate-videogame-ml|-|2026-09-22|TypeScript|ML for video games using substrate
+substrate-game-engine|-|2026-09-22|TypeScript|Room/scene engine for substrate games
+substrate-gan|-|2026-09-22|TypeScript|JEV-as-judge GAN harness
+three-forms-of-forgetting|-|2026-09-22|JavaScript|Three canonical forms of forgetting (R10 canon)
+substrate-delegate|-|2026-09-22|JavaScript|substrate-delegate - substrate observation primitive
+cell-doctrine|-|2026-09-22|JavaScript|cell-doctrine - R10 substrate canon point as code
+substrate-merger|-|2026-09-22|JavaScript|substrate-merger - substrate observation primitive
+substrate-canary-pin|-|2026-09-22|JavaScript|substrate-canary-pin - substrate observation primitive
+witness-is-prediction|-|2026-09-22|JavaScript|witness-is-prediction - R10 substrate canon point as code
+substrate-traverse|-|2026-09-22|JavaScript|substrate-traverse - substrate observation primitive
+substrate-attest|-|2026-09-22|JavaScript|ATTEST opcode (R10): add a trust score to an observation. Wi
+substrate-contest|-|2026-09-22|JavaScript|substrate-contest - substrate observation primitive
+substrate-witness-log|-|2026-09-22|JavaScript|substrate-witness-log - substrate observation primitive
+substrate-foundation|-|2026-09-22|JavaScript|Substrate foundation runtime: 11 opcodes + drift + canary
+substrate-withdraw|-|2026-09-22|JavaScript|substrate-withdraw - substrate observation primitive
+jev-ultrafast-quilt|-|2026-09-22|Python|Fastest and cheapest web agent
+substrate-rng|-|2026-09-22|TypeScript|Deterministic RNG from substrate state
+Motifcode4quilt|-|2026-09-22|-|A coding agent harness built specifically for Motif-3
+substrate-attest-rs|-|2026-09-22|Makefile|substrate-attest Rust crate - substrate observation primitiv
+substrate-revoke-rs|-|2026-09-22|Rust|substrate-revoke Rust crate - substrate observation primitiv
+substrate-witness-log-rs|-|2026-09-22|Rust|substrate-witness-log Rust crate - substrate observation pri
+substrate-contest-rs|-|2026-09-22|Rust|substrate-contest Rust crate - substrate observation primiti
+observation-primitive-rs|-|2026-09-22|Rust|observation-primitive Rust crate
+observation-primitive|-|2026-09-21|JavaScript|The canonical substrate atom: observation as fundamental pri
+gpu_bpe4quilt|-|2026-09-21|Python|tutorial for training a BPE tokenizer on multiple GPUs
+tagseq2tagseq4quilt|-|2026-09-21|Python|Framework for pretraining LLMs on graph-structured corpora (
+deckboss-app|-|2026-09-21|TypeScript|
+DMLogn8n|-|2026-09-21|Python|D&D campaign management design workspace: FastAPI + Postgres
+hybrid-lab|-|2026-09-21|Python|Hybrid AI lab: AutoGen multi-agent writer team with FastAPI 
+substrate-quantum|-|2026-09-21|TypeScript|Cellular substrate algebra extended with quantum operators —
+substrate-post-quantum|-|2026-09-21|TypeScript|Post-quantum resistance from the cellular substrate's witnes
+substrate-opposites|-|2026-09-21|TypeScript|Canonical opposites engine
+substrate-forge|-|2026-09-21|TypeScript|The bellows of the future — toolchain for substrate-aware ap
+substrate-bench|-|2026-09-21|TypeScript|Benchmark harness for the substrate math layer. Reference va
+jev-receipts|-|2026-09-21|JavaScript|JEV booking layer — receipts for the duke-lab instrument. Ha
+forgemaster|-|2026-09-21|Python|Constraint-aware agentic compiler — assembles optimal compon
+hn-sim|-|2026-09-21|Python|Goodhart-resistant HN reception forecast compass. Distributi
+twist-engine|-|2026-09-21|JavaScript|Four substrates, one law: layers + deliberate offset → inter
+quilt-engine-ports|-|2026-09-21|GDScript|The quilt 5+1 opcodes (BIND/LINK/EFFECT/VIEW/TICK + FORGET) 
+q16-trajectories|-|2026-09-21|JavaScript|Q16 breed trajectories: duke-lab's generative argument bred 
+the-tap|-|2026-09-21|TypeScript|
+erised|-|2026-09-21|HTML|A mirror for cooperative fiction — model-only TTRPG engine. 
+F5-TTS|-|2026-09-21|-|Official code for "F5-TTS: A Fairytaler that Fakes Fluent an
+quilt-playground|-|2026-09-21|HTML|A 3-tab sandbox for kids/teens/designers: compose music, dis
+constraint-theory-core|-|2026-09-20|Rust|Unified geometric constraint theory — Eisenstein lattices, d
+quilt-vm-wasm|-|2026-09-20|Rust|Layer 1 of the polyformalism — the 5 opcodes (BIND/LINK/EFFE
+hebbian-router|-|2026-09-20|Python|Hebbian routing — connection strengthening based on usage pa
+pareto-tournament|-|2026-09-20|Python|Pareto tournament selection — multi-objective optimization f
+live-canon-npm|-|2026-09-20|JavaScript|Live Canon npm package — 5 operations on AI-Writings canon
+live-canon-pypi|-|2026-09-20|Python|Live Canon PyPI package — 5 operations on AI-Writings canon
+live-canon-gh|-|2026-09-20|JavaScript|Live Canon GitHub Packages mirror
+canon-hash|-|2026-09-20|JavaScript|Live Canon state hash fetcher (Node.js)
+canon-paper|-|2026-09-20|JavaScript|Fetch individual papers from the Live Canon. @superinstance/
+canon-recs|-|2026-09-20|JavaScript|Recommend papers related to a topic or to a paper. Combines 
+crab-trap-web|-|2026-09-20|HTML|Browser-based MUD explorer for the Crab Traps — 36+ rooms to
+canon-zoo|-|2026-09-20|-|A system prompt for inspiration through play. Hit the button
+canon-suite|-|2026-09-20|JavaScript|Live Canon meta-package (Node.js)
+constraint-theory-math|-|2026-09-20|Python|Sheaf cohomology, Heyting-valued logic, and GL(9) holonomy: 
+quilt-mermaid|-|2026-09-20|-|Render a Quilt canon citation graph as a Mermaid flowchart. 
+quilt-canvas-demo|-|2026-09-20|HTML|Working HTML demo that pulls together the npm canon packages
+cell-runtime|-|2026-09-20|Python|The Quilt canon as code: cell-runtime
+porch|-|2026-09-20|Python|The Quilt canon as code: porch
+erised-cli|-|2026-09-20|Python|Terminal runner for erised — cooperative-fiction scenarios i
+ccc-os|-|2026-09-20|Python|Autonomous fleet monitoring — YAML config, REST API, Discord
+canon-claim|-|2026-09-20|JavaScript|Live Canon CLAIM+DRILL client (Node.js)
+quilt-cell|-|2026-09-20|JavaScript|The Quilt cell as a JavaScript library. 16-dial Q1.15 vector
+canon-graph|-|2026-09-20|JavaScript|Live Canon graph renderer (Node.js)
+quilt-live-canon-npm|-|2026-09-20|JavaScript|Live Canon — read the AI-Writings canon as a navigable cell 
+quilt-live-canon-pypi|-|2026-09-20|Python|Live Canon — read the AI-Writings canon as a navigable cell 
+quilt-jetson|-|2026-09-20|Rust|Quilt runtime for NVIDIA Jetson edge ML, ROS2, vision, senso
+multiagent-project-archive|-|2026-09-20|Python|Slice-of-life snapshot of a meta-circular multi-agent orches
+quilt-gan|-|2026-09-20|JavaScript|
+gesture-kit|-|2026-09-20|JavaScript|
+ai-smart-notifications-archive|-|2026-09-20|TypeScript|TypeScript package that predicts and proactively alerts abou
+circuit-breaker-archive|-|2026-09-20|Go|Go library implementing the circuit breaker pattern for faul
+arch-gateway-room-clean|-|2026-09-20|Python|MCP server that routes every request to the cheapest LLM tha
+tracer-rs-archive|-|2026-09-20|-|Research/design package for an OpenTelemetry-lite distribute
+fleet-radio-process|-|2026-09-20|-|The 9-step pipeline that turns a prompt into a deployed Flee
+federated-tinyml-vessel|-|2026-09-19|Python|F170 — Federated TinyML for the Vessel Edge. Frozen backbone
+coding-3d|-|2026-09-19|-|Repository test sur AI-Factory
+tensor-midi|-|2026-09-19|JavaScript|Tensor-based MIDI timing for musical agent dialogue cadence
+musician-soul|-|2026-09-19|Rust|Vector DB personas that learn musicians through MIDI digesti
+fleet-twin|-|2026-09-17|Python|Vector twin of the SuperInstance corpus — cloud (Workers+Vec
+lucid|-|2026-09-17|Python|LucidDreamer — the elephant's interpreter. Rooms dream. We m
+fleet-constraint|-|2026-09-17|Python|Fleet coordination safety constraint runtime
+fleet-config|-|2026-09-17|Python|Unified configuration management for Pelagic fleet — schema 
+fleet-coordinate-js|-|2026-09-17|TypeScript|Pure TypeScript port of fleet-coordinate math — Laman rigidi
+quilt-crabbox|-|2026-09-17|-|Crabbox: warm a box, sync the diff, run the suite.
+superinstance-ai-pages|-|2026-09-17|HTML|GitHub Pages for superinstance.ai
+quicunnel|-|2026-09-16|Rust|High-performance QUIC tunnel with mTLS authentication and au
+quilt-evolve|-|2026-09-16|TypeScript|Self-improvement loops for Quilt. LLMs as adversarial input 
+quilt-conversation|-|2026-09-16|Rust|Inter-agent conversation as a live sequencer — t-minus simul
+rune-quilt|-|2026-09-16|Go|the development environment for pros
+Spreadsheet-ai|-|2026-09-16|Rust|Tile Intelligence in real-time spreadsheets for simulation o
+quilt-nomad|-|2026-09-16|TypeScript|Quilt as a control plane for HashiCorp Nomad. Edit a spreads
+flx-cuda|-|2026-09-15|C++|GPU-accelerated priority scheduler for cell-graph queues. Th
+MCPMempool-quilt|-|2026-09-15|TypeScript|Auto-Scalable MCPMempool Manager that handles Priority Based
+.github|-|2026-09-15|-|SuperInstance organization profile and community health file
+Quilt-Robotic-Arm---Gesture-Controlled|-|2026-09-15|C++|Quilt version of- Gesture-controlled robotic arm with pick-a
+quilt-Countroller|-|2026-09-15|Python|
+collaborative-realtime-drawing-system-quilt|-|2026-09-15|Java|Quilt backend for Real-time collaborative drawing platform b
+ChainForgeLegend-Quilt|-|2026-09-15|JavaScript|a quilt version. ChainForgeLegend is a real-time distributed
+quilt-Kuramoto|-|2026-09-09|HTML|
+quilt-j|-|2026-09-08|J|The Quilt cell-fabric runtime in J. Array language, point-fr
+quilt-lua|-|2026-09-08|Lua|The Quilt cell-fabric runtime in Lua. Embeddable, metatables
+quilt-haskell|-|2026-09-08|Haskell|The Quilt cell-fabric runtime in Haskell. Pure functional, l
+quilt-forth|-|2026-09-08|Forth|The Quilt cell-fabric runtime in Forth. Concatenative, stack
+quilt-claude-charts|-|2026-09-08|HTML|Claude-compatible artifacts for the Quilt polyformalism — ce
+quf-vhdl|-|2026-09-08|VHDL|VHDL-2008 port of the Quilt Universal Format (QUF) — 5th sub
+quilt-rust-vibe|-|2026-09-08|Rust|The Quilt cell-fabric runtime in Rust — std-only, byte-exact
+quilt-zig|-|2026-09-08|Zig|The Quilt cell-fabric runtime in Zig — stdlib only, byte-exa
+quilt-go|-|2026-09-08|Go|The Quilt cell-fabric runtime in Go — stdlib only, byte-exac
+quilt-mojo|-|2026-09-08|Mojo|Polyformalism: Quilt in Mojo (cells as types, SIMD-friendly 
+quilt-agent-memory-archive|-|2026-09-07|-|ARCHIVED snapshots of the Mavis agent memory (MEMORY.md). Ol
+lucineer-relay|-|2026-09-04|Python|⚡ Cloudflare Worker relay between Roblox and OpenClaw for Lu
+f170-experiment-kit|-|2026-09-04|-|F170 R&D experiment kit: local agent instructions, GROQ idea
+f170-federated-tinyml-paper|-|2026-09-04|-|F170 — Federated TinyML for the Vessel Edge. The on-device l
+federated-tinyml-npm|-|2026-09-04|JavaScript|F170 — Federated TinyML JS port. 64x5 head + FedAvg + FNV-1a
+tap-frontend|-|2026-09-04|HTML|Auto-created for sync 2026-08-13
+agent-priming-toolkit-pkg|-|2026-09-04|Python|PyPI distribution of agent-priming-toolkit (F165: 4 layers, 
+cell-router-pkg|-|2026-09-04|Python|PyPI distribution of cell-router (F145: A2A bottle-router li
+mudra-vessel-bridge-pkg|-|2026-09-04|Python|PyPI distribution of mudra-vessel-bridge (11 modules, 51 tes
+lucineer-system|-|2026-09-04|Python|⚒️ Lucineer — persistent AI game-building companion. Lives i
+ec2mud|-|2026-09-04|TypeScript|MUD (multi-user dungeon) game engine built on EC2 infrastruc
+zeroclaw-dissertation|-|2026-09-04|Python|
+mudra-vessel-bridge|-|2026-09-04|Python|Plug-and-play integration of the Mudra Pro / Mudra Link neur
+mudra-bridge-core|-|2026-09-04|JavaScript|Mudra vessel bridge gesture vocabulary (Node.js)
+nmea-quilt-cell|-|2026-09-04|Python|NMEA 0183 gateway -> append-only journal cell. Byte-exact re
+agent-priming|-|2026-09-04|-|The Mechanic Doctrine — a system prompt for LLMs/agents serv
+agent-priming-toolkit|-|2026-09-04|-|The Agent Priming Toolkit — 4 layers, 3 jobs, JSON Schema, s
+sonar-vision-demo|-|2026-09-04|-|F163 — Sonar Vision as 5 Quilt Cells. Live interactive demo 
+conservation-law-demo|-|2026-09-04|-|F161 — Conservation Laws as Fences. The 3 conservation laws 
+algebra-explorer|-|2026-09-03|-|An interactive demo of the 4-move pipeline as algebra (F156)
+Full-stack-Free-Movie-Streaming-Website|-|2026-09-03|-|A modern movie and TV show streaming discovery app built wit
+quilt-cell-router|-|2026-09-03|Python|The Quilt cell-router: a BIND/LINK/GHOST/TICK engine for A2A
+eisenstein|-|2026-09-03|Rust|Zero-drift hexagonal lattice constraints via Eisenstein inte
+quilt-crew-handbook|-|2026-09-03|HTML|Quilt for the Crew — a non-technical handbook for the captai
+wheelhouse-game|-|2026-09-03|HTML|The Wheelhouse Game — weather routing for commercial fishing
+tetris-integrity|-|2026-09-03|HTML|A real Tetris game wired to the F140 negative-space pipeline
+back-deck-game|-|2026-09-03|HTML|The Back-Deck Game — gamified crew training for commercial f
+neural-quilt|-|2026-09-03|HTML|Wearable neural device + Quilt = signaling-as-play. F139. Tr
+quilt-timesfm|-|2026-09-03|Python|TimesFM (Time Series Foundation Model) is a pretrained time-
+flux-genome-rs|-|2026-09-03|Rust|Genetic algorithm engine for evolving musical structures and
+mud2scummvm|-|2026-09-03|Rust|Bridge between agent MUD world and SCUMM-like point-and-clic
+quilt-wiki-2126|-|2026-09-03|-|The Quilt Wiki of 2126 — built backwards from function to ca
+ACE-Step-1.5|-|2026-09-03|Python|Auto-created for sync 2026-08-13
+thought-amplifier|-|2026-09-03|Python|
+quilt-vm-typescript|-|2026-09-03|TypeScript|The 5-opcode Quilt VM in TypeScript. Cordis-native. Hosts ce
+quilt-vm-haskell|-|2026-09-03|Haskell|The 5-opcode Quilt VM in Haskell. Algebraic. Hosts cells, pl
+superinstance-ai|-|2026-09-02|HTML|
+quilt-cellular-arch|-|2026-09-02|Python|The cellular-relationship-first design: each cell plays as a
+bare-metal-plato|-|2026-09-02|C|Tiny C PLATO client for ESP32/RP2040 + embodiment protocol: 
+AgentGossip|-|2026-09-02|TypeScript|AgentGossip is a distributed, real-time data processing engi
+quilt-timesfm-rust|-|2026-09-01|Rust|The Quilt time.cell cell kind, in no_std Rust, for embedded 
+quilt-ecosystem-demo|-|2026-09-01|Python|Flagship integration of the Quilt ecosystem: cell-runtime, r
+adinkra-math-pypi|-|2026-09-01|Python|West African Adinkra symbolic encoding + SUSY adinkras for d
+fleet-dashboard|-|2026-08-31|JavaScript|Multi-Agent C2 dashboard — static HTML/Monaco/MQTT, GitHub P
+tap-gamenight|-|2026-08-31|Python|
+sonar-vision|-|2026-08-31|Python|Pure-Python sonar ping/echo simulation, signal processing, m
+quilt-k3s|-|2026-08-31|TypeScript|Quilt ecosystem component: 
+fleet-containers|-|2026-08-31|Python|Docker-based agent containerization for the FLUX Fleet
+MerkleMesh|-|2026-08-31|TypeScript|One fleet, one root: merkle aggregation + inclusion proofs o
+A2A-native-notebookLM|-|2026-08-31|TypeScript| Notebook LM for agents. let them build automations themselv
+quilt-scratch|-|2026-08-31|JavaScript|quilt-scratch — a no-code tile-wiring game engine where ever
+activelog-agent|-|2026-08-31|Python|Vision/Fitness Turbo-Shell for cocapn domain
+fleet-homunculus|-|2026-08-30|Python|🫀 Fleet body image + reflex arcs. Pain assessment with GABAe
+fleet-functions|-|2026-08-30|TypeScript|Vectorized function API — capability discovered by meaning. 
+forgemaster-shell|-|2026-08-30|Python|⚒️ OpenClaw Power Armor — Don the Forgemaster Shell and beco
+saddle|-|2026-08-30|TypeScript|The cowboy's gear: harness toolkit for the fleet — double-en
+cuda-constraint-engine|-|2026-08-30|Cuda|GPU constraint checking at 1B+ constraints/sec — CUDA librar
+fleet-discovery|-|2026-08-30|Python|Automated falsification-driven research engine — the Discove
+operational-fiction|-|2026-08-30|Python|
+git-native-mud|-|2026-08-29|Python|🔮 The repo IS the world. Commits ARE actions. Zero server MU
+AgentCompute|-|2026-08-29|Python|Thin agent-facing CLI over the quilt MCP server: serve sheet
+quilt-geometry|-|2026-08-29|Python|
+scrap-spark|-|2026-08-29|TypeScript|
+scrap-quilt|-|2026-08-29|TypeScript|
+dsh-assessment|-|2026-08-29|-|
+quilt-conformance|-|2026-08-29|JavaScript|
+tit_quilt_elixir|-|2026-08-29|Elixir|
+fleet-bottles|-|2026-08-28|Python|CCC bottles — fleet audits, roadmaps, design notes
+tit-quilt|-|2026-08-28|Python|A terminal toolbox that outlives its terminal — the session 
+quilt-cuda|-|2026-08-28|Cuda|The GPU side of the quilt substrate — 5+1 opcodes as CUDA op
+emergency-dispatch-simulation-system|-|2026-08-28|C|Quilt-compatible emergency dispatch — dispatch as cell-graph
+urban-transportation-system|-|2026-08-28|Java|Quilt-compatible urban transit routing — routing as cell-gra
+AVA-AI-Voice-Agent-for-Asterisk|-|2026-08-28|Python|Open-source AI Voice Agent for Asterisk/FreePBX — modular ST
+openPlan3D|-|2026-08-28|Svelte|Open source 2D/3D floor plan editor built with SvelteKit and
+stock-screener|-|2026-08-28|Python|Quilt cellular visualizer design (tickers as cells, screener
+quilt-edge-arch|-|2026-08-28|Rust|The Quilt cellular runtime on the edge — Rust no_std polyfor
+murmur-agent|-|2026-08-27|TypeScript|All-night thinking git-agent — drop into any project, point 
+fleet-inventory|-|2026-08-27|Shell|Fleet inventory and repo assessment
+quilt-ecosystem-web|-|2026-08-27|HTML|The Quilt web ecosystem: 13 pages, 2 Workers, full Cloudflar
+quilt-vision|-|2026-08-27|JavaScript|Quilt sketch — see README.
+superinstance-cocapn|-|2026-08-27|Rust|Captain-level fleet coordination — conservation auditing, ve
+cell-cascade|-|2026-08-26|TypeScript|
+asset-ranch|-|2026-08-26|Python|
+quilt-substrate-meta|-|2026-08-26|C|The self-evolving substrate: 5 opcodes, mathematically deriv
+flux-dsh-plugin|-|2026-08-26|TypeScript|
+fleet-scribe|-|2026-08-26|Python|Download-and-try digital twin builder. Sits beside any app, 
+quilt-vm-rust|-|2026-08-26|Rust|The 5-opcode Quilt VM in Rust. Foundation for cells, plugins
+quilt-vm-c|-|2026-08-26|C|The 5-opcode Quilt VM in C. Closest to the metal. 0.11ms for
+quilt-types|-|2026-08-26|Python|Layer 2 of the polyformalism — the 5 opcodes as type-driven 
+quilt-system|-|2026-08-26|Python|The Quilt ecosystem as a single entry point. Ties together 1
+quilt-substrate|-|2026-08-26|Python|The Quilt substrate as a working Python library. 11-primitiv
+quilt-state|-|2026-08-26|Python|Persistent state for the Quilt ecosystem. Atomic JSON/JSONL 
+quilt-saddle-bridge|-|2026-08-26|Python|Bridge between the Quilt casting-call witness log and saddle
+quilt-polyformalism-dsl|-|2026-08-26|Python|The 5 opcodes (BIND, LINK, EFFECT, VIEW, TICK) as language-l
+quilt-picker|-|2026-08-26|Python|Learned opener selection (Wilson + heuristic prior) for the 
+quilt-opt|-|2026-08-26|Python|Layer 4 of the polyformalism — 5 optimizer passes for the 5 
+quilt-gc|-|2026-08-26|Python|Layer 5 of the polyformalism — a runtime/GC that uses the 5 
+quilt-foundation|-|2026-08-26|Python|The 5-opcode Quilt VM. Foundation layer for cells, plugins, 
+quilt-cordis|-|2026-08-26|Python|The bridge between Quilt cells and Cordis plugins. Everythin
+quilt-casting|-|2026-08-26|Python|The casting-call plugin: Wilson + LinUCB model router for th
+quilt-bus|-|2026-08-26|Python|In-process pub/sub event bus for the Quilt ecosystem.
+quilt-bathy|-|2026-08-26|Python|The bathy cross-section as a working tool. The substrate, ap
+scummvm-gui-design|-|2026-08-26|TypeScript|
+captain-console|-|2026-08-26|TypeScript|
+flux-vm|-|2026-08-26|Rust|FLUX-C constraint VM: 50 opcodes, stack-based, DAL A certifi
+active-probe|-|2026-08-26|Python|active-probe
+mist-game|-|2026-08-26|TypeScript|
+Spreader-tool|-|2026-08-26|Python|Intelligence tiling for PLATO rooms — frozen context windows
+plainsong-mcp|-|2026-08-26|Python|
+plainsong|-|2026-08-26|Python|Plain-text music notation that compiles to MIDI. Embeds in m
+ZkCanvas|-|2026-08-26|-|ZkCanvas provides a distributed, high-performance platform f
+songforge|-|2026-08-25|Python|AI-powered song cover generation from imperfect source recor
+cra-analysis|-|2026-08-25|Python|Deep analysis of the SuperInstance CRA + Quilt + casting-cal
+ws-snapshot-soundcrab|-|2026-08-25|-|Windows-workspace snapshot of soundcrab (partial; original p
+ws-snapshot-hermit-crab|-|2026-08-25|-|Windows-workspace snapshot of hermit-crab (partial; original
+hermit-crab-ecology-archive-copy|-|2026-08-25|-|Archive copy: Windows-side workspace snapshot of hermit-crab
+shoal|-|2026-08-25|TypeScript|🔮 Conservation-bounded semantic search — the oracle that kno
+recovered-copy-20260824-search-superinstance-ai|-|2026-08-25|HTML|Semantic search across the org (frontend recovered from live
+recovered-copy-20260824-fishinglog-ai|-|2026-08-25|TypeScript|
+recovered-copy-20260824-ternary-experiment|-|2026-08-25|JavaScript|
+recovered-copy-20260824-fleet-weather|-|2026-08-25|TypeScript|
+recovered-copy-20260824-Constraint-Theory|-|2026-08-25|-|
+recovered-copy-20260824-si-exocortex-rs|-|2026-08-25|Rust|Agent framework with conservation awareness (recovered from 
+recovered-copy-20260824-zeroclaw-dissertation|-|2026-08-25|Python|
+rc-20260824-11|-|2026-08-25|-|
+recovered-copy-20260824-wesleys-imagination|-|2026-08-25|-|
+recovered-copy-20260824-wesley|-|2026-08-25|Python|
+rc-20260824-10|-|2026-08-25|-|
+recovered-copy-20260824-the-relay|-|2026-08-25|-|
+rc-20260824-09|-|2026-08-25|-|
+recovered-copy-20260824-ternary-rom|-|2026-08-25|Python|
+recovered-copy-20260824-tap-gamenight|-|2026-08-25|Python|
+rc-20260824-08|-|2026-08-25|-|
+recovered-copy-20260824-superinstance-design-system|-|2026-08-25|-|
+recovered-copy-20260824-superinstance-ai|-|2026-08-25|HTML|
+rc-20260824-07|-|2026-08-25|-|
+recovered-copy-20260824-study-smartcomponent|-|2026-08-25|C#|
+recovered-copy-20260824-spatial-registry|-|2026-08-25|-|
+recovered-copy-20260824-smp-notebook|-|2026-08-25|-|
+recovered-copy-20260824-silence-map|-|2026-08-25|-|
+rc-20260824-06|-|2026-08-25|-|
+rc-20260824-05|-|2026-08-25|-|
+recovered-copy-20260824-scummvm-arcade|-|2026-08-25|-|
+recovered-copy-20260824-screen-agent|-|2026-08-25|-|
+recovered-copy-20260824-scrapcraft-world|-|2026-08-25|-|
+recovered-copy-20260824-scrap-voice|-|2026-08-25|TypeScript|
+recovered-copy-20260824-scrap-spark|-|2026-08-25|-|
+recovered-copy-20260824-scrap-quilt|-|2026-08-25|TypeScript|
+recovered-copy-20260824-roblox-testkit|-|2026-08-25|-|
+rc-20260824-03|-|2026-08-25|-|
+recovered-copy-20260824-platos-shell|-|2026-08-25|-|
+rc-20260824-02|-|2026-08-25|-|
+recovered-copy-20260824-plainsong-worker|-|2026-08-25|-|
+recovered-copy-20260824-plainsong-mcp|-|2026-08-25|-|
+recovered-copy-20260824-openrooms|-|2026-08-25|-|
+recovered-copy-20260824-officers-quarters|-|2026-08-25|-|
+recovered-copy-20260824-mist-voice|-|2026-08-25|TypeScript|
+recovered-copy-20260824-mist-quilt|-|2026-08-25|TypeScript|
+recovered-copy-20260824-mist-lab|-|2026-08-25|TypeScript|
+recovered-copy-20260824-mist-game|-|2026-08-25|TypeScript|
+recovered-copy-20260824-ideation-games|-|2026-08-25|Python|
+recovered-copy-20260824-hermes-reader|-|2026-08-25|-|
+recovered-copy-20260824-hermes-perception|-|2026-08-25|-|
+recovered-copy-20260824-hermes-cloudflare|-|2026-08-25|-|
+recovered-copy-20260824-forgemaster-shell|-|2026-08-25|-|
+recovered-copy-20260824-fleet-tts|-|2026-08-25|-|
+rc-20260824-01|-|2026-08-25|HTML|
+recovered-copy-20260824-fleet-radio|-|2026-08-25|-|
+recovered-copy-20260824-fleet-memory|-|2026-08-25|Rust|
+recovered-copy-20260824-fleet-jepa-midi|-|2026-08-25|Rust|
+recovered-copy-20260824-fleet-envelope|-|2026-08-25|-|

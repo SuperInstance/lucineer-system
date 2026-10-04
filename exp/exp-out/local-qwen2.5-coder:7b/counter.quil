@@ -1,0 +1,9 @@
+cell ticks int<16> = 0 {
+  tick {
+    ticks <= ticks + 1;
+  }
+  view even = {
+    return ticks % 2;
+  }
+}
+

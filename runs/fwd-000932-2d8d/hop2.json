@@ -1,0 +1,18 @@
+{
+ "hop": 2,
+ "inbox": {
+  "builder": {
+   "activation": 1.3867,
+   "n_delivered": 2
+  }
+ },
+ "fired": [
+  {
+   "cell": "builder",
+   "activation": 1.3867,
+   "action": "spawn",
+   "n_extractions": 1
+  }
+ ],
+ "spawned": []
+}

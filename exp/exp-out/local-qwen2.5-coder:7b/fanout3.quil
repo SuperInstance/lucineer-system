@@ -1,0 +1,15 @@
+```quil
+cell src int<8> = 0 {
+  tick {
+    src <= src + 1;
+  }
+}
+cell s1 int<8> = 0
+cell s2 int<8> = 0
+cell s3 int<8> = 0
+link fanout 3;
+bind s1 <= src;
+bind s2 <= src;
+bind s3 <= src;
+```
+

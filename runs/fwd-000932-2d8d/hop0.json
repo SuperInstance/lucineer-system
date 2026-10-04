@@ -1,0 +1,81 @@
+{
+ "input_packet": {
+  "jev_id": "jev-192449f4d7b5",
+  "cell": "input",
+  "hop": 0,
+  "ts": "2026-10-02T08:09:43Z",
+  "judgment": {
+   "verdict": "",
+   "confidence": 0.5,
+   "grounds": ""
+  },
+  "extractions": [
+   {
+    "type": "sub-question",
+    "content": "How can small models efficiently communicate their learned skills?",
+    "salience": 0.8
+   },
+   {
+    "type": "constraint",
+    "content": "The communication mechanism should be scalable to accommodate a growing number of models.",
+    "salience": 0.7
+   },
+   {
+    "type": "constraint",
+    "content": "The mechanism must preserve the integrity of models' learned skills during communication.",
+    "salience": 0.6
+   },
+   {
+    "type": "mechanism",
+    "content": "A centralized server or a blockchain-based system can be used to store and share model weights.",
+    "salience": 0.9
+   },
+   {
+    "type": "mechanism",
+    "content": "Models can periodically upload their weights to the centralized server and download the necessary weights to maintain their skills.",
+    "salience": 0.7
+   }
+  ],
+  "verdict": {
+   "action": "route",
+   "targets_hint": [],
+   "summary": ""
+  },
+  "parents": [],
+  "notes": {
+   "repairs": []
+  }
+ },
+ "pending": [
+  {
+   "type": "sub-question",
+   "content": "How can small models efficiently communicate their learned skills?",
+   "salience": 0.8,
+   "salience_eff": 0.4
+  },
+  {
+   "type": "constraint",
+   "content": "The communication mechanism should be scalable to accommodate a growing number of models.",
+   "salience": 0.7,
+   "salience_eff": 0.35
+  },
+  {
+   "type": "constraint",
+   "content": "The mechanism must preserve the integrity of models' learned skills during communication.",
+   "salience": 0.6,
+   "salience_eff": 0.3
+  },
+  {
+   "type": "mechanism",
+   "content": "A centralized server or a blockchain-based system can be used to store and share model weights.",
+   "salience": 0.9,
+   "salience_eff": 0.45
+  },
+  {
+   "type": "mechanism",
+   "content": "Models can periodically upload their weights to the centralized server and download the necessary weights to maintain their skills.",
+   "salience": 0.7,
+   "salience_eff": 0.35
+  }
+ ]
+}

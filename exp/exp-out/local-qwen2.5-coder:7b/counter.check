@@ -1,0 +1,2 @@
+./exp-out/local-qwen2.5-coder:7b/counter.quil:1: error[ticks]: syntax: expected '{' to open cell body, got 'int'
+FAIL ./exp-out/local-qwen2.5-coder:7b/counter.quil: 1 error(s)

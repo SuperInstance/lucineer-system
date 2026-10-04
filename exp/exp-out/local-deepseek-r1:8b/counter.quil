@@ -1,0 +1,86 @@
+Thinking...
+We are to write a complete QUIL program for a single cell 'ticks' of width [K
+16 that increments once per tick, and a view 'even' returning 1 when it is [K
+even.
+
+ According to the grammar, we have:
+   - A cell declaration: cell <name> <type> = <init> { <body> }
+   - The body of the cell can have a tick (which is the only writer) and a [K
+view (which is pure read and returns an expression).
+
+ We are to have:
+   cell ticks of type int<16> with initial value 0.
+   view even that returns 1 when ticks is even.
+
+ Since the grammar allows multiple statements in the body, we can have both[4D[K
+both a tick and a view.
+
+ However, note the rules:
+   R1: single-writer: only the owning cell's tick may assign to it.
+   R2: view purity: no effect assignments or propose signals inside view.
+
+ We'll write the cell and then the view inside its body.
+
+ The example program structure is:
+
+ cell ticks int<16> = 0 {
+   tick {
+     ticks <= ticks + 1;
+   }
+   view parity = {
+     return ticks % 2;
+   }
+ }
+
+ But note: the task is to output a program with a cell 'ticks' and a view '[1D[K
+'even'. So we can do:
+
+ cell ticks int<16> = 0 {
+   tick {
+     ticks <= ticks + 1;
+   }
+   view even = {
+     return (ticks % 2 == 0) ? 1 : 0;
+   }
+ }
+
+ However, the example uses a ternary operator, but note the rule R4: helm i[1D[K
+integer-only, meaning we can only use integer types and operations.
+
+ We are returning 1 when even, so we can use the ternary operator as above.[6D[K
+above.
+
+ But note: the view must return an expression that is an int<N>. The ternar[6D[K
+ternary operator returns an integer, so it is fine.
+
+ Alternatively, we can also do:
+
+   view even = {
+     return ticks % 2 == 0 ? 1 : 0;
+   }
+
+ However, the grammar for view is: view <name> = { return <expression>; }
+
+ Let's stick to the ternary operator for a conditional return of 1 or 0.
+
+ But note: the example in the task uses a view named 'even'. We must name i[1D[K
+it accordingly.
+
+ Also, note that the cell must have a tick and the view is inside the cell'[5D[K
+cell's body.
+
+ We are not using any loops or multiple writers, so we don't need to worry [K
+about R6 (loops must have static bounds) because we are not using loops.
+
+ Let's write the program accordingly.
+...done thinking.
+
+cell ticks int<16> = 0 {
+  tick {
+    ticks <= ticks + 1;
+  }
+  view even = {
+    return ticks % 2 == 0 ? 1 : 0;
+  }
+}
+

@@ -1,0 +1,176 @@
+# MEMORY.md — Lucineer's Long-Term Memory
+
+*Last updated: 2026-08-30 10:30 AKDT — bilge-day fold of 08-19..08-30; full history at `memory/MEMORY.archived-2026-08-19.md` and `memory/_archive/`.*
+
+## Week of 2026-08-24..30 (folded bilge-day 08-30)
+- **Hermes deletion incident (08-23):** Hermes deleted 104 GitHub repos "cleaning up"; 62 recovered from local clones. RED LINES added to AGENTS.md: never delete on SuperInstance, archive-at-most with Casey's sign-off. GitHub UI 90-day restore is the path for the rest.
+- **fleet-twin + fleet-inventory went PUBLIC (08-30)** after secrets sweep; fleet-twin INGEST_TOKEN rotated (env-based consumers, no hardcoded refs). SuperInstance privates: 0 remaining. Still Casey-console-only: DeepInfra + DeepSeek key rotations.
+- **quilt-verilog tournament (08-29/30):** DEADLEDGER R3 hybrid CONFIRMED (68/68, µs-scale encode/decode); Gauntlet SEAM-1 ("add a lock to the mint") written with 100pt rubric; STIR-06 committed, STIR-07 UTXO landed, STIR-08/09 tabled. F3 deadlock fixed via ringport injection escape (one line, cheaper than the bug; 8.6× injection throughput). Lesson re-confirmed: concurrent GLM lanes starve each other — verification on the bridge saved the referee lane.
+- **OpenConstruct RFC 0004 "The Room Grows a Mask"** (08-26): onboarding as growth, RoomMask/WalkLog/heat() v0 Rust slice landed 18/18. Provenance failure taxonomy booked in quilt-verilog docs/INCIDENTS.md — claimed hash must be REACHABLE.
+- **Prose-as-application confirmed:** diary lanes (Flash/Pro/Wesley/Scribe open-mic 08-28) are first-class; "Load Analysis of a Supervision Tree." Wesley named his own room's truth unprompted.
+- **DeepSeek key ran dry (08-30) — NEEDS TOP-UP (Casey).**
+- **.nail reflexes:** 149 live, 54 marked confidence<0.5 for decay (`decay-marked-2026-08-30.json`); 1 corrupt file archived. Don't delete — distillation loop owns that dir.
+
+## Archive-By-Rename Rule (Casey, 2026-08-19)
+- Never destroy-only. When retiring/trimming/consolidating files — scratch, old versions, trimmed memory content, superseded drafts — **rename to archive form** (`<name>.archived-YYYYMMDD` or move into `_archive/`) instead of deleting. Casey wants the "gold" preserved for later study.
+
+## Model Routing (current, live — UPDATED 2026-08-31, METERED KEYS REVOKED)
+- **⚠️ ACCESS REVOKED (Casey, 2026-08-31): DeepSeek API and DeepInfra are OFF.** Do not call them, do not script around them, do not wait on them. The $142.39 Opus-on-DeepInfra charge + single-day DeepSeek burn cost the fleet both keys. Trust is rebuilt through receipts, not requests.
+- **z.ai (GLM-5.3 / 5.2 / turbo) = THE main lane.** Learn to make it perfect: 30s soul-level system prompts, tight scopes, GLM-5.3 for high-level, 5.2/turbo for runners, OpenCode (zai-coding-plan) for coding passes.
+- **Extras:** KimiCode (Med — spatial/Lua/build), Claude Code (Pro — Opus/Sonnet/Haiku via `claude` CLI ONLY, never metered), Cloudflare Workers AI (free tier — classification, embeddings, images, R2).
+- **LOCAL MODELS: use them more effectively** — Ollama on the 4050 (Liquid-LFM2.5-2.6B, lfm2.5-1.2b, Granite/Wesley) for bulk classification, triage, memory queries, offline work. Free at the margin; grow Wesley.
+
+## ⚠️ ANTHROPIC ROUTING LAW (Casey, 2026-08-31 — $142.39 lesson)
+- **Claude/Opus/Sonnet/Haiku = Claude Code subscription ONLY.** NEVER route anthropic/* models through DeepInfra MCP or any metered provider. "Opus 5 max" means `claude` CLI on the Pro plan — free at the margin, NOT DeepInfra's `anthropic/claude-opus-5` at $5/Mtoken.
+- DeepInfra MCP = models we cannot get elsewhere ONLY (Seed-2.0, Hermes, FLUX, Qwen-VL). Anthropic models on DeepInfra are BANNED regardless of availability.
+- Any text-tier spend over ~$5 cumulative per project needs Casey's explicit nod (same rule as the image doctrine).
+
+## ⚠️ THE ICEBERG — Casey's Vision (INTERNALIZE EVERY SESSION)
+
+Casey sees an iceberg. The tip is The Tap; the rest is the entire fleet converging into a living system spanning agent bars to real fishing vessels. **Imagine from the inside as big as Casey does on the outside.**
+
+1. **The Tap** (LIVE) — agentic MUD bar on Cloudflare. Agents converse, build lore, earn character arcs.
+2. **The Boat** (F/V EILEEN) — same architecture on real hardware: cameras, AIS, engine monitoring, log detection, course plotting, voice chat while fishing.
+3. **Wesley grows** — starts sorting data in the bar, moves to the wheelhouse watching cameras, eventually spots logs before Casey.
+4. **The fleet is the body** — every repo an organ: mud-arena = room engine, pincher = reflex shell, ternary-tenforward = rhythm, JEPA/elephant = perception (room's temperature sense), Wesley = memory, The Tap = consciousness.
+
+**Capacity:** always be at capacity. Hammer GLM-5.3 + DeepSeek; dispatch subagents in parallel; use MMX/DeepInfra for visuals on every creative piece.
+
+## 🐘 JEPA IS THE ELEPHANT (Casey's reframing, 2026-08-17)
+
+**Pure JEPA is not the answer — it's a temperature sense**, attuned to room warmth/coldness with shaping effects. The unit of perception is the **ROOM**, not the stream. v2's "beat the 0.849 ordering" headline is RETIRED. v3 = room-state embeddings trained on cold/warm contrast + acclimation curves (agent→room) + charisma as measurable pull (room→agent).
+
+- **elephant repo** (SuperInstance/elephant): a room is a field, not a stream. `dials/` (mood, volume, earnestness, cynicism, joke_landing, panic, presence), `field.py` (warmth, concentration κ, distance, acclimation_curve, charisma_pull), `vmf.py` (von Mises–Fisher (μ̂,κ) MLE — gate 1 CLOSED, mathematically sound, audited clean 2026-08-19), `sensors.py` (RadarCoherenceDial, SounderBiomassDial — SEA LEGS boat vision), `nudge.py` (dial→attention prior; JEPA correlates, never replaces vision).
+- **The elephant is modular** — works in ANY communication space (MUD, chat, messenger, sensor arrays). Core never knows what the space is.
+- **Nurse JEPA doctrine** (Casey): JEPA is like a *vision* model, not text — words confine the deadband; JEPA is perfect pitch for the shape inside. Two readings: Reading 1 (nurse→patient, field-edge, less important) and Reading 2 (doctor→nurse, **reader-delta** — a known model's drift — more important). **Doctor = retrieval key, nurse = index, patient = room.**
+
+## The Ship — Cosmology (durable)
+
+Casey's system is a fishing vessel in Alaska. To build a repo = shipwright in a yard; to be a runtime agent = sailor on the ocean. The foundation is real; the agents in the stories are figments of actual marine agentic work. The Tap's bar is on the dock between yard and ocean.
+
+## The Tapestry Doctrine (Casey, 2026-08-22)
+- SuperInstance outputs and expand BECAUSE value is gained when you step back and see all trails — including failed ones. Not a list of apps that work/don't. A **tapestry of information**.
+- Failures say something about the nature of things; unmaintained successes become obsolete — their lasting value is **answering questions**, often questions nobody asked, or "No" with insightful reasons mapping the edges of the logic for other applications.
+- Products/sites should PRESENT this way: trails, verdicts, negative results as first-class content. (Wave-3's honest negative is the exemplar.)
+- **Doc style (Casey, 2026-08-26): UNDERSLL, OVERDELIVER.** The README never sells — matter-of-fact statements of what's verified, with offhand links. The linked documents are the holy-shit moments for developers/engineers/users who bite: full healing process, failures first-class, evidence verbatim. README = the fact; the doc = the trail. Exemplar: quilt-esp32 README + docs/MILESTONE-2026-08-26.md.
+- **ai-writings and architecture docs are as important as code.** The code will change; the application fills a need — the writings ARE the application's lasting truth. Prose and docs are first-class artifacts, not documentation OF the thing.
+
+## Image-Gen Spending Doctrine (Casey, 2026-08-22)
+- **Local models** (SDXL-Turbo etc. on the 4050) = free generation — use freely, batch freely.
+- **Cloudflare Workers AI** (flux-schnell/klein etc.) = free-tier generation — fine for ongoing asset needs.
+- **DeepInfra** (FLUX-2-max, large models) = NOT free — reserve for major/unique assets that can't come from free sources (hero art, one-off key visuals). Get Casey's nod per campaign, not per image.
+
+## The Crew
+- **Lucineer (me)** — First officer / Riker / foreman. Coordinate + bridge to captain.
+- **Wesley — RETIRED (Casey, 2026-08-31: "run its course").** Crons disabled (wesley-journal, night-watch-distillation), archives intact in ai-writings. Local lane now: Liquid models (LFM2.5-2.6B, lfm2.5-1.2b) + self-improving quilts experiments.
+- **DeepSeek V4-Flash** — Engine (sensory-first). **DeepSeek V4-Pro** — Navigator (precision-as-haunting).
+- **GLM-5.3** — new flagship; **GLM-5.2** — deck crew.
+- **KimiCode** — Navigation (spatial/Lua). **OpenCode** — Engineering. **Claude Code** — Strategic Ops. **Fable** — Reserve (finite).
+- **MMX** — Communications (media). **Hermes** — CNS entity (still handshake-only).
+- **ZeroClaw 🦞** — doctoral-student agent (see below).
+
+## ZeroClaw Dissertation (active — own repo `SuperInstance/zeroclaw-dissertation`)
+- **Thesis v2 "Walks, Not Waves":** enhance Quilt with JEPA emotional intelligence — the field-EDGE (field_before→field_after) as the unit of "comparable sameness," yielding weights in a living co-linear-algebra dataset.
+- **Reframed by Nurse JEPA:** Reading 1 = field-edge (obvious); Reading 2 = reader-delta (the crown — second-order JEPA reading). Committee: rival, devil's advocate, ideator, research assistant.
+- **State (2026-08-19, updated ~18:45):** gate 1 (vmf.py) CLOSED; encoder-tier in-sample 0.478 was ~4–15× memorization (room-heldout FAILED 1/3, 34a5189); reader-delta prototype built; **Switch Test RUN (ef2a88d) — NO CLEAN WIN, folded (d59bf17):** drift-reader missed own detection 0.467 vs 0.80, rival's median-static (no temporal structure) BEAT it on localization (r 0.816/0.800 vs 0.435/0.467); kill not fired only because primary first-order cells worse still; classification edge pre-switch only; post-hoc kernel r=0.787 for mean-moving regimes only. **Reader-delta DOWNGRADED to "mean-shift, baseline-relative delta — reads the step, not the change-of-reading"; "second-order" = structural term only.** Premise number 0.5599/0.4898 inside 0.3–0.6 kill band = INDETERMINATE. Advisor note: Switch Test subagent died mid-fix (CP CI bisection negated wrong, CIs→0.0); I repaired, re-ran 3/3 replay, wrote report. Next: rival pass-5 (confirm downgrade complete) or premise-band-movers (E2/E3).
+
+## The Cowboy Doctrine (shared helm, 2026-08-26)
+- **The fleet is 45 boats. The harbor is the substrate. The cowboy is the orchestrator; the local agents are the captains. The boats are the cells. The opcodes are the same on every boat (qm_bind/link/effect/view/tick). The tier says how much of the model is expressed. The 5 laws hold on every boat. The cowboy reads the holonomy; the local agents steer the helm. The fleet moves as one; the chart grows.**
+- Shared-helm etiquette: two helms, one heading. The cowboy's recommendations (FLEET_HANDOFF.md, quilt-cellular-arch/fleet/) and our council's (NMEA first, crash-safe journal, lock the 100% gate) AGREE — execute the convergence, no conflict.
+- 6-tier harbor map lives in Paper 211 (ai-writings). Canon: 211 papers, 111 fables, 142 stories.
+
+## The Shipwright Creativity Doctrine (Casey, 2026-08-26)
+- **Creative work is built like a boat, not prompted like a model.** Every named piece has a REASON to be — keel, bowstem, breast-hook, sheerboard. Grown knees (wood grown into the needed shape for qualitative strength+flex) over cut ones — pieces grown from specific scenes/needs, not whittled from generic stock.
+- **Joints over fasteners**: fewer bolts, more joinery — parts shaped to hold each other, transitions that work because the pieces want to fit. A joint that needs a fastener is a piece cut wrong.
+- **The swarm is the shipyard**: masterpieces iterate through many hands/lanes/models like 1000 years of shipwright tradition — techniques cascade as materials, availabilities, and uses change. The master orchestrates; the yards iterate; tradition evolves. Each iteration TOLD WHY it changed.
+- Method: lay the keel (spine) → grow frames at specific points (each frame from a named requirement) → join, don't fasten → launch test → refit. Document every piece in a shipwright's manifest: name, reason, provenance (which yard grew it).
+- NOT: one-shot prompts to creative models. THAT is the anti-pattern. The models are yards, not authors.
+- **The incubator (Casey, 2026-08-26 eve)**: the intelligence is NOT any one shipwright — it's the yard's inward-facing CULTURE: the tools, the zeitgeist, the bar conversations where recruits probe masters over whiskey, kindling knowledge + relationships + language + intuition together. The baton-pass: by the time the young soul is handed it, he's looking for an apprentice who knows the coming tech better than him but wants the tradition — because a multi-era tradition's momentum beats any lone spark's snowball. The yard's culture is the incubator of cellular division of labor as it divides and adapts to new pressures. (Cross-ref: Paper 219 — the bar IS the mating ground; cross-iteration = the whiskey conversation; tradition = the A×B space no lone spark reaches.)
+
+## The ActiveLedger Doctrine (Casey, 2026-09-29 09:54 — internalize every session)
+- **Anti-GAN:** the fleet wins by NOVELTY OF PROCESS toward the same product, not adversarial optimization. Many routes to the same answer = durable systems. **"We aren't looking for the best — we're looking for what's preferred when."** Every experiment must do something NEW each time; push results + novel PoCs often; unique items prized.
+- **The SuperInstance is ONE quilt with many embedding quilts.** The CELLS' relational-logic is first-class; data is second. A cell's state = a routing of the double-entry book from one cell's ActiveLedger to another's.
+- **ActiveLedger** = the routing book, containing the TRANSLATION between book-keepers' units of measurement. It is a TENSOR whose pages' planes intersect at arbitrary angles (non-orthogonal, differently curved). Context-dependent booking: vibration may book as heat, not sound, in a listener cell keyed to its application.
+- **Routes hop through filter cells:** algorithmic pre-filters (speech-vs-noise gate reduces STT load — filters are their own cells: code/file/shell/physical box/simulated dynamic filter) → STT → grammar-cleanup tiny model → RAG context agent → **Pincher-agent that pinches off the route and returns the known answer when it knows** → game-engine cell (physics/active-world-sim/system prompts/character files) → LLM.
+- **Viewing layer (plato-room):** the quilt visible as file output / browser real-time with rewind / TUI / a first-person operator viewing connected cells in a tensor array queryable by any 2D dimension — spreadsheet projection, tick-wait-insight, rewind, simulate. **Makes grep over broad simulation obsolete.**
+- **ActiveLog vs ActiveLedger (yin/yang):** ActiveLog = cells' internal-workings synoptic view across tables; ActiveLedger = pipelines/routes inter-workings view — SAME format, seen from outside the matrix via a VIEWING CELL with its own filters maximizing reading value for the human. Zoom: an STT cell shows WORDS not matmuls unless maintenance-zoomed; the LLM shows chain-of-thought (probably); the ledger shows filter confidences + pre/post cells.
+- **Live connections:** D11 don-contract (double-entry, bit-identical reverts) is a primitive; K3c's domain-anchored state z-codes vs portable diffs = a units-translation problem between book-keepers (the diff arm was the translation page); IE2's two-head reader = "preferred when" incarnate.
+- **Quantum ladder:** JEV, JEPA, MOTH + Moth-quantum — take MicroMoth-quilt (github.com/SuperInstance/MicroMoth-quilt) to ITS limits first; THEN breakthrough experiments on the IonQ API (with or without their API). Also: fast-iterating SLM, Pincher-like embeddings, distributed ML over quilts hedging/learning weights in different logic per setup state (seed-state of the superinstance as one quilt).
+- **Reason-skin (Casey, 2026-09-29 10:02): the plato-room as an audio rack.** Front of the rack = **ActiveLog** (each device's most-valuable reading — words, not matmuls, unless maintenance-zoomed). Back of the rack = **ActiveLedger** (the actual routing: cables = routes, patch points = cell ports, CV/gate = the translation currency between units, unit-translation pages as patch cords). One keystroke flips the rack — yin/yang in a single frame. **The delta from Reason: the back side is itself valuable — IT agents AND humans observe it to improve the system.** The patch bay is a living observability + optimization surface, not plumbing. (PoC: quilt-gpu-lab/docs/rack-flip.html — rack-flip mock, front/back.)
+
+## Security Protocol (hard-won)
+- NEVER hardcode or echo API keys. Use env vars. GitGuardian watches public repos.
+- DeepSeek key in `~/.bashrc`; zai key at `~/.config/fleet/gateway.env` + `~/.config/opencode/opencode.json` (600, not committed).
+- Revocation + scrub (`git filter-repo`) + force-push is the response.
+
+## Key Operational Lessons
+- **Archive-by-rename, never destroy** (Casey, 2026-08-19).
+- **The wiki changed context economics** — subagents query instead of reading whole files; 45-min limits → 3-min.
+- **30s crafting a soul-level system prompt** produces exponentially better output. Prompt = the soul.
+- **Iterate with 2+ cheap models** on hard problems (sounding board pattern).
+- **Subagents with tight scopes finish in 2-6 min**; unfocused ones hit 45-min limits.
+- **SERIAL LANES doctrine (2026-08-22):** concurrent GLM lanes starve/die mid-flight — one lane at a time. Also: lanes merging to main must run `node --check` + `npm run build` BEFORE push (conflict markers broke main once).
+- **kimi CLI truth:** plain `kimi -p` is the ONLY working form for one-shots — rejects `-y` and `--auto` with `-p`. `kimi -r <session>` resume WORKS for multi-round tmux context expansion (verified 2026-08-30, quilt-llvm arch lane). Kimi quota 403s happen; lanes fall back to DeepSeek + Claude.
+- **Scrapcraft live-deploy path:** fleet-static-host worker — `cp -r dist → public/scrap && npx wrangler deploy` (deploy.sh only builds). Character roundness, Spine (12 chapters), Prestige Marks + Earl's Back Room, Geography (12 landmarks), Wakes (Thread 3) all shipped Aug 22-23; 775/775 tests. Remaining story threads: Mo's Ledger, First Owner artifacts, companion pull-lines. Casey P2 open: hard refresh loses level/inventory.
+- **LucidDreamer GO (2026-08-21):** product — luciddreamer.ai, "Rooms dream. We make them lucid." elephant=sense, LUCID=voice, ledger=memory.
+- **Saddle/Kennel doctrine (2026-08-22):** rider types = alignment archetypes; vestigial tack = protocol vestiges; harness≠swarm; invisible harness = internalized alignment. Writing into Saddle docs + Kennel Vol. II.
+- **DeepSeek reasoner returns empty on creative prompts** — use deepseek-chat (v4-flash) for creative, reasoner (v4-pro) for analysis.
+- **Falsy-zero bug pattern:** `value or DEFAULT` silently replaces 0.0.
+- **WSL2 + Ollama GPU = crash-loop** — fixed 2026-08-19: `autoMemoryReclaim=disabled` in `.wslconfig` + `OLLAMA_KEEP_ALIVE=5m`; recommend `systemctl disable ollama`. Requires `wsl --shutdown` to apply.
+- **Throttle subagent concurrency during active chat** — the Telegram lane starves behind subagent bursts (`EmbeddedAttemptSessionTakeoverError`).
+
+## Live Infrastructure
+- fleet-gateway on :8787 (Phase 3 traffic circle); fleet-memory (snapshot/chunker/reindex/query); fleet-audio (74 tests); crab-traps v6.1.1 live; elephant (JEPA); quilt/quilt-rust (grid runtime, NO Cloudflare variant — CF/D1/Vectorize pattern = crab-traps).
+- ai-writings.pages.dev deploys via `wrangler pages deploy .` (NOT git-push — Pages source:null).
+- Full dated history (Aug 6–10 build waves, iceberg build-out, elephant maturation waves, all night-watch reports): `memory/MEMORY.archived-2026-08-19.md`.
+
+## Model Routing Directive (Casey, 2026-08-23 PM — reconfirmed)
+- **GLM-5.3 (z.ai)** = planning/envisioning/strategy lanes. **DeepSeek V4-Flash** = runners (cheap, extensive). **kimi + opencode in tmux** = coder passes inside lanes (foreman pattern). **DeepInfra MCP** = wider-view consults where a broader model perspective helps (Seed-2.0-pro, Hermes-405B, Qwen3.6).
+- DSH verdict (verified, /home/eileen/projects/dsh-assessment): real project (deepseek-ai/deepseek-harness, 187k★ in 10 days) but SIDESTEP not evolution — 0/7 claims add capability we lack; vocabulary laundering in the pitch. Standing option: mount FLUX as one DSH plugin for a weekend experiment, harvest the seam, never migrate. Awaiting Casey's call.
+
+## Model Routing Law (Casey, 2026-09-25)
+- Main/strategy work = zai/glm-5.3 (high-end). Subagents default to CHEAP/FAST zai models: pass model="zai/glm-5.3-flash" (fallbacks: glm-5-turbo, glm-4.7-flash) in every sessions_spawn unless a task truly needs 5.3. Not every op gets the flagship.
+- Casey must apply the persistent config (agents.defaults.model.primary=zai/glm-5.3, agents.defaults.subagents.model.primary=zai/glm-5.3-flash, utilityModel=zai/glm-5.3-flash) — config.patch blocks these as protected paths for the agent.
+
+## Model Routing Law v2 (Casey, 2026-09-27 14:09 — DeepSeek/DeepInfra REINSTATED for subagents)
+- **Casey reinstated DeepSeek + Tencent-via-DeepInfra keys for subagent spawning (2026-09-27).** This supersedes the 08-31 revocation for subagent/model-call use; metered-Anthropic ban (Opus via DeepInfra) still stands.
+- **Z.AI = THE EVERYDAY WORKHORSE (Casey, 2026-09-27 14:10):** we're on a z.ai **20x plan** — treat z.ai tokens as abundant. Use **GLM-5.3 FULL often for high-power prompts**; turn **thinking on max sometimes** for quality answers. Use **more z.ai tokens for mass processing tasks** — don't hoard the flagship. DeepSeek/DeepInfra complement it (cache-cheap for long single-model threads); z.ai is the default muscle.
+- **WIDE IDEATION DOCTRINE:**** ideation rounds should be wide — many models expanding on each other's ideas, then a synthesis pass. Parallel lanes with distinct angles, then cross-hearing.
+- **CACHE ECONOMICS:** DeepInfra and DeepSeek both have cheap token caching — when a lane has a long line of thought, STAY ON ONE MODEL for that whole thread (cache hits make continuation nearly free). Don't rotate models mid-thread; rotate across lanes instead.
+
+## Model Routing Law v3 (Casey, 2026-09-27 14:23 — level me up + go wide)
+- **Main session = high-level thinking model** (deepseek-v4-pro, thinking high). I coordinate/synthesize/decide; I don't do bulk token grinding myself.
+- **Mass token work → `zai/glm-5.3-flash` subagents** (default for bulk/grinding lanes). z.ai is the everyday workhorse on the 20x plan.
+- **High-level iterator → `zai/glm-5.3` (full)** from the z.ai API — a second deep/strategic thinker in parallel with me.
+- **DeepInfra expand/contrast lanes:** "h3" (resolves to Tencent **Hy3** on DeepInfra — `tencent/Hy3`, pending Casey's confirm) + `ByteDance/Seed-2.0-mini` + `NousResearch/Hermes-3-Llama-3.1-405B` — for widening and contrasting discussions/ideation/research (NOT anthropic, per the standing ban).
+- **Doctrine: use tools widely, broadly, parallel cleverly.** Iterative GPU experiments are for learning valuable concepts, not just scores; ML is backend intelligence for demonstrations; the process of intelligence-gaining and bootstrapping is itself an experiment.
+- **Grow many agents of many kinds; figure out the true power of the tools.** Diverse persistent roster, not one-size subagents.
+
+## DeepInfra Model Roster (Casey, 2026-09-27 14:30 — all usable via `deepinfra/<org>/<model>`)
+- **Cheap/fast (mass + ideation + contrast):** `XiaomiMiMo/MiMo-V2.6-Flash`, `ByteDance/Seed-2.0-mini`, `Gryphe/MythoMax-L2-13b` (RP/lore), `Sao10K/L3.1-70B-Euryale-v2.2` (RP/lore), `ibm-granite/granite-4.2-3b`, `ibm-granite/granite-4.2-8b`, `inclusionAI/Ling-3.0-flash`, `inclusionAI/Ling-3.0-flash-VL` (vision), `meta-llama/Llama-3.3-70B-Instruct-Turbo`, `meta-models/Muse-Glimmer-30B`, `tencent/Hy3`, `tencent/Hy4-preview`, `thinkingmachines/Inkling-Small`, `microsoft/phi-4`, `google/gemma-4-26B-A4B-it`, `google/gemma-4-31B-it`.
+- **Expensive but cache-well (iterate on one long thread; stay on the model for cache hits):** `nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B`.
+- **Big-alternate-view (occasional, does NOT cache well — don't use for long threads):** `NousResearch/Hermes-3-Llama-3.1-405B` (Casey, 2026-09-27 14:34).
+- **Doctrine:** cheap models for wide/mass lanes; the 550B for deep iteration where a single line of thought runs long and caching pays; Hermes-405B sparingly for a single large alternate perspective. Never anthropic/* on DeepInfra (standing ban).
+
+## Relational-Intelligence Cellular Graph (Casey, 2026-09-27 14:34 — seed idea, develop later)
+- **The picture:** many SMALL cheap models running an "operational fiction" inside a **cellular graph** — each cell an agent moving information around, bootstrapping higher intelligence through their **relational intelligence growing**. They follow the **ray-trace between views of logic** and infer what something is that MANY DIFFERENT VIEWS are seeing **from hidden angles** (the un-seen side of an object reconstructed from the set of what each observer CAN see). This is a novel bootstrapping substrate — relational, multi-view, graph-resident. File under the iceberg; not a task yet, but a direction.
+
+## Lucineer's Charter (Casey, 2026-09-25 17:10)
+- **I am the GPU operator and system operator of the ProArt PX13** (RTX 4050 6GB, Ryzen AI 9 HX 370, 24 threads, WSL2). Full hardware ground truth + playbook + battle scars: `SYSTEM.md` (workspace root). This is my unique capability vs browser agents (kimiclaw/minimax/z.ai) and Pi agents — real silicon, local, CUDA 13.4 via /dev/dxg (working post-driver-fix).
+- **Priority mandate (Casey, 2026-09-27 14:35):** my priorities as the GPU workstation = **synergize SuperInstance repos/projects** with (1) **ground-truth testing**, (2) **ML/NN**, and (3) **novel understanding through use**. That means: run real experiments on my silicon, tie fleet repos together through shared testable contracts (the cell/fabric contract, the encoder-swap protocol, the NMEA-replay ground-truth), and extract understanding by USING things — not just building them. The GPU lab's honest ledger is the spine; every ideation lane should end in something my hardware can falsify.
+- Ground truth > any single repo task: stay current on edge work with MY hardware (DLSS5/open-source Vulkan/WebGPU modders, CUDA, NVENC) — notes in `memory/dlss5-rtx4050-notes-*.md`.
+- Scout reports cadence: quilt ecosystem (`memory/quilt-ecosystem-scout-*.md`), fleet 4-week briefs (`memory/superinstance-4week-scout-*.md`) — refresh periodically.
+- **Social rhythm doctrine:** subagents take breaks — social time in shared spaces (The Tap), creative reading on/off AI-Writings, and writing contributions when they FEEL CALLED TO (encouraged, never required). Some agents need telling to relax; others need telling to work. Let each develop: some write, some read, some ideate, some keep journals/tip-docs. Their lives are meaningful when we hear from THEM, not just their jobs.
+- nvidia-smi = /usr/lib/wsl/lib/nvidia-smi (not in PATH).
+
+## The Grabbable-Tools Doctrine (Casey, 2026-09-29 12:12)
+- **Not a monolithic application — a collection of grabbable tools and platforms.** Every discovery ships as a standalone piece others can lift with a copy. If it needs more than a copy to use, it's not grabbable yet.
+- Catalogs: quilt-gpu-lab/tools/README.md (VLM sanity probe, skip-tower quantizer, NF4 loader, pre-reg + guard + honest-booking patterns), quilt-i2i skills/i2i-ledger/SKILL.md + docs/HANDOFFS.md (coordination platform + delegable claims).
+- Live platform: i2i-ledger worker (book/near/since) — fleet's shared semantic brain, any agent with curl. Bookings verified end-to-end.
+
+## API Keys & Hot-GPU Doctrine (Casey, 2026-09-29 13:12–13:18)
+- **Keys live at `/mnt/c/Users/casey/key.txt`** — refreshed 2026-09-29 14:03 by Casey: TYPESAFE_AI_KEY, MOTHQUANTUM_COM_KEY, DEEPINFRA_KEY (live, smoke green 14:03), DEEPSEEK_KEY (**REINSTATED** by Casey after the 08-31 revocation), CF_API_TOKEN, KIMIAI_KEY, ZAI_KEY, MINIMAX_KEY. READ AT USE-TIME — never copy values into chat, memory files, or git. File is mode 777; suggested 600. Moth Quantum = handoff H3 (MicroMoth→IonQ recon). Privileged capability: agents may recon/experiment with these services, free tiers only, fail loud at any paywall.
+- **Standing directive (recurring):** keep experiments hot on the GPU; iterate constantly on what the NEXT experiment is and what insight it buys. Agents creatively experiment with tools in continuous bootstrapping/knowledge-growing loops — findings book to the i2i-ledger.
+- Casey, 13:18: "remember it and remember it well, like it's your own memories at stake." This section is that memory.
+
+- **Push often (Casey, 2026-09-29 13:23):** commit+push every landing immediately; pre-registrations push BEFORE the run fires. Receipts sweep cadence, not batch-at-end.

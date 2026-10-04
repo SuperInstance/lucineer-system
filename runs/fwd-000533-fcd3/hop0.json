@@ -1,0 +1,81 @@
+{
+ "input_packet": {
+  "jev_id": "jev-39e1baec99da",
+  "cell": "input",
+  "hop": 0,
+  "ts": "2026-10-02T08:05:41Z",
+  "judgment": {
+   "verdict": "",
+   "confidence": 0.5,
+   "grounds": ""
+  },
+  "extractions": [
+   {
+    "type": "sub-question",
+    "content": "How does one define a small language model?",
+    "salience": 0.7
+   },
+   {
+    "type": "sub-question",
+    "content": "What are the outputs of a language model that can be used to improve itself?",
+    "salience": 0.6
+   },
+   {
+    "type": "constraint",
+    "content": "The improvements must be made using only the language model's own outputs.",
+    "salience": 0.8
+   },
+   {
+    "type": "mechanism",
+    "content": "How can the language model learn to generate better outputs only from its own generated outputs?",
+    "salience": 0.7
+   },
+   {
+    "type": "risk",
+    "content": "What are the potential risks or limitations of this approach for improving the language model?",
+    "salience": 0.7
+   }
+  ],
+  "verdict": {
+   "action": "route",
+   "targets_hint": [],
+   "summary": ""
+  },
+  "parents": [],
+  "notes": {
+   "repairs": []
+  }
+ },
+ "pending": [
+  {
+   "type": "sub-question",
+   "content": "How does one define a small language model?",
+   "salience": 0.7,
+   "salience_eff": 0.35
+  },
+  {
+   "type": "sub-question",
+   "content": "What are the outputs of a language model that can be used to improve itself?",
+   "salience": 0.6,
+   "salience_eff": 0.3
+  },
+  {
+   "type": "constraint",
+   "content": "The improvements must be made using only the language model's own outputs.",
+   "salience": 0.8,
+   "salience_eff": 0.4
+  },
+  {
+   "type": "mechanism",
+   "content": "How can the language model learn to generate better outputs only from its own generated outputs?",
+   "salience": 0.7,
+   "salience_eff": 0.35
+  },
+  {
+   "type": "risk",
+   "content": "What are the potential risks or limitations of this approach for improving the language model?",
+   "salience": 0.7,
+   "salience_eff": 0.35
+  }
+ ]
+}

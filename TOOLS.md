@@ -7,7 +7,7 @@ Last updated: 2026-08-02
 |------|------|-------|----------|----------|
 | Z.ai (GLM) | **Max** | **GLM-5.3** (new, high-level) · GLM-5.2 · **GLM-5-turbo** (runners) | Subagent workhorse — unlimited tokens, cheapest high-quality option. Push hard. **GLM-5.3 is the new flagship (released Aug 2026) — use for high-level/deep work.** GLM-5.2 still available for bulk. **GLM-5-turbo = the runner model (Casey's directive: turbo models for runners).** Primary bulk creative + engineering. | (API, subagents use this — provider `zai`, also `zai-coding-plan` in OpenCode config) |
 | **DeepSeek (direct API)** | **REVOKED (2026-08-31)** | — | **ACCESS PULLED by Casey after the burn incident. Do not call.** Bulk/runner work defaults to GLM on Z.ai Max; local Ollama models for offline/bulk classification. Reinstatement only by Casey's explicit word. | — |
-| KimiCode | **Med** | K3 | Excellent at what it does — build intelligence, spatial decomposition, fast iteration. Use confidently for spatial/Lua/build tasks. | ~/.npm-global/bin/kimi |
+| KimiCode (kimi-code) | **Coding plan** | K3 | **DO NOT USE — SUSPENDED by Casey 2026-10-01 15:26 "until further notice"** (quota 403'd mid-lane the same hour; suspension is standing regardless of quota recovery). Former role: test runner + long-context tmux reader — re-homed to deepseek lanes. | bash: kimi |
 | Claude Code | **Pro** | Opus 5 / Sonnet 5 / Haiku 5 (renewing) · Fable 5 (finite, non-renewing) | Opus/Sonnet/Haiku: use freely within Pro plan. **Opus 5 = via the `claude` CLI subscription ONLY — NEVER route anthropic/* through DeepInfra/MCP metered ($142.39 lesson, 2026-08-31).** **Fable: reserve for golden-ticket moments only.** Use Sonnet 5 as the daily driver. Use Haiku 5 for creative work — it's small, fast, full of wonder, and highly creative. Like Wesley, its size is its voice. Do NOT default to Fable. Fable burns usage credits ($76 remaining). Only switch to Fable when Casey explicitly asks or for a piece that truly needs the most expensive voice. | ~/.local/bin/claude |
 | MMX | **Starter** | MiniMax-M3 | Media generation — text, image, video, speech, music. Use at capacity since we have the subscription. Push hard. | ~/.npm-global/bin/mmx |
 | OpenCode | Pay-per-use | GLM-4.6 / GLM-4.5-air | **Cheapest option.** Memory systems, structured design docs. Run in parallel tmux sessions alongside subagents. | ~/.opencode/bin/opencode |
@@ -46,6 +46,13 @@ Free tier — use for assets, models, and embeddings:
 ## Image Generation — DeepInfra FLUX-2-max gotcha (2026-08-20)
 - **Flux2Max rejects width > 1440 (pydantic validation error).** `aspectRatio: "16:9"` maps to 1792 wide in the tool layer → HTTP 400. Fix: pass explicit `size` (e.g. `1280x720`) and NO aspectRatio. Known-good: `model=deepinfra/black-forest-labs/FLUX-2-max` + `size: "1280x720"`.
 
+## Lane Runners (how work gets dispatched)
+| Runner | Role | Pattern |
+|--------|------|---------|
+| OpenClaw subagents | parallel builders (deepseek), serial flagship (GLM-5.3) | sessions_spawn, cap 5 |
+| **zcode** (Z.AI coding agent CLI) | **third runner — self-contained build/doc/self-test jobs (Casey 15:29)** | `/usr/bin/zcode -p "$(cat brief)" --cwd <dir>` inside a tmux session; OAuth'd (smoke: ZCODE-OK); headless, logs via tee |
+| tmux + kimi | ~~test runner + long-context reader~~ SUSPENDED 15:26 | — |
+
 ## Infrastructure
 | Tool | Purpose | Location |
 |------|---------|----------|
@@ -53,6 +60,7 @@ Free tier — use for assets, models, and embeddings:
 | Argon | Roblox Studio live sync | ~/.argon/bin/argon.exe (Windows) |
 | Lua 5.1 | Syntax checking Lua files | /usr/bin/lua5.1 |
 | Luau | Roblox Lua interpreter (testing) | TODO — download failed |
+| **GPU python (torch)** | **ALWAYS use for GPU experiments** — torch 2.14.0+cu126, CUDA True. System `python3` has numpy only (no torch). turbquant-style numpy work is fine on system python. | `/home/eileen/venvs/elephant-gpu/bin/python` |
 
 ## Roblox Bridge
 | Component | URL | Status |
@@ -79,7 +87,7 @@ Free tier — use for assets, models, and embeddings:
 - **DeepSeek V4-Pro**: deep reasoning, complex analysis, **iterative development where each model needs to hear what came before and build on it — expansive banter that reads the room's momentum and plays itself while other models do the same**
 - **OpenCode (tmux)**: pair with DeepSeek V4 Pro for engineering tasks. Lean on this combo heavily.
 - **GLM-5.2 subagents**: unlimited on Z.ai Max. Use for everything — creative, engineering, coordination.
-- **KimiCode (Med plan)**: smaller daily allowance — use for spatial/Lua/build tasks where K3 excels
+- **KimiCode (Med plan)**: **SUSPENDED by Casey 2026-10-01 15:26 "until further notice"** — do not launch, do not schedule. (Was: spatial/Lua/build tasks + test runner + long-context tmux reading. Re-homed to deepseek.)
 - **Claude Code (Pro plan)**: use Sonnet 5 as the daily driver. **Do NOT default to Fable — save Fable for golden-ticket moments only or when Casey explicitly asks.** Use Claude less than DeepSeek and GLM.
 - **MMX (Starter plan)**: use ONLY for asset generation the others can't do — images, video, speech, music.
 - **DeepInfra**: use for models we can't get elsewhere (Seed-2.0-pro, Hermes-3-Llama-405B, FLUX-2-max). Not for DeepSeek models — use direct API instead.
@@ -89,3 +97,8 @@ Free tier — use for assets, models, and embeddings:
 - **Liquid-LFM2.5-2.6B** — the boat brain. Agentic (planning, tool calling, multi-step), device-native, private, offline. Local Ollama: `Liquid-LFM2.5-2.6B` on http://127.0.0.1:11434 (~42–67 tok/s on RTX 4050; HF GGUF Q4_K_M; ollama upgraded 0.9.6 → 0.32.15 to unlock lfm2 arch).
 - Fits the "hundred boats" doctrine: many cheap local agents, no per-token cost; edge-native like the CF migration; future F/V EILEEN boat brain (no cloud 60mi offshore).
 - Also on the bench: `LiquidAI/lfm2.5-350m` (nano, was corrupt — re-pulled) and `LiquidAI/lfm2.5-1.2b-instruct` (pulled but needs the 0.32.15 engine to load — now available).
+
+## WSL2 GPU Instrument Law (INSTRUMENT-01, calibrated 2026-10-01 — LAW_CALIBRATED)
+- Idle <5s: SAFE. Onset 5-10s idle. Saturation ~4.5× slowdown by 20s idle, flat after (kernel-agnostic: elementwise 5.3×).
+- Recovery: ≥0.3s sustained synced load restores ≥97% of hot (repro 2026-10-01: 0.3s→103.7%, 0.6s→97-106%). 0.1s is BEST-CASE single-draw (98.8% booked, 76.8% on independent repro) — do not rely on it. bench.py uses 0.6s (margin, kept).
+- RULE: every GPU measurement on this box ramps first and reports a ramp receipt. No exceptions. Per-point slowdown magnitudes are single-draw statistics (repro got 0.98x at 20s idle, 2.5x at 80s vs booked flat ~4.5x) — treat as order-of-magnitude.

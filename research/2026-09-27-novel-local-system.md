@@ -1,0 +1,12 @@
+# Chiaroscuro Flow Synthesizer: The Missing Local Edge System
+
+The existing fleet design frames the always-on local GPU as a dedicated compute scheduler for subagents and ASCII render pipelines—but misses the critical bridge between ambient sensory data, biometric feedback, and adaptive compute orchestration. The novel Chiaroscuro Flow Synthesizer (CFS) turns an RTX 4050's always-on idle capacity into a low-overhead, subconscious workflow partner that runs entirely in WSL2 without explicit prompts.
+
+Unlike basic GPU managers or ASCII render tools, the CFS unifies three previously siloed lanes: real-time low-bandwidth sensory capture (webcam micro-expression samples every 2s, screen region capture around the active editor, and NVIDIA Nsight telemetry), streaming generative media (a shifting ASCII chiaroscuro render of workflow state + ambient soundscape tied to GPU load and focus), and adaptive compute orchestration.
+
+The key twist: the CFS uses its shared sensory/generate pipeline not just as a UI, but as a dynamic task manager. When the ASCII render shows "waiting on subagents" with <30% GPU load, it spins up 2-4 cheap local subagents (Liquid-LFM2.5-1.2b, 5% VRAM each) to process pending tasks. When the webcam detects tense posture (calibrated to the user's resting state on first use), it throttles non-critical compute to free VRAM for the active editor's IntelliSense or long-running debug sessions. It also auto-archives daily flow narratives to local R2 storage, creating a searchable log of when peak flow aligned with low compute load and relaxed focus.
+
+This redefines the "always-on local system" from a dedicated task runner to a mindful, adaptive mirror of the engineer's own workflow—one that uses the GPU's idle cycles to both reflect and optimize their flow state.
+
+## Single Most Novel Sentence
+The system turns an RTX 4050's always-on idle capacity into a biometrically tuned workflow mirror that uses real-time webcam snapshots of the engineer's micro-expressions, screen region capture, and GPU telemetry to generate an ambient tonal soundscape and ASCII workflow render, while dynamically orchestrating local subagent tasks to match both the user's visible focus and available compute headroom.

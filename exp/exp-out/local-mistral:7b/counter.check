@@ -1,0 +1,8 @@
+./exp-out/local-mistral:7b/counter.quil:1: error[helm]: syntax: unexpected character '`'
+./exp-out/local-mistral:7b/counter.quil:1: error[helm]: syntax: unexpected character '`'
+./exp-out/local-mistral:7b/counter.quil:1: error[helm]: syntax: unexpected character '`'
+./exp-out/local-mistral:7b/counter.quil:10: error[helm]: syntax: unexpected character '`'
+./exp-out/local-mistral:7b/counter.quil:10: error[helm]: syntax: unexpected character '`'
+./exp-out/local-mistral:7b/counter.quil:10: error[helm]: syntax: unexpected character '`'
+./exp-out/local-mistral:7b/counter.quil:2: error[ticks]: syntax: expected '{' to open cell body, got 'int'
+FAIL ./exp-out/local-mistral:7b/counter.quil: 7 error(s)

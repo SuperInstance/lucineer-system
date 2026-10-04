@@ -1,0 +1,37 @@
+{
+ "hop": 2,
+ "inbox": {
+  "builder": {
+   "activation": 5.0454,
+   "n_delivered": 10
+  },
+  "mechanism": {
+   "activation": 3.2715,
+   "n_delivered": 5
+  },
+  "skeptic": {
+   "activation": 0.9884,
+   "n_delivered": 2
+  }
+ },
+ "fired": [
+  {
+   "cell": "builder",
+   "activation": 5.0454,
+   "action": "spawn",
+   "n_extractions": 3
+  },
+  {
+   "cell": "mechanism",
+   "note": "call failed",
+   "source": "ollama-cell"
+  },
+  {
+   "cell": "skeptic",
+   "activation": 0.9884,
+   "action": "spawn",
+   "n_extractions": 1
+  }
+ ],
+ "spawned": []
+}

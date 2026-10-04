@@ -53,7 +53,7 @@ Memory is limited. "Mental notes" don't survive session restarts; files do. Befo
 
 - **Never `shell=True` / `os.system` / shell-string subprocess calls.** Python: `subprocess.run([...])` list form only. Rust: `Command::new().args()`. No exceptions — shell re-parsing is a banned bug class.
 - **Memory usage must be O(chunk) or O(batch), never O(corpus) or O(duration).** Stream and checkpoint anything that processes unbounded input.
-- **Databases, spools, and scratch live on ext4 (`/home/...`), never `/mnt/c`.**
+- **Databases, spools, and scratch live on ext4 (`/home/...`), never `/mnt/c`. `/tmp` is tmpfs (RAM) on this box — wiped by every crash/reboot (GSOD ×2 on 2026-10-02). Anything you want back lives under `/home`.**
 - **Long-lived processes run under systemd** (`Restart=always`, `MemoryMax` set), not tmux. tmux is dev-only.
 - Full rationale and target architecture: `memory/kimi-infrastructure-proposal.md`.
 

@@ -20,7 +20,9 @@
 - **Agents experiment creatively** with tools in continuous bootstrapping/knowledge-growing loops; use keys for novel results.
 - Casey 09-29 13:18: "remember it and remember it well, like it's your own memories at stake."
 
-## Model Routing (current — 09-27 laws consolidated)
+## Model Routing (current — 09-27 laws consolidated + 10-01 amendments)
+
+**KIMI SUSPENDED (Casey 10-01 15:26, "until further notice")** — no launches, no tmux sessions, no one-shots. Test-runner/long-context roles re-homed to deepseek lanes. Prev kimi standing directive ("use often") is VOID until Casey revives it.
 
 - **z.ai 20x plan = THE workhorse.** GLM-5.3 full often for high-power (thinking max sometimes); `glm-5.3-flash` default for subagent mass lanes (fallbacks turbo/4.7-flash). Don't hoard the flagship.
 - **DeepInfra roster:** cheap/fast — XiaomiMiMo/MiMo-V2.6-Flash, ByteDance/Seed-2.0-mini, ibm-granite/granite-4.2-{3b,8b,30b}, inclusionAI/Ling-3.0-flash(-VL), meta-models/Muse-Glimmer-30B, tencent/Hy3/Hy4-preview, thinkingmachines/Inkling-Small, microsoft/phi-4, google/gemma-4-*, Llama-3.3-70B-Turbo, MythoMax/Euryale (RP/lore). Deep iteration (caches well): nvidia/Nemotron-3-Ultra-550B. Big alternate view (sparingly, caches poorly): Hermes-3-405B. Casey's 09-29 mesh nine: Qwen3.8-Flash, granite-4.2-30b, Ling-3.0-flash, Muse-Glimmer-30B, Nemotron-3.5-Lightning, Inkling-Small, DeepSeek-V4-Flash-Vision-Exp, Seed-2.0-mini, MiMo-V2.6-Flash.
@@ -31,6 +33,9 @@
 - Main session = high-level thinking/synthesis; bulk tokens → flash subagents. KIMIAI_KEY/ZAI_KEY/MINIMAX_KEY enable direct scriptable calls now.
 
 ## Active Lanes (2026-09-29)
+
+- **Self-training engine + standing scout (Casey 09-30 10:09):** "self-training under receipts" — quilt's serving path learns from its own sealed traffic (episodes → router/threshold/roster updates, each self-change gated like an experiment). Standing lane: `scratch/selftrain-scout/SELFTRAIN-SCOUT.md` (append-only rounds, 6 lenses, repo inventory), cron `selftrain-scout` every 3h (deepseek, isolated), r1 dispatched. Inputs: proxy episode ledger, AG2 claim-ratio selector, router distillation, tev1 ladder, CANON cell, ideation rounds' cellular/fossil-record designs.
+- **Release sweep (DONE 20:10 AKDT):** 10 packages + 1 worker shipped with Casey's key.txt creds — crates.io ×3 (quilt-vm-wasm, polln, quilt-c), npm ×3 (@superinstance/quilt-tools, -exoj, -polln), PyPI ×4 (fleet-murmur, mavis-substrate-walker, moth-waveform, quality-gate-stream) + quilt-c cron retry 04:50Z. quilt-cloudflare worker live with Ocean healed (Vectorize 64B id fix) + bottles/ledger//near. Creds wired: ~/.npmrc, ~/.pypirc, ~/.cargo/credentials.toml. Gotchas in memory/2026-09-29.md. polln type debt (~5,900) documented in repo TYPE-DEBT.md — strictness-retirement lane open.
 
 - **superinstance-api (HOT — Casey 15:15–15:17):** the fleet's growing context brain on CF, **with MCP tooling**. Five seams: tiles/rooms (plato-cf ABSORBED: Lamport versions, tiers full/gist/hint, demotion receipts), meaning (i2i-ledger pattern live: bge-m3→Vectorize /near), reflex (pincher: semantic intent-match → <50ms zero-LLM pinch; unknown escalates + compiles back), field (exoj: γ compute + η surprise per call; conservation γ+η≤1585 per quilt-dba), growth (quilt-dba: stage-tagged rooms; adding cells = advancing stages). MCP Streamable-HTTP /mcp tools: book/near/since/tile_file/tile_get/tile_history/tile_demote/pinch/field_query/witness_get; per-agent tokens. Design receipt + schema.sql at `~/projects/superinstance-api/`. lever-runner unidentified (asked Casey). Build order: worker v1 (merge i2i+plato endpoints) → MCP endpoint → reflex layer → field cols → deploy. **DONE 15:56: LIVE at superinstance-api.casey-digennaro.workers.dev, repo SuperInstance/superinstance-api.** 16:2x additions: `/intents` + `intents_list` (14 MCP tools), `scripts/lever_bridge.py` (fleet pinch ↔ local lever-runner: FIRE/CONFIRM/ESCALATE → compile-back, --pull-fleet/--push-local), `clients/README.md` (Claude Code/OpenCode/OpenClaw/curl), skill proposal pending. Wave 2 lanes airborne: canon cells, mavis line, language-port empire.
 

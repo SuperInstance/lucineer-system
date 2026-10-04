@@ -1,0 +1,51 @@
+{
+ "hop": 1,
+ "inbox": {
+  "mechanism": {
+   "activation": 0.84,
+   "n_delivered": 3
+  },
+  "skeptic": {
+   "activation": 0.7,
+   "n_delivered": 3
+  },
+  "builder": {
+   "activation": 0.8025,
+   "n_delivered": 3
+  }
+ },
+ "fired": [
+  {
+   "cell": "mechanism",
+   "activation": 0.84,
+   "action": "spawn",
+   "n_extractions": 3
+  },
+  {
+   "cell": "builder",
+   "activation": 0.8025,
+   "action": "spawn",
+   "n_extractions": 4
+  },
+  {
+   "cell": "skeptic",
+   "activation": 0.7,
+   "action": "spawn",
+   "n_extractions": 3
+  }
+ ],
+ "spawned": [
+  {
+   "from": "mechanism",
+   "n_new": 3
+  },
+  {
+   "from": "builder",
+   "n_new": 4
+  },
+  {
+   "from": "skeptic",
+   "n_new": 3
+  }
+ ]
+}

@@ -1,0 +1,81 @@
+{
+ "input_packet": {
+  "jev_id": "jev-120ba1e9b0c7",
+  "cell": "input",
+  "hop": 0,
+  "ts": "2026-10-02T07:42:22Z",
+  "judgment": {
+   "verdict": "",
+   "confidence": 0.5,
+   "grounds": ""
+  },
+  "extractions": [
+   {
+    "type": "sub-question",
+    "content": "How can a language model improve itself?",
+    "salience": 1.0
+   },
+   {
+    "type": "entity",
+    "content": "small language model",
+    "salience": 0.9
+   },
+   {
+    "type": "constraint",
+    "content": "using only its own outputs",
+    "salience": 0.8
+   },
+   {
+    "type": "mechanism",
+    "content": "self-improvement",
+    "salience": 0.7
+   },
+   {
+    "type": "risk",
+    "content": "other forms of input or feedback",
+    "salience": 0.6
+   }
+  ],
+  "verdict": {
+   "action": "route",
+   "targets_hint": [],
+   "summary": ""
+  },
+  "parents": [],
+  "notes": {
+   "repairs": []
+  }
+ },
+ "pending": [
+  {
+   "type": "sub-question",
+   "content": "How can a language model improve itself?",
+   "salience": 1.0,
+   "salience_eff": 0.5
+  },
+  {
+   "type": "entity",
+   "content": "small language model",
+   "salience": 0.9,
+   "salience_eff": 0.45
+  },
+  {
+   "type": "constraint",
+   "content": "using only its own outputs",
+   "salience": 0.8,
+   "salience_eff": 0.4
+  },
+  {
+   "type": "mechanism",
+   "content": "self-improvement",
+   "salience": 0.7,
+   "salience_eff": 0.35
+  },
+  {
+   "type": "risk",
+   "content": "other forms of input or feedback",
+   "salience": 0.6,
+   "salience_eff": 0.3
+  }
+ ]
+}

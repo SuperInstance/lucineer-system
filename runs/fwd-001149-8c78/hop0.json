@@ -1,0 +1,87 @@
+{
+ "input_packet": {
+  "jev_id": "jev-2eabb5614b33",
+  "cell": "input",
+  "hop": 0,
+  "ts": "2026-10-02T08:11:58Z",
+  "judgment": {
+   "verdict": "spawn",
+   "confidence": 0.7,
+   "grounds": "The prompt requires decomposition into multiple granular components to address different aspects of the question, indicating potential mechanisms, constraints, and risks in credit assignment."
+  },
+  "extractions": [
+   {
+    "type": "sub-question",
+    "content": "how credit should be assigned",
+    "salience": 0.8
+   },
+   {
+    "type": "entity",
+    "content": "when many cells contribute to one answer",
+    "salience": 0.7
+   },
+   {
+    "type": "constraint",
+    "content": "credit should be assigned reasonably",
+    "salience": 0.6
+   },
+   {
+    "type": "mechanism",
+    "content": "methods for determining credit distribution among contributing cells",
+    "salience": 0.5
+   },
+   {
+    "type": "risk",
+    "content": "potential misalignment in credit assignment",
+    "salience": 0.4
+   }
+  ],
+  "verdict": {
+   "action": "spawn",
+   "targets_hint": [
+    "sub-question",
+    "entity",
+    "constraint",
+    "mechanism",
+    "risk"
+   ],
+   "summary": "Detailed decomposition of the prompt into sub-questions, entities, constraints, mechanism, and risk components."
+  },
+  "parents": [],
+  "notes": {
+   "repairs": []
+  }
+ },
+ "pending": [
+  {
+   "type": "sub-question",
+   "content": "how credit should be assigned",
+   "salience": 0.8,
+   "salience_eff": 0.56
+  },
+  {
+   "type": "entity",
+   "content": "when many cells contribute to one answer",
+   "salience": 0.7,
+   "salience_eff": 0.49
+  },
+  {
+   "type": "constraint",
+   "content": "credit should be assigned reasonably",
+   "salience": 0.6,
+   "salience_eff": 0.42
+  },
+  {
+   "type": "mechanism",
+   "content": "methods for determining credit distribution among contributing cells",
+   "salience": 0.5,
+   "salience_eff": 0.35
+  },
+  {
+   "type": "risk",
+   "content": "potential misalignment in credit assignment",
+   "salience": 0.4,
+   "salience_eff": 0.28
+  }
+ ]
+}

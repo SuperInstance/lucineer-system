@@ -1,0 +1,30 @@
+ ```quil
+cell src int<8> = 0 {
+  tick {
+    src <= src + 1;
+  }
+}
+
+link fanout s1;
+link fanout s2;
+link fanout s3;
+
+cell s1 int<8> = 0 {
+  tick {
+    bind src <= s1;
+  }
+}
+
+cell s2 int<8> = 0 {
+  tick {
+    bind src <= s2;
+  }
+}
+
+cell s3 int<8> = 0 {
+  tick {
+    bind src <= s3;
+  }
+}
+```
+

@@ -1,0 +1,114 @@
+./exp-out/local-deepseek-r1:8b/counter.quil:2: error[helm]: syntax: unexpected character "'"
+./exp-out/local-deepseek-r1:8b/counter.quil:2: error[helm]: syntax: unexpected character "'"
+./exp-out/local-deepseek-r1:8b/counter.quil:2: error[helm]: syntax: unexpected character '\x1b'
+./exp-out/local-deepseek-r1:8b/counter.quil:2: error[helm]: syntax: unexpected character '['
+./exp-out/local-deepseek-r1:8b/counter.quil:3: error[helm]: syntax: unexpected character "'"
+./exp-out/local-deepseek-r1:8b/counter.quil:3: error[helm]: syntax: unexpected character "'"
+./exp-out/local-deepseek-r1:8b/counter.quil:3: error[helm]: syntax: unexpected character '\x1b'
+./exp-out/local-deepseek-r1:8b/counter.quil:3: error[helm]: syntax: unexpected character '['
+./exp-out/local-deepseek-r1:8b/counter.quil:6: error[helm]: syntax: unexpected character ':'
+./exp-out/local-deepseek-r1:8b/counter.quil:7: error[helm]: syntax: unexpected character ':'
+./exp-out/local-deepseek-r1:8b/counter.quil:8: error[helm]: syntax: unexpected character '\x1b'
+./exp-out/local-deepseek-r1:8b/counter.quil:8: error[helm]: syntax: unexpected character '['
+./exp-out/local-deepseek-r1:8b/counter.quil:11: error[helm]: syntax: unexpected character ':'
+./exp-out/local-deepseek-r1:8b/counter.quil:15: error[helm]: syntax: unexpected character '\x1b'
+./exp-out/local-deepseek-r1:8b/counter.quil:15: error[helm]: syntax: unexpected character '['
+./exp-out/local-deepseek-r1:8b/counter.quil:15: error[helm]: syntax: unexpected character '\x1b'
+./exp-out/local-deepseek-r1:8b/counter.quil:15: error[helm]: syntax: unexpected character '['
+./exp-out/local-deepseek-r1:8b/counter.quil:18: error[helm]: syntax: unexpected character ':'
+./exp-out/local-deepseek-r1:8b/counter.quil:19: error[helm]: syntax: unexpected character ':'
+./exp-out/local-deepseek-r1:8b/counter.quil:19: error[helm]: syntax: unexpected character ':'
+./exp-out/local-deepseek-r1:8b/counter.quil:19: error[helm]: syntax: unexpected character "'"
+./exp-out/local-deepseek-r1:8b/counter.quil:20: error[helm]: syntax: unexpected character ':'
+./exp-out/local-deepseek-r1:8b/counter.quil:20: error[helm]: syntax: unexpected character ':'
+./exp-out/local-deepseek-r1:8b/counter.quil:22: error[helm]: syntax: unexpected character "'"
+./exp-out/local-deepseek-r1:8b/counter.quil:24: error[helm]: syntax: unexpected character ':'
+./exp-out/local-deepseek-r1:8b/counter.quil:35: error[helm]: syntax: unexpected character ':'
+./exp-out/local-deepseek-r1:8b/counter.quil:35: error[helm]: syntax: unexpected character "'"
+./exp-out/local-deepseek-r1:8b/counter.quil:35: error[helm]: syntax: unexpected character "'"
+./exp-out/local-deepseek-r1:8b/counter.quil:35: error[helm]: syntax: unexpected character "'"
+./exp-out/local-deepseek-r1:8b/counter.quil:35: error[helm]: syntax: unexpected character '\x1b'
+./exp-out/local-deepseek-r1:8b/counter.quil:35: error[helm]: syntax: unexpected character '['
+./exp-out/local-deepseek-r1:8b/counter.quil:35: error[helm]: syntax: unexpected character '\x1b'
+./exp-out/local-deepseek-r1:8b/counter.quil:35: error[helm]: syntax: unexpected character '['
+./exp-out/local-deepseek-r1:8b/counter.quil:36: error[helm]: syntax: unexpected character "'"
+./exp-out/local-deepseek-r1:8b/counter.quil:36: error[helm]: syntax: unexpected character "'"
+./exp-out/local-deepseek-r1:8b/counter.quil:36: error[helm]: syntax: unexpected character ':'
+./exp-out/local-deepseek-r1:8b/counter.quil:43: error[helm]: syntax: unexpected character '?'
+./exp-out/local-deepseek-r1:8b/counter.quil:43: error[helm]: syntax: unexpected character ':'
+./exp-out/local-deepseek-r1:8b/counter.quil:47: error[helm]: syntax: unexpected character ':'
+./exp-out/local-deepseek-r1:8b/counter.quil:47: error[helm]: syntax: unexpected character '\x1b'
+./exp-out/local-deepseek-r1:8b/counter.quil:47: error[helm]: syntax: unexpected character '['
+./exp-out/local-deepseek-r1:8b/counter.quil:47: error[helm]: syntax: unexpected character '\x1b'
+./exp-out/local-deepseek-r1:8b/counter.quil:47: error[helm]: syntax: unexpected character '['
+./exp-out/local-deepseek-r1:8b/counter.quil:50: error[helm]: syntax: unexpected character '\x1b'
+./exp-out/local-deepseek-r1:8b/counter.quil:50: error[helm]: syntax: unexpected character '['
+./exp-out/local-deepseek-r1:8b/counter.quil:50: error[helm]: syntax: unexpected character '\x1b'
+./exp-out/local-deepseek-r1:8b/counter.quil:50: error[helm]: syntax: unexpected character '['
+./exp-out/local-deepseek-r1:8b/counter.quil:53: error[helm]: syntax: unexpected character ':'
+./exp-out/local-deepseek-r1:8b/counter.quil:53: error[helm]: syntax: unexpected character '\x1b'
+./exp-out/local-deepseek-r1:8b/counter.quil:53: error[helm]: syntax: unexpected character '['
+./exp-out/local-deepseek-r1:8b/counter.quil:53: error[helm]: syntax: unexpected character '\x1b'
+./exp-out/local-deepseek-r1:8b/counter.quil:53: error[helm]: syntax: unexpected character '['
+./exp-out/local-deepseek-r1:8b/counter.quil:56: error[helm]: syntax: unexpected character ':'
+./exp-out/local-deepseek-r1:8b/counter.quil:59: error[helm]: syntax: unexpected character '?'
+./exp-out/local-deepseek-r1:8b/counter.quil:59: error[helm]: syntax: unexpected character ':'
+./exp-out/local-deepseek-r1:8b/counter.quil:62: error[helm]: syntax: unexpected character ':'
+./exp-out/local-deepseek-r1:8b/counter.quil:64: error[helm]: syntax: unexpected character "'"
+./exp-out/local-deepseek-r1:8b/counter.quil:66: error[helm]: syntax: unexpected character ':'
+./exp-out/local-deepseek-r1:8b/counter.quil:66: error[helm]: syntax: unexpected character "'"
+./exp-out/local-deepseek-r1:8b/counter.quil:66: error[helm]: syntax: unexpected character "'"
+./exp-out/local-deepseek-r1:8b/counter.quil:66: error[helm]: syntax: unexpected character '\x1b'
+./exp-out/local-deepseek-r1:8b/counter.quil:66: error[helm]: syntax: unexpected character '['
+./exp-out/local-deepseek-r1:8b/counter.quil:66: error[helm]: syntax: unexpected character '\x1b'
+./exp-out/local-deepseek-r1:8b/counter.quil:66: error[helm]: syntax: unexpected character '['
+./exp-out/local-deepseek-r1:8b/counter.quil:69: error[helm]: syntax: unexpected character "'"
+./exp-out/local-deepseek-r1:8b/counter.quil:69: error[helm]: syntax: unexpected character '\x1b'
+./exp-out/local-deepseek-r1:8b/counter.quil:69: error[helm]: syntax: unexpected character '['
+./exp-out/local-deepseek-r1:8b/counter.quil:69: error[helm]: syntax: unexpected character '\x1b'
+./exp-out/local-deepseek-r1:8b/counter.quil:69: error[helm]: syntax: unexpected character '['
+./exp-out/local-deepseek-r1:8b/counter.quil:70: error[helm]: syntax: unexpected character "'"
+./exp-out/local-deepseek-r1:8b/counter.quil:72: error[helm]: syntax: unexpected character "'"
+./exp-out/local-deepseek-r1:8b/counter.quil:72: error[helm]: syntax: unexpected character '\x1b'
+./exp-out/local-deepseek-r1:8b/counter.quil:72: error[helm]: syntax: unexpected character '['
+./exp-out/local-deepseek-r1:8b/counter.quil:75: error[helm]: syntax: unexpected character "'"
+./exp-out/local-deepseek-r1:8b/counter.quil:83: error[helm]: syntax: unexpected character '?'
+./exp-out/local-deepseek-r1:8b/counter.quil:83: error[helm]: syntax: unexpected character ':'
+./exp-out/local-deepseek-r1:8b/counter.quil:1: error[top]: syntax: unknown statement 'Thinking'
+./exp-out/local-deepseek-r1:8b/counter.quil:2: error[loop a]: syntax: expected 'in' after loop variable
+./exp-out/local-deepseek-r1:8b/counter.quil:2: error[ticks]: syntax: expected '{' to open cell body, got 'of'
+./exp-out/local-deepseek-r1:8b/counter.quil:3: error[tick]: syntax: expected '{' to open tick block, got ','
+./exp-out/local-deepseek-r1:8b/counter.quil:3: error[even]: syntax: expected '(' to open view params, got 'returning'
+./exp-out/local-deepseek-r1:8b/counter.quil:7: error[declaration]: syntax: expected '{' to open cell body, got 'cell'
+./exp-out/local-deepseek-r1:8b/counter.quil:7: error[cell]: syntax: expected identifier (cell name), got '<'
+./exp-out/local-deepseek-r1:8b/counter.quil:8: error[can]: syntax: expected '{' to open cell body, got 'have'
+./exp-out/local-deepseek-r1:8b/counter.quil:8: error[tick]: syntax: expected '{' to open tick block, got '('
+./exp-out/local-deepseek-r1:8b/counter.quil:9: error[view]: syntax: expected identifier (view name), got '('
+./exp-out/local-deepseek-r1:8b/counter.quil:12: error[ticks]: syntax: expected '{' to open cell body, got 'of'
+./exp-out/local-deepseek-r1:8b/counter.quil:13: error[even]: syntax: expected '(' to open view params, got 'that'
+./exp-out/local-deepseek-r1:8b/counter.quil:16: error[tick]: syntax: expected '{' to open tick block, got 'and'
+./exp-out/local-deepseek-r1:8b/counter.quil:16: error[view]: syntax: expected identifier (view name), got '.'
+./exp-out/local-deepseek-r1:8b/counter.quil:19: error[s]: syntax: expected '{' to open cell body, got 'tick'
+./exp-out/local-deepseek-r1:8b/counter.quil:19: error[tick]: syntax: expected '{' to open tick block, got 'may'
+./exp-out/local-deepseek-r1:8b/counter.quil:20: error[purity]: syntax: expected '(' to open view params, got 'no'
+./exp-out/local-deepseek-r1:8b/counter.quil:20: error[signals]: syntax: expected '{' to open propose region, got 'inside'
+./exp-out/local-deepseek-r1:8b/counter.quil:20: error[view]: syntax: expected identifier (view name), got '.'
+./exp-out/local-deepseek-r1:8b/counter.quil:22: error[and]: syntax: expected '{' to open cell body, got 'then'
+./exp-out/local-deepseek-r1:8b/counter.quil:22: error[inside]: syntax: expected '(' to open view params, got 'its'
+./exp-out/local-deepseek-r1:8b/counter.quil:26: error[ticks]: syntax: expected '{' to open cell body, got 'int'
+./exp-out/local-deepseek-r1:8b/counter.quil:35: error[ticks]: syntax: expected '{' to open cell body, got 'and'
+./exp-out/local-deepseek-r1:8b/counter.quil:35: error[view]: syntax: expected identifier (view name), got '1'
+./exp-out/local-deepseek-r1:8b/counter.quil:38: error[ticks]: syntax: expected '{' to open cell body, got 'int'
+./exp-out/local-deepseek-r1:8b/counter.quil:53: error[must]: syntax: expected '(' to open view params, got 'return'
+./exp-out/local-deepseek-r1:8b/counter.quil:58: error[even]: syntax: expected '(' to open view params, got '='
+./exp-out/local-deepseek-r1:8b/counter.quil:62: error[loop view]: syntax: expected 'in' after loop variable
+./exp-out/local-deepseek-r1:8b/counter.quil:62: error[view]: syntax: expected identifier (view name), got '<'
+./exp-out/local-deepseek-r1:8b/counter.quil:64: error[loop a]: syntax: expected 'in' after loop variable
+./exp-out/local-deepseek-r1:8b/counter.quil:66: error[named]: syntax: expected '(' to open view params, got 'even'
+./exp-out/local-deepseek-r1:8b/counter.quil:69: error[must]: syntax: expected '{' to open cell body, got 'have'
+./exp-out/local-deepseek-r1:8b/counter.quil:69: error[tick]: syntax: expected '{' to open tick block, got 'and'
+./exp-out/local-deepseek-r1:8b/counter.quil:69: error[is]: syntax: expected '(' to open view params, got 'inside'
+./exp-out/local-deepseek-r1:8b/counter.quil:69: error[cell]: syntax: expected identifier (cell name), got '5'
+./exp-out/local-deepseek-r1:8b/counter.quil:70: error[s]: syntax: expected '{' to open cell body, got 'body'
+./exp-out/local-deepseek-r1:8b/counter.quil:78: error[ticks]: syntax: expected '{' to open cell body, got 'int'
+FAIL ./exp-out/local-deepseek-r1:8b/counter.quil: 113 error(s)

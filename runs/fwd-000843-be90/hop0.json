@@ -1,0 +1,81 @@
+{
+ "input_packet": {
+  "jev_id": "jev-b70d96e51a7c",
+  "cell": "input",
+  "hop": 0,
+  "ts": "2026-10-02T08:08:51Z",
+  "judgment": {
+   "verdict": "",
+   "confidence": 0.5,
+   "grounds": ""
+  },
+  "extractions": [
+   {
+    "type": "sub-question",
+    "content": "why self-judging models drift",
+    "salience": 0.7
+   },
+   {
+    "type": "sub-question",
+    "content": "why verifier-checked models compound",
+    "salience": 0.7
+   },
+   {
+    "type": "constraint",
+    "content": "comparing self-judging to verifier-checked models",
+    "salience": 0.8
+   },
+   {
+    "type": "mechanism",
+    "content": "drift in self-judging models due to unchecked aspects",
+    "salience": 0.6
+   },
+   {
+    "type": "mechanism",
+    "content": "compound in verifier-checked models due to consistent validation",
+    "salience": 0.6
+   }
+  ],
+  "verdict": {
+   "action": "route",
+   "targets_hint": [],
+   "summary": ""
+  },
+  "parents": [],
+  "notes": {
+   "repairs": []
+  }
+ },
+ "pending": [
+  {
+   "type": "sub-question",
+   "content": "why self-judging models drift",
+   "salience": 0.7,
+   "salience_eff": 0.35
+  },
+  {
+   "type": "sub-question",
+   "content": "why verifier-checked models compound",
+   "salience": 0.7,
+   "salience_eff": 0.35
+  },
+  {
+   "type": "constraint",
+   "content": "comparing self-judging to verifier-checked models",
+   "salience": 0.8,
+   "salience_eff": 0.4
+  },
+  {
+   "type": "mechanism",
+   "content": "drift in self-judging models due to unchecked aspects",
+   "salience": 0.6,
+   "salience_eff": 0.3
+  },
+  {
+   "type": "mechanism",
+   "content": "compound in verifier-checked models due to consistent validation",
+   "salience": 0.6,
+   "salience_eff": 0.3
+  }
+ ]
+}

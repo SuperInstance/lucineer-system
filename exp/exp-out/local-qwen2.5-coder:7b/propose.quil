@@ -1,0 +1,7 @@
+cell acc int<32> = 0 {
+  tick {
+    acc <= acc + pred;
+  }
+}
+propose pred : int<32> -> acc;
+

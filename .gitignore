@@ -2,3 +2,10 @@
 *.deb
 .wrangler/
 __pycache__/
+
+# embedded repo clones stay local as their own repos (gitlinks break clones)
+.scratch-audit-r20/
+ternary-wiki/
+
+# runtime logs stay local now — ollama.log hit 1.6GB (GH001 rejects >100MB); history keeps old versions
+logs/*.log

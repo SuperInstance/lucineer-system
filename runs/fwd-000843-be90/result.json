@@ -1,0 +1,595 @@
+{
+ "run_id": "fwd-000843-be90",
+ "prompt": "Explain why a self-judging model drifts while a verifier-checked model compounds.",
+ "answer": "A self-judging model can drift while a verifier-checked model compounds due to differing mechanisms of model validation and adjustment. Self-judging models rely on internal error metrics to adjust themselves, which can lead to instability or drift as the model relies on these internal checks to continuously improve. This internal self-judging mechanism can cause drift, as the model does not always externalize validation to ensure consistency and correctness (e.g., [sub-question, counter, counter; hop1]). On the other hand, verifier-checked models are validated by external checks, accumulating these consistent validations over time. This method of validation can help compound the adjustments and corrections necessary for the model, leading to a more stable and compound model that is closer to its intended behavior (e.g., [counter, mechanism; hop1, hop2]). The internal self-judging mechanisms of self-judging models and the external validation of verifier-checked models illustrate conflicting approaches where one can lead to model inconsistency or divergence, while the other promotes stability and accuracy.",
+ "transcript": [
+  {
+   "jev_id": "jev-b70d96e51a7c",
+   "cell": "input",
+   "hop": 0,
+   "ts": "2026-10-02T08:08:51Z",
+   "judgment": {
+    "verdict": "",
+    "confidence": 0.5,
+    "grounds": ""
+   },
+   "extractions": [
+    {
+     "type": "sub-question",
+     "content": "why self-judging models drift",
+     "salience": 0.7
+    },
+    {
+     "type": "sub-question",
+     "content": "why verifier-checked models compound",
+     "salience": 0.7
+    },
+    {
+     "type": "constraint",
+     "content": "comparing self-judging to verifier-checked models",
+     "salience": 0.8
+    },
+    {
+     "type": "mechanism",
+     "content": "drift in self-judging models due to unchecked aspects",
+     "salience": 0.6
+    },
+    {
+     "type": "mechanism",
+     "content": "compound in verifier-checked models due to consistent validation",
+     "salience": 0.6
+    }
+   ],
+   "verdict": {
+    "action": "route",
+    "targets_hint": [],
+    "summary": ""
+   },
+   "parents": [],
+   "notes": {
+    "repairs": []
+   }
+  },
+  {
+   "jev_id": "jev-e08643b0b798",
+   "cell": "builder",
+   "hop": 1,
+   "ts": "2026-10-02T08:08:55Z",
+   "judgment": {
+    "verdict": "self-judging models drift more due to unchecked aspects, which verifier-checked models compound upon for greater reliability",
+    "confidence": 0.9,
+    "grounds": "self-judging models lack external verification, leading to unchecked errors and inconsistency which results in drift. In contrast, verifier-checked models are continuously validated, reducing such drifts and thus ensuring overall consistency and reliability"
+   },
+   "extractions": [
+    {
+     "type": "constraint",
+     "content": "(constraint s=0.80) comparing self-judging to verifier-checked models",
+     "salience": 0.8
+    },
+    {
+     "type": "mechanism",
+     "content": "(mechanism s=0.60) drift in self-judging models due to unchecked aspects",
+     "salience": 0.6
+    },
+    {
+     "type": "mechanism",
+     "content": "(mechanism s=0.60) compound in verifier-checked models due to consistent validation",
+     "salience": 0.6
+    }
+   ],
+   "verdict": {
+    "action": "spawn",
+    "targets_hint": [
+     "self_judging_cell",
+     "verifier_checked_cell"
+    ],
+    "summary": "Route the components to the self_judging_cell and verifier_checked_cell for deeper analysis and comparison"
+   },
+   "parents": [
+    "jev-b70d96e51a7c"
+   ],
+   "notes": {
+    "repairs": [],
+    "activation_in": 1.229,
+    "delivered_types": [
+     "constraint",
+     "mechanism"
+    ]
+   }
+  },
+  {
+   "jev_id": "jev-a7ed1755ca21",
+   "cell": "mechanism",
+   "hop": 1,
+   "ts": "2026-10-02T08:08:59Z",
+   "judgment": {
+    "verdict": "route",
+    "confidence": 0.8,
+    "grounds": "Both sub-questions involve contrasting mechanisms of model behavior and need exploration separately."
+   },
+   "extractions": [
+    {
+     "type": "sub-question",
+     "content": "self-judging models rely on internal error metrics to adjust themselves, potentially leading to instability or drift.",
+     "salience": 0.7
+    },
+    {
+     "type": "sub-question",
+     "content": "verifier-checked models are validated by external checks, which can accumulate and compound over time, often leading to model divergence from intended behavior.",
+     "salience": 0.7
+    },
+    {
+     "type": "constraint",
+     "content": "comparing the two models",
+     "salience": 0.8
+    }
+   ],
+   "verdict": {
+    "action": "spawn",
+    "targets_hint": [
+     "self-judging model mechanism",
+     "verifier-checked model mechanism"
+    ],
+    "summary": "Investigate the internal self-adjustment of self-judging models and external validation of verifier-checked models separately."
+   },
+   "parents": [
+    "jev-b70d96e51a7c"
+   ],
+   "notes": {
+    "repairs": [],
+    "activation_in": 1.1,
+    "delivered_types": [
+     "constraint",
+     "sub-question"
+    ]
+   }
+  },
+  {
+   "jev_id": "jev-9271d030b86a",
+   "cell": "skeptic",
+   "hop": 1,
+   "ts": "2026-10-02T08:09:01Z",
+   "judgment": {
+    "verdict": "self-judging models are more likely to drift due to less trust and feedback",
+    "confidence": 0.85,
+    "grounds": "self-judging models operate with internal skepticism, which can lead to increased variance and instability, whereas verifier-checked models have established external validation, reducing the need for internal correction mechanisms"
+   },
+   "extractions": [
+    {
+     "type": "sub-question",
+     "content": "why self-judging models drift",
+     "salience": 0.7
+    }
+   ],
+   "verdict": {
+    "action": "spawn",
+    "targets_hint": [
+     "self-judging models",
+     "verifier-checked models"
+    ],
+    "summary": "Explain why self-judging models are prone to drifting while verifier-checked models tend to compound knowledge more robustly"
+   },
+   "parents": [
+    "jev-b70d96e51a7c"
+   ],
+   "notes": {
+    "repairs": [],
+    "activation_in": 0.59,
+    "delivered_types": [
+     "sub-question"
+    ]
+   }
+  },
+  {
+   "jev_id": "jev-6216458b5995",
+   "cell": "builder",
+   "hop": 2,
+   "ts": "2026-10-02T08:09:07Z",
+   "judgment": {
+    "verdict": "spawn",
+    "confidence": 0.85,
+    "grounds": "The original question was split into sub-questions, necessitating a new cell to explore the reasons behind model drift and compounding in self-judging versus verifier-checked models."
+   },
+   "extractions": [
+    {
+     "type": "sub-question",
+     "content": "why self-judging models drift",
+     "salience": 0.59
+    },
+    {
+     "type": "counter",
+     "content": "verifier-checked models are validated by external checks which can accumulate and compound over time, often leading to model divergence from intended behavior",
+     "salience": 0.56
+    },
+    {
+     "type": "counter",
+     "content": "self-judging models rely on internal error metrics to adjust themselves, potentially leading to instability or drift",
+     "salience": 0.56
+    },
+    {
+     "type": "mechanism",
+     "content": "verifier-checked models accumulate consistent validation over time, often leading to model divergence from intended behavior",
+     "salience": 0.56
+    },
+    {
+     "type": "mechanism",
+     "content": "self-judging models adjust themselves based on internal error metrics, which can lead to instability or drift",
+     "salience": 0.56
+    }
+   ],
+   "verdict": {
+    "action": "spawn",
+    "targets_hint": [
+     "self_judging_model",
+     "verifier_checked_model"
+    ],
+    "summary": "Exploring the differences in how self-judging and verifier-checked models behave due to internal error metrics in self-judging models, and consistent validation in verifier-checked models."
+   },
+   "parents": [
+    "jev-e08643b0b798",
+    "jev-a7ed1755ca21",
+    "jev-9271d030b86a"
+   ],
+   "notes": {
+    "repairs": [],
+    "activation_in": 2.9562,
+    "delivered_types": [
+     "constraint",
+     "mechanism"
+    ]
+   }
+  },
+  {
+   "jev_id": "jev-913ee5fa7423",
+   "cell": "mechanism",
+   "hop": 2,
+   "ts": "2026-10-02T08:09:10Z",
+   "judgment": {
+    "verdict": "spawn",
+    "confidence": 0.5,
+    "grounds": "new sub-component identified for analysis"
+   },
+   "extractions": [
+    {
+     "type": "sub-question",
+     "content": "internal self-judging mechanism causes drift",
+     "salience": 0.7
+    },
+    {
+     "type": "mechanism",
+     "content": "internal self-judging mechanism",
+     "salience": 0.7
+    }
+   ],
+   "verdict": {
+    "action": "route",
+    "targets_hint": [],
+    "summary": ""
+   },
+   "parents": [
+    "jev-e08643b0b798",
+    "jev-a7ed1755ca21",
+    "jev-9271d030b86a"
+   ],
+   "notes": {
+    "repairs": [],
+    "activation_in": 2.7675,
+    "delivered_types": [
+     "constraint",
+     "sub-question"
+    ]
+   }
+  },
+  {
+   "jev_id": "jev-26adc4d6e940",
+   "cell": "skeptic",
+   "hop": 2,
+   "ts": "2026-10-02T08:09:12Z",
+   "judgment": {
+    "verdict": "spawn",
+    "confidence": 0.85,
+    "grounds": "The provided analysis highlights internal error metrics in self-judging models as a potential source of instability or drift, but it does not fully address the external validation aspect in verifier-checked models. The skeptical component needs to explore why these external validation processes can also contribute to model divergence when unchecked."
+   },
+   "extractions": [
+    {
+     "type": "counter",
+     "content": "external validation processes in verifier-checked models can also lead to divergence when unchecked",
+     "salience": 0.7
+    }
+   ],
+   "verdict": {
+    "action": "route",
+    "targets_hint": [],
+    "summary": ""
+   },
+   "parents": [
+    "jev-e08643b0b798",
+    "jev-a7ed1755ca21",
+    "jev-9271d030b86a"
+   ],
+   "notes": {
+    "repairs": [],
+    "activation_in": 1.3009,
+    "delivered_types": [
+     "sub-question"
+    ]
+   }
+  }
+ ],
+ "route": null,
+ "run_log": {
+  "run_id": "fwd-000843-be90",
+  "prompt": "Explain why a self-judging model drifts while a verifier-checked model compounds.",
+  "started": "2026-10-02T08:08:43Z",
+  "seed": 42,
+  "calls": [
+   {
+    "cell": "input",
+    "hop": 0,
+    "source": "ollama-cell",
+    "ms": 8104,
+    "attempts": [
+     {
+      "label": "ollama-cell",
+      "kind": "ollama",
+      "model": "qwen2.5:3b-instruct-q4_K_M",
+      "status": 200,
+      "ms": 8104,
+      "finish": "stop",
+      "content_chars": 678,
+      "model_served": "qwen2.5:3b-instruct-q4_K_M"
+     }
+    ],
+    "seed_requested": 42
+   },
+   {
+    "cell": "builder",
+    "hop": 1,
+    "source": "ollama-cell",
+    "ms": 3986,
+    "attempts": [
+     {
+      "label": "ollama-cell",
+      "kind": "ollama",
+      "model": "qwen2.5:3b-instruct-q4_K_M",
+      "status": 200,
+      "ms": 3986,
+      "finish": "stop",
+      "content_chars": 1128,
+      "model_served": "qwen2.5:3b-instruct-q4_K_M"
+     }
+    ],
+    "seed_requested": 42
+   },
+   {
+    "cell": "mechanism",
+    "hop": 1,
+    "source": "ollama-cell",
+    "ms": 3728,
+    "attempts": [
+     {
+      "label": "ollama-cell",
+      "kind": "ollama",
+      "model": "qwen2.5:3b-instruct-q4_K_M",
+      "status": 200,
+      "ms": 3728,
+      "finish": "stop",
+      "content_chars": 1049,
+      "model_served": "qwen2.5:3b-instruct-q4_K_M"
+     }
+    ],
+    "seed_requested": 42
+   },
+   {
+    "cell": "skeptic",
+    "hop": 1,
+    "source": "ollama-cell",
+    "ms": 2743,
+    "attempts": [
+     {
+      "label": "ollama-cell",
+      "kind": "ollama",
+      "model": "qwen2.5:3b-instruct-q4_K_M",
+      "status": 200,
+      "ms": 2743,
+      "finish": "stop",
+      "content_chars": 785,
+      "model_served": "qwen2.5:3b-instruct-q4_K_M"
+     }
+    ],
+    "seed_requested": 42
+   },
+   {
+    "cell": "builder",
+    "hop": 2,
+    "source": "ollama-cell",
+    "ms": 5219,
+    "attempts": [
+     {
+      "label": "ollama-cell",
+      "kind": "ollama",
+      "model": "qwen2.5:3b-instruct-q4_K_M",
+      "status": 200,
+      "ms": 5219,
+      "finish": "stop",
+      "content_chars": 1568,
+      "model_served": "qwen2.5:3b-instruct-q4_K_M"
+     }
+    ],
+    "seed_requested": 42
+   },
+   {
+    "cell": "mechanism",
+    "hop": 2,
+    "source": "ollama-cell",
+    "ms": 3203,
+    "attempts": [
+     {
+      "label": "ollama-cell",
+      "kind": "ollama",
+      "model": "qwen2.5:3b-instruct-q4_K_M",
+      "status": 200,
+      "ms": 3203,
+      "finish": "stop",
+      "content_chars": 610,
+      "model_served": "qwen2.5:3b-instruct-q4_K_M"
+     }
+    ],
+    "seed_requested": 42
+   },
+   {
+    "cell": "skeptic",
+    "hop": 2,
+    "source": "ollama-cell",
+    "ms": 2429,
+    "attempts": [
+     {
+      "label": "ollama-cell",
+      "kind": "ollama",
+      "model": "qwen2.5:3b-instruct-q4_K_M",
+      "status": 200,
+      "ms": 2429,
+      "finish": "stop",
+      "content_chars": 644,
+      "model_served": "qwen2.5:3b-instruct-q4_K_M"
+     }
+    ],
+    "seed_requested": 42
+   },
+   {
+    "cell": "synth",
+    "source": "ollama-cell",
+    "ms": 3322,
+    "attempts": [
+     {
+      "label": "ollama-cell",
+      "kind": "ollama",
+      "model": "qwen2.5:3b-instruct-q4_K_M",
+      "status": 200,
+      "ms": 3322,
+      "finish": "stop",
+      "content_chars": 1121,
+      "model_served": "qwen2.5:3b-instruct-q4_K_M"
+     }
+    ]
+   }
+  ],
+  "hops": [
+   {
+    "hop": 1,
+    "inbox": {
+     "mechanism": {
+      "activation": 1.1,
+      "n_delivered": 3
+     },
+     "skeptic": {
+      "activation": 0.59,
+      "n_delivered": 2
+     },
+     "builder": {
+      "activation": 1.229,
+      "n_delivered": 4
+     }
+    },
+    "fired": [
+     {
+      "cell": "builder",
+      "activation": 1.229,
+      "action": "spawn",
+      "n_extractions": 3
+     },
+     {
+      "cell": "mechanism",
+      "activation": 1.1,
+      "action": "spawn",
+      "n_extractions": 3
+     },
+     {
+      "cell": "skeptic",
+      "activation": 0.59,
+      "action": "spawn",
+      "n_extractions": 1
+     }
+    ],
+    "spawned": [
+     {
+      "from": "builder",
+      "n_new": 3
+     },
+     {
+      "from": "mechanism",
+      "n_new": 3
+     },
+     {
+      "from": "skeptic",
+      "n_new": 1
+     }
+    ]
+   },
+   {
+    "hop": 2,
+    "inbox": {
+     "mechanism": {
+      "activation": 2.7675,
+      "n_delivered": 5
+     },
+     "builder": {
+      "activation": 2.9562,
+      "n_delivered": 6
+     },
+     "skeptic": {
+      "activation": 1.3009,
+      "n_delivered": 3
+     }
+    },
+    "fired": [
+     {
+      "cell": "builder",
+      "activation": 2.9562,
+      "action": "spawn",
+      "n_extractions": 5
+     },
+     {
+      "cell": "mechanism",
+      "activation": 2.7675,
+      "action": "route",
+      "n_extractions": 2
+     },
+     {
+      "cell": "skeptic",
+      "activation": 1.3009,
+      "action": "route",
+      "n_extractions": 1
+     }
+    ],
+    "spawned": []
+   }
+  ],
+  "spawn_injections": [
+   {
+    "hop": 1,
+    "from": "builder"
+   },
+   {
+    "hop": 1,
+    "from": "mechanism"
+   },
+   {
+    "hop": 1,
+    "from": "skeptic"
+   }
+  ],
+  "packets": [
+   "jev-b70d96e51a7c",
+   "jev-e08643b0b798",
+   "jev-a7ed1755ca21",
+   "jev-9271d030b86a",
+   "jev-6216458b5995",
+   "jev-913ee5fa7423",
+   "jev-26adc4d6e940"
+  ],
+  "max_hops": 2,
+  "spawn_budget": 3
+ },
+ "finished": "2026-10-02T08:09:15Z"
+}

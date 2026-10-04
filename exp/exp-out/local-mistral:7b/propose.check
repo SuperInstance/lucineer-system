@@ -1,0 +1,9 @@
+./exp-out/local-mistral:7b/propose.quil:1: error[helm]: syntax: unexpected character '`'
+./exp-out/local-mistral:7b/propose.quil:1: error[helm]: syntax: unexpected character '`'
+./exp-out/local-mistral:7b/propose.quil:1: error[helm]: syntax: unexpected character '`'
+./exp-out/local-mistral:7b/propose.quil:6: error[helm]: syntax: unexpected character ':'
+./exp-out/local-mistral:7b/propose.quil:8: error[helm]: syntax: unexpected character '`'
+./exp-out/local-mistral:7b/propose.quil:8: error[helm]: syntax: unexpected character '`'
+./exp-out/local-mistral:7b/propose.quil:8: error[helm]: syntax: unexpected character '`'
+./exp-out/local-mistral:7b/propose.quil:2: error[acc]: syntax: expected '{' to open cell body, got 'int'
+FAIL ./exp-out/local-mistral:7b/propose.quil: 8 error(s)

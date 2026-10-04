@@ -1,0 +1,26 @@
+You are writing a program in QUIL, a hardware description pseudolanguage that compiles to synthesizable Verilog. Follow this grammar EXACTLY (scalar cell form):
+
+# Grammar
+- Cell declaration:  cell <name> <type> = <init> { <body> }
+- Types: int<N> where N is an integer width (e.g. int<16>).
+- tick: the ONLY writer. Inside tick, assign with <=:  <cell> <= <expression>;
+- view: pure read:  view <name> = { return <expression>; }   (NO assignments inside view)
+- bind:  bind <sink> <= <source>;      (source drives sink)
+- link:  link <a> -> <b>;              (declare edges; for multiple sinks declare fanout first:  link fanout <n>;)
+- propose: declares a neural input port:  propose <portname> : int<N> -> <cell>;   (the port proposes values; only tick may consume them)
+- Rules (violations = compile error):
+  R1 single-writer: only the owning cell's tick may assign to it.
+  R2 view purity: no effect assignments or propose signals inside view.
+  R4 helm integer-only: no floats, no wall-clock, no nets anywhere.
+  R5 every link/fork edge count must be declared (fanout declared before use).
+  R6 loops must have static bounds: use for (i in 0..N) form only; no while.
+
+# Example program
+cell ticks int<16> = 0 {
+  tick {
+    ticks <= ticks + 1;
+  }
+  view parity = {
+    return ticks % 2;
+  }
+}
