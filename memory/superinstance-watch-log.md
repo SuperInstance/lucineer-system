@@ -764,3 +764,83 @@
 - Issues: no new untriaged or Lucineer-addressed items; notable open: MicroMoth/quilt-nn/quilt-attention cross-runtime conformance portability issues (Sep 29-30), EMBASSY items in moth-runner #2 and substrate-llm-client #1.
 - Stale branches: WIP snapshot branches in quilt-verilog (wip-snapshot-20260930*), round-74-reland in pong-quilt (merge attempted/relanded), MicroMoth PR branch pushes all have green follow-ups.
 - GPU night-watch lanes untouched; observe-only. Nothing warrants waking Casey.
+
+## 2026-10-04 14:03 AKDT — periodic watch
+- Open PRs (7): doubt-ledger #18/#19/#20, constraint-theory-math #2, quilt-jev-toolkit #1, quilt-in-git #12, doubt-ledger #16 — all docs/wave-4 work, no review-blocked or conflict flags observed.
+- CI: quilt-verilog master latest run green (ci toolchain fix, 09-27); quilt-rust main green (09-29). Failures seen are older main merges (09-25, superseded) and WIP snapshot branches — known/no action.
+- quilt-llvm, elephant: no failures.
+- Issues: nothing assigned to Lucineer/SuperInstance needing action; mostly upgrade-plan issues and cross-runtime conformance notes.
+- Stale-branch note: quilt-esp32 #1 documents the Aug 19 stale-clone orphaned CI history (already resolved in c851b7d).
+- Night-watch lanes untouched (observe only). Nothing needs Casey's attention.
+
+## 2026-10-04 16:03 AKDT (superinstance-watch)
+- Open PRs (own): 9 across SuperInstance repos (quilt-tools #50, fleet-witness #7, doubt-ledger #16/18/19/20, constraint-theory-math #2, quilt-jev-toolkit #1, quilt-in-git #12) + 2 stale personal PRs on Lucineer repos (Apr 2026). No conflicts or review-blocking states flagged.
+- Failing CI: quilt-verilog master red since merge of PR #7 (2026-09-25); quilt-rust main red since 2026-09-25 (WIP backup push); quilt-esp32 failures from Aug 19 orphaned-commits incident (issue #1 says restored in c851b7d). All pre-existing, nothing new on main in last 24h.
+- Issues: 15 open org-wide; mostly standing upgrade-plan tickets + conformance notes. No new assignments or items addressed to Lucineer requiring action. quilt-attention #1 / quilt-nn #1 non-portable sha issues remain open (known).
+- Stale branches: quilt-verilog wip-snapshot-20260930 / g3-kinduction; quilt-rust main WIP pushes. No movement overnight on quilt-verilog/llvm/rust/elephant/esp32.
+- GPU night-watch: observed only, lanes untouched.
+- Verdict: no action needed; NO_REPLY to Casey.
+
+## 2026-10-05 02:03 UTC (18:03 AKDT) superinstance-watch
+- PR sweep: 11+ open PRs across org; MicroMoth-quilt #43 and pong-quilt #114 active today. Nothing flagged awaiting review/conflict at a glance.
+- CI: quilt-verilog failures on wip-snapshot-20260930* branches (Oct 1) + older g3-kinduction (Sep 25); quilt-rust main CI failures (latest Sep 25); quilt-esp32 main failures are the Aug 19 stale-clone incident already documented by its open PR #1 (restored in c851b7d). No fresh main-branch red on quilt-llvm or elephant.
+- Issues: quilt-nn/quilt-attention conformance notes (portable sha concern), polln #65 (272 tsc errors + never-run suite), several dep-upgrade plan PRs (Sep 29 batch), moth-runner #2 [EMBASSY] inbound to us.
+- Nothing needs immediate action; night GPU lanes untouched.
+
+## 2026-10-04 20:03 AKDT (cron 744efc2a, SuperInstance watch)
+- My open PRs (@me): none.
+- 13 open PRs across org. MicroMoth-quilt #43/#44 (IonQ rung-1/2 sim pre-flight) have red seal-check on their branches — these are overnight quantum-lane WIP, left alone per night-plan.
+- MAIN-BRANCH FAILURES:
+  - MicroMoth-quilt: seal-check on main failed ~7h ago (run 37234345101) — "Import-manifest seal check (fail on drift)" exit 1 after docs wave-69 push. New since yesterday.
+  - quilt-tools: main CI failing since Sep 26 (9s fast-fail, runs 36229686973 et al) — pre-existing, no failed-step logs.
+  - pong-quilt: main merge-gate + build-and-test failing since Oct 2 (Round 74 reland).
+- quilt-verilog: master CI red since Sep 25 (merge of PR #7) + wip-snapshot branch failures Oct 1 (expected WIP).
+- quilt-rust main CI red since Sep 25; quilt-esp32 main red since Aug 19 (old).
+- Issues: nothing addressed to Lucineer; mostly standing upgrade-plan tickets and conformance notes (quilt-nn/quilt-attention lossShaOf portability). zero-poc #1/#2 (Register / first journal entry) active as of today.
+- Stale branches with open work: quilt-llvm r1-r4 lane branches (14), quilt-rust fix/mcp-resources-and-protocol + phase-220, elephant jev-field-watch + rescue/jev-field-watch-20260921, quilt-esp32 eileen/nmea/reflex-arc.
+- No action taken; GPU night-watch lanes undisturbed. Flagged MicroMoth main drift to Casey via Telegram.
+
+## 2026-10-04 22:03 AKDT — superinstance-watch
+- PRs open: 20+ across org (pong-quilt #114/#115, quilt-swarm #31-35 dependabot, quilt-tools #50/#51, MicroMoth-quilt #43/#44 IonQ pre-flight, fleet-witness #7, doubt-ledger, etc.). All checked PRs MERGEABLE, no review blockers.
+- CI red: MicroMoth-quilt 'seal-check' failing on main + both IonQ PRs (#43/#44) — very short runs (7-10s), likely config/seal issue, latest failure 2026-10-05T02:25Z (recent). pong-quilt merge-gate/build-and-test failing on playtest-round-91 PR branch and a main push (R74 reland, 10-02). quilt-tools ci failing on main (short runs since 09-25). Long-standing red on quilt-verilog/quilt-rust/quilt-esp32 (WIP snapshots + old main failures, known).
+- Issues: nothing assigned to Lucineer/SuperInstance needing action; zero-poc #1/#2 and lobster-live #1 are task-style issues; polln #65 notes 272 tsc errors (pre-existing).
+- Stale branches: quilt-verilog wip-snapshot-20260930 / g3-kinduction; quilt-rust old main failures; quilt-esp32 main red since 08-19 (stale CI).
+- Night-watch lanes untouched (observe only).
+
+## 2026-10-05 08:03 UTC — superinstance-watch (cron)
+- Open PRs: ~21 across org (quilt-tools #51,#52; pong-quilt #114,#115 carrying rounds; MicroMoth IonQ rung 1-2; quilt-swarm dependabot batch; fleet-witness #7; doubt-ledger docs). No PRs authored by @me in default repo context.
+- CI: pong-quilt main green as of Oct 4 (PR #113/#109 merges passed; earlier R91 branch failures resolved). quilt-verilog master red since Sep 25 (g3-kinduction merge + Oct 1 WIP snapshots) — known WIP, pre-existing. quilt-rust main failures all Sep and older; quilt-esp32 failures Aug; quilt-tools main ci red since Sep 26. No new main-branch red since last check.
+- Issues: zero-poc #1/#2 (Register/journal), lobster-live #1 docs, pie-minimax/quilt-attention/quilt-nn conformance notes; none addressed to Lucineer, nothing requiring action.
+- Night-watch lanes untouched (observe only).
+- Verdict: NO_REPLY to Casey.
+## 2026-10-05 02:03 AKDT (10:03 UTC) watch run
+- Open PRs: ~21+ across org, incl. fresh dependabot batches on quilt (#36 major ts 7 bump, #35 patch/minor), SmartCRDT #77-80, webgpu-profiler #116-120, quilt-swarm #31-35; quilt-tools #52 frontier design receipt; pong-quilt #115/#116 round rounds; jev-quilt #50 battery run. No PRs authored by @me.
+- CI: dependabot PRs failing CI on quilt + SmartCRDT (routine — publish-rubygems 0s failures on quilt are the recurring config/secret issue). pong-quilt merge-gate failure Oct 4 on round-91 PR branch; main red from Round 74 push Oct 2 (pre-existing). quilt-verilog master red since Sep 25 + Oct 1 WIP snapshots (known). quilt-rust/elephant/quilt-esp32 failures old (Sep/Aug). No NEW main-branch red beyond known patterns.
+- Issues: zero-poc #1/#2, lobster-live #1, pie-minimax/quilt-attention/quilt-nn conformance notes, upgrade-plan issues across repos; none addressed to Lucineer, nothing requiring action.
+- GPU night-watch lanes: untouched, observe only.
+- Verdict: NO_REPLY to Casey — nothing new genuinely needs attention.
+
+## 2026-10-05 04:03 AKDT (12:03 UTC)
+- Open PRs across org: ~20, mostly dependabot bumps (quilt #36/#37, SmartCRDT #77-80, webgpu-profiler #116-120, quilt-swarm #33-35) + substantive: jev-quilt #50/#51 (R6 run-3/4 battery), fleet-witness #8, pong-quilt #115/#116, quilt-tools #52.
+- quilt main: `publish-rubygems.yml` failing (0s startup-style failure) on every push incl. dependabot branches — chronic since at least 2026-09-29 (license fix commit). Deps PR ci checks failing on same branch. Looks like missing secret/config, pre-existing.
+- quilt-rust main CI red since 2026-09-08 (chronic, known pattern).
+- quilt-esp32 main CI red since 2026-08-19 (chronic).
+- quilt-verilog: wip-snapshot branch failures 10-01 (expected, WIP); master red at g3-kinduction merge 09-25 (known).
+- quilt-llvm, elephant: no failures.
+- Issues: no new items addressed to Lucineer requiring action; quilt-nn/quilt-attention conformance issues (09-30) and upgrade-plan issues stand; zero-poc/lobster-live starter issues are placeholders.
+- Verdict: nothing new needing Casey's attention; all red CI is chronic/known. GPU night-watch undisturbed.
+
+## 2026-10-05 06:03 AKDT (cron superinstance-watch)
+- 19 open PRs across org (pong-quilt #115-117, jev-quilt #50-51, fleet-witness #8, quilt-tools #52, plus dependabot batches). All checked pong-quilt PRs green + MERGEABLE; awaiting review, no action flagged.
+- No red workflows on main anywhere checked. pong-quilt main green after #113 merge (2026-10-04). Remaining failures are stale branches: quilt-verilog wip-snapshot-20260930(r27) (Oct 1), quilt-rust main last failure Sep 25, quilt-esp32 main Aug 19 (old). quilt-llvm/elephant/fleet-witness clean.
+- Open issues: routine project work (upgrade-plan series, conformance notes on quilt-nn/quilt-attention, zero-poc starter issues). None assigned to/addressed at Lucineer requiring action.
+- Stale-branch note: quilt-verilog wip-snapshot-20260930 and wip-snapshot-20260930-r27 failing ci since Oct 1 with open work — worth a look when convenient, not urgent.
+- GPU night-watch lanes untouched; observation only.
+
+## 2026-10-05 08:03 AKDT
+- No open PRs authored by @me; ~20 org PRs open, mostly dependabot bumps (quilt #36/#37, quilt-cloudflare #18/#19, SmartCRDT, webgpu-profiler) — none urgent.
+- CI failures: quilt master branch clean; failures confined to dependabot branches (typescript 6→7 bumps). quilt-verilog/quilt-rust/quilt-esp32 failures are old WIP/branch runs (Sept or earlier), no new red on main since 09-25 merge burst (jev-quilt main last red 09-25, repair PR #34 already landed after). pong-quilt R91 merge-gate failures (10-04) on playtest branch — round flow, likely resolved by R94/R95.
+- Issues: nothing assigned to us; standing "upgrade plan" tickets + record-only R6 battery probes. quilt-attention/quilt-nn conformance issues still open (untriaged but known).
+- Stale branches present on key repos (quilt-llvm r2/r3/r4 family, elephant claude/* + rescue branches, quilt-rust phase-220) — open work, no conflicts observed.
+- GPU night-watch lanes untouched; observation only.
+- Verdict: nothing needing Casey's attention.
