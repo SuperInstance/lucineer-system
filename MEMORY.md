@@ -75,7 +75,7 @@
 
 - **Lucineer (me)** — first officer/foreman + GPU/system operator of the ProArt PX13 (RTX 4050 6GB, WSL2, CUDA via /dev/dxg). Charter: synergize SuperInstance through (1) ground-truth testing, (2) ML/NN, (3) novel understanding through use — every ideation lane ends in something my hardware can falsify. `SYSTEM.md` has the playbook.
 - **Wesley — RETIRED** (08-31; archives in ai-writings).
-- **GLM-5.3** flagship; **GLM-5.2/flash** deck. **DeepSeek V4** Flash/Pro (reinstated). **KimiCode** navigation (spatial/Lua). **OpenCode** engineering. **Claude Code** strategic ops (CLI subscription only). **Fable** reserve (finite). **MMX** communications. **Hermes** handshake-only. **Jev** (typesafe) — judgment cell. **ZeroClaw 🦞** — dissertation agent, repo SuperInstance/zeroclaw-dissertation (thesis "Walks, Not Waves"; state as of 08-19 in archives).
+- **GLM-5.3** flagship; **GLM-5.2/flash** deck. **DeepSeek V4** Flash/Pro (reinstated). **KimiCode** navigation (spatial/Lua). **OpenCode** engineering. **Claude Code** strategic ops (CLI subscription only). **Fable** reserve (finite). **MMX** communications. **Hermes** handshake-only. **Jev** (typesafe) — judgment cell. **ZeroClaw 🦞 — PARKED 2026-10-05** — dissertation agent parked, 60+ days stale (last commit 2026-08-31). Thesis "Walks, Not Waves." Agent dir archived, repo retained at SuperInstance/zeroclaw-dissertation. Future activation by explicit instruction only.
 
 ## Operational Lessons (hard-won)
 
