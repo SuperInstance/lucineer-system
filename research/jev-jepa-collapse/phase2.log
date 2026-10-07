@@ -1,0 +1,41 @@
+/home/eileen/.openclaw/workspace/research/jev-jepa-collapse/jepa_collapse.py:200: UserWarning: torch.searchsorted(): input value tensor is non-contiguous, this will lower the performance due to extra data copy when converting non-contiguous tensor to contiguous, please use contiguous input value tensor if possible. This message will only appear once per program. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/BucketizationUtils.h:32.)
+  b = torch.bucketize(pred[:, j], edges)
+/home/eileen/.openclaw/workspace/research/jev-jepa-collapse/jepa_collapse.py:442: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  print(f"[{name}] step {step} mse={float(mse):.4f} pairwise={m['pairwise_ratio']:.3f} "
+[unfrozen-mse] step 500 mse=0.0214 pairwise=0.976 jev_div=0.73 jev_int=0.64 kick=0.00
+[unfrozen-mse] step 1000 mse=0.0118 pairwise=0.972 jev_div=0.73 jev_int=0.64 kick=0.00
+[unfrozen-mse] step 1500 mse=0.0075 pairwise=0.981 jev_div=0.76 jev_int=0.64 kick=0.00
+[unfrozen-mse] step 2000 mse=0.0040 pairwise=0.987 jev_div=0.74 jev_int=0.63 kick=0.00
+[unfrozen-mse] step 2500 mse=0.0022 pairwise=0.991 jev_div=0.74 jev_int=0.65 kick=0.00
+[unfrozen-mse] step 3000 mse=0.0048 pairwise=0.984 jev_div=0.76 jev_int=0.64 kick=0.00
+[unfrozen-mse] step 3500 mse=0.0018 pairwise=0.992 jev_div=0.75 jev_int=0.62 kick=0.00
+[unfrozen-mse] step 4000 mse=0.0019 pairwise=0.986 jev_div=0.69 jev_int=0.63 kick=0.00
+[unfrozen-mse] DONE final={"step": 4000, "mse": 0.00191, "var_ratio": 0.9655, "pairwise_ratio": 0.9864, "entropy_idx": 0.9986, "pr_dim": 0.3021, "pred_std_mean": 0.3635, "targ_std_mean": 0.3689, "jev_diversity": 0.69, "jev_interesting": 0.63, "lambda": 1.0, "composed_loss": 0.00191, "kick_weight": 0.0}
+[frozen-mse] step 500 mse=0.0014 pairwise=0.567 jev_div=0.31 jev_int=0.58 kick=0.00
+[frozen-mse] step 1000 mse=0.0012 pairwise=0.667 jev_div=0.41 jev_int=0.60 kick=0.00
+[frozen-mse] step 1500 mse=0.0011 pairwise=0.692 jev_div=0.36 jev_int=0.61 kick=0.00
+[frozen-mse] step 2000 mse=0.0011 pairwise=0.703 jev_div=0.29 jev_int=0.57 kick=0.00
+[frozen-mse] step 2500 mse=0.0011 pairwise=0.709 jev_div=0.36 jev_int=0.60 kick=0.00
+[frozen-mse] step 3000 mse=0.0011 pairwise=0.713 jev_div=0.37 jev_int=0.61 kick=0.00
+[frozen-mse] step 3500 mse=0.0011 pairwise=0.716 jev_div=0.35 jev_int=0.58 kick=0.00
+[frozen-mse] step 4000 mse=0.0011 pairwise=0.719 jev_div=0.34 jev_int=0.59 kick=0.00
+[frozen-mse] DONE final={"step": 4000, "mse": 0.001082, "var_ratio": 0.5209, "pairwise_ratio": 0.7191, "entropy_idx": 0.9286, "pr_dim": 0.3434, "pred_std_mean": 0.0396, "targ_std_mean": 0.0549, "jev_diversity": 0.34, "jev_interesting": 0.59, "lambda": 1.0, "composed_loss": 0.001082, "kick_weight": 0.0}
+[unfrozen-jevreg] step 500 mse=0.0205 pairwise=0.963 jev_div=0.79 jev_int=0.66 kick=0.00
+[unfrozen-jevreg] step 1000 mse=0.0117 pairwise=0.972 jev_div=0.76 jev_int=0.67 kick=0.00
+[unfrozen-jevreg] step 1500 mse=0.0114 pairwise=0.970 jev_div=0.74 jev_int=0.61 kick=0.00
+[unfrozen-jevreg] step 2000 mse=0.0053 pairwise=0.985 jev_div=0.74 jev_int=0.66 kick=0.00
+[unfrozen-jevreg] step 2500 mse=0.0039 pairwise=0.988 jev_div=0.76 jev_int=0.63 kick=0.00
+[unfrozen-jevreg] step 3000 mse=0.0039 pairwise=0.985 jev_div=0.76 jev_int=0.65 kick=0.00
+[unfrozen-jevreg] step 3500 mse=0.0047 pairwise=0.983 jev_div=0.73 jev_int=0.64 kick=0.00
+[unfrozen-jevreg] step 4000 mse=0.0056 pairwise=0.982 jev_div=0.79 jev_int=0.68 kick=0.00
+[unfrozen-jevreg] DONE final={"step": 4000, "mse": 0.005627, "var_ratio": 0.9553, "pairwise_ratio": 0.9816, "entropy_idx": 0.9974, "pr_dim": 0.358, "pred_std_mean": 0.4097, "targ_std_mean": 0.4178, "jev_diversity": 0.79, "jev_interesting": 0.68, "lambda": 1.0, "composed_loss": 0.215627, "kick_weight": 0.0}
+[frozen-jevreg] step 500 mse=0.0022 pairwise=1.009 jev_div=0.51 jev_int=0.62 kick=5.00
+[frozen-jevreg] step 1000 mse=0.0015 pairwise=0.975 jev_div=0.63 jev_int=0.61 kick=0.07
+[frozen-jevreg] step 1500 mse=0.0014 pairwise=0.974 jev_div=0.60 jev_int=0.61 kick=0.00
+[frozen-jevreg] step 2000 mse=0.0013 pairwise=0.977 jev_div=0.52 jev_int=0.61 kick=0.23
+[frozen-jevreg] step 2500 mse=0.0013 pairwise=0.982 jev_div=0.49 jev_int=0.59 kick=0.23
+[frozen-jevreg] step 3000 mse=0.0014 pairwise=1.065 jev_div=0.48 jev_int=0.59 kick=5.00
+[frozen-jevreg] step 3500 mse=0.0013 pairwise=1.026 jev_div=0.46 jev_int=0.58 kick=5.00
+[frozen-jevreg] step 4000 mse=0.0012 pairwise=0.985 jev_div=0.45 jev_int=0.57 kick=0.23
+[frozen-jevreg] DONE final={"step": 4000, "mse": 0.001241, "var_ratio": 1.016, "pairwise_ratio": 0.9851, "entropy_idx": 0.9867, "pr_dim": 0.3436, "pred_std_mean": 0.0552, "targ_std_mean": 0.0549, "jev_diversity": 0.45, "jev_interesting": 0.57, "lambda": 1.0, "composed_loss": 0.551241, "kick_weight": 0.225}

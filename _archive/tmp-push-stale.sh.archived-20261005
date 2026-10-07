@@ -1,0 +1,58 @@
+#!/bin/bash
+# Push stale repos: add, commit, push; pull --rebase on non-fast-forward; abort on conflicts.
+REPOS=(
+"ai-writings master ABORT_ON_CONFLICT"
+"quilt-canvas-tui main"
+"selectlib main"
+"quilt-gpu-lab main"
+"selectlib-readonly main"
+"pie-minimax-readonly main"
+"pr-wave-micromoth main"
+"quilt-arcade main"
+"quilt-quant main"
+"zeroclaw master"
+)
+
+for entry in "${REPOS[@]}"; do
+  read -r repo branch extra <<< "$entry"
+  dir="/home/eileen/projects/$repo"
+  echo "=== $repo ($branch) ==="
+  cd "$dir" || { echo "RESULT $repo FAILED: cd failed"; continue; }
+
+  git add -A >/dev/null 2>&1
+  commit_out=$(git commit -m "house: commit uncommitted files" 2>&1)
+  echo "commit: $commit_out"
+
+  push_out=$(git push origin "$branch" 2>&1)
+  push_rc=$?
+
+  if [ $push_rc -eq 0 ]; then
+    echo "push: OK"
+    echo "RESULT $repo SUCCESS"
+  else
+    echo "push rc=$push_rc: $push_out"
+    if echo "$push_out" | grep -qiE "non-fast-forward|fetch first|rejected|behind"; then
+      echo "attempting pull --rebase"
+      pull_out=$(git pull origin "$branch" --rebase 2>&1)
+      pull_rc=$?
+      echo "pull rc=$pull_rc: $pull_out"
+      if [ $pull_rc -ne 0 ]; then
+        if git rebase --abort >/dev/null 2>&1; then echo "rebase aborted"; fi
+        echo "RESULT $repo FAILED: rebase conflict, aborted"
+      else
+        push2=$(git push origin "$branch" 2>&1)
+        if [ $? -eq 0 ]; then
+          echo "push2: OK"
+          echo "RESULT $repo SUCCESS (after rebase)"
+        else
+          echo "push2: $push2"
+          echo "RESULT $repo FAILED: push after rebase: $push2"
+        fi
+      fi
+    else
+      echo "RESULT $repo FAILED: $push_out"
+    fi
+  fi
+  echo ""
+done
+echo "=== SUMMARY ==="

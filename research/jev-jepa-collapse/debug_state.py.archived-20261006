@@ -1,0 +1,28 @@
+import torch, torch.nn.functional as F, numpy as np, sys
+sys.path.insert(0, '.')
+from jepa_collapse import (Encoder, Predictor, gen_world, describe_room, DEV,
+                           probe_indices, LR, WD, STEPS, FEAT_D, LAT_D)
+torch.manual_seed(SEED + 1) if False else None
+import jepa_collapse as J
+S0, S1, reg, _ = gen_world()
+S0d, S1d = S0.to(DEV), S1.to(DEV)
+probes = probe_indices(reg).to(DEV)
+torch.manual_seed(J.SEED + 1)
+enc, pred = Encoder().to(DEV), Predictor().to(DEV)
+opt = torch.optim.Adam(list(enc.parameters()) + list(pred.parameters()), lr=LR, weight_decay=WD)
+for step in range(1, 1501):
+    z0 = enc(S0d); zp = pred(z0)
+    with torch.no_grad(): zt = enc(S1d)
+    loss = F.mse_loss(zp, zt)
+    opt.zero_grad(); loss.backward(); opt.step()
+with torch.no_grad():
+    pm = pred(enc(S0d)); z1_now = enc(S1d)
+    print("pred std per dim:", [round(v,3) for v in pm.std(0).tolist()])
+    print("targ std per dim:", [round(v,3) for v in z1_now.std(0).tolist()])
+    d = torch.cdist(pm[probes], z1_now); nn = d.argmin(1).cpu().numpy()
+    print("--- probe pred coords (8 dims) + NN desc (CURRENT encoder) ---")
+    for i,p in enumerate(probes.cpu().tolist()):
+        print(f"P{i+1}", [round(v,2) for v in pm[p,:].tolist()], "~", describe_room(S1[nn[i]].numpy()))
+    print("--- true next-state coords for same probes ---")
+    for i,p in enumerate(probes.cpu().tolist()):
+        print(f"T{i+1}", [round(v,2) for v in z1_now[p,:].tolist()], "~", describe_room(S1[p].numpy()))

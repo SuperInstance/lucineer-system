@@ -1,0 +1,91 @@
+[ 0.3s]  0 impossible jev=0.28 resid=  30.02 -> cls=-1
+[ 0.5s]  1 possible   jev=0.89 resid=   0.98 -> cls=+1
+[ 0.8s]  2 impossible jev=0.20 resid=  34.13 -> cls=-1
+[ 1.0s]  3 possible   jev=0.92 resid=   1.88 -> cls=+1
+[ 1.2s]  4 impossible jev=0.52 resid=   3.04 -> cls=+0
+[ 1.5s]  5 impossible jev=0.38 resid=  30.08 -> cls=+0
+[ 1.8s]  6 possible   jev=0.89 resid=   1.03 -> cls=+1
+[ 2.0s]  7 impossible jev=0.47 resid=   2.47 -> cls=+0
+[ 2.3s]  8 impossible jev=0.26 resid=  25.21 -> cls=-1
+[ 2.5s]  9 impossible jev=0.22 resid=  30.11 -> cls=-1
+[ 2.8s] 10 possible   jev=0.92 resid=   1.76 -> cls=+1
+[ 4.9s] 11 possible   jev=0.92 resid=   2.50 -> cls=+1
+[ 5.1s] 12 possible   jev=0.89 resid=   1.19 -> cls=+1
+[ 5.3s] 13 unlikely   jev=0.86 resid=   0.75 -> cls=+1
+[ 5.6s] 14 possible   jev=0.86 resid=   0.58 -> cls=+1
+[ 5.9s] 15 impossible jev=0.56 resid=   3.05 -> cls=+0
+[ 6.2s] 16 possible   jev=0.92 resid=   1.64 -> cls=+1
+[ 6.4s] 17 unlikely   jev=0.76 resid=   3.44 -> cls=+1
+[ 6.6s] 18 unlikely   jev=0.79 resid=   3.68 -> cls=+1
+[ 6.8s] 19 impossible jev=0.46 resid=2412.42 -> cls=-1
+[ 7.1s] 20 unlikely   jev=0.80 resid=   2.75 -> cls=+1
+[ 7.3s] 21 unlikely   jev=0.78 resid=   1.84 -> cls=+1
+[ 7.5s] 22 possible   jev=0.93 resid=   1.31 -> cls=+1
+[ 7.8s] 23 unlikely   jev=0.65 resid=   3.24 -> cls=+1
+[ 8.0s] 24 unlikely   jev=0.72 resid=   0.69 -> cls=+1
+[ 8.2s] 25 unlikely   jev=0.62 resid=   0.24 -> cls=+1
+[ 8.4s] 26 possible   jev=0.89 resid=   0.75 -> cls=+1
+[ 8.7s] 27 unlikely   jev=0.82 resid= 228.09 -> cls=-1
+[ 8.9s] 28 impossible jev=0.48 resid=  41.18 -> cls=+0
+[ 9.1s] 29 impossible jev=0.38 resid=2347.56 -> cls=-1
+[ 9.3s] 30 unlikely   jev=0.79 resid=   3.31 -> cls=+1
+[ 9.6s] 31 possible   jev=0.91 resid=   0.62 -> cls=+1
+[ 9.8s] 32 impossible jev=0.68 resid=   1.20 -> cls=+1
+[10.0s] 33 impossible jev=0.27 resid=  26.70 -> cls=-1
+[10.3s] 34 possible   jev=0.89 resid=   1.05 -> cls=+1
+[10.5s] 35 unlikely   jev=0.88 resid= 186.87 -> cls=-1
+[10.7s] 36 possible   jev=0.87 resid=   0.98 -> cls=+1
+[10.9s] 37 unlikely   jev=0.75 resid=   3.85 -> cls=+1
+[11.2s] 38 impossible jev=0.30 resid=  30.01 -> cls=-1
+[11.4s] 39 unlikely   jev=0.70 resid=   1.12 -> cls=+1
+[11.6s] 40 possible   jev=0.90 resid=   0.97 -> cls=+1
+[11.9s] 41 unlikely   jev=0.86 resid= 230.91 -> cls=-1
+[12.2s] 42 unlikely   jev=0.71 resid=   2.65 -> cls=+1
+[12.4s] 43 possible   jev=0.91 resid=   1.38 -> cls=+1
+[12.6s] 44 unlikely   jev=0.83 resid= 179.67 -> cls=-1
+[12.9s] 45 possible   jev=0.92 resid=   0.86 -> cls=+1
+[13.1s] 46 impossible jev=0.47 resid=   3.00 -> cls=+0
+[13.3s] 47 impossible jev=0.63 resid=   1.70 -> cls=+1
+[13.6s] 48 possible   jev=0.89 resid=   1.81 -> cls=+1
+[13.8s] 49 possible   jev=0.90 resid=   0.60 -> cls=+1
+[14.0s] 50 impossible jev=0.56 resid=  40.72 -> cls=+0
+[14.2s] 51 possible   jev=0.90 resid=   0.63 -> cls=+1
+[14.5s] 52 unlikely   jev=0.68 resid=   2.95 -> cls=+1
+[14.7s] 53 unlikely   jev=0.86 resid=   1.29 -> cls=+1
+[14.9s] 54 possible   jev=0.91 resid=   1.30 -> cls=+1
+[15.2s] 55 unlikely   jev=0.87 resid= 162.82 -> cls=-1
+[15.4s] 56 unlikely   jev=0.68 resid=   2.63 -> cls=+1
+[15.7s] 57 impossible jev=0.27 resid=  40.00 -> cls=-1
+[15.9s] 58 unlikely   jev=0.84 resid= 191.11 -> cls=-1
+[16.2s] 59 possible   jev=0.90 resid=   1.12 -> cls=+1
+[16.4s] 60 unlikely   jev=0.88 resid= 161.18 -> cls=-1
+[16.6s] 61 impossible jev=0.34 resid=1932.39 -> cls=-1
+[16.8s] 62 possible   jev=0.85 resid=   0.96 -> cls=+1
+[17.0s] 63 unlikely   jev=0.76 resid=   1.27 -> cls=+1
+[17.2s] 64 possible   jev=0.88 resid=   1.91 -> cls=+1
+[17.4s] 65 unlikely   jev=0.84 resid=   0.54 -> cls=+1
+[17.7s] 66 impossible jev=0.48 resid=  36.49 -> cls=+0
+[17.9s] 67 unlikely   jev=0.80 resid=   1.53 -> cls=+1
+[18.2s] 68 unlikely   jev=0.83 resid= 224.74 -> cls=-1
+[18.4s] 69 possible   jev=0.91 resid=   1.10 -> cls=+1
+[18.7s] 70 unlikely   jev=0.76 resid=   1.21 -> cls=+1
+[19.0s] 71 possible   jev=0.90 resid=   1.11 -> cls=+1
+[19.3s] 72 impossible jev=0.50 resid=   2.29 -> cls=+0
+[19.5s] 73 possible   jev=0.86 resid=   0.73 -> cls=+1
+[19.7s] 74 possible   jev=0.92 resid=   0.51 -> cls=+1
+[20.0s] 75 unlikely   jev=0.71 resid=   2.56 -> cls=+1
+[20.2s] 76 impossible jev=0.41 resid=2093.54 -> cls=-1
+[20.4s] 77 impossible jev=0.71 resid=   1.31 -> cls=+1
+[20.7s] 78 impossible jev=0.47 resid=   3.31 -> cls=+0
+[20.9s] 79 possible   jev=0.89 resid=   2.00 -> cls=+1
+[21.1s] 80 impossible jev=0.51 resid=   2.03 -> cls=+0
+[21.4s] 81 impossible jev=0.21 resid=  27.88 -> cls=-1
+[21.6s] 82 impossible jev=0.13 resid=  39.24 -> cls=-1
+[21.8s] 83 possible   jev=0.90 resid=   0.81 -> cls=+1
+[22.0s] 84 possible   jev=0.92 resid=   0.70 -> cls=+1
+[22.2s] 85 unlikely   jev=0.74 resid=   2.17 -> cls=+1
+[22.5s] 86 impossible jev=0.77 resid=   1.66 -> cls=+1
+[22.7s] 87 unlikely   jev=0.87 resid=   0.75 -> cls=+1
+[22.9s] 88 impossible jev=0.74 resid=   1.69 -> cls=+1
+[23.1s] 89 impossible jev=0.19 resid=  33.50 -> cls=-1
+wrote /home/eileen/.openclaw/workspace/research/jev-jepa-explore/exp5_out.json

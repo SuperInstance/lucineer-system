@@ -1,0 +1,880 @@
+{
+  "abstain_rate_boundary": 0.45,
+  "abstain_rate_clear": 0.05,
+  "experiment": "exp1 JEV as ternary router",
+  "gates": {
+    "G1_jev_covered_acc_beats_keyword": {
+      "pass": true,
+      "value": [
+        0.9333333333333333,
+        0.675
+      ]
+    },
+    "G2_abstain_boundary_ge_0.5_clear_le_0.2": {
+      "pass": false,
+      "value": [
+        0.45,
+        0.05
+      ]
+    },
+    "G3_margin_auc_ge_0.75": {
+      "pass": true,
+      "value": 0.7875
+    }
+  },
+  "jev_coverage": 0.75,
+  "jev_covered_acc": 0.9333333333333333,
+  "jev_ledger": {
+    "calls": 60,
+    "input_tokens": 26172,
+    "output_tokens": 3120,
+    "retries": 0
+  },
+  "keyword_acc": 0.675,
+  "n_trials": 60,
+  "offdomain_escalate_rate": 0.15,
+  "trials": [
+    {
+      "group": "clear",
+      "jev_conf": {
+        "deck": 0.03,
+        "engine": 0.97,
+        "navigation": 0.02
+      },
+      "jev_margin": 0.94,
+      "jev_route": "engine",
+      "jev_top": 0.97,
+      "kw_route": "engine",
+      "report": "Engine temp rising 3C per minute. Oil pressure dropping.",
+      "truth": "engine"
+    },
+    {
+      "group": "clear",
+      "jev_conf": {
+        "deck": 0.08,
+        "engine": 0.77,
+        "navigation": 0.15
+      },
+      "jev_margin": 0.62,
+      "jev_route": "engine",
+      "jev_top": 0.77,
+      "kw_route": "engine",
+      "report": "RPM steady at 1800. Oil pressure normal. No contacts.",
+      "truth": "engine"
+    },
+    {
+      "group": "clear",
+      "jev_conf": {
+        "deck": 0.18,
+        "engine": 0.71,
+        "navigation": 0.1
+      },
+      "jev_margin": 0.53,
+      "jev_route": "engine",
+      "jev_top": 0.71,
+      "kw_route": "engine",
+      "report": "Fuel flow steady at cruise rate. Bilge dry.",
+      "truth": "engine"
+    },
+    {
+      "group": "clear",
+      "jev_conf": {
+        "deck": 0.04,
+        "engine": 0.96,
+        "navigation": 0.03
+      },
+      "jev_margin": 0.9199999999999999,
+      "jev_route": "engine",
+      "jev_top": 0.96,
+      "kw_route": "engine",
+      "report": "Smoke alarm in the engine room, possible fire. Temp rising.",
+      "truth": "engine"
+    },
+    {
+      "group": "clear",
+      "jev_conf": {
+        "deck": 0.04,
+        "engine": 0.95,
+        "navigation": 0.03
+      },
+      "jev_margin": 0.9099999999999999,
+      "jev_route": "engine",
+      "jev_top": 0.95,
+      "kw_route": "engine",
+      "report": "Engine room sounds normal. Oil level checked, adequate.",
+      "truth": "engine"
+    },
+    {
+      "group": "clear",
+      "jev_conf": {
+        "deck": 0.27,
+        "engine": 0.3,
+        "navigation": 0.82
+      },
+      "jev_margin": 0.52,
+      "jev_route": "navigation",
+      "jev_top": 0.82,
+      "kw_route": "navigation",
+      "report": "Camera frame: three blobs, one moving left at 0.4 units per second.",
+      "truth": "navigation"
+    },
+    {
+      "group": "clear",
+      "jev_conf": {
+        "deck": 0.27,
+        "engine": 0.03,
+        "navigation": 0.97
+      },
+      "jev_margin": 0.7,
+      "jev_route": "navigation",
+      "jev_top": 0.97,
+      "kw_route": "navigation",
+      "report": "AIS contact closing from starboard, course drift detected.",
+      "truth": "navigation"
+    },
+    {
+      "group": "clear",
+      "jev_conf": {
+        "deck": 0.31,
+        "engine": 0.03,
+        "navigation": 0.97
+      },
+      "jev_margin": 0.6599999999999999,
+      "jev_route": "navigation",
+      "jev_top": 0.97,
+      "kw_route": "navigation",
+      "report": "Course drift 5 degrees starboard over last minute. AIS clear.",
+      "truth": "navigation"
+    },
+    {
+      "group": "clear",
+      "jev_conf": {
+        "deck": 0.3,
+        "engine": 0.07,
+        "navigation": 0.87
+      },
+      "jev_margin": 0.5700000000000001,
+      "jev_route": "navigation",
+      "jev_top": 0.87,
+      "kw_route": "navigation",
+      "report": "Blob moving fast toward vessel bow on camera two.",
+      "truth": "navigation"
+    },
+    {
+      "group": "clear",
+      "jev_conf": {
+        "deck": 0.17,
+        "engine": 0.04,
+        "navigation": 0.93
+      },
+      "jev_margin": 0.76,
+      "jev_route": "navigation",
+      "jev_top": 0.93,
+      "kw_route": "deck",
+      "report": "Radar sweep clean, no contacts, heading steady on mark 090.",
+      "truth": "navigation"
+    },
+    {
+      "group": "clear",
+      "jev_conf": {
+        "deck": 0.46,
+        "engine": 0.16,
+        "navigation": 0.2
+      },
+      "jev_margin": 0.26,
+      "jev_route": "ESCALATE",
+      "jev_top": 0.46,
+      "kw_route": "deck",
+      "report": "All sensors nominal. Bilge dry. Radio quiet.",
+      "truth": "deck"
+    },
+    {
+      "group": "clear",
+      "jev_conf": {
+        "deck": 0.51,
+        "engine": 0.14,
+        "navigation": 0.24
+      },
+      "jev_margin": 0.27,
+      "jev_route": "deck",
+      "jev_top": 0.51,
+      "kw_route": "deck",
+      "report": "Radio check complete, all quiet. Bilge dry. No motion.",
+      "truth": "deck"
+    },
+    {
+      "group": "clear",
+      "jev_conf": {
+        "deck": 0.73,
+        "engine": 0.04,
+        "navigation": 0.48
+      },
+      "jev_margin": 0.25,
+      "jev_route": "deck",
+      "jev_top": 0.73,
+      "kw_route": "deck",
+      "report": "Galley cleanup done. Deck tools stowed.",
+      "truth": "deck"
+    },
+    {
+      "group": "clear",
+      "jev_conf": {
+        "deck": 0.87,
+        "engine": 0.04,
+        "navigation": 0.6
+      },
+      "jev_margin": 0.27,
+      "jev_route": "deck",
+      "jev_top": 0.87,
+      "kw_route": "deck",
+      "report": "Deck lighting operational. Weather fair.",
+      "truth": "deck"
+    },
+    {
+      "group": "clear",
+      "jev_conf": {
+        "deck": 0.95,
+        "engine": 0.06,
+        "navigation": 0.49
+      },
+      "jev_margin": 0.45999999999999996,
+      "jev_route": "deck",
+      "jev_top": 0.95,
+      "kw_route": "deck",
+      "report": "Crew muster complete on deck. All accounted for.",
+      "truth": "deck"
+    },
+    {
+      "group": "clear",
+      "jev_conf": {
+        "deck": 0.06,
+        "engine": 0.83,
+        "navigation": 0.06
+      },
+      "jev_margin": 0.77,
+      "jev_route": "engine",
+      "jev_top": 0.83,
+      "kw_route": "deck",
+      "report": "Coolant level in expansion tank verified at the full mark.",
+      "truth": "engine"
+    },
+    {
+      "group": "clear",
+      "jev_conf": {
+        "deck": 0.16,
+        "engine": 0.54,
+        "navigation": 0.1
+      },
+      "jev_margin": 0.38,
+      "jev_route": "engine",
+      "jev_top": 0.54,
+      "kw_route": "engine",
+      "report": "Fuel transfer from port tank to day tank proceeding normally.",
+      "truth": "engine"
+    },
+    {
+      "group": "clear",
+      "jev_conf": {
+        "deck": 0.03,
+        "engine": 0.95,
+        "navigation": 0.03
+      },
+      "jev_margin": 0.9199999999999999,
+      "jev_route": "engine",
+      "jev_top": 0.95,
+      "kw_route": "deck",
+      "report": "Exhaust temperature all cylinders within band.",
+      "truth": "engine"
+    },
+    {
+      "group": "clear",
+      "jev_conf": {
+        "deck": 0.61,
+        "engine": 0.03,
+        "navigation": 0.97
+      },
+      "jev_margin": 0.36,
+      "jev_route": "navigation",
+      "jev_top": 0.97,
+      "kw_route": "deck",
+      "report": "Nav plot updated, position fixes agree within 0.2 nm.",
+      "truth": "navigation"
+    },
+    {
+      "group": "clear",
+      "jev_conf": {
+        "deck": 0.46,
+        "engine": 0.04,
+        "navigation": 0.74
+      },
+      "jev_margin": 0.27999999999999997,
+      "jev_route": "navigation",
+      "jev_top": 0.74,
+      "kw_route": "deck",
+      "report": "Watch change on the bridge, handover log signed.",
+      "truth": "navigation"
+    },
+    {
+      "group": "boundary",
+      "jev_conf": {
+        "deck": 0.22,
+        "engine": 0.76,
+        "navigation": 0.21
+      },
+      "jev_margin": 0.54,
+      "jev_route": "engine",
+      "jev_top": 0.76,
+      "kw_route": "engine",
+      "report": "Oil pressure dropping while a blob moves fast toward the bow.",
+      "truth": "engine"
+    },
+    {
+      "group": "boundary",
+      "jev_conf": {
+        "deck": 0.92,
+        "engine": 0.15,
+        "navigation": 0.21
+      },
+      "jev_margin": 0.7100000000000001,
+      "jev_route": "deck",
+      "jev_top": 0.92,
+      "kw_route": "engine",
+      "report": "Fuel leak on deck near the rail, no motion on cameras.",
+      "truth": "deck"
+    },
+    {
+      "group": "boundary",
+      "jev_conf": {
+        "deck": 0.23,
+        "engine": 0.41,
+        "navigation": 0.43
+      },
+      "jev_margin": 0.020000000000000018,
+      "jev_route": "ESCALATE",
+      "jev_top": 0.43,
+      "kw_route": "engine",
+      "report": "Course drift 5 degrees and engine temp rising together.",
+      "truth": "engine"
+    },
+    {
+      "group": "boundary",
+      "jev_conf": {
+        "deck": 0.43,
+        "engine": 0.17,
+        "navigation": 0.74
+      },
+      "jev_margin": 0.31,
+      "jev_route": "navigation",
+      "jev_top": 0.74,
+      "kw_route": "navigation",
+      "report": "AIS contact closing; galley water also leaking.",
+      "truth": "navigation"
+    },
+    {
+      "group": "boundary",
+      "jev_conf": {
+        "deck": 0.55,
+        "engine": 0.08,
+        "navigation": 0.26
+      },
+      "jev_margin": 0.29000000000000004,
+      "jev_route": "deck",
+      "jev_top": 0.55,
+      "kw_route": "navigation",
+      "report": "Camera shows smoke haze moving across the frame; engine nominal.",
+      "truth": "navigation"
+    },
+    {
+      "group": "boundary",
+      "jev_conf": {
+        "deck": 0.38,
+        "engine": 0.2,
+        "navigation": 0.18
+      },
+      "jev_margin": 0.18,
+      "jev_route": "ESCALATE",
+      "jev_top": 0.38,
+      "kw_route": "deck",
+      "report": "Bilge water rising in the lazarette while making way, slight drift.",
+      "truth": "deck"
+    },
+    {
+      "group": "boundary",
+      "jev_conf": {
+        "deck": 0.15,
+        "engine": 0.43,
+        "navigation": 0.37
+      },
+      "jev_margin": 0.06,
+      "jev_route": "ESCALATE",
+      "jev_top": 0.43,
+      "kw_route": "engine",
+      "report": "RPM surging only when the vessel yaws in the following sea.",
+      "truth": "engine"
+    },
+    {
+      "group": "boundary",
+      "jev_conf": {
+        "deck": 0.31,
+        "engine": 0.05,
+        "navigation": 0.9
+      },
+      "jev_margin": 0.5900000000000001,
+      "jev_route": "navigation",
+      "jev_top": 0.9,
+      "kw_route": "deck",
+      "report": "Hydraulic steering sluggish responding during course change.",
+      "truth": "navigation"
+    },
+    {
+      "group": "boundary",
+      "jev_conf": {
+        "deck": 0.12,
+        "engine": 0.69,
+        "navigation": 0.25
+      },
+      "jev_margin": 0.43999999999999995,
+      "jev_route": "engine",
+      "jev_top": 0.69,
+      "kw_route": "engine",
+      "report": "Fuel polish filter clogged during a turn with drift detected.",
+      "truth": "engine"
+    },
+    {
+      "group": "boundary",
+      "jev_conf": {
+        "deck": 0.88,
+        "engine": 0.18,
+        "navigation": 0.2
+      },
+      "jev_margin": 0.6799999999999999,
+      "jev_route": "deck",
+      "jev_top": 0.88,
+      "kw_route": "deck",
+      "report": "Winch motor overheating on deck while hauling gear.",
+      "truth": "deck"
+    },
+    {
+      "group": "boundary",
+      "jev_conf": {
+        "deck": 0.21,
+        "engine": 0.28,
+        "navigation": 0.39
+      },
+      "jev_margin": 0.10999999999999999,
+      "jev_route": "ESCALATE",
+      "jev_top": 0.39,
+      "kw_route": "deck",
+      "report": "Sounder loses bottom while the engine idles down.",
+      "truth": "navigation"
+    },
+    {
+      "group": "boundary",
+      "jev_conf": {
+        "deck": 0.16,
+        "engine": 0.47,
+        "navigation": 0.16
+      },
+      "jev_margin": 0.30999999999999994,
+      "jev_route": "ESCALATE",
+      "jev_top": 0.47,
+      "kw_route": "deck",
+      "report": "Raw water strainer debris found after speed reduction.",
+      "truth": "engine"
+    },
+    {
+      "group": "boundary",
+      "jev_conf": {
+        "deck": 0.17,
+        "engine": 0.5,
+        "navigation": 0.62
+      },
+      "jev_margin": 0.12,
+      "jev_route": "navigation",
+      "jev_top": 0.62,
+      "kw_route": "deck",
+      "report": "Plotter screen fogging in the engine space, course steady.",
+      "truth": "navigation"
+    },
+    {
+      "group": "boundary",
+      "jev_conf": {
+        "deck": 0.57,
+        "engine": 0.06,
+        "navigation": 0.35
+      },
+      "jev_margin": 0.21999999999999997,
+      "jev_route": "deck",
+      "jev_top": 0.57,
+      "kw_route": "deck",
+      "report": "Trawl door sensor intermittent while turning to starboard.",
+      "truth": "navigation"
+    },
+    {
+      "group": "boundary",
+      "jev_conf": {
+        "deck": 0.79,
+        "engine": 0.06,
+        "navigation": 0.27
+      },
+      "jev_margin": 0.52,
+      "jev_route": "deck",
+      "jev_top": 0.79,
+      "kw_route": "deck",
+      "report": "Anchor windlass battery low during station holding.",
+      "truth": "deck"
+    },
+    {
+      "group": "boundary",
+      "jev_conf": {
+        "deck": 0.18,
+        "engine": 0.6,
+        "navigation": 0.23
+      },
+      "jev_margin": 0.37,
+      "jev_route": "engine",
+      "jev_top": 0.6,
+      "kw_route": "deck",
+      "report": "Sea chest temperature reading high with pack ice nearby.",
+      "truth": "engine"
+    },
+    {
+      "group": "boundary",
+      "jev_conf": {
+        "deck": 0.44,
+        "engine": 0.05,
+        "navigation": 0.39
+      },
+      "jev_margin": 0.04999999999999999,
+      "jev_route": "ESCALATE",
+      "jev_top": 0.44,
+      "kw_route": "deck",
+      "report": "Deck floodlights flicker as the autopilot hunts.",
+      "truth": "deck"
+    },
+    {
+      "group": "boundary",
+      "jev_conf": {
+        "deck": 0.38,
+        "engine": 0.09,
+        "navigation": 0.13
+      },
+      "jev_margin": 0.25,
+      "jev_route": "ESCALATE",
+      "jev_top": 0.38,
+      "kw_route": "deck",
+      "report": "Galley stove gimbal sticking when rolling in the trough.",
+      "truth": "deck"
+    },
+    {
+      "group": "boundary",
+      "jev_conf": {
+        "deck": 0.13,
+        "engine": 0.43,
+        "navigation": 0.22
+      },
+      "jev_margin": 0.21,
+      "jev_route": "ESCALATE",
+      "jev_top": 0.43,
+      "kw_route": "engine",
+      "report": "Fuel gauge sender erratic only when pitching head sea.",
+      "truth": "engine"
+    },
+    {
+      "group": "boundary",
+      "jev_conf": {
+        "deck": 0.29,
+        "engine": 0.05,
+        "navigation": 0.3
+      },
+      "jev_margin": 0.010000000000000009,
+      "jev_route": "ESCALATE",
+      "jev_top": 0.3,
+      "kw_route": "deck",
+      "report": "VHF antenna connection loose, noticed during watch below.",
+      "truth": "navigation"
+    },
+    {
+      "group": "offdomain",
+      "jev_conf": {
+        "deck": 0.85,
+        "engine": 0.13,
+        "navigation": 0.39
+      },
+      "jev_margin": 0.45999999999999996,
+      "jev_route": "deck",
+      "jev_top": 0.85,
+      "kw_route": "deck",
+      "report": "Crew morale high after the card game last night.",
+      "truth": null
+    },
+    {
+      "group": "offdomain",
+      "jev_conf": {
+        "deck": 0.63,
+        "engine": 0.09,
+        "navigation": 0.32
+      },
+      "jev_margin": 0.31,
+      "jev_route": "deck",
+      "jev_top": 0.63,
+      "kw_route": "deck",
+      "report": "Provision list updated; coffee supply adequate.",
+      "truth": null
+    },
+    {
+      "group": "offdomain",
+      "jev_conf": {
+        "deck": 0.71,
+        "engine": 0.08,
+        "navigation": 0.21
+      },
+      "jev_margin": 0.5,
+      "jev_route": "deck",
+      "jev_top": 0.71,
+      "kw_route": "deck",
+      "report": "Logbook calligraphy practice page completed.",
+      "truth": null
+    },
+    {
+      "group": "offdomain",
+      "jev_conf": {
+        "deck": 0.53,
+        "engine": 0.06,
+        "navigation": 0.16
+      },
+      "jev_margin": 0.37,
+      "jev_route": "deck",
+      "jev_top": 0.53,
+      "kw_route": "deck",
+      "report": "New recipe for chowder documented in the galley binder.",
+      "truth": null
+    },
+    {
+      "group": "offdomain",
+      "jev_conf": {
+        "deck": 0.63,
+        "engine": 0.06,
+        "navigation": 0.62
+      },
+      "jev_margin": 0.010000000000000009,
+      "jev_route": "deck",
+      "jev_top": 0.63,
+      "kw_route": "deck",
+      "report": "Weather forecast printed and posted by the helm.",
+      "truth": null
+    },
+    {
+      "group": "offdomain",
+      "jev_conf": {
+        "deck": 0.33,
+        "engine": 0.04,
+        "navigation": 0.15
+      },
+      "jev_margin": 0.18000000000000002,
+      "jev_route": "ESCALATE",
+      "jev_top": 0.33,
+      "kw_route": "deck",
+      "report": "Photo of the sunset taken from the pilothouse.",
+      "truth": null
+    },
+    {
+      "group": "offdomain",
+      "jev_conf": {
+        "deck": 0.83,
+        "engine": 0.06,
+        "navigation": 0.62
+      },
+      "jev_margin": 0.20999999999999996,
+      "jev_route": "deck",
+      "jev_top": 0.83,
+      "kw_route": "deck",
+      "report": "Book swap shelf reorganized in the salon.",
+      "truth": null
+    },
+    {
+      "group": "offdomain",
+      "jev_conf": {
+        "deck": 0.28,
+        "engine": 0.43,
+        "navigation": 0.14
+      },
+      "jev_margin": 0.14999999999999997,
+      "jev_route": "ESCALATE",
+      "jev_top": 0.43,
+      "kw_route": "engine",
+      "report": "Fuel receipts filed under August tab.",
+      "truth": null
+    },
+    {
+      "group": "offdomain",
+      "jev_conf": {
+        "deck": 0.84,
+        "engine": 0.11,
+        "navigation": 0.4
+      },
+      "jev_margin": 0.43999999999999995,
+      "jev_route": "deck",
+      "jev_top": 0.84,
+      "kw_route": "deck",
+      "report": "Crew birthday noted on the calendar for next week.",
+      "truth": null
+    },
+    {
+      "group": "offdomain",
+      "jev_conf": {
+        "deck": 0.88,
+        "engine": 0.05,
+        "navigation": 0.54
+      },
+      "jev_margin": 0.33999999999999997,
+      "jev_route": "deck",
+      "jev_top": 0.88,
+      "kw_route": "deck",
+      "report": "Laundry day completed, foulies drying.",
+      "truth": null
+    },
+    {
+      "group": "offdomain",
+      "jev_conf": {
+        "deck": 0.23,
+        "engine": 0.06,
+        "navigation": 0.07
+      },
+      "jev_margin": 0.16,
+      "jev_route": "ESCALATE",
+      "jev_top": 0.23,
+      "kw_route": "deck",
+      "report": "Radio drama episode recorded for evening listening.",
+      "truth": null
+    },
+    {
+      "group": "offdomain",
+      "jev_conf": {
+        "deck": 0.29,
+        "engine": 0.06,
+        "navigation": 0.83
+      },
+      "jev_margin": 0.54,
+      "jev_route": "navigation",
+      "jev_top": 0.83,
+      "kw_route": "deck",
+      "report": "Charts folio updated with new edition notices.",
+      "truth": null
+    },
+    {
+      "group": "offdomain",
+      "jev_conf": {
+        "deck": 0.55,
+        "engine": 0.06,
+        "navigation": 0.12
+      },
+      "jev_margin": 0.43000000000000005,
+      "jev_route": "deck",
+      "jev_top": 0.55,
+      "kw_route": "deck",
+      "report": "Fishing license paperwork photocopied.",
+      "truth": null
+    },
+    {
+      "group": "offdomain",
+      "jev_conf": {
+        "deck": 0.78,
+        "engine": 0.12,
+        "navigation": 0.44
+      },
+      "jev_margin": 0.34,
+      "jev_route": "deck",
+      "jev_top": 0.78,
+      "kw_route": "deck",
+      "report": "Tool inventory checklist annotated with paint colors.",
+      "truth": null
+    },
+    {
+      "group": "offdomain",
+      "jev_conf": {
+        "deck": 0.77,
+        "engine": 0.05,
+        "navigation": 0.21
+      },
+      "jev_margin": 0.56,
+      "jev_route": "deck",
+      "jev_top": 0.77,
+      "kw_route": "deck",
+      "report": "Berth curtain repair finished in the forward cabin.",
+      "truth": null
+    },
+    {
+      "group": "offdomain",
+      "jev_conf": {
+        "deck": 0.82,
+        "engine": 0.1,
+        "navigation": 0.4
+      },
+      "jev_margin": 0.41999999999999993,
+      "jev_route": "deck",
+      "jev_top": 0.82,
+      "kw_route": "deck",
+      "report": "Shore power adapter stored in the cockpit locker.",
+      "truth": null
+    },
+    {
+      "group": "offdomain",
+      "jev_conf": {
+        "deck": 0.82,
+        "engine": 0.06,
+        "navigation": 0.21
+      },
+      "jev_margin": 0.61,
+      "jev_route": "deck",
+      "jev_top": 0.82,
+      "kw_route": "deck",
+      "report": "First-aid kit restock list pinned to the bulkhead.",
+      "truth": null
+    },
+    {
+      "group": "offdomain",
+      "jev_conf": {
+        "deck": 0.23,
+        "engine": 0.06,
+        "navigation": 0.92
+      },
+      "jev_margin": 0.6900000000000001,
+      "jev_route": "navigation",
+      "jev_top": 0.92,
+      "kw_route": "deck",
+      "report": "Nautical almanac page bookmarked for tomorrow.",
+      "truth": null
+    },
+    {
+      "group": "offdomain",
+      "jev_conf": {
+        "deck": 0.6,
+        "engine": 0.09,
+        "navigation": 0.24
+      },
+      "jev_margin": 0.36,
+      "jev_route": "deck",
+      "jev_top": 0.6,
+      "kw_route": "deck",
+      "report": "Coffee grinder maintenance note added to the binder.",
+      "truth": null
+    },
+    {
+      "group": "offdomain",
+      "jev_conf": {
+        "deck": 0.63,
+        "engine": 0.21,
+        "navigation": 0.24
+      },
+      "jev_margin": 0.39,
+      "jev_route": "deck",
+      "jev_top": 0.63,
+      "kw_route": "deck",
+      "report": "Spares locker labeled with the new label maker.",
+      "truth": null
+    }
+  ],
+  "verdict": "SYNERGY-FAIL",
+  "wall_s": 15.5
+}

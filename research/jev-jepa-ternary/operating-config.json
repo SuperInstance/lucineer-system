@@ -1,0 +1,16 @@
+{
+ "thresholds": {
+  "v_star": {
+   "center": 0.006,
+   "width": 0.287
+  },
+  "kappa": {
+   "center": -0.1,
+   "width": 0.137
+  },
+  "coh": {
+   "center": -0.088,
+   "width": 0.291
+  }
+ }
+}

@@ -1,0 +1,440 @@
+{
+  "meta": {
+    "title": "JEV x JEPA x Ternary creative explore (ternary-synergy-miner style)",
+    "date": "2026-10-06",
+    "lane": "5 creative explore",
+    "pattern": "shared primitive -> novel composition -> falsifiable claim -> frozen gates -> negative controls",
+    "pre_reg": "PRE-REG.md (frozen before firing)",
+    "components": {
+      "JEV": "typesafe judgment cell (jev-latest, graded noul confidence; CM1 pinch-gate lineage)",
+      "JEPA": "transitional JEPA (quilt-gpu-lab tools/transition_kernel.py) + elephant jepa_rag dial alphabet",
+      "ternary": "SuperInstance {-1,0,+1} ecosystem (TERNARY-WIKI.md, 200 repos)"
+    },
+    "total_jev_ledger": {
+      "calls": 210,
+      "input_tokens": 82531,
+      "output_tokens": 6120,
+      "retries": 0
+    }
+  },
+  "exp1_jev_ternary_router": {
+    "verdict": "SYNERGY-FAIL",
+    "n_trials": 60,
+    "keyword_acc": 0.675,
+    "jev_covered_acc": 0.9333333333333333,
+    "jev_coverage": 0.75,
+    "abstain_rate_boundary": 0.45,
+    "abstain_rate_clear": 0.05,
+    "offdomain_escalate_rate": 0.15,
+    "gates": {
+      "G1_jev_covered_acc_beats_keyword": {
+        "pass": true,
+        "value": [
+          0.9333333333333333,
+          0.675
+        ]
+      },
+      "G2_abstain_boundary_ge_0.5_clear_le_0.2": {
+        "pass": false,
+        "value": [
+          0.45,
+          0.05
+        ]
+      },
+      "G3_margin_auc_ge_0.75": {
+        "pass": true,
+        "value": 0.7875
+      }
+    },
+    "jev_ledger": {
+      "calls": 60,
+      "input_tokens": 26172,
+      "output_tokens": 3120,
+      "retries": 0
+    },
+    "wall_s": 15.5
+  },
+  "exp2_jepa_ternary_encoder": {
+    "verdict": "SMOOTH-GEOMETRY-FAIL",
+    "n_runs": 100,
+    "d": 9,
+    "gpu_ramp_receipt": {
+      "warmup_ms": 600.8,
+      "device": "NVIDIA GeForce RTX 4050 Laptop GPU"
+    },
+    "aggregate_by_k": {
+      "1": {
+        "trit_err_mean": 0.5507777777777777,
+        "trit_err_min": 0.5205555555555555,
+        "rho_mean": 0.24602726605822825
+      },
+      "2": {
+        "trit_err_mean": 0.4454138888888889,
+        "trit_err_min": 0.40705555555555556,
+        "rho_mean": 0.23180338484903884
+      },
+      "3": {
+        "trit_err_mean": 0.3488305555555556,
+        "trit_err_min": 0.326,
+        "rho_mean": 0.3031452072581363
+      },
+      "4": {
+        "trit_err_mean": 0.21481111111111112,
+        "trit_err_min": 0.17455555555555555,
+        "rho_mean": 0.35868278583247787
+      },
+      "5": {
+        "trit_err_mean": 0.12348888888888887,
+        "trit_err_min": 0.09494444444444444,
+        "rho_mean": 0.3709547057886028
+      }
+    },
+    "random_proj_baseline": [
+      {
+        "k": 1,
+        "baseline": "random_proj",
+        "trit_err": 0.6363333333333333
+      },
+      {
+        "k": 2,
+        "baseline": "random_proj",
+        "trit_err": 0.5699444444444445
+      },
+      {
+        "k": 3,
+        "baseline": "random_proj",
+        "trit_err": 0.5026111111111111
+      },
+      {
+        "k": 4,
+        "baseline": "random_proj",
+        "trit_err": 0.42816666666666664
+      },
+      {
+        "k": 5,
+        "baseline": "random_proj",
+        "trit_err": 0.3666111111111111
+      }
+    ],
+    "gates": {
+      "G1_k4_trit_err_le_0.02": {
+        "value": 0.17455555555555555,
+        "pass": false
+      },
+      "G2_k4_rho_ge_0.90": {
+        "value": 0.35868278583247787,
+        "pass": false
+      },
+      "G3_no_cliff": {
+        "value": [
+          0.09494444444444444,
+          0.326
+        ],
+        "pass": true
+      }
+    }
+  },
+  "exp2b_structured_arm_posthoc": {
+    "post_hoc": true,
+    "aggregate": {
+      "noise0.1_k2": {
+        "unique_states": 5129,
+        "trit_err_min": 0.43684528248286636,
+        "trit_err_mean": 0.4702247789496112,
+        "rho_mean": 0.2475024467691526
+      },
+      "noise0.1_k3": {
+        "unique_states": 5129,
+        "trit_err_min": 0.29565711444906073,
+        "trit_err_mean": 0.32323426014701184,
+        "rho_mean": 0.3215412172224448
+      },
+      "noise0.1_k4": {
+        "unique_states": 5129,
+        "trit_err_min": 0.1444550974752317,
+        "trit_err_mean": 0.1736159937502219,
+        "rho_mean": 0.34415278811486105
+      },
+      "noise0.1_k5": {
+        "unique_states": 5129,
+        "trit_err_min": 0.06509001811015235,
+        "trit_err_mean": 0.08530236852384504,
+        "rho_mean": 0.42930030901145855
+      },
+      "noise0.3_k2": {
+        "unique_states": 4989,
+        "trit_err_min": 0.4502806587115721,
+        "trit_err_mean": 0.47513475335489386,
+        "rho_mean": 0.2501186452663967
+      },
+      "noise0.3_k3": {
+        "unique_states": 4989,
+        "trit_err_min": 0.2901007397494517,
+        "trit_err_mean": 0.32571279878071446,
+        "rho_mean": 0.3211554426001239
+      },
+      "noise0.3_k4": {
+        "unique_states": 4989,
+        "trit_err_min": 0.14873053046355153,
+        "trit_err_mean": 0.17569235344410988,
+        "rho_mean": 0.3746164080481792
+      },
+      "noise0.3_k5": {
+        "unique_states": 4989,
+        "trit_err_min": 0.05375264860042377,
+        "trit_err_mean": 0.07652503624400579,
+        "rho_mean": 0.4051800954031052
+      },
+      "noise0.7_k2": {
+        "unique_states": 4461,
+        "trit_err_min": 0.4634520745857601,
+        "trit_err_mean": 0.4783782563546888,
+        "rho_mean": 0.2666923361855121
+      },
+      "noise0.7_k3": {
+        "unique_states": 4461,
+        "trit_err_min": 0.2967176847713215,
+        "trit_err_mean": 0.3309765677908709,
+        "rho_mean": 0.2880573796744381
+      },
+      "noise0.7_k4": {
+        "unique_states": 4461,
+        "trit_err_min": 0.15328005779041942,
+        "trit_err_mean": 0.17063524312610048,
+        "rho_mean": 0.3839550854939666
+      },
+      "noise0.7_k5": {
+        "unique_states": 4461,
+        "trit_err_min": 0.04514876518127229,
+        "trit_err_mean": 0.062382048850963934,
+        "rho_mean": 0.4065259241399777
+      }
+    },
+    "note": "uniform-cube arm failed (exp2); this arm asks whether STRUCTURED ternary (reachable set of the transition kernel, deadband mass at 0) is smooth."
+  },
+  "exp3_ternary_jepa_lattice": {
+    "verdict": "LATTICE-FAIL",
+    "n_runs": 100,
+    "d": 9,
+    "bits": {
+      "lattice": 14.264662506490406,
+      "flat_float32": 288
+    },
+    "gates": {
+      "G1_lattice_within_2pts_flat_all_noises": {
+        "value": [
+          0.6698805555555555,
+          0.6521291666666668
+        ],
+        "pass": true
+      },
+      "G2_bits_le_5pct": {
+        "value": [
+          14.264662506490406,
+          288
+        ],
+        "pass": true
+      },
+      "G3_lattice_beats_markov1_by_10pts_at_sigma0.1": {
+        "value": [
+          0.7777222222222222,
+          0.7748472222222224
+        ],
+        "pass": false
+      }
+    },
+    "mean_by_noise": {
+      "0.05": {
+        "lattice": 0.7919166666666666,
+        "flat": 0.9087361111111113,
+        "markov1": 0.7920416666666668
+      },
+      "0.1": {
+        "lattice": 0.7777222222222222,
+        "flat": 0.8622916666666667,
+        "markov1": 0.7748472222222224
+      },
+      "0.2": {
+        "lattice": 0.7412777777777777,
+        "flat": 0.7723611111111112,
+        "markov1": 0.7238472222222222
+      },
+      "0.3": {
+        "lattice": 0.7088333333333333,
+        "flat": 0.7049166666666667,
+        "markov1": 0.6734861111111111
+      },
+      "0.4": {
+        "lattice": 0.6824722222222223,
+        "flat": 0.6540416666666666,
+        "markov1": 0.6303472222222222
+      },
+      "0.5": {
+        "lattice": 0.660611111111111,
+        "flat": 0.6148055555555556,
+        "markov1": 0.5966666666666667
+      },
+      "0.7": {
+        "lattice": 0.6270555555555556,
+        "flat": 0.5628194444444444,
+        "markov1": 0.549125
+      },
+      "1.0": {
+        "lattice": 0.5953888888888889,
+        "flat": 0.5156388888888888,
+        "markov1": 0.5042638888888888
+      },
+      "1.5": {
+        "lattice": 0.5647083333333334,
+        "flat": 0.4738888888888888,
+        "markov1": 0.4641388888888889
+      },
+      "2.0": {
+        "lattice": 0.5488194444444445,
+        "flat": 0.4517916666666667,
+        "markov1": 0.4431666666666666
+      }
+    }
+  },
+  "exp4_pinch_mesh_composed": {
+    "verdict": "COMPOSED-PASS",
+    "n_trials": 60,
+    "thresholds": {
+      "resid_hard": 78.95590308438274,
+      "resid_soft": 42.96173089623593
+    },
+    "scores": {
+      "armA": {
+        "far_invalid_accept": 1.0,
+        "frr_valid_reject": 0.0,
+        "held_rate": 0.0
+      },
+      "armB": {
+        "far_invalid_accept": 0.8,
+        "frr_valid_reject": 0.0,
+        "held_rate": 0.0
+      },
+      "armC": {
+        "far_invalid_accept": 0.2,
+        "frr_valid_reject": 0.0,
+        "held_rate": 0.0
+      },
+      "armD": {
+        "far_invalid_accept": 0.03333333333333333,
+        "frr_valid_reject": 0.0,
+        "held_rate": 0.1
+      }
+    },
+    "gates": {
+      "G1_farD_le_0.7x_best_single": {
+        "pass": true,
+        "value": [
+          0.03333333333333333,
+          0.2
+        ]
+      },
+      "G2_frrD_within_10pts": {
+        "pass": true,
+        "value": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "complementarity_jev_jepa_disagreements": 28,
+    "jev_ledger": {
+      "calls": 60,
+      "input_tokens": 22118,
+      "output_tokens": 1200,
+      "retries": 0
+    },
+    "wall_s": 14.3
+  },
+  "exp5_impossible_detector": {
+    "verdict": "TERNARY-DETECTOR-FAIL",
+    "n_events": 90,
+    "combined_3way_acc": 0.4888888888888889,
+    "binary_baselines_honest": {
+      "jepa_only": 0.6166666666666667,
+      "jev_only": 0.8333333333333334
+    },
+    "per_class": {
+      "impossible": {
+        "pred_as": {
+          "impossible": 14,
+          "possible": 5,
+          "unlikely": 11
+        },
+        "recall": 0.4666666666666667
+      },
+      "possible": {
+        "pred_as": {
+          "impossible": 0,
+          "possible": 30,
+          "unlikely": 0
+        },
+        "recall": 1.0
+      },
+      "unlikely": {
+        "pred_as": {
+          "impossible": 8,
+          "possible": 22,
+          "unlikely": 0
+        },
+        "recall": 0.0
+      }
+    },
+    "gates": {
+      "G1_3way_acc_ge_0.70": {
+        "pass": false,
+        "value": 0.4888888888888889
+      },
+      "G2_unlikely_recall_ge_0.60": {
+        "pass": false,
+        "value": 0.0
+      },
+      "G3_impossible_precision_ge_0.80": {
+        "pass": false,
+        "value": 0.6363636363636364
+      }
+    },
+    "jev_ledger": {
+      "calls": 90,
+      "input_tokens": 34241,
+      "output_tokens": 1800,
+      "retries": 0
+    }
+  },
+  "exp5b_zscore_posthoc": {
+    "experiment": "exp5b POST-HOC per-dim z + jev ternary classifier",
+    "post_hoc": true,
+    "thresholds_fit_on": "half (45), evaluated on held-out half (45)",
+    "chosen": {
+      "SOFT": 3.0,
+      "HARD": 20.0,
+      "fit_acc": 1.0
+    },
+    "heldout_3way_acc": 1.0,
+    "heldout_per_class_recall": {
+      "possible": {
+        "recall": 1.0
+      },
+      "unlikely": {
+        "recall": 1.0
+      },
+      "impossible": {
+        "recall": 1.0
+      }
+    },
+    "verdict": "POST-HOC-PASS"
+  },
+  "verdicts_summary": {
+    "exp1": "SYNERGY-FAIL",
+    "exp2": "SMOOTH-GEOMETRY-FAIL",
+    "exp2b": "structured arm also fails smooth-geometry (err ~0.17 @ k=4, rho ~0.38)",
+    "exp3": "LATTICE-FAIL",
+    "exp4": "COMPOSED-PASS",
+    "exp5": "TERNARY-DETECTOR-FAIL",
+    "exp5b": "POST-HOC-PASS"
+  }
+}

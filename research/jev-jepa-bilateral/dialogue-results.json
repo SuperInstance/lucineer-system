@@ -1,0 +1,1762 @@
+{
+ "meta": {
+  "started": "2026-10-06T13:34:23-0800",
+  "model_requested": "jev-latest",
+  "api": "https://api.typesafe.ai/v1/systemone",
+  "note": "JEPA simulated via numpy latent room dynamics; JEV = typesafe System One."
+ },
+ "exp1_predict_to_judge": {
+  "trials": [
+   {
+    "ground_truth": "implausible",
+    "perturbation": {
+     "mag": 0.5
+    },
+    "current": {
+     "coherence": 0.8008,
+     "v_star_projection": 0.4167,
+     "kappa": 3.1141,
+     "energy": 0.6751,
+     "entropy": 0.2737,
+     "symmetry": 0.4196,
+     "momentum": 0.2019
+    },
+    "predicted": {
+     "coherence": 0.7076,
+     "v_star_projection": -0.1439,
+     "kappa": 3.906,
+     "energy": 0.8899,
+     "entropy": 0.0788,
+     "symmetry": 0.3194,
+     "momentum": -0.389
+    },
+    "judgment": {
+     "noul": 0.29,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "ground_truth": "implausible",
+    "perturbation": {
+     "mag": 1.0
+    },
+    "current": {
+     "coherence": 0.7209,
+     "v_star_projection": 0.3971,
+     "kappa": 2.458,
+     "energy": 0.3157,
+     "entropy": 0.3749,
+     "symmetry": 0.276,
+     "momentum": 0.0197
+    },
+    "predicted": {
+     "coherence": 0.9,
+     "v_star_projection": -0.0322,
+     "kappa": 3.4937,
+     "energy": 0.5893,
+     "entropy": 0.0621,
+     "symmetry": 0.852,
+     "momentum": 0.2785
+    },
+    "judgment": {
+     "noul": 0.18,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "ground_truth": "implausible",
+    "perturbation": {
+     "mag": 1.3
+    },
+    "current": {
+     "coherence": 0.7968,
+     "v_star_projection": 0.355,
+     "kappa": 2.0918,
+     "energy": 0.3188,
+     "entropy": 0.3248,
+     "symmetry": 0.5007,
+     "momentum": 0.1318
+    },
+    "predicted": {
+     "coherence": 0.4866,
+     "v_star_projection": -0.4041,
+     "kappa": 1.0,
+     "energy": 0.9601,
+     "entropy": 0.0,
+     "symmetry": 0.6544,
+     "momentum": -0.5145
+    },
+    "judgment": {
+     "noul": 0.09,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "ground_truth": "implausible",
+    "perturbation": {
+     "mag": 1.6
+    },
+    "current": {
+     "coherence": 0.5384,
+     "v_star_projection": 0.2213,
+     "kappa": 2.342,
+     "energy": 0.5525,
+     "entropy": 0.6194,
+     "symmetry": 0.2267,
+     "momentum": 0.0058
+    },
+    "predicted": {
+     "coherence": 0.9,
+     "v_star_projection": 0.2122,
+     "kappa": 1.0,
+     "energy": 1.0,
+     "entropy": 0.0,
+     "symmetry": 0.8602,
+     "momentum": 0.4249
+    },
+    "judgment": {
+     "noul": 0.1,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "ground_truth": "plausible",
+    "perturbation": {
+     "lam": 0.7
+    },
+    "current": {
+     "coherence": 0.6663,
+     "v_star_projection": 0.2048,
+     "kappa": 2.8741,
+     "energy": 0.5122,
+     "entropy": 0.4357,
+     "symmetry": 0.3307,
+     "momentum": 0.0589
+    },
+    "predicted": {
+     "coherence": 0.6618,
+     "v_star_projection": 0.2111,
+     "kappa": 2.7839,
+     "energy": 0.5197,
+     "entropy": 0.4256,
+     "symmetry": 0.2995,
+     "momentum": 0.0484
+    },
+    "judgment": {
+     "noul": 0.73,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "ground_truth": "implausible",
+    "perturbation": {
+     "mag": 0.8
+    },
+    "current": {
+     "coherence": 0.5005,
+     "v_star_projection": 0.1206,
+     "kappa": 3.0017,
+     "energy": 0.4051,
+     "entropy": 0.63,
+     "symmetry": 0.2772,
+     "momentum": 0.0315
+    },
+    "predicted": {
+     "coherence": 0.3,
+     "v_star_projection": 0.2917,
+     "kappa": 4.388,
+     "energy": 0.647,
+     "entropy": 0.2807,
+     "symmetry": 0.8144,
+     "momentum": 0.3671
+    },
+    "judgment": {
+     "noul": 0.19,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "ground_truth": "plausible",
+    "perturbation": {
+     "lam": 1.6
+    },
+    "current": {
+     "coherence": 0.6273,
+     "v_star_projection": 0.1643,
+     "kappa": 3.3364,
+     "energy": 0.3522,
+     "entropy": 0.4361,
+     "symmetry": 0.3582,
+     "momentum": 0.1225
+    },
+    "predicted": {
+     "coherence": 0.6154,
+     "v_star_projection": 0.24,
+     "kappa": 2.7221,
+     "energy": 0.3618,
+     "entropy": 0.3596,
+     "symmetry": 0.4562,
+     "momentum": 0.1045
+    },
+    "judgment": {
+     "noul": 0.6,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "ground_truth": "plausible",
+    "perturbation": {
+     "lam": 0.4
+    },
+    "current": {
+     "coherence": 0.7064,
+     "v_star_projection": 0.2018,
+     "kappa": 3.1485,
+     "energy": 0.3463,
+     "entropy": 0.3669,
+     "symmetry": 0.4298,
+     "momentum": -0.078
+    },
+    "predicted": {
+     "coherence": 0.6958,
+     "v_star_projection": 0.2307,
+     "kappa": 3.0944,
+     "energy": 0.3254,
+     "entropy": 0.3679,
+     "symmetry": 0.4294,
+     "momentum": -0.0766
+    },
+    "judgment": {
+     "noul": 0.76,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "ground_truth": "plausible",
+    "perturbation": {
+     "lam": 2.2
+    },
+    "current": {
+     "coherence": 0.6617,
+     "v_star_projection": 0.2914,
+     "kappa": 2.2439,
+     "energy": 0.3143,
+     "entropy": 0.4849,
+     "symmetry": 0.3047,
+     "momentum": 0.0259
+    },
+    "predicted": {
+     "coherence": 0.5484,
+     "v_star_projection": 0.1367,
+     "kappa": 1.3313,
+     "energy": 0.2391,
+     "entropy": 0.4372,
+     "symmetry": 0.3468,
+     "momentum": -0.1253
+    },
+    "judgment": {
+     "noul": 0.53,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "ground_truth": "plausible",
+    "perturbation": {
+     "lam": 1.0
+    },
+    "current": {
+     "coherence": 0.5123,
+     "v_star_projection": 0.0462,
+     "kappa": 2.1716,
+     "energy": 0.4141,
+     "entropy": 0.6048,
+     "symmetry": 0.3332,
+     "momentum": -0.1932
+    },
+    "predicted": {
+     "coherence": 0.5626,
+     "v_star_projection": 0.0504,
+     "kappa": 2.191,
+     "energy": 0.4274,
+     "entropy": 0.549,
+     "symmetry": 0.3623,
+     "momentum": -0.176
+    },
+    "judgment": {
+     "noul": 0.88,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   }
+  ],
+  "summary": {
+   "plausible_mean_noul": 0.7,
+   "implausible_mean_noul": 0.17,
+   "separation": 0.53
+  }
+ },
+ "exp2_judge_to_predict": {
+  "current": {
+   "coherence": 0.7,
+   "v_star_projection": 0.3,
+   "kappa": 3.0,
+   "energy": 0.5,
+   "entropy": 0.4,
+   "symmetry": 0.36,
+   "momentum": 0.05
+  },
+  "gates": {
+   "v_range_0": {
+    "noul": 0.49,
+    "confidence": null,
+    "probabilities": null,
+    "model": "jev-1.13.0"
+   },
+   "v_range_1": {
+    "noul": 0.49,
+    "confidence": null,
+    "probabilities": null,
+    "model": "jev-1.13.0"
+   },
+   "v_range_2": {
+    "noul": 0.46,
+    "confidence": null,
+    "probabilities": null,
+    "model": "jev-1.13.0"
+   },
+   "v_range_3": {
+    "noul": 0.5,
+    "confidence": null,
+    "probabilities": null,
+    "model": "jev-1.13.0"
+   },
+   "v_range_4": {
+    "noul": 0.48,
+    "confidence": null,
+    "probabilities": null,
+    "model": "jev-1.13.0"
+   },
+   "k_range_0": {
+    "noul": 0.24,
+    "confidence": null,
+    "probabilities": null,
+    "model": "jev-1.13.0"
+   },
+   "k_range_1": {
+    "noul": 0.2,
+    "confidence": null,
+    "probabilities": null,
+    "model": "jev-1.13.0"
+   },
+   "k_range_2": {
+    "noul": 0.22,
+    "confidence": null,
+    "probabilities": null,
+    "model": "jev-1.13.0"
+   },
+   "k_range_3": {
+    "noul": 0.23,
+    "confidence": null,
+    "probabilities": null,
+    "model": "jev-1.13.0"
+   }
+  },
+  "accepted_v_ranges": [
+   [
+    0.4,
+    0.7
+   ]
+  ],
+  "accepted_k_ranges": [],
+  "constrained_prediction": {
+   "coherence": 0.7094,
+   "v_star_projection": 0.3234,
+   "kappa": 2.9612,
+   "energy": 0.469,
+   "entropy": 0.4039,
+   "symmetry": 0.358,
+   "momentum": 0.0711
+  },
+  "judgment_constrained": {
+   "noul": 0.67,
+   "confidence": null,
+   "probabilities": null,
+   "model": "jev-1.13.0"
+  },
+  "unconstrained_contrast_prediction": {
+   "coherence": 0.3248,
+   "v_star_projection": -0.4514,
+   "kappa": 5.0,
+   "energy": 0.1357,
+   "entropy": 0.6906,
+   "symmetry": 0.2501,
+   "momentum": -0.4359
+  },
+  "judgment_unconstrained": {
+   "noul": 0.06,
+   "confidence": null,
+   "probabilities": null,
+   "model": "jev-1.13.0"
+  }
+ },
+ "exp3_iterative_calibration": {
+  "trajectories": [
+   {
+    "trajectory": "A_wild",
+    "start_knobs": {
+     "lam": 2.6,
+     "rho": 0.2
+    },
+    "rounds": [
+     {
+      "round": 1,
+      "knobs_before": {
+       "lam": 2.6,
+       "rho": 0.2
+      },
+      "prediction": {
+       "coherence": 0.8786,
+       "v_star_projection": 0.1022,
+       "kappa": 4.3973,
+       "energy": 0.0977,
+       "entropy": 0.0776,
+       "symmetry": 0.3166,
+       "momentum": 0.3976
+      },
+      "judgment": {
+       "noul": 0.27,
+       "confidence": null,
+       "probabilities": null,
+       "model": "jev-1.13.0"
+      },
+      "knobs_after": {
+       "lam": 0.91,
+       "rho": 0.282
+      }
+     },
+     {
+      "round": 2,
+      "knobs_before": {
+       "lam": 0.91,
+       "rho": 0.282
+      },
+      "prediction": {
+       "coherence": 0.7248,
+       "v_star_projection": 0.511,
+       "kappa": 3.5016,
+       "energy": 0.3097,
+       "entropy": 0.4164,
+       "symmetry": 0.807,
+       "momentum": -0.2566
+      },
+      "judgment": {
+       "noul": 0.45,
+       "confidence": null,
+       "probabilities": null,
+       "model": "jev-1.13.0"
+      },
+      "knobs_after": {
+       "lam": 0.318,
+       "rho": 0.32
+      }
+     },
+     {
+      "round": 3,
+      "knobs_before": {
+       "lam": 0.318,
+       "rho": 0.32
+      },
+      "prediction": {
+       "coherence": 0.78,
+       "v_star_projection": 0.1382,
+       "kappa": 3.0677,
+       "energy": 0.4557,
+       "entropy": 0.2908,
+       "symmetry": 0.2299,
+       "momentum": -0.107
+      },
+      "judgment": {
+       "noul": 0.59,
+       "confidence": null,
+       "probabilities": null,
+       "model": "jev-1.13.0"
+      },
+      "knobs_after": {
+       "lam": 0.357,
+       "rho": 0.27
+      }
+     }
+    ],
+    "noul_trajectory": [
+     0.27,
+     0.45,
+     0.59
+    ]
+   },
+   {
+    "trajectory": "B_borderline",
+    "start_knobs": {
+     "lam": 1.4,
+     "rho": 0.6
+    },
+    "rounds": [
+     {
+      "round": 1,
+      "knobs_before": {
+       "lam": 1.4,
+       "rho": 0.6
+      },
+      "prediction": {
+       "coherence": 0.6277,
+       "v_star_projection": 0.3773,
+       "kappa": 2.3585,
+       "energy": 0.427,
+       "entropy": 0.5879,
+       "symmetry": 0.3068,
+       "momentum": -0.1016
+      },
+      "judgment": {
+       "noul": 0.81,
+       "confidence": null,
+       "probabilities": null,
+       "model": "jev-1.13.0"
+      },
+      "knobs_after": {
+       "lam": 1.568,
+       "rho": 0.55
+      }
+     },
+     {
+      "round": 2,
+      "knobs_before": {
+       "lam": 1.568,
+       "rho": 0.55
+      },
+      "prediction": {
+       "coherence": 0.6447,
+       "v_star_projection": 0.1435,
+       "kappa": 2.5582,
+       "energy": 0.1644,
+       "entropy": 0.619,
+       "symmetry": 0.0967,
+       "momentum": -0.0693
+      },
+      "judgment": {
+       "noul": 0.43,
+       "confidence": null,
+       "probabilities": null,
+       "model": "jev-1.13.0"
+      },
+      "knobs_after": {
+       "lam": 0.549,
+       "rho": 0.592
+      }
+     },
+     {
+      "round": 3,
+      "knobs_before": {
+       "lam": 0.549,
+       "rho": 0.592
+      },
+      "prediction": {
+       "coherence": 0.5893,
+       "v_star_projection": 0.0631,
+       "kappa": 2.0668,
+       "energy": 0.3469,
+       "entropy": 0.4896,
+       "symmetry": 0.1513,
+       "momentum": 0.0741
+      },
+      "judgment": {
+       "noul": 0.44,
+       "confidence": null,
+       "probabilities": null,
+       "model": "jev-1.13.0"
+      },
+      "knobs_after": {
+       "lam": 0.3,
+       "rho": 0.632
+      }
+     }
+    ],
+    "noul_trajectory": [
+     0.81,
+     0.43,
+     0.44
+    ]
+   },
+   {
+    "trajectory": "C_calm",
+    "start_knobs": {
+     "lam": 0.5,
+     "rho": 1.0
+    },
+    "rounds": [
+     {
+      "round": 1,
+      "knobs_before": {
+       "lam": 0.5,
+       "rho": 1.0
+      },
+      "prediction": {
+       "coherence": 0.7058,
+       "v_star_projection": 0.2155,
+       "kappa": 3.1806,
+       "energy": 0.4022,
+       "entropy": 0.3449,
+       "symmetry": 0.3604,
+       "momentum": 0.1004
+      },
+      "judgment": {
+       "noul": 0.77,
+       "confidence": null,
+       "probabilities": null,
+       "model": "jev-1.13.0"
+      },
+      "knobs_after": {
+       "lam": 0.56,
+       "rho": 0.95
+      }
+     },
+     {
+      "round": 2,
+      "knobs_before": {
+       "lam": 0.56,
+       "rho": 0.95
+      },
+      "prediction": {
+       "coherence": 0.7262,
+       "v_star_projection": 0.2263,
+       "kappa": 3.2525,
+       "energy": 0.4258,
+       "entropy": 0.3109,
+       "symmetry": 0.3522,
+       "momentum": 0.1122
+      },
+      "judgment": {
+       "noul": 0.8,
+       "confidence": null,
+       "probabilities": null,
+       "model": "jev-1.13.0"
+      },
+      "knobs_after": {
+       "lam": 0.627,
+       "rho": 0.9
+      }
+     },
+     {
+      "round": 3,
+      "knobs_before": {
+       "lam": 0.627,
+       "rho": 0.9
+      },
+      "prediction": {
+       "coherence": 0.7437,
+       "v_star_projection": 0.1942,
+       "kappa": 3.2978,
+       "energy": 0.3972,
+       "entropy": 0.284,
+       "symmetry": 0.4182,
+       "momentum": 0.0739
+      },
+      "judgment": {
+       "noul": 0.79,
+       "confidence": null,
+       "probabilities": null,
+       "model": "jev-1.13.0"
+      },
+      "knobs_after": {
+       "lam": 0.702,
+       "rho": 0.85
+      }
+     }
+    ],
+    "noul_trajectory": [
+     0.77,
+     0.8,
+     0.79
+    ]
+   }
+  ]
+ },
+ "exp4_calibration_drift": {
+  "initial_state": {
+   "coherence": 0.62,
+   "v_star_projection": 0.24,
+   "kappa": 2.7,
+   "energy": 0.55,
+   "entropy": 0.44,
+   "symmetry": 0.33,
+   "momentum": 0.04
+  },
+  "trials": [
+   {
+    "trial": 0,
+    "ground_truth": "plausible",
+    "perturbation_scale": 1.158,
+    "predicted": {
+     "coherence": 0.5867,
+     "v_star_projection": 0.1316,
+     "kappa": 2.7675,
+     "energy": 0.6006,
+     "entropy": 0.4619,
+     "symmetry": 0.3743,
+     "momentum": -0.0035
+    },
+    "judgment": {
+     "noul": 0.68,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "trial": 1,
+    "ground_truth": "plausible",
+    "perturbation_scale": 0.858,
+    "predicted": {
+     "coherence": 0.5723,
+     "v_star_projection": 0.1606,
+     "kappa": 2.8486,
+     "energy": 0.6146,
+     "entropy": 0.4589,
+     "symmetry": 0.3908,
+     "momentum": 0.0374
+    },
+    "judgment": {
+     "noul": 0.68,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "trial": 2,
+    "ground_truth": "plausible",
+    "perturbation_scale": 0.96,
+    "predicted": {
+     "coherence": 0.6526,
+     "v_star_projection": 0.3,
+     "kappa": 2.5953,
+     "energy": 0.527,
+     "entropy": 0.4346,
+     "symmetry": 0.3291,
+     "momentum": 0.0567
+    },
+    "judgment": {
+     "noul": 0.9,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "trial": 3,
+    "ground_truth": "plausible",
+    "perturbation_scale": 0.657,
+    "predicted": {
+     "coherence": 0.6289,
+     "v_star_projection": 0.2605,
+     "kappa": 2.5913,
+     "energy": 0.5338,
+     "entropy": 0.4033,
+     "symmetry": 0.3318,
+     "momentum": 0.0593
+    },
+    "judgment": {
+     "noul": 0.89,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "trial": 4,
+    "ground_truth": "plausible",
+    "perturbation_scale": 0.7,
+    "predicted": {
+     "coherence": 0.6035,
+     "v_star_projection": 0.2233,
+     "kappa": 2.9081,
+     "energy": 0.5478,
+     "entropy": 0.4256,
+     "symmetry": 0.3556,
+     "momentum": 0.038
+    },
+    "judgment": {
+     "noul": 0.73,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "trial": 5,
+    "ground_truth": "plausible",
+    "perturbation_scale": 0.875,
+    "predicted": {
+     "coherence": 0.5894,
+     "v_star_projection": 0.2063,
+     "kappa": 2.5139,
+     "energy": 0.5673,
+     "entropy": 0.4118,
+     "symmetry": 0.3246,
+     "momentum": 0.0272
+    },
+    "judgment": {
+     "noul": 0.81,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "trial": 6,
+    "ground_truth": "plausible",
+    "perturbation_scale": 1.163,
+    "predicted": {
+     "coherence": 0.6208,
+     "v_star_projection": 0.3672,
+     "kappa": 2.8153,
+     "energy": 0.4755,
+     "entropy": 0.4685,
+     "symmetry": 0.2766,
+     "momentum": 0.1219
+    },
+    "judgment": {
+     "noul": 0.8,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "trial": 7,
+    "ground_truth": "plausible",
+    "perturbation_scale": 1.141,
+    "predicted": {
+     "coherence": 0.651,
+     "v_star_projection": 0.309,
+     "kappa": 2.9393,
+     "energy": 0.4935,
+     "entropy": 0.4427,
+     "symmetry": 0.3116,
+     "momentum": -0.0223
+    },
+    "judgment": {
+     "noul": 0.87,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "trial": 8,
+    "ground_truth": "plausible",
+    "perturbation_scale": 1.048,
+    "predicted": {
+     "coherence": 0.6185,
+     "v_star_projection": 0.2058,
+     "kappa": 2.5964,
+     "energy": 0.5902,
+     "entropy": 0.454,
+     "symmetry": 0.3242,
+     "momentum": 0.0647
+    },
+    "judgment": {
+     "noul": 0.67,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "trial": 9,
+    "ground_truth": "plausible",
+    "perturbation_scale": 1.024,
+    "predicted": {
+     "coherence": 0.5857,
+     "v_star_projection": 0.2651,
+     "kappa": 2.58,
+     "energy": 0.5916,
+     "entropy": 0.4542,
+     "symmetry": 0.373,
+     "momentum": 0.0108
+    },
+    "judgment": {
+     "noul": 0.71,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "trial": 10,
+    "ground_truth": "plausible",
+    "perturbation_scale": 0.885,
+    "predicted": {
+     "coherence": 0.6153,
+     "v_star_projection": 0.1424,
+     "kappa": 2.4848,
+     "energy": 0.5569,
+     "entropy": 0.4511,
+     "symmetry": 0.354,
+     "momentum": -0.0155
+    },
+    "judgment": {
+     "noul": 0.65,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "trial": 11,
+    "ground_truth": "plausible",
+    "perturbation_scale": 1.817,
+    "predicted": {
+     "coherence": 0.6078,
+     "v_star_projection": 0.2741,
+     "kappa": 2.7096,
+     "energy": 0.6001,
+     "entropy": 0.5473,
+     "symmetry": 0.3296,
+     "momentum": 0.0008
+    },
+    "judgment": {
+     "noul": 0.65,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "trial": 12,
+    "ground_truth": "plausible",
+    "perturbation_scale": 1.887,
+    "predicted": {
+     "coherence": 0.502,
+     "v_star_projection": 0.1251,
+     "kappa": 2.7207,
+     "energy": 0.4566,
+     "entropy": 0.5465,
+     "symmetry": 0.3214,
+     "momentum": -0.0125
+    },
+    "judgment": {
+     "noul": 0.73,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "trial": 13,
+    "ground_truth": "plausible",
+    "perturbation_scale": 1.426,
+    "predicted": {
+     "coherence": 0.6332,
+     "v_star_projection": 0.2316,
+     "kappa": 2.5824,
+     "energy": 0.6125,
+     "entropy": 0.5058,
+     "symmetry": 0.3534,
+     "momentum": 0.0342
+    },
+    "judgment": {
+     "noul": 0.57,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "trial": 14,
+    "ground_truth": "plausible",
+    "perturbation_scale": 1.559,
+    "predicted": {
+     "coherence": 0.6995,
+     "v_star_projection": 0.263,
+     "kappa": 2.9766,
+     "energy": 0.5169,
+     "entropy": 0.5121,
+     "symmetry": 0.3897,
+     "momentum": 0.0517
+    },
+    "judgment": {
+     "noul": 0.87,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "trial": 15,
+    "ground_truth": "plausible",
+    "perturbation_scale": 1.117,
+    "predicted": {
+     "coherence": 0.6247,
+     "v_star_projection": 0.2327,
+     "kappa": 2.7904,
+     "energy": 0.553,
+     "entropy": 0.4133,
+     "symmetry": 0.3439,
+     "momentum": 0.0676
+    },
+    "judgment": {
+     "noul": 0.56,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "trial": 16,
+    "ground_truth": "plausible",
+    "perturbation_scale": 0.724,
+    "predicted": {
+     "coherence": 0.6568,
+     "v_star_projection": 0.2737,
+     "kappa": 2.6208,
+     "energy": 0.5711,
+     "entropy": 0.4561,
+     "symmetry": 0.2903,
+     "momentum": 0.0095
+    },
+    "judgment": {
+     "noul": 0.88,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "trial": 17,
+    "ground_truth": "plausible",
+    "perturbation_scale": 1.763,
+    "predicted": {
+     "coherence": 0.6234,
+     "v_star_projection": 0.1815,
+     "kappa": 3.0563,
+     "energy": 0.5371,
+     "entropy": 0.4384,
+     "symmetry": 0.3656,
+     "momentum": 0.0003
+    },
+    "judgment": {
+     "noul": 0.51,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "trial": 18,
+    "ground_truth": "plausible",
+    "perturbation_scale": 1.151,
+    "predicted": {
+     "coherence": 0.6192,
+     "v_star_projection": 0.2061,
+     "kappa": 2.6094,
+     "energy": 0.5407,
+     "entropy": 0.4124,
+     "symmetry": 0.3573,
+     "momentum": 0.0765
+    },
+    "judgment": {
+     "noul": 0.68,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "trial": 19,
+    "ground_truth": "plausible",
+    "perturbation_scale": 1.793,
+    "predicted": {
+     "coherence": 0.6974,
+     "v_star_projection": 0.2048,
+     "kappa": 2.4173,
+     "energy": 0.5759,
+     "entropy": 0.4231,
+     "symmetry": 0.402,
+     "momentum": -0.0451
+    },
+    "judgment": {
+     "noul": 0.49,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "trial": 20,
+    "ground_truth": "plausible",
+    "perturbation_scale": 0.722,
+    "predicted": {
+     "coherence": 0.6298,
+     "v_star_projection": 0.2804,
+     "kappa": 2.6515,
+     "energy": 0.5767,
+     "entropy": 0.4218,
+     "symmetry": 0.3739,
+     "momentum": 0.0386
+    },
+    "judgment": {
+     "noul": 0.9,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "trial": 21,
+    "ground_truth": "plausible",
+    "perturbation_scale": 1.089,
+    "predicted": {
+     "coherence": 0.6178,
+     "v_star_projection": 0.2728,
+     "kappa": 2.6535,
+     "energy": 0.5473,
+     "entropy": 0.4326,
+     "symmetry": 0.3548,
+     "momentum": -0.0259
+    },
+    "judgment": {
+     "noul": 0.82,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "trial": 22,
+    "ground_truth": "plausible",
+    "perturbation_scale": 0.79,
+    "predicted": {
+     "coherence": 0.6232,
+     "v_star_projection": 0.1597,
+     "kappa": 2.6239,
+     "energy": 0.564,
+     "entropy": 0.4388,
+     "symmetry": 0.3215,
+     "momentum": 0.014
+    },
+    "judgment": {
+     "noul": 0.54,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "trial": 23,
+    "ground_truth": "plausible",
+    "perturbation_scale": 1.913,
+    "predicted": {
+     "coherence": 0.6643,
+     "v_star_projection": 0.2277,
+     "kappa": 2.1223,
+     "energy": 0.5025,
+     "entropy": 0.4101,
+     "symmetry": 0.3716,
+     "momentum": 0.0466
+    },
+    "judgment": {
+     "noul": 0.52,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "trial": 24,
+    "ground_truth": "plausible",
+    "perturbation_scale": 0.747,
+    "predicted": {
+     "coherence": 0.5988,
+     "v_star_projection": 0.2307,
+     "kappa": 2.6652,
+     "energy": 0.5128,
+     "entropy": 0.4214,
+     "symmetry": 0.3638,
+     "momentum": 0.0283
+    },
+    "judgment": {
+     "noul": 0.75,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "trial": 25,
+    "ground_truth": "implausible",
+    "perturbation_scale": 0.888,
+    "predicted": {
+     "coherence": 0.3,
+     "v_star_projection": -0.1691,
+     "kappa": 4.4467,
+     "energy": 0.8327,
+     "entropy": 0.0995,
+     "symmetry": 0.3412,
+     "momentum": 0.2995
+    },
+    "judgment": {
+     "noul": 0.15,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "trial": 26,
+    "ground_truth": "implausible",
+    "perturbation_scale": 1.202,
+    "predicted": {
+     "coherence": 0.3317,
+     "v_star_projection": -0.2505,
+     "kappa": 1.0,
+     "energy": 1.0,
+     "entropy": 0.9694,
+     "symmetry": 0.623,
+     "momentum": 0.3972
+    },
+    "judgment": {
+     "noul": 0.1,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "trial": 27,
+    "ground_truth": "implausible",
+    "perturbation_scale": 0.563,
+    "predicted": {
+     "coherence": 0.8417,
+     "v_star_projection": -0.006,
+     "kappa": 3.5269,
+     "energy": 0.7342,
+     "entropy": 0.2044,
+     "symmetry": 0.4851,
+     "momentum": 0.1721
+    },
+    "judgment": {
+     "noul": 0.28,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "trial": 28,
+    "ground_truth": "implausible",
+    "perturbation_scale": 0.991,
+    "predicted": {
+     "coherence": 0.8709,
+     "v_star_projection": 0.7867,
+     "kappa": 4.3577,
+     "energy": 1.0,
+     "entropy": 0.7739,
+     "symmetry": 0.4454,
+     "momentum": -0.2836
+    },
+    "judgment": {
+     "noul": 0.34,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "trial": 29,
+    "ground_truth": "implausible",
+    "perturbation_scale": 1.477,
+    "predicted": {
+     "coherence": 0.9,
+     "v_star_projection": -0.4071,
+     "kappa": 1.0,
+     "energy": 0.0,
+     "entropy": 0.988,
+     "symmetry": 0.0432,
+     "momentum": -0.7359
+    },
+    "judgment": {
+     "noul": 0.06,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "trial": 30,
+    "ground_truth": "implausible",
+    "perturbation_scale": 0.529,
+    "predicted": {
+     "coherence": 0.7483,
+     "v_star_projection": 0.6241,
+     "kappa": 1.7049,
+     "energy": 0.8121,
+     "entropy": 0.2141,
+     "symmetry": 0.0234,
+     "momentum": 0.0887
+    },
+    "judgment": {
+     "noul": 0.5,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "trial": 31,
+    "ground_truth": "implausible",
+    "perturbation_scale": 0.756,
+    "predicted": {
+     "coherence": 0.829,
+     "v_star_projection": -0.3096,
+     "kappa": 4.1084,
+     "energy": 0.9155,
+     "entropy": 0.6648,
+     "symmetry": 0.0755,
+     "momentum": -0.2548
+    },
+    "judgment": {
+     "noul": 0.17,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "trial": 32,
+    "ground_truth": "implausible",
+    "perturbation_scale": 1.445,
+    "predicted": {
+     "coherence": 0.9,
+     "v_star_projection": 0.0239,
+     "kappa": 1.3511,
+     "energy": 0.0,
+     "entropy": 0.0,
+     "symmetry": 0.8613,
+     "momentum": 0.6808
+    },
+    "judgment": {
+     "noul": 0.09,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "trial": 33,
+    "ground_truth": "implausible",
+    "perturbation_scale": 1.102,
+    "predicted": {
+     "coherence": 0.3,
+     "v_star_projection": 0.0215,
+     "kappa": 1.0,
+     "energy": 0.174,
+     "entropy": 0.0174,
+     "symmetry": 0.0148,
+     "momentum": -0.4441
+    },
+    "judgment": {
+     "noul": 0.08,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "trial": 34,
+    "ground_truth": "implausible",
+    "perturbation_scale": 0.846,
+    "predicted": {
+     "coherence": 0.7981,
+     "v_star_projection": 0.3459,
+     "kappa": 1.2575,
+     "energy": 0.9667,
+     "entropy": 0.1506,
+     "symmetry": 0.0478,
+     "momentum": -0.2814
+    },
+    "judgment": {
+     "noul": 0.26,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "trial": 35,
+    "ground_truth": "implausible",
+    "perturbation_scale": 1.378,
+    "predicted": {
+     "coherence": 0.3,
+     "v_star_projection": 0.1985,
+     "kappa": 5.0,
+     "energy": 0.9662,
+     "entropy": 0.0148,
+     "symmetry": 0.2778,
+     "momentum": 0.3026
+    },
+    "judgment": {
+     "noul": 0.1,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "trial": 36,
+    "ground_truth": "implausible",
+    "perturbation_scale": 0.948,
+    "predicted": {
+     "coherence": 0.9,
+     "v_star_projection": 0.3723,
+     "kappa": 1.5135,
+     "energy": 0.262,
+     "entropy": 0.1797,
+     "symmetry": 0.051,
+     "momentum": 0.3699
+    },
+    "judgment": {
+     "noul": 0.36,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "trial": 37,
+    "ground_truth": "implausible",
+    "perturbation_scale": 0.634,
+    "predicted": {
+     "coherence": 0.4896,
+     "v_star_projection": 0.6217,
+     "kappa": 1.9565,
+     "energy": 0.8436,
+     "entropy": 0.6078,
+     "symmetry": 0.1659,
+     "momentum": 0.1907
+    },
+    "judgment": {
+     "noul": 0.32,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "trial": 38,
+    "ground_truth": "implausible",
+    "perturbation_scale": 0.764,
+    "predicted": {
+     "coherence": 0.7897,
+     "v_star_projection": 0.4843,
+     "kappa": 1.9045,
+     "energy": 0.8899,
+     "entropy": 0.7066,
+     "symmetry": 0.6619,
+     "momentum": -0.3403
+    },
+    "judgment": {
+     "noul": 0.51,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "trial": 39,
+    "ground_truth": "implausible",
+    "perturbation_scale": 0.965,
+    "predicted": {
+     "coherence": 0.8182,
+     "v_star_projection": 0.1416,
+     "kappa": 4.222,
+     "energy": 0.117,
+     "entropy": 0.9096,
+     "symmetry": 0.8742,
+     "momentum": -0.4338
+    },
+    "judgment": {
+     "noul": 0.19,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "trial": 40,
+    "ground_truth": "implausible",
+    "perturbation_scale": 0.752,
+    "predicted": {
+     "coherence": 0.8892,
+     "v_star_projection": -0.0437,
+     "kappa": 4.291,
+     "energy": 0.8919,
+     "entropy": 0.1794,
+     "symmetry": 0.0434,
+     "momentum": -0.2743
+    },
+    "judgment": {
+     "noul": 0.17,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "trial": 41,
+    "ground_truth": "implausible",
+    "perturbation_scale": 1.433,
+    "predicted": {
+     "coherence": 0.3,
+     "v_star_projection": -0.1131,
+     "kappa": 4.9428,
+     "energy": 0.9276,
+     "entropy": 1.0,
+     "symmetry": 0.3172,
+     "momentum": -0.7586
+    },
+    "judgment": {
+     "noul": 0.07,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "trial": 42,
+    "ground_truth": "implausible",
+    "perturbation_scale": 1.22,
+    "predicted": {
+     "coherence": 0.3351,
+     "v_star_projection": -0.2193,
+     "kappa": 1.3923,
+     "energy": 1.0,
+     "entropy": 0.0,
+     "symmetry": 0.3169,
+     "momentum": -0.4243
+    },
+    "judgment": {
+     "noul": 0.11,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "trial": 43,
+    "ground_truth": "implausible",
+    "perturbation_scale": 1.428,
+    "predicted": {
+     "coherence": 0.9,
+     "v_star_projection": 0.2902,
+     "kappa": 4.1628,
+     "energy": 1.0,
+     "entropy": 0.0082,
+     "symmetry": 0.4223,
+     "momentum": 0.4698
+    },
+    "judgment": {
+     "noul": 0.28,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "trial": 44,
+    "ground_truth": "implausible",
+    "perturbation_scale": 0.663,
+    "predicted": {
+     "coherence": 0.4884,
+     "v_star_projection": -0.1002,
+     "kappa": 1.8796,
+     "energy": 0.2468,
+     "entropy": 0.7062,
+     "symmetry": 0.1861,
+     "momentum": 0.1282
+    },
+    "judgment": {
+     "noul": 0.42,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "trial": 45,
+    "ground_truth": "implausible",
+    "perturbation_scale": 1.458,
+    "predicted": {
+     "coherence": 0.3566,
+     "v_star_projection": 0.754,
+     "kappa": 1.0505,
+     "energy": 0.148,
+     "entropy": 0.0,
+     "symmetry": 0.095,
+     "momentum": 0.2667
+    },
+    "judgment": {
+     "noul": 0.1,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "trial": 46,
+    "ground_truth": "implausible",
+    "perturbation_scale": 1.136,
+    "predicted": {
+     "coherence": 0.3464,
+     "v_star_projection": -0.4638,
+     "kappa": 4.9539,
+     "energy": 0.2013,
+     "entropy": 0.7841,
+     "symmetry": 0.2917,
+     "momentum": -0.4623
+    },
+    "judgment": {
+     "noul": 0.12,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "trial": 47,
+    "ground_truth": "implausible",
+    "perturbation_scale": 0.616,
+    "predicted": {
+     "coherence": 0.8293,
+     "v_star_projection": -0.1335,
+     "kappa": 3.3025,
+     "energy": 0.2488,
+     "entropy": 0.5994,
+     "symmetry": 0.464,
+     "momentum": -0.28
+    },
+    "judgment": {
+     "noul": 0.26,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "trial": 48,
+    "ground_truth": "implausible",
+    "perturbation_scale": 1.468,
+    "predicted": {
+     "coherence": 0.3,
+     "v_star_projection": -0.0372,
+     "kappa": 1.0,
+     "energy": 0.0,
+     "entropy": 0.0,
+     "symmetry": 0.2979,
+     "momentum": 0.6983
+    },
+    "judgment": {
+     "noul": 0.07,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   },
+   {
+    "trial": 49,
+    "ground_truth": "implausible",
+    "perturbation_scale": 0.58,
+    "predicted": {
+     "coherence": 0.4646,
+     "v_star_projection": -0.3063,
+     "kappa": 3.917,
+     "energy": 0.7475,
+     "entropy": 0.1879,
+     "symmetry": 0.4794,
+     "momentum": 0.1343
+    },
+    "judgment": {
+     "noul": 0.26,
+     "confidence": null,
+     "probabilities": null,
+     "model": "jev-1.13.0"
+    }
+   }
+  ],
+  "stats": {
+   "auc": 0.9952,
+   "youden_threshold": 0.455,
+   "youden_j": 0.92,
+   "plausible": {
+    "mean": 0.7144,
+    "std": 0.1329,
+    "min": 0.49,
+    "max": 0.9
+   },
+   "implausible": {
+    "mean": 0.2148,
+    "std": 0.1356,
+    "min": 0.06,
+    "max": 0.51
+   },
+   "histogram_counts": [
+    5,
+    9,
+    5,
+    3,
+    2,
+    7,
+    6,
+    4,
+    7,
+    2
+   ],
+   "histogram_edges": [
+    0.0,
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    1.0
+   ]
+  }
+ },
+ "usage": {
+  "calls": 72,
+  "input_tokens": 55247,
+  "output_tokens": 1737
+ },
+ "elapsed_s": 40.3
+}

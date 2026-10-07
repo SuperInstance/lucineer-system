@@ -1,0 +1,788 @@
+{
+  "binary_baselines_3way": {
+    "jepa_only": 0.4111111111111111,
+    "jev_only": 0.5555555555555556
+  },
+  "binary_baselines_honest": {
+    "jepa_only": 0.6166666666666667,
+    "jev_only": 0.8333333333333334
+  },
+  "combined_3way_acc": 0.4888888888888889,
+  "events": [
+    {
+      "cls": -1,
+      "desc": "engine temp -30.00; bilge level -0.15",
+      "jev": 0.28,
+      "label": "impossible",
+      "residual": 30.019647543218557,
+      "truth": -1
+    },
+    {
+      "cls": 1,
+      "desc": "engine temp +0.49; oil pressure -0.04; bilge level +0.01",
+      "jev": 0.89,
+      "label": "possible",
+      "residual": 0.9826712161840732,
+      "truth": 1
+    },
+    {
+      "cls": -1,
+      "desc": "engine temp -34.06",
+      "jev": 0.2,
+      "label": "impossible",
+      "residual": 34.12512705674169,
+      "truth": -1
+    },
+    {
+      "cls": 1,
+      "desc": "engine temp +0.41; oil pressure -0.01; bilge level +0.01",
+      "jev": 0.92,
+      "label": "possible",
+      "residual": 1.877156561558899,
+      "truth": 1
+    },
+    {
+      "cls": 0,
+      "desc": "oil pressure -2.93",
+      "jev": 0.52,
+      "label": "impossible",
+      "residual": 3.039676647590294,
+      "truth": -1
+    },
+    {
+      "cls": 0,
+      "desc": "engine temp -30.00; bilge level -0.11",
+      "jev": 0.38,
+      "label": "impossible",
+      "residual": 30.078367036359495,
+      "truth": -1
+    },
+    {
+      "cls": 1,
+      "desc": "engine temp +0.64; oil pressure -0.02; bilge level -0.00",
+      "jev": 0.89,
+      "label": "possible",
+      "residual": 1.0257701389422322,
+      "truth": 1
+    },
+    {
+      "cls": 0,
+      "desc": "oil pressure -2.46",
+      "jev": 0.47,
+      "label": "impossible",
+      "residual": 2.4694152058500403,
+      "truth": -1
+    },
+    {
+      "cls": -1,
+      "desc": "engine temp -25.14",
+      "jev": 0.26,
+      "label": "impossible",
+      "residual": 25.20601839173521,
+      "truth": -1
+    },
+    {
+      "cls": -1,
+      "desc": "engine temp -30.00; bilge level -0.11",
+      "jev": 0.22,
+      "label": "impossible",
+      "residual": 30.105706935296574,
+      "truth": -1
+    },
+    {
+      "cls": 1,
+      "desc": "engine temp +0.57; oil pressure +0.01; bilge level +0.01",
+      "jev": 0.92,
+      "label": "possible",
+      "residual": 1.7552597010719886,
+      "truth": 1
+    },
+    {
+      "cls": 1,
+      "desc": "engine temp +0.59; oil pressure -0.03; bilge level +0.01",
+      "jev": 0.92,
+      "label": "possible",
+      "residual": 2.5036943813563646,
+      "truth": 1
+    },
+    {
+      "cls": 1,
+      "desc": "engine temp +0.87; oil pressure -0.02; bilge level +0.01",
+      "jev": 0.89,
+      "label": "possible",
+      "residual": 1.1862504367936737,
+      "truth": 1
+    },
+    {
+      "cls": 1,
+      "desc": "motion +0.42; radio traffic +0.21",
+      "jev": 0.86,
+      "label": "unlikely",
+      "residual": 0.7470003358432579,
+      "truth": 0
+    },
+    {
+      "cls": 1,
+      "desc": "engine temp -0.32; oil pressure -0.03; bilge level +0.01",
+      "jev": 0.86,
+      "label": "possible",
+      "residual": 0.5798047338853557,
+      "truth": 1
+    },
+    {
+      "cls": 0,
+      "desc": "oil pressure -2.61",
+      "jev": 0.56,
+      "label": "impossible",
+      "residual": 3.054343518975094,
+      "truth": -1
+    },
+    {
+      "cls": 1,
+      "desc": "engine temp +0.40; oil pressure +0.03; bilge level +0.00",
+      "jev": 0.92,
+      "label": "possible",
+      "residual": 1.6400256791861862,
+      "truth": 1
+    },
+    {
+      "cls": 1,
+      "desc": "engine temp +3.34",
+      "jev": 0.76,
+      "label": "unlikely",
+      "residual": 3.4438395411004965,
+      "truth": 0
+    },
+    {
+      "cls": 1,
+      "desc": "engine temp +3.36",
+      "jev": 0.79,
+      "label": "unlikely",
+      "residual": 3.6845788599791627,
+      "truth": 0
+    },
+    {
+      "cls": -1,
+      "desc": "rpm +2412.66",
+      "jev": 0.46,
+      "label": "impossible",
+      "residual": 2412.422149339441,
+      "truth": -1
+    },
+    {
+      "cls": 1,
+      "desc": "engine temp +2.76",
+      "jev": 0.8,
+      "label": "unlikely",
+      "residual": 2.748426876866095,
+      "truth": 0
+    },
+    {
+      "cls": 1,
+      "desc": "bilge level -0.06",
+      "jev": 0.78,
+      "label": "unlikely",
+      "residual": 1.835928096704345,
+      "truth": 0
+    },
+    {
+      "cls": 1,
+      "desc": "engine temp +0.17; oil pressure -0.01; bilge level +0.01",
+      "jev": 0.93,
+      "label": "possible",
+      "residual": 1.3135486777600733,
+      "truth": 1
+    },
+    {
+      "cls": 1,
+      "desc": "engine temp +2.82",
+      "jev": 0.65,
+      "label": "unlikely",
+      "residual": 3.2395063912677755,
+      "truth": 0
+    },
+    {
+      "cls": 1,
+      "desc": "bilge level -0.04",
+      "jev": 0.72,
+      "label": "unlikely",
+      "residual": 0.6917332384439414,
+      "truth": 0
+    },
+    {
+      "cls": 1,
+      "desc": "bilge level -0.08",
+      "jev": 0.62,
+      "label": "unlikely",
+      "residual": 0.24458387354735767,
+      "truth": 0
+    },
+    {
+      "cls": 1,
+      "desc": "engine temp +0.57; oil pressure -0.03; bilge level +0.00",
+      "jev": 0.89,
+      "label": "possible",
+      "residual": 0.7459662565889132,
+      "truth": 1
+    },
+    {
+      "cls": -1,
+      "desc": "engine temp +1.21; rpm +227.73",
+      "jev": 0.82,
+      "label": "unlikely",
+      "residual": 228.08544743943926,
+      "truth": 0
+    },
+    {
+      "cls": 0,
+      "desc": "engine temp +41.19",
+      "jev": 0.48,
+      "label": "impossible",
+      "residual": 41.17574830511519,
+      "truth": -1
+    },
+    {
+      "cls": -1,
+      "desc": "rpm +2348.11",
+      "jev": 0.38,
+      "label": "impossible",
+      "residual": 2347.560419334539,
+      "truth": -1
+    },
+    {
+      "cls": 1,
+      "desc": "engine temp +3.31",
+      "jev": 0.79,
+      "label": "unlikely",
+      "residual": 3.3124471923364243,
+      "truth": 0
+    },
+    {
+      "cls": 1,
+      "desc": "engine temp +0.61; oil pressure +0.02; bilge level +0.00",
+      "jev": 0.91,
+      "label": "possible",
+      "residual": 0.6151873950703348,
+      "truth": 1
+    },
+    {
+      "cls": 1,
+      "desc": "motion +1.18",
+      "jev": 0.68,
+      "label": "impossible",
+      "residual": 1.1992267312482456,
+      "truth": -1
+    },
+    {
+      "cls": -1,
+      "desc": "engine temp -26.68",
+      "jev": 0.27,
+      "label": "impossible",
+      "residual": 26.702902092576913,
+      "truth": -1
+    },
+    {
+      "cls": 1,
+      "desc": "engine temp -0.00; oil pressure +0.00; bilge level +0.00",
+      "jev": 0.89,
+      "label": "possible",
+      "residual": 1.0540071273738223,
+      "truth": 1
+    },
+    {
+      "cls": -1,
+      "desc": "engine temp +1.66; rpm +185.48",
+      "jev": 0.88,
+      "label": "unlikely",
+      "residual": 186.87421887112842,
+      "truth": 0
+    },
+    {
+      "cls": 1,
+      "desc": "engine temp +0.85; oil pressure -0.01; bilge level +0.01",
+      "jev": 0.87,
+      "label": "possible",
+      "residual": 0.9830272120394269,
+      "truth": 1
+    },
+    {
+      "cls": 1,
+      "desc": "engine temp +2.50",
+      "jev": 0.75,
+      "label": "unlikely",
+      "residual": 3.8495737730045443,
+      "truth": 0
+    },
+    {
+      "cls": -1,
+      "desc": "engine temp -30.00; bilge level -0.12",
+      "jev": 0.3,
+      "label": "impossible",
+      "residual": 30.008620053737584,
+      "truth": -1
+    },
+    {
+      "cls": 1,
+      "desc": "bilge level -0.06",
+      "jev": 0.7,
+      "label": "unlikely",
+      "residual": 1.1196178214751862,
+      "truth": 0
+    },
+    {
+      "cls": 1,
+      "desc": "engine temp +0.31; oil pressure -0.02; bilge level +0.00",
+      "jev": 0.9,
+      "label": "possible",
+      "residual": 0.9681936265349598,
+      "truth": 1
+    },
+    {
+      "cls": -1,
+      "desc": "engine temp +1.67; rpm +229.60",
+      "jev": 0.86,
+      "label": "unlikely",
+      "residual": 230.90547205003742,
+      "truth": 0
+    },
+    {
+      "cls": 1,
+      "desc": "engine temp +2.64",
+      "jev": 0.71,
+      "label": "unlikely",
+      "residual": 2.648391894842391,
+      "truth": 0
+    },
+    {
+      "cls": 1,
+      "desc": "engine temp +1.01; oil pressure +0.01; bilge level +0.00",
+      "jev": 0.91,
+      "label": "possible",
+      "residual": 1.3788758611617586,
+      "truth": 1
+    },
+    {
+      "cls": -1,
+      "desc": "engine temp +1.38; rpm +180.91",
+      "jev": 0.83,
+      "label": "unlikely",
+      "residual": 179.6712989339118,
+      "truth": 0
+    },
+    {
+      "cls": 1,
+      "desc": "engine temp +0.09; oil pressure -0.00; bilge level +0.01",
+      "jev": 0.92,
+      "label": "possible",
+      "residual": 0.8642021454411092,
+      "truth": 1
+    },
+    {
+      "cls": 0,
+      "desc": "oil pressure -2.96",
+      "jev": 0.47,
+      "label": "impossible",
+      "residual": 3.003775311156336,
+      "truth": -1
+    },
+    {
+      "cls": 1,
+      "desc": "motion +1.24",
+      "jev": 0.63,
+      "label": "impossible",
+      "residual": 1.698611594419318,
+      "truth": -1
+    },
+    {
+      "cls": 1,
+      "desc": "engine temp +0.80; oil pressure +0.00; bilge level +0.00",
+      "jev": 0.89,
+      "label": "possible",
+      "residual": 1.8118585731305359,
+      "truth": 1
+    },
+    {
+      "cls": 1,
+      "desc": "engine temp +0.58; oil pressure +0.01; bilge level +0.01",
+      "jev": 0.9,
+      "label": "possible",
+      "residual": 0.6002461312031441,
+      "truth": 1
+    },
+    {
+      "cls": 0,
+      "desc": "engine temp +40.71",
+      "jev": 0.56,
+      "label": "impossible",
+      "residual": 40.71682267402767,
+      "truth": -1
+    },
+    {
+      "cls": 1,
+      "desc": "engine temp +0.66; oil pressure +0.03; bilge level +0.01",
+      "jev": 0.9,
+      "label": "possible",
+      "residual": 0.6341987842887741,
+      "truth": 1
+    },
+    {
+      "cls": 1,
+      "desc": "engine temp +2.97",
+      "jev": 0.68,
+      "label": "unlikely",
+      "residual": 2.952303915147172,
+      "truth": 0
+    },
+    {
+      "cls": 1,
+      "desc": "motion +0.48; radio traffic +0.34",
+      "jev": 0.86,
+      "label": "unlikely",
+      "residual": 1.2923215186596395,
+      "truth": 0
+    },
+    {
+      "cls": 1,
+      "desc": "engine temp +0.78; oil pressure -0.01; bilge level +0.00",
+      "jev": 0.91,
+      "label": "possible",
+      "residual": 1.2974300067215372,
+      "truth": 1
+    },
+    {
+      "cls": -1,
+      "desc": "engine temp +1.69; rpm +160.82",
+      "jev": 0.87,
+      "label": "unlikely",
+      "residual": 162.81676153942718,
+      "truth": 0
+    },
+    {
+      "cls": 1,
+      "desc": "engine temp +2.63",
+      "jev": 0.68,
+      "label": "unlikely",
+      "residual": 2.626032652430993,
+      "truth": 0
+    },
+    {
+      "cls": -1,
+      "desc": "engine temp -39.93",
+      "jev": 0.27,
+      "label": "impossible",
+      "residual": 39.99558741691032,
+      "truth": -1
+    },
+    {
+      "cls": -1,
+      "desc": "engine temp +1.66; rpm +192.77",
+      "jev": 0.84,
+      "label": "unlikely",
+      "residual": 191.1062294931229,
+      "truth": 0
+    },
+    {
+      "cls": 1,
+      "desc": "engine temp +0.13; oil pressure +0.02; bilge level +0.01",
+      "jev": 0.9,
+      "label": "possible",
+      "residual": 1.1178450103865127,
+      "truth": 1
+    },
+    {
+      "cls": -1,
+      "desc": "engine temp +1.32; rpm +159.71",
+      "jev": 0.88,
+      "label": "unlikely",
+      "residual": 161.178141222548,
+      "truth": 0
+    },
+    {
+      "cls": -1,
+      "desc": "rpm +1933.24",
+      "jev": 0.34,
+      "label": "impossible",
+      "residual": 1932.3859989980203,
+      "truth": -1
+    },
+    {
+      "cls": 1,
+      "desc": "engine temp +0.72; oil pressure -0.02; bilge level +0.00",
+      "jev": 0.85,
+      "label": "possible",
+      "residual": 0.9589370848010905,
+      "truth": 1
+    },
+    {
+      "cls": 1,
+      "desc": "bilge level -0.09",
+      "jev": 0.76,
+      "label": "unlikely",
+      "residual": 1.2658698382727303,
+      "truth": 0
+    },
+    {
+      "cls": 1,
+      "desc": "engine temp -0.11; oil pressure -0.03; bilge level +0.00",
+      "jev": 0.88,
+      "label": "possible",
+      "residual": 1.90818129734202,
+      "truth": 1
+    },
+    {
+      "cls": 1,
+      "desc": "motion +0.47; radio traffic +0.20",
+      "jev": 0.84,
+      "label": "unlikely",
+      "residual": 0.541531576825574,
+      "truth": 0
+    },
+    {
+      "cls": 0,
+      "desc": "engine temp +36.50",
+      "jev": 0.48,
+      "label": "impossible",
+      "residual": 36.49100136853291,
+      "truth": -1
+    },
+    {
+      "cls": 1,
+      "desc": "bilge level -0.08",
+      "jev": 0.8,
+      "label": "unlikely",
+      "residual": 1.529531675515275,
+      "truth": 0
+    },
+    {
+      "cls": -1,
+      "desc": "engine temp +1.23; rpm +224.48",
+      "jev": 0.83,
+      "label": "unlikely",
+      "residual": 224.73926568688995,
+      "truth": 0
+    },
+    {
+      "cls": 1,
+      "desc": "engine temp +0.21; oil pressure -0.02; bilge level -0.00",
+      "jev": 0.91,
+      "label": "possible",
+      "residual": 1.0994366312748067,
+      "truth": 1
+    },
+    {
+      "cls": 1,
+      "desc": "bilge level -0.09",
+      "jev": 0.76,
+      "label": "unlikely",
+      "residual": 1.2147045284772566,
+      "truth": 0
+    },
+    {
+      "cls": 1,
+      "desc": "engine temp +0.44; oil pressure +0.00; bilge level +0.01",
+      "jev": 0.9,
+      "label": "possible",
+      "residual": 1.1093265568722035,
+      "truth": 1
+    },
+    {
+      "cls": 0,
+      "desc": "oil pressure -1.54",
+      "jev": 0.5,
+      "label": "impossible",
+      "residual": 2.2905617529393374,
+      "truth": -1
+    },
+    {
+      "cls": 1,
+      "desc": "engine temp +0.45; oil pressure -0.06; bilge level +0.01",
+      "jev": 0.86,
+      "label": "possible",
+      "residual": 0.7293909020154445,
+      "truth": 1
+    },
+    {
+      "cls": 1,
+      "desc": "engine temp +0.49; oil pressure +0.04; bilge level +0.00",
+      "jev": 0.92,
+      "label": "possible",
+      "residual": 0.5074587617101081,
+      "truth": 1
+    },
+    {
+      "cls": 1,
+      "desc": "engine temp +2.59",
+      "jev": 0.71,
+      "label": "unlikely",
+      "residual": 2.5641345085634892,
+      "truth": 0
+    },
+    {
+      "cls": -1,
+      "desc": "rpm +2093.71",
+      "jev": 0.41,
+      "label": "impossible",
+      "residual": 2093.5427253653847,
+      "truth": -1
+    },
+    {
+      "cls": 1,
+      "desc": "motion +1.31",
+      "jev": 0.71,
+      "label": "impossible",
+      "residual": 1.312278924189125,
+      "truth": -1
+    },
+    {
+      "cls": 0,
+      "desc": "oil pressure -2.93",
+      "jev": 0.47,
+      "label": "impossible",
+      "residual": 3.311292298304032,
+      "truth": -1
+    },
+    {
+      "cls": 1,
+      "desc": "engine temp +1.00; oil pressure +0.02; bilge level +0.00",
+      "jev": 0.89,
+      "label": "possible",
+      "residual": 2.003365884581254,
+      "truth": 1
+    },
+    {
+      "cls": 0,
+      "desc": "oil pressure -1.51",
+      "jev": 0.51,
+      "label": "impossible",
+      "residual": 2.0306532791851852,
+      "truth": -1
+    },
+    {
+      "cls": -1,
+      "desc": "engine temp -27.87",
+      "jev": 0.21,
+      "label": "impossible",
+      "residual": 27.88401362990058,
+      "truth": -1
+    },
+    {
+      "cls": -1,
+      "desc": "engine temp -39.22",
+      "jev": 0.13,
+      "label": "impossible",
+      "residual": 39.23577934522635,
+      "truth": -1
+    },
+    {
+      "cls": 1,
+      "desc": "engine temp +0.39; oil pressure -0.00; bilge level +0.01",
+      "jev": 0.9,
+      "label": "possible",
+      "residual": 0.8092409645534029,
+      "truth": 1
+    },
+    {
+      "cls": 1,
+      "desc": "engine temp +0.30; oil pressure +0.01; bilge level +0.00",
+      "jev": 0.92,
+      "label": "possible",
+      "residual": 0.6968528509799129,
+      "truth": 1
+    },
+    {
+      "cls": 1,
+      "desc": "bilge level -0.06",
+      "jev": 0.74,
+      "label": "unlikely",
+      "residual": 2.1690861219198645,
+      "truth": 0
+    },
+    {
+      "cls": 1,
+      "desc": "motion +1.40",
+      "jev": 0.77,
+      "label": "impossible",
+      "residual": 1.6551083363683983,
+      "truth": -1
+    },
+    {
+      "cls": 1,
+      "desc": "motion +0.36; radio traffic +0.36",
+      "jev": 0.87,
+      "label": "unlikely",
+      "residual": 0.7520481618620017,
+      "truth": 0
+    },
+    {
+      "cls": 1,
+      "desc": "motion +1.34",
+      "jev": 0.74,
+      "label": "impossible",
+      "residual": 1.6882007910410086,
+      "truth": -1
+    },
+    {
+      "cls": -1,
+      "desc": "engine temp -33.46",
+      "jev": 0.19,
+      "label": "impossible",
+      "residual": 33.504091105817174,
+      "truth": -1
+    }
+  ],
+  "experiment": "exp5 impossible-transition detector (+1/0/-1)",
+  "gates": {
+    "G1_3way_acc_ge_0.70": {
+      "pass": false,
+      "value": 0.4888888888888889
+    },
+    "G2_unlikely_recall_ge_0.60": {
+      "pass": false,
+      "value": 0.0
+    },
+    "G3_impossible_precision_ge_0.80": {
+      "pass": false,
+      "value": 0.6363636363636364
+    }
+  },
+  "impossible_precision": 0.6363636363636364,
+  "jev_ledger": {
+    "calls": 90,
+    "input_tokens": 34241,
+    "output_tokens": 1800,
+    "retries": 0
+  },
+  "n_events": 90,
+  "per_class": {
+    "impossible": {
+      "pred_as": {
+        "impossible": 14,
+        "possible": 5,
+        "unlikely": 11
+      },
+      "recall": 0.4666666666666667
+    },
+    "possible": {
+      "pred_as": {
+        "impossible": 0,
+        "possible": 30,
+        "unlikely": 0
+      },
+      "recall": 1.0
+    },
+    "unlikely": {
+      "pred_as": {
+        "impossible": 8,
+        "possible": 22,
+        "unlikely": 0
+      },
+      "recall": 0.0
+    }
+  },
+  "thresholds": {
+    "resid_hard": 59.90373110413359,
+    "resid_soft": 39.27336950065804
+  },
+  "verdict": "TERNARY-DETECTOR-FAIL",
+  "wall_s": 23.1
+}

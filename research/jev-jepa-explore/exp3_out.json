@@ -1,0 +1,1987 @@
+{
+  "experiment": "exp3 ternary-structured JEPA (lattice transitions)",
+  "n_runs": 100,
+  "d": 9,
+  "bits": {
+    "lattice": 14.264662506490406,
+    "flat_float32": 288
+  },
+  "gates": {
+    "G1_lattice_within_2pts_flat_all_noises": {
+      "value": [
+        0.6698805555555555,
+        0.6521291666666668
+      ],
+      "pass": true
+    },
+    "G2_bits_le_5pct": {
+      "value": [
+        14.264662506490406,
+        288
+      ],
+      "pass": true
+    },
+    "G3_lattice_beats_markov1_by_10pts_at_sigma0.1": {
+      "value": [
+        0.7777222222222222,
+        0.7748472222222224
+      ],
+      "pass": false
+    }
+  },
+  "mean_by_noise": {
+    "0.05": {
+      "lattice": 0.7919166666666666,
+      "flat": 0.9087361111111113,
+      "markov1": 0.7920416666666668
+    },
+    "0.1": {
+      "lattice": 0.7777222222222222,
+      "flat": 0.8622916666666667,
+      "markov1": 0.7748472222222224
+    },
+    "0.2": {
+      "lattice": 0.7412777777777777,
+      "flat": 0.7723611111111112,
+      "markov1": 0.7238472222222222
+    },
+    "0.3": {
+      "lattice": 0.7088333333333333,
+      "flat": 0.7049166666666667,
+      "markov1": 0.6734861111111111
+    },
+    "0.4": {
+      "lattice": 0.6824722222222223,
+      "flat": 0.6540416666666666,
+      "markov1": 0.6303472222222222
+    },
+    "0.5": {
+      "lattice": 0.660611111111111,
+      "flat": 0.6148055555555556,
+      "markov1": 0.5966666666666667
+    },
+    "0.7": {
+      "lattice": 0.6270555555555556,
+      "flat": 0.5628194444444444,
+      "markov1": 0.549125
+    },
+    "1.0": {
+      "lattice": 0.5953888888888889,
+      "flat": 0.5156388888888888,
+      "markov1": 0.5042638888888888
+    },
+    "1.5": {
+      "lattice": 0.5647083333333334,
+      "flat": 0.4738888888888888,
+      "markov1": 0.4641388888888889
+    },
+    "2.0": {
+      "lattice": 0.5488194444444445,
+      "flat": 0.4517916666666667,
+      "markov1": 0.4431666666666666
+    }
+  },
+  "runs": [
+    {
+      "noise": 0.05,
+      "seed": 2718,
+      "flat_tern": {
+        "trit_acc": 0.9120833333333334,
+        "exact_match": 0.43125,
+        "decoded_mse": 0.25821319222450256
+      },
+      "markov1_tern": {
+        "trit_acc": 0.7890277777777778,
+        "exact_match": 0.10125,
+        "decoded_mse": 0.2830311954021454
+      },
+      "lattice": {
+        "trit_acc": 0.795,
+        "exact_match": 0.13,
+        "decoded_mse": 0.39963433146476746
+      }
+    },
+    {
+      "noise": 0.05,
+      "seed": 2719,
+      "flat_tern": {
+        "trit_acc": 0.9106944444444445,
+        "exact_match": 0.43,
+        "decoded_mse": 0.2569432258605957
+      },
+      "markov1_tern": {
+        "trit_acc": 0.7883333333333333,
+        "exact_match": 0.105,
+        "decoded_mse": 0.2770145833492279
+      },
+      "lattice": {
+        "trit_acc": 0.7922222222222223,
+        "exact_match": 0.11,
+        "decoded_mse": 0.39872443675994873
+      }
+    },
+    {
+      "noise": 0.05,
+      "seed": 2720,
+      "flat_tern": {
+        "trit_acc": 0.9047222222222222,
+        "exact_match": 0.38875,
+        "decoded_mse": 0.2560373544692993
+      },
+      "markov1_tern": {
+        "trit_acc": 0.7963888888888889,
+        "exact_match": 0.0975,
+        "decoded_mse": 0.28491565585136414
+      },
+      "lattice": {
+        "trit_acc": 0.7956944444444445,
+        "exact_match": 0.1325,
+        "decoded_mse": 0.40617266297340393
+      }
+    },
+    {
+      "noise": 0.05,
+      "seed": 2721,
+      "flat_tern": {
+        "trit_acc": 0.9061111111111111,
+        "exact_match": 0.41125,
+        "decoded_mse": 0.2568762004375458
+      },
+      "markov1_tern": {
+        "trit_acc": 0.7923611111111111,
+        "exact_match": 0.11375,
+        "decoded_mse": 0.28342995047569275
+      },
+      "lattice": {
+        "trit_acc": 0.7929166666666667,
+        "exact_match": 0.11875,
+        "decoded_mse": 0.4031684994697571
+      }
+    },
+    {
+      "noise": 0.05,
+      "seed": 2722,
+      "flat_tern": {
+        "trit_acc": 0.9079166666666667,
+        "exact_match": 0.41625,
+        "decoded_mse": 0.25101470947265625
+      },
+      "markov1_tern": {
+        "trit_acc": 0.8068055555555556,
+        "exact_match": 0.1375,
+        "decoded_mse": 0.2772335708141327
+      },
+      "lattice": {
+        "trit_acc": 0.8002777777777778,
+        "exact_match": 0.125,
+        "decoded_mse": 0.38880378007888794
+      }
+    },
+    {
+      "noise": 0.05,
+      "seed": 2723,
+      "flat_tern": {
+        "trit_acc": 0.9054166666666666,
+        "exact_match": 0.39375,
+        "decoded_mse": 0.2503509223461151
+      },
+      "markov1_tern": {
+        "trit_acc": 0.7930555555555555,
+        "exact_match": 0.1275,
+        "decoded_mse": 0.28341951966285706
+      },
+      "lattice": {
+        "trit_acc": 0.7884722222222222,
+        "exact_match": 0.1175,
+        "decoded_mse": 0.38093945384025574
+      }
+    },
+    {
+      "noise": 0.05,
+      "seed": 2724,
+      "flat_tern": {
+        "trit_acc": 0.9068055555555555,
+        "exact_match": 0.40125,
+        "decoded_mse": 0.25480028986930847
+      },
+      "markov1_tern": {
+        "trit_acc": 0.7884722222222222,
+        "exact_match": 0.10875,
+        "decoded_mse": 0.28298479318618774
+      },
+      "lattice": {
+        "trit_acc": 0.7879166666666667,
+        "exact_match": 0.12625,
+        "decoded_mse": 0.4087716341018677
+      }
+    },
+    {
+      "noise": 0.05,
+      "seed": 2725,
+      "flat_tern": {
+        "trit_acc": 0.9159722222222222,
+        "exact_match": 0.45375,
+        "decoded_mse": 0.25421133637428284
+      },
+      "markov1_tern": {
+        "trit_acc": 0.7769444444444444,
+        "exact_match": 0.11,
+        "decoded_mse": 0.28961122035980225
+      },
+      "lattice": {
+        "trit_acc": 0.7780555555555555,
+        "exact_match": 0.10125,
+        "decoded_mse": 0.4145805537700653
+      }
+    },
+    {
+      "noise": 0.05,
+      "seed": 2726,
+      "flat_tern": {
+        "trit_acc": 0.9059722222222222,
+        "exact_match": 0.3975,
+        "decoded_mse": 0.2509031593799591
+      },
+      "markov1_tern": {
+        "trit_acc": 0.80125,
+        "exact_match": 0.12625,
+        "decoded_mse": 0.2819517254829407
+      },
+      "lattice": {
+        "trit_acc": 0.7927777777777778,
+        "exact_match": 0.13,
+        "decoded_mse": 0.38446125388145447
+      }
+    },
+    {
+      "noise": 0.05,
+      "seed": 2727,
+      "flat_tern": {
+        "trit_acc": 0.9116666666666666,
+        "exact_match": 0.43125,
+        "decoded_mse": 0.25318217277526855
+      },
+      "markov1_tern": {
+        "trit_acc": 0.7877777777777778,
+        "exact_match": 0.12875,
+        "decoded_mse": 0.2849285304546356
+      },
+      "lattice": {
+        "trit_acc": 0.7958333333333333,
+        "exact_match": 0.135,
+        "decoded_mse": 0.4076482355594635
+      }
+    },
+    {
+      "noise": 0.1,
+      "seed": 2718,
+      "flat_tern": {
+        "trit_acc": 0.8644444444444445,
+        "exact_match": 0.2675,
+        "decoded_mse": 0.2667125463485718
+      },
+      "markov1_tern": {
+        "trit_acc": 0.7708333333333334,
+        "exact_match": 0.0875,
+        "decoded_mse": 0.29098132252693176
+      },
+      "lattice": {
+        "trit_acc": 0.77625,
+        "exact_match": 0.09625,
+        "decoded_mse": 0.4083693325519562
+      }
+    },
+    {
+      "noise": 0.1,
+      "seed": 2719,
+      "flat_tern": {
+        "trit_acc": 0.8654166666666666,
+        "exact_match": 0.26625,
+        "decoded_mse": 0.2641313374042511
+      },
+      "markov1_tern": {
+        "trit_acc": 0.7730555555555556,
+        "exact_match": 0.095,
+        "decoded_mse": 0.2843494117259979
+      },
+      "lattice": {
+        "trit_acc": 0.7825,
+        "exact_match": 0.10375,
+        "decoded_mse": 0.4107442796230316
+      }
+    },
+    {
+      "noise": 0.1,
+      "seed": 2720,
+      "flat_tern": {
+        "trit_acc": 0.8556944444444444,
+        "exact_match": 0.2325,
+        "decoded_mse": 0.26373282074928284
+      },
+      "markov1_tern": {
+        "trit_acc": 0.7733333333333333,
+        "exact_match": 0.09375,
+        "decoded_mse": 0.2924489378929138
+      },
+      "lattice": {
+        "trit_acc": 0.7763888888888889,
+        "exact_match": 0.11,
+        "decoded_mse": 0.4132996201515198
+      }
+    },
+    {
+      "noise": 0.1,
+      "seed": 2721,
+      "flat_tern": {
+        "trit_acc": 0.8577777777777778,
+        "exact_match": 0.2425,
+        "decoded_mse": 0.26498177647590637
+      },
+      "markov1_tern": {
+        "trit_acc": 0.7752777777777777,
+        "exact_match": 0.08375,
+        "decoded_mse": 0.2911122441291809
+      },
+      "lattice": {
+        "trit_acc": 0.78,
+        "exact_match": 0.09375,
+        "decoded_mse": 0.40138548612594604
+      }
+    },
+    {
+      "noise": 0.1,
+      "seed": 2722,
+      "flat_tern": {
+        "trit_acc": 0.8672222222222222,
+        "exact_match": 0.28625,
+        "decoded_mse": 0.2588218152523041
+      },
+      "markov1_tern": {
+        "trit_acc": 0.7879166666666667,
+        "exact_match": 0.11625,
+        "decoded_mse": 0.28336039185523987
+      },
+      "lattice": {
+        "trit_acc": 0.7875,
+        "exact_match": 0.115,
+        "decoded_mse": 0.40658196806907654
+      }
+    },
+    {
+      "noise": 0.1,
+      "seed": 2723,
+      "flat_tern": {
+        "trit_acc": 0.85875,
+        "exact_match": 0.26375,
+        "decoded_mse": 0.25825047492980957
+      },
+      "markov1_tern": {
+        "trit_acc": 0.77625,
+        "exact_match": 0.1075,
+        "decoded_mse": 0.2903377413749695
+      },
+      "lattice": {
+        "trit_acc": 0.7747222222222222,
+        "exact_match": 0.1025,
+        "decoded_mse": 0.39348217844963074
+      }
+    },
+    {
+      "noise": 0.1,
+      "seed": 2724,
+      "flat_tern": {
+        "trit_acc": 0.86,
+        "exact_match": 0.255,
+        "decoded_mse": 0.2629900574684143
+      },
+      "markov1_tern": {
+        "trit_acc": 0.77125,
+        "exact_match": 0.08,
+        "decoded_mse": 0.2920360863208771
+      },
+      "lattice": {
+        "trit_acc": 0.77375,
+        "exact_match": 0.1025,
+        "decoded_mse": 0.4214285910129547
+      }
+    },
+    {
+      "noise": 0.1,
+      "seed": 2725,
+      "flat_tern": {
+        "trit_acc": 0.8666666666666667,
+        "exact_match": 0.27,
+        "decoded_mse": 0.2611485421657562
+      },
+      "markov1_tern": {
+        "trit_acc": 0.7661111111111111,
+        "exact_match": 0.09125,
+        "decoded_mse": 0.2976551055908203
+      },
+      "lattice": {
+        "trit_acc": 0.7677777777777778,
+        "exact_match": 0.095,
+        "decoded_mse": 0.42199426889419556
+      }
+    },
+    {
+      "noise": 0.1,
+      "seed": 2726,
+      "flat_tern": {
+        "trit_acc": 0.8630555555555556,
+        "exact_match": 0.25,
+        "decoded_mse": 0.25864022970199585
+      },
+      "markov1_tern": {
+        "trit_acc": 0.78,
+        "exact_match": 0.09875,
+        "decoded_mse": 0.28992581367492676
+      },
+      "lattice": {
+        "trit_acc": 0.7765277777777778,
+        "exact_match": 0.10625,
+        "decoded_mse": 0.4109395444393158
+      }
+    },
+    {
+      "noise": 0.1,
+      "seed": 2727,
+      "flat_tern": {
+        "trit_acc": 0.8638888888888889,
+        "exact_match": 0.255,
+        "decoded_mse": 0.2603122293949127
+      },
+      "markov1_tern": {
+        "trit_acc": 0.7744444444444445,
+        "exact_match": 0.11125,
+        "decoded_mse": 0.2917367219924927
+      },
+      "lattice": {
+        "trit_acc": 0.7818055555555555,
+        "exact_match": 0.1225,
+        "decoded_mse": 0.414201945066452
+      }
+    },
+    {
+      "noise": 0.2,
+      "seed": 2718,
+      "flat_tern": {
+        "trit_acc": 0.7713888888888889,
+        "exact_match": 0.09625,
+        "decoded_mse": 0.3001677095890045
+      },
+      "markov1_tern": {
+        "trit_acc": 0.7236111111111111,
+        "exact_match": 0.06,
+        "decoded_mse": 0.3223562240600586
+      },
+      "lattice": {
+        "trit_acc": 0.7425,
+        "exact_match": 0.06375,
+        "decoded_mse": 0.4640141427516937
+      }
+    },
+    {
+      "noise": 0.2,
+      "seed": 2719,
+      "flat_tern": {
+        "trit_acc": 0.7751388888888889,
+        "exact_match": 0.08,
+        "decoded_mse": 0.29328852891921997
+      },
+      "markov1_tern": {
+        "trit_acc": 0.7256944444444444,
+        "exact_match": 0.04875,
+        "decoded_mse": 0.3145475387573242
+      },
+      "lattice": {
+        "trit_acc": 0.7466666666666667,
+        "exact_match": 0.055,
+        "decoded_mse": 0.46531933546066284
+      }
+    },
+    {
+      "noise": 0.2,
+      "seed": 2720,
+      "flat_tern": {
+        "trit_acc": 0.7669444444444444,
+        "exact_match": 0.08875,
+        "decoded_mse": 0.29580119252204895
+      },
+      "markov1_tern": {
+        "trit_acc": 0.7176388888888889,
+        "exact_match": 0.05625,
+        "decoded_mse": 0.32366374135017395
+      },
+      "lattice": {
+        "trit_acc": 0.7355555555555555,
+        "exact_match": 0.06,
+        "decoded_mse": 0.4675571322441101
+      }
+    },
+    {
+      "noise": 0.2,
+      "seed": 2721,
+      "flat_tern": {
+        "trit_acc": 0.7698611111111111,
+        "exact_match": 0.09,
+        "decoded_mse": 0.29703593254089355
+      },
+      "markov1_tern": {
+        "trit_acc": 0.7290277777777778,
+        "exact_match": 0.05625,
+        "decoded_mse": 0.32117176055908203
+      },
+      "lattice": {
+        "trit_acc": 0.7433333333333333,
+        "exact_match": 0.06875,
+        "decoded_mse": 0.45984917879104614
+      }
+    },
+    {
+      "noise": 0.2,
+      "seed": 2722,
+      "flat_tern": {
+        "trit_acc": 0.7788888888888889,
+        "exact_match": 0.1025,
+        "decoded_mse": 0.28887689113616943
+      },
+      "markov1_tern": {
+        "trit_acc": 0.7309722222222222,
+        "exact_match": 0.05875,
+        "decoded_mse": 0.31080687046051025
+      },
+      "lattice": {
+        "trit_acc": 0.7515277777777778,
+        "exact_match": 0.06875,
+        "decoded_mse": 0.44715866446495056
+      }
+    },
+    {
+      "noise": 0.2,
+      "seed": 2723,
+      "flat_tern": {
+        "trit_acc": 0.7695833333333333,
+        "exact_match": 0.085,
+        "decoded_mse": 0.2888661026954651
+      },
+      "markov1_tern": {
+        "trit_acc": 0.7236111111111111,
+        "exact_match": 0.055,
+        "decoded_mse": 0.32078057527542114
+      },
+      "lattice": {
+        "trit_acc": 0.7401388888888889,
+        "exact_match": 0.065,
+        "decoded_mse": 0.46657708287239075
+      }
+    },
+    {
+      "noise": 0.2,
+      "seed": 2724,
+      "flat_tern": {
+        "trit_acc": 0.77125,
+        "exact_match": 0.10375,
+        "decoded_mse": 0.29269689321517944
+      },
+      "markov1_tern": {
+        "trit_acc": 0.7193055555555555,
+        "exact_match": 0.0475,
+        "decoded_mse": 0.32504865527153015
+      },
+      "lattice": {
+        "trit_acc": 0.7347222222222223,
+        "exact_match": 0.06,
+        "decoded_mse": 0.46728765964508057
+      }
+    },
+    {
+      "noise": 0.2,
+      "seed": 2725,
+      "flat_tern": {
+        "trit_acc": 0.7765277777777778,
+        "exact_match": 0.12125,
+        "decoded_mse": 0.2911408543586731
+      },
+      "markov1_tern": {
+        "trit_acc": 0.7193055555555555,
+        "exact_match": 0.055,
+        "decoded_mse": 0.3292488753795624
+      },
+      "lattice": {
+        "trit_acc": 0.7340277777777777,
+        "exact_match": 0.06375,
+        "decoded_mse": 0.4703299403190613
+      }
+    },
+    {
+      "noise": 0.2,
+      "seed": 2726,
+      "flat_tern": {
+        "trit_acc": 0.7768055555555555,
+        "exact_match": 0.11125,
+        "decoded_mse": 0.29000359773635864
+      },
+      "markov1_tern": {
+        "trit_acc": 0.72375,
+        "exact_match": 0.04875,
+        "decoded_mse": 0.32132676243782043
+      },
+      "lattice": {
+        "trit_acc": 0.7401388888888889,
+        "exact_match": 0.07,
+        "decoded_mse": 0.4745182693004608
+      }
+    },
+    {
+      "noise": 0.2,
+      "seed": 2727,
+      "flat_tern": {
+        "trit_acc": 0.7672222222222222,
+        "exact_match": 0.09375,
+        "decoded_mse": 0.2918359935283661
+      },
+      "markov1_tern": {
+        "trit_acc": 0.7255555555555555,
+        "exact_match": 0.06375,
+        "decoded_mse": 0.3225714862346649
+      },
+      "lattice": {
+        "trit_acc": 0.7441666666666666,
+        "exact_match": 0.0725,
+        "decoded_mse": 0.4622817039489746
+      }
+    },
+    {
+      "noise": 0.3,
+      "seed": 2718,
+      "flat_tern": {
+        "trit_acc": 0.7006944444444444,
+        "exact_match": 0.03875,
+        "decoded_mse": 0.35224995017051697
+      },
+      "markov1_tern": {
+        "trit_acc": 0.6698611111111111,
+        "exact_match": 0.03625,
+        "decoded_mse": 0.3721752166748047
+      },
+      "lattice": {
+        "trit_acc": 0.70875,
+        "exact_match": 0.0525,
+        "decoded_mse": 0.5382400751113892
+      }
+    },
+    {
+      "noise": 0.3,
+      "seed": 2719,
+      "flat_tern": {
+        "trit_acc": 0.7079166666666666,
+        "exact_match": 0.0375,
+        "decoded_mse": 0.34236061573028564
+      },
+      "markov1_tern": {
+        "trit_acc": 0.6772222222222222,
+        "exact_match": 0.02125,
+        "decoded_mse": 0.3657177984714508
+      },
+      "lattice": {
+        "trit_acc": 0.7181944444444445,
+        "exact_match": 0.0275,
+        "decoded_mse": 0.5381038188934326
+      }
+    },
+    {
+      "noise": 0.3,
+      "seed": 2720,
+      "flat_tern": {
+        "trit_acc": 0.6994444444444444,
+        "exact_match": 0.035,
+        "decoded_mse": 0.3470001816749573
+      },
+      "markov1_tern": {
+        "trit_acc": 0.6725,
+        "exact_match": 0.04,
+        "decoded_mse": 0.37386542558670044
+      },
+      "lattice": {
+        "trit_acc": 0.7029166666666666,
+        "exact_match": 0.03875,
+        "decoded_mse": 0.5381242036819458
+      }
+    },
+    {
+      "noise": 0.3,
+      "seed": 2721,
+      "flat_tern": {
+        "trit_acc": 0.7073611111111111,
+        "exact_match": 0.0425,
+        "decoded_mse": 0.3469393849372864
+      },
+      "markov1_tern": {
+        "trit_acc": 0.6784722222222223,
+        "exact_match": 0.02625,
+        "decoded_mse": 0.3691134452819824
+      },
+      "lattice": {
+        "trit_acc": 0.7106944444444444,
+        "exact_match": 0.05,
+        "decoded_mse": 0.5463012456893921
+      }
+    },
+    {
+      "noise": 0.3,
+      "seed": 2722,
+      "flat_tern": {
+        "trit_acc": 0.7079166666666666,
+        "exact_match": 0.04875,
+        "decoded_mse": 0.3353543281555176
+      },
+      "markov1_tern": {
+        "trit_acc": 0.6716666666666666,
+        "exact_match": 0.02375,
+        "decoded_mse": 0.3580091595649719
+      },
+      "lattice": {
+        "trit_acc": 0.7129166666666666,
+        "exact_match": 0.045,
+        "decoded_mse": 0.5292279124259949
+      }
+    },
+    {
+      "noise": 0.3,
+      "seed": 2723,
+      "flat_tern": {
+        "trit_acc": 0.7040277777777778,
+        "exact_match": 0.03375,
+        "decoded_mse": 0.3380545377731323
+      },
+      "markov1_tern": {
+        "trit_acc": 0.6745833333333333,
+        "exact_match": 0.01875,
+        "decoded_mse": 0.37073642015457153
+      },
+      "lattice": {
+        "trit_acc": 0.7127777777777777,
+        "exact_match": 0.05,
+        "decoded_mse": 0.5425800085067749
+      }
+    },
+    {
+      "noise": 0.3,
+      "seed": 2724,
+      "flat_tern": {
+        "trit_acc": 0.7048611111111112,
+        "exact_match": 0.045,
+        "decoded_mse": 0.34196823835372925
+      },
+      "markov1_tern": {
+        "trit_acc": 0.6705555555555556,
+        "exact_match": 0.02375,
+        "decoded_mse": 0.37457138299942017
+      },
+      "lattice": {
+        "trit_acc": 0.7013888888888888,
+        "exact_match": 0.03375,
+        "decoded_mse": 0.5438312888145447
+      }
+    },
+    {
+      "noise": 0.3,
+      "seed": 2725,
+      "flat_tern": {
+        "trit_acc": 0.7066666666666667,
+        "exact_match": 0.05875,
+        "decoded_mse": 0.34227898716926575
+      },
+      "markov1_tern": {
+        "trit_acc": 0.675,
+        "exact_match": 0.02375,
+        "decoded_mse": 0.38071343302726746
+      },
+      "lattice": {
+        "trit_acc": 0.7068055555555556,
+        "exact_match": 0.04125,
+        "decoded_mse": 0.5465913414955139
+      }
+    },
+    {
+      "noise": 0.3,
+      "seed": 2726,
+      "flat_tern": {
+        "trit_acc": 0.70875,
+        "exact_match": 0.04625,
+        "decoded_mse": 0.342382550239563
+      },
+      "markov1_tern": {
+        "trit_acc": 0.6715277777777777,
+        "exact_match": 0.0225,
+        "decoded_mse": 0.37419718503952026
+      },
+      "lattice": {
+        "trit_acc": 0.7080555555555555,
+        "exact_match": 0.04125,
+        "decoded_mse": 0.5439134240150452
+      }
+    },
+    {
+      "noise": 0.3,
+      "seed": 2727,
+      "flat_tern": {
+        "trit_acc": 0.7015277777777778,
+        "exact_match": 0.05125,
+        "decoded_mse": 0.34321919083595276
+      },
+      "markov1_tern": {
+        "trit_acc": 0.6734722222222222,
+        "exact_match": 0.035,
+        "decoded_mse": 0.37250760197639465
+      },
+      "lattice": {
+        "trit_acc": 0.7058333333333333,
+        "exact_match": 0.0425,
+        "decoded_mse": 0.532666802406311
+      }
+    },
+    {
+      "noise": 0.4,
+      "seed": 2718,
+      "flat_tern": {
+        "trit_acc": 0.6480555555555556,
+        "exact_match": 0.02375,
+        "decoded_mse": 0.4237213730812073
+      },
+      "markov1_tern": {
+        "trit_acc": 0.6231944444444445,
+        "exact_match": 0.0225,
+        "decoded_mse": 0.441763311624527
+      },
+      "lattice": {
+        "trit_acc": 0.6779166666666666,
+        "exact_match": 0.035,
+        "decoded_mse": 0.6150302886962891
+      }
+    },
+    {
+      "noise": 0.4,
+      "seed": 2719,
+      "flat_tern": {
+        "trit_acc": 0.66125,
+        "exact_match": 0.02125,
+        "decoded_mse": 0.4147985279560089
+      },
+      "markov1_tern": {
+        "trit_acc": 0.6384722222222222,
+        "exact_match": 0.01125,
+        "decoded_mse": 0.4384300410747528
+      },
+      "lattice": {
+        "trit_acc": 0.6931944444444444,
+        "exact_match": 0.0225,
+        "decoded_mse": 0.6114991307258606
+      }
+    },
+    {
+      "noise": 0.4,
+      "seed": 2720,
+      "flat_tern": {
+        "trit_acc": 0.65,
+        "exact_match": 0.01625,
+        "decoded_mse": 0.41809332370758057
+      },
+      "markov1_tern": {
+        "trit_acc": 0.6256944444444444,
+        "exact_match": 0.0225,
+        "decoded_mse": 0.4433129131793976
+      },
+      "lattice": {
+        "trit_acc": 0.6775,
+        "exact_match": 0.0275,
+        "decoded_mse": 0.6139497756958008
+      }
+    },
+    {
+      "noise": 0.4,
+      "seed": 2721,
+      "flat_tern": {
+        "trit_acc": 0.6526388888888889,
+        "exact_match": 0.0225,
+        "decoded_mse": 0.42000874876976013
+      },
+      "markov1_tern": {
+        "trit_acc": 0.6294444444444445,
+        "exact_match": 0.01125,
+        "decoded_mse": 0.4376692771911621
+      },
+      "lattice": {
+        "trit_acc": 0.6769444444444445,
+        "exact_match": 0.02875,
+        "decoded_mse": 0.6185768246650696
+      }
+    },
+    {
+      "noise": 0.4,
+      "seed": 2722,
+      "flat_tern": {
+        "trit_acc": 0.6565277777777778,
+        "exact_match": 0.02875,
+        "decoded_mse": 0.40316900610923767
+      },
+      "markov1_tern": {
+        "trit_acc": 0.6318055555555555,
+        "exact_match": 0.0125,
+        "decoded_mse": 0.42572709918022156
+      },
+      "lattice": {
+        "trit_acc": 0.6888888888888889,
+        "exact_match": 0.0375,
+        "decoded_mse": 0.6046150922775269
+      }
+    },
+    {
+      "noise": 0.4,
+      "seed": 2723,
+      "flat_tern": {
+        "trit_acc": 0.6526388888888889,
+        "exact_match": 0.01625,
+        "decoded_mse": 0.4089498221874237
+      },
+      "markov1_tern": {
+        "trit_acc": 0.6323611111111112,
+        "exact_match": 0.015,
+        "decoded_mse": 0.4403420686721802
+      },
+      "lattice": {
+        "trit_acc": 0.68875,
+        "exact_match": 0.03875,
+        "decoded_mse": 0.615490198135376
+      }
+    },
+    {
+      "noise": 0.4,
+      "seed": 2724,
+      "flat_tern": {
+        "trit_acc": 0.6569444444444444,
+        "exact_match": 0.025,
+        "decoded_mse": 0.41139236092567444
+      },
+      "markov1_tern": {
+        "trit_acc": 0.6291666666666667,
+        "exact_match": 0.01625,
+        "decoded_mse": 0.4464278817176819
+      },
+      "lattice": {
+        "trit_acc": 0.6776388888888889,
+        "exact_match": 0.02,
+        "decoded_mse": 0.6217137575149536
+      }
+    },
+    {
+      "noise": 0.4,
+      "seed": 2725,
+      "flat_tern": {
+        "trit_acc": 0.6548611111111111,
+        "exact_match": 0.02375,
+        "decoded_mse": 0.41372042894363403
+      },
+      "markov1_tern": {
+        "trit_acc": 0.6319444444444444,
+        "exact_match": 0.01,
+        "decoded_mse": 0.45255112648010254
+      },
+      "lattice": {
+        "trit_acc": 0.6795833333333333,
+        "exact_match": 0.03,
+        "decoded_mse": 0.6188092231750488
+      }
+    },
+    {
+      "noise": 0.4,
+      "seed": 2726,
+      "flat_tern": {
+        "trit_acc": 0.6609722222222222,
+        "exact_match": 0.03125,
+        "decoded_mse": 0.41497254371643066
+      },
+      "markov1_tern": {
+        "trit_acc": 0.6338888888888888,
+        "exact_match": 0.01375,
+        "decoded_mse": 0.4456341564655304
+      },
+      "lattice": {
+        "trit_acc": 0.6841666666666667,
+        "exact_match": 0.02625,
+        "decoded_mse": 0.6191821098327637
+      }
+    },
+    {
+      "noise": 0.4,
+      "seed": 2727,
+      "flat_tern": {
+        "trit_acc": 0.6465277777777778,
+        "exact_match": 0.02,
+        "decoded_mse": 0.4148544669151306
+      },
+      "markov1_tern": {
+        "trit_acc": 0.6275,
+        "exact_match": 0.0125,
+        "decoded_mse": 0.44284799695014954
+      },
+      "lattice": {
+        "trit_acc": 0.6801388888888888,
+        "exact_match": 0.02625,
+        "decoded_mse": 0.6087738871574402
+      }
+    },
+    {
+      "noise": 0.5,
+      "seed": 2718,
+      "flat_tern": {
+        "trit_acc": 0.6125,
+        "exact_match": 0.0175,
+        "decoded_mse": 0.514713704586029
+      },
+      "markov1_tern": {
+        "trit_acc": 0.5898611111111111,
+        "exact_match": 0.01625,
+        "decoded_mse": 0.5303722620010376
+      },
+      "lattice": {
+        "trit_acc": 0.6594444444444445,
+        "exact_match": 0.0275,
+        "decoded_mse": 0.7040848731994629
+      }
+    },
+    {
+      "noise": 0.5,
+      "seed": 2719,
+      "flat_tern": {
+        "trit_acc": 0.6220833333333333,
+        "exact_match": 0.01125,
+        "decoded_mse": 0.5093309283256531
+      },
+      "markov1_tern": {
+        "trit_acc": 0.6048611111111111,
+        "exact_match": 0.00625,
+        "decoded_mse": 0.5316531658172607
+      },
+      "lattice": {
+        "trit_acc": 0.66875,
+        "exact_match": 0.01625,
+        "decoded_mse": 0.7031806707382202
+      }
+    },
+    {
+      "noise": 0.5,
+      "seed": 2720,
+      "flat_tern": {
+        "trit_acc": 0.61125,
+        "exact_match": 0.01,
+        "decoded_mse": 0.5101075768470764
+      },
+      "markov1_tern": {
+        "trit_acc": 0.5922222222222222,
+        "exact_match": 0.01375,
+        "decoded_mse": 0.5328673720359802
+      },
+      "lattice": {
+        "trit_acc": 0.6552777777777777,
+        "exact_match": 0.02,
+        "decoded_mse": 0.7110089659690857
+      }
+    },
+    {
+      "noise": 0.5,
+      "seed": 2721,
+      "flat_tern": {
+        "trit_acc": 0.6109722222222222,
+        "exact_match": 0.01125,
+        "decoded_mse": 0.5111275315284729
+      },
+      "markov1_tern": {
+        "trit_acc": 0.5951388888888889,
+        "exact_match": 0.00625,
+        "decoded_mse": 0.5285488367080688
+      },
+      "lattice": {
+        "trit_acc": 0.6527777777777778,
+        "exact_match": 0.02125,
+        "decoded_mse": 0.7085201740264893
+      }
+    },
+    {
+      "noise": 0.5,
+      "seed": 2722,
+      "flat_tern": {
+        "trit_acc": 0.6170833333333333,
+        "exact_match": 0.01875,
+        "decoded_mse": 0.49213674664497375
+      },
+      "markov1_tern": {
+        "trit_acc": 0.6004166666666667,
+        "exact_match": 0.01125,
+        "decoded_mse": 0.512143611907959
+      },
+      "lattice": {
+        "trit_acc": 0.6690277777777778,
+        "exact_match": 0.03125,
+        "decoded_mse": 0.6912193298339844
+      }
+    },
+    {
+      "noise": 0.5,
+      "seed": 2723,
+      "flat_tern": {
+        "trit_acc": 0.6145833333333334,
+        "exact_match": 0.01125,
+        "decoded_mse": 0.5009094476699829
+      },
+      "markov1_tern": {
+        "trit_acc": 0.5981944444444445,
+        "exact_match": 0.00625,
+        "decoded_mse": 0.5310035347938538
+      },
+      "lattice": {
+        "trit_acc": 0.6655555555555556,
+        "exact_match": 0.025,
+        "decoded_mse": 0.7045276165008545
+      }
+    },
+    {
+      "noise": 0.5,
+      "seed": 2724,
+      "flat_tern": {
+        "trit_acc": 0.6163888888888889,
+        "exact_match": 0.01,
+        "decoded_mse": 0.5005214810371399
+      },
+      "markov1_tern": {
+        "trit_acc": 0.5943055555555555,
+        "exact_match": 0.00625,
+        "decoded_mse": 0.5371666550636292
+      },
+      "lattice": {
+        "trit_acc": 0.6543055555555556,
+        "exact_match": 0.0175,
+        "decoded_mse": 0.7113357186317444
+      }
+    },
+    {
+      "noise": 0.5,
+      "seed": 2725,
+      "flat_tern": {
+        "trit_acc": 0.6144444444444445,
+        "exact_match": 0.00875,
+        "decoded_mse": 0.5101556777954102
+      },
+      "markov1_tern": {
+        "trit_acc": 0.59625,
+        "exact_match": 0.00625,
+        "decoded_mse": 0.5450782179832458
+      },
+      "lattice": {
+        "trit_acc": 0.6558333333333334,
+        "exact_match": 0.01875,
+        "decoded_mse": 0.7106345891952515
+      }
+    },
+    {
+      "noise": 0.5,
+      "seed": 2726,
+      "flat_tern": {
+        "trit_acc": 0.6211111111111111,
+        "exact_match": 0.02,
+        "decoded_mse": 0.5102341771125793
+      },
+      "markov1_tern": {
+        "trit_acc": 0.5984722222222222,
+        "exact_match": 0.00875,
+        "decoded_mse": 0.5385839939117432
+      },
+      "lattice": {
+        "trit_acc": 0.6620833333333334,
+        "exact_match": 0.02125,
+        "decoded_mse": 0.7129931449890137
+      }
+    },
+    {
+      "noise": 0.5,
+      "seed": 2727,
+      "flat_tern": {
+        "trit_acc": 0.6076388888888888,
+        "exact_match": 0.015,
+        "decoded_mse": 0.5064715147018433
+      },
+      "markov1_tern": {
+        "trit_acc": 0.5969444444444445,
+        "exact_match": 0.0075,
+        "decoded_mse": 0.5334395170211792
+      },
+      "lattice": {
+        "trit_acc": 0.6630555555555555,
+        "exact_match": 0.01625,
+        "decoded_mse": 0.699614942073822
+      }
+    },
+    {
+      "noise": 0.7,
+      "seed": 2718,
+      "flat_tern": {
+        "trit_acc": 0.5620833333333334,
+        "exact_match": 0.0025,
+        "decoded_mse": 0.7566991448402405
+      },
+      "markov1_tern": {
+        "trit_acc": 0.5438888888888889,
+        "exact_match": 0.0025,
+        "decoded_mse": 0.7666979432106018
+      },
+      "lattice": {
+        "trit_acc": 0.6263888888888889,
+        "exact_match": 0.00875,
+        "decoded_mse": 0.9400096535682678
+      }
+    },
+    {
+      "noise": 0.7,
+      "seed": 2719,
+      "flat_tern": {
+        "trit_acc": 0.5673611111111111,
+        "exact_match": 0.00875,
+        "decoded_mse": 0.7618797421455383
+      },
+      "markov1_tern": {
+        "trit_acc": 0.5552777777777778,
+        "exact_match": 0.0025,
+        "decoded_mse": 0.7832149267196655
+      },
+      "lattice": {
+        "trit_acc": 0.6388888888888888,
+        "exact_match": 0.00875,
+        "decoded_mse": 0.9475650787353516
+      }
+    },
+    {
+      "noise": 0.7,
+      "seed": 2720,
+      "flat_tern": {
+        "trit_acc": 0.5605555555555556,
+        "exact_match": 0.00375,
+        "decoded_mse": 0.7518464922904968
+      },
+      "markov1_tern": {
+        "trit_acc": 0.5451388888888888,
+        "exact_match": 0.00625,
+        "decoded_mse": 0.7746829986572266
+      },
+      "lattice": {
+        "trit_acc": 0.6219444444444444,
+        "exact_match": 0.01,
+        "decoded_mse": 0.9575896263122559
+      }
+    },
+    {
+      "noise": 0.7,
+      "seed": 2721,
+      "flat_tern": {
+        "trit_acc": 0.56,
+        "exact_match": 0.005,
+        "decoded_mse": 0.754657506942749
+      },
+      "markov1_tern": {
+        "trit_acc": 0.5511111111111111,
+        "exact_match": 0.005,
+        "decoded_mse": 0.769909679889679
+      },
+      "lattice": {
+        "trit_acc": 0.6186111111111111,
+        "exact_match": 0.0125,
+        "decoded_mse": 0.9521404504776001
+      }
+    },
+    {
+      "noise": 0.7,
+      "seed": 2722,
+      "flat_tern": {
+        "trit_acc": 0.5638888888888889,
+        "exact_match": 0.01,
+        "decoded_mse": 0.7273362874984741
+      },
+      "markov1_tern": {
+        "trit_acc": 0.5473611111111111,
+        "exact_match": 0.00625,
+        "decoded_mse": 0.7479212880134583
+      },
+      "lattice": {
+        "trit_acc": 0.6329166666666667,
+        "exact_match": 0.02,
+        "decoded_mse": 0.9256997108459473
+      }
+    },
+    {
+      "noise": 0.7,
+      "seed": 2723,
+      "flat_tern": {
+        "trit_acc": 0.5618055555555556,
+        "exact_match": 0.00375,
+        "decoded_mse": 0.7478289008140564
+      },
+      "markov1_tern": {
+        "trit_acc": 0.5519444444444445,
+        "exact_match": 0.00375,
+        "decoded_mse": 0.7747953534126282
+      },
+      "lattice": {
+        "trit_acc": 0.6305555555555555,
+        "exact_match": 0.0125,
+        "decoded_mse": 0.9454820156097412
+      }
+    },
+    {
+      "noise": 0.7,
+      "seed": 2724,
+      "flat_tern": {
+        "trit_acc": 0.5606944444444445,
+        "exact_match": 0.0075,
+        "decoded_mse": 0.7422910332679749
+      },
+      "markov1_tern": {
+        "trit_acc": 0.5451388888888888,
+        "exact_match": 0.0025,
+        "decoded_mse": 0.7803477644920349
+      },
+      "lattice": {
+        "trit_acc": 0.6190277777777777,
+        "exact_match": 0.01125,
+        "decoded_mse": 0.9495137333869934
+      }
+    },
+    {
+      "noise": 0.7,
+      "seed": 2725,
+      "flat_tern": {
+        "trit_acc": 0.5643055555555555,
+        "exact_match": 0.00125,
+        "decoded_mse": 0.7546526193618774
+      },
+      "markov1_tern": {
+        "trit_acc": 0.5515277777777777,
+        "exact_match": 0.00375,
+        "decoded_mse": 0.7915892004966736
+      },
+      "lattice": {
+        "trit_acc": 0.6238888888888889,
+        "exact_match": 0.01,
+        "decoded_mse": 0.9521315693855286
+      }
+    },
+    {
+      "noise": 0.7,
+      "seed": 2726,
+      "flat_tern": {
+        "trit_acc": 0.5698611111111112,
+        "exact_match": 0.0125,
+        "decoded_mse": 0.7580698132514954
+      },
+      "markov1_tern": {
+        "trit_acc": 0.5505555555555556,
+        "exact_match": 0.00375,
+        "decoded_mse": 0.7862056493759155
+      },
+      "lattice": {
+        "trit_acc": 0.6277777777777778,
+        "exact_match": 0.0175,
+        "decoded_mse": 0.9587019681930542
+      }
+    },
+    {
+      "noise": 0.7,
+      "seed": 2727,
+      "flat_tern": {
+        "trit_acc": 0.5576388888888889,
+        "exact_match": 0.005,
+        "decoded_mse": 0.7499582171440125
+      },
+      "markov1_tern": {
+        "trit_acc": 0.5493055555555556,
+        "exact_match": 0.00125,
+        "decoded_mse": 0.780773937702179
+      },
+      "lattice": {
+        "trit_acc": 0.6305555555555555,
+        "exact_match": 0.00875,
+        "decoded_mse": 0.942243218421936
+      }
+    },
+    {
+      "noise": 1.0,
+      "seed": 2718,
+      "flat_tern": {
+        "trit_acc": 0.5127777777777778,
+        "exact_match": 0.00125,
+        "decoded_mse": 1.2762727737426758
+      },
+      "markov1_tern": {
+        "trit_acc": 0.49666666666666665,
+        "exact_match": 0.0,
+        "decoded_mse": 1.2752094268798828
+      },
+      "lattice": {
+        "trit_acc": 0.5952777777777778,
+        "exact_match": 0.005,
+        "decoded_mse": 1.4434348344802856
+      }
+    },
+    {
+      "noise": 1.0,
+      "seed": 2719,
+      "flat_tern": {
+        "trit_acc": 0.5236111111111111,
+        "exact_match": 0.00375,
+        "decoded_mse": 1.2944612503051758
+      },
+      "markov1_tern": {
+        "trit_acc": 0.5161111111111111,
+        "exact_match": 0.0025,
+        "decoded_mse": 1.3133043050765991
+      },
+      "lattice": {
+        "trit_acc": 0.6086111111111111,
+        "exact_match": 0.0075,
+        "decoded_mse": 1.4702916145324707
+      }
+    },
+    {
+      "noise": 1.0,
+      "seed": 2720,
+      "flat_tern": {
+        "trit_acc": 0.5152777777777777,
+        "exact_match": 0.0025,
+        "decoded_mse": 1.2741494178771973
+      },
+      "markov1_tern": {
+        "trit_acc": 0.5019444444444444,
+        "exact_match": 0.0025,
+        "decoded_mse": 1.2970974445343018
+      },
+      "lattice": {
+        "trit_acc": 0.5948611111111111,
+        "exact_match": 0.00875,
+        "decoded_mse": 1.4700015783309937
+      }
+    },
+    {
+      "noise": 1.0,
+      "seed": 2721,
+      "flat_tern": {
+        "trit_acc": 0.5093055555555556,
+        "exact_match": 0.00375,
+        "decoded_mse": 1.2652662992477417
+      },
+      "markov1_tern": {
+        "trit_acc": 0.5002777777777778,
+        "exact_match": 0.00625,
+        "decoded_mse": 1.2759580612182617
+      },
+      "lattice": {
+        "trit_acc": 0.5873611111111111,
+        "exact_match": 0.01375,
+        "decoded_mse": 1.4625095129013062
+      }
+    },
+    {
+      "noise": 1.0,
+      "seed": 2722,
+      "flat_tern": {
+        "trit_acc": 0.5122222222222222,
+        "exact_match": 0.005,
+        "decoded_mse": 1.2292553186416626
+      },
+      "markov1_tern": {
+        "trit_acc": 0.5002777777777778,
+        "exact_match": 0.00375,
+        "decoded_mse": 1.248103380203247
+      },
+      "lattice": {
+        "trit_acc": 0.5952777777777778,
+        "exact_match": 0.01,
+        "decoded_mse": 1.4321181774139404
+      }
+    },
+    {
+      "noise": 1.0,
+      "seed": 2723,
+      "flat_tern": {
+        "trit_acc": 0.5152777777777777,
+        "exact_match": 0.00125,
+        "decoded_mse": 1.2644438743591309
+      },
+      "markov1_tern": {
+        "trit_acc": 0.5083333333333333,
+        "exact_match": 0.00125,
+        "decoded_mse": 1.2808895111083984
+      },
+      "lattice": {
+        "trit_acc": 0.5986111111111111,
+        "exact_match": 0.00625,
+        "decoded_mse": 1.4515026807785034
+      }
+    },
+    {
+      "noise": 1.0,
+      "seed": 2724,
+      "flat_tern": {
+        "trit_acc": 0.5129166666666667,
+        "exact_match": 0.00375,
+        "decoded_mse": 1.2476032972335815
+      },
+      "markov1_tern": {
+        "trit_acc": 0.49680555555555556,
+        "exact_match": 0.00125,
+        "decoded_mse": 1.2863593101501465
+      },
+      "lattice": {
+        "trit_acc": 0.5880555555555556,
+        "exact_match": 0.00875,
+        "decoded_mse": 1.4480916261672974
+      }
+    },
+    {
+      "noise": 1.0,
+      "seed": 2725,
+      "flat_tern": {
+        "trit_acc": 0.5201388888888889,
+        "exact_match": 0.00125,
+        "decoded_mse": 1.2733898162841797
+      },
+      "markov1_tern": {
+        "trit_acc": 0.5088888888888888,
+        "exact_match": 0.0025,
+        "decoded_mse": 1.306517243385315
+      },
+      "lattice": {
+        "trit_acc": 0.5913888888888889,
+        "exact_match": 0.005,
+        "decoded_mse": 1.465157389640808
+      }
+    },
+    {
+      "noise": 1.0,
+      "seed": 2726,
+      "flat_tern": {
+        "trit_acc": 0.5219444444444444,
+        "exact_match": 0.0125,
+        "decoded_mse": 1.2826447486877441
+      },
+      "markov1_tern": {
+        "trit_acc": 0.5077777777777778,
+        "exact_match": 0.00375,
+        "decoded_mse": 1.3086035251617432
+      },
+      "lattice": {
+        "trit_acc": 0.5975,
+        "exact_match": 0.01,
+        "decoded_mse": 1.479378581047058
+      }
+    },
+    {
+      "noise": 1.0,
+      "seed": 2727,
+      "flat_tern": {
+        "trit_acc": 0.5129166666666667,
+        "exact_match": 0.00125,
+        "decoded_mse": 1.2708168029785156
+      },
+      "markov1_tern": {
+        "trit_acc": 0.5055555555555555,
+        "exact_match": 0.00125,
+        "decoded_mse": 1.306076169013977
+      },
+      "lattice": {
+        "trit_acc": 0.5969444444444445,
+        "exact_match": 0.005,
+        "decoded_mse": 1.4548828601837158
+      }
+    },
+    {
+      "noise": 1.5,
+      "seed": 2718,
+      "flat_tern": {
+        "trit_acc": 0.4723611111111111,
+        "exact_match": 0.00125,
+        "decoded_mse": 2.525181531906128
+      },
+      "markov1_tern": {
+        "trit_acc": 0.4579166666666667,
+        "exact_match": 0.0,
+        "decoded_mse": 2.51171612739563
+      },
+      "lattice": {
+        "trit_acc": 0.5640277777777778,
+        "exact_match": 0.00375,
+        "decoded_mse": 2.669679880142212
+      }
+    },
+    {
+      "noise": 1.5,
+      "seed": 2719,
+      "flat_tern": {
+        "trit_acc": 0.48138888888888887,
+        "exact_match": 0.00125,
+        "decoded_mse": 2.6054155826568604
+      },
+      "markov1_tern": {
+        "trit_acc": 0.47805555555555557,
+        "exact_match": 0.0025,
+        "decoded_mse": 2.619589328765869
+      },
+      "lattice": {
+        "trit_acc": 0.5794444444444444,
+        "exact_match": 0.00375,
+        "decoded_mse": 2.7594780921936035
+      }
+    },
+    {
+      "noise": 1.5,
+      "seed": 2720,
+      "flat_tern": {
+        "trit_acc": 0.47625,
+        "exact_match": 0.00125,
+        "decoded_mse": 2.546997308731079
+      },
+      "markov1_tern": {
+        "trit_acc": 0.46194444444444444,
+        "exact_match": 0.0025,
+        "decoded_mse": 2.5733251571655273
+      },
+      "lattice": {
+        "trit_acc": 0.5630555555555555,
+        "exact_match": 0.00375,
+        "decoded_mse": 2.734055519104004
+      }
+    },
+    {
+      "noise": 1.5,
+      "seed": 2721,
+      "flat_tern": {
+        "trit_acc": 0.4638888888888889,
+        "exact_match": 0.00125,
+        "decoded_mse": 2.5300731658935547
+      },
+      "markov1_tern": {
+        "trit_acc": 0.455,
+        "exact_match": 0.00375,
+        "decoded_mse": 2.522461414337158
+      },
+      "lattice": {
+        "trit_acc": 0.5544444444444444,
+        "exact_match": 0.00625,
+        "decoded_mse": 2.7149407863616943
+      }
+    },
+    {
+      "noise": 1.5,
+      "seed": 2722,
+      "flat_tern": {
+        "trit_acc": 0.4683333333333333,
+        "exact_match": 0.00125,
+        "decoded_mse": 2.464240550994873
+      },
+      "markov1_tern": {
+        "trit_acc": 0.4602777777777778,
+        "exact_match": 0.00375,
+        "decoded_mse": 2.482658863067627
+      },
+      "lattice": {
+        "trit_acc": 0.5677777777777778,
+        "exact_match": 0.00875,
+        "decoded_mse": 2.6498513221740723
+      }
+    },
+    {
+      "noise": 1.5,
+      "seed": 2723,
+      "flat_tern": {
+        "trit_acc": 0.4798611111111111,
+        "exact_match": 0.0025,
+        "decoded_mse": 2.5150532722473145
+      },
+      "markov1_tern": {
+        "trit_acc": 0.4708333333333333,
+        "exact_match": 0.00125,
+        "decoded_mse": 2.533177614212036
+      },
+      "lattice": {
+        "trit_acc": 0.5720833333333334,
+        "exact_match": 0.0025,
+        "decoded_mse": 2.6985433101654053
+      }
+    },
+    {
+      "noise": 1.5,
+      "seed": 2724,
+      "flat_tern": {
+        "trit_acc": 0.4686111111111111,
+        "exact_match": 0.0025,
+        "decoded_mse": 2.481846332550049
+      },
+      "markov1_tern": {
+        "trit_acc": 0.45472222222222225,
+        "exact_match": 0.00125,
+        "decoded_mse": 2.524933338165283
+      },
+      "lattice": {
+        "trit_acc": 0.5541666666666667,
+        "exact_match": 0.0075,
+        "decoded_mse": 2.687282085418701
+      }
+    },
+    {
+      "noise": 1.5,
+      "seed": 2725,
+      "flat_tern": {
+        "trit_acc": 0.4765277777777778,
+        "exact_match": 0.0,
+        "decoded_mse": 2.562347650527954
+      },
+      "markov1_tern": {
+        "trit_acc": 0.4713888888888889,
+        "exact_match": 0.0,
+        "decoded_mse": 2.564851999282837
+      },
+      "lattice": {
+        "trit_acc": 0.5616666666666666,
+        "exact_match": 0.005,
+        "decoded_mse": 2.7471096515655518
+      }
+    },
+    {
+      "noise": 1.5,
+      "seed": 2726,
+      "flat_tern": {
+        "trit_acc": 0.4790277777777778,
+        "exact_match": 0.005,
+        "decoded_mse": 2.559231758117676
+      },
+      "markov1_tern": {
+        "trit_acc": 0.4663888888888889,
+        "exact_match": 0.0025,
+        "decoded_mse": 2.5952155590057373
+      },
+      "lattice": {
+        "trit_acc": 0.5623611111111111,
+        "exact_match": 0.0075,
+        "decoded_mse": 2.7540690898895264
+      }
+    },
+    {
+      "noise": 1.5,
+      "seed": 2727,
+      "flat_tern": {
+        "trit_acc": 0.4726388888888889,
+        "exact_match": 0.00125,
+        "decoded_mse": 2.5518672466278076
+      },
+      "markov1_tern": {
+        "trit_acc": 0.4648611111111111,
+        "exact_match": 0.0025,
+        "decoded_mse": 2.5866057872772217
+      },
+      "lattice": {
+        "trit_acc": 0.5680555555555555,
+        "exact_match": 0.00125,
+        "decoded_mse": 2.7146382331848145
+      }
+    },
+    {
+      "noise": 2.0,
+      "seed": 2718,
+      "flat_tern": {
+        "trit_acc": 0.4498611111111111,
+        "exact_match": 0.00125,
+        "decoded_mse": 4.2613525390625
+      },
+      "markov1_tern": {
+        "trit_acc": 0.43555555555555553,
+        "exact_match": 0.0,
+        "decoded_mse": 4.246860027313232
+      },
+      "lattice": {
+        "trit_acc": 0.5456944444444445,
+        "exact_match": 0.00375,
+        "decoded_mse": 4.37855339050293
+      }
+    },
+    {
+      "noise": 2.0,
+      "seed": 2719,
+      "flat_tern": {
+        "trit_acc": 0.4548611111111111,
+        "exact_match": 0.00125,
+        "decoded_mse": 4.4508280754089355
+      },
+      "markov1_tern": {
+        "trit_acc": 0.45013888888888887,
+        "exact_match": 0.0025,
+        "decoded_mse": 4.4439921379089355
+      },
+      "lattice": {
+        "trit_acc": 0.5606944444444445,
+        "exact_match": 0.00375,
+        "decoded_mse": 4.58424711227417
+      }
+    },
+    {
+      "noise": 2.0,
+      "seed": 2720,
+      "flat_tern": {
+        "trit_acc": 0.45416666666666666,
+        "exact_match": 0.00375,
+        "decoded_mse": 4.328629493713379
+      },
+      "markov1_tern": {
+        "trit_acc": 0.44319444444444445,
+        "exact_match": 0.0025,
+        "decoded_mse": 4.356478691101074
+      },
+      "lattice": {
+        "trit_acc": 0.5488888888888889,
+        "exact_match": 0.00375,
+        "decoded_mse": 4.500434398651123
+      }
+    },
+    {
+      "noise": 2.0,
+      "seed": 2721,
+      "flat_tern": {
+        "trit_acc": 0.4440277777777778,
+        "exact_match": 0.0025,
+        "decoded_mse": 4.290249347686768
+      },
+      "markov1_tern": {
+        "trit_acc": 0.43472222222222223,
+        "exact_match": 0.00125,
+        "decoded_mse": 4.287507057189941
+      },
+      "lattice": {
+        "trit_acc": 0.5391666666666667,
+        "exact_match": 0.00125,
+        "decoded_mse": 4.4652323722839355
+      }
+    },
+    {
+      "noise": 2.0,
+      "seed": 2722,
+      "flat_tern": {
+        "trit_acc": 0.44375,
+        "exact_match": 0.0025,
+        "decoded_mse": 4.18152379989624
+      },
+      "markov1_tern": {
+        "trit_acc": 0.4395833333333333,
+        "exact_match": 0.00125,
+        "decoded_mse": 4.200107574462891
+      },
+      "lattice": {
+        "trit_acc": 0.5534722222222223,
+        "exact_match": 0.0075,
+        "decoded_mse": 4.359110355377197
+      }
+    },
+    {
+      "noise": 2.0,
+      "seed": 2723,
+      "flat_tern": {
+        "trit_acc": 0.4584722222222222,
+        "exact_match": 0.00125,
+        "decoded_mse": 4.274925708770752
+      },
+      "markov1_tern": {
+        "trit_acc": 0.44958333333333333,
+        "exact_match": 0.0,
+        "decoded_mse": 4.292606830596924
+      },
+      "lattice": {
+        "trit_acc": 0.5566666666666666,
+        "exact_match": 0.00375,
+        "decoded_mse": 4.439032077789307
+      }
+    },
+    {
+      "noise": 2.0,
+      "seed": 2724,
+      "flat_tern": {
+        "trit_acc": 0.44805555555555554,
+        "exact_match": 0.0,
+        "decoded_mse": 4.211367607116699
+      },
+      "markov1_tern": {
+        "trit_acc": 0.43527777777777776,
+        "exact_match": 0.00125,
+        "decoded_mse": 4.253978729248047
+      },
+      "lattice": {
+        "trit_acc": 0.5377777777777778,
+        "exact_match": 0.005,
+        "decoded_mse": 4.411292552947998
+      }
+    },
+    {
+      "noise": 2.0,
+      "seed": 2725,
+      "flat_tern": {
+        "trit_acc": 0.4577777777777778,
+        "exact_match": 0.0,
+        "decoded_mse": 4.35032320022583
+      },
+      "markov1_tern": {
+        "trit_acc": 0.455,
+        "exact_match": 0.0,
+        "decoded_mse": 4.341942310333252
+      },
+      "lattice": {
+        "trit_acc": 0.5480555555555555,
+        "exact_match": 0.00375,
+        "decoded_mse": 4.513735294342041
+      }
+    },
+    {
+      "noise": 2.0,
+      "seed": 2726,
+      "flat_tern": {
+        "trit_acc": 0.45111111111111113,
+        "exact_match": 0.0025,
+        "decoded_mse": 4.348156929016113
+      },
+      "markov1_tern": {
+        "trit_acc": 0.44458333333333333,
+        "exact_match": 0.0,
+        "decoded_mse": 4.389933109283447
+      },
+      "lattice": {
+        "trit_acc": 0.5443055555555556,
+        "exact_match": 0.005,
+        "decoded_mse": 4.532443046569824
+      }
+    },
+    {
+      "noise": 2.0,
+      "seed": 2727,
+      "flat_tern": {
+        "trit_acc": 0.4558333333333333,
+        "exact_match": 0.00125,
+        "decoded_mse": 4.348844528198242
+      },
+      "markov1_tern": {
+        "trit_acc": 0.4440277777777778,
+        "exact_match": 0.00125,
+        "decoded_mse": 4.36550760269165
+      },
+      "lattice": {
+        "trit_acc": 0.5534722222222223,
+        "exact_match": 0.00125,
+        "decoded_mse": 4.4810895919799805
+      }
+    }
+  ],
+  "verdict": "LATTICE-FAIL"
+}
