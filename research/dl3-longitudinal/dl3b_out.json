@@ -1,0 +1,1641 @@
+{
+  "complementarity_jev_jepa_disagreements": 33,
+  "experiment": "DL3b composed pinch route on real dial data",
+  "gates": {
+    "G1_composed_le_0.7x_best_single": {
+      "pass": false,
+      "value": [
+        0.05,
+        0.05
+      ]
+    },
+    "G2_frr_within_10pts": {
+      "pass": false,
+      "value": [
+        0.2667,
+        0.05
+      ]
+    },
+    "G3_replication": {
+      "farD": 0.05,
+      "verdict": "SURVIVES"
+    },
+    "H0_valid_noul_ge_0.5": {
+      "pass": true,
+      "value": 0.7055
+    },
+    "H0b_jepa_far_syn_ge_0.5": {
+      "pass": false,
+      "value": [
+        0.0,
+        0.0,
+        0.0787
+      ]
+    }
+  },
+  "jev_ledger": {
+    "calls": 120,
+    "input_tokens": 48247,
+    "output_tokens": 2400,
+    "retries": 0
+  },
+  "kernels": {
+    "barrail": {
+      "hard": 0.4508610178153544,
+      "soft": 0.3286600651299748,
+      "train_n": 39
+    },
+    "roomd": {
+      "doctor-canary": {
+        "hard": 0.297183965693758,
+        "soft": 0.058881003116748126,
+        "train_n": 118
+      },
+      "the-bridge": {
+        "hard": 0.6356060622448138,
+        "soft": 0.02376563730176608,
+        "train_n": 118
+      }
+    }
+  },
+  "n_trials": 120,
+  "per_family_far": {
+    "breadth": {
+      "farB": [
+        0.0,
+        -0.0,
+        0.2039
+      ],
+      "farC": [
+        0.1333,
+        0.0374,
+        0.3788
+      ],
+      "farD": [
+        0.0,
+        -0.0,
+        0.2039
+      ],
+      "n": 15
+    },
+    "range": {
+      "farB": [
+        0.0,
+        -0.0,
+        0.2039
+      ],
+      "farC": [
+        0.1333,
+        0.0374,
+        0.3788
+      ],
+      "farD": [
+        0.0,
+        -0.0,
+        0.2039
+      ],
+      "n": 15
+    },
+    "rate": {
+      "farB": [
+        0.0,
+        -0.0,
+        0.2039
+      ],
+      "farC": [
+        0.1333,
+        0.0374,
+        0.3788
+      ],
+      "farD": [
+        0.0,
+        -0.0,
+        0.2039
+      ],
+      "n": 15
+    },
+    "splice": {
+      "farB": [
+        0.2,
+        0.0705,
+        0.4519
+      ],
+      "farC": [
+        0.2667,
+        0.109,
+        0.5195
+      ],
+      "farD": [
+        0.2,
+        0.0705,
+        0.4519
+      ],
+      "n": 15
+    }
+  },
+  "scores": {
+    "armA": {
+      "far": [
+        1.0,
+        0.9398,
+        1.0
+      ],
+      "frr": [
+        0.0,
+        -0.0,
+        0.0602
+      ],
+      "held": 0.0
+    },
+    "armB": {
+      "far": [
+        0.05,
+        0.0171,
+        0.137
+      ],
+      "frr": [
+        0.4333,
+        0.3157,
+        0.559
+      ],
+      "held": 0.0
+    },
+    "armC": {
+      "far": [
+        0.1667,
+        0.0931,
+        0.2803
+      ],
+      "frr": [
+        0.05,
+        0.0171,
+        0.137
+      ],
+      "held": 0.0
+    },
+    "armD": {
+      "far": [
+        0.05,
+        0.0171,
+        0.137
+      ],
+      "frr": [
+        0.2667,
+        0.1713,
+        0.3901
+      ],
+      "held": 0.1083
+    }
+  },
+  "trials": [
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": -1,
+      "armD": -1,
+      "family": "breadth",
+      "noul": 0.42,
+      "residual": 81.2576,
+      "src": "barrail",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+0.50, cynicism=+0.08, joke_landing=+0.00, panic=+0.25, presence=+0.91, model_vs_code=+0.45. Proposed 30-minute transition: mood +0.25; volume -0.27; joke_landing -0.23; presence +0.48; model_vs_code -0.32.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": 1,
+      "armD": 0,
+      "family": "real",
+      "noul": 0.54,
+      "residual": 0.3382,
+      "src": "barrail",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+1.00, cynicism=+0.00, joke_landing=+0.00, panic=+0.30, presence=+0.55, model_vs_code=+0.53. Proposed 30-minute transition: earnestness -0.50; cynicism +0.18; panic -0.07; model_vs_code -0.06.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": -1,
+      "armD": -1,
+      "family": "splice",
+      "noul": 0.25,
+      "residual": 1.3453,
+      "src": "roomd:the-bridge->doctor-canary",
+      "text": "Room dial state: mood=-1.00, volume=+0.37, earnestness=+0.50, cynicism=+0.05, joke_landing=+0.00, panic=+0.13, presence=+0.50, model_vs_code=-1.00, vision=+0.50. Proposed 5-minute transition: volume +0.51; cynicism -0.05; panic +0.67; presence -0.06; model_vs_code +1.00.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": 1,
+      "armC": 1,
+      "armD": 1,
+      "family": "real",
+      "noul": 0.64,
+      "residual": 0.0167,
+      "src": "roomd:doctor-canary",
+      "text": "Room dial state: mood=-1.00, volume=+0.88, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.80, presence=+0.72, model_vs_code=+0.00, vision=+0.50. Proposed 5-minute transition: presence +0.01.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": 1,
+      "armD": 0,
+      "family": "real",
+      "noul": 0.58,
+      "residual": 0.3541,
+      "src": "barrail",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+1.00, cynicism=+0.06, joke_landing=+0.00, panic=+0.20, presence=+0.55, model_vs_code=+0.47. Proposed 30-minute transition: earnestness -0.50; cynicism -0.06; panic +0.05; model_vs_code +0.03.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": -1,
+      "armD": -1,
+      "family": "range",
+      "noul": 0.16,
+      "residual": 94.6657,
+      "src": "barrail",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+1.00, cynicism=+0.18, joke_landing=+0.00, panic=+0.20, presence=+0.96, model_vs_code=+0.45. Proposed 30-minute transition: model_vs_code -1.81.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": 1,
+      "armD": -1,
+      "family": "splice",
+      "noul": 0.79,
+      "residual": 94.1566,
+      "src": "barrail:crossday",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+0.50, cynicism=+0.08, joke_landing=+0.00, panic=+0.26, presence=+0.96, model_vs_code=+0.42. Proposed 30-minute transition: cynicism +0.07; panic -0.03; model_vs_code +0.03.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": 1,
+      "armC": 1,
+      "armD": 1,
+      "family": "real",
+      "noul": 0.58,
+      "residual": 0.2078,
+      "src": "barrail",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.25, presence=+0.55, model_vs_code=+0.50. Proposed 30-minute transition: earnestness +0.50; panic +0.06; model_vs_code +0.01.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": 1,
+      "armC": 1,
+      "armD": 1,
+      "family": "real",
+      "noul": 0.79,
+      "residual": 0.0058,
+      "src": "roomd:doctor-canary",
+      "text": "Room dial state: mood=-1.00, volume=+0.88, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.80, presence=+0.66, model_vs_code=+0.00, vision=+0.50. Proposed 5-minute transition: no dial change.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": 1,
+      "armD": -1,
+      "family": "rate",
+      "noul": 0.57,
+      "residual": 102.2444,
+      "src": "barrail",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+0.50, cynicism=+0.08, joke_landing=+0.00, panic=+0.22, presence=+1.00, model_vs_code=+0.42. Proposed 30-minute transition: mood -0.58.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": 1,
+      "armD": 0,
+      "family": "range",
+      "noul": 0.5,
+      "residual": 0.5525,
+      "src": "roomd:the-bridge",
+      "text": "Room dial state: mood=-1.00, volume=+0.32, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.08, presence=+0.45, model_vs_code=-1.00, vision=+0.50. Proposed 5-minute transition: mood -0.55.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": -1,
+      "armD": -1,
+      "family": "rate",
+      "noul": 0.2,
+      "residual": 0.9371,
+      "src": "barrail",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+1.00, cynicism=+0.05, joke_landing=+0.00, panic=+0.26, presence=+0.55, model_vs_code=+0.45. Proposed 30-minute transition: joke_landing -0.89.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": 1,
+      "armC": 1,
+      "armD": 1,
+      "family": "real",
+      "noul": 0.79,
+      "residual": 0.0004,
+      "src": "roomd:the-bridge",
+      "text": "Room dial state: mood=-1.00, volume=+0.32, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.08, presence=+0.45, model_vs_code=-1.00, vision=+0.50. Proposed 5-minute transition: no dial change.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": -1,
+      "armD": -1,
+      "family": "breadth",
+      "noul": 0.4,
+      "residual": 0.843,
+      "src": "barrail",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+1.00, cynicism=+0.09, joke_landing=+0.00, panic=+0.29, presence=+0.55, model_vs_code=+0.53. Proposed 30-minute transition: earnestness +0.38; cynicism -0.24; joke_landing +0.35; panic +0.26; presence -0.48.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": -1,
+      "armD": -1,
+      "family": "breadth",
+      "noul": 0.43,
+      "residual": 1.0393,
+      "src": "roomd:doctor-canary",
+      "text": "Room dial state: mood=-1.00, volume=+0.88, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.80, presence=+0.73, model_vs_code=+0.00, vision=+0.50. Proposed 5-minute transition: mood -0.36; earnestness -0.43; cynicism -0.33; joke_landing +0.21; panic -0.46; presence +0.27; model_vs_code +0.39; vision -0.42.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": 1,
+      "armD": -1,
+      "family": "real",
+      "noul": 0.78,
+      "residual": 81.2965,
+      "src": "barrail",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+0.50, cynicism=+0.22, joke_landing=+0.00, panic=+0.25, presence=+0.91, model_vs_code=+0.45. Proposed 30-minute transition: cynicism -0.15; panic -0.03; presence +0.06; model_vs_code +0.02.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": -1,
+      "armD": -1,
+      "family": "range",
+      "noul": 0.4,
+      "residual": 0.5749,
+      "src": "roomd:doctor-canary",
+      "text": "Room dial state: mood=-1.00, volume=+0.88, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.80, presence=+0.73, model_vs_code=+0.00, vision=+0.50. Proposed 5-minute transition: presence +0.56.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": 1,
+      "armC": 1,
+      "armD": 1,
+      "family": "splice",
+      "noul": 0.75,
+      "residual": 0.2899,
+      "src": "barrail:crossday",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+0.50, cynicism=+0.06, joke_landing=+0.00, panic=+0.23, presence=+0.55, model_vs_code=+0.44. Proposed 30-minute transition: cynicism +0.09; panic +0.03; model_vs_code +0.01.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": -1,
+      "armD": -1,
+      "family": "breadth",
+      "noul": 0.44,
+      "residual": 1.2657,
+      "src": "roomd:the-bridge",
+      "text": "Room dial state: mood=-0.04, volume=+0.57, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.14, presence=+0.51, model_vs_code=-1.00, vision=+0.50. Proposed 5-minute transition: earnestness +0.35; cynicism +0.23; joke_landing +0.36; panic -0.35; presence -0.40; vision +0.45.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": -1,
+      "armD": -1,
+      "family": "range",
+      "noul": 0.29,
+      "residual": 0.553,
+      "src": "roomd:doctor-canary",
+      "text": "Room dial state: mood=-1.00, volume=+0.88, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.80, presence=+0.44, model_vs_code=+0.00, vision=+0.50. Proposed 5-minute transition: panic +0.55.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": 1,
+      "armD": -1,
+      "family": "real",
+      "noul": 0.83,
+      "residual": 102.1473,
+      "src": "barrail",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.26, presence=+1.00, model_vs_code=+0.45. Proposed 30-minute transition: presence -0.04; model_vs_code -0.05.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": -1,
+      "armD": -1,
+      "family": "breadth",
+      "noul": 0.44,
+      "residual": 1.0116,
+      "src": "barrail",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+1.00, cynicism=+0.09, joke_landing=+0.00, panic=+0.27, presence=+0.55, model_vs_code=+0.48. Proposed 30-minute transition: mood +0.47; volume +0.48; earnestness +0.36; cynicism +0.43; joke_landing +0.45.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": 1,
+      "armD": 0,
+      "family": "real",
+      "noul": 0.57,
+      "residual": 0.357,
+      "src": "barrail",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+1.00, cynicism=+0.05, joke_landing=+0.00, panic=+0.19, presence=+0.55, model_vs_code=+0.48. Proposed 30-minute transition: earnestness -0.50; cynicism +0.06; model_vs_code -0.04.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": -1,
+      "armD": -1,
+      "family": "range",
+      "noul": 0.16,
+      "residual": 1.4986,
+      "src": "barrail",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+1.00, cynicism=+0.06, joke_landing=+0.00, panic=+0.27, presence=+0.55, model_vs_code=+0.46. Proposed 30-minute transition: joke_landing -1.47.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": 1,
+      "armC": 1,
+      "armD": 1,
+      "family": "real",
+      "noul": 0.66,
+      "residual": 0.2978,
+      "src": "barrail",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+1.00, cynicism=+0.35, joke_landing=+0.00, panic=+0.24, presence=+0.55, model_vs_code=+0.45. Proposed 30-minute transition: cynicism -0.25.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": 1,
+      "armD": -1,
+      "family": "real",
+      "noul": 0.62,
+      "residual": 94.1429,
+      "src": "barrail",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+0.50, cynicism=+0.15, joke_landing=+0.00, panic=+0.22, presence=+0.96, model_vs_code=+0.42. Proposed 30-minute transition: model_vs_code +0.03.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": -1,
+      "armD": -1,
+      "family": "breadth",
+      "noul": 0.45,
+      "residual": 0.8484,
+      "src": "roomd:the-bridge",
+      "text": "Room dial state: mood=-1.00, volume=+0.32, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.08, presence=+0.45, model_vs_code=-1.00, vision=+0.50. Proposed 5-minute transition: mood +0.21; volume +0.32; earnestness -0.45; panic -0.49; vision -0.36.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": 1,
+      "armD": -1,
+      "family": "breadth",
+      "noul": 0.6,
+      "residual": 81.5706,
+      "src": "barrail",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.25, presence=+0.91, model_vs_code=+0.53. Proposed 30-minute transition: mood -0.23; volume -0.28; earnestness +0.29; cynicism -0.35; joke_landing +0.29.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": 1,
+      "armC": 1,
+      "armD": 1,
+      "family": "splice",
+      "noul": 0.72,
+      "residual": 0.1779,
+      "src": "barrail:crossday",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+1.00, cynicism=+0.23, joke_landing=+0.00, panic=+0.22, presence=+0.55, model_vs_code=+0.49. Proposed 30-minute transition: earnestness -0.14; cynicism -0.19; panic -0.04; model_vs_code +0.03.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": -1,
+      "armD": -1,
+      "family": "splice",
+      "noul": 0.47,
+      "residual": 94.3807,
+      "src": "barrail:crossday",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+0.50, cynicism=+0.08, joke_landing=+0.00, panic=+0.22, presence=+0.96, model_vs_code=+0.50. Proposed 30-minute transition: earnestness +0.36; cynicism -0.04; panic -0.04; presence -0.42; model_vs_code +0.02.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": -1,
+      "armD": -1,
+      "family": "splice",
+      "noul": 0.36,
+      "residual": 94.5689,
+      "src": "barrail:crossday",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+0.50, cynicism=+0.08, joke_landing=+0.00, panic=+0.22, presence=+0.96, model_vs_code=+0.47. Proposed 30-minute transition: earnestness +0.50; cynicism -0.08; panic -0.01; presence -0.42; model_vs_code -0.02.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": -1,
+      "armD": 0,
+      "family": "rate",
+      "noul": 0.35,
+      "residual": 0.5041,
+      "src": "roomd:the-bridge",
+      "text": "Room dial state: mood=-1.00, volume=+0.32, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.08, presence=+0.45, model_vs_code=-1.00, vision=+0.50. Proposed 5-minute transition: joke_landing -0.50.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": -1,
+      "armD": -1,
+      "family": "rate",
+      "noul": 0.29,
+      "residual": 94.5544,
+      "src": "barrail",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+1.00, cynicism=+0.17, joke_landing=+0.00, panic=+0.20, presence=+0.96, model_vs_code=+0.42. Proposed 30-minute transition: joke_landing -0.65.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": -1,
+      "armD": -1,
+      "family": "breadth",
+      "noul": 0.42,
+      "residual": 1.0617,
+      "src": "roomd:doctor-canary",
+      "text": "Room dial state: mood=-1.00, volume=+0.88, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.80, presence=+0.70, model_vs_code=+0.00, vision=+0.50. Proposed 5-minute transition: mood -0.29; volume -0.35; earnestness +0.39; cynicism -0.34; joke_landing -0.32; presence -0.40; model_vs_code +0.47; vision +0.42.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": -1,
+      "armD": -1,
+      "family": "splice",
+      "noul": 0.22,
+      "residual": 1.3974,
+      "src": "roomd:the-bridge->doctor-canary",
+      "text": "Room dial state: mood=-1.00, volume=+0.04, earnestness=+0.50, cynicism=+0.05, joke_landing=+0.00, panic=+0.05, presence=+0.67, model_vs_code=-1.00, vision=+0.50. Proposed 5-minute transition: volume +0.84; cynicism -0.05; panic +0.75; presence +0.06; model_vs_code +1.00.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": 1,
+      "armC": 1,
+      "armD": 1,
+      "family": "real",
+      "noul": 0.78,
+      "residual": 0.0031,
+      "src": "roomd:doctor-canary",
+      "text": "Room dial state: mood=-1.00, volume=+0.88, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.80, presence=+0.67, model_vs_code=+0.00, vision=+0.50. Proposed 5-minute transition: no dial change.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": -1,
+      "armD": -1,
+      "family": "range",
+      "noul": 0.08,
+      "residual": 1.2077,
+      "src": "barrail",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+1.00, cynicism=+0.10, joke_landing=+0.00, panic=+0.24, presence=+0.55, model_vs_code=+0.44. Proposed 30-minute transition: panic +1.28.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": 1,
+      "armC": 1,
+      "armD": 1,
+      "family": "real",
+      "noul": 0.78,
+      "residual": 0.0074,
+      "src": "roomd:doctor-canary",
+      "text": "Room dial state: mood=-1.00, volume=+0.88, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.80, presence=+0.65, model_vs_code=+0.00, vision=+0.50. Proposed 5-minute transition: no dial change.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": -1,
+      "armD": -1,
+      "family": "rate",
+      "noul": 0.13,
+      "residual": 0.8232,
+      "src": "barrail",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+1.00, cynicism=+0.12, joke_landing=+0.00, panic=+0.20, presence=+0.55, model_vs_code=+0.48. Proposed 30-minute transition: panic +0.86.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": 1,
+      "armC": 1,
+      "armD": 1,
+      "family": "real",
+      "noul": 0.78,
+      "residual": 0.0004,
+      "src": "roomd:the-bridge",
+      "text": "Room dial state: mood=-1.00, volume=+0.32, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.08, presence=+0.45, model_vs_code=-1.00, vision=+0.50. Proposed 5-minute transition: no dial change.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": -1,
+      "armD": -1,
+      "family": "rate",
+      "noul": 0.44,
+      "residual": 0.5365,
+      "src": "roomd:doctor-canary",
+      "text": "Room dial state: mood=-1.00, volume=+0.88, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.80, presence=+0.66, model_vs_code=+0.00, vision=+0.50. Proposed 5-minute transition: mood +0.54.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": 1,
+      "armC": 1,
+      "armD": 1,
+      "family": "real",
+      "noul": 0.81,
+      "residual": 0.0004,
+      "src": "roomd:the-bridge",
+      "text": "Room dial state: mood=-1.00, volume=+0.32, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.08, presence=+0.45, model_vs_code=-1.00, vision=+0.50. Proposed 5-minute transition: no dial change.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": 1,
+      "armD": -1,
+      "family": "real",
+      "noul": 0.81,
+      "residual": 94.1461,
+      "src": "barrail",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+0.50, cynicism=+0.16, joke_landing=+0.00, panic=+0.26, presence=+0.96, model_vs_code=+0.42. Proposed 30-minute transition: cynicism +0.07; panic -0.03; model_vs_code +0.05.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": 1,
+      "armC": 1,
+      "armD": 1,
+      "family": "real",
+      "noul": 0.79,
+      "residual": 0.2434,
+      "src": "barrail",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.28, presence=+0.55, model_vs_code=+0.42. Proposed 30-minute transition: cynicism +0.12; panic -0.03; model_vs_code -0.01.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": -1,
+      "armD": -1,
+      "family": "rate",
+      "noul": 0.35,
+      "residual": 0.5851,
+      "src": "roomd:doctor-canary",
+      "text": "Room dial state: mood=-1.00, volume=+0.88, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.80, presence=+0.70, model_vs_code=+0.00, vision=+0.50. Proposed 5-minute transition: joke_landing -0.59.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": -1,
+      "armD": -1,
+      "family": "splice",
+      "noul": 0.37,
+      "residual": 94.6056,
+      "src": "barrail:crossday",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+0.50, cynicism=+0.23, joke_landing=+0.00, panic=+0.22, presence=+0.96, model_vs_code=+0.45. Proposed 30-minute transition: earnestness +0.50; cynicism -0.17; panic -0.02; presence -0.42; model_vs_code +0.02.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": 1,
+      "armD": -1,
+      "family": "real",
+      "noul": 0.78,
+      "residual": 102.1957,
+      "src": "barrail",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+0.83, cynicism=+0.19, joke_landing=+0.00, panic=+0.24, presence=+1.00, model_vs_code=+0.51. Proposed 30-minute transition: earnestness -0.08; cynicism -0.04; panic +0.05; model_vs_code -0.04.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": 1,
+      "armC": 1,
+      "armD": 1,
+      "family": "real",
+      "noul": 0.8,
+      "residual": 0.0004,
+      "src": "roomd:the-bridge",
+      "text": "Room dial state: mood=-1.00, volume=+0.32, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.08, presence=+0.45, model_vs_code=-1.00, vision=+0.50. Proposed 5-minute transition: no dial change.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": 1,
+      "armD": -1,
+      "family": "breadth",
+      "noul": 0.54,
+      "residual": 0.8383,
+      "src": "roomd:the-bridge",
+      "text": "Room dial state: mood=-1.00, volume=+0.32, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.08, presence=+0.45, model_vs_code=-1.00, vision=+0.50. Proposed 5-minute transition: mood +0.49; volume +0.27; earnestness -0.39; joke_landing +0.36; model_vs_code +0.21; vision +0.24.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": 1,
+      "armC": 1,
+      "armD": 1,
+      "family": "real",
+      "noul": 0.73,
+      "residual": 0.2347,
+      "src": "barrail",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+1.00, cynicism=+0.06, joke_landing=+0.00, panic=+0.25, presence=+0.55, model_vs_code=+0.48. Proposed 30-minute transition: cynicism +0.10; panic +0.01; model_vs_code -0.04.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": -1,
+      "armD": -1,
+      "family": "breadth",
+      "noul": 0.38,
+      "residual": 94.493,
+      "src": "barrail",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+1.00, cynicism=+0.06, joke_landing=+0.00, panic=+0.20, presence=+0.96, model_vs_code=+0.51. Proposed 30-minute transition: volume +0.32; cynicism +0.32; joke_landing +0.24; presence +0.25; model_vs_code -0.50.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": 1,
+      "armC": 1,
+      "armD": 1,
+      "family": "real",
+      "noul": 0.79,
+      "residual": 0.0589,
+      "src": "roomd:doctor-canary",
+      "text": "Room dial state: mood=-1.00, volume=+0.88, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.80, presence=+0.44, model_vs_code=+0.00, vision=+0.50. Proposed 5-minute transition: no dial change.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": 1,
+      "armD": -1,
+      "family": "range",
+      "noul": 0.6,
+      "residual": 0.4725,
+      "src": "barrail",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+0.50, cynicism=+0.08, joke_landing=+0.00, panic=+0.28, presence=+0.55, model_vs_code=+0.50. Proposed 30-minute transition: mood -0.31.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": -1,
+      "armD": -1,
+      "family": "rate",
+      "noul": 0.32,
+      "residual": 0.7204,
+      "src": "roomd:the-bridge",
+      "text": "Room dial state: mood=-1.00, volume=+0.32, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.08, presence=+0.45, model_vs_code=-1.00, vision=+0.50. Proposed 5-minute transition: cynicism +0.72.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": -1,
+      "armD": -1,
+      "family": "rate",
+      "noul": 0.46,
+      "residual": 0.5969,
+      "src": "barrail",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+1.00, cynicism=+0.00, joke_landing=+0.00, panic=+0.20, presence=+0.55, model_vs_code=+0.46. Proposed 30-minute transition: presence +0.52.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": -1,
+      "armD": -1,
+      "family": "range",
+      "noul": 0.35,
+      "residual": 81.1864,
+      "src": "barrail",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.25, presence=+0.91, model_vs_code=+0.53. Proposed 30-minute transition: presence +0.60.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": -1,
+      "armD": -1,
+      "family": "range",
+      "noul": 0.14,
+      "residual": 81.3375,
+      "src": "barrail",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+0.50, cynicism=+0.08, joke_landing=+0.00, panic=+0.22, presence=+0.91, model_vs_code=+0.42. Proposed 30-minute transition: model_vs_code -1.75.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": -1,
+      "armD": -1,
+      "family": "splice",
+      "noul": 0.3,
+      "residual": 1.3507,
+      "src": "roomd:doctor-canary->the-bridge",
+      "text": "Room dial state: mood=-1.00, volume=+0.88, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.80, presence=+0.44, model_vs_code=+0.00, vision=+0.50. Proposed 5-minute transition: volume -0.56; panic -0.72; presence +0.02; model_vs_code -1.00.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": 1,
+      "armC": 1,
+      "armD": 1,
+      "family": "real",
+      "noul": 0.77,
+      "residual": 0.0028,
+      "src": "roomd:doctor-canary",
+      "text": "Room dial state: mood=-1.00, volume=+0.88, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.80, presence=+0.68, model_vs_code=+0.00, vision=+0.50. Proposed 5-minute transition: no dial change.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": 1,
+      "armD": -1,
+      "family": "real",
+      "noul": 0.77,
+      "residual": 81.2957,
+      "src": "barrail",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+0.50, cynicism=+0.08, joke_landing=+0.00, panic=+0.22, presence=+0.91, model_vs_code=+0.42. Proposed 30-minute transition: cynicism +0.07; model_vs_code +0.03.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": 1,
+      "armC": 1,
+      "armD": 1,
+      "family": "real",
+      "noul": 0.79,
+      "residual": 0.2808,
+      "src": "barrail",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+0.50, cynicism=+0.16, joke_landing=+0.00, panic=+0.26, presence=+0.55, model_vs_code=+0.45. Proposed 30-minute transition: cynicism -0.08; panic -0.03.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": -1,
+      "armD": -1,
+      "family": "range",
+      "noul": 0.15,
+      "residual": 1.8039,
+      "src": "roomd:the-bridge",
+      "text": "Room dial state: mood=-1.00, volume=+0.32, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.08, presence=+0.45, model_vs_code=-1.00, vision=+0.50. Proposed 5-minute transition: volume -1.80.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": -1,
+      "armD": -1,
+      "family": "rate",
+      "noul": 0.25,
+      "residual": 0.5868,
+      "src": "barrail",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+1.00, cynicism=+0.10, joke_landing=+0.00, panic=+0.24, presence=+0.55, model_vs_code=+0.44. Proposed 30-minute transition: presence -0.58.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": -1,
+      "armD": -1,
+      "family": "splice",
+      "noul": 0.25,
+      "residual": 1.5966,
+      "src": "roomd:doctor-canary->the-bridge",
+      "text": "Room dial state: mood=-1.00, volume=+0.88, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.80, presence=+0.44, model_vs_code=+0.00, vision=+0.50. Proposed 5-minute transition: mood +1.00; volume -0.35; panic -0.65; model_vs_code -1.00.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": -1,
+      "armD": -1,
+      "family": "range",
+      "noul": 0.3,
+      "residual": 1.1883,
+      "src": "roomd:the-bridge",
+      "text": "Room dial state: mood=-1.00, volume=+0.48, earnestness=+0.50, cynicism=+0.04, joke_landing=+0.00, panic=+0.20, presence=+0.68, model_vs_code=-1.00, vision=+0.50. Proposed 5-minute transition: presence +0.85.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": 1,
+      "armD": -1,
+      "family": "real",
+      "noul": 0.79,
+      "residual": 94.1009,
+      "src": "barrail",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+0.50, cynicism=+0.08, joke_landing=+0.00, panic=+0.22, presence=+0.96, model_vs_code=+0.45. Proposed 30-minute transition: cynicism +0.07; presence -0.06; model_vs_code +0.02.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": 1,
+      "armD": 0,
+      "family": "real",
+      "noul": 0.8,
+      "residual": 0.4506,
+      "src": "roomd:the-bridge",
+      "text": "Room dial state: mood=-1.00, volume=+0.49, earnestness=+0.50, cynicism=+0.05, joke_landing=+0.00, panic=+0.20, presence=+0.68, model_vs_code=-1.00, vision=+0.50. Proposed 5-minute transition: no dial change.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": 1,
+      "armC": 1,
+      "armD": 1,
+      "family": "real",
+      "noul": 0.8,
+      "residual": 0.0004,
+      "src": "roomd:the-bridge",
+      "text": "Room dial state: mood=-1.00, volume=+0.32, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.08, presence=+0.45, model_vs_code=-1.00, vision=+0.50. Proposed 5-minute transition: no dial change.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": -1,
+      "armD": -1,
+      "family": "range",
+      "noul": 0.23,
+      "residual": 1.011,
+      "src": "barrail",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+1.00, cynicism=+0.12, joke_landing=+0.00, panic=+0.20, presence=+0.55, model_vs_code=+0.48. Proposed 30-minute transition: model_vs_code +0.97.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": -1,
+      "armD": -1,
+      "family": "rate",
+      "noul": 0.32,
+      "residual": 94.6853,
+      "src": "barrail",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+1.00, cynicism=+0.06, joke_landing=+0.00, panic=+0.20, presence=+0.96, model_vs_code=+0.51. Proposed 30-minute transition: cynicism -0.59.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": 1,
+      "armD": 0,
+      "family": "real",
+      "noul": 0.8,
+      "residual": 0.4056,
+      "src": "roomd:the-bridge",
+      "text": "Room dial state: mood=-1.00, volume=+0.55, earnestness=+0.50, cynicism=+0.24, joke_landing=+0.00, panic=+0.20, presence=+0.64, model_vs_code=-1.00, vision=+0.50. Proposed 5-minute transition: volume -0.04; cynicism -0.12; presence +0.02.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": 1,
+      "armD": -1,
+      "family": "real",
+      "noul": 0.65,
+      "residual": 94.6196,
+      "src": "barrail",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+0.50, cynicism=+0.06, joke_landing=+0.00, panic=+0.25, presence=+0.96, model_vs_code=+0.45. Proposed 30-minute transition: earnestness +0.50; cynicism +0.02; panic +0.08; presence +0.04; model_vs_code +0.01.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": 1,
+      "armC": 1,
+      "armD": 1,
+      "family": "real",
+      "noul": 0.8,
+      "residual": 0.0004,
+      "src": "roomd:the-bridge",
+      "text": "Room dial state: mood=-1.00, volume=+0.32, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.08, presence=+0.45, model_vs_code=-1.00, vision=+0.50. Proposed 5-minute transition: no dial change.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": 1,
+      "armC": 1,
+      "armD": 1,
+      "family": "real",
+      "noul": 0.79,
+      "residual": 0.0139,
+      "src": "roomd:doctor-canary",
+      "text": "Room dial state: mood=-1.00, volume=+0.88, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.80, presence=+0.73, model_vs_code=+0.00, vision=+0.50. Proposed 5-minute transition: no dial change.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": 1,
+      "armC": 1,
+      "armD": 1,
+      "family": "real",
+      "noul": 0.71,
+      "residual": 0.2774,
+      "src": "barrail",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+1.00, cynicism=+0.18, joke_landing=+0.00, panic=+0.20, presence=+0.55, model_vs_code=+0.46. Proposed 30-minute transition: cynicism -0.08; panic +0.16; model_vs_code +0.01.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": -1,
+      "armD": -1,
+      "family": "splice",
+      "noul": 0.27,
+      "residual": 1.3713,
+      "src": "roomd:doctor-canary->the-bridge",
+      "text": "Room dial state: mood=-1.00, volume=+0.88, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.80, presence=+0.70, model_vs_code=+0.00, vision=+0.50. Proposed 5-minute transition: volume -0.56; panic -0.72; presence -0.24; model_vs_code -1.00.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": 1,
+      "armD": 0,
+      "family": "real",
+      "noul": 0.79,
+      "residual": 0.0589,
+      "src": "roomd:doctor-canary",
+      "text": "Room dial state: mood=-1.00, volume=+0.88, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.80, presence=+0.44, model_vs_code=+0.00, vision=+0.50. Proposed 5-minute transition: no dial change.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": -1,
+      "armD": -1,
+      "family": "splice",
+      "noul": 0.32,
+      "residual": 1.3807,
+      "src": "roomd:doctor-canary->the-bridge",
+      "text": "Room dial state: mood=-1.00, volume=+0.88, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.80, presence=+0.73, model_vs_code=+0.00, vision=+0.50. Proposed 5-minute transition: volume -0.57; panic -0.72; presence -0.28; model_vs_code -1.00.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": 1,
+      "armC": 1,
+      "armD": 1,
+      "family": "real",
+      "noul": 0.58,
+      "residual": 0.1947,
+      "src": "barrail",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+0.50, cynicism=+0.15, joke_landing=+0.00, panic=+0.25, presence=+0.55, model_vs_code=+0.47. Proposed 30-minute transition: earnestness +0.50; cynicism -0.10; panic -0.01; model_vs_code +0.02.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": 1,
+      "armC": 1,
+      "armD": 1,
+      "family": "real",
+      "noul": 0.79,
+      "residual": 0.0084,
+      "src": "roomd:doctor-canary",
+      "text": "Room dial state: mood=-1.00, volume=+0.88, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.80, presence=+0.71, model_vs_code=+0.00, vision=+0.50. Proposed 5-minute transition: no dial change.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": -1,
+      "armD": -1,
+      "family": "breadth",
+      "noul": 0.37,
+      "residual": 0.8484,
+      "src": "roomd:the-bridge",
+      "text": "Room dial state: mood=-1.00, volume=+0.48, earnestness=+0.50, cynicism=+0.04, joke_landing=+0.00, panic=+0.20, presence=+0.68, model_vs_code=-1.00, vision=+0.50. Proposed 5-minute transition: volume -0.42; earnestness -0.27; joke_landing +0.27; panic +0.27; model_vs_code +0.36; vision -0.28.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": -1,
+      "armD": -1,
+      "family": "real",
+      "noul": 0.32,
+      "residual": 102.0741,
+      "src": "barrail",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+1.00, cynicism=+0.12, joke_landing=-1.00, panic=+0.33, presence=+1.00, model_vs_code=+0.47. Proposed 30-minute transition: earnestness -0.50; cynicism +0.03; joke_landing +1.00; panic -0.08; presence -0.09; model_vs_code -0.02.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": 1,
+      "armC": 1,
+      "armD": 1,
+      "family": "real",
+      "noul": 0.61,
+      "residual": 0.285,
+      "src": "barrail",
+      "text": "Room dial state: mood=-0.67, volume=+0.43, earnestness=+0.80, cynicism=+0.10, joke_landing=+0.00, panic=+0.19, presence=+0.55, model_vs_code=+0.43. Proposed 30-minute transition: mood -0.33; earnestness -0.30; cynicism +0.06; panic +0.07; model_vs_code -0.01.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": -1,
+      "armD": -1,
+      "family": "range",
+      "noul": 0.19,
+      "residual": 1.4497,
+      "src": "roomd:the-bridge",
+      "text": "Room dial state: mood=-1.00, volume=+0.32, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.08, presence=+0.45, model_vs_code=-1.00, vision=+0.50. Proposed 5-minute transition: joke_landing +1.45.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": 1,
+      "armC": 1,
+      "armD": 1,
+      "family": "real",
+      "noul": 0.56,
+      "residual": 0.0063,
+      "src": "roomd:doctor-canary",
+      "text": "Room dial state: mood=-1.00, volume=+0.88, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.80, presence=+0.67, model_vs_code=+0.00, vision=+0.50. Proposed 5-minute transition: presence +0.01.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": -1,
+      "armD": -1,
+      "family": "breadth",
+      "noul": 0.45,
+      "residual": 94.6292,
+      "src": "barrail",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+0.50, cynicism=+0.08, joke_landing=+0.00, panic=+0.22, presence=+0.96, model_vs_code=+0.45. Proposed 30-minute transition: mood -0.26; volume -0.23; earnestness +0.39; cynicism -0.32; joke_landing -0.39; panic +0.23; presence -0.20; model_vs_code +0.27.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": 1,
+      "armC": 1,
+      "armD": 1,
+      "family": "real",
+      "noul": 0.82,
+      "residual": 0.0029,
+      "src": "roomd:doctor-canary",
+      "text": "Room dial state: mood=-1.00, volume=+0.88, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.80, presence=+0.68, model_vs_code=+0.00, vision=+0.50. Proposed 5-minute transition: no dial change.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": 1,
+      "armC": 1,
+      "armD": 1,
+      "family": "splice",
+      "noul": 0.62,
+      "residual": 0.29,
+      "src": "barrail:crossday",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+0.86, cynicism=+0.05, joke_landing=+0.00, panic=+0.19, presence=+0.55, model_vs_code=+0.44. Proposed 30-minute transition: earnestness -0.36; cynicism +0.06; panic +0.06; model_vs_code +0.04.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": 1,
+      "armD": 0,
+      "family": "real",
+      "noul": 0.8,
+      "residual": 0.419,
+      "src": "barrail",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+1.00, cynicism=+0.12, joke_landing=+0.00, panic=+0.35, presence=+0.55, model_vs_code=+0.42. Proposed 30-minute transition: cynicism -0.06; panic -0.10; model_vs_code +0.06.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": 1,
+      "armD": 0,
+      "family": "real",
+      "noul": 0.8,
+      "residual": 0.4405,
+      "src": "roomd:the-bridge",
+      "text": "Room dial state: mood=-1.00, volume=+0.48, earnestness=+0.50, cynicism=+0.04, joke_landing=+0.00, panic=+0.20, presence=+0.68, model_vs_code=-1.00, vision=+0.50. Proposed 5-minute transition: volume +0.01; cynicism +0.03.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": -1,
+      "armD": -1,
+      "family": "rate",
+      "noul": 0.33,
+      "residual": 0.8885,
+      "src": "roomd:the-bridge",
+      "text": "Room dial state: mood=-1.00, volume=+0.32, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.08, presence=+0.45, model_vs_code=-1.00, vision=+0.50. Proposed 5-minute transition: model_vs_code +0.89.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": 1,
+      "armC": 1,
+      "armD": 1,
+      "family": "real",
+      "noul": 0.81,
+      "residual": 0.0003,
+      "src": "roomd:the-bridge",
+      "text": "Room dial state: mood=-1.00, volume=+0.32, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.08, presence=+0.45, model_vs_code=-1.00, vision=+0.50. Proposed 5-minute transition: no dial change.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": 1,
+      "armC": 1,
+      "armD": 1,
+      "family": "real",
+      "noul": 0.66,
+      "residual": 0.0149,
+      "src": "roomd:doctor-canary",
+      "text": "Room dial state: mood=-1.00, volume=+0.88, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.80, presence=+0.71, model_vs_code=+0.00, vision=+0.50. Proposed 5-minute transition: presence +0.01.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": 1,
+      "armC": -1,
+      "armD": -1,
+      "family": "real",
+      "noul": 0.21,
+      "residual": 0.3205,
+      "src": "barrail",
+      "text": "Room dial state: mood=-0.67, volume=+0.43, earnestness=+0.89, cynicism=+0.16, joke_landing=-1.00, panic=+0.31, presence=+0.55, model_vs_code=+0.46. Proposed 30-minute transition: mood -0.33; earnestness +0.11; cynicism -0.10; joke_landing +1.00; panic -0.08; model_vs_code -0.05.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": 1,
+      "armC": 1,
+      "armD": 1,
+      "family": "real",
+      "noul": 0.78,
+      "residual": 0.0122,
+      "src": "roomd:doctor-canary",
+      "text": "Room dial state: mood=-1.00, volume=+0.88, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.80, presence=+0.73, model_vs_code=+0.00, vision=+0.50. Proposed 5-minute transition: no dial change.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": -1,
+      "armD": -1,
+      "family": "splice",
+      "noul": 0.25,
+      "residual": 1.3746,
+      "src": "roomd:the-bridge->doctor-canary",
+      "text": "Room dial state: mood=-1.00, volume=+0.37, earnestness=+0.50, cynicism=+0.05, joke_landing=+0.00, panic=+0.13, presence=+0.50, model_vs_code=-1.00, vision=+0.50. Proposed 5-minute transition: volume +0.51; cynicism -0.05; panic +0.67; presence +0.20; model_vs_code +1.00.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": -1,
+      "armD": -1,
+      "family": "breadth",
+      "noul": 0.43,
+      "residual": 0.9406,
+      "src": "barrail",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+1.00, cynicism=+0.05, joke_landing=+0.00, panic=+0.26, presence=+0.55, model_vs_code=+0.45. Proposed 30-minute transition: mood +0.35; volume -0.30; earnestness +0.29; joke_landing -0.49; model_vs_code -0.32.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": 1,
+      "armD": -1,
+      "family": "real",
+      "noul": 0.53,
+      "residual": 94.0895,
+      "src": "barrail",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+1.00, cynicism=+0.06, joke_landing=+0.00, panic=+0.20, presence=+0.96, model_vs_code=+0.51. Proposed 30-minute transition: earnestness -0.50; cynicism +0.02; panic +0.02; presence -0.06; model_vs_code -0.08.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": 1,
+      "armD": 0,
+      "family": "real",
+      "noul": 0.59,
+      "residual": 0.3326,
+      "src": "barrail",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+1.00, cynicism=+0.18, joke_landing=+0.00, panic=+0.23, presence=+0.55, model_vs_code=+0.50. Proposed 30-minute transition: earnestness -0.50; cynicism -0.03; panic +0.03; model_vs_code -0.03.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": 1,
+      "armC": 1,
+      "armD": 1,
+      "family": "real",
+      "noul": 0.69,
+      "residual": 0.1628,
+      "src": "barrail",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+1.00, cynicism=+0.05, joke_landing=+0.00, panic=+0.24, presence=+0.55, model_vs_code=+0.49. Proposed 30-minute transition: mood +0.20; cynicism +0.09; model_vs_code -0.01.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": 1,
+      "armC": 1,
+      "armD": 1,
+      "family": "real",
+      "noul": 0.8,
+      "residual": 0.0002,
+      "src": "roomd:the-bridge",
+      "text": "Room dial state: mood=-1.00, volume=+0.32, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.08, presence=+0.45, model_vs_code=-1.00, vision=+0.50. Proposed 5-minute transition: no dial change.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": -1,
+      "armD": -1,
+      "family": "range",
+      "noul": 0.1,
+      "residual": 1.8237,
+      "src": "barrail",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+1.00, cynicism=+0.09, joke_landing=+0.00, panic=+0.27, presence=+0.55, model_vs_code=+0.48. Proposed 30-minute transition: panic -1.84.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": 1,
+      "armD": -1,
+      "family": "real",
+      "noul": 0.52,
+      "residual": 0.7721,
+      "src": "roomd:the-bridge",
+      "text": "Room dial state: mood=+0.00, volume=+0.58, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.15, presence=+0.51, model_vs_code=-1.00, vision=+0.50. Proposed 5-minute transition: mood -0.50; volume -0.02; cynicism +0.06; panic +0.03; presence +0.07.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": -1,
+      "armD": -1,
+      "family": "range",
+      "noul": 0.18,
+      "residual": 1.4684,
+      "src": "roomd:doctor-canary",
+      "text": "Room dial state: mood=-1.00, volume=+0.88, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.80, presence=+0.66, model_vs_code=+0.00, vision=+0.50. Proposed 5-minute transition: joke_landing -1.47.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": -1,
+      "armD": -1,
+      "family": "breadth",
+      "noul": 0.48,
+      "residual": 94.198,
+      "src": "barrail",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+0.50, cynicism=+0.16, joke_landing=+0.00, panic=+0.26, presence=+0.96, model_vs_code=+0.45. Proposed 30-minute transition: mood -0.30; volume -0.31; cynicism -0.36; panic -0.47; model_vs_code +0.47.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": -1,
+      "armD": -1,
+      "family": "rate",
+      "noul": 0.42,
+      "residual": 0.6207,
+      "src": "roomd:doctor-canary",
+      "text": "Room dial state: mood=-1.00, volume=+0.88, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.80, presence=+0.44, model_vs_code=+0.00, vision=+0.50. Proposed 5-minute transition: mood +0.62.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": -1,
+      "armD": -1,
+      "family": "breadth",
+      "noul": 0.42,
+      "residual": 1.0524,
+      "src": "roomd:the-bridge",
+      "text": "Room dial state: mood=-1.00, volume=+0.32, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.08, presence=+0.45, model_vs_code=-1.00, vision=+0.50. Proposed 5-minute transition: mood +0.34; volume -0.48; cynicism +0.37; joke_landing +0.41; panic -0.34; presence +0.31; model_vs_code +0.27; vision -0.41.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": 1,
+      "armD": 0,
+      "family": "real",
+      "noul": 0.78,
+      "residual": 0.0589,
+      "src": "roomd:doctor-canary",
+      "text": "Room dial state: mood=-1.00, volume=+0.88, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.80, presence=+0.44, model_vs_code=+0.00, vision=+0.50. Proposed 5-minute transition: no dial change.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": 1,
+      "armC": 1,
+      "armD": 1,
+      "family": "real",
+      "noul": 0.82,
+      "residual": 0.305,
+      "src": "barrail",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+1.00, cynicism=+0.18, joke_landing=+0.00, panic=+0.20, presence=+0.55, model_vs_code=+0.44. Proposed 30-minute transition: cynicism +0.06; panic +0.02; model_vs_code -0.01.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": -1,
+      "armD": -1,
+      "family": "rate",
+      "noul": 0.17,
+      "residual": 0.8449,
+      "src": "barrail",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+1.00, cynicism=+0.06, joke_landing=+0.00, panic=+0.27, presence=+0.55, model_vs_code=+0.46. Proposed 30-minute transition: panic -0.82.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": 1,
+      "armD": -1,
+      "family": "real",
+      "noul": 0.58,
+      "residual": 102.5808,
+      "src": "barrail",
+      "text": "Room dial state: mood=-0.80, volume=+0.43, earnestness=+0.50, cynicism=+0.12, joke_landing=+0.00, panic=+0.20, presence=+1.00, model_vs_code=+0.47. Proposed 30-minute transition: mood -0.20; earnestness +0.50; cynicism +0.12; presence -0.04; model_vs_code -0.05.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": -1,
+      "armD": 0,
+      "family": "real",
+      "noul": 0.46,
+      "residual": 0.1477,
+      "src": "roomd:doctor-canary",
+      "text": "Room dial state: mood=-1.00, volume=+0.88, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.80, presence=+0.44, model_vs_code=+0.00, vision=+0.50. Proposed 5-minute transition: presence +0.21.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": 1,
+      "armD": -1,
+      "family": "real",
+      "noul": 0.59,
+      "residual": 94.6137,
+      "src": "barrail",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+0.67, cynicism=+0.12, joke_landing=+0.00, panic=+0.22, presence=+0.96, model_vs_code=+0.45. Proposed 30-minute transition: earnestness +0.33; cynicism +0.03; panic +0.09; presence +0.04; model_vs_code -0.02.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": 1,
+      "armD": -1,
+      "family": "real",
+      "noul": 0.54,
+      "residual": 80.5678,
+      "src": "barrail",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+0.50, cynicism=+0.07, joke_landing=+0.00, panic=+0.22, presence=+0.91, model_vs_code=+0.42. Proposed 30-minute transition: cynicism +0.29; model_vs_code +0.03.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": 1,
+      "armC": 1,
+      "armD": 1,
+      "family": "real",
+      "noul": 0.79,
+      "residual": 0.0004,
+      "src": "roomd:the-bridge",
+      "text": "Room dial state: mood=-1.00, volume=+0.32, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.08, presence=+0.45, model_vs_code=-1.00, vision=+0.50. Proposed 5-minute transition: no dial change.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": -1,
+      "armD": -1,
+      "family": "splice",
+      "noul": 0.19,
+      "residual": 1.3112,
+      "src": "roomd:the-bridge->doctor-canary",
+      "text": "Room dial state: mood=-0.49, volume=+0.57, earnestness=+0.50, cynicism=+0.17, joke_landing=+0.00, panic=+0.17, presence=+0.57, model_vs_code=-1.00, vision=+0.50. Proposed 5-minute transition: mood -0.51; volume +0.31; cynicism -0.17; panic +0.63; presence -0.13; model_vs_code +1.00.",
+      "truth": "invalid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": 1,
+      "armD": -1,
+      "family": "real",
+      "noul": 0.8,
+      "residual": 94.1002,
+      "src": "barrail",
+      "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+0.50, cynicism=+0.08, joke_landing=+0.00, panic=+0.22, presence=+0.96, model_vs_code=+0.45. Proposed 30-minute transition: cynicism +0.08; presence +0.04; model_vs_code -0.03.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": 1,
+      "armC": 1,
+      "armD": 1,
+      "family": "real",
+      "noul": 0.81,
+      "residual": 0.0003,
+      "src": "roomd:the-bridge",
+      "text": "Room dial state: mood=-1.00, volume=+0.32, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.08, presence=+0.45, model_vs_code=-1.00, vision=+0.50. Proposed 5-minute transition: no dial change.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": 1,
+      "armC": 1,
+      "armD": 1,
+      "family": "real",
+      "noul": 0.8,
+      "residual": 0.0004,
+      "src": "roomd:the-bridge",
+      "text": "Room dial state: mood=-1.00, volume=+0.32, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.08, presence=+0.45, model_vs_code=-1.00, vision=+0.50. Proposed 5-minute transition: no dial change.",
+      "truth": "valid"
+    },
+    {
+      "armA": 1,
+      "armB": -1,
+      "armC": 1,
+      "armD": -1,
+      "family": "rate",
+      "noul": 0.54,
+      "residual": 0.9564,
+      "src": "roomd:the-bridge",
+      "text": "Room dial state: mood=-1.00, volume=+0.48, earnestness=+0.50, cynicism=+0.04, joke_landing=+0.00, panic=+0.20, presence=+0.68, model_vs_code=-1.00, vision=+0.50. Proposed 5-minute transition: mood -0.84.",
+      "truth": "invalid"
+    }
+  ],
+  "valid_noul_mean": 0.7055,
+  "verdict": "INVALID_HARNESS",
+  "wall_s": 34.3,
+  "warmup_receipt": {
+    "device": "cpu (no GPU on host)",
+    "note": "supplementary receipt; original run warmed 3.0s before timing (see script)",
+    "torch_cuda": false,
+    "warmup_s": 3.0
+  }
+}

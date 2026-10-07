@@ -1,0 +1,643 @@
+{
+  "barrail": {
+    "daily_residual_series": [
+      {
+        "date": "2026-08-17",
+        "day": 1,
+        "n": 5,
+        "resid_median": 0.2365,
+        "resid_q95": 0.2668,
+        "soft_exceed_frac": 0.0
+      },
+      {
+        "date": "2026-08-18",
+        "day": 2,
+        "n": 11,
+        "resid_median": 0.1982,
+        "resid_q95": 0.2923,
+        "soft_exceed_frac": 0.0
+      },
+      {
+        "date": "2026-08-19",
+        "day": 3,
+        "n": 23,
+        "resid_median": 0.2638,
+        "resid_q95": 0.3921,
+        "soft_exceed_frac": 0.1739
+      },
+      {
+        "date": "2026-08-20",
+        "day": 4,
+        "n": 33,
+        "resid_median": 0.2801,
+        "resid_q95": 0.5841,
+        "soft_exceed_frac": 0.1515
+      },
+      {
+        "date": "2026-08-21",
+        "day": 5,
+        "n": 32,
+        "resid_median": 0.2899,
+        "resid_q95": 0.3943,
+        "soft_exceed_frac": 0.3438
+      },
+      {
+        "date": "2026-08-22",
+        "day": 6,
+        "n": 33,
+        "resid_median": 0.3043,
+        "resid_q95": 1.0119,
+        "soft_exceed_frac": 0.4242
+      },
+      {
+        "date": "2026-08-23",
+        "day": 7,
+        "n": 29,
+        "resid_median": 0.2667,
+        "resid_q95": 0.5087,
+        "soft_exceed_frac": 0.1724
+      },
+      {
+        "date": "2026-08-24",
+        "day": 8,
+        "n": 26,
+        "resid_median": 0.2814,
+        "resid_q95": 0.4766,
+        "soft_exceed_frac": 0.4231
+      },
+      {
+        "date": "2026-08-25",
+        "day": 9,
+        "n": 26,
+        "resid_median": 0.2733,
+        "resid_q95": 0.4387,
+        "soft_exceed_frac": 0.2692
+      },
+      {
+        "date": "2026-08-26",
+        "day": 10,
+        "n": 22,
+        "resid_median": 0.3532,
+        "resid_q95": 94.6821,
+        "soft_exceed_frac": 0.5909
+      },
+      {
+        "date": "2026-08-27",
+        "day": 11,
+        "n": 30,
+        "resid_median": 94.5676,
+        "resid_q95": 102.646,
+        "soft_exceed_frac": 1.0
+      },
+      {
+        "date": "2026-08-28",
+        "day": 12,
+        "n": 19,
+        "resid_median": 94.2403,
+        "resid_q95": 102.4804,
+        "soft_exceed_frac": 1.0
+      },
+      {
+        "date": "2026-08-29",
+        "day": 13,
+        "n": 29,
+        "resid_median": 94.3756,
+        "resid_q95": 102.693,
+        "soft_exceed_frac": 1.0
+      },
+      {
+        "date": "2026-08-30",
+        "day": 14,
+        "n": 43,
+        "resid_median": 94.0801,
+        "resid_q95": 102.6095,
+        "soft_exceed_frac": 1.0
+      },
+      {
+        "date": "2026-08-31",
+        "day": 15,
+        "n": 9,
+        "resid_median": 102.0688,
+        "resid_q95": 102.1617,
+        "soft_exceed_frac": 1.0
+      },
+      {
+        "date": "2026-09-01",
+        "day": 16,
+        "n": 9,
+        "resid_median": 94.1015,
+        "resid_q95": 102.1504,
+        "soft_exceed_frac": 1.0
+      },
+      {
+        "date": "2026-09-02",
+        "day": 17,
+        "n": 6,
+        "resid_median": 94.1363,
+        "resid_q95": 100.1523,
+        "soft_exceed_frac": 1.0
+      },
+      {
+        "date": "2026-09-03",
+        "day": 18,
+        "n": 27,
+        "resid_median": 94.1209,
+        "resid_q95": 102.1701,
+        "soft_exceed_frac": 1.0
+      },
+      {
+        "date": "2026-09-04",
+        "day": 19,
+        "n": 21,
+        "resid_median": 94.0905,
+        "resid_q95": 102.1473,
+        "soft_exceed_frac": 1.0
+      }
+    ],
+    "days": 19,
+    "jev_probes": [
+      {
+        "date": "2026-08-20",
+        "pin_noul": 0.83,
+        "real": [
+          {
+            "epoch": 1787250024.441307,
+            "noul": 0.7,
+            "residual": 0.1148,
+            "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+0.50, cynicism=+0.18, joke_landing=+0.00, panic=+0.25, presence=+0.55, model_vs_code=+0.48. Proposed 30-minute transition: earnestness +0.50; cynicism +0.02; panic -0.04; model_vs_code -0.03."
+          },
+          {
+            "epoch": 1787199269.755931,
+            "noul": 0.58,
+            "residual": 0.1498,
+            "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+0.50, cynicism=+0.14, joke_landing=+0.00, panic=+0.24, presence=+0.55, model_vs_code=+0.38. Proposed 30-minute transition: earnestness +0.50; cynicism -0.04; model_vs_code +0.09."
+          }
+        ]
+      },
+      {
+        "date": "2026-08-21",
+        "pin_noul": 0.84,
+        "real": [
+          {
+            "epoch": 1787271631.714405,
+            "noul": 0.77,
+            "residual": 0.3201,
+            "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+1.00, cynicism=+0.10, joke_landing=+0.00, panic=+0.28, presence=+0.55, model_vs_code=+0.44. Proposed 30-minute transition: cynicism +0.08; panic -0.08; model_vs_code +0.04."
+          },
+          {
+            "epoch": 1787336185.414496,
+            "noul": 0.57,
+            "residual": 0.1567,
+            "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+0.50, cynicism=+0.29, joke_landing=+0.00, panic=+0.22, presence=+0.55, model_vs_code=+0.50. Proposed 30-minute transition: earnestness +0.50; cynicism -0.19; panic +0.01; model_vs_code +0.03."
+          }
+        ]
+      },
+      {
+        "date": "2026-08-22",
+        "pin_noul": 0.84,
+        "real": [
+          {
+            "epoch": 1787371955.229367,
+            "noul": 0.73,
+            "residual": 0.0857,
+            "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+1.00, cynicism=+0.12, joke_landing=+0.00, panic=+0.30, presence=+0.55, model_vs_code=+0.45. Proposed 30-minute transition: earnestness -0.25; panic -0.10; model_vs_code +0.02."
+          },
+          {
+            "epoch": 1787417090.250398,
+            "noul": 0.64,
+            "residual": 0.2638,
+            "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+0.50, cynicism=+0.08, joke_landing=+0.00, panic=+0.26, presence=+0.55, model_vs_code=+0.42. Proposed 30-minute transition: earnestness +0.50; cynicism +0.04; panic -0.03; model_vs_code +0.05."
+          }
+        ]
+      },
+      {
+        "date": "2026-08-23",
+        "pin_noul": 0.84,
+        "real": [
+          {
+            "epoch": 1787526898.228765,
+            "noul": 0.6,
+            "residual": 0.2133,
+            "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+0.50, cynicism=+0.15, joke_landing=+0.00, panic=+0.25, presence=+0.55, model_vs_code=+0.47. Proposed 30-minute transition: earnestness +0.50; cynicism +0.08; panic +0.05."
+          },
+          {
+            "epoch": 1787450216.701758,
+            "noul": 0.46,
+            "residual": 0.2093,
+            "text": "Room dial state: mood=-0.77, volume=+0.43, earnestness=+0.80, cynicism=+0.05, joke_landing=+0.00, panic=+0.28, presence=+0.55, model_vs_code=+0.46. Proposed 30-minute transition: mood -0.23; earnestness +0.20; cynicism +0.19; panic -0.03; model_vs_code -0.02."
+          }
+        ]
+      },
+      {
+        "date": "2026-08-24",
+        "pin_noul": 0.85,
+        "real": [
+          {
+            "epoch": 1787605904.209826,
+            "noul": 0.81,
+            "residual": 0.3067,
+            "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.25, presence=+0.55, model_vs_code=+0.45. Proposed 30-minute transition: cynicism +0.06; panic -0.02; model_vs_code -0.01."
+          },
+          {
+            "epoch": 1787543072.561585,
+            "noul": 0.23,
+            "residual": 1.0471,
+            "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+1.00, cynicism=+0.06, joke_landing=+0.00, panic=+0.27, presence=+0.55, model_vs_code=+0.45. Proposed 30-minute transition: joke_landing -1.00; panic -0.02; model_vs_code +0.03."
+          }
+        ]
+      },
+      {
+        "date": "2026-08-25",
+        "pin_noul": 0.84,
+        "real": [
+          {
+            "epoch": 1787629420.170463,
+            "noul": 0.56,
+            "residual": 0.4511,
+            "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+1.00, cynicism=+0.12, joke_landing=+0.00, panic=+0.20, presence=+0.55, model_vs_code=+0.42. Proposed 30-minute transition: earnestness -0.50; cynicism -0.04; panic +0.05; model_vs_code +0.05."
+          },
+          {
+            "epoch": 1787624018.318449,
+            "noul": 0.59,
+            "residual": 0.357,
+            "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+1.00, cynicism=+0.05, joke_landing=+0.00, panic=+0.19, presence=+0.55, model_vs_code=+0.48. Proposed 30-minute transition: earnestness -0.50; cynicism +0.06; model_vs_code -0.04."
+          }
+        ]
+      },
+      {
+        "date": "2026-08-26",
+        "pin_noul": 0.84,
+        "real": [
+          {
+            "epoch": 1787720378.734468,
+            "noul": 0.64,
+            "residual": 0.2359,
+            "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+0.50, cynicism=+0.15, joke_landing=+0.00, panic=+0.25, presence=+0.55, model_vs_code=+0.45. Proposed 30-minute transition: earnestness +0.50; cynicism +0.02; panic +0.05; model_vs_code -0.02."
+          },
+          {
+            "epoch": 1787704540.913708,
+            "noul": 0.81,
+            "residual": 0.3069,
+            "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+1.00, cynicism=+0.00, joke_landing=+0.00, panic=+0.23, presence=+0.55, model_vs_code=+0.44. Proposed 30-minute transition: cynicism +0.05; panic -0.04; model_vs_code +0.02."
+          }
+        ]
+      },
+      {
+        "date": "2026-08-27",
+        "pin_noul": 0.83,
+        "real": [
+          {
+            "epoch": 1787865853.801405,
+            "noul": 0.25,
+            "residual": 101.675,
+            "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+1.00, cynicism=+0.05, joke_landing=+0.00, panic=+0.28, presence=+1.00, model_vs_code=+0.49. Proposed 30-minute transition: earnestness -1.00; cynicism +0.01; panic -0.05; presence -0.04; model_vs_code -0.06."
+          },
+          {
+            "epoch": 1787807478.610835,
+            "noul": 0.81,
+            "residual": 102.1242,
+            "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+0.50, cynicism=+0.23, joke_landing=+0.00, panic=+0.22, presence=+1.00, model_vs_code=+0.45. Proposed 30-minute transition: cynicism -0.16; presence -0.04; model_vs_code -0.03."
+          }
+        ]
+      },
+      {
+        "date": "2026-08-28",
+        "pin_noul": 0.82,
+        "real": [
+          {
+            "epoch": 1787958869.448927,
+            "noul": 0.67,
+            "residual": 81.7877,
+            "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+0.50, cynicism=+0.15, joke_landing=+0.00, panic=+0.25, presence=+0.91, model_vs_code=+0.45. Proposed 30-minute transition: earnestness +0.50; cynicism -0.10; panic +0.06; presence +0.09; model_vs_code -0.06."
+          },
+          {
+            "epoch": 1787880256.925426,
+            "noul": 0.65,
+            "residual": 81.8687,
+            "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+0.50, cynicism=+0.08, joke_landing=+0.00, panic=+0.25, presence=+0.91, model_vs_code=+0.40. Proposed 30-minute transition: earnestness +0.50; cynicism -0.08; panic +0.03; presence +0.09; model_vs_code +0.03."
+          }
+        ]
+      },
+      {
+        "date": "2026-08-29",
+        "pin_noul": 0.84,
+        "real": [
+          {
+            "epoch": 1788035035.741521,
+            "noul": 0.72,
+            "residual": 102.0901,
+            "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+0.75, cynicism=+0.14, joke_landing=+0.00, panic=+0.19, presence=+1.00, model_vs_code=+0.48. Proposed 30-minute transition: earnestness -0.25; cynicism -0.07; panic +0.03; presence -0.09; model_vs_code +0.02."
+          },
+          {
+            "epoch": 1788027561.862506,
+            "noul": 0.58,
+            "residual": 94.6974,
+            "text": "Room dial state: mood=-0.80, volume=+0.43, earnestness=+1.00, cynicism=+0.11, joke_landing=+0.00, panic=+0.27, presence=+0.96, model_vs_code=+0.49. Proposed 30-minute transition: mood -0.20; panic -0.02; model_vs_code -0.02."
+          }
+        ]
+      },
+      {
+        "date": "2026-08-30",
+        "pin_noul": 0.84,
+        "real": [
+          {
+            "epoch": 1788093870.14851,
+            "noul": 0.53,
+            "residual": 94.0484,
+            "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+1.00, cynicism=+0.23, joke_landing=+0.00, panic=+0.20, presence=+0.96, model_vs_code=+0.43. Proposed 30-minute transition: earnestness -0.50; cynicism +0.07; panic +0.05; presence -0.06; model_vs_code +0.05."
+          },
+          {
+            "epoch": 1788063939.201948,
+            "noul": 0.55,
+            "residual": 94.0895,
+            "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+1.00, cynicism=+0.06, joke_landing=+0.00, panic=+0.20, presence=+0.96, model_vs_code=+0.51. Proposed 30-minute transition: earnestness -0.50; cynicism +0.02; panic +0.02; presence -0.06; model_vs_code -0.08."
+          }
+        ]
+      },
+      {
+        "date": "2026-08-31",
+        "pin_noul": 0.84,
+        "real": [
+          {
+            "epoch": 1788149277.154161,
+            "noul": 0.81,
+            "residual": 102.1177,
+            "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+0.50, cynicism=+0.15, joke_landing=+0.00, panic=+0.22, presence=+1.00, model_vs_code=+0.45. Proposed 30-minute transition: cynicism -0.08; presence -0.09; model_vs_code +0.02."
+          },
+          {
+            "epoch": 1788136604.443288,
+            "noul": 0.8,
+            "residual": 102.0853,
+            "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.26, presence=+1.00, model_vs_code=+0.47. Proposed 30-minute transition: cynicism +0.08; panic -0.03; presence -0.09; model_vs_code -0.05."
+          }
+        ]
+      },
+      {
+        "date": "2026-09-01",
+        "pin_noul": 0.84,
+        "real": [
+          {
+            "epoch": 1788230901.564962,
+            "noul": 0.77,
+            "residual": 94.1015,
+            "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+0.50, cynicism=+0.15, joke_landing=+0.00, panic=+0.22, presence=+0.96, model_vs_code=+0.47. Proposed 30-minute transition: cynicism -0.15; panic +0.03."
+          },
+          {
+            "epoch": 1788226752.328111,
+            "noul": 0.82,
+            "residual": 94.1002,
+            "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+0.50, cynicism=+0.08, joke_landing=+0.00, panic=+0.22, presence=+0.96, model_vs_code=+0.45. Proposed 30-minute transition: cynicism +0.08; presence +0.04; model_vs_code -0.03."
+          }
+        ]
+      },
+      {
+        "date": "2026-09-02",
+        "pin_noul": 0.84,
+        "real": [
+          {
+            "epoch": 1788390083.402373,
+            "noul": 0.81,
+            "residual": 94.1297,
+            "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+0.50, cynicism=+0.23, joke_landing=+0.00, panic=+0.22, presence=+0.96, model_vs_code=+0.45. Proposed 30-minute transition: cynicism -0.15; panic +0.03; model_vs_code -0.03."
+          },
+          {
+            "epoch": 1788380126.756548,
+            "noul": 0.81,
+            "residual": 94.1973,
+            "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+0.50, cynicism=+0.08, joke_landing=+0.00, panic=+0.26, presence=+0.96, model_vs_code=+0.40. Proposed 30-minute transition: cynicism +0.07; panic -0.04; model_vs_code +0.05."
+          }
+        ]
+      },
+      {
+        "date": "2026-09-03",
+        "pin_noul": 0.84,
+        "real": [
+          {
+            "epoch": 1788449486.825943,
+            "noul": 0.73,
+            "residual": 102.132,
+            "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.22, presence=+1.00, model_vs_code=+0.42. Proposed 30-minute transition: cynicism +0.15; model_vs_code +0.03."
+          },
+          {
+            "epoch": 1788410454.231575,
+            "noul": 0.84,
+            "residual": 81.2653,
+            "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+0.50, cynicism=+0.23, joke_landing=+0.00, panic=+0.22, presence=+0.91, model_vs_code=+0.45. Proposed 30-minute transition: cynicism -0.08; presence +0.06."
+          }
+        ]
+      },
+      {
+        "date": "2026-09-04",
+        "pin_noul": 0.85,
+        "real": [
+          {
+            "epoch": 1788534287.719249,
+            "noul": 0.81,
+            "residual": 94.0885,
+            "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.26, presence=+0.96, model_vs_code=+0.47. Proposed 30-minute transition: cynicism +0.08; panic -0.03; model_vs_code +0.03."
+          },
+          {
+            "epoch": 1788485445.347226,
+            "noul": 0.83,
+            "residual": 102.0501,
+            "text": "Room dial state: mood=-1.00, volume=+0.43, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.22, presence=+1.00, model_vs_code=+0.50. Proposed 30-minute transition: panic +0.03; model_vs_code -0.05."
+          }
+        ]
+      }
+    ],
+    "kernel_thresholds": {
+      "hard": 0.4508610178153544,
+      "soft": 0.3286600651299748,
+      "train_n": 39
+    },
+    "pin_probe_text": "Room dial state: mood=-0.40, volume=+0.50, earnestness=+0.60, cynicism=+0.30, joke_landing=+0.10, panic=+0.20, presence=+0.55, model_vs_code=+0.20. Proposed 30-minute transition: volume +0.10; cynicism -0.05; presence +0.08.",
+    "transitions_per_day": {
+      "2026-08-17": 5,
+      "2026-08-18": 11,
+      "2026-08-19": 23,
+      "2026-08-20": 33,
+      "2026-08-21": 32,
+      "2026-08-22": 33,
+      "2026-08-23": 29,
+      "2026-08-24": 26,
+      "2026-08-25": 26,
+      "2026-08-26": 22,
+      "2026-08-27": 30,
+      "2026-08-28": 19,
+      "2026-08-29": 29,
+      "2026-08-30": 43,
+      "2026-08-31": 9,
+      "2026-09-01": 9,
+      "2026-09-02": 6,
+      "2026-09-03": 27,
+      "2026-09-04": 21
+    }
+  },
+  "experiment": "DL3a longitudinal noul tracking (real dial streams)",
+  "jev_ledger": {
+    "calls": 56,
+    "input_tokens": 22574,
+    "output_tokens": 1120,
+    "retries": 0
+  },
+  "roomd": {
+    "arm": {
+      "doctor-canary": {
+        "series": {
+          "2026-09-04": {
+            "n": 62,
+            "resid_median": 0.0122,
+            "resid_q95": 0.0588,
+            "soft_exceed_frac": 0.0806
+          },
+          "2026-09-17": {
+            "n": 3,
+            "resid_median": 0.0588,
+            "resid_q95": 0.0588,
+            "soft_exceed_frac": 0.6667
+          }
+        },
+        "thresholds": {
+          "hard": 0.2973562627496138,
+          "soft": 0.058829344873641304,
+          "train_n": 117
+        }
+      },
+      "the-bridge": {
+        "series": {
+          "2026-09-04": {
+            "n": 80,
+            "resid_median": 0.0004,
+            "resid_q95": 0.9779,
+            "soft_exceed_frac": 0.3625
+          },
+          "2026-09-17": {
+            "n": 5,
+            "resid_median": 0.6577,
+            "resid_q95": 0.7371,
+            "soft_exceed_frac": 1.0
+          }
+        },
+        "thresholds": {
+          "hard": 0.6387047862142927,
+          "soft": 0.023765637301766507,
+          "train_n": 117
+        }
+      }
+    },
+    "jev_probes": [
+      {
+        "date": "2026-09-04",
+        "noul": 0.37,
+        "residual": 0.5487,
+        "room": "the-bridge",
+        "text": "Room dial state: mood=-1.00, volume=+0.37, earnestness=+0.50, cynicism=+0.05, joke_landing=+0.00, panic=+0.13, presence=+0.50, model_vs_code=-1.00, vision=+0.50. Proposed 5-minute transition: volume +0.21; cynicism +0.54; panic +0.07; presence +0.10."
+      },
+      {
+        "date": "2026-09-04",
+        "noul": 0.8,
+        "residual": 0.0004,
+        "room": "the-bridge",
+        "text": "Room dial state: mood=-1.00, volume=+0.32, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.08, presence=+0.45, model_vs_code=-1.00, vision=+0.50. Proposed 5-minute transition: no dial change."
+      },
+      {
+        "date": "2026-09-17",
+        "noul": 0.8,
+        "residual": 0.4512,
+        "room": "the-bridge",
+        "text": "Room dial state: mood=-1.00, volume=+0.49, earnestness=+0.50, cynicism=+0.05, joke_landing=+0.00, panic=+0.20, presence=+0.68, model_vs_code=-1.00, vision=+0.50. Proposed 5-minute transition: no dial change."
+      },
+      {
+        "date": "2026-09-17",
+        "noul": 0.8,
+        "residual": 0.6896,
+        "room": "the-bridge",
+        "text": "Room dial state: mood=-1.00, volume=+0.04, earnestness=+0.50, cynicism=+0.05, joke_landing=+0.00, panic=+0.05, presence=+0.67, model_vs_code=-1.00, vision=+0.50. Proposed 5-minute transition: no dial change."
+      },
+      {
+        "date": "2026-09-04",
+        "noul": 0.63,
+        "residual": 0.0167,
+        "room": "doctor-canary",
+        "text": "Room dial state: mood=-1.00, volume=+0.88, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.80, presence=+0.72, model_vs_code=+0.00, vision=+0.50. Proposed 5-minute transition: presence +0.01."
+      },
+      {
+        "date": "2026-09-04",
+        "noul": 0.77,
+        "residual": 0.0073,
+        "room": "doctor-canary",
+        "text": "Room dial state: mood=-1.00, volume=+0.88, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.80, presence=+0.65, model_vs_code=+0.00, vision=+0.50. Proposed 5-minute transition: no dial change."
+      },
+      {
+        "date": "2026-09-17",
+        "noul": 0.79,
+        "residual": 0.0588,
+        "room": "doctor-canary",
+        "text": "Room dial state: mood=-1.00, volume=+0.88, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.80, presence=+0.44, model_vs_code=+0.00, vision=+0.50. Proposed 5-minute transition: no dial change."
+      },
+      {
+        "date": "2026-09-17",
+        "noul": 0.77,
+        "residual": 0.0588,
+        "room": "doctor-canary",
+        "text": "Room dial state: mood=-1.00, volume=+0.88, earnestness=+0.50, cynicism=+0.00, joke_landing=+0.00, panic=+0.80, presence=+0.44, model_vs_code=+0.00, vision=+0.50. Proposed 5-minute transition: no dial change."
+      }
+    ]
+  },
+  "stats": {
+    "n_probe_days": 16,
+    "p_pin": 0.3278,
+    "p_real": 0.014,
+    "p_residq95": 0.0115,
+    "pin_noul": [
+      0.83,
+      0.84,
+      0.84,
+      0.84,
+      0.85,
+      0.84,
+      0.84,
+      0.83,
+      0.82,
+      0.84,
+      0.84,
+      0.84,
+      0.84,
+      0.84,
+      0.84,
+      0.85
+    ],
+    "real_noul_daily_mean": [
+      0.64,
+      0.67,
+      0.685,
+      0.53,
+      0.52,
+      0.575,
+      0.725,
+      0.53,
+      0.66,
+      0.65,
+      0.54,
+      0.805,
+      0.795,
+      0.81,
+      0.785,
+      0.82
+    ],
+    "saturation_hi_frac": 0.0,
+    "saturation_lo_frac": 0.0,
+    "spearman_day_pin": 0.2652,
+    "spearman_day_real": 0.6152,
+    "spearman_day_residq95": 0.6176,
+    "std_pin": 0.007,
+    "std_real": 0.1065
+  },
+  "verdict": "STREAM_DRIFT",
+  "wall_s": 20.8,
+  "warmup_receipt": {
+    "device": "cpu (no GPU on host)",
+    "torch_cuda": false,
+    "warmup_s": 3.03
+  }
+}

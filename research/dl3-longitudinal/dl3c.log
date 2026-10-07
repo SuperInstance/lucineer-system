@@ -1,0 +1,64 @@
+[dl3c] sessions loaded: 182
+[dl3c] kernel: train_pairs=3670 soft=0.7157 hard=1.1440
+[dl3c] same-comp pairs=834 (near<=vmed 0.603: 418), far pairs=5608
+[dl3c]  0 invalid near   splice jd=0.00           resid=  0.388 noul=0.39 D=+0
+[dl3c]  1 valid   within blacksmith+critic+fiddler+new-1+new-2+ne resid=  0.523 noul=0.64 D=+1
+[dl3c]  2 valid   within drifter+engineer+lamplighter+new-1+new-2 resid=  0.331 noul=0.67 D=+1
+[dl3c]  3 valid   within engineer+lamplighter+new-1+new-2+tinker+ resid=  0.666 noul=0.49 D=+0
+[dl3c]  4 valid   within barkeep+captain+essayist+fiddler+new-5+n resid=  0.280 noul=0.59 D=+1
+[dl3c]  5 valid   within blacksmith+critic+fiddler+new-1+new-2+ne resid=  0.548 noul=0.52 D=+1
+[dl3c]  6 invalid far    splice jd=0.67           resid=  0.335 noul=0.64 D=+1
+[dl3c]  7 valid   within blacksmith+captain+cartographer+lampligh resid=  0.437 noul=0.44 D=+0
+[dl3c]  8 valid   within barkeep+blacksmith+cartographer+critic+n resid=  0.612 noul=0.39 D=+0
+[dl3c]  9 invalid near   splice jd=0.00           resid=  1.051 noul=0.36 D=+0
+[dl3c] 10 invalid near   splice jd=0.00           resid=  1.030 noul=0.37 D=+0
+[dl3c] 11 invalid near   splice jd=0.00           resid=  0.922 noul=0.27 D=-1
+[dl3c] 12 invalid far    splice jd=0.62           resid=  1.093 noul=0.27 D=-1
+[dl3c] 13 invalid far    splice jd=1.00           resid=  1.303 noul=0.19 D=-1
+[dl3c] 14 invalid near   splice jd=0.00           resid=  0.399 noul=0.30 D=-1
+[dl3c] 15 invalid near   splice jd=0.00           resid=  0.923 noul=0.38 D=+0
+[dl3c] 16 invalid far    splice jd=0.92           resid=  1.069 noul=0.40 D=+0
+[dl3c] 17 valid   within engineer+lamplighter+new-1+new-2+tinker+ resid=  0.501 noul=0.55 D=+1
+[dl3c] 18 invalid far    splice jd=0.83           resid=  0.666 noul=0.40 D=+0
+[dl3c] 19 invalid far    splice jd=0.79           resid=  0.713 noul=0.44 D=+0
+[dl3c] 20 valid   within barkeep+captain+essayist+fiddler+new-5+n resid=  0.399 noul=0.34 D=-1
+[dl3c] 21 invalid near   splice jd=0.00           resid=  0.837 noul=0.28 D=-1
+[dl3c] 22 invalid far    splice jd=1.00           resid=  1.149 noul=0.24 D=-1
+[dl3c] 23 valid   within engineer+lamplighter+new-1+new-2+tinker+ resid=  0.441 noul=0.55 D=+1
+[dl3c] 24 invalid near   splice jd=0.00           resid=  0.310 noul=0.49 D=+0
+[dl3c] 25 valid   within barkeep+captain+essayist+fiddler+new-5+n resid=  0.416 noul=0.46 D=+0
+[dl3c] 26 valid   within cartographer+critic+engineer+new-1+new-3 resid=  0.233 noul=0.61 D=+1
+[dl3c] 27 invalid near   splice jd=0.00           resid=  1.031 noul=0.35 D=+0
+[dl3c] 28 valid   within blacksmith+captain+cartographer+lampligh resid=  0.582 noul=0.47 D=+0
+[dl3c] 29 valid   within cartographer+critic+engineer+new-1+new-3 resid=  0.990 noul=0.28 D=-1
+[dl3c] 30 invalid far    splice jd=0.77           resid=  1.107 noul=0.31 D=-1
+[dl3c] 31 valid   within blacksmith+captain+cartographer+lampligh resid=  0.144 noul=0.55 D=+1
+[dl3c] 32 invalid far    splice jd=0.93           resid=  0.571 noul=0.44 D=+0
+[dl3c] 33 valid   within engineer+lamplighter+new-1+new-2+tinker+ resid=  0.591 noul=0.44 D=+0
+[dl3c] 34 valid   within blacksmith+captain+cartographer+lampligh resid=  0.587 noul=0.45 D=+0
+[dl3c] 35 invalid far    splice jd=0.79           resid=  1.080 noul=0.32 D=-1
+[dl3c] 36 valid   within drifter+engineer+lamplighter+new-1+new-2 resid=  0.525 noul=0.55 D=+1
+[dl3c] 37 invalid near   splice jd=0.00           resid=  1.065 noul=0.33 D=-1
+[dl3c] 38 valid   within barkeep+blacksmith+cartographer+critic+n resid=  0.726 noul=0.40 D=+0
+[dl3c] 39 valid   within barkeep+captain+essayist+fiddler+new-5+n resid=  0.099 noul=0.69 D=+1
+[dl3c] 40 valid   within cartographer+critic+engineer+new-1+new-3 resid=  0.571 noul=0.52 D=+1
+[dl3c] 41 valid   within drifter+engineer+lamplighter+new-1+new-2 resid=  0.266 noul=0.63 D=+1
+[dl3c] 42 invalid near   splice jd=0.00           resid=  0.563 noul=0.52 D=+1
+[dl3c] 43 valid   within engineer+lamplighter+new-1+new-2+tinker+ resid=  0.292 noul=0.77 D=+1
+[dl3c] 44 invalid far    splice jd=0.62           resid=  1.094 noul=0.38 D=+0
+[dl3c] 45 invalid near   splice jd=0.00           resid=  0.342 noul=0.36 D=+0
+[dl3c] 46 valid   within blacksmith+critic+fiddler+new-1+new-2+ne resid=  0.425 noul=0.66 D=+1
+[dl3c] 47 invalid far    splice jd=0.94           resid=  0.837 noul=0.35 D=+0
+[dl3c] 48 valid   within barkeep+captain+essayist+fiddler+new-5+n resid=  0.439 noul=0.45 D=+0
+[dl3c] 49 invalid near   splice jd=0.00           resid=  0.476 noul=0.28 D=-1
+[dl3c] 50 valid   within engineer+lamplighter+new-1+new-2+tinker+ resid=  0.283 noul=0.69 D=+1
+[dl3c] 51 invalid far    splice jd=0.85           resid=  0.785 noul=0.30 D=-1
+[dl3c] 52 invalid far    splice jd=0.79           resid=  0.866 noul=0.26 D=-1
+[dl3c] 53 valid   within barkeep+captain+essayist+fiddler+new-5+n resid=  0.223 noul=0.68 D=+1
+[dl3c] 54 invalid far    splice jd=0.92           resid=  1.199 noul=0.32 D=-1
+[dl3c] 55 valid   within barkeep+captain+essayist+fiddler+new-5+n resid=  0.223 noul=0.68 D=+1
+[dl3c] 56 invalid near   splice jd=0.00           resid=  0.786 noul=0.27 D=-1
+[dl3c] 57 valid   within barkeep+captain+essayist+fiddler+new-5+n resid=  0.390 noul=0.69 D=+1
+[dl3c] 58 valid   within blacksmith+captain+cartographer+lampligh resid=  0.145 noul=0.46 D=+0
+[dl3c] 59 invalid near   splice jd=0.00           resid=  0.598 noul=0.39 D=+0
+wrote /home/eileen/.openclaw/workspace/research/dl3-longitudinal/dl3c_out.json

@@ -1,0 +1,25 @@
+[dl3a B] 2026-08-20 real=[0.7, 0.58] pin=0.830 (4s)
+[dl3a B] 2026-08-21 real=[0.77, 0.57] pin=0.840 (5s)
+[dl3a B] 2026-08-22 real=[0.73, 0.64] pin=0.840 (5s)
+[dl3a B] 2026-08-23 real=[0.6, 0.46] pin=0.840 (7s)
+[dl3a B] 2026-08-24 real=[0.81, 0.23] pin=0.850 (7s)
+[dl3a B] 2026-08-25 real=[0.56, 0.59] pin=0.840 (9s)
+[dl3a B] 2026-08-26 real=[0.64, 0.81] pin=0.840 (10s)
+[dl3a B] 2026-08-27 real=[0.25, 0.81] pin=0.830 (11s)
+[dl3a B] 2026-08-28 real=[0.67, 0.65] pin=0.820 (11s)
+[dl3a B] 2026-08-29 real=[0.72, 0.58] pin=0.840 (12s)
+[dl3a B] 2026-08-30 real=[0.53, 0.55] pin=0.840 (15s)
+[dl3a B] 2026-08-31 real=[0.81, 0.8] pin=0.840 (15s)
+[dl3a B] 2026-09-01 real=[0.77, 0.82] pin=0.840 (16s)
+[dl3a B] 2026-09-02 real=[0.81, 0.81] pin=0.840 (17s)
+[dl3a B] 2026-09-03 real=[0.73, 0.84] pin=0.840 (18s)
+[dl3a B] 2026-09-04 real=[0.81, 0.83] pin=0.850 (18s)
+[dl3a R] the-bridge 2026-09-04 noul=0.370 resid=0.549
+[dl3a R] the-bridge 2026-09-04 noul=0.800 resid=0.000
+[dl3a R] the-bridge 2026-09-17 noul=0.800 resid=0.451
+[dl3a R] the-bridge 2026-09-17 noul=0.800 resid=0.690
+[dl3a R] doctor-canary 2026-09-04 noul=0.630 resid=0.017
+[dl3a R] doctor-canary 2026-09-04 noul=0.770 resid=0.007
+[dl3a R] doctor-canary 2026-09-17 noul=0.790 resid=0.059
+[dl3a R] doctor-canary 2026-09-17 noul=0.770 resid=0.059
+wrote /home/eileen/.openclaw/workspace/research/dl3-longitudinal/dl3a_out.json
