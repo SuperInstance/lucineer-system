@@ -1,0 +1,11 @@
+ramp receipt: 3/3 warm-up calls ok; pausing 3s
+jobs total=821 done=0 todo=821
+  100/821 (fail=0)
+  200/821 (fail=0)
+  300/821 (fail=0)
+  400/821 (fail=0)
+  500/821 (fail=0)
+  600/821 (fail=0)
+  700/821 (fail=0)
+  800/821 (fail=0)
+DONE ok=821 fail=0

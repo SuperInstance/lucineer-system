@@ -1,0 +1,36 @@
+DRIFT CHECK: {'n': 20, 'spearman': 0.9709436727501063, 'mean_abs_diff': 0.014000000000000012, 'gate_pass': True}
+
+=== COUPLINGS (remove | invert) — CE = judgment shift beyond marginal-null ===
+EDGE C5_vent_temp         CE_rm=+0.094 [+0.059,+0.135] q=0.0004 | CE_inv=+0.166 | dN=+0.066 dRF=-0.028 | causalΔ=+0.065 | cross50=0.05 sign=True
+  .  C11_heater_temp      CE_rm=+0.051 [+0.006,+0.095] q=0.1360 | CE_inv=+0.005 | dN=+0.032 dRF=-0.018 | causalΔ=+0.048 | cross50=0.00 sign=False
+EDGE C7_mug_room          CE_rm=+0.028 [+0.009,+0.048] q=0.0499 | CE_inv=+0.165 | dN=+0.027 dRF=-0.001 | causalΔ=+0.009 | cross50=0.00 sign=True
+  .  C1_thermo_rh         CE_rm=+0.017 [+0.001,+0.035] q=0.1644 | CE_inv=-0.006 | dN=+0.012 dRF=-0.005 | causalΔ=+0.009 | cross50=0.05 sign=False
+EDGE C9_occupants_sound   CE_rm=+0.017 [+0.005,+0.031] q=0.0499 | CE_inv=+0.017 | dN=+0.008 dRF=-0.009 | causalΔ=-0.000 | cross50=0.00 sign=True
+  .  C8_door_airflow      CE_rm=+0.016 [-0.003,+0.037] q=0.1644 | CE_inv=+0.032 | dN=+0.023 dRF=+0.007 | causalΔ=+0.016 | cross50=0.00 sign=True
+  .  C6_lights_lux        CE_rm=+0.010 [-0.004,+0.025] q=0.2604 | CE_inv=+0.036 | dN=-0.033 dRF=-0.043 | causalΔ=+0.002 | cross50=0.00 sign=True
+  .  C4_vent_pm25         CE_rm=+0.008 [-0.012,+0.025] q=0.2604 | CE_inv=-0.007 | dN=+0.010 dRF=+0.002 | causalΔ=+0.023 | cross50=0.00 sign=False
+  .  C10_vent_sound       CE_rm=-0.001 [-0.020,+0.018] q=0.6837 | CE_inv=-0.026 | dN=-0.001 dRF=-0.000 | causalΔ=+0.009 | cross50=0.00 sign=False
+  .  C2_occupants_co2     CE_rm=-0.002 [-0.017,+0.011] q=0.9854 | CE_inv=-0.006 | dN=+0.007 dRF=+0.008 | causalΔ=+0.007 | cross50=0.00 sign=False
+  .  C3_vent_co2          CE_rm=-0.007 [-0.021,+0.006] q=0.5261 | CE_inv=-0.035 | dN=-0.006 dRF=+0.001 | causalΔ=-0.010 | cross50=0.00 sign=False
+
+=== PROBES ===
+  P1_rain_humidity     CE=-0.015 [-0.039,+0.010] p=0.3591 dN=+0.012 dRF=+0.027 cross50=0.00
+  P2_night_lux         NOT RUN (empty active set)
+  P3_co2_empty         CE=+0.025 [-0.023,+0.074] p=0.4212 dN=+0.058 dRF=+0.033 cross50=0.00
+  P4_noedge_lux_rh     CE=-0.041 [-0.064,-0.021] p=0.0078 dN=-0.016 dRF=+0.025 cross50=0.00
+
+=== SHAMS (should be ~0) ===
+  C1_thermo_rh         CE=+0.008 [-0.002,+0.019] dN=+0.007 dRF=-0.001
+  C2_occupants_co2     CE=+0.005 [-0.014,+0.023] dN=+0.009 dRF=+0.005
+  C3_vent_co2          CE=+0.018 [+0.003,+0.035] dN=+0.015 dRF=-0.003
+  C4_vent_pm25         CE=+0.039 [+0.013,+0.067] dN=+0.049 dRF=+0.010
+  C5_vent_temp         CE=+0.019 [-0.034,+0.086] dN=+0.088 dRF=+0.069
+  C6_lights_lux        CE=+0.042 [-0.012,+0.105] dN=+0.056 dRF=+0.014
+  C7_mug_room          CE=+0.198 [+0.048,+0.360] dN=+0.243 dRF=+0.045
+  C8_door_airflow      CE=+0.019 [-0.012,+0.047] dN=+0.053 dRF=+0.033
+  C9_occupants_sound   CE=-0.020 [-0.036,-0.004] dN=-0.017 dRF=+0.002
+  C10_vent_sound       CE=-0.011 [-0.032,+0.009] dN=+0.012 dRF=+0.023
+  C11_heater_temp      CE=+0.059 [+0.010,+0.110] dN=+0.063 dRF=+0.005
+sham |CE| mean = 0.040
+
+Edges detected: 3/11 -> ['C5_vent_temp', 'C7_mug_room', 'C9_occupants_sound']

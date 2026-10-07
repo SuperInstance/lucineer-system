@@ -1,0 +1,74 @@
+{
+ "A1": {
+  "A/actual/actual_valid": {
+   "mean": 0.942,
+   "sd": 0.007,
+   "n": 45
+  },
+  "A/jepa/close": {
+   "mean": 0.796,
+   "sd": 0.094,
+   "n": 45
+  },
+  "A/jepa/coupling": {
+   "mean": 0.494,
+   "sd": 0.05,
+   "n": 45
+  },
+  "A/jepa/valid": {
+   "mean": 0.914,
+   "sd": 0.009,
+   "n": 45
+  },
+  "A/pers/close": {
+   "mean": 0.902,
+   "sd": 0.059,
+   "n": 45
+  },
+  "A/pers/coupling": {
+   "mean": 0.581,
+   "sd": 0.052,
+   "n": 45
+  },
+  "A/pers/valid": {
+   "mean": 0.869,
+   "sd": 0.021,
+   "n": 45
+  },
+  "B/actual/actual_valid": {
+   "mean": 0.931,
+   "sd": 0.011,
+   "n": 45
+  },
+  "B/jepa/close": {
+   "mean": 0.719,
+   "sd": 0.121,
+   "n": 45
+  },
+  "B/jepa/coupling": {
+   "mean": 0.455,
+   "sd": 0.066,
+   "n": 45
+  },
+  "B/jepa/valid": {
+   "mean": 0.895,
+   "sd": 0.02,
+   "n": 45
+  },
+  "B/pers/close": {
+   "mean": 0.868,
+   "sd": 0.089,
+   "n": 45
+  },
+  "B/pers/coupling": {
+   "mean": 0.544,
+   "sd": 0.048,
+   "n": 45
+  },
+  "B/pers/valid": {
+   "mean": 0.85,
+   "sd": 0.033,
+   "n": 45
+  }
+ }
+}
